@@ -1,0 +1,54 @@
+
+.park_footer {
+    display: flex;
+    justify-content: space-between;
+    line-height: 24px; 
+    font-size: 14px; 
+    font-weight: bold; 
+    height:24px; 
+    z-index: 4; 
+    width:100%; 
+    position:absolute; 
+    left:0;
+    bottom: 1px;
+    background:#eee;
+}
+
+.park_footer .warning_container{
+    background:#ddd; 
+    position:relative; 
+    min-width: 300px
+}
+
+.park_footer .signal_name{
+    background:#ccc; 
+    padding: 0 10px;
+    min-width: 300px
+}
+
+.park_footer .alarm_warning_list {
+    display:none; 
+    position:absolute;
+    left:0;
+    bottom:16px;
+    background:white;
+    min-width:300px;
+    max-height:500px;
+    overflow-y: auto;
+}
+
+.park_footer .timer {
+    margin-right: 5px;
+}
+
+.park_footer .fire_node {
+    background:#ddd; 
+    position:relative; 
+    min-width: 10px
+}
+
+.park_footer .counting_down {
+    background:#ddd; 
+    white-space: nowrap;
+    min-width: 200px
+}

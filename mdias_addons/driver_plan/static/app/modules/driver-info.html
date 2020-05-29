@@ -1,0 +1,167 @@
+<div class="layui-row">
+    <div class="table-search">
+        <form class="layui-form" id="mx-table-search-form">
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">搜索条件</label>
+                    <div class="layui-input-block">
+                        <input class="layui-input" type="text" autocomplete="off" placeholder="请输入名字、电话号码、职别"
+                               name="param">
+                    </div>
+                </div>
+                <div class="layui-inline table-search-btn-groups">
+                    <button class="layui-btn layui-btn-sm"
+                            lay-submit lay-filter="mx-search-btn" id="mx-search-btn">查询
+                    </button>
+                    <button class="layui-btn layui-btn-sm"
+                            lay-submit lay-filter="mx-reset-btn" id="mx-reset-btn">重置
+                    </button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <div class="table-head">司机信息</div>
+    <table class="layui-table" id="driver-info-table" lay-filter="driver-info-table">
+    </table>
+</div>
+<link rel="stylesheet" href="modules/driver-info.css">
+<script src="modules/driver-info.js"></script>
+<div id="uploadTrainSchedule" style="display: none">
+    <form class="layui-form uploadTrainSchedule" lay-filter="uploadTrainSchedule-form"
+          style="margin-top: 10px; padding: 20px">
+        <div class="layui-form-item">
+            <label class="layui-form-label">司机信息</label>
+            <div class="layui-upload">
+                <button type="button" class="layui-btn layui-btn-normal"
+                        id="schedule-form">选择文件
+                </button>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block form-button">
+                <button class="layui-btn" name="submit" lay-submit lay-filter="submit-uploadTrainSchedule-form">
+                    上传
+                </button>
+                <button id="cancel-uploadTrainSchedule-form" class="layui-btn">取消</button>
+            </div>
+        </div>
+    </form>
+</div>
+<script type="text/html" id="DriverInfoTableToolBar">
+    <div class="layui-row">
+        <div class="layui-col-md12 layui-col-lg12">
+            <button class="layui-btn layui-btn-sm" lay-event="add">
+                添加
+            </button>
+            <button class="layui-btn layui-btn-sm" id="upload-driver-info" lay-event="upload">
+                上传并覆盖
+            </button>
+            <button class="layui-btn layui-btn-sm" lay-event="downloadTemplate">
+                模板下载
+            </button>
+            <button class="layui-btn layui-btn-sm" lay-event="export">
+                导出
+            </button>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="barDemo">
+    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>
+<div id="editDriverInfo" style="display: none">
+    <form class="layui-form driver-edit-form" lay-filter="driver-edit-form" style="margin-top: 10px; padding: 20px">
+        <div class="layui-form-item">
+            <label class="layui-form-label">姓名</label>
+            <div class="layui-input-block">
+                <input type="text" name="name" required lay-verify="required" placeholder="请输入姓名" autocomplete="off"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">工号</label>
+            <div class="layui-input-block">
+                <input type="text" name="employeeNumber" required lay-verify="required" placeholder="请输入工号"
+                       autocomplete="off"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">性别</label>
+            <div class="layui-input-block">
+                <select name="sex" lay-verify="required">
+                    <option value=""></option>
+                    <option value="男">男</option>
+                    <option value="男">女</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item" style="display: none">
+            <label class="layui-form-label">id</label>
+            <div class="layui-input-block">
+                <input type="text" name="id" placeholder="" autocomplete="off"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">联系电话</label>
+            <div class="layui-input-block">
+                <input type="text" name="mobilePhone" required lay-verify="required|phone|number" placeholder="请输入联系电话"
+                       autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">紧急联系电话</label>
+            <div class="layui-input-block">
+                <input type="text" name="emergencyPhone" lay-verify="phone|number"
+                       placeholder="请输入紧急联系电话"
+                       autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">职别</label>
+            <div class="layui-input-block">
+                <select name="job" lay-verify="required">
+                    <option value=""></option>
+                    <option value="电客车队长">电客车队长</option>
+                    <option value="电客车组长">电客车组长</option>
+                    <option value="电客车司机">电客车司机</option>
+                    <option value="电客车学员">电客车学员</option>
+                    <option value="实习生">实习生</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">机班</label>
+            <div class="layui-input-block">
+                <input type="text" name="machineClass" lay-verify="number" placeholder="请输入机班"
+                       autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">车队</label>
+            <div class="layui-input-block">
+                <select name="fleet" lay-verify="required">
+                    <option value=""></option>
+                    <option value="电客车1队">电客车1队</option>
+                    <option value="电客车2队">电客车2队</option>
+                    <option value="电客车3队">电客车3队</option>
+                    <option value="电客车4队">电客车4队</option>
+                    <option value="电客车5队">电客车5队</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item submit-item">
+            <div class="layui-input-block form-button">
+                <button id="submit-driver-edit-form" class="layui-btn layui-hide" lay-submit
+                        lay-filter="submit-driver-edit-form">提交
+                </button>
+                <button type="reset" class="layui-btn layui-btn-primary layui-hide">重置</button>
+            </div>
+        </div>
+    </form>
+</div>
+<script type="text/html" id="indexTpl">
+    {{d.LAY_TABLE_INDEX+1}}
+</script>

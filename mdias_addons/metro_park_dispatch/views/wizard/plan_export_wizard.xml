@@ -1,0 +1,23 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="export_plan_wizard">
+            <field name="name">导出计划</field>
+            <field name="model">metro_park_dispatch.wizard.plan_export</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="export_plan_date">export_plan_date</label>
+                        <div class="col-sm-3">
+                            <field name="export_plan_date"/>
+                        </div>
+                    </div>
+                    <footer>
+                        <button class="btn btn-primary" text="导出" type="object" name="action_export"/>
+                        <button class="btn btn-success" text="取消" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

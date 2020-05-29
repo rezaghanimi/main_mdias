@@ -1,0 +1,105 @@
+{
+  "dispatchTrainNum": {
+    "tooltip": {
+      "trigger": "axis",
+      "axisPointer": {
+        "lineStyle": {
+          "color": "white"
+        }
+      }
+    },
+    "xAxis": {
+      "axisLabel": {
+        "color": "#0ac4f7"
+      },
+      "axisLine": {
+        "lineStyle": {
+          "color": "#0ac4f7"
+        }
+      },
+      "axisTick": {
+        "alignWithLabel": true
+      },
+      "type": "category",
+      "data": [
+        "10:00",
+        "10:30",
+        "11:00",
+        "11:30",
+        "12:00",
+        "12:30",
+        "13:00"
+      ]
+    },
+    "dataZoom": [
+      {
+        "fillerColor": "rgba(0,130,200,0.3)",
+        "realtime": false,
+        "dataBackground": {
+          "areaStyle": {
+            "color": "blue"
+          }
+        },
+        "borderColor": "#0ac4f7",
+        "type": "slider",
+        "show": true,
+        "xAxisIndex": 0,
+        "textStyle": {
+          "color": "#0ac4f7"
+        }
+      }
+    ],
+    "yAxis": {
+      "name": "计划数量",
+      "nameLocation": "center",
+      "nameGap": 30,
+      "axisLabel": {
+        "color": "#0ac4f7"
+      },
+      "splitLine": {
+        "lineStyle": {
+          "color": "#0ac4f7"
+        }
+      },
+      "axisLine": {
+        "lineStyle": {
+          "color": "#0ac4f7"
+        }
+      },
+      "type": "value"
+    },
+    "series": [
+      {
+        "label": {
+          "show": true,
+          "position": "top"
+        },
+        "areaStyle": {
+          "color": {
+            "type": "linear",
+            "x": 0,
+            "y": 0,
+            "x2": 0,
+            "y2": 1,
+            "colorStops": [
+              {
+                "offset": 0,
+                "color": "#0077f7"
+              },
+              {
+                "offset": 1,
+                "color": "#0ac4f7"
+              }
+            ]
+          }
+        },
+        "itemStyle": {
+          "color": "#0ea2e2"
+        },
+        "barCategoryGap": "70%",
+        "data": [],
+        "type": "line"
+      }
+    ]
+  }
+}

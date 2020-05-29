@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+     <t t-name="plan_preview">
+         <div style="width:100%; height:100%">
+            <canvas width="2000" height="1000"/>
+         </div>
+     </t>
+
+</templates>

@@ -1,0 +1,54 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.dispatch_detail_route_info_list">
+            <field name="name">dispatch_detail_route_info list </field>
+            <field name="model">metro_park_dispatch.dispatch_detail_route_info</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="index"/>
+                    <field name="route_id"/>
+                    <field name="detail_id"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.dispatch_detail_route_info_form">
+            <field name="name">dispatch_detail_route_info form </field>
+            <field name="model">metro_park_dispatch.dispatch_detail_route_info</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="index">index</label>
+                        <div class="col-sm-10">
+                            <field name="index"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="route">route</label>
+                        <div class="col-sm-10">
+                            <field name="route_id"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="detail_id">detail_id</label>
+                        <div class="col-sm-10">
+                            <field name="detail_id"/>
+                        </div>
+                    </div>
+                    
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window"
+                id="metro_park_dispatch.dispatch_detail_route_info_act_window">
+            <field name="name">dispatch_detail_route_info</field>
+            <field name="res_model">metro_park_dispatch.dispatch_detail_route_info</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+    

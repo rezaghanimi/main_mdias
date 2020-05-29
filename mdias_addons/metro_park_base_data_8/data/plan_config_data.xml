@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+   <data>
+
+       <record id="plan_config_data_0" model="metro_park_maintenance.plan_config_data">
+           <field name="index">0</field>
+           <field name="rule" ref="repair_rule_Y1"/>
+       </record>
+
+       <record id="plan_config_data_1" model="metro_park_maintenance.plan_config_data">
+           <field name="index">1</field>
+           <field name="rule" ref="repair_rule_Y2" />
+       </record>
+
+       <record id="plan_config_data_2" model="metro_park_maintenance.plan_config_data">
+           <field name="index">2</field>
+           <field name="rule" ref="repair_rule_Y3"/>
+       </record>
+
+       <record id="plan_config_data_3" model="metro_park_maintenance.plan_config_data">
+           <field name="index">3</field>
+           <field name="rule" ref="repair_rule_Y4A" />
+       </record>
+
+       <record id="plan_config_data_4" model="metro_park_maintenance.plan_config_data">
+           <field name="index">4</field>
+           <field name="rule" ref="repair_rule_Y5A" />
+       </record>
+
+       <record id="plan_config_data_5" model="metro_park_maintenance.plan_config_data">
+           <field name="index">5</field>
+           <field name="rule" ref="repair_rule_Y6" />
+       </record>
+
+       <record id="plan_config_data_6" model="metro_park_maintenance.plan_config_data">
+           <field name="index">6</field>
+           <field name="rule" ref="repair_rule_Y7" />
+       </record>
+
+       <record id="plan_config_data_7" model="metro_park_maintenance.plan_config_data">
+           <field name="index">7</field>
+           <field name="rule" ref="repair_rule_Y8" />
+       </record>
+
+       <record id="plan_config_data_8" model="metro_park_maintenance.plan_config_data">
+           <field name="index">8</field>
+           <field name="rule" ref="repair_rule_Y9" />
+       </record>
+
+       <record id="plan_config_data_9" model="metro_park_maintenance.plan_config_data">
+           <field name="index">9</field>
+           <field name="rule" ref="repair_rule_Y10" />
+       </record>
+
+       <record id="plan_config_data_10" model="metro_park_maintenance.plan_config_data">
+           <field name="index">10</field>
+           <field name="rule" ref="repair_rule_Y11A" />
+       </record>
+
+       <record id="plan_config_data_11" model="metro_park_maintenance.plan_config_data">
+           <field name="index">11</field>
+           <field name="rule" ref="repair_rule_Y12" />
+       </record>
+
+       <!--  第二年    -->
+       <record id="plan_config_data_12" model="metro_park_maintenance.plan_config_data">
+           <field name="index">12</field>
+           <field name="rule" ref="repair_rule_Y1"/>
+       </record>
+
+       <record id="plan_config_data_13" model="metro_park_maintenance.plan_config_data">
+           <field name="index">13</field>
+           <field name="rule" ref="repair_rule_Y2" />
+       </record>
+
+       <record id="plan_config_data_14" model="metro_park_maintenance.plan_config_data">
+           <field name="index">14</field>
+           <field name="rule" ref="repair_rule_Y3"/>
+       </record>
+
+       <record id="plan_config_data_15" model="metro_park_maintenance.plan_config_data">
+           <field name="index">15</field>
+           <field name="rule" ref="repair_rule_Y4B" />
+       </record>
+
+       <record id="plan_config_data_16" model="metro_park_maintenance.plan_config_data">
+           <field name="index">16</field>
+           <field name="rule" ref="repair_rule_Y5B" />
+       </record>
+
+       <record id="plan_config_data_17" model="metro_park_maintenance.plan_config_data">
+           <field name="index">17</field>
+           <field name="rule" ref="repair_rule_Y6" />
+       </record>
+
+       <record id="plan_config_data_18" model="metro_park_maintenance.plan_config_data">
+           <field name="index">18</field>
+           <field name="rule" ref="repair_rule_Y7" />
+       </record>
+
+       <record id="plan_config_data_19" model="metro_park_maintenance.plan_config_data">
+           <field name="index">19</field>
+           <field name="rule" ref="repair_rule_Y8" />
+       </record>
+
+       <record id="plan_config_data_20" model="metro_park_maintenance.plan_config_data">
+           <field name="index">20</field>
+           <field name="rule" ref="repair_rule_Y9" />
+       </record>
+
+       <record id="plan_config_data_21" model="metro_park_maintenance.plan_config_data">
+           <field name="index">21</field>
+           <field name="rule" ref="repair_rule_Y10" />
+       </record>
+
+       <record id="plan_config_data_22" model="metro_park_maintenance.plan_config_data">
+           <field name="index">22</field>
+           <field name="rule" ref="repair_rule_Y11A" />
+       </record>
+
+       <record id="plan_config_data_23" model="metro_park_maintenance.plan_config_data">
+           <field name="index">23</field>
+           <field name="rule" ref="repair_rule_Y12" />
+       </record>
+
+        <!--  第三年 -->
+       <record id="plan_config_data_24" model="metro_park_maintenance.plan_config_data">
+           <field name="index">23</field>
+           <field name="rule" ref="repair_rule_Y1"/>
+       </record>
+
+       <record id="plan_config_data_25" model="metro_park_maintenance.plan_config_data">
+           <field name="index">25</field>
+           <field name="rule" ref="repair_rule_Y2" />
+       </record>
+
+       <record id="plan_config_data_26" model="metro_park_maintenance.plan_config_data">
+           <field name="index">26</field>
+           <field name="rule" ref="repair_rule_Y3"/>
+       </record>
+
+       <record id="plan_config_data_27" model="metro_park_maintenance.plan_config_data">
+           <field name="index">27</field>
+           <field name="rule" ref="repair_rule_Y4A" />
+       </record>
+
+       <record id="plan_config_data_28" model="metro_park_maintenance.plan_config_data">
+           <field name="index">28</field>
+           <field name="rule" ref="repair_rule_Y5A" />
+       </record>
+
+       <record id="plan_config_data_29" model="metro_park_maintenance.plan_config_data">
+           <field name="index">29</field>
+           <field name="rule" ref="repair_rule_Y6" />
+       </record>
+
+       <record id="plan_config_data_30" model="metro_park_maintenance.plan_config_data">
+           <field name="index">30</field>
+           <field name="rule" ref="repair_rule_Y7" />
+       </record>
+
+       <record id="plan_config_data_31" model="metro_park_maintenance.plan_config_data">
+           <field name="index">31</field>
+           <field name="rule" ref="repair_rule_Y8" />
+       </record>
+
+       <record id="plan_config_data_32" model="metro_park_maintenance.plan_config_data">
+           <field name="index">32</field>
+           <field name="rule" ref="repair_rule_Y9" />
+       </record>
+
+       <record id="plan_config_data_33" model="metro_park_maintenance.plan_config_data">
+           <field name="index">33</field>
+           <field name="rule" ref="repair_rule_Y10" />
+       </record>
+
+       <record id="plan_config_data_34" model="metro_park_maintenance.plan_config_data">
+           <field name="index">34</field>
+           <field name="rule" ref="repair_rule_Y11B" />
+       </record>
+
+       <record id="plan_config_data_35" model="metro_park_maintenance.plan_config_data">
+           <field name="index">35</field>
+           <field name="rule" ref="repair_rule_Y12" />
+       </record>
+
+       <!--  第四年 -->
+       <record id="plan_config_data_36" model="metro_park_maintenance.plan_config_data">
+           <field name="index">36</field>
+           <field name="rule" ref="repair_rule_Y1"/>
+       </record>
+
+       <record id="plan_config_data_37" model="metro_park_maintenance.plan_config_data">
+           <field name="index">37</field>
+           <field name="rule" ref="repair_rule_Y2" />
+       </record>
+
+       <record id="plan_config_data_38" model="metro_park_maintenance.plan_config_data">
+           <field name="index">38</field>
+           <field name="rule" ref="repair_rule_Y3"/>
+       </record>
+
+       <record id="plan_config_data_39" model="metro_park_maintenance.plan_config_data">
+           <field name="index">39</field>
+           <field name="rule" ref="repair_rule_Y4B" />
+       </record>
+
+       <record id="plan_config_data_40" model="metro_park_maintenance.plan_config_data">
+           <field name="index">40</field>
+           <field name="rule" ref="repair_rule_Y5B" />
+       </record>
+
+       <record id="plan_config_data_41" model="metro_park_maintenance.plan_config_data">
+           <field name="index">41</field>
+           <field name="rule" ref="repair_rule_Y6" />
+       </record>
+
+       <record id="plan_config_data_42" model="metro_park_maintenance.plan_config_data">
+           <field name="index">42</field>
+           <field name="rule" ref="repair_rule_Y7" />
+       </record>
+
+       <record id="plan_config_data_43" model="metro_park_maintenance.plan_config_data">
+           <field name="index">43</field>
+           <field name="rule" ref="repair_rule_Y8" />
+       </record>
+
+       <record id="plan_config_data_44" model="metro_park_maintenance.plan_config_data">
+           <field name="index">44</field>
+           <field name="rule" ref="repair_rule_Y9" />
+       </record>
+
+       <record id="plan_config_data_45" model="metro_park_maintenance.plan_config_data">
+           <field name="index">45</field>
+           <field name="rule" ref="repair_rule_Y10" />
+       </record>
+
+       <record id="plan_config_data_46" model="metro_park_maintenance.plan_config_data">
+           <field name="index">46</field>
+           <field name="rule" ref="repair_rule_Y11A" />
+       </record>
+
+       <record id="plan_config_data_47" model="metro_park_maintenance.plan_config_data">
+           <field name="index">47</field>
+           <field name="rule" ref="repair_rule_Y12" />
+       </record>
+
+       <!--  第五年 -->
+       <record id="plan_config_data_48" model="metro_park_maintenance.plan_config_data">
+           <field name="index">48</field>
+           <field name="rule" ref="repair_rule_Y1"/>
+       </record>
+
+       <record id="plan_config_data_49" model="metro_park_maintenance.plan_config_data">
+           <field name="index">49</field>
+           <field name="rule" ref="repair_rule_Y2" />
+       </record>
+
+       <record id="plan_config_data_50" model="metro_park_maintenance.plan_config_data">
+           <field name="index">50</field>
+           <field name="rule" ref="repair_rule_Y3"/>
+       </record>
+
+       <record id="plan_config_data_51" model="metro_park_maintenance.plan_config_data">
+           <field name="index">51</field>
+           <field name="rule" ref="repair_rule_Y4A" />
+       </record>
+
+       <record id="plan_config_data_52" model="metro_park_maintenance.plan_config_data">
+           <field name="index">52</field>
+           <field name="rule" ref="repair_rule_Y5A" />
+       </record>
+
+       <record id="plan_config_data_53" model="metro_park_maintenance.plan_config_data">
+           <field name="index">53</field>
+           <field name="rule" ref="repair_rule_Y6" />
+       </record>
+
+       <record id="plan_config_data_54" model="metro_park_maintenance.plan_config_data">
+           <field name="index">54</field>
+           <field name="rule" ref="repair_rule_Y7" />
+       </record>
+
+       <record id="plan_config_data_55" model="metro_park_maintenance.plan_config_data">
+           <field name="index">55</field>
+           <field name="rule" ref="repair_rule_Y8" />
+       </record>
+
+       <record id="plan_config_data_56" model="metro_park_maintenance.plan_config_data">
+           <field name="index">56</field>
+           <field name="rule" ref="repair_rule_Y9" />
+       </record>
+
+       <record id="plan_config_data_57" model="metro_park_maintenance.plan_config_data">
+           <field name="index">57</field>
+           <field name="rule" ref="repair_rule_Y10" />
+       </record>
+
+       <record id="plan_config_data_58" model="metro_park_maintenance.plan_config_data">
+           <field name="index">58</field>
+           <field name="rule" ref="repair_rule_Y11A" />
+       </record>
+
+       <record id="plan_config_data_59" model="metro_park_maintenance.plan_config_data">
+           <field name="index">59</field>
+           <field name="rule" ref="repair_rule_Y12" />
+       </record>
+
+       <!--  第六年 -->
+       <record id="plan_config_data_60" model="metro_park_maintenance.plan_config_data">
+           <field name="index">60</field>
+           <field name="rule" ref="repair_rule_Y1"/>
+       </record>
+
+       <record id="plan_config_data_61" model="metro_park_maintenance.plan_config_data">
+           <field name="index">61</field>
+           <field name="rule" ref="repair_rule_Y2" />
+       </record>
+
+       <record id="plan_config_data_62" model="metro_park_maintenance.plan_config_data">
+           <field name="index">62</field>
+           <field name="rule" ref="repair_rule_Y3"/>
+       </record>
+
+       <record id="plan_config_data_63" model="metro_park_maintenance.plan_config_data">
+           <field name="index">63</field>
+           <field name="rule" ref="repair_rule_Y4B" />
+       </record>
+
+       <record id="plan_config_data_64" model="metro_park_maintenance.plan_config_data">
+           <field name="index">64</field>
+           <field name="rule" ref="repair_rule_Y5B" />
+       </record>
+
+       <record id="plan_config_data_65" model="metro_park_maintenance.plan_config_data">
+           <field name="index">65</field>
+           <field name="rule" ref="repair_rule_Y6" />
+       </record>
+
+       <record id="plan_config_data_66" model="metro_park_maintenance.plan_config_data">
+           <field name="index">66</field>
+           <field name="rule" ref="repair_rule_Y7" />
+       </record>
+
+       <record id="plan_config_data_67" model="metro_park_maintenance.plan_config_data">
+           <field name="index">67</field>
+           <field name="rule" ref="repair_rule_Y8" />
+       </record>
+
+       <record id="plan_config_data_68" model="metro_park_maintenance.plan_config_data">
+           <field name="index">68</field>
+           <field name="rule" ref="repair_rule_Y9" />
+       </record>
+
+       <record id="plan_config_data_69" model="metro_park_maintenance.plan_config_data">
+           <field name="index">69</field>
+           <field name="rule" ref="repair_rule_Y10" />
+       </record>
+
+       <record id="plan_config_data_70" model="metro_park_maintenance.plan_config_data">
+           <field name="index">58</field>
+           <field name="rule" ref="repair_rule_Y11B" />
+       </record>
+
+       <record id="plan_config_data_71" model="metro_park_maintenance.plan_config_data">
+           <field name="index">71</field>
+           <field name="rule" ref="repair_rule_Y12" />
+       </record>
+
+   </data>
+</odoo>

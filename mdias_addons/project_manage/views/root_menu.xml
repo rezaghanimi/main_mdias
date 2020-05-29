@@ -1,0 +1,5 @@
+<odoo>
+    <data>
+        <menuitem font_icon="fa fa-medium" id="project_manage.menu_root" name="项目管理"/>
+    </data>
+</odoo>

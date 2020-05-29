@@ -1,0 +1,38 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="tcms_pressure_switch_tree_id">
+            <field name="name">总风压力旁路开关</field>
+            <field name="model">tcms.pressure_switch</field>
+            <field name="arch" type="xml">
+                <tree create="0">
+                    <field name="name"/>
+                    <field name="switch"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="tcms_pressure_switch_form_id">
+            <field name="name">总风压力旁路开关</field>
+            <field name="model">tcms.pressure_switch</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="name"/>
+                        <field name="switch"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="tcms_pressure_switch_window_id">
+            <field name="name">总风压力旁路开关</field>
+            <field name="res_model">tcms.pressure_switch</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="tcms_pressure_switch_window_id"
+                  parent="tcms_tcms_act_menu_parent_id"
+                  id="tcms_pressure_switch_menu_id"
+                  name="总风压力旁路开关"/>
+    </data>
+</odoo>

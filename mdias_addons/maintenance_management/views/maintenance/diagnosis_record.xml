@@ -1,0 +1,51 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="maintenance_management_diagnosis_record_tree_id">
+            <field name="name">诊断日志</field>
+            <field name="model">maintenance_management.diagnosis_record</field>
+            <field name="arch" type="xml">
+                <tree js_class="export_tree_button"
+                      options="{'height': 'full-270'}"
+                      create="0"
+                      search_ex_template="diagnosis_record_template">
+                    <field name="write_date" width="200" string="记录时间"/>
+                    <field name="failure_time" width="200"/>
+                    <field name="place"/>
+                    <field name="site" width="200"/>
+                    <field name="equipment" width="200"/>
+                    <field name="content" width="450"/>
+                    <field name="ip_site" width="200"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="maintenance_management_diagnosis_record_form_id">
+            <field name="name">诊断日志</field>
+            <field name="model">maintenance_management.diagnosis_record</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="write_date"/>
+                        <field name="place"/>
+                        <field name="site"/>
+                        <field name="equipment"/>
+                        <field name="content"/>
+                        <field name="ip_site"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="maintenance_management_diagnosis_record_act_id">
+            <field name="name">诊断日志</field>
+            <field name="res_model">maintenance_management.diagnosis_record</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="maintenance_management_diagnosis_record_act_id"
+                  id="maintenance_management_diagnosis_record_menu_id"
+                  name="日志记录" parent="maintenance_system_set_menu"
+                  groups="group_maintenance_management_device_monitor_log_look"/>
+    </data>
+</odoo>

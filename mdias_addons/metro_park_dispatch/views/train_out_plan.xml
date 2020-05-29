@@ -1,0 +1,154 @@
+<odoo>
+    <data>
+
+        <!-- 发车计划监控 -->
+        <record model="ir.ui.view" id="metro_park_dispatch.train_out_plan_monitor_list">
+            <field name="name">发车计划</field>
+            <field name="model">metro_park_dispatch.train_out_plan</field>
+            <field name="arch" type="xml">
+                <tree js_class="RunPlanMonitorList" editable="top" create="0" options="{'height':'full-500'}" search_ex_template="metro_park_dispatch.train_out_plan_search_plan">
+                    <field name="train_id" width="80" options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                    <field name="plan_train_no" width="90"/>
+                    <field name="plan_out_location" width="90" invisible="1" />
+                    <field name="plan_out_rail" width="90" options="{'no_create_edit': True,'no_open': True, 'no_create':True}" />
+                    <field name="plan_out_end_rail" string="转换轨道" width="80" options="{'no_create_edit': True,'no_open': True, 'no_create':True}" />
+                    <field name="plan_out_time" widget="FTime" width="100" />
+                    <field name="exchange_rail_time" widget="FTime" width="100" />
+                    <field name="state" widget="template_widget" options="{'template': 'train_out_status_btns'}" width="80"/>
+                    <field name="button" widget="template_widget" readonly="1" fixed_right="1" options="{'template': 'out_plan_operation_btns'}"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_dispatch.train_out_plan_list">
+            <field name="name">发车计划</field>
+            <field name="model">metro_park_dispatch.train_out_plan</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table"
+                      editable="top"
+                      create="0"
+                      options="{'height':'full-340'}"
+                      default_order="date desc"
+                      search_ex_template="metro_park_dispatch.train_out_plan_search">
+                    <field name="date" />
+                    <field name="plan_train_no" width="90" />
+                    <field name="real_train_no" width="80" readonly="1"/>
+                    <field name="train_id"
+                           width="120"
+                           options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                    <field name="plan_out_location"
+                           width="120"
+                           options="{'no_create_edit': True,'no_open': True, 'no_create':True}" />
+                    <field name="plan_out_rail"
+                           width="100"
+                           string="轨道"
+                           options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                    <field name="plan_out_end_rail"
+                           string="转换轨道"
+                           width="80"
+                           options="{'no_create_edit': True,'no_open': True, 'no_create':True}" />
+                    <field name="exchange_rail_time" width="120" />
+                    <field name="plan_out_time" widget="FTime" width="120" />
+                    <field name="real_out_time" widget="FTime" width="120" readonly="1" />
+                    <field name="state"
+                           fixed_right="1"
+                           widget="template_widget"
+                           options="{'template': 'train_out_status_btns'}"
+                           width="80"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_dispatch.train_out_plan_form">
+            <field name="name">发车计划</field>
+            <field name="model">metro_park_dispatch.train_out_plan</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="exchange_rail_time">exchange_rail_time</label>
+                        <div class="col-sm-3">
+                            <field name="exchange_rail_time"/>
+                        </div>
+                        <field name="day_plan_id" attrs="{'invisible': 1}"/>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="plan_train_no">plan_train_no</label>
+                        <div class="col-sm-3">
+                            <field name="plan_train_no"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="real_train_no">real_train_no</label>
+                        <div class="col-sm-3">
+                            <field name="real_train_no"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="train_id">train_id</label>
+                        <div class="col-sm-3">
+                            <field name="train_id" options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="plan_out_location">plan_out_location</label>
+                        <div class="col-sm-3">
+                            <field name="plan_out_location"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="plan_out_rail">plan_out_rail</label>
+                        <div class="col-sm-3">
+                            <field name="plan_out_rail"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="plan_out_end_rail">plan_out_end_rail</label>
+                        <div class="col-sm-3">
+                            <field name="plan_out_end_rail" string="转换轨道" width="80" options="{'no_create_edit': True,'no_open': True, 'no_create':True}" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="plan_out_time">plan_out_time</label>
+                        <div class="col-sm-3">
+                            <field name="plan_out_time"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="real_out_time">real_out_time</label>
+                        <div class="col-sm-3">
+                            <field name="real_out_time"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="state">state</label>
+                        <div class="col-sm-3">
+                            <field name="state"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="remark">remark</label>
+                        <div class="col-sm-3">
+                            <field name="remark"/>
+                        </div>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="metro_park_dispatch.train_out_plan_act_server" model="ir.actions.server">
+            <field name="name">发车作业</field>
+            <field name="type">ir.actions.server</field>
+            <field name="model_id" ref="model_metro_park_dispatch_train_out_plan" />
+            <field name="state">code</field>
+            <field name="code">
+                action = model.get_all_out_plan_action()
+            </field>
+        </record>
+
+        <menuitem action="metro_park_dispatch.train_out_plan_act_server"
+                  id="metro_park_dispatch.train_out_plan_menu"
+                  name="发车作业"
+                  parent="metro_park_dispatch.train_turn_in_out_plan_root_menu"
+                  groups="category_start_collect_homework"/>
+    </data>
+</odoo>
+
+
+    

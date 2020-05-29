@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <!-- menu -->
+    <t t-extend="Menu">
+        <t t-jquery=".o_main_navbar" t-operation="replace">
+            <div class="o_main_navbar">
+                <div class="logo_box">
+                    <img src="/static/img/logo" />
+                </div>
+                <div class="o_menu_apps"/>
+                <ul class="o_menu_systray"/>
+            </div>
+        </t>
+    </t>
+    <t t-extend="AppsMenu">
+        <t t-jquery=".dropdown" t-operation="replace">
+            <ul class="nav nav-pills nav-tabs-btn" role="tablist">
+                <t t-foreach="widget.getApps()" t-as="app">
+                    <li class="nav-item">
+                        <t t-if="!app.children.length">
+                            <a class="nav-link"
+                                data-toggle="tab"
+                                t-attf-href="#menu_id=#{app.id}&amp;action=#{app.action ? app.action.split(',')[1] : ''}"
+                                t-att-data-menu-id="app.menuID"
+                                t-att-data-menu-xmlid="app.xmlID"
+                                t-att-data-action-id="app.actionID">
+                                <span class="nav-link-icon">
+                                    <i t-attf-class="nav-icon #{app.font_icon? app.font_icon : widget.get_default_icon(app)}"></i>
+                                </span>
+                                <span class="nav-link-title">
+                                    <t t-esc="app.name"/>
+                                </span>
+                            </a>
+                        </t>
+                        <t t-else="">
+                            <a class="nav-link"
+                                data-toggle="tab"
+                                t-attf-href="#funenc_tabs_{{app.menuID}}"
+                                t-att-data-menu-id="app.menuID"
+                                t-att-data-menu-xmlid="app.xmlID"
+                                t-att-data-action-id="app.actionID">
+                                <span class="nav-link-icon">
+                                    <i t-attf-class="nav-icon #{app.font_icon? app.font_icon : widget.get_default_icon(app)}"></i>
+                                </span>
+                                <span class="nav-link-title">
+                                    <t t-esc="app.name"/>
+                                </span>
+                            </a>
+                        </t>
+                    </li>
+                </t>
+                <!-- 更多下拉 -->
+                <li class="view_more">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <span class="fa fa-caret-down"></span></a>
+                    <div class="dropdown-menu" role="menu" />
+                </li>
+            </ul>
+        </t>
+    </t>
+    <!-- secondary more menu -->
+    <t t-name="funenc_side_bar_menu">
+        <div class="left-sidebar">
+            <t t-foreach="widget.menuData.children" t-as="first_level_menu">
+                <div t-attf-id="funenc_tabs_{{first_level_menu.id}}"
+                    class="funenc_sub_menu_section scroll-sidebar ps-container ps-theme-default ps-active-y tab-pane fade"
+                    data-suppress-scroll-x="true">
+                    <nav class="sidebar-nav">
+                        <ul class="sidebarnavSec">
+                            <t t-foreach="first_level_menu.children" t-as="second_level_menu">
+                                <t t-call="Funenc.Menu.link">
+                                    <t t-set="depth" t-value="0"/>
+                                    <t t-set="menu" t-value="second_level_menu"/></t>
+                            </t>
+                        </ul>
+                    </nav>
+                </div>
+            </t>
+        </div>
+    </t>
+    <!-- second or more depth -->
+    <t t-name="Funenc.Menu.link">
+        <t t-set="depth" t-value="(depth || 0) + 1"/>
+        <t t-if="!menu.children.length">
+            <li class="sidebar-item">
+                <a t-attf-class="sidebar-link waves-effect waves-dark sidebar-link o_menu_entry_lvl_#{depth}"
+                    t-attf-href="#menu_id=#{menu.id}&amp;action=#{menu.action ? menu.action.split(',')[1] : ''}"
+                    t-att-data-menu="menu.id"
+                    t-att-data-action-model="menu.action ? menu.action.split(',')[0] : ''"
+                    t-att-data-action-id="menu.action ? menu.action.split(',')[1] : ''"
+                    t-att-data-menu-xmlid="menu.xmlid">
+                    <!-- <i t-attf-class="nav-icon #{menu.font_icon? menu.font_icon : widget.get_default_icon(menu)}"></i> -->
+                    <span class="hide-menu">
+                        <t t-esc="menu.name"/>
+                    </span>
+                </a>
+            </li>
+        </t>
+        <t t-else="">
+            <!-- 有子级的情况显示名称，但没有链接，这里还要做个收缩功能  -->
+            <li class="sidebar-item">
+                <a t-attf-class="sidebar-link has-arrow waves-effect waves-dark o_menu_entry_lvl_#{depth}"
+                    href="javascript:void(0)">
+                    <!-- <i t-attf-class="nav-icon #{menu.font_icon? menu.font_icon : widget.get_default_icon(menu)}"></i> -->
+                    <span class="hide-menu">
+                        <t t-esc="menu.name"/>
+                    </span>
+                    <!-- <span class="badge badge-pill badge-info ml-auto m-r-15">3</span> -->
+                </a>
+                <ul class="collapse first-level" aria-expanded="false">
+                    <t t-foreach="menu.children" t-as="menu">
+                        <t t-call="Funenc.Menu.link" />
+                    </t>
+                </ul>
+            </li>
+        </t>
+    </t>
+
+    <t t-name="funenc.more_item">
+        <a class="dropdown-item"
+            data-toggle="tab"
+            t-attf-href="#funenc_tabs_{{menu_id}}"
+            t-att-data-menu-id="menu_id"
+            t-att-data-menu-xmlid="xml_id"
+            t-att-data-action-id="action_id">
+            <span class="nav-link-title">
+                <t t-esc="name"/>
+            </span>
+        </a>
+    </t>
+
+</templates>

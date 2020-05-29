@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.module.category" id="category_base_data_role">
+            <field name="name">基础角色</field>
+        </record>
+
+        <record id="base_data_group_operation_leader" model="res.groups">
+            <field name="name">运营公司领导</field>
+            <field name="comment">运营公司领导</field>
+            <field name="category_id" ref="category_base_data_role"/>
+            <field name="implied_ids"
+                   eval="[
+                   (4, ref('metro_park_dispatch.group_dispatch_car_index_page_look')),
+                   (4, ref('metro_park_production.group_production_manage_indicator_waring_page_look')),
+                   (4, ref('metro_park_production.group_production_manage_statistical_form_page_look')),
+                   (4, ref('metro_park_production.group_production_manage_archive_page_look')),
+                  ]"/>
+        </record>
+
+        <record id="base_data_group_car_center_leader" model="res.groups">
+            <field name="name">车辆中心领导</field>
+            <field name="comment">车辆中心领导</field>
+            <field name="category_id" ref="category_base_data_role"/>
+            <field name="implied_ids"
+                   eval="[
+                   (4, ref('metro_park_dispatch.group_dispatch_car_index_page_look')),
+                   (4, ref('metro_park_production.group_production_manage_plan_page_look')),
+                   (4, ref('metro_park_production.group_production_manage_indicator_waring_page_look')),
+                   (4, ref('metro_park_production.group_production_manage_statistical_form_page_look')),
+                   (4, ref('metro_park_production.group_production_manage_archive_page_look')),
+                  ]"/>
+        </record>
+
+        <record id="base_data_group_branch_leader" model="res.groups">
+            <field name="name">运营分公司领导</field>
+            <field name="comment">运营分公司领导</field>
+            <field name="category_id" ref="category_base_data_role"/>
+            <field name="implied_ids"
+                   eval="[
+                   (4, ref('metro_park_dispatch.group_dispatch_car_index_page_look')),
+                   (4, ref('metro_park_production.group_production_manage_plan_page_look')),
+                   (4, ref('metro_park_production.group_production_manage_indicator_waring_page_look')),
+                   (4, ref('metro_park_production.group_production_manage_statistical_form_page_look')),
+                   (4, ref('metro_park_production.group_production_manage_archive_page_look')),
+                  ]"/>
+        </record>
+
+        <record id="base_data_group_branch_parker" model="res.groups">
+            <field name="name">场调</field>
+            <field name="comment">运营分公司场调</field>
+            <field name="category_id" ref="category_base_data_role"/>
+            <field name="implied_ids"
+                   eval="[
+                  (4, ref('metro_park_dispatch.group_dispatch_car_index_page_look')),
+                  (4, ref('metro_park_dispatch.group_dispatch_car_construction_page_look')),
+                  (4, ref('metro_park_dispatch.group_dispatch_car_construction_manual_synchronizing')),
+                  (4, ref('metro_park_dispatch.group_dispatch_car_construction_auto_synchronizing')),
+                  (4, ref('metro_park_dispatch.group_dispatch_car_send_receive_car_page_look')),
+                  (4, ref('metro_park_dispatch.group_dispatch_car_send_receive_car_send_receiver')),
+                  (4, ref('metro_park_dispatch.group_dispatch_car_send_receive_car_edit_plan')),
+                  (4, ref('metro_park_dispatch.group_dispatch_car_send_receive_car_release')),
+                  (4, ref('metro_park_dispatch.group_dispatch_car_send_receive_car_send_operation')),
+                  (4, ref('metro_park_dispatch.group_dispatch_car_send_receive_car_receive_operation')),
+                  (4, ref('metro_park_dispatch.group_dispatch_audit_view_detail')),
+                  (4, ref('metro_park_dispatch.group_dispatch_audit_pass')),
+                  (4, ref('metro_park_dispatch.group_dispatch_car_management_dispatch_car_approve_reject')),
+                  (4, ref('metro_park_dispatch.group_dispatch_audit_make_dispatch_notice')),
+                  (4, ref('metro_park_dispatch.group_dispatch_audit_view_manage_excute_detail')),
+                  (4, ref('metro_park_dispatch.group_dispatch_audit_view_excute_detail')),
+                  (4, ref('metro_park_dispatch.group_dispatch_audit_view_release')),
+                  (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_page_look')),
+                  (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_position')),
+                  (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_fault_report')),
+                  (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_fault_relieve')),
+                  (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_detain')),
+                  (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_un_detain')),
+                  (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_look_job_ticket')),
+                  (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_plan_create')),
+                  (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_plan_look')),
+                  (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_repair_job')),
+                  (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_job_rehearse')),
+                  (4, ref('metro_park_dispatch.group_dispatch_car_management_run_car_manage_look_page')),
+                  (4, ref('metro_park_dispatch.group_dispatch_car_management_run_car_manage_init')),
+                  (4, ref('metro_park_dispatch.group_dispatch_car_management_run_car_manage_manual_synchronizing')),
+                  (4, ref('metro_park_dispatch.group_dispatch_car_management_run_car_manage_detain')),
+                  (4, ref('metro_park_dispatch.group_dispatch_car_management_run_car_manage_fault_report')),
+                  (4, ref('metro_park_dispatch.group_dispatch_car_management_dispatch_run_diagram_page_look')),
+                  (4, ref('metro_park_dispatch.group_dispatch_car_management_dispatch_run_diagram_manage')),
+                  (4, ref('metro_park_production.group_production_manage_handover_work_page_look')),
+                  (4, ref('metro_park_production.group_production_manage_indicator_waring_page_look')),
+                  (4, ref('metro_park_production.group_production_manage_statistical_form_page_look')),
+                  (4, ref('metro_park_production.group_production_manage_archive_page_look')),
+                  (4, ref('metro_park_production.group_production_manage_handover_work_signaler')),
+                  (4, ref('metro_park_production.group_production_manage_handover_work_parker')),
+                  (4, ref('metro_park_production.group_production_manage_handover_work_checker')),
+                  (4, ref('odoo_groups_manage.permission_manage')),
+                  (4, ref('odoo_groups_manage.role_manage')),
+                  (4, ref('metro_park_dispatch.category_start_collect_homework')),
+                  (4, ref('metro_park_dispatch.category_collect_homework')),
+                  (4, ref('metro_park_dispatch.group_dispatch_car_construction_auto_synchronizing')),
+                  ]"/>
+        </record>
+
+        <record id="base_data_group_branch_dispatcher" model="res.groups">
+            <field name="name">派班员</field>
+            <field name="comment">运营分公司派班员</field>
+            <field name="category_id" ref="category_base_data_role"/>
+            <field name="implied_ids"
+                   eval="[
+                   (4, ref('metro_park_production.group_production_manage_handover_work_page_look')),
+                   (4, ref('metro_park_production.group_production_manage_indicator_waring_page_look')),
+                   (4, ref('metro_park_production.group_production_manage_archive_page_look')),
+                   (4, ref('odoo_groups_manage.permission_manage')),
+                   (4, ref('odoo_groups_manage.role_manage')),
+                  ]"/>
+        </record>
+
+        <record id="base_data_group_branch_signaler" model="res.groups">
+            <field name="name">信号楼调度</field>
+            <field name="comment">运营分公司信号楼调度</field>
+            <field name="category_id" ref="category_base_data_role"/>
+            <field name="implied_ids"
+                   eval="[
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_page_look')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_fault_report')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_run_car_manage_look_page')),
+                   (4, ref('metro_park_dispatch.category_start_collect_homework')),
+                   (4, ref('metro_park_dispatch.category_collect_homework')),
+                   (4, ref('metro_park_production.group_production_manage_handover_work_page_look')),
+                   (4, ref('metro_park_production.group_production_manage_indicator_waring_page_look')),
+                   (4, ref('metro_park_production.group_production_manage_statistical_form_page_look')),
+                   (4, ref('metro_park_production.group_production_manage_archive_page_look')),
+                   (4, ref('odoo_groups_manage.permission_manage')),
+                   (4, ref('odoo_groups_manage.role_manage')),
+                  ]"/>
+        </record>
+
+        <record id="base_data_group_branch_checker" model="res.groups">
+            <field name="name">调车班组</field>
+            <field name="comment">运营分公司调车班组</field>
+            <field name="category_id" ref="category_base_data_role"/>
+            <field name="implied_ids"
+                   eval="[
+                   (4, ref('metro_park_dispatch.group_dispatch_car_construction_page_look')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_construction_manual_synchronizing')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_dispatch_car_apply_page_look')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_dispatch_car_apply_create')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_dispatch_car_apply_edit')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_dispatch_car_apply_submit')),
+                   (4, ref('metro_park_dispatch.group_dispatch_audit_reback')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_page_look')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_fault_report')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_run_car_manage_look_page')),
+                   (4, ref('metro_park_production.group_production_manage_handover_work_page_look')),
+                   (4, ref('metro_park_production.group_production_manage_indicator_waring_page_look')),
+                   (4, ref('metro_park_production.group_production_manage_statistical_form_page_look')),
+                   (4, ref('metro_park_production.group_production_manage_archive_page_look')),
+                   (4, ref('odoo_groups_manage.permission_manage')),
+                   (4, ref('odoo_groups_manage.role_manage')),
+                   (4, ref('metro_park_dispatch.category_start_collect_homework')),
+                   (4, ref('metro_park_dispatch.category_collect_homework')),
+                  ]"/>
+        </record>
+
+        <record id="base_data_group_car_center_checker" model="res.groups">
+            <field name="name">检修调度</field>
+            <field name="comment">车辆中心检修调度</field>
+            <field name="category_id" ref="category_base_data_role"/>
+            <field name="implied_ids"
+                   eval="[
+                   (4, ref('metro_park_dispatch.group_dispatch_car_index_page_look')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_construction_page_look')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_construction_manual_synchronizing')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_construction_auto_synchronizing')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_send_receive_car_page_look')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_dispatch_car_apply_page_look')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_dispatch_car_apply_create')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_dispatch_car_apply_edit')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_dispatch_car_apply_submit')),
+                   (4, ref('metro_park_dispatch.group_dispatch_audit_reback')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_page_look')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_fault_relieve')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_detain')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_un_detain')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_apply_create')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_look_job_ticket')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_repair_job')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_run_car_manage_look_page')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_run_car_manage_init')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_run_car_manage_manual_synchronizing')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_run_car_manage_detain')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_run_car_manage_fault_report')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_dispatch_run_diagram_page_look')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_plan_compile_year_page_look')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_plan_compile_year_edit_plan')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_plan_compile_month_page_look')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_plan_compile_month_edit_plan')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_plan_compile_week_page_look')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_plan_compile_week_edit_plan')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_plan_compile_day_page_look')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_plan_compile_day_edit_plan')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_work_order_page_look')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_work_order_assign_work')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_work_order_finish_work_confirm')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_work_order_force_close')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_work_order_order_cancellation')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_work_order_edit')),
+                   (4, ref('metro_park_production.group_production_manage_plan_page_look')),
+                   (4, ref('metro_park_production.group_production_manage_handover_work_page_look')),
+                   (4, ref('metro_park_production.group_production_manage_indicator_waring_page_look')),
+                   (4, ref('metro_park_production.group_production_manage_statistical_form_page_look')),
+                   (4, ref('metro_park_production.group_production_manage_archive_page_look')),
+                   (4, ref('odoo_groups_manage.permission_manage')),
+                   (4, ref('odoo_groups_manage.role_manage')),
+                   (4, ref('funenc_wechat.group_funenc_wechat_manager')),
+                   (4, ref('metro_park_dispatch.category_start_collect_homework')),
+                   (4, ref('metro_park_dispatch.category_collect_homework')),
+                  ]"/>
+        </record>
+
+        <record id="base_data_group_car_center_dispatcher" model="res.groups">
+            <field name="name">检修班组</field>
+            <field name="comment">车辆中心检修班组</field>
+            <field name="category_id" ref="category_base_data_role"/>
+            <field name="implied_ids"
+                   eval="[
+                   (4, ref('metro_park_dispatch.group_dispatch_car_construction_page_look')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_work_order_page_look')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_work_order_start_work')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_work_order_finish_work')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_work_order_receive_report')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_work_order_forwarding_report')),
+                   (4, ref('metro_park_production.group_production_manage_plan_page_look')),
+                  ]"/>
+        </record>
+
+        <record id="base_data_group_dispatcher" model="res.groups">
+            <field name="name">维保人员</field>
+            <field name="comment">维保人员</field>
+            <field name="category_id" ref="category_base_data_role"/>
+            <field name="implied_ids"
+                   eval="[
+                   (4, ref('maintenance_management.group_maintenance_management_device_monitor_server_status')),
+                   (4, ref('maintenance_management.group_maintenance_management_device_monitor_alarm_look')),
+                   (4, ref('maintenance_management.group_maintenance_management_device_monitor_log_look')),
+                   (4, ref('maintenance_management.group_maintenance_management_configuration_file')),
+                   (4, ref('maintenance_management.group_maintenance_page_action_record')),
+                   (4, ref('maintenance_management.group_maintenance_tcms_data')),
+                  ]"/>
+        </record>
+
+        <record id="base_data_group_admin" model="res.groups">
+            <field name="name">系统管理员</field>
+            <field name="comment">系统管理员</field>
+            <field name="category_id" ref="category_base_data_role"/>
+            <field name="implied_ids"
+                   eval="[
+                   (4, ref('metro_park_dispatch.group_dispatch_car_index_page_look')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_construction_page_look')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_construction_manual_synchronizing')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_send_receive_car_page_look')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_send_receive_car_send_receiver')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_send_receive_car_edit_plan')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_send_receive_car_release')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_send_receive_car_send_operation')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_send_receive_car_receive_operation')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_dispatch_car_apply_page_look')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_dispatch_car_apply_create')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_dispatch_car_apply_edit')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_dispatch_car_apply_submit')),
+                   (4, ref('metro_park_dispatch.group_dispatch_audit_reback')),
+                   (4, ref('metro_park_dispatch.group_dispatch_audit_view_detail')),
+                   (4, ref('metro_park_dispatch.group_dispatch_audit_pass')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_dispatch_car_approve_reject')),
+                   (4, ref('metro_park_dispatch.group_dispatch_audit_make_dispatch_notice')),
+                   (4, ref('metro_park_dispatch.group_dispatch_audit_view_manage_excute_detail')),
+                   (4, ref('metro_park_dispatch.group_dispatch_audit_view_excute_detail')),
+                   (4, ref('metro_park_dispatch.group_dispatch_audit_view_release')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_page_look')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_position')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_fault_report')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_fault_relieve')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_detain')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_un_detain')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_apply_create')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_look_job_ticket')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_plan_create')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_plan_look')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_repair_job')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_battlefield_map_job_rehearse')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_run_car_manage_look_page')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_run_car_manage_init')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_run_car_manage_manual_synchronizing')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_run_car_manage_detain')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_run_car_manage_fault_report')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_dispatch_run_diagram_page_look')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_dispatch_run_diagram_manage')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_plan_compile_year_page_look')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_plan_compile_year_edit_plan')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_plan_compile_month_page_look')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_plan_compile_month_edit_plan')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_plan_compile_week_page_look')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_plan_compile_week_edit_plan')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_plan_compile_day_page_look')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_plan_compile_day_edit_plan')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_work_order_page_look')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_work_order_assign_work')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_work_order_start_work')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_work_order_finish_work')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_work_order_finish_work_confirm')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_work_order_force_close')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_work_order_order_cancellation')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_work_order_receive_report')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_work_order_forwarding_report')),
+                   (4, ref('metro_park_maintenance.group_car_service_flow_work_order_edit')),
+                   (4, ref('metro_park_maintenance.group_car_service_log_record')),
+                   (4, ref('metro_park_production.group_production_manage_plan_page_look')),
+                   (4, ref('metro_park_production.group_production_manage_handover_work_page_look')),
+                   (4, ref('metro_park_production.group_production_manage_indicator_waring_page_look')),
+                   (4, ref('metro_park_production.group_production_manage_statistical_form_page_look')),
+                   (4, ref('metro_park_production.group_production_manage_indicator_waring_threshold_value')),
+                   (4, ref('metro_park_production.group_production_manage_statistical_form_construction_task')),
+                   (4, ref('metro_park_production.group_production_manage_statistical_form_dispatch_plan')),
+                   (4, ref('metro_park_production.group_production_manage_bi')),
+                   (4, ref('metro_park_production.group_production_manage_statistical_form_car_service')),
+                   (4, ref('metro_park_production.group_production_manage_log_xls_export')),
+                   (4, ref('metro_park_production.group_production_manage_work_table')),
+                   (4, ref('metro_park_production.group_production_manage_log_page_look')),
+                   (4, ref('metro_park_production.group_production_manage_archive_page_look')),
+                   (4, ref('metro_park_production.group_production_manage_screen_edit_public')),
+                   (4, ref('metro_park_production.group_production_manage_handover_work_signaler')),
+                   (4, ref('metro_park_production.group_production_manage_handover_work_parker')),
+                   (4, ref('metro_park_production.group_production_manage_handover_work_checker')),
+                   (4, ref('metro_park_production.group_production_manage_handover_work_dispatcher')),
+                   (4, ref('maintenance_management.group_maintenance_management_device_monitor_server_status')),
+                   (4, ref('maintenance_management.group_maintenance_management_device_monitor_alarm_look')),
+                   (4, ref('maintenance_management.group_maintenance_management_device_monitor_log_look')),
+                   (4, ref('maintenance_management.group_maintenance_management_configuration_file')),
+                   (4, ref('maintenance_management.group_maintenance_page_action_record')),
+                   (4, ref('maintenance_management.group_maintenance_tcms_data')),
+                   (4, ref('odoo_groups_manage.permission_manage')),
+                   (4, ref('odoo_groups_manage.role_manage')),
+                   (4, ref('metro_park_base.group_sys_setting_users_management')),
+                   (4, ref('metro_park_base.group_sys_setting_department_management')),
+                   (4, ref('metro_park_base.group_position_type')),
+                   (4, ref('metro_park_base.group_battlefield_figure')),
+                   (4, ref('metro_park_base.group_track_type')),
+                   (4, ref('metro_park_base.group_base_area_management')),
+                   (4, ref('metro_park_base.group_base_switch_management')),
+                   (4, ref('metro_park_base.group_base_power_supply_division')),
+                   (4, ref('metro_park_base.group_base_signal')),
+                   (4, ref('metro_park_base.group_base_equipment_professional')),
+                   (4, ref('metro_park_base.group_base_professional_system')),
+                   (4, ref('metro_park_base.group_base_equipment_specifications')),
+                   (4, ref('metro_park_base.category_sys_system_configuration')),
+                   (4, ref('metro_park_base.category_sys_orbit_property')),
+                   (4, ref('metro_park_base.category_sys_others_chain')),
+                   (4, ref('metro_park_base.category_sys_button_on_table')),
+                   (4, ref('metro_park_base.category_sys_code_for_table')),
+                   (4, ref('metro_park_base.category_sys_general_log')),
+                   (4, ref('metro_park_base.category_sys_playback_record')),
+                   (4, ref('metro_park_base.group_sys_setting_workshop_page_look')),
+                   (4, ref('metro_park_base.group_sys_setting_position_line_manage')),
+                   (4, ref('metro_park_base.group_sys_setting_position_site_manage')),
+                   (4, ref('metro_park_base.group_sys_setting_workshop_edit')),
+                   (4, ref('funenc_wechat.group_funenc_wechat_manager')),
+                   (4, ref('metro_park_production.category_scene_reappearance_video')),
+                   (4, ref('metro_park_production.group_production_manage_archive_delete_configuration')),
+                   (4, ref('metro_park_maintenance.category_pms_class_info')),
+                   (4, ref('metro_park_maintenance.category_vehicle_mileage_is_recorded')),
+                   (4, ref('metro_park_maintenance.category_inspection_technology_management')),
+                   (4, ref('metro_park_maintenance.category_car_repair_time_configuration')),
+                   (4, ref('metro_park_maintenance.category_car_repairing_the_configuration')),
+                   (4, ref('metro_park_maintenance.category_car_equipment_management')),
+                   (4, ref('metro_park_dispatch.category_station_monitoring_screen_casting')),
+                   (4, ref('metro_park_dispatch.category_workshop_day_plan_plan')),
+                   (4, ref('metro_park_dispatch.category_construction_schedule_area')),
+                   (4, ref('metro_park_dispatch.category_construction_schedule_plan')),
+                   (4, ref('metro_park_dispatch.category_send_receive_car_plan_log')),
+                   (4, ref('metro_park_dispatch.category_plan_log')),
+                   (4, ref('metro_park_dispatch.category_tcms_for_screen')),
+                   (4, ref('metro_park_dispatch.category_station_monitoring_and_spot_check_page_shows')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_management_dispatch_run_diagram_calendar')),
+                   (4, ref('metro_park_dispatch.category_start_collect_homework')),
+                   (4, ref('metro_park_dispatch.category_collect_homework')),
+                   (4, ref('metro_park_dispatch.group_dispatch_car_construction_auto_synchronizing')),
+                  ]"/>
+        </record>
+
+        <record id="base_data_group_audit" model="res.groups">
+            <field name="name">审计</field>
+            <field name="comment">审计</field>
+            <field name="category_id" ref="category_base_data_role"/>
+            <field name="implied_ids"
+                   eval="[
+                   (4, ref('odoo_operation_log.groups_sys_operation_log_access')),
+                  ]"/>
+        </record>
+
+        <record model="ir.module.category" id="category_crew_dispatching_role">
+            <field name="name">乘务派班系统</field>
+        </record>
+
+        <record id="crew_dispatching_driver_info" model="res.groups">
+            <field name="name">司机信息</field>
+            <field name="comment">司机信息</field>
+            <field name="category_id" ref="category_crew_dispatching_role"/>
+              <field name="atomic">True</field>
+        </record>
+
+        <record id="crew_dispatching_mileage_statistics" model="res.groups">
+            <field name="name">里程统计</field>
+            <field name="comment">里程统计</field>
+            <field name="category_id" ref="category_crew_dispatching_role"/>
+              <field name="atomic">True</field>
+        </record>
+
+        <record id="crew_dispatching_train_schedule" model="res.groups">
+            <field name="name">时刻表管理</field>
+            <field name="comment">时刻表管理</field>
+            <field name="category_id" ref="category_crew_dispatching_role"/>
+              <field name="atomic">True</field>
+        </record>
+
+        <record id="crew_dispatching_rule_setting" model="res.groups">
+            <field name="name">司机派班规则设置</field>
+            <field name="comment">司机派班规则设置</field>
+            <field name="category_id" ref="category_crew_dispatching_role"/>
+              <field name="atomic">True</field>
+        </record>
+
+         <record id="crew_dispatching_driver_shift_position" model="res.groups">
+            <field name="name">司机位置图自动编制</field>
+            <field name="comment">司机位置图自动编制</field>
+            <field name="category_id" ref="category_crew_dispatching_role"/>
+               <field name="atomic">True</field>
+        </record>
+
+         <record id="crew_dispatching_driver_shift_schedule" model="res.groups">
+            <field name="name">司机派班计划表编制</field>
+            <field name="comment">司机派班计划表编制</field>
+            <field name="category_id" ref="category_crew_dispatching_role"/>
+               <field name="atomic">True</field>
+        </record>
+
+        <record id="crew_dispatching_parking_lot_schedule" model="res.groups">
+            <field name="name">车场组/工程车派班</field>
+            <field name="comment">车场组/工程车派班</field>
+            <field name="category_id" ref="category_crew_dispatching_role"/>
+              <field name="atomic">True</field>
+        </record>
+
+        <record id="crew_dispatching_workshop_planning" model="res.groups">
+            <field name="name">车间计划表管理</field>
+            <field name="comment">车间计划表管理</field>
+            <field name="category_id" ref="category_crew_dispatching_role"/>
+              <field name="atomic">True</field>
+        </record>
+
+
+        <record id="crew_dispatching_workshop_planning_directive" model="res.groups">
+            <field name="name">车间计划表下达反馈</field>
+            <field name="comment">车间计划表下达反馈</field>
+            <field name="category_id" ref="category_crew_dispatching_role"/>
+              <field name="atomic">True</field>
+        </record>
+
+         <record id="crew_dispatching_driver_attendance_table" model="res.groups">
+            <field name="name">司机出退勤表格</field>
+            <field name="comment">司机出退勤表格</field>
+            <field name="category_id" ref="category_crew_dispatching_role"/>
+               <field name="atomic">True</field>
+        </record>
+
+         <record id="crew_dispatching_accident_management" model="res.groups">
+            <field name="name">事故事件单管理</field>
+            <field name="comment">事故事件单管理</field>
+            <field name="category_id" ref="category_crew_dispatching_role"/>
+               <field name="atomic">True</field>
+        </record>
+
+         <record id="crew_dispatching_driver_punch_card" model="res.groups">
+            <field name="name">一体机数据查询</field>
+            <field name="comment">一体机数据查询</field>
+            <field name="category_id" ref="category_crew_dispatching_role"/>
+               <field name="atomic">True</field>
+        </record>
+
+        <record id="crew_dispatching_screen_display" model="res.groups">
+            <field name="name">大屏显示调节</field>
+            <field name="comment">大屏显示调节</field>
+            <field name="category_id" ref="category_crew_dispatching_role"/>
+            <field name="atomic">True</field>
+        </record>
+
+
+    </data>
+</odoo>

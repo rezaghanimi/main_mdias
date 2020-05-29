@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+	<!-- 设备搜索 -->
+    <t t-name="dev_search_panel">
+	   <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="dev_name"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="dev_no"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="dev_type"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="major"/>
+               </div>
+
+               <div class="col-md-auto">
+                   <button type="button" class="btn btn-primary btn-sm search_extend_apply">
+                       应用
+                   </button>
+                   <button type="button" class="btn btn-info btn-sm search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+	</t>
+
+    <!-- 修程 -->
+    <t t-name="rule_search_template">
+	   <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="no"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="name"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="rule_type"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="rule_status"/>
+               </div>
+
+               <div class="col-md-auto">
+                   <button type="button" class="btn btn-primary btn-sm search_extend_apply">
+                       应用
+                   </button>
+                   <button type="button" class="btn btn-info btn-sm search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+	</t>
+
+    <!-- 检技通 -->
+    <t t-name="repair_tmp_rule_search">
+	   <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="no"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="name"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="trains"/>
+               </div>
+               <div class="col-md-auto">
+                   <button type="button" class="btn btn-primary btn-sm search_extend_apply">
+                       应用
+                   </button>
+                   <button type="button" class="btn btn-info btn-sm search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+	</t>
+
+    <!-- 检技通 -->
+    <t t-name="temp_rule_search_template">
+	   <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div class="search_label">名称:</div>
+                   <div for="name"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div class="search_label">编号:</div>
+                   <div for="no"/>
+               </div>
+
+               <div class="col-md-auto">
+                   <!-- class有search_extend_apply的为搜索的确定按钮 -->
+                   <button type="button" class="btn btn-primary btn-sm search_extend_apply">
+                       应用
+                   </button>
+                   <!-- class有search_extend_reset的为搜索的重置按钮 -->
+                   <button type="button" class="btn btn-info btn-sm search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+	</t>
+
+    <!-- 里程 -->
+    <t t-name="temp_rule_search_template">
+	   <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="name"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="no"/>
+               </div>
+
+               <div class="col-md-auto">
+                   <button type="button" class="btn btn-primary btn-sm search_extend_apply">
+                       应用
+                   </button>
+                   <button type="button" class="btn btn-info btn-sm search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+	</t>
+
+    <!--公里数录入月计划-->
+    <t t-name="Funenc.month_plan_search">
+		<div class="search_pannel">
+			<div class="d-flex">
+				<span>选择月份:</span>
+                <input class="o_input year_month_picker" style="max-width: 200px"/>
+                <button class="btn btn-sm btn-info ml-2 get_month_miles">查看</button>
+			</div>
+		</div>
+	</t>
+
+    <!-- 月计划搜索  -->
+    <t t-name="Funenc.month_plan_total_search">
+		<div class="search_pannel">
+			<div class="d-flex">
+				<span>选择月份:</span>
+                <input class="o_input year_month_picker" style="max-width: 200px"/>
+                <button class="btn btn-sm btn-info ml-2 get_month_miles">查看</button>
+			</div>
+		</div>
+	</t>
+
+    <!-- 年计划搜索 -->
+    <t t-name="Funenc.year_plan_search">
+		<!-- <div class="search_pannel">
+			<div class="d-flex">
+				<span>选择年份:</span>
+				<input class="o_input year_picker" style="max-width: 200px"/>
+				<button name="gen_plan" type="object" class="btn btn-sm btn-info ml-2 gen_plan">重新生成</button>
+			</div>
+		</div> -->
+	</t>
+
+    <!-- 公里数预估搜索 -->
+    <t t-name="history_miles_search">
+       <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="train_dev"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="year"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="month"/>
+               </div>
+
+               <div class="col-md-auto">
+                   <button type="button" class="btn btn-primary btn-sm search_extend_apply">
+                       搜索
+                   </button>
+                   <button type="button" class="btn btn-info btn-sm search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+	</t>
+
+    <!-- 公里数操作记录表搜索 -->
+    <t t-name="operation_record_search">
+       <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="manipulate_type"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="create_date"/>
+               </div>
+
+               <div class="col-md-auto">
+                   <button type="button" class="btn btn-primary btn-sm search_extend_apply">
+                       搜索
+                   </button>
+                   <button type="button" class="btn btn-info btn-sm search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+	</t>
+
+    <!-- 检修工单搜索 -->
+    <t t-name="maintaince_order_search">
+       <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="work_department"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="state"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="line"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="major"/>
+               </div>
+
+               <div class="col-md-auto">
+                   <button type="button" class="btn btn-primary btn-sm search_extend_apply">
+                       搜索
+                   </button>
+                   <button type="button" class="btn btn-info btn-sm search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+	</t>
+
+    <!-- TCMS车辆历史数据 -->
+    <t t-name="metro_park_maintenance.vehicle_data_search">
+	   <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="name"/>
+               </div>
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="date"/>
+               </div>
+               <div class="col-md-auto">
+                   <button type="button" class="btn btn-primary btn-sm search_extend_apply">
+                       应用
+                   </button>
+                   <button type="button" class="btn btn-info btn-sm search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+	</t>
+
+    <!--tcms 导出-->
+    <t t-name="tcms_export_tree_button">
+        <div>
+            <button type="object" name="model_export" class="btn btn-primary">
+                导出
+            </button>
+        </div>
+    </t>
+
+</templates>

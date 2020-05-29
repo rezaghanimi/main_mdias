@@ -1,0 +1,58 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.plan_config_list">
+            <field name="name">年计划排程配置</field>
+            <field name="model">metro_park_maintenance.plan_config</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table" options="{'height':'full-265'}">
+                    <field name="name" width="200"/>
+                    <field name="state" width="200"/>
+                    <field name="remark" width="260"/>
+                    <button name="edit_config" string="修改" type="object" />
+                </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="metro_park_maintenance.plan_config_form">
+            <field name="name">年计划排程配置</field>
+            <field name="model">metro_park_maintenance.plan_config</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="name">name</label>
+                        <div class="col-sm-3">
+                            <field name="name"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="config_data">config_data</label>
+                        <div class="col-sm-8">
+                            <field name="config_data" string="配置数据">
+                                <tree js_class="fnt_table" options="{'height':300}">
+                                    <field name="index"/>
+                                    <field name="rule"/>
+                                    <field name="remark"/>
+                                </tree>
+                            </field>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <button class="btn btn-success" special="save_and_exit" text="确定" />
+                        <button class="btn btn-info" text="取消" special="cancel" />
+                    </footer>
+
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>
+    
+
+
+    

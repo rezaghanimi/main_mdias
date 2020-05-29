@@ -1,0 +1,451 @@
+<div id="dispatch">
+  <template>
+    <div class="content-box">
+      <div class="flex-box white-bg">
+        <div class="block">
+          <span class="demonstration">选择日期：</span>
+          <el-date-picker
+                  v-model="datetimeRange"
+                  type="daterange"
+                  align="right"
+                  unlink-panels
+                  range-separator="--"
+                  start-placeholder="开始日期"
+                  end-placeholder="结束日期"
+                  :picker-options="pickerOptions"
+          ></el-date-picker>
+        </div>
+      </div>
+
+      <div class="flex-box">
+        <div>
+          <div class="chart-box">
+            <el-table
+                    :data="tableData"
+                    border
+                    style="width: 100%; text-align:center"
+                    :header-cell-style="{background:'#f5f5f5', 'text-align': 'center'}"
+            >
+              <el-table-column prop="jieche" label="接车" width="200"></el-table-column>
+              <el-table-column prop="fache" label="发车" width="200"></el-table-column>
+              <el-table-column prop="liangshu" label="调车辆数" width="200"></el-table-column>
+              <el-table-column prop="goushu" label="调车钩数" width="200"></el-table-column>
+            </el-table>
+          </div>
+          <div class="datetime">
+            <div class="block">
+              <span class="demonstration">选择日期</span>
+              <el-date-picker
+                      v-model="datetimeRange2"
+                      type="datetimerange"
+                      range-separator="~"
+                      start-placeholder="开始日期"
+                      end-placeholder="结束日期"
+              ></el-date-picker>
+            </div>
+          </div>
+          <div slot="content" id="myChartLine1" class="chart-box rect-1">2</div>
+          <div class="datetime">
+            <div class="block">
+              <span class="demonstration">选择日期</span>
+              <el-date-picker
+                      v-model="datetimeRange3"
+                      type="datetimerange"
+                      range-separator="~"
+                      start-placeholder="开始日期"
+                      end-placeholder="结束日期"
+              ></el-date-picker>
+            </div>
+          </div>
+          <div slot="content" id="myChartLine2" class="chart-box rect-1">3</div>
+        </div>
+        <div>
+          <div slot="content" id="myChartGauge1" class="chart-box rect-2">4</div>
+          <div slot="content" id="myChartGauge2" class="chart-box rect-2">5</div>
+          <div slot="content" id="myChartGauge3" class="chart-box rect-2">6</div>
+        </div>
+      </div>
+    </div>
+  </template>
+</div>
+
+
+
+<script>
+import myecharts from "echarts";
+
+export default {
+  data() {
+    return {
+      pickerOptions: {
+        shortcuts: [
+          {
+            text: "今天",
+            onClick(picker) {
+              const end = new Date();
+              const start = new Date();
+              start.setTime(start.getTime() - 3600 * 1000 * 24 * 1);
+              picker.$emit("pick", [start, end]);
+            }
+          },
+          {
+            text: "最近一周",
+            onClick(picker) {
+              const end = new Date();
+              const start = new Date();
+              start.setTime(start.getTime() - 3600 * 1000 * 24 * 7);
+              picker.$emit("pick", [start, end]);
+            }
+          },
+          {
+            text: "最近两周",
+            onClick(picker) {
+              const end = new Date();
+              const start = new Date();
+              start.setTime(start.getTime() - 3600 * 1000 * 24 * 14);
+              picker.$emit("pick", [start, end]);
+            }
+          },
+          {
+            text: "最近一个月",
+            onClick(picker) {
+              const end = new Date();
+              const start = new Date();
+              start.setTime(start.getTime() - 3600 * 1000 * 24 * 30);
+              picker.$emit("pick", [start, end]);
+            }
+          },
+          {
+            text: "最近半年",
+            onClick(picker) {
+              const end = new Date();
+              const start = new Date();
+              start.setTime(start.getTime() - 3600 * 1000 * 24 * 180);
+              picker.$emit("pick", [start, end]);
+            }
+          },
+          {
+            text: "最近一年",
+            onClick(picker) {
+              const end = new Date();
+              const start = new Date();
+              start.setTime(start.getTime() - 3600 * 1000 * 24 * 360);
+              picker.$emit("pick", [start, end]);
+            }
+          }
+        ]
+      },
+      tableData: [{ jieche: "11", fache: "22", liangshu: "33", goushu: "44" }],
+      datetimeRange: "",
+      datetimeRange2: "",
+      datetimeRange3: "",
+      option1: {
+        title: {
+          text: "收/发车趋势图"
+        },
+        color: ["#e49588", "#87c3cb"],
+        tooltip: {
+          trigger: "axis"
+        },
+        legend: {
+          data: ["发车量", "收车量"]
+        },
+        grid: {
+          left: "3%",
+          right: "4%",
+          bottom: "3%",
+          containLabel: true
+        },
+        toolbox: {
+          feature: {
+            saveAsImage: {}
+          }
+        },
+        xAxis: {
+          type: "category",
+          boundaryGap: false,
+          data: [
+            // 用选择的时间替换
+            "11:00",
+            "11:30",
+            "12:00",
+            "12:30",
+            "13:00",
+            "13:30",
+            "14:00",
+            "14:30",
+            "15:00",
+            "15:30",
+            "16:00",
+            "16:30",
+            "17:00",
+            "17:30",
+            "18:00"
+          ]
+        },
+        yAxis: {
+          type: "value"
+        },
+        series: [
+          {
+            name: "发车量",
+            type: "line",
+            stack: "总量",
+            data: [
+              120,
+              132,
+              101,
+              134,
+              90,
+              230,
+              210,
+              120,
+              132,
+              101,
+              134,
+              90,
+              230,
+              210,
+              190
+            ]
+          },
+          {
+            name: "收车量",
+            type: "line",
+            stack: "总量",
+            data: [
+              220,
+              182,
+              191,
+              234,
+              290,
+              330,
+              310,
+              220,
+              182,
+              191,
+              234,
+              290,
+              330,
+              310,
+              290
+            ]
+          }
+        ]
+      },
+      option2: {
+        title: {
+          text: "调车钩计划数量分布",
+          x: "left"
+        },
+        color: [
+          "#87c3cb",
+          "#7cf979",
+          "#f9e628",
+          "#2eaffd",
+          "#8dbc56",
+          "#e27a3f",
+          "#363d8d",
+          "#cc2dfc"
+        ],
+        xAxis: {
+          type: "category",
+          boundaryGap: false,
+          data: [
+            // 用选择的时间替换
+            "11:00",
+            "11:30",
+            "12:00",
+            "12:30",
+            "13:00",
+            "13:30",
+            "14:00",
+            "14:30",
+            "15:00",
+            "15:30",
+            "16:00",
+            "16:30",
+            "17:00",
+            "17:30",
+            "18:00"
+          ]
+        },
+        yAxis: {
+          type: "value"
+        },
+        tooltip: {
+          trigger: "axis",
+          axisPointer: {
+            type: "shadow"
+          }
+        },
+        dataZoom: [
+          { type: "inside", startValue: 0, endValue: 13, zoomLock: true }
+        ],
+        series: [
+          {
+            data: [
+              820,
+              932,
+              901,
+              934,
+              1290,
+              1330,
+              1320,
+              820,
+              932,
+              901,
+              934,
+              1290,
+              1330,
+              1320,
+              820
+            ],
+            type: "line",
+            areaStyle: {},
+            smooth: true,
+            itemStyle: {
+              normal: {
+                label: {
+                  show: true,
+                  position: "top",
+                  textStyle: {
+                    color: "black"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      option3: {
+        title: {
+          text: "发车计划准点率",
+          x: "left"
+        },
+        tooltip: {
+          formatter: "{a} <br/>{b} : {c}%"
+        },
+        series: [
+          {
+            name: "发车计划准点率",
+            type: "gauge",
+            radius: "65%",
+            center: ["50%", "60%"],
+            detail: { formatter: "{value}%", fontSize: 20, color: "black" },
+            data: [{ value: 50, name: "完成率" }],
+            axisLine: {
+              show: true,
+              lineStyle: {
+                color: [[1, "#4394e5"]],
+                width: 20
+              }
+            }
+          }
+        ]
+      },
+      option4: {
+        title: {
+          text: "收车计划准点率",
+          x: "left"
+        },
+        tooltip: {
+          formatter: "{a} <br/>{b} : {c}%"
+        },
+        series: [
+          {
+            name: "收车计划准点率",
+            type: "gauge",
+            radius: "65%",
+            center: ["50%", "60%"],
+            detail: { formatter: "{value}%", fontSize: 20, color: "black" },
+            data: [{ value: 60, name: "完成率" }],
+            axisLine: {
+              show: true,
+              lineStyle: {
+                color: [[1, "#4394e5"]],
+                width: 20
+              }
+            }
+          }
+        ]
+      },
+      option5: {
+        title: {
+          text: "调车完成率",
+          x: "left"
+        },
+        tooltip: {
+          formatter: "{a} <br/>{b} : {c}%"
+        },
+        series: [
+          {
+            name: "调车完成率",
+            type: "gauge",
+            radius: "65%",
+            center: ["50%", "60%"],
+            detail: { formatter: "{value}%", fontSize: 20, color: "black" },
+            data: [{ value: 70, name: "完成率" }],
+            axisLine: {
+              show: true,
+              lineStyle: {
+                color: [[1, "#4394e5"]],
+                width: 20
+              }
+            }
+          }
+        ]
+      }
+    };
+  },
+  methods: {
+    setECharts() {
+      let echart1 = myecharts.init(document.getElementById("myChartLine1"));
+      let echart2 = myecharts.init(document.getElementById("myChartLine2"));
+      let echart3 = myecharts.init(document.getElementById("myChartGauge1"));
+      let echart4 = myecharts.init(document.getElementById("myChartGauge2"));
+      let echart5 = myecharts.init(document.getElementById("myChartGauge3"));
+      echart1.setOption(this.option1);
+      echart2.setOption(this.option2);
+      echart3.setOption(this.option3);
+      echart4.setOption(this.option4);
+      echart5.setOption(this.option5);
+    }
+  },
+  mounted() {
+    this.setECharts();
+  }
+};
+</script>
+
+<style scoped>
+.content-box {
+  padding: 10px 6px;
+}
+.flex-box {
+  display: flex;
+}
+.white-bg {
+  background-color: #fff;
+  padding: 3px 10px;
+}
+.box-title {
+  line-height: 40px;
+  margin-right: 60px;
+}
+.chart-box {
+  background-color: #fff;
+  margin: 10px;
+}
+.rect-1 {
+  width: 800px;
+  height: 400px;
+}
+.rect-2 {
+  width: 300px;
+  height: 300px;
+}
+.datetime {
+  padding: 3px, 10px;
+}
+</style>

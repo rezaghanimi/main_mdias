@@ -1,0 +1,11 @@
+<odoo>
+    <data>
+
+        <menuitem id="metro_park_maintance_hz.menu_root"
+                  font_icon="fa fa-gavel"
+                  action="metro_park_maintance_hz.maintaince_client_action"
+                  sequence="1"
+                  name="车辆检修"/>
+                
+    </data>
+</odoo>

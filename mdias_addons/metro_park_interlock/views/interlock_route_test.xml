@@ -1,0 +1,51 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="metro_park_interlock_test_form">
+            <field name="name">interlock_route_test form </field>
+            <field name="model">metro_park.interlock.route_test</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="location">location</label>
+                        <div class="col-sm-10">
+                            <field name="location" options="{'no_create': True, 'no_open': True}"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="types">types</label>
+                        <div class="col-sm-10">
+                            <field name="types"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="start_pos">start_pos</label>
+                        <div class="col-sm-10">
+                            <field name="start_pos" options="{'no_create': True, 'no_open': True}"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="end_pos">end_pos</label>
+                        <div class="col-sm-10">
+                            <field name="end_pos" options="{'no_create': True, 'no_open': True}"/>
+                        </div>
+                    </div>
+                    <footer>
+                        <button type="object" name="on_interlock_route_test" class="btn btn_primary" text="排路测试" />
+                        <button type="object" name="on_interlock_route_group_test" class="btn btn_primary" text="组合测试" />
+                        <button type="object" name="on_interlock_route_clear_cache_route" class="btn btn_primary" text="清除缓存进路" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="metro_park_interlock_test_act_window">
+            <field name="name">排路测试</field>
+            <field name="res_model">metro_park.interlock.route_test</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <menuitem action="metro_park_interlock_test_act_window" id="metro_park_interlock_test_menu" name="联锁表排路测试" parent="metro_park_interlock.menu_root"/>
+    </data>
+</odoo>
+    

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="metro_park_base.dev_type_electric_train" model="metro_park_base.dev_type">
+            <field name="name">电客车</field>
+            <field name="alias">electric_train</field>
+            <field name="no">001</field>
+        </record>
+
+        <record id="metro_park_base.dev_type_engine_train" model="metro_park_base.dev_type">
+            <field name="name">工程车</field>
+            <field name="alias">engine_train</field>
+            <field name="no">002</field>
+        </record>
+
+        <record id="metro_park_base.dev_type_platform_train" model="metro_park_base.dev_type">
+            <field name="name">平板车</field>
+            <field name="platform_train">engine_train</field>
+            <field name="no">003</field>
+        </record>
+
+    </data>
+</odoo>

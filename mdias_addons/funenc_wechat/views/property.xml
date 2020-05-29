@@ -1,0 +1,52 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="funenc_wechat.property_list">
+            <field name="name">属性列表</field>
+            <field name="model">funenc_wechat.property</field>
+            <field name="arch" type="xml">
+                <!-- 部门属性只能从基础数据里添加 -->
+                <tree js_class="fnt_table"
+                      create="0"
+                      edit="0"
+                      delete="0"
+                      options="{'height':'full-340'}">
+                    <field name="name"/>
+                    <field name="remark"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="funenc_wechat.property_form">
+            <field name="name">属性表单</field>
+            <field name="model">funenc_wechat.property</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="name">name</label>
+                        <div class="col-sm-3">
+                            <field name="name"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="remark">remark</label>
+                        <div class="col-sm-3">
+                            <field name="remark"/>
+                        </div>
+                    </div>
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window" id="funenc_wechat.property_act_window">
+            <field name="name">部门属性</field>
+            <field name="res_model">funenc_wechat.property</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+
+
+    

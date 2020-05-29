@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="res_config_log_form_view" model="ir.ui.view">
+            <field name="name">res.config.settings.view.form</field>
+            <field name="model">res.config.settings</field>
+            <field name="arch" type="xml">
+                <form class="oe_form_configuration o_base_settings">
+                    <header>
+                        <button string="保存" type="object" name="execute" class="oe_highlight"/>
+                        <button string="取消" type="object" name="cancel" special="cancel"/>
+                    </header>
+                    <sheet>
+                        <div class="o_control_panel">
+                            <div class="o_panel">
+                                <div class="title h2 mb0 mt4 text-muted d-none d-md-block">日志设置</div>
+                            </div>
+                            <div class="container">
+                                <div class="row text-left">
+                                    <label for="log_reserve_days" string="日志保留天数" class="col-3 col-lg-3 o_light_label"/>
+                                    <field name="log_reserve_days" class="col-3 col-lg-3 o_light_label"/>
+                                </div>
+                            </div>
+                        </div>
+
+                    </sheet>
+                     <footer>
+
+                    </footer>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- 引入相关js文件 -->
+        <template id="funenc_socketio_res" name="funenc_socketio_res" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="application/javascript" src="/funenc_socket_io/static/lib/socket.io.js"/>
+                <script type="application/javascript" src="/funenc_socket_io/static/js/funenc_socket_io.js"/>
+                <script type="application/javascript" src="/funenc_socket_io/static/js/socketio_bus_message.js"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>

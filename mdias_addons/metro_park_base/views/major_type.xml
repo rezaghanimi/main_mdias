@@ -1,0 +1,56 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_base.major_type_list">
+            <field name="name">专业</field>
+            <field name="model">metro_park_base.major_type</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table" options="{'height':'full-340'}" create="0">
+                    <field name="major_id"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        
+        <record model="ir.ui.view" id="metro_park_base.major_type_form">
+            <field name="name">专业</field>
+            <field name="model">metro_park_base.major_type</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="major_id">major_id</label>
+                        <div class="col-sm-10">
+                            <field name="major_id"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="name">name</label>
+                        <div class="col-sm-10">
+                            <field name="name"/>
+                        </div>
+                    </div>
+                    
+                </form>
+            </field>
+        </record>
+
+        
+        <record model="ir.actions.act_window" id="metro_park_base.major_type_act_window">
+            <field name="name">专业类型</field>
+            <field name="res_model">metro_park_base.major_type</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        
+        <menuitem action="metro_park_base.major_type_act_window"
+                  id="metro_park_base.major_type_menu"
+                  name="专业系统"
+                  sequence='3'
+                  parent="metro_park_base.menu_maintenance_data_manage"
+                  groups="group_base_professional_system"/>
+
+    </data>
+</odoo>
+    

@@ -1,0 +1,66 @@
+
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="metro_park_dispatch.dispatch_wizard_form">
+            <field name="name">dispatch_wizard form </field>
+            <field name="model">metro_park_dispatch.dispatch_wizard</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="method">method</label>
+                        <div class="col-sm-10">
+                            <field name="method"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" attrs="{'invisible': [('method', '=', 'own')]}">
+                        <label class="col-sm-2 col-form-label" for="engine">engine</label>
+                        <div class="col-sm-10">
+                            <field name="engine"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="dev">dev</label>
+                        <div class="col-sm-10">
+                            <field name="dev"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="start_trail">start_trail</label>
+                        <div class="col-sm-10">
+                            <field name="start_trail"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="target_rail">target_rail</label>
+                        <div class="col-sm-10">
+                            <field name="target_rail"/>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <button class="btn btn-success" type="object" name="on_ok" text="确定调车" />
+                        <button class="btn btn-info" text="取消" special="cancel" />
+                    </footer>
+                    
+                </form>
+            </field>
+        </record>
+
+        
+        <record model="ir.actions.act_window" id="metro_park_dispatch.dispatch_wizard_act_window">
+            <field name="name">dispatch_wizard</field>
+            <field name="res_model">metro_park_dispatch.dispatch_wizard</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        
+        <menuitem action="metro_park_dispatch.dispatch_wizard_act_window" id="metro_park_dispatch.dispatch_wizard_menu" name="调车向导" parent="metro_park_dispatch.menu_root"/>
+    </data>
+</odoo>
+    

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- 分区1 -->
+        <record id="metro_park_base_data_10.gao_da_lu_electric_area_1"
+                model="metro_park_base.electric_area">
+            <field name="name">供电分区1</field>
+            <field name="location_id" ref="metro_park_base_data_10.gao_da_lu" />
+            <field name="breaker_id">211</field>
+            <field name="switch_no">2111</field>
+            <field name="rail_secs" eval="[(4, ref('metro_park_base_data_10.gao_da_lu_rail_2G')),
+                (4, ref('metro_park_base_data_10.gao_da_lu_rail_3G')),
+                (4, ref('metro_park_base_data_10.gao_da_lu_rail_4G')),
+                (4, ref('metro_park_base_data_10.gao_da_lu_rail_2/34WG')),
+                (4, ref('metro_park_base_data_10.gao_da_lu_rail_D2G')),
+                (4, ref('metro_park_base_data_10.gao_da_lu_rail_D22G')),
+                (4, ref('metro_park_base_data_10.gao_da_lu_rail_40-42DG')),
+                (4, ref('metro_park_base_data_10.gao_da_lu_rail_D26WG')),
+                (4, ref('metro_park_base_data_10.gao_da_lu_rail_34DG')),
+                (4, ref('metro_park_base_data_10.gao_da_lu_rail_2DG'))]" />
+        </record>
+
+        <!-- 分区2 -->
+        <record id="metro_park_base_data_10.gao_da_lu_electric_area_2"
+                model="metro_park_base.electric_area">
+            <field name="name">分区2</field>
+            <field name="location_id" ref="metro_park_base_data_10.gao_da_lu" />
+            <field name="breaker_id">213</field>
+            <field name="switch_no">2131</field>
+            <field name="rail_secs" eval="[(4, ref('metro_park_base_data_10.gao_da_lu_rail_5AG')),
+                (4, ref('metro_park_base_data_10.gao_da_lu_rail_6AG')),
+                (4, ref('metro_park_base_data_10.gao_da_lu_rail_7AG')),
+                (4, ref('metro_park_base_data_10.gao_da_lu_rail_8AG')),
+                (4, ref('metro_park_base_data_10.gao_da_lu_rail_9AG')),
+                (4, ref('metro_park_base_data_10.gao_da_lu_rail_10AG')),
+                (4, ref('metro_park_base_data_10.gao_da_lu_rail_5BG')),
+                (4, ref('metro_park_base_data_10.gao_da_lu_rail_6BG')),
+                (4, ref('metro_park_base_data_10.gao_da_lu_rail_7BG')),
+                (4, ref('metro_park_base_data_10.gao_da_lu_rail_8BG')),
+                (4, ref('metro_park_base_data_10.gao_da_lu_rail_9BG')),
+                (4, ref('metro_park_base_data_10.gao_da_lu_rail_10BG')),
+                (4, ref('metro_park_base_data_10.gao_da_lu_rail_50-52DG')),
+                (4, ref('metro_park_base_data_10.gao_da_lu_rail_44-48DG')),
+                (4, ref('metro_park_base_data_10.gao_da_lu_rail_38DG')),
+                (4, ref('metro_park_base_data_10.gao_da_lu_rail_30-32DG')),
+                (4, ref('metro_park_base_data_10.gao_da_lu_rail_14-20DG')),
+                (4, ref('metro_park_base_data_10.gao_da_lu_rail_4DG'))]" />
+        </record>
+
+        <!-- 分区3 -->
+        <record id="metro_park_base_data_10.gao_da_lu_electric_area_3"
+                model="metro_park_base.electric_area">
+            <field name="name">分区3</field>
+            <field name="location_id" ref="metro_park_base_data_10.gao_da_lu" />
+            <field name="breaker_id">214</field>
+            <field name="switch_no">2141</field>
+            <field name="rail_secs"
+                   eval="[(4, ref('metro_park_base_data_10.gao_da_lu_rail_11AG')),
+                        (4, ref('metro_park_base_data_10.gao_da_lu_rail_12AG')),
+                        (4, ref('metro_park_base_data_10.gao_da_lu_rail_13AG')),
+                        (4, ref('metro_park_base_data_10.gao_da_lu_rail_14AG')),
+                        (4, ref('metro_park_base_data_10.gao_da_lu_rail_15AG')),
+                        (4, ref('metro_park_base_data_10.gao_da_lu_rail_16AG')),
+                        (4, ref('metro_park_base_data_10.gao_da_lu_rail_11BG')),
+                        (4, ref('metro_park_base_data_10.gao_da_lu_rail_12BG')),
+                        (4, ref('metro_park_base_data_10.gao_da_lu_rail_13BG')),
+                        (4, ref('metro_park_base_data_10.gao_da_lu_rail_14BG')),
+                        (4, ref('metro_park_base_data_10.gao_da_lu_rail_15BG')),
+                        (4, ref('metro_park_base_data_10.gao_da_lu_rail_16BG')),
+                        (4, ref('metro_park_base_data_10.gao_da_lu_rail_D4G')),
+                        (4, ref('metro_park_base_data_10.gao_da_lu_rail_54-60DG')),
+                        (4, ref('metro_park_base_data_10.gao_da_lu_rail_62DG')),
+                        (4, ref('metro_park_base_data_10.gao_da_lu_rail_36DG')),
+                        (4, ref('metro_park_base_data_10.gao_da_lu_rail_28DG')),
+                        (4, ref('metro_park_base_data_10.gao_da_lu_rail_16-18DG')),
+                        (4, ref('metro_park_base_data_10.gao_da_lu_rail_6-12DG')),
+                        (4, ref('metro_park_base_data_10.gao_da_lu_rail_8-10DG')),
+                        (4, ref('metro_park_base_data_10.gao_da_lu_rail_22-26DG'))]" />
+        </record>
+
+        <!-- 供电分区4 为静调电源柜供电，无区 -->
+        <record id="metro_park_base_data_10.gao_da_lu_electric_area_4"
+                model="metro_park_base.electric_area">
+            <field name="name">分区4</field>
+            <field name="location_id" ref="metro_park_base_data_10.gao_da_lu" />
+            <field name="breaker_id">212</field>
+            <field name="switch_no">2121</field>
+        </record>
+
+        <!-- 两个特殊的供电分区 -->
+        <record id="metro_park_base_data_10.gao_da_lu_electric_area_out_park"
+                model="metro_park_base.electric_area">
+            <field name="name">出段线分区</field>
+            <field name="location_id" ref="metro_park_base_data_10.gao_da_lu" />
+            <field name="switch_no">10CG</field>
+            <field name="parent_electric_area" ref="ban_qiao_electric_area_1" />
+            <field name="rail_secs" eval="[(4, ref('metro_park_base_data_10.gao_da_lu_rail_T2602G')),
+            (4, ref('metro_park_base_data_10.gao_da_lu_rail_T2604G'))]" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_electric_area_in_park"
+                model="metro_park_base.electric_area">
+            <field name="name">入段线分区</field>
+            <field name="location_id" ref="metro_park_base_data_10.gao_da_lu" />
+            <field name="switch_no">10RG</field>
+            <field name="parent_electric_area" ref="ban_qiao_electric_area_2" />
+            <field name="rail_secs" eval="[(4, ref('metro_park_base_data_10.gao_da_lu_rail_T2615G')),
+            (4, ref('metro_park_base_data_10.gao_da_lu_rail_T2617G'))]" />
+        </record>
+
+        <!-- 更新记录，分区1 -->
+        <record id="metro_park_base_data_10.gao_da_lu_electric_area_1"
+                model="metro_park_base.electric_area">
+            <field name="backup_electric_area" eval="[(5,0,0),
+                   (0, 0, {'switch_no':'2112', 'electric_area': ref('metro_park_base_data_10.gao_da_lu_electric_area_4')})]"/>
+        </record>
+
+        <!-- 分区2 -->
+        <record id="metro_park_base_data_10.gao_da_lu_electric_area_2"
+                model="metro_park_base.electric_area">
+            <field name="backup_electric_area" eval="[(5,0,0),
+                   (0, 0, {'switch_no':'2134', 'electric_area': ref('metro_park_base_data_10.gao_da_lu_electric_area_3')})]"/>
+        </record>
+
+        <!-- 分区3 -->
+        <record id="metro_park_base_data_10.gao_da_lu_electric_area_3"
+                model="metro_park_base.electric_area">
+            <field name="backup_electric_area" eval="[(5,0,0),
+                   (0, 0, {'switch_no':'2134', 'electric_area': ref('metro_park_base_data_10.gao_da_lu_electric_area_2')})]"/>
+        </record>
+
+        <!-- 分区4 -->
+        <record id="metro_park_base_data_10.gao_da_lu_electric_area_4"
+                model="metro_park_base.electric_area">
+            <field name="backup_electric_area" eval="[(5,0,0),
+                   (0, 0, {'switch_no':'2112', 'electric_area': ref('metro_park_base_data_10.gao_da_lu_electric_area_1')})]"/>
+        </record>
+
+    </data>
+</odoo>

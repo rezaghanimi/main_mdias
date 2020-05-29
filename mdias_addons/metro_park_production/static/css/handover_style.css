@@ -1,0 +1,13 @@
+.handover_type {
+    margin-top: 30px;
+}
+
+.handover_type> .shifts_type{
+    line-height: 30px;
+    padding-left: 32px;
+}
+
+.handover_type .custom-control-label::before{
+    left:20%;
+}
+

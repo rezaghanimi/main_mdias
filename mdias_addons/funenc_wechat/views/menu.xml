@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <record id="action_funenc_account_manage" model="ir.actions.act_window">
+            <field name="name">企业帐号</field>
+            <field name="res_model">funenc.wechat.account</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="action_funenc_wechat_log" model="ir.actions.act_window">
+            <field name="name">日志</field>
+            <field name="res_model">funenc.wechat.log</field>
+            <field name="view_mode">tree</field>
+        </record>
+
+        <record id="action_funenc_wechat_user_manage" model="ir.actions.act_window">
+            <field name="name">用户</field>
+            <field name="res_model">funenc.wechat.user</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_ids" eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'tree', 'view_id': ref('view_wechat_user_tree')}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('view_wechat_user_form')})]"/>
+        </record>
+
+        <record id="action_funenc_wechat_department_manage" model="ir.actions.act_window">
+            <field name="name">部门</field>
+            <field name="res_model">funenc.wechat.department</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_ids" eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'tree', 'view_id': ref('view_wechat_department_tree')}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('view_wechat_department_form')})]"/>
+        </record>
+
+        <menuitem id="menu_funenc_wechat_root"
+                  name="企业微信"
+                  font_icon="fa fa-wechat"
+                  groups="group_funenc_wechat_manager"
+                  sequence="10"/>
+
+        <menuitem id="menu_funenc_wechat_account_manage_root"
+                  name="帐号管理"
+                  parent="menu_funenc_wechat_root"
+                  sequence="10"
+                  groups="group_funenc_wechat_manager"/>
+
+        <menuitem id="menu_funenc_wechat_account_manage"
+                  name="企业帐号"
+                  parent="menu_funenc_wechat_account_manage_root"
+                  action="action_funenc_account_manage"
+                  groups="group_funenc_wechat_manager"
+                  sequence="10"/>
+
+        <menuitem id="menu_funenc_wechat_user"
+                  name="用户管理"
+                  groups="group_funenc_wechat_manager"
+                  parent="menu_funenc_wechat_root"
+                  sequence="20"/>
+
+        <menuitem id="menu_funenc_wechat_user_manage"
+                  name="用户"
+                  groups="group_funenc_wechat_manager"
+                  parent="menu_funenc_wechat_user"
+                  action="action_funenc_wechat_user_manage"/>
+
+        <menuitem id="menu_funenc_wechat_department_manage"
+                  name="部门"
+                  groups="group_funenc_wechat_manager"
+                  parent="menu_funenc_wechat_user"
+                  sequence="30"
+                  action="action_funenc_wechat_department_manage"/>
+
+        <menuitem id="menu_funenc_wechat_logs_root"
+                  name="日志管理"
+                  groups="group_funenc_wechat_manager"
+                  parent="menu_funenc_wechat_root"
+                  sequence="40"/>
+
+        <menuitem id="menu_funenc_wechat_log"
+                  name="日志"
+                  groups="group_funenc_wechat_manager"
+                  parent="menu_funenc_wechat_logs_root"
+                  action="action_funenc_wechat_log"/>
+
+        <menuitem id="funenc_wechat.property_root"
+                  name="部门属性"
+                  parent="menu_funenc_wechat_root"/>
+
+        <menuitem action="funenc_wechat.property_act_window"
+                  id="funenc_wechat.property_menu"
+                  name="属性管理"
+                  parent="funenc_wechat.property_root"/>
+    </data>
+</odoo>

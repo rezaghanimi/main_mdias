@@ -1,0 +1,65 @@
+
+
+<script>
+    function println() {
+        $.print("#dispatcher_handover_template");
+    }
+</script>
+
+
+<div id="dispatcher_handover_template" style="margin-top: 50px">
+    <h3>
+        <p style="float: left; width: 35%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{{ year }}年 {{ month }}月 {{ day }}日</p>
+        <p style="float: left; width: 40%">{{ handover_type }}</p>
+        <p>派班调度：</p>
+    </h3>
+    <table class="table" style="border: 2px solid #000000;">
+        <tr style='height:38.00pt;font-size: 16px'>
+            <td class="td">1.正线执行时刻表：{{ line_execute_time_table }}</td>
+        </tr>
+        <tr style='height:38.00pt;'>
+            <td class="td">
+                <p style="width: 50%; float: left">2.800M电台：共{{ eight_hundred_radio_total }}台，借出{{ eight_hundred_radio_give }}台</p>
+                <p>400M电台：共{{ four_hundred_radio_total }}台，借出{{ four_hundred_radio_give }}台</p>
+            </td>
+        </tr>
+        <tr style='height:38.00pt;'>
+            <td class="td">
+                <p style="width: 50%; float: left">3.钥匙：共{{ key_total }}套，借出{{ key_give }}套</p>
+                <p>雨伞：共{{ umbrella_total }}把，借出{{ umbrella_give }}把</p>
+            </td>
+        </tr>
+        <tr style='height:38.00pt;'>
+            <td class="td">4.其他备品情况：{{ other_equipment }}</td>
+        </tr>
+        <tr style='height:38.00pt;'>
+            <td class="td">5.调试/施工人员计划：{{ nun_person_plan }}</td>
+        </tr>
+        <tr style='height:38.00pt;'>
+            <td class="td">6.人员情况：<div style="float: right;letter-spacing: 18px">病假{{ sick_leave_num }}人，事假{{ compassionate_leave_num }}人，年休假{{ annual_leave_num }}人，换班{{ handover_num }}人，调休{{ break_off_num }}人</div></td>
+        </tr>
+        <tr style='height:38.00pt;letter-spacing: 18px;text-align: right'>
+            <td class="td">婚假{{ marriage_leave_num }}人，丧假{{ funeral_leave_num }}人，护理假{{ nursing_leave_num }}人，学习{{ num_person_learning }}人，其他{{ num_other_learning }}人</td>
+        </tr>
+        <tr style='height:38.00pt;'>
+            <td class="td">其他交班事宜：{{ handover_other }}</td>
+        </tr>
+        <tr style='height:638.00pt;'>
+            <td class="td">每日交接笔记：</td>
+        </tr>
+    </table>
+    <table class="table" style="margin-top: -11px;">
+        <tr style='height:38.00pt;'>
+            <td class="td" style="width: 10%">交班人签字</td>
+            <td class="td" style="width: 25%"></td>
+            <td class="td" style="width: 10%">接班人签字</td>
+            <td class="td" style="width: 25%"></td>
+            <td class="td" style="width: 10%">交接班时间</td>
+            <td class="td">{{ handover_date }}</td>
+        </tr>
+    </table>
+</div>
+
+<div style="width:60px; margin: auto">
+    <button class="btn btn-primary" onclick="println()">打印</button>
+</div>

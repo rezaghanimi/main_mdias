@@ -1,0 +1,65 @@
+[submodule "funenc_theme"]
+	path = funenc_theme
+	url = git@e.coding.net:funenc/funenc_theme.git
+	branch = metro_park
+[submodule "funenc_wechat"]
+	path = funenc_wechat
+	url = git@e.coding.net:funenc/funenc_wechat.git
+	branch = fuenenc_theme
+[submodule "metro_park_maintenance"]
+	path = metro_park_maintenance
+	url = git@e.coding.net:funenc/metro_park_maintenance.git
+	branch = online_test_env
+[submodule "metro_park_dispatch"]
+	path = metro_park_dispatch
+	url = git@e.coding.net:funenc/metro_park_dispatch.git
+	branch = online_test_env
+[submodule "metro_park_interlock"]
+	path = metro_park_interlock
+	url = git@e.coding.net:funenc/metro_park_interlock.git
+	branch = online_test_env
+[submodule "metro_park_production"]
+	path = metro_park_production
+	url = git@e.coding.net:funenc/metro_park_production.git
+	branch = online_test_env
+[submodule "driver_plan"]
+	path = driver_plan
+	url = git@e.coding.net:funenc/driver_plan.git
+	branch = online_test_env
+[submodule "metro_park_maintance_hz"]
+	path = metro_park_maintance_hz
+	url = git@e.coding.net:funenc/metro_park_maintance_hz.git
+	branch = online_test_env
+[submodule "odoo_groups_manage"]
+	path = odoo_groups_manage
+	url = git@e.coding.net:funenc/odoo_groups_manage.git
+	branch = dev0.1
+[submodule "vue_template_manager"]
+	path = vue_template_manager
+	url = git@e.coding.net:funenc/vue_template_manager.git
+	branch = funenc_theme_odoo12
+[submodule "metro_park_base"]
+	path = metro_park_base
+	url = git@e.coding.net:funenc/metro_park_base.git
+	branch = online_test_env
+[submodule "maintenance_management"]
+	path = maintenance_management
+	url = git@e.coding.net:funenc/maintenance_management.git
+[submodule "tcms"]
+	path = tcms
+	url = git@e.coding.net:funenc/tcms.git
+[submodule "odoo_operation_log"]
+	path = odoo_operation_log
+	url = git@e.coding.net:funenc/odoo_operation_log.git
+[submodule "project_manage"]
+	path = project_manage
+	url = git@e.coding.net:funenc/project_manage.git
+[submodule "mdias_test"]
+	path = mdias_test
+	url = git@e.coding.net:funenc/mdias_test.git
+[submodule "funenc_socket_io"]
+	path = funenc_socket_io
+	url = git@e.coding.net:funenc/funenc_socket_io.git
+[submodule "base_session_store_psql"]
+	path = base_session_store_psql
+	url = git@e.coding.net:funenc/base_session_store_psql.git

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+   <data noupdate="True">
+      <record id="miles_set_squence" model="ir.sequence">
+         <field name="name">预算编号</field>
+         <field name="code">miles_set.number</field>
+         <field name="prefix">%(year)s%(month)s%(day)s</field>
+         <field name="padding">1</field>
+      </record>
+   </data>
+</odoo>

@@ -1,0 +1,78 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.month_plan_wizard_form">
+            <field name="name">月计划向导</field>
+            <field name="model">metro_park_maintenance.month_plan_wizard</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="row justify-content-center mb-1">
+                        <h3>年计划发布之后才能创建相关的月计划!</h3>
+                    </div>
+
+                    <div class="form-group row">
+                        <field name="use_pms_maintaince" invisible="1"/>
+                        <label class="col-sm-2 col-form-label" for="year_plan">year_plan</label>
+                        <div class="col-sm-3">
+                            <field name="year_plan"
+                                   options="{'no_create_edit': True,'no_open': True,
+                                   'no_create':True}"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" attrs="{'invisible': [('year_plan', '=', False)]}">
+                        <label class="col-sm-2 col-form-label" for="month">month</label>
+                        <div class="col-sm-3">
+                            <field name="month"
+                                   attrs="{'disable': [('year_plan', '=', False)]}"
+                                   options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="pms_work_class_info"
+                               attrs="{'invisible': [('use_pms_maintaince', '!=', 'yes')]}">pms_work_class_info
+                        </label>
+                        <div class="col-sm-3">
+                            <field name="pms_work_class_info"
+                                   options="{'no_create_edit': True,'no_open': True}"
+                                    attrs="{'invisible': [('use_pms_maintaince', '!=', 'yes')],'required': [('use_pms_maintaince', '=', 'yes')]}"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="plan_name">plan_name</label>
+                        <div class="col-sm-3">
+                            <field name="plan_name"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="remark">remark</label>
+                        <div class="col-sm-3">
+                            <field name="remark"/>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <button class="btn-success btn" name="on_ok" type="object" text="确定"/>
+                        <button class="btn-info btn" special="cancel" text="取消"/>
+                    </footer>
+
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window"
+                id="metro_park_maintenance.month_plan_wizard_act_window">
+            <field name="name">月计划向导</field>
+            <field name="res_model">metro_park_maintenance.month_plan_wizard</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+
+
+    

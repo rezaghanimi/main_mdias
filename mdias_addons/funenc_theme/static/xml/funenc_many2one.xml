@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+	<!-- 美化many2one -->
+	<t t-extend="FieldMany2One">
+		<t t-jquery=".o_dropdown_button" t-operation="replace">
+			<span class="o_dropdown_arrow is-reverse">
+				<i class="fa fa-angle-down" draggable="false">
+				</i>
+			</span>
+		</t>
+	</t>
+
+	<t t-name="lay_m2o">
+		<select select="selection" lay-search="" t-attf-name="{{widget.field.name}}">
+			<option value=""><t t-esc="widget.placeholder"/></option>
+		</select>
+	</t>
+</templates>

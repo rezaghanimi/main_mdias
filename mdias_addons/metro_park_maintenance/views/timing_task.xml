@@ -1,0 +1,17 @@
+<odoo>
+    <data>
+        <!--检修计划数据监测-->
+        <record id="ir_cron_rule_info_task_data" model="ir.cron">
+            <field name="name">检修计划数据监测</field>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="model_id" ref="model_metro_park_maintenance_rule_info"/>
+            <field name="nextcall" eval="(datetime.now().strftime('%Y-%m-%d 16:00:00'))"/>
+            <field name="state">code</field>
+            <field name="code">model.timing_task_maintenance_plan()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">hours</field>
+            <field name="numbercall">-1</field>
+            <field name="doall" eval="False"/>
+        </record>
+    </data>
+</odoo>

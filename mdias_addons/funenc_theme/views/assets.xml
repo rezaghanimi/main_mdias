@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="funenc_theme_style1_res" name="funenc_theme_style1_res" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+
+                <!-- css -->
+                <link rel="stylesheet" href="/funenc_theme/static/css/perfect-scrollbar.css" />
+                <link rel="stylesheet" href="/funenc_theme/static/lib/bootstrap-select-1.13.7/css/bootstrap-select.css" />
+                <link rel="stylesheet" href="/funenc_theme/static/css/custom.css" />
+                <link rel="stylesheet" href="/funenc_theme/static/css/tab_page.css" />
+                <link rel="stylesheet" href="/funenc_theme/static/css/animate.min.css" />
+                <link rel="stylesheet" href="/funenc_theme/static/css/simplePagination.css" />
+                <link rel="stylesheet" href="/funenc_theme/static/css/custom_form.css" />
+                <link rel="stylesheet" href="/funenc_theme/static/css/theme_color.css" />
+                <link rel="stylesheet" href="/funenc_theme/static/css/funenc_controller.css" />
+                <link rel="stylesheet" href="/funenc_theme/static/lib/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css" />
+                <!-- <link rel="stylesheet" href="/funenc_theme/static/css/select_style.css" /> -->
+                <link rel="stylesheet" href="/funenc_theme/static/css/select_style2.css" />
+
+                <!-- table -->
+                <link rel="stylesheet" href="/funenc_theme/static/css/funenc_table.css" />
+                
+                <!-- splitter -->
+                <script type="application/javascript" src="/funenc_theme/static/lib/split.js" />
+                
+                <!-- object hash -->
+                <script type="application/javascript" src="/funenc_theme/static/lib/object_hash.js" />
+
+                <!-- color picker -->
+                <script type="application/javascript" src="/funenc_theme/static/lib/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js" />
+
+                <!-- js -->
+                <script type="application/javascript" src="/funenc_theme/static/lib/perfect-scrollbar.jquery.min.js" />
+                <script type="application/javascript" src="/funenc_theme/static/lib/jquery.simplePagination.js" />
+                <script type="application/javascript" src="/funenc_theme/static/lib/jquery.treegrid.min.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_basic_field.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_sidebar_menu.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_app_menu.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_basic_render.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_menu.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_web_client.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_user_menu.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_list_render.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_basic_model.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_many2one.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_pager.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_form_controller_extend.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_abstract_controller.js" />
+
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_basic_controller.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_list_controller.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_kanban_controller.js" />
+                
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_template_widget.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_callback_registry.js" />
+
+                <!-- tree grid -->
+                <script type="application/javascript" src="/funenc_theme/static/js/tree_grid/funenc_tree_grid_controller.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/tree_grid/funenc_tree_grid_render.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/tree_grid/funenc_tree_grid.js" />
+                
+                <!-- left tree list -->
+                <script type="application/javascript" src="/funenc_theme/static/js/left_tree_list/funenc_left_tree_list_controller.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/left_tree_list/funenc_left_tree_list_render.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/left_tree_list/funenc_left_tree_list.js" />
+
+                <!-- funenc datepicker -->
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_datepicker.js" />
+
+                <!-- action manager -->
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_action_manager.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_action_manager_act_window.js" />
+
+                <!-- selection -->
+                <script type="application/javascript" src="/funenc_theme/static/lib/bootstrap-select-1.13.7/js/bootstrap-select.min.js" />
+                <script type="application/javascript" src="/funenc_theme/static/lib/bootstrap-select-1.13.7/js/i18n/defaults-zh_CN.min.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_selection.js" />
+
+                <!-- funenc table -->
+                <script type="application/javascript" src="/funenc_theme/static/js/table/funenc_table_controller.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/table/funenc_table_render.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/table/funenc_table_edittable_render.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_list_editable_render.js" />
+
+                <script type="application/javascript" src="/funenc_theme/static/js/table/funenc_table.js" />
+
+                <!-- sublist widget -->
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_sub_list_widget.js" />
+
+                <!-- extend funenc_view_dialog_extend -->
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_x2many_extend.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_view_dialog_extend.js" />
+
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_theme_color.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_dlg_extend.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_notification.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_abstract_web_client.js" />
+
+                <!-- form扩展，防止点label点到控件上去 -->
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_form_extend.js" />
+
+                <!-- 搜索 -->
+                <script type="application/javascript" src="/funenc_theme/static/js/search/funenc_search_ext.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/search/funenc_search_propations.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/search/funenc_custom_search_pannnel.js" />
+                
+                <!-- tree buttons -->
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_tree_buttons.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/funenc_widget_extend.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/core/misc.js" />
+                <script type="application/javascript" src="/funenc_theme/static/js/fields/ftime.js" />
+            </xpath>
+        </template>
+
+        <template id="funenc_theme_res_async" name="funenc_theme_res_async" inherit_id="web.layout">
+			<xpath expr="//t[@t-raw]" position="before">
+                <script type="application/javascript" src="/funenc_theme/static/layui/layui.js" />
+                <link rel="stylesheet" href="/funenc_theme/static/lib/layui/css/layui.css" />
+			</xpath>
+		</template>
+
+        <template id="fx_select_js_assets" name="fx_select_js_assets" inherit_id="web.assets_common">
+            <!-- replace the slect2.js with full select2.js -->
+            <xpath expr="//script[@src='/web/static/lib/select2/select2.js']" position="replace">
+                <script type="text/javascript" src="/funenc_theme/static/lib/select2/js/select2.full.min.js"/>
+            </xpath>
+        </template>
+
+        <template id="fx_select_css_assets" name="fx_select_css_assets" inherit_id="web.assets_common">
+            <!-- replace the slect2.css -->
+            <xpath expr="//link[@href='/web/static/lib/select2/select2.css']" position="replace">
+                <link rel="stylesheet" type="text/css" href="/funenc_theme/static/lib/select2/css/select2.min.css"/>
+            </xpath>
+        </template>
+
+    </data>
+</odoo>

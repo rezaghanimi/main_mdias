@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <!-- 模板各自用各自的，少得到时相互影响  -->
+    <t t-name="two_list_template">
+        <div class="two_list_box">
+            <div class="top_box"/>
+            <div class="bottom_box"/>
+        </div>
+    </t>
+
+    <t t-name="construction_template">
+        <div class="two_list_box">
+            <div class="top_box"/>
+            <div class="bottom_box"/>
+        </div>
+    </t>
+
+    <t t-name="time_table_template">
+        <div class="two_list_box">
+            <div class="btns_box" style='padding-left: 10px; padding-top:10px'/>
+            <div class="top_box"/>
+            <div class="bottom_box"/>
+        </div>
+    </t>
+
+    <!-- 施工计划模板  -->
+    <t t-name="construction_list_template">
+        <div class="two_list_box">
+            <div class="btns_box" style='padding-left: 10px'/>
+            <div class="top_box"/>
+            <div class="bottom_box"/>
+        </div>
+    </t>
+
+    <!-- 调车计划模板  -->
+    <t t-name="three_list_template">
+        <div class="three_box">
+            <div class="top_box">
+                <div class="top_left_box col-md-6 col-xs-12" style="padding-right:5px;"/>
+                <div class="top_right_box col-md-6 col-xs-12" style="padding-left:5px;"/>
+            </div>
+            <div class="log_box"/>
+        </div>
+    </t>
+
+    <t t-name="cur_train_manage_buttons">
+        <button class="btn btn-info">初始化</button>
+        <button class="btn btn-primary">手动同步</button>
+    </t>
+
+    <t t-name="metro_park_dispatch.construction_button">
+        <div style="display:flex; align-items: center">
+            <button class="btn btn-primary manual_syn">手动同步</button>
+            <div class="custom-control custom-toggle" style="display:block; margin-left:10px;">
+                <input type="checkbox" id="custom_toggle" name="custom_toggle" class="custom-control-input auto_sync"/>
+                <label class="custom-control-label" for="custom_toggle">自动同步</label>
+            </div>
+        </div>
+    </t>
+
+    <!-- 收发车计划 -->
+    <t t-name="train_in_out_template">
+        <div class="three_box">
+            <div class="top_box">
+                <div class="top_left_box col-md-6" style="padding-right:5px;"/>
+                <div class="top_right_box col-md-6" style="padding-left:5px;"/>
+            </div>
+            <div class="log_box"/>
+        </div>
+    </t>
+
+    <t t-name="train_in_out_btns">
+        <div>
+            <button class="btn btn-info add_out_plan mr-1">新增发车</button>
+            <button class="btn btn-success add_back_plan mr-1">新增收车</button>
+            <button class="btn btn-info import_run_plan mr-1">导入计划</button>
+            <button class="btn btn-info publish_plan mr-1">发布计划</button>
+            <button class="btn btn-info btn-export-plan mr-1">导出计划</button>
+            <button t-if="debug" class="btn btn-success gen_test_plan_data mr-1">生成测试数据</button>
+            <button t-if="debug" class="btn btn-success gen_ats_train_pos mr-1">模拟车辆位置</button>
+        </div>
+    </t>
+
+    <!-- 运行图管理 -->
+    <t t-name="time_table_action_btns">
+        <div class="d-flex">
+            <button class="btn btn-primary import_time_table ml-1">导入运行图</button>
+            <button class="btn btn-primary manual_syn ml-1">手动同步</button>
+            <button class="btn btn-primary time_table_calendar ml-1">运行日历</button>
+            <button class="btn btn-primary delete_time_table ml-1" style="display: none" confirm="是否确认删除该记录?">删除运行图</button>
+        </div>
+    </t>
+
+    <!-- 时刻表日历 -->
+    <t t-name="time_table_calendar_view_template">
+        <div class="two_list_box">
+            <div class="top_box">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <input class="o_input ui-autocomplete-input year_month_picker"/>
+                    </div>
+                </div>
+                <div class="calendar funenc_calendar"/>
+            </div>
+            <div class="log_box"/>
+        </div>
+    </t>
+
+    <t t-name="time_table_calendar_btns">
+        <button class="btn btn-primary import_time_table">导入运行图</button>
+        <button class="btn btn-primary manual_syn">手动同步</button>
+        <button class="btn btn-primary time_table_calendar">运行日历</button>
+    </t>
+
+    <!-- 收发车计划 -->
+    <t t-name="run_plan_monitor_box">
+        <div class="three_box">
+            <div class="btn_box row align-items-center" style="padding: 0px 26px">
+                <input class="o_input plan_date mr-1 ml-1" style="width: 150px;"/>
+            </div>
+            <div class="top_box">
+                <div class="row">
+                    <div class="col-md-6" style="padding-right:0px;">
+                        <div class="plan_title">发车作业</div>
+                        <div class="top_left_box"/>
+                    </div>
+                    <div class="col-md-6" style="padding-left:5px;">
+                        <div class="plan_title">收车作业</div>
+                        <div class="top_right_box"/>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="log_box col-md-12"/>
+            </div>
+        </div>
+    </t>
+
+    <!-- 调度指令 -->
+    <t t-name="dispatch_instructions_box">
+        <div class="three_box">
+            <div class="top_box">
+                <div class="row">
+                    <div class="col-md-6" style="padding-right:5px; padding-left:5px;">
+                        <span class="dispatch_box_title">收发车计划指令</span>
+                        <div class="top_left_box"/>
+                    </div>
+                    <div class="col-md-6" style="padding-left:5px; padding-right:5px;">
+                        <span class="dispatch_box_title">调车计划指令</span>
+                        <div class="top_right_box"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+    <!-- 运行图配置 -->
+    <t t-name="time_table_config">
+        <div class="two_list_box">
+            <div class="nor_box"/>
+            <div class="special_box"/>
+        </div>
+    </t>
+    <t t-name="dispatch_plan_btns">
+        <button class="btn btn-primary import_time_table">发布</button>
+    </t>
+
+    <!-- 调车申请 -->
+    <t t-name="dispatch_request_btns">
+        <t t-set="data" t-value="widget.record.data"/>
+        <div t-if="_.contains(['draft', 'rebacked', 'canceled'], data.state)">
+            <button name="view_request_detail" t-if="widget.has_group('metro_park_dispatch.group_dispatch_car_management_dispatch_car_apply_page_look')" type="object" class="btn btn-primary btn-sm import_time_table view_detail">
+                详情
+            </button>
+            <button name="edit_request" type="object" t-if="widget.has_group('metro_park_dispatch.group_dispatch_car_management_dispatch_car_apply_edit')" class="btn btn-primary btn-sm import_time_table edit">编辑</button>
+            <button name="submit_request" t-if="widget.has_group('metro_park_dispatch.group_dispatch_car_management_dispatch_car_apply_edit')" type="object" class="btn btn-primary btn-sm import_time_table submit_request">提交</button>
+        </div>
+        <div t-elif="_.contains(['wait_accept'], data.state)">
+            <button name="view_request_detail" type="object" t-if="widget.has_group('metro_park_dispatch.group_dispatch_car_management_dispatch_car_apply_page_look')" class="btn btn-primary btn-sm import_time_table view_request_detail">详情</button>
+            <button name="canceled_request" type="object" t-if="widget.has_group('metro_park_dispatch.group_dispatch_car_management_dispatch_car_apply_page_look')" class="btn btn-primary btn-sm import_time_table cancel_request">撤回</button>
+        </div>
+        <div t-else="">
+            <button name="view_request_detail" type="object" t-if="widget.has_group('metro_park_dispatch.group_dispatch_car_management_dispatch_car_apply_page_look')" class="btn btn-primary btn-sm import_time_table view_detail">详情</button>
+        </div>
+    </t>
+
+    <!-- 调车审核按扭  -->
+    <t t-name="dispatch_audit_btns">
+        <t t-set="data" t-value="widget.record.data"/>
+        <div t-if="_.contains(['wait_accept'], data.state)">
+            <button name="accept_request"
+                    type="object"
+                    t-if="widget.has_group('metro_park_dispatch.group_dispatch_audit_pass')"
+                    class="btn btn-primary btn-sm edit">通过</button>
+            <button name="reback_request"
+                    type="object"
+                    t-if="widget.has_group('metro_park_dispatch.group_dispatch_audit_reback')"
+                    class="btn btn-primary btn-sm">驳回</button>
+            <button name="view_request_detail"
+                    type="object"
+                    t-if="widget.has_group('metro_park_dispatch.group_dispatch_audit_view_detail')"
+                    class="btn btn-primary btn-sm import_time_table view_request_detail">详情</button>
+        </div>
+        <div t-elif="_.contains(['accepted'], data.state)">
+            <button type="object"
+                    name="open_dispatch_detail_action"
+                    t-if="widget.has_group('metro_park_dispatch.group_dispatch_audit_make_dispatch_notice')"
+                    class="btn btn-primary btn-sm">编制通知单</button>
+            <button type="object"
+                    name="view_request_detail"
+                    t-if="widget.has_group('metro_park_dispatch.group_dispatch_audit_view_detail')"
+                    class="btn btn-primary btn-sm">详情</button>
+            <button type="object"
+                    name="document_return_operation"
+                    t-if="widget.has_group('metro_park_dispatch.group_dispatch_audit_make_dispatch_notice')"
+                    class="btn btn-primary btn-sm">退回</button>
+        </div>
+        <div t-elif="_.contains(['wait_executing', 'executing'], data.state)">
+            <button type="object"
+                    name="view_execute_detail"
+                    t-if="widget.has_group('metro_park_dispatch.group_dispatch_audit_view_detail')"
+                    class="btn btn-success btn-sm">执行情况</button>
+            <button type="object"
+                    name="reback_plan"
+                    t-if="widget.has_group('metro_park_dispatch.group_dispatch_car_management_dispatch_car_approve_reject')"
+                    class="btn btn-danger btn-sm reback_plan">撤回</button>
+            <button type="object"
+                    name="get_change_plan_action"
+                    t-if="widget.has_group('metro_park_dispatch.group_dispatch_car_management_dispatch_car_approve_reject')"
+                    class="btn btn-warning btn-sm reback_plan">变更计划</button>
+            <button type="object"
+                    name="view_request_detail"
+                    t-if="widget.has_group('metro_park_dispatch.group_dispatch_audit_view_detail')"
+                    class="btn btn-primary btn-sm view_request_detail">详情</button>
+        </div>
+        <div t-elif="_.contains(['finished'], data.state)">
+            <button name="view_execute_detail"
+                    type="object"
+                    t-if="widget.has_group('metro_park_dispatch.group_dispatch_audit_view_excute_detail')"
+                    class="btn btn-primary btn-sm import_time_table view_execute_detail">执行记录</button>
+            <button name="view_request_detail"
+                    type="object"
+                    t-if="widget.has_group('metro_park_dispatch.group_dispatch_audit_view_detail')"
+                    class="btn btn-primary btn-sm import_time_table">详情</button>
+        </div>
+    </t>
+
+    <t t-name="DayRunList.buttons">
+        <div class="o_list_buttons" role="toolbar" aria-label="Main actions">
+            <t t-if="widget.is_action_enabled('create')">
+                <button type="button" class="btn btn-primary o_list_button_add" accesskey="c">
+                    Create
+                </button>
+            </t>
+            <button type="button" class="btn btn-primary o_list_button_save" accesskey="s">
+                Save
+            </button>
+            <button type="button" class="btn btn-secondary o_list_button_discard" accesskey="j">
+                Discard
+            </button>
+            <button type="button" class="btn btn-secondary o_list_button_discard" accesskey="j">
+                触发当日
+            </button>
+        </div>
+    </t>
+    <t t-name="time_table_config.buttons">
+        <div>
+            <button type="object" name="edit_config" class="btn btn-success btn-sm">
+                更换运行图
+            </button>
+            <button type="object" name="download_time_table" class="btn btn-info btn-sm">
+                下载运行图
+            </button>
+        </div>
+    </t>
+    <t t-name="time_table.buttons">
+        <div>
+            <t t-set="time_table_status" t-value="widget.record.data.state"/>
+            <t t-if="time_table_status == 'active'">
+                <button class="btn btn-sm btn-primary btn-small" type="object" name="change_status">禁用</button>
+            </t>
+            <t t-else="">
+                <button class="btn btn-sm btn-primary btn-small" type="object" name="change_status">启用</button>
+            </t>
+            <button class="btn btn-sm btn-primary btn-small" type="object" name="view_time_table">查看时刻表</button>
+            <button class="btn btn-sm btn-primary btn-small" type="object" name="download_time_table">下载运行图</button>
+        </div>
+    </t>
+    <t t-name="time_table_special.buttons">
+        <div style="flex: 1 1 auto;" class="d-flex align-items-center">
+            <span style="font: 24px bold; margin:10px">特殊日期</span>
+            <button type="object" name="add_special" style="height:36px;" class="btn btn-success btn-sm add_special ml-1">
+                添加
+            </button>
+        </div>
+    </t>
+    <t t-name="time_table_normal.buttons">
+        <div style="flex: 1 1 auto;" class="d-flex">
+            <span style="font: 24px bold">特殊日期</span>
+        </div>
+    </t>
+    <t t-name="time_table_syn_log.buttons">
+        <div>
+            <button class="btn btn-sm btn-primary btn-small" type="object" name="parse_time_table">解析运行图</button>
+            <button class="btn btn-sm btn-primary btn-small" type="object" name="download_attachment">下载附件</button>
+        </div>
+    </t>
+    <t t-name="cur_train_manage.buttons">
+        <div>
+            <button type="action"
+                    data-model="metro_park_dispatch.cur_train_manage"
+                    data-method="reset_position"
+                    data-reload-on-close="1"
+                    class="btn btn-primary">
+                清除位置
+            </button>
+            <button type="action"
+                    data-model="metro_park_dispatch.cur_train_manage"
+                    data-method="simulation_location"
+                    data-reload-on-close="1"
+                    class="btn btn-primary">
+                模拟位置
+            </button>
+        </div>
+    </t>
+
+    <t t-name="cur_train_manage.item.buttons">
+        <div>
+            <t t-set="data" t-value="widget.record.data"/>
+            <button t-if="data.detain" type="object" name="un_detain_train" class="btn btn-success btn-sm">
+                解除扣车
+            </button>
+            <button t-else="" type="object" name="detain_train" class="btn btn-success btn-sm">
+                扣车
+            </button>
+            <button type="object" name="view_detain_history" class="btn btn-info btn-sm">
+                扣车历史
+            </button>
+<!--            <button type="object" name="report_train_fault" class="btn btn-info btn-sm">-->
+<!--                车辆故报-->
+<!--            </button>-->
+<!--            <button type="object" name="view_report_history" class="btn btn-info btn-sm">-->
+<!--                车辆故报-->
+<!--            </button>-->
+        </div>
+    </t>
+
+    <t t-name="cur_train_manay2many">
+        <div class="d-flex cur_train_manay2many" aria-atomic="true">
+            <t t-foreach="widget.cur_train_infos" t-as="cur_train_infos">
+                <span style="width:100%; height:36px; line-height:36px;" t-esc="cur_train_infos.name"/>
+                <t t-set="cur_trains" t-value="cur_train_infos.train"/>
+                <div t-foreach="cur_trains" t-as="cur_train_info" class="d-flex" style="width:180px;">
+                    <t t-set="id_for_label" t-value="'o_many2many_checkbox_' + _.uniqueId()"/>
+                    <div class="custom-control custom-checkbox d-flex align-items-center">
+                        <input type="checkbox" t-att-id="id_for_label" class="custom-control-input" t-att-data-record-id="JSON.stringify(cur_train_info.id)"/>
+                        <label t-att-for="id_for_label" class="custom-control-label o_form_label">
+                            <t t-esc="cur_train_info.train[1]"/>
+                        </label>
+                    </div>
+                    <span t-att-class='train_status' t-esc="cur_train_info.train_status"/>
+                    <span>
+                        <t t-esc="cur_train_info.cur_rail[1]"/>
+                    </span>
+                    <span t-if="cur_train_info.detain">(扣车)</span>
+                </div>
+            </t>
+        </div>
+    </t>
+
+    <span t-att-class='"train_status' t-esc="cur_train_info.train_status"/>
+    <span>
+        <t t-esc="cur_train_info.cur_rail[1]"/>
+    </span>
+    <span t-if="cur_train_info.detain">(扣车)</span>
+
+    <!-- 收车计划按扭 -->
+    <t t-name="back_plan_operation_btns">
+        <t t-set="state" t-value="widget.record.data.state"/>
+        <div class="dropdown" t-if="state!='canceled'">
+            <a data-toggle="dropdown" data-boundary="viewport" class="btn btn-clean btn-icon btn-sm" href="#" aria-expanded="false">
+                <i class="fa fa-ellipsis-h"/>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+                <a type="action" data-model="metro_park_dispatch.train_back_plan" data-method="receive_train" class="dropdown-item" t-if="['preparing', 'unpublish', 'executing'].includes(state)">立刻接车</a>
+                            <a href="javascript:void(0)" type="action" data-model="metro_park_dispatch.train_back_plan" data-method="arrive_request_point" class="dropdown-item" t-if="['preparing', 'executing', 'finished'].includes(state)">报点位置</a>
+                <a href="javascript:void(0)" type="action" data-model="metro_park_dispatch.train_back_plan" data-method="cancel_plan" class="dropdown-item" t-if="['preparing', 'unpublish'].includes(state)">取消接车</a>
+<!--                <a href="javascript:void(0)" type="action" data-model="metro_park_dispatch.train_back_plan" data-method="reback_train_plan" class="dropdown-item" t-if="['preparing', 'unpublish'].includes(state)">撤回计划</a>-->
+                <a href="javascript:void(0)" t-if="debug" type="action" data-model="metro_park_dispatch.train_back_plan" data-method="mock_train_arrive" class="dropdown-item">车辆到达</a>
+            </div>
+        </div>
+        <div t-else="">
+            无
+        </div>
+    </t>
+
+    <!-- 发车操作按扭 -->
+    <t t-name="out_plan_operation_btns">
+        <t t-set="state" t-value="widget.record.data.state"/>
+        <div class="dropdown" t-if="state!='canceled'">
+            <a class="btn btn-clean btn-icon btn-sm dropdown-toggle"
+               href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-ellipsis-h"/>
+            </a>
+            <div class="dropdown-menu">
+                <a type="action" data-model="metro_park_dispatch.train_out_plan" data-method="dispatch_now" class="dropdown-item" t-if="['preparing', 'unpublish', 'executing'].includes(state)">立刻发车</a>
+                <a href="javascript:void(0)" type="action" data-model="metro_park_dispatch.train_back_plan" data-method="arrive_request_point" class="dropdown-item" t-if="['preparing', 'executing', 'finished'].includes(state)">报点位置</a>
+                <a href="javascript:void(0)" type="action" data-model="metro_park_dispatch.train_out_plan" data-method="cancel_train_plan" class="dropdown-item" t-if="['preparing', 'unpublish'].includes(state)">取消发车</a>
+                <!-- <a href="javascript:void(0)" type="action" data-model="metro_park_dispatch.train_out_plan" data-method="reback_train_plan" class="dropdown-item" t-if="['preparing', 'unpublish'].includes(state)">撤回计划</a> -->
+                <a href="javascript:void(0)" t-if="debug" type="action" data-model="metro_park_dispatch.train_out_plan" data-method="mock_send_train" class="dropdown-item">模拟发车</a>
+            </div>
+        </div>
+        <div t-else="">
+            无
+        </div>
+    </t>
+
+    <!--指令按钮-->
+    <t t-name="dispatch_plan_cmd_btns">
+        <span style="overflow: visible; position: relative; width: 80px;">
+            <div class="dropdown">
+                <t t-set="dispatch_type" t-value="widget.record.data.dispatch_type"/>
+                <a data-toggle="dropdown" data-attach="body" style="width:100%" class="btn btn-clean btn-icon btn-sm" href="#" aria-expanded="false">
+                    <i class="fa fa-ellipsis-h"/>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="display: none; position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(1350px, 1862px, 0px);">
+                    <t t-if="dispatch_type == 'dispatch'">
+                        <a href="javascript:void(0)" type="action" data-model="metro_park_dispatch.dispatch_plan_cmd" data-method="create_cmd" class="dropdown-item"> 新建 </a>
+                        <a href="javascript:void(0)" type="action" data-model="metro_park_dispatch.dispatch_plan_cmd" data-method="modification_cmd" class="dropdown-item">修改</a>
+                        <a href="javascript:void(0)" type="action" data-model="metro_park_dispatch.dispatch_plan_cmd" data-method="push_cmd" class="dropdown-item">推入</a>
+                        <a href="javascript:void(0)" type="action" data-model="metro_park_dispatch.dispatch_plan_cmd" data-method="withdrawal_cmd" class="dropdown-item">撤回</a>
+                        <a href="javascript:void(0)" type="action" data-model="metro_park_dispatch.dispatch_plan_cmd" data-method="point_cmd" class="dropdown-item">人工报点</a>
+                        <a href="javascript:void(0)" type="action" data-model="metro_park_dispatch.dispatch_plan_cmd" data-method="cancel_cmd" class="dropdown-item">取消</a>
+                        <a href="javascript:void(0)" type="action" data-model="metro_park_dispatch.dispatch_plan_cmd" data-method="view_notice_cmd" class="dropdown-item">查看通知单</a>
+                    </t>
+                    <t t-else="">
+                    </t>
+                </div>
+            </div>
+        </span>
+    </t>
+
+    <!-- 收发车计划 -->
+    <t t-name="train_out_status_btns">
+        <t t-set="state" t-value="widget.record.data.state"/>
+        <t t-log="state"/>
+        <span t-if="state == 'finished'" class="plan_finished">
+            已完成
+        </span>
+        <span t-elif="state == 'unpublish'" class="plan_unpublish">
+            未发布
+        </span>
+        <!-- 正常情况下侍确认 -->
+        <span t-elif="state == 'wait_accept'" class="plan_wait">
+            侍确认
+        </span>
+        <span t-elif="state == 'executing'" class="plan_executing">
+            执行中
+        </span>
+        <span t-elif="state == 'canceled'" class="plan_canceled">
+            已取消
+        </span>
+        <span t-elif="state == 'preparing'" class="plan_preparing">
+            待发车
+        </span>
+    </t>
+
+    <!-- 收车计划 -->
+    <t t-name="train_back_status_btns">
+        <t t-set="state" t-value="widget.record.data.state"/>
+        <span t-if="state == 'finished'" class="plan_finished">
+            已完成
+        </span>
+        <span t-elif="state == 'unpublish'" class="plan_unpublish">
+            未发布
+        </span>
+        <!-- 正常情况下侍确认 -->
+        <span t-elif="state == 'wait_accept'" class="plan_wait">
+            侍确认
+        </span>
+        <span t-elif="state == 'executing'" class="plan_executing">
+            执行中
+        </span>
+        <span t-elif="state == 'canceled'" class="plan_canceled">
+            已取消
+        </span>
+        <span t-elif="state == 'preparing'" class="plan_preparing">
+            侍接车
+        </span>
+    </t>
+
+
+    <!-- 车次号 -->
+    <t t-name="metro_park_dispatch.train_no">
+        <span t-if="widget.record.data.plan_train_no">
+            <t t-esc="widget.record.data.plan_train_no.replace('.0', '')"/>
+        </span>
+        <span t-else="">
+            <t t-esc="widget.record.data.plan_train_no"/>
+        </span>
+    </t>
+
+    <t t-name="cur_train_map_action">
+        <div id="cur_train_map_body"
+             style="display:grid;grid-template-columns: 20% 20% 20% 20% 20%; grid-template-rows:33% 33% auto;height:99%;">
+        </div>
+    </t>
+
+    <t t-name="cur_train_map_operate_action">
+        <div style="width:100%; height:100%"/>
+    </t>
+
+    <!-- 输入车次号 -->
+    <t t-name="construction_dispatch.edit_train_no">
+        <div class="dropdown">
+            <t t-set="train_no" t-value="widget.record.data.train_no"/>
+            <a class="btn btn-clean btn-text btn-sm dropdown-toggle"
+               href="javascript:void(0)"
+               role="button"
+               data-toggle="dropdown"
+               aria-haspopup="true"
+               aria-expanded="false">
+                <t t-if="train_no == ''">
+                    <t t-esc="train_no"/>
+                </t>
+                <t t-else="">
+                    无
+                </t>
+            </a>
+            <div class="dropdown-menu">
+                <form class="px-4 py-3">
+                    <div class="form-group">
+                        <label for="train_no">车次号</label>
+                        <input type="input" class="form-control" style="width:150px" id="train_no" placeholder="请输入车次号"/>
+                    </div>
+                    <button type="submit" class="btn btn-primary">确定</button>
+                </form>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="construction_plan_syn_btns">
+        <div>
+            <button class="btn btn-sm btn-primary btn-small"
+                    type="action" data-model="metro_park_dispatch.construction_plan"
+                    data-method="action_synchronization_wizard">手动同步</button>
+        </div>
+    </t>
+
+    <t t-name="construction_area_syn_btns">
+        <div>
+            <button class="btn btn-sm btn-primary btn-small"
+                    type="action"
+                    data-model="metro_park_dispatch.construction_area_relation"
+                    data-method="corn_synchronization">手动同步</button>
+        </div>
+    </t>
+
+    <t t-name="work_shop_day_plan_list.btns">
+        <button class="btn btn-primary plan_rails">自动安排位置</button>
+    </t>
+
+    <t t-name="day_run_plan_btns">
+        <div>
+            <button type="object" name="view_day_run_plan_data" class="btn btn-info btn-sm">
+                查看
+            </button>
+            <button t-if="widget.record.data.state == 'un_publish'"
+                    type="object"
+                    name="publish_plan"
+                    class="btn btn-info btn-sm">
+                发布
+            </button>
+            <button t-if="widget.record.data.state != 'un_publish'"
+                    type="object"
+                    name="reback_plan"
+                    class="btn btn-info btn-sm">
+                撤回
+            </button>
+            <button t-if="widget.record.data.state != 'published'"
+                    type="object"
+                    name="reback_day_plan"
+                    class="btn btn-info btn-sm">
+                撤回日计划
+            </button>
+        </div>
+    </t>
+
+</templates>
+

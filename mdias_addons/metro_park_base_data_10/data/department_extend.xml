@@ -1,0 +1,124 @@
+<odoo>
+    <data>
+
+        <record id="wechat_department_pop_tree" model="ir.ui.view">
+            <field name="name">企业微信部门列表</field>
+            <field name="model">funenc.wechat.department</field>
+            <field name="arch" type="xml">
+                <tree import="false" create="0" edit="0" delete="0" js_class="left_department_tree" options="{'height': '400'}">
+                    <field name="name" width="400"/>
+                    <field name="wx_id"/>
+                    <field name="parent_id" width="200"/>
+                    <field name="properties" width="300" widget="many2many_tags"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_base_data_10.department_extend_list">
+            <field name="name">部门列表</field>
+            <field name="model">funenc.wechat.department</field>
+            <field name="inherit_id" ref="funenc_wechat.view_wechat_department_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='properties']" position="after">
+                    <field name="department_code"/>
+                    <field name="devs" />
+                    <field name="parent_path" />
+                    <field name="work_master" />
+                    <field name="locations" widget="many2many_tags" />
+                </xpath>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_base_data_10.department_extend_form">
+            <field name="name">部门管理</field>
+            <field name="model">funenc.wechat.department</field>
+            <field name="inherit_id" ref="funenc_wechat.view_wechat_department_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form" position="replace">
+                    <form>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="name">name</label>
+                            <div class="col-sm-3">
+                                <field name="name" />
+                            </div>
+                            <label class="col-sm-2 col-form-label" for="wx_id">wx_id</label>
+                            <div class="col-sm-3">
+                                <field name="wx_id" />
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="account_id">account_id</label>
+                            <div class="col-sm-3">
+                                <field name="account_id" options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                            </div>
+                            <label class="col-sm-2 col-form-label" for="parent_id">parent_id</label>
+                            <div class="col-sm-3">
+                                <field name="parent_id" options="{'no_create_edit': True,'no_open': True, 'no_create':True}" />
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="department_code">department_code</label>
+                            <div class="col-sm-3">
+                                <field name="department_code"/>
+                            </div>
+                            <label class="col-sm-2 col-form-label" for="properties">properties</label>
+                            <div class="col-sm-3">
+                                <field name="properties" widget="many2many_tags"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="locations">locations</label>
+                            <div class="col-sm-3">
+                                <field name="locations" widget="many2many_tags" />
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="work_master">work_master</label>
+                            <div class="col-sm-3">
+                                <field name="work_master" />
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="users">users</label>
+                            <div class="col-sm-8">
+                                <field name="users">
+                                    <tree js_class="fnt_table" create="1" options="{'height': 200}">
+                                        <field name="name"/>
+                                        <field name="wx_userid"/>
+                                        <field name="mobile"/>
+                                        <field name="email"/>
+                                        <field name="user_state"/>
+                                    </tree>
+                                </field>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="devs">devs</label>
+                            <div class="col-sm-8">
+                                <field name="devs">
+                                    <tree js_class="fnt_table" create="1" options="{'height': 200}">
+                                        <field name="dev_name"/>
+                                        <field name="dev_no"/>
+                                        <field name="batch_no"/>
+                                    </tree>
+                                </field>
+                            </div>
+                        </div>
+                    </form>
+                </xpath>
+
+                <xpath expr="//form" position="attributes">
+                    <attribute name="edit">1</attribute>
+                </xpath>
+
+            </field>
+        </record>
+
+    </data>
+</odoo>

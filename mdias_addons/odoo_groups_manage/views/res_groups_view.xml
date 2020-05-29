@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="groups_manage_tree">
+            <field name="name">权限列表</field>
+            <field name="model">res.groups</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table" options="{'height': 'full-270'}" create="0" import="0">
+                    <field name="category_id" string="类别" width="200"/>
+                    <field name="name" string="名称" width="300"/>
+                    <field name="comment" string="备注" width="200"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="odoo_groups_manage_res_groups_form">
+            <field name="name">权限表单</field>
+            <field name="model">res.groups</field>
+            <field name="arch" type="xml">
+                <form edit="1">
+
+                    <div class="oe_button_box" name="button_box">
+                        <button name="toggle_active" type="object" class="oe_stat_button" icon="fa-check">
+                            <field name="active" widget="boolean_button" options='{"terminology": "active"}'/>
+                        </button>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="name">name</label>
+                        <div class="col-sm-10">
+                            <field name="name" readonly="1"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="category_id">category_id</label>
+                        <div class="col-sm-10">
+                            <field name="category_id" readonly="1"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="comment">comment</label>
+                        <div class="col-sm-10">
+                            <field name="comment"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="users">users</label>
+                        <div class="col-sm-10">
+                            <field name="users" string="权限用户">
+                                <tree js_class="fnt_table" options="{'height': 200}">
+                                    <field name="name" string="姓名"/>
+                                    <field name="login" string="登录名"/>
+                                    <field name="active" string="是否有效"/>
+                                </tree>
+                            </field>
+                        </div>
+                    </div>
+
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="user_role_groups_manage_tree">
+            <field name="name">用户角色组列表</field>
+            <field name="model">res.groups</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table" options="{'height': 'full-270'}" class="nocreate">
+                    <field name="name" string="角色组名称" width="200"/>
+                    <field name="user_count" string="用户数"/>
+                    <field name="comment" string="备注" width="300"/>
+                    <field name="active" string="状态" width="100"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="user_role_groups_manage_form">
+            <field name="name">角色表单</field>
+            <field name="model">res.groups</field>
+            <field name="priority">99</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="name">角色名</label>
+                        <div class="col-sm-10">
+                            <field name="name"/>
+                        </div>
+                    </div>
+
+                    <notebook>
+                        <page name="implied_ids" string="权限">
+                            <field name="implied_ids" widget="field_groups"/>
+                        </page>
+                        <page name="users" string="用户">
+                            <field name="users" string="角色用户">
+                                <tree js_class="fnt_table" options="{'height': 200}">
+                                    <field name="name" string="姓名"/>
+                                    <field name="login" string="登录名"/>
+                                    <field name="active" string="是否有效"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page name="other" string="其它">
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label" for="active">启用</label>
+                                <div class="col-sm-10">
+                                    <field name="active"/>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label" for="comment">备注</label>
+                                <div class="col-sm-10">
+                                    <field name="comment"/>
+                                </div>
+                            </div>
+                        </page>
+                    </notebook>
+
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

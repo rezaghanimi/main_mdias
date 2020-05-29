@@ -1,0 +1,21 @@
+
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="metro_park_base.dev_unit_form">
+            <field name="name">设备类型</field>
+            <field name="model">metro_park_base.dev_unit</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="name">name</label>
+                        <div class="col-sm-8">
+                            <field name="name"/>
+                        </div>
+                    </div>
+
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
+    

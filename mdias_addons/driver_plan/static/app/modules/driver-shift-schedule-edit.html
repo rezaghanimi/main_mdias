@@ -1,0 +1,145 @@
+<div class="layui-row">
+    <button class="layui-btn layui-btn-sm" id="backList" style="margin-left: 10px">
+        返回
+    </button>
+    <button class="layui-btn layui-btn-sm layui-hide" id="loadData" style="margin-left: 10px">
+        load
+    </button>
+    <button class="layui-btn layui-btn-sm" id="updateSchedule" style="margin-left: 10px">
+        保存
+    </button>
+</div>
+<div class="layui-row">
+    <div class="layui-col-lg10">
+        <div class="layui-row" id="templateContainer">
+
+        </div>
+    </div>
+    <div class="layui-col-lg2" id="resetContainer">
+        <table class="layui-table" lay-size="sm">
+            <thead>
+            <tr>
+                <th colspan="3">特殊人员列表</th>
+            </tr>
+            <tr>
+                <th>姓名</th>
+                <th>原因</th>
+                <th>备注</th>
+            </tr>
+            </thead>
+            <tbody id="absentDriverContainer"></tbody>
+        </table>
+    </div>
+</div>
+<script id="scheduleClassTemplate" type="text/html">
+    {{# layui.each(d.drivers, function(index, item){ }}
+    <div class="layui-col-lg6">
+        <table class="layui-table" lay-size="sm">
+            <thead>
+            <tr>
+                <th>队别</th>
+                <th>组长/队长</th>
+                <th>位置</th>
+                <th>司机</th>
+                <th>学员/实习生</th>
+                <th>学员/实习生</th>
+                <th>学员/实习生</th>
+                <th>班次</th>
+                <th>出勤地点</th>
+                <th>叫班时间</th>
+                <th>出勤时间</th>
+                <th>交班时间</th>
+                <th>备注</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{# layui.each(item.machineClasses, function(position, element){ }}
+            <tr type="{{item.name}}">
+                {{# if(position ==0){}}
+                <td rowspan="{{item.machineClasses.length}}">
+                    <div class="special-text">{{item.name}}</div>
+                </td>
+                {{# } }}
+                <td>
+                    {{# if(item.captains.length > 0 && position < item.captains.length ){ }}
+                    <div id="{{item.captains[position].id}}">队长:{{item.captains[position].name}}</div>
+                    {{# } }}
+                    {{# if(item.leaders.length > 0 && (position >= item.captains.length +2) && (position <
+                    item.captains.length + 2 +item.leaders.length ) ){ }}
+                    <div id="{{item.leaders[item.captains.length + 1 + item.leaders.length - position].id}}">
+                        组长:{{item.leaders[item.captains.length + 1 + item.leaders.length - position].name}}
+                    </div>
+                    {{# } }}
+                </td>
+                <td>{{element.name}}</td>
+                <td>
+                    {{# if(element.drivers.length > 0){ }}
+                    <div class="rightClick" id="{{element.drivers[0].id}}" value="{{element.name}}" type="drivers">
+                        {{element.drivers[0].name}}
+                    </div>
+                    {{# } }}
+                </td>
+                <td>
+                    {{# if(element.student.length > 0){ }}
+                    <div class="rightClick" id="{{element.student[0].id}}" value="{{element.name}}" type="student">
+                        {{element.student[0].name}}
+                    </div>
+                    {{# } }}
+                </td>
+                <td>
+                    {{# if(element.student.length > 1){ }}
+                    <div class="rightClick" id="{{element.student[1].id}}" value="{{element.name}}" type="student">
+                        {{element.student[1].name}}
+                    </div>
+                    {{# } }}
+                </td>
+                <td>
+                    {{# if(element.student.length > 2){ }}
+                    <div class="rightClick" id="{{element.student[2].id" value="{{element.name}}" type="student">
+                        {{element.student[2].name}}
+                    </div>
+                    {{# } }}
+                </td>
+                {{# if(element.shift){ }}
+                <td>
+                    <div>{{element.shift.typeName +element.shift.position }}</div>
+                </td>
+                <td>
+                    <div class="layui-elip">{{element.shift.attendanceAddress }}</div>
+                </td>
+                <td></td>
+                <td>
+                    <div class="layui-elip">{{element.shift.attendanceTime }}</div>
+                </td>
+                <td>
+                    <div class="layui-elip">{{element.shift.leaveWorkTime }}</div>
+                </td>
+                <td></td>
+                {{# }else{ }}
+                <td>{{element.status}}</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                {{# } }}
+            </tr>
+            {{# }); }}
+            </tbody>
+        </table>
+    </div>
+    {{#  }); }}
+</script>
+<script id="absentDriverTemplate" type="text/html">
+    {{# layui.each(d, function(index, item){ }}
+    <tr>
+        <td>
+            <div id="{{item.id}}" class="absent-click">{{item.name}}</div>
+        </td>
+        <td>{{item.reason}}</td>
+        <td>{{item.remark}}</td>
+    </tr>
+    {{# }); }}
+</script>
+<link rel="stylesheet" href="modules/driver-shift-schedule-edit.css">
+<script src="modules/driver-shift-schedule-edit.js"></script>

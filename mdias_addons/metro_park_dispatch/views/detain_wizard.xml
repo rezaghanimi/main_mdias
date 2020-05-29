@@ -1,0 +1,86 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.detain_wizard_list">
+            <field name="name">扣车向导</field>
+            <field name="model">metro_park_dispatch.detain_wizard</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="reason"/>
+                    <field name="extra_reason"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.detain_wizard_form">
+            <field name="name">扣车向导</field>
+            <field name="model">metro_park_dispatch.detain_wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <field name="extra_reason_visible" invisible="1" />
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label"
+                               for="cur_train">cur_train</label>
+                        <div class="col-sm-10">
+                            <field name="cur_train"
+                                   attrs="{'readonly': True}" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label"
+                               for="start_date">start_date</label>
+                        <div class="col-sm-10">
+                            <field name="start_date" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label"
+                               for="end_date">end_date</label>
+                        <div class="col-sm-10">
+                            <field name="end_date" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label"
+                               for="reason">reason</label>
+                        <div class="col-sm-10">
+                            <field name="reason"
+                                   options="{'no_create_edit': True,'no_open': True, 'no_create':True}"
+                                   attrs="{'required': [('extra_reason_visible', '!=', False)]}" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row"
+                         attrs="{'invisible': [('extra_reason_visible', '=', False)]}">
+                        <label class="col-sm-2 col-form-label"
+                               for="extra_reason">extra_reason</label>
+                        <div class="col-sm-10">
+                            <field name="extra_reason" attrs="{'required': [('extra_reason_visible', '=', True)]}"/>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <button class="btn btn-success" type="object" name="on_ok" text="确定" />
+                        <button class="btn btn-info" text="取消" special="cancel" />
+                    </footer>
+
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window"
+                id="metro_park_dispatch.detain_wizard_act_window">
+            <field name="name">扣车向导</field>
+            <field name="res_model">metro_park_dispatch.detain_wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+    </data>
+</odoo>
+    

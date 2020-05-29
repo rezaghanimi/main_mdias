@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <!-- theme color -->
+    <t t-name="funenc_theme_color">
+        <div class="customizer">
+            <a class="customizer-toggle box-shadow-3" href="javascript:void(0)">
+                <i class="fa fa-cog spinner"></i>
+            </a>
+            <h2>颜色配置</h2>
+            <div class="theme-color color_box"></div>
+        </div>
+    </t>
+    <!-- 颜色选择器 -->
+    <t t-name="funenc_theme_color.item">
+        <div class="row">
+            <div class="col-sm-12">
+                <t t-esc="widget.title"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="funenc_theme_color_picker color-picker input-group">
+                    <input type="text" class="form-control input-lg" t-attr-value="{{widget.color}}" />
+                    <span class="input-group-append">
+                        <span class="input-group-text colorpicker-input-addon">
+                            <i></i>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </t>
+    <!-- 样式模板 -->
+    <t t-name="funenc_theme_css_template">
+        .<t t-esc="cls_key"/> {<t t-esc="css_key"/>: <t t-esc="color"/>}
+    </t>
+</templates>

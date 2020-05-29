@@ -1,0 +1,82 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="metro_park_base.switches_list">
+            <field name="name">道岔</field>
+            <field name="model">metro_park_base.switches</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table" options="{'height': 'full-270'}" create="0">
+                    <field name="name" fixed_left="1"/>
+                    <field name="location" width="120"/>
+                    <field name="pos"/>
+                    <field name="pos_reverse"/>
+                    <field name="hold"/>
+                    <field name="lock"/>
+                    <field name="lock_s"/>
+                    <field name="closed"/>
+                    <field name="lock_gt"/>
+                    <field name="switch_crowded"/>
+                    <field name="lock_protect"/>
+
+                    <field name="positive_switch"/>
+                    <field name="negative_switch"/>
+                    <field name="header_switch"/>
+
+                    <field name="positive_rail"/>
+                    <field name="negative_rail"/>
+                    <field name="header_rail"/>
+
+                    <field name="remark"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_base.switches_form">
+            <field name="name">道岔</field>
+            <field name="model">metro_park_base.switches</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="location">location</label>
+                        <div class="col-sm-10">
+                            <field name="location"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="name">name</label>
+                        <div class="col-sm-10">
+                            <field name="name"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="remark">remark</label>
+                        <div class="col-sm-10">
+                            <field name="remark"/>
+                        </div>
+                    </div>
+
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="metro_park_base.switches_act_window">
+            <field name="name">道岔</field>
+            <field name="res_model">metro_park_base.switches</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="metro_park_base.switches_act_window"
+                  id="metro_park_base.switch_menu"
+                  sequence="5"
+                  name="道岔"
+                  parent="metro_park_base.menu_base_data_manage"
+                  groups="group_base_switch_management"/>
+
+    </data>
+</odoo>
+
+
+    

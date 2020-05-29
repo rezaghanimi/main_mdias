@@ -1,0 +1,207 @@
+<div class="container-fluid" id="app" style="height:100%;margin:0 0 10px 0;padding: 0 0 10px 0;">
+    <el-dialog :visible.sync="dialogVisible" title="操作数据记录" width="75%" modal="true">
+        <el-table
+            :data="fields_dataset"
+            border
+            size="small"
+            height="20rem"
+            style="width: 100%">
+            <el-table-column
+                label="字段名"
+                prop="filed_display"
+                width="180">
+            </el-table-column>
+            <el-table-column
+                label="旧值"
+                prop="old_value">
+            </el-table-column>
+            <el-table-column
+                label="新值"
+                prop="new_value">
+            </el-table-column>
+            <el-table-column
+                label="表结构列名"
+                prop="filed_name">
+            </el-table-column>
+            <el-table-column
+                label="字段类型"
+                prop="field_type">
+            </el-table-column>
+
+        </el-table>
+        <div class="dialog-footer" slot="footer">
+            <el-button @click="dialogVisible = false">取 消</el-button>
+        </div>
+    </el-dialog>
+
+    <el-container>
+
+        <el-main style="margin: 0;padding: 0;width: 100%;position: absolute;display: flex;flex-direction: column;height: max-content">
+            <el-row style="background-color: white;padding:10px;height: 120px">
+                <el-col>
+                    <el-form :model="search_form" :ref="search_form" :rules="rules">
+                        <el-row>
+                            <el-col span="6">
+                                <el-form-item label="日志类型" prop="log_type">
+                                    <el-select v-model="search_form.log_type" size="small">
+                                        <el-option :label="value" :value="type"
+                                                   v-for="value, type in log_info.log_types"></el-option>
+                                    </el-select>
+                                </el-form-item>
+                            </el-col>
+                            <el-col span="10">
+                                <el-form-item label="日志时间范围" prop="log_data_range">
+                                    <el-date-picker placeholder="选择查询日期" range-separator="-"
+                                                    type="date"
+                                                    size="small"
+                                                    type="daterange"
+                                                    v-model="search_form.log_date_range"
+                                    ></el-date-picker>
+                                </el-form-item>
+                            </el-col>
+                            <el-col span="6">
+                                <el-form-item label="用户账号" prop="user_login">
+                                    <el-input style="width: 15rem" size="small"
+                                              v-model="search_form.user_login"></el-input>
+                                </el-form-item>
+                            </el-col>
+                        </el-row>
+                        <el-col span="3">
+                            <el-form-item>
+                                <el-button @click="onSearch" icon="el-icon-search" size="small" type="primary">查询
+                                </el-button>
+                            </el-form-item>
+                        </el-col>
+                        <el-col span="4">
+                            <el-form-item>
+                                <el-button @click="onClear" icon="el-icon-error" size="small" type="primary">重置
+                                </el-button>
+                            </el-form-item>
+                        </el-col>
+                    </el-form>
+                </el-col>
+            </el-row>
+
+            <el-row style="background-color: rgb(238, 241, 246);padding: 10px;height:30px">
+                <el-col>
+
+                    <el-pagination :page-count="page_count"
+                                   :page-size="limit"
+                                   :total="log_info.sum_count"
+                                   @size-change="handleSizeChange"
+                                   @current-change="pageCurrentChange"
+                                   :page-sizes="[100, 200, 300, 400]"
+                                   background
+                                   size="small"
+                                   layout="prev, pager, next"
+                                   v-if="page_count>1"
+                                   layout="total, sizes, prev, pager, next, jumper"
+                    >
+
+                    </el-pagination>
+                </el-col>
+
+            </el-row>
+            <div style="flex: 1">
+                <el-col :span="24">
+                    <div style="padding: 10px 10px 0 10px;background: white;margin: 10px">
+                        <el-table
+                            ref="table"
+                            :data="current_dataset"
+                            border
+                            :height="tableHeight"
+                            size="small"
+                            current-row-key="id"
+                            style="width: 100%"
+                            v-loading="loading"
+                            cell-style="padding:8px 0;height:32px"
+                        >
+                            <el-table-column
+                                label="用户名"
+                                prop="user_name"
+                                width="180">
+                            </el-table-column>
+                            <el-table-column
+                                label="日期"
+                                prop="create_data"
+                                width="180">
+                            </el-table-column>
+                            <el-table-column
+                                label="操作类型"
+                                prop="mode_description"
+                                width="180"
+                            >
+                            </el-table-column>
+                            <el-table-column
+                                label="内容"
+                                min-width="480"
+                                prop="content"
+                            ></el-table-column>
+                            <el-table-column
+                                label="登录名"
+                                prop="user_login"
+                                fixed="left"
+                                width="120"
+                            >
+                            </el-table-column>
+                            <el-table-column
+                                label="模块名"
+                                min-width="300"
+                                propcd
+                            ></el-table-column>
+                            <el-table-column
+                                label="模块详情"
+                                min-width="200"
+                                prop="model_description"
+                            >
+                            </el-table-column>
+                            <el-table-column
+                                label="表结构名"
+                                prop="table_name"
+                                width="300"
+                            >
+                            </el-table-column>
+                            <el-table-column
+                                label="记录ID"
+                                fixed="left"
+                                prop="res_id"
+                                width="100"
+                            >
+                            </el-table-column>
+                            <el-table-column
+                                label="IP"
+                                prop="ip"
+                                width="180"
+                            >
+                            </el-table-column>
+                            <el-table-column
+                                label="请求地址"
+                                min-width="480"
+                                prop="request_url"
+                            ></el-table-column>
+
+                            <el-table-column
+                                label="错误信息"
+                                min-width="480"
+                                prop="error"
+                            ></el-table-column>
+                            <el-table-column
+                                fixed="right"
+                                label="操作"
+                                width="100">
+                                <template slot-scope="scope">
+                                    <el-button @click="lookLogDetail(scope.row)" size="small" type="text">查看</el-button>
+                                </template>
+                            </el-table-column>
+                        </el-table>
+                    </div>
+                </el-col>
+
+            </div>
+
+        </el-main>
+    </el-container>
+
+</div>
+
+

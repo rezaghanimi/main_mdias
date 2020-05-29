@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="res_config_production_train_view_form" model="ir.ui.view">
+            <field name="name">res.config.settings.view.form</field>
+            <field name="model">res.config.settings</field>
+            <field name="arch" type="xml">
+                <form class="oe_form_configuration o_base_settings" >
+                    <header>
+                        <button string="Save" type="object" name="execute" class="oe_highlight"/>
+
+                    </header>
+                    <sheet>
+                        <div class="o_control_panel">
+                            <div class="o_panel">
+                                <div class="title h2 mb0 mt4 text-muted d-none d-md-block">Settings</div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row text-left" style="margin:1rem 0 1rem 0">
+                                <span class="col-3 col-lg-3 o_light_label">
+                                    <h4>误点提醒提前/延后误差秒数</h4>
+                                </span>
+                            </div>
+                            <div class="row text-left">
+                                <label for="retard_second" string="提前" class="col-3 col-lg-3 o_light_label"/>
+                                <field name="retard_second" class="col-3 col-lg-3 o_light_label"/>
+
+                            </div>
+                            <div class="row text-left">
+                                <label for="ahead_second" string="延迟" class="col-3 col-lg-3 o_light_label"/>
+                                <field name="ahead_second" class="col-3 col-lg-3 o_light_label"/>
+                            </div>
+                        </div>
+                    </sheet>
+                     <footer>
+
+                    </footer>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,77 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.import_run_plan_wizard_list">
+            <field name="name">导入运行图向导</field>
+            <field name="model">metro_park_dispatch.import_run_plan_wizard</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="type"/>
+                    <field name="remark"/>
+                    <field name="file"/>
+                </tree>
+            </field>
+        </record>
+
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.import_run_plan_wizard_form">
+            <field name="name">导入运行图向导</field>
+            <field name="model">metro_park_dispatch.import_run_plan_wizard</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label" for="date">date</label>
+                        <div class="col-sm-6">
+                            <field name="date"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label" for="type">type</label>
+                        <div class="col-sm-6">
+                            <field name="type"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" attrs="{'invisible': [('type', '=', 'custom')]}">
+                        <label class="col-sm-3 col-form-label" for="time_table_id">time_table_id</label>
+                        <div class="col-sm-6">
+                            <field name="time_table_id"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" attrs="{'invisible': [('type', '=', 'custom')]}">
+                        <label class="col-sm-3 col-form-label" for="next_day_time_table_id">next_day_time_table_id</label>
+                        <div class="col-sm-6">
+                            <field name="next_day_time_table_id"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" attrs="{'invisible': [('type', '=', 'run_plan')]}">
+                        <label class="col-sm-3 col-form-label" for="file">file</label>
+                        <div class="col-sm-6">
+                            <field name="file"/>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <button class="btn btn-success" type="object" name="on_ok_btn_clicked" text="确定" />
+                        <button class="btn btn-info" text="取消" special="cancel" />
+                    </footer>
+                    
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window"
+                id="metro_park_dispatch.import_run_plan_wizard_act_window">
+            <field name="name">导入运行图向导</field>
+            <field name="res_model">metro_park_dispatch.import_run_plan_wizard</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+    

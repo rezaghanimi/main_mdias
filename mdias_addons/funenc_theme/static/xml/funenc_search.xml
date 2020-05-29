@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <!-- 搜索项 proposition -->
+    <t t-name="funec.search_panel.extended_search.proposition">
+        <div class="o_filter_condition">
+            <span>
+                <select class="o_input o_searchview_extended_prop_field">
+                    <t t-foreach="widget.attrs.fields" t-as="field">
+                        <option t-att="{'selected': field === widget.attrs.selected ? 'selected' : null}"
+                                t-att-value="field.name">
+                            <t t-esc="field.string"/>
+                        </option>
+                    </t>
+                </select>
+                <span class="o_searchview_extended_delete_prop fa fa-trash-o" role="img" aria-label="Delete"
+                      title="Delete"/>
+            </span>
+            <select class="o_input o_searchview_extended_prop_op"/>
+            <span class="o_searchview_extended_prop_value"/>
+        </div>
+    </t>
+    <!-- 两种模板, 一种是可扩展的，一种是只显示标题和输入框的 -->
+    <t t-name="funec.search_panel.extended_search.simple_proposition">
+        <div class="col-xs-12">
+            <span style="display: none">
+                <select class="o_input o_searchview_extended_prop_field">
+                    <t t-foreach="widget.attrs.fields" t-as="field">
+                        <option t-att="{'selected': field === widget.attrs.selected ? 'selected' : null}"
+                                t-att-value="field.name">
+                            <t t-esc="field.string"/>
+                        </option>
+                    </t>
+                </select>
+                <span class="o_searchview_extended_delete_prop fa fa-trash-o" role="img" aria-label="Delete"
+                      title="Delete"/>
+            </span>
+            <select style="display: none" class="o_input o_searchview_extended_prop_op"/>
+            <span class="col-xs-12 o_searchview_extended_prop_value"/>
+        </div>
+    </t>
+
+    <t t-name="lay_datetime">
+		<input type="text" readonly="" autocomplete="off" t-attf-placeholder="{{widget.placeholder}}"
+               class="layui-input" t-attf-id="{{widget.id}}"/>
+	</t>
+
+    <t t-name="SearchView.extended_search.proposition.selection_funenc">
+    <select class="o_input">
+        <option t-foreach="widget.field.selection" t-as="element" t-att-value="element[0]"><t t-esc="element[1]"/></option>
+    </select>
+</t>
+</templates>

@@ -1,0 +1,15 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+
+access_funenc_wechat_account,access_funenc_wechat_account,model_funenc_wechat_account,,1,0,0,0
+access_funenc_wechat_apps,access_funenc_wechat_apps,model_funenc_wechat_apps,,1,0,0,0
+access_funenc_wechat_user,access_funenc_wechat_user,model_funenc_wechat_user,,1,0,0,0
+access_funenc_wechat_department,access_funenc_wechat_department,model_funenc_wechat_department,,1,0,0,0
+access_funenc_wechat_log,access_funenc_wechat_log,model_funenc_wechat_log,,1,0,0,0
+
+access_funenc_wechat_account_manager,access_funenc_wechat_account_manager,model_funenc_wechat_account,group_funenc_wechat_manager,1,1,1,1
+access_funenc_wechat_apps_manager,access_funenc_wechat_apps_manager,model_funenc_wechat_apps,group_funenc_wechat_manager,1,1,1,1
+access_funenc_wechat_log_manager,access_funenc_wechat_log_manager,model_funenc_wechat_log,group_funenc_wechat_manager,1,1,1,1
+access_funenc_wechat_user_manager,access_funenc_wechat_user_update,model_funenc_wechat_user,group_funenc_wechat_manager,1,1,1,1
+access_funenc_wechat_department_manager,access_funenc_wechat_department,model_funenc_wechat_department,group_funenc_wechat_manager,1,1,1,1
+access_funenc_wechat_property,funenc_wechat.property,model_funenc_wechat_property,group_funenc_wechat_manager,1,1,1,1
+

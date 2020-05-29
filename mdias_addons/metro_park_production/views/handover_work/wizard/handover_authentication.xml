@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="handover_authentication_form">
+            <field name="name">交接班认证</field>
+            <field name="model">metro_park_production.wizard.authentication</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="contains" style="margin-top:5rem">
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <span>接班人账号</span>
+                                </div>
+                                <div class="col-md-4">
+                                    <field name="login_account" required="True"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <span>接班人密码</span>
+                                </div>
+                                <div class="col-md-4">
+                                    <field name="password" required="True" password="True"/>
+                                </div>
+
+                            </div>
+                        </div>
+                    </sheet>
+                    <footer>
+                        <button class="btn btn-success" type="object" name="login"
+                                text="确认"/>
+                    </footer>
+                </form>
+
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="authentication_handover_act_window">
+            <field name="name">交接班</field>
+            <field name="res_model">metro_park_production.wizard.authentication</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="metro_park_production.handover_authentication_form"/>
+            <field name="target">new</field>
+        </record>
+
+    </data>
+</odoo>

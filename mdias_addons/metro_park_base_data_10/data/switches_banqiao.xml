@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="ban_qiao_switch_1" model="metro_park_base.switches">
+            <field name="name">1</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_1-3DG" />
+        </record>
+
+        <record id="ban_qiao_switch_3" model="metro_park_base.switches">
+            <field name="name">3</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_1-3DG" />
+        </record>
+
+        <record id="ban_qiao_switch_5" model="metro_park_base.switches">
+            <field name="name">5</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_5DG" />
+        </record>
+
+        <record id="ban_qiao_switch_7" model="metro_park_base.switches">
+            <field name="name">7</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_7DG" />
+        </record>
+
+        <record id="ban_qiao_switch_9" model="metro_park_base.switches">
+            <field name="name">9</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_9DG" />
+        </record>
+
+        <record id="ban_qiao_switch_11" model="metro_park_base.switches">
+            <field name="name">11</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_11DG" />
+        </record>
+
+        <record id="ban_qiao_switch_13" model="metro_park_base.switches">
+            <field name="name">13</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_13-19DG" />
+        </record>
+
+        <record id="ban_qiao_switch_15" model="metro_park_base.switches">
+            <field name="name">15</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_15-17DG" />
+        </record>
+
+        <record id="ban_qiao_switch_17" model="metro_park_base.switches">
+            <field name="name">17</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_15-17DG" />
+        </record>
+
+        <record id="ban_qiao_switch_19" model="metro_park_base.switches">
+            <field name="name">19</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_13-19DG" />
+        </record>
+
+        <record id="ban_qiao_switch_21" model="metro_park_base.switches">
+            <field name="name">21</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_21DG" />
+        </record>
+
+        <record id="ban_qiao_switch_23" model="metro_park_base.switches">
+            <field name="name">23</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_23DG" />
+        </record>
+
+        <record id="ban_qiao_switch_25" model="metro_park_base.switches">
+            <field name="name">25</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_25DG" />
+        </record>
+
+        <record id="ban_qiao_switch_27" model="metro_park_base.switches">
+            <field name="name">27</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_27DG" />
+        </record>
+
+        <record id="ban_qiao_switch_29" model="metro_park_base.switches">
+            <field name="name">29</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_29-35DG" />
+        </record>
+
+        <record id="ban_qiao_switch_31" model="metro_park_base.switches">
+            <field name="name">31</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_29-35DG" />
+        </record>
+
+        <record id="ban_qiao_switch_33" model="metro_park_base.switches">
+            <field name="name">33</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_29-35DG" />
+        </record>
+
+        <record id="ban_qiao_switch_35" model="metro_park_base.switches">
+            <field name="name">35</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_29-35DG" />
+        </record>
+
+        <record id="ban_qiao_switch_37" model="metro_park_base.switches">
+            <field name="name">37</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_37-39DG" />
+        </record>
+
+        <record id="ban_qiao_switch_39" model="metro_park_base.switches">
+            <field name="name">39</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_37-39DG" />
+        </record>
+
+        <record id="ban_qiao_switch_41" model="metro_park_base.switches">
+            <field name="name">41</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_41-43DG" />
+        </record>
+
+        <record id="ban_qiao_switch_43" model="metro_park_base.switches">
+            <field name="name">43</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_41-43DG" />
+        </record>
+
+        <record id="ban_qiao_switch_45" model="metro_park_base.switches">
+            <field name="name">45</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_45-49DG" />
+        </record>
+
+        <record id="ban_qiao_switch_47" model="metro_park_base.switches">
+            <field name="name">47</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_45-49DG" />
+        </record>
+
+        <record id="ban_qiao_switch_49" model="metro_park_base.switches">
+            <field name="name">49</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_45-49DG" />
+        </record>
+
+        <record id="ban_qiao_switch_51" model="metro_park_base.switches">
+            <field name="name">51</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_51-53DG" />
+        </record>
+
+        <record id="ban_qiao_switch_53" model="metro_park_base.switches">
+            <field name="name">53</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_51-53DG" />
+        </record>
+
+        <record id="ban_qiao_switch_55" model="metro_park_base.switches">
+            <field name="name">55</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_55-59DG" />
+        </record>
+
+        <record id="ban_qiao_switch_57" model="metro_park_base.switches">
+            <field name="name">57</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_55-59DG" />
+        </record>
+
+        <record id="ban_qiao_switch_59" model="metro_park_base.switches">
+            <field name="name">59</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_55-59DG" />
+        </record>
+
+        <record id="ban_qiao_switch_63" model="metro_park_base.switches">
+            <field name="name">63</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_63-65DG" />
+        </record>
+
+        <record id="ban_qiao_switch_65" model="metro_park_base.switches">
+            <field name="name">65</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_63-65DG" />
+        </record>
+
+        <record id="ban_qiao_switch_67" model="metro_park_base.switches">
+            <field name="name">67</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_67-73DG" />
+        </record>
+
+        <record id="ban_qiao_switch_69" model="metro_park_base.switches">
+            <field name="name">69</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_67-73DG" />
+        </record>
+
+        <record id="ban_qiao_switch_71" model="metro_park_base.switches">
+            <field name="name">71</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_67-73DG" />
+        </record>
+
+        <record id="ban_qiao_switch_73" model="metro_park_base.switches">
+            <field name="name">73</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_67-73DG" />
+        </record>
+
+        <record id="ban_qiao_switch_75" model="metro_park_base.switches">
+            <field name="name">75</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_75-77DG" />
+        </record>
+
+        <record id="ban_qiao_switch_77" model="metro_park_base.switches">
+            <field name="name">77</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_75-77DG" />
+        </record>
+
+        <record id="ban_qiao_switch_79" model="metro_park_base.switches">
+            <field name="name">79</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_79-81DG" />
+        </record>
+
+        <record id="ban_qiao_switch_81" model="metro_park_base.switches">
+            <field name="name">81</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_79-81DG" />
+        </record>
+
+        <record id="ban_qiao_switch_83" model="metro_park_base.switches">
+            <field name="name">83</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_83DG" />
+        </record>
+
+        <record id="ban_qiao_switch_61" model="metro_park_base.switches">
+            <field name="name">61</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.ban_qiao_61DG" />
+        </record>
+
+    </data>
+</odoo>

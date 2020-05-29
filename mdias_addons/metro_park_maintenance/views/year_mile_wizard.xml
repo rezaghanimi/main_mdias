@@ -1,0 +1,346 @@
+
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.history_miles_wizard_form">
+            <field name="name">配置公里数信息</field>
+            <field name="model">metro_park_maintenance.history_miles</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="train_dev">train_dev</label>
+                        <div class="col-sm-3">
+                            <field name="train_dev"/>
+                        </div>
+                        <div class="col-sm-3">
+                            手动锁定
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="day1">day1</label>
+                        <div class="col-sm-3">
+                            <field name="day1"/>
+                        </div>
+                        <div class="col-sm-2">
+                            <field name="day1_is_manual"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="day2">day2</label>
+                        <div class="col-sm-3">
+                            <field name="day2"/>
+                        </div>
+                        <div class="col-sm-2">
+                            <field name="day2_is_manual"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="day3">day3</label>
+                        <div class="col-sm-3">
+                            <field name="day3"/>
+                        </div>
+                        <div class="col-sm-2">
+                            <field name="day3_is_manual"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="day4">day4</label>
+                        <div class="col-sm-3">
+                            <field name="day4"/>
+                        </div>
+                        <div class="col-sm-2">
+                            <field name="day4_is_manual"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="day5">day5</label>
+                        <div class="col-sm-3">
+                            <field name="day5"/>
+                        </div>
+                        <div class="col-sm-2">
+                            <field name="day5_is_manual"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="day6">day6</label>
+                        <div class="col-sm-3">
+                            <field name="day6"/>
+                        </div>
+                        <div class="col-sm-2">
+                            <field name="day6_is_manual"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="day7">day7</label>
+                        <div class="col-sm-3">
+                            <field name="day7"/>
+                        </div>
+                        <div class="col-sm-2">
+                            <field name="day7_is_manual"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="day8">day8</label>
+                        <div class="col-sm-3">
+                            <field name="day8"/>
+                        </div>
+                        <div class="col-sm-2">
+                            <field name="day8_is_manual"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="day9">day9</label>
+                        <div class="col-sm-3">
+                            <field name="day9"/>
+                        </div>
+                        <div class="col-sm-2">
+                            <field name="day9_is_manual"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="day10">day10</label>
+                        <div class="col-sm-3">
+                            <field name="day10"/>
+                        </div>
+                        <div class="col-sm-2">
+                            <field name="day10_is_manual"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="day11">day11</label>
+                        <div class="col-sm-3">
+                            <field name="day11"/>
+                        </div>
+                        <div class="col-sm-2">
+                            <field name="day11_is_manual"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="day12">day12</label>
+                        <div class="col-sm-3">
+                            <field name="day12"/>
+                        </div>
+                        <div class="col-sm-2">
+                            <field name="day12_is_manual"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="day13">day13</label>
+                        <div class="col-sm-3">
+                            <field name="day13"/>
+                        </div>
+                        <div class="col-sm-2">
+                            <field name="day13_is_manual"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="day14">day14</label>
+                        <div class="col-sm-3">
+                            <field name="day14"/>
+                        </div>
+                        <div class="col-sm-2">
+                            <field name="day14_is_manual"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="day15">day15</label>
+                        <div class="col-sm-3">
+                            <field name="day15"/>
+                        </div>
+                        <div class="col-sm-2">
+                            <field name="day15_is_manual"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="day16">day16</label>
+                        <div class="col-sm-3">
+                            <field name="day16"/>
+                        </div>
+                        <div class="col-sm-2">
+                            <field name="day16_is_manual"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="day17">day17</label>
+                        <div class="col-sm-3">
+                            <field name="day17"/>
+                        </div>
+                        <div class="col-sm-2">
+                            <field name="day17_is_manual"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="day18">day18</label>
+                        <div class="col-sm-3">
+                            <field name="day18"/>
+                        </div>
+                        <div class="col-sm-2">
+                            <field name="day18_is_manual"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="day19">day19</label>
+                        <div class="col-sm-3">
+                            <field name="day19"/>
+                        </div>
+                        <div class="col-sm-2">
+                            <field name="day19_is_manual"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="day20">day20</label>
+                        <div class="col-sm-3">
+                            <field name="day20"/>
+                        </div>
+                        <div class="col-sm-2">
+                            <field name="day20_is_manual"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="day21">day21</label>
+                        <div class="col-sm-3">
+                            <field name="day21"/>
+                        </div>
+                        <div class="col-sm-2">
+                            <field name="day21_is_manual"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="day22">day22</label>
+                        <div class="col-sm-3">
+                            <field name="day22"/>
+                        </div>
+                        <div class="col-sm-2">
+                            <field name="day22_is_manual"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="day23">day23</label>
+                        <div class="col-sm-3">
+                            <field name="day23"/>
+                        </div>
+                        <div class="col-sm-2">
+                            <field name="day23_is_manual"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="day24">day24</label>
+                        <div class="col-sm-3">
+                            <field name="day24"/>
+                        </div>
+                        <div class="col-sm-2">
+                            <field name="day24_is_manual"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="day25">day25</label>
+                        <div class="col-sm-3">
+                            <field name="day25"/>
+                        </div>
+                        <div class="col-sm-2">
+                            <field name="day25_is_manual"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="day26">day26</label>
+                        <div class="col-sm-3">
+                            <field name="day26"/>
+                        </div>
+                        <div class="col-sm-2">
+                            <field name="day26_is_manual"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="day27">day27</label>
+                        <div class="col-sm-3">
+                            <field name="day27"/>
+                        </div>
+                        <div class="col-sm-2">
+                            <field name="day27_is_manual"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="day28">day28</label>
+                        <div class="col-sm-3">
+                            <field name="day28"/>
+                        </div>
+                        <div class="col-sm-2">
+                            <field name="day28_is_manual"/>
+                        </div>
+                    </div>
+                    <div class="form-group row" attrs="{'invisible':['day29_visible', '=', 'True']}">
+                        <label class="col-sm-4 col-form-label" for="day29">day29</label>
+                        <div class="col-sm-3">
+                            <field name="day29"/>
+                        </div>
+                        <div class="col-sm-2">
+                            <field name="day29_is_manual"/>
+                        </div>
+                    </div>
+                    <div class="form-group row" attrs="{'invisible':['day30_visible', '=', 'True']}">
+                        <label class="col-sm-4 col-form-label" for="day30">day30</label>
+                        <div class="col-sm-3">
+                            <field name="day30"/>
+                        </div>
+                        <div class="col-sm-2">
+                            <field name="day30_is_manual"/>
+                        </div>
+                    </div>
+                    <div class="form-group row" attrs="{'invisible':['day31_visible', '=', 'True']}">
+                        <label class="col-sm-4 col-form-label" for="day31">day31</label>
+                        <div class="col-sm-3">
+                            <field name="day31"/>
+                        </div>
+                        <div class="col-sm-2">
+                            <field name="day31_is_manual"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="last_repair_miles">last_repair_miles</label>
+                        <div class="col-sm-3">
+                            <field name="last_repair_miles"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="miles_after_last_repair">miles_after_last_repair</label>
+                        <div class="col-sm-3">
+                            <field name="miles_after_last_repair"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="month_target_miles">month_target_miles</label>
+                        <div class="col-sm-3">
+                            <field name="month_target_miles"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="year_target_miles">year_target_miles</label>
+                        <div class="col-sm-3">
+                            <field name="year_target_miles"/>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <button text="保存" class="btn btn-primary" type="object" name="on_save" />
+                        <button text="取消" class="btn btn-secondary" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window" id="metro_park_maintenance.history_miles_wizard_act_window">
+            <field name="name">history_miles_wizard</field>
+            <field name="res_model">metro_park_maintenance.history_miles</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+
+
+    

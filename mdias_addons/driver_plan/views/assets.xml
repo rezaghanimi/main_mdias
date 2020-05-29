@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="metro_park_driver_plan_res" name="metro_park_driver_plan_res" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+
+                <!-- js -->
+                <script type="text/javascript" src="/driver_plan/static/js/app_iframe_widget.js"></script>
+                <script type="text/javascript" src="/driver_plan/static/js/app_menu_extend.js"></script>
+                <script type="text/javascript" src="/driver_plan/static/js/driver_plan_client_action.js"></script>
+
+            </xpath>
+        </template>
+
+    </data>
+</odoo>

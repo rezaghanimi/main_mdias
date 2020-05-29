@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+access_mdias_test,mdias.test,model_mdias_test,,1,1,1,1
+mdias_test_test_client,metro_park_socket_io.test_client,model_mdias_test_test_client,,1,1,1,1

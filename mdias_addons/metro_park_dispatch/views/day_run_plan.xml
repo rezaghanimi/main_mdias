@@ -1,0 +1,171 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.day_run_plan_tree_list">
+            <field name="name">运营日计划</field>
+            <field name="model">metro_park_dispatch.day_run_plan</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table"
+                      options="{'height': 'full-270'}"
+                      search_ex_template="metro_park_dispatch.train_back_plan_search"
+                      edit="0"
+                      create="0">
+                    <field name="train" fixed_left="1"/>
+                    <field name="exchange_rail_time1" widget="FTime" />
+                    <field name="exchange_rail_time2" widget="FTime" />
+                    <field name="plan_out_time" widget="FTime"/>
+                    <field name="real_out_time" widget="FTime"/>
+                    <field name="out_plan_rail_sec"/>
+                    <field name="out_real_train_no"/>
+                    <field name="out_plan_train_no"/>
+                    <field name="back_plan_train_no"/>
+                    <field name="plan_back_time" widget="FTime" />
+                    <field name="plan_back_rail"/>
+                    <field name="real_back_rail"/>
+                    <field name="repair_plan"/>
+                    <field name="wash"/>
+                    <field name="work_requirement"/>
+                    <field name="dispatch"/>
+                    <field name="remark"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_dispatch.day_run_plan_form">
+            <field name="name">运营日计划</field>
+            <field name="model">metro_park_dispatch.day_run_plan</field>
+            <field name="arch" type="xml">
+                <form edit="0">
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="exchange_rail_time1">exchange_rail_time1</label>
+                        <div class="col-sm-3">
+                            <field name="exchange_rail_time1"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="real_out_time">real_out_time</label>
+                        <div class="col-sm-3">
+                            <field name="real_out_time"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="plan_out_time">plan_out_time</label>
+                        <div class="col-sm-3">
+                            <field name="plan_out_time"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="out_plan_rail_sec">out_plan_rail_sec</label>
+                        <div class="col-sm-3">
+                            <field name="out_plan_rail_sec"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="out_real_train_no">out_real_train_no</label>
+                        <div class="col-sm-3">
+                            <field name="out_real_train_no"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="out_plan_train_no">out_plan_train_no</label>
+                        <div class="col-sm-3">
+                            <field name="out_plan_train_no"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="remark">remark</label>
+                        <div class="col-sm-3">
+                            <field name="remark"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="train_back_plan">train_back_plan</label>
+                        <div class="col-sm-3">
+                            <field name="train_back_plan"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="train_out_plan">train_out_plan</label>
+                        <div class="col-sm-3">
+                            <field name="train_out_plan"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="train">train</label>
+                        <div class="col-sm-">
+                            <field name="train"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="back_plan_train_no">back_plan_train_no</label>
+                        <div class="col-sm-3">
+                            <field name="back_plan_train_no"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="plan_back_time">plan_back_time</label>
+                        <div class="col-sm-3">
+                            <field name="plan_back_time"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="plan_back_rail">plan_back_rail</label>
+                        <div class="col-sm-3">
+                            <field name="plan_back_rail"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="real_back_rail">real_back_rail</label>
+                        <div class="col-sm-3">
+                            <field name="real_back_rail"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="repair_plan">repair_plan</label>
+                        <div class="col-sm-3">
+                            <field name="repair_plan"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="wash">wash</label>
+                        <div class="col-sm-3">
+                            <field name="wash"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="work_requirement">work_requirement</label>
+                        <div class="col-sm-3">
+                            <field name="work_requirement"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="dispatch">dispatch</label>
+                        <div class="col-sm-3">
+                            <field name="dispatch"/>
+                        </div>
+                    </div>
+                    
+                </form>
+            </field>
+        </record>
+
+        <!-- 收发车计划管理 -->
+        <record id="train_turn_in_out_plan_action" model="ir.actions.client">
+            <field name="name">收发车计划管理</field>
+            <field name="tag">train_in_out_plan</field>
+            <field name="target">current</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="metro_park_dispatch.day_run_plan_act_window">
+            <field name="name">运营日计划</field>
+            <field name="res_model">metro_park_dispatch.day_run_plan</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- 收发车计划 -->
+        <menuitem action="metro_park_dispatch.train_turn_in_out_plan_action"
+                  id="metro_park_dispatch.train_in_out_plan_menu"
+                  name="收发车计划管理"
+                  sequence="1"
+                  groups="group_dispatch_car_send_receive_car_page_look"
+                  parent="metro_park_dispatch.train_turn_in_out_plan_root_menu"/>
+
+    </data>
+</odoo>
+
+    

@@ -1,0 +1,143 @@
+
+<odoo>
+    <data>
+
+        <record model="ir.ui.view"
+                id="metro_park_dispatch.cur_train_manage_pop_list">
+            <field name="name">现车列表</field>
+            <field name="model">metro_park_dispatch.cur_train_manage</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table"
+                      limit="15"
+                      custom_btn_template="cur_train_manage.buttons"
+                      options="{'height': '400'}"
+                      search_ex_template="metro_park_dispatch.cur_train_search">
+                    <field name="train_name" fixed_left="1" />
+                    <field name="train" />
+                    <field name="train_type" />
+                    <field name="cur_location" width="150" />
+                    <field name="train_status" width="150" />
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view"
+                id="metro_park_dispatch.cur_train_manage_list">
+            <field name="name">现车列表</field>
+            <field name="model">metro_park_dispatch.cur_train_manage</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table"
+                      limit="15"
+                      custom_btn_template="cur_train_manage.buttons"
+                      options="{'height': 'full-335'}"
+                      search_ex_template="metro_park_dispatch.cur_train_search">
+                    <field name="train_name" fixed_left="1" />
+                    <field name="train" />
+                    <field name="train_type" />
+                    <field name="owner_location" width="150" />
+                    <field name="location" width="150" />
+                    <field name="cur_location" width="150" />
+                    <field name="cur_rail" width="150" />
+                    <field name="cur_switch" width="150" />
+                    <field name="train_status" width="150" />
+                    <field name="detain" width="80" />
+                    <field name="operation_btn"
+                           widget="template_widget"
+                           options="{'template': 'cur_train_manage.item.buttons'}"
+                           width="450"
+                           fixed_right="1"
+                    />
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view"
+                id="metro_park_dispatch.cur_train_manage_form">
+            <field name="name">现车列表</field>
+            <field name="model">metro_park_dispatch.cur_train_manage</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="train">train</label>
+                        <div class="col-sm-3">
+                            <field name="train" options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="train_no">train_no</label>
+                        <div class="col-sm-3">
+                            <field name="train_no"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="train_type">train_type</label>
+                        <div class="col-sm-3">
+                            <field name="train_type"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="owner_location">owner_location</label>
+                        <div class="col-sm-3">
+                            <field name="owner_location"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="location">location</label>
+                        <div class="col-sm-3">
+                            <field name="location"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="cur_location">cur_location</label>
+                        <div class="col-sm-3">
+                            <field name="cur_location"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="cur_rail">cur_rail</label>
+                        <div class="col-sm-3">
+                            <field name="cur_rail" options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="cur_switch">cur_switch</label>
+                        <div class="col-sm-3">
+                            <field name="cur_switch" options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="train_status">train_status</label>
+                        <div class="col-sm-3">
+                            <field name="train_status"/>
+                        </div>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window"
+                id="metro_park_dispatch.cur_train_manage_act_window">
+            <field name="name">现车管理</field>
+            <field name="res_model">metro_park_dispatch.cur_train_manage</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_ids" eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'tree', 'view_id': ref('metro_park_dispatch.cur_train_manage_list')}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('metro_park_dispatch.cur_train_manage_form')})]"/>
+        </record>
+
+        <!--月计划填写-->
+        <record id="metro_park_dispatch.cur_train_manage_act_server" model="ir.actions.server">
+            <field name="name">现车管理</field>
+            <field name="type">ir.actions.server</field>
+            <field name="model_id" ref="model_metro_park_dispatch_cur_train_manage" />
+            <field name="state">code</field>
+            <field name="code">
+                action = model.get_cur_train_action()
+            </field>
+        </record>
+
+        <menuitem action="metro_park_dispatch.cur_train_manage_act_server"
+                  id="metro_park_dispatch.cur_train_manage_list_menu"
+                  name="现车管理"
+                  sequence="7"
+                  groups="group_dispatch_car_management_run_car_manage_look_page"
+                  parent="metro_park_dispatch.menu_root"/>
+
+    </data>
+</odoo>

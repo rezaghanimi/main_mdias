@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="metro_park_dispatch.Monday"
+                model="metro_park_dispatch.day_types">
+            <field name="name">周一</field>
+            <field name="type">week_day</field>
+        </record>
+
+        <record id="metro_park_dispatch.Tuesday"
+                model="metro_park_dispatch.day_types">
+            <field name="name">周二</field>
+            <field name="type">week_day</field>
+        </record>
+
+        <record id="metro_park_dispatch.Wednesday"
+                model="metro_park_dispatch.day_types">
+            <field name="name">周三</field>
+            <field name="type">week_day</field>
+        </record>
+
+        <record id="metro_park_dispatch.Thursday"
+                model="metro_park_dispatch.day_types">
+            <field name="name">周四</field>
+            <field name="type">week_day</field>
+        </record>
+
+        <record id="metro_park_dispatch.Friday"
+                model="metro_park_dispatch.day_types">
+            <field name="name">周五</field>
+            <field name="type">week_day</field>
+        </record>
+
+        <record id="metro_park_dispatch.Saturday"
+                model="metro_park_dispatch.day_types">
+            <field name="name">周六</field>
+            <field name="type">weekend</field>
+        </record>
+
+        <record id="metro_park_dispatch.Sunday"
+                model="metro_park_dispatch.day_types">
+            <field name="name">周日</field>
+            <field name="type">weekend</field>
+        </record>
+
+    </data>
+</odoo>

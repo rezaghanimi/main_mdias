@@ -1,0 +1,306 @@
+
+.work_area_requet > div {
+    margin-left: 10px;
+}
+
+.work_area_requet > div > .custom-checkbox > .custom-control-label::before{
+    left: 20%;
+}
+
+.work_area_requet > div > .custom-checkbox > .custom-control-label::after {
+    left: 20%;
+}
+
+.o_view_controller > div.search_pannel {
+    margin-top: 0px;
+    min-width: 650px;
+    max-width: inherit;
+    padding: 10px;
+    background: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 30px;
+    word-wrap: break-word;
+    background: rgba(200,200,200,.1);
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    box-shadow: 0 4px 20px 1px rgba(0,0,0,.06), 0 1px 4px rgba(0,0,0,.08);
+    border-radius: .25rem;
+}
+
+.search_pannel span {
+    line-height: 36px;
+    padding-right: 10px;
+}
+
+.card{
+    margin-top: 0px;
+    padding: 16px;
+    background: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background: rgba(200,200,200,.1);
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    box-shadow: 0 4px 20px 1px rgba(0,0,0,.06), 0 1px 4px rgba(0,0,0,.08);
+    border-radius: .25rem;
+}
+
+.fnt_table_style>.layui-table-view>.layui-table-box> .layui-table-body > .layui-table > tbody > tr > td > .o_data_cell{
+    padding: 0 3px !important;
+}
+
+.fnt_table_style > .layui-table-view > .layui-table-box > .layui-table-body >.layui-table>tbody > tr >td>.o_data_cell >.o_input {
+    padding: 0 0 !important;
+}
+
+.fnt_table_style{
+    height: auto !important;
+}
+
+.work_area_requet.d-flex {
+    flex-wrap: wrap
+}
+
+.work_area_requet.d-flex div  {
+    width: 180px;
+}
+
+.work_area_requet.d-flex div label  {
+    padding-left: 28px;
+}
+
+.redips-drag, .redips-disable-drag {
+    margin: auto;
+    text-align: center;
+    width: 77px;
+    height: 30px;
+    line-height: 30px;
+    background-color: white;
+    font-size: 10pt;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    margin-bottom: 2px;
+    border: 1px solid SteelBlue;
+}
+
+.redips-disable-drag {
+    background-color: rgb(155, 198, 228);
+}
+
+.redips-drag.small {
+    width: 36px;
+}
+
+.redips-trash {
+    margin: auto;
+    text-align: center;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    margin-bottom: 2px;
+}
+
+/* 月计划 */
+.month_plan_editor {
+    height: 100%;
+    width: 100%;
+}
+
+.month_plan_editor .left_table {
+    text-align: center;
+    height: 100%;
+}
+
+.month_plan_editor>.left_table>.rule_box {
+    text-align: center;
+    width: 80px;
+    height: 100%;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.month_plan_editor>.left_table>.rule_box.year {
+    width: 80px;
+}
+
+.month_plan_editor .right_box {
+    height: 100%;
+    overflow: hidden;
+}
+
+.month_plan_editor .right_box .tool_bar {
+    width: 100%;
+    padding: 10px;
+}
+
+.month_plan_editor .right_box .table_header table tr {
+    background-color: #f2f2f2;
+}
+
+.month_plan_editor .right_box .month_plan_table_box {
+    position: relative;
+    overflow: hidden;
+}
+
+.month_plan_editor .right_box .month_plan_table_box .fixed_left {
+    position: absolute;
+    background: white;
+    text-align: center;
+    left: 0;
+    top: 0;
+    bottom: 1px;
+    z-index: 101;
+    box-shadow: 0 -1px 8px rgba(0,0,0,.08);
+}
+
+.month_plan_editor .right_box .month_plan_table_box .fixed_right {
+    position: absolute;
+    background: white;
+    text-align: center;
+    left: auto;
+    top: 0;
+    right: 0px;
+    bottom: 0px;
+    z-index: 101;
+    box-shadow: 0 -1px 8px rgba(0,0,0,.08);
+}
+
+.month_plan_editor .right_box .month_plan_table_box .table_header {
+    text-align: center;
+    height: 40px;
+    margin-bottom: 1px;
+}
+
+.month_plan_editor .right_box .month_plan_table_box .right_table_body{
+    position: relative;
+    overflow: auto;
+}
+
+.month_plan_editor .right_box table th, .month_plan_editor .right_box table td {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e6e6e6;
+}
+
+/* 周计划 */
+.week_plan_summary {
+    background-color: #FFF;
+    margin: 10px;
+    border: 1px solid #CDCDCD
+}
+
+.week_plan_summary table {
+    border-collapse: collapse;
+    padding: 0px;
+    margin: 10px;
+    width: 100%;
+}
+
+.week_plan_summary table tr {
+    height: 30px;
+}
+
+.week_plan_summary .title_box {
+    min-height: 100px;
+    width: 100px;
+    padding: 10px;
+    border-right: 1px solid #CDCDCD;
+}
+
+.week_plan_summary table td {
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
+.week_plan_summary .title_box:not(:last-of-type) {
+    border-bottom: 1px solid #CDCDCD
+}
+
+.week_plan_summary .table_box {
+    flex: 1 1 auto;
+    border-right: 1px solid #CDCDCD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.week_plan_summary .table_box {
+    border-bottom: 1px solid #CDCDCD
+}
+
+.day_plan_summary .title_box {
+    width:200px;
+    border-right:1px solid #cdcdcd;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.funenc_controller .content {
+    margin-top: 10px;
+}
+
+.train_using {
+    color: yellowgreen;
+}
+
+.train_free {
+    color: darkgray;
+}
+
+.un_assign_order {
+    color: lightgrey;
+}
+
+.assigned_order {
+    color: lightblue;
+}
+
+.accept_order {
+    color: lightgreen;
+}
+
+.started_order {
+    color: lightsalmon;
+}
+
+.finished_order {
+    color: lightpink;
+}
+
+.finish_accept_order {
+    color: darkgrey;
+}
+
+.obsolete_order {
+    color: lightcoral;
+}
+
+.holiday_cell {
+    color: rgba(146,208,80);
+}
+
+.train_dev_display_color {
+    width: 100%; 
+    border-radius: 5px;
+    height: 10px;
+}
+
+.display_color_box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.o_pager_previous, .o_pager_next {
+    background: transparent;
+    color: black;
+    border: none;
+}

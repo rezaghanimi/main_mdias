@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!--  初始化部门属性  -->
+      <function id="init_wechat_department_property"
+                model="metro_park_base_data_10.init_department_property"
+                name="init_property"
+                eval="[]"/>
+
+    </data>
+</odoo>

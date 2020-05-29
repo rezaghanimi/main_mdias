@@ -1,0 +1,276 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="dispatcher_handover_tree">
+            <field name="name">派班员交接班</field>
+            <field name="model">metro_park_production.handover.dispatcher</field>
+            <field name="arch" type="xml">
+                <tree import="0"
+                      options="{'height': 'full-300'}"
+                      search_ex_template="char_handover_search"
+                      default_order="handover_date desc"
+                      js_class="fnt_table"
+                >
+                    <field name="handover_date" string="日期" widget="date" width="200"/>
+                    <field name="department_id" string="部门"/>
+                    <field name="handover_sign_user" string="交班人"/>
+                    <field name="accept_user" string="接班人"/>
+                    <field name="state"/>
+                    <widget name="TreeButtons"
+                            width="200"
+                            fixed_right="1"
+                            string="操作"
+                            template="handover_operation_buttons"
+                    />
+                </tree>
+            </field>
+        </record>
+
+        <record id="dispatcher_handover_form" model="ir.ui.view">
+            <field name="name">派班员交接班</field>
+            <field name="model">metro_park_production.handover.dispatcher</field>
+            <field name="arch" type="xml">
+                <form string="交接班" create="0">
+                    <header>
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <div class="form-group">
+                            <div class="col-md-4">
+                                <h4>
+                                    <h3>交班人</h3>
+                                    <field name="handover_sign_user" style="width:113%;" readonly="1"/>
+                                </h4>
+                            </div>
+                            <div class="col-md-4">
+                                <h4>
+                                    <h3>所属位置</h3>
+                                    <field name="location_id" style="width:113%;" readonly="1"/>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="form-horizontal form-label-left">
+
+                            <div class="x_panel form_sec">
+                                <div class="form-group">
+                                    <div class="row handover_type">
+                                        <span class="col-md-2 shifts_type">交班类型：</span>
+                                        <div class="col-md-4">
+                                            <div style="width:120px;">
+                                                <field name="handover_type" widget="radio"
+                                                       options="{'horizontal': true}"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <span class="col-md-2">1.正线执行运行图：</span>
+                                    <div class="col-md-10">
+                                        <field name="line_execute_diagram" options="{'no_create_edit': 1}"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <span class="col-md-2">2.800兆电台：</span>
+                                    <div class="col-md-10">
+                                        <div class="row">
+                                            <span class="col-md-2">总数：</span>
+                                            <div class="col-md-2">
+                                                <field name="eight_hundred_radio_total"/>
+                                            </div>
+                                            <span class="col-md-2">交班数量：</span>
+                                            <div class="col-md-2">
+                                                <field name="eight_hundred_radio_give"/>
+                                            </div>
+                                            <span class="col-md-2">换班数量：</span>
+                                            <div class="col-md-2">
+                                                <field name="eight_hundred_radio_accept"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <span class="col-md-2">3.488兆电台：</span>
+                                    <div class="col-md-10">
+                                        <div class="row">
+                                            <span class="col-md-2">总数：</span>
+                                            <div class="col-md-2">
+                                                <field name="four_hundred_radio_total"/>
+                                            </div>
+                                            <span class="col-md-2">交班数量：</span>
+                                            <div class="col-md-2">
+                                                <field name="four_hundred_radio_give"/>
+                                            </div>
+                                            <span class="col-md-2">换班数量：</span>
+                                            <div class="col-md-2">
+                                                <field name="four_hundred_radio_accept"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <span class="col-md-2">4.钥匙：</span>
+                                    <div class="col-md-10">
+                                        <div class="row">
+                                            <span class="col-md-2">总数：</span>
+                                            <div class="col-md-2">
+                                                <field name="key_total"/>
+                                            </div>
+                                            <span class="col-md-2">交班数量：</span>
+                                            <div class="col-md-2">
+                                                <field name="key_give"/>
+                                            </div>
+                                            <span class="col-md-2">换班数量：</span>
+                                            <div class="col-md-2">
+                                                <field name="key_accept"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <span class="col-md-2">5.雨伞：</span>
+                                    <div class="col-md-10">
+                                        <div class="row">
+                                            <span class="col-md-2">总数：</span>
+                                            <div class="col-md-2">
+                                                <field name="umbrella_total"/>
+                                            </div>
+                                            <span class="col-md-2">交班数量：</span>
+                                            <div class="col-md-2">
+                                                <field name="umbrella_give"/>
+                                            </div>
+                                            <span class="col-md-2">换班数量：</span>
+                                            <div class="col-md-2">
+                                                <field name="umbrella_accept"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <span class="col-md-2">6.其他备品：</span>
+                                    <div class="col-md-10">
+                                        <field name="other_equipment"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <span class="col-md-2">7.酒测：</span>
+                                    <div class="col-md-10">
+                                        <div class="row">
+                                            <span class="col-md-2">应测人数：</span>
+                                            <div class="col-md-4">
+                                                <field name="test_person_num"/>
+
+                                            </div>
+                                            <span class="col-md-2">实测人数：</span>
+                                            <div class="col-md-4">
+                                                <field name="actual_test_person_num"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="col-md-2">8.调试/施工人员计划：</span>
+                                        <div class="col-md-10">
+                                            <field name="nun_person_plan"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="col-md-2">9.人员情况：</span>
+                                        <div class="col-md-10">
+                                            <div class="row">
+                                                <span class="col-md-2">病假人数：</span>
+                                                <div class="col-md-4">
+                                                    <field name="sick_leave_num"/>
+                                                </div>
+                                                <span class="col-md-2">事假人数：</span>
+                                                <div class="col-md-4">
+                                                    <field name="compassionate_leave_num"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="col-md-2"/>
+                                        <div class="col-md-10">
+                                            <div class="row">
+                                                <span class="col-md-2">年休假人数：</span>
+                                                <div class="col-md-4">
+                                                    <field name="annual_leave_num"/>
+                                                </div>
+                                                <span class="col-md-2">换班人数：</span>
+                                                <div class="col-md-4">
+                                                    <field name="handover_num"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="col-md-2"/>
+                                        <div class="col-md-10">
+                                            <div class="row">
+                                                <span class="col-md-2">调休人数：</span>
+                                                <div class="col-md-4">
+                                                    <field name="break_off_num"/>
+                                                </div>
+                                                <span class="col-md-2">婚假人数：</span>
+                                                <div class="col-md-4">
+                                                    <field name="marriage_leave_num"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="col-md-2"/>
+                                        <div class="col-md-10">
+                                            <div class="row">
+                                                <span class="col-md-2">丧假人数：</span>
+                                                <div class="col-md-4">
+                                                    <field name="funeral_leave_num"/>
+                                                </div>
+                                                <span class="col-md-2">护理假人数：</span>
+                                                <div class="col-md-4">
+                                                    <field name="nursing_leave_num"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="col-md-2"/>
+                                        <div class="col-md-10">
+                                            <div class="row">
+                                                <span class="col-md-2">学习人数：</span>
+                                                <div class="col-md-4">
+                                                    <field name="num_person_learning"/>
+                                                </div>
+                                                <span class="col-md-2">其他人数：</span>
+                                                <div class="col-md-4">
+                                                    <field name="num_other_learning"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <span class="col-md-2">其他交班事宜：</span>
+                                        <div class="col-md-8">
+                                            <field name="handover_other"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </sheet>
+
+                </form>
+            </field>
+        </record>
+
+
+        <record model="ir.actions.act_window" id="handover_dispatcher_act_window">
+            <field name="name">派班员交接班</field>
+            <field name="res_model">metro_park_production.handover.dispatcher</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">['|', ('accept_user', '=', uid), ('handover_sign_user', '=', uid)]</field>
+        </record>
+    </data>
+</odoo>
+

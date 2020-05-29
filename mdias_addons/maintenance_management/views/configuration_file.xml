@@ -1,0 +1,2776 @@
+<odoo>
+    <data>
+
+        <!--板桥核心交换机A登录信息-->
+        <record id="config_data_bq_switches_a_login_info" model="maintenance_management.database_data">
+            <field name="name">板桥核心交换机A登录信息</field>
+            <field name="ip">172.25.0.100</field>
+            <field name="zabbix"/>
+            <field name="other">['admin','Admin@huawei.com']</field>
+        </record>
+
+        <!--板桥核心交换机B登录信息-->
+        <record id="config_data_bq_switches_b_host_login_info" model="maintenance_management.database_data">
+            <field name="name">板桥核心交换机B登录信息</field>
+            <field name="ip">172.26.0.100</field>
+            <field name="zabbix"/>
+            <field name="other">['admin','Admin@huawei.com']</field>
+        </record>
+
+        <!--板桥接入交换机A登录信息-->
+        <record id="config_data_bq__jr_switches_a_host_login_info" model="maintenance_management.database_data">
+            <field name="name">板桥接入交换机A登录信息</field>
+            <field name="ip">172.21.0.253</field>
+            <field name="zabbix"/>
+            <field name="other">['admin','Admin@huawei.com']</field>
+        </record>
+
+        <!--板桥接入交换机B登录信息-->
+        <record id="config_data_bq__jr_switches_b_host_login_info" model="maintenance_management.database_data">
+            <field name="name">板桥接入交换机B登录信息</field>
+            <field name="ip">172.22.0.253</field>
+            <field name="zabbix"/>
+            <field name="other">['admin','Admin@huawei.com']</field>
+        </record>
+
+        <!--太平园接入交换机A登录信息-->
+        <record id="config_data_tpy__jr_switches_a_host_login_info" model="maintenance_management.database_data">
+            <field name="name">太平园接入交换机A登录信息</field>
+            <field name="ip">192.168.1.253</field>
+            <field name="zabbix"/>
+            <field name="other">['admin','Admin@huawei.com']</field>
+        </record>
+
+        <!--太平园接入交换机B登录信息-->
+        <record id="config_data_tpy__jr_switches_a_host_login_info" model="maintenance_management.database_data">
+            <field name="name">太平园接入交换机B登录信息</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other">['admin','Admin@huawei.com']</field>
+        </record>
+
+        <!--高大路接入交换机A登录信息-->
+        <record id="config_data_tpy_gdl_switches_a_host_login_info" model="maintenance_management.database_data">
+            <field name="name">高大路接入交换机A登录信息</field>
+            <field name="ip">172.25.0.252</field>
+            <field name="zabbix"></field>
+            <field name="other">['admin','Admin@huawei.com']</field>
+        </record>
+
+        <!--高大路接入交换机B登录信息-->
+        <record id="config_data_tpy_gdl_switches_b_host_login_info" model="maintenance_management.database_data">
+            <field name="name">高大路接入交换机B登录信息</field>
+            <field name="ip">172.26.0.252</field>
+            <field name="zabbix"></field>
+            <field name="other">['admin','Admin@huawei.com']</field>
+        </record>
+
+        <!--高大路排班室交换机A登录信息-->
+        <record id="config_data_tpy_gdl_switches_a_scheduling_login_info" model="maintenance_management.database_data">
+            <field name="name">高大路排班室交换机A登录信息</field>
+            <field name="ip"></field>
+            <field name="zabbix"></field>
+            <field name="other">['admin','Admin@huawei.com']</field>
+        </record>
+
+        <!--高大路排班室交换机B登录信息-->
+        <record id="config_data_tpy_gdl_switches_b_scheduling_login_info" model="maintenance_management.database_data">
+            <field name="name">高大路排班室交换机B登录信息</field>
+            <field name="ip"></field>
+            <field name="zabbix"></field>
+            <field name="other">['admin','Admin@huawei.com']</field>
+        </record>
+
+
+        <!--板桥电源端口号-->
+        <record id="config_bq_data_battery" model="maintenance_management.database_data">
+            <field name="name">板桥电源</field>
+            <field name="ip">172.21.0.9</field>
+            <field name="zabbix"/>
+            <field name="other">54326</field>
+        </record>
+
+        <!--太平园电源-->
+        <record id="config_tpy_data_battery" model="maintenance_management.database_data">
+            <field name="name">太平园电源</field>
+            <field name="ip">192.168.1.15</field>
+            <field name="zabbix"/>
+            <field name="other">54326</field>
+        </record>
+
+        <!--高大路电源-->
+        <record id="config_gdl_data_battery" model="maintenance_management.database_data">
+            <field name="name">高大路电源</field>
+            <field name="ip">172.25.0.1</field>
+            <field name="zabbix"/>
+            <field name="other">54326</field>
+        </record>
+
+        <!--板桥接口状态ATS-->
+        <record id="config_bq_data_interface_ats_state" model="maintenance_management.database_data">
+            <field name="name">板桥接口状态ATS</field>
+            <field name="ip">172.21.0.10</field>
+            <field name="zabbix"/>
+            <field name="other">54328</field>
+        </record>
+
+        <!--板桥接口状态CI-->
+        <record id="config_bq_data_interface_ci_state" model="maintenance_management.database_data">
+            <field name="name">板桥接口状态CI</field>
+            <field name="ip">172.21.0.9</field>
+            <field name="zabbix"/>
+            <field name="other">54328</field>
+        </record>
+
+        <!--板桥接口状态PSCADA-->
+        <record id="config_bq_data_interface_pscada_state" model="maintenance_management.database_data">
+            <field name="name">板桥接口状态PSCADA</field>
+            <field name="ip">172.21.0.9</field>
+            <field name="zabbix"/>
+            <field name="other">54328</field>
+        </record>
+        <!--太平园接口状态IP-->
+        <record id="config_tpy_data_interface_state" model="maintenance_management.database_data">
+            <field name="name">太平园接口状态</field>
+            <field name="ip">172.21.0.1</field>
+            <field name="zabbix"/>
+            <field name="other">54328</field>
+        </record>
+
+        <!--高大路接口状态IP-->
+        <record id="config_gdl_data_interface_ci_state" model="maintenance_management.database_data">
+            <field name="name">高大路接口状态CI</field>
+            <field name="ip">172.25.0.1</field>
+            <field name="zabbix"/>
+            <field name="other">54328</field>
+        </record>
+
+        <!--高大路接口状态IP-->
+        <record id="config_gdl_data_interface_pscada_state" model="maintenance_management.database_data">
+            <field name="name">高大路接口状态PSCADA</field>
+            <field name="ip">172.25.0.1</field>
+            <field name="zabbix"/>
+            <field name="other">54328</field>
+        </record>
+
+        <!--ZABBIX服务器-->
+        <record id="config_data_server_1" model="maintenance_management.database_data">
+            <field name="name">ZABBIX服务器</field>
+            <field name="ip">172.21.0.1</field>>
+            <field name="zabbix"/>
+            <field name="other">Zabbix server</field>
+        </record>
+
+        <record id="config_data_server_2" model="maintenance_management.database_data">
+            <field name="name">ZABBIX服务器处理器</field>
+            <field name="ip">192.21.0.1</field>>
+            <field name="zabbix">system.cpu.util[,user]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_server_3" model="maintenance_management.database_data">
+            <field name="name">ZABBIX服务器可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[available]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_server_4" model="maintenance_management.database_data">
+            <field name="name">ZABBIX服务器总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_server_5" model="maintenance_management.database_data">
+            <field name="name">ZABBIX服务器流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[enp0s5]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_server_6" model="maintenance_management.database_data">
+            <field name="name">ZABBIX服务器流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[enp0s5]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_server_7" model="maintenance_management.database_data">
+            <field name="name">ZABBIX服务器当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_server_8" model="maintenance_management.database_data">
+            <field name="name">ZABBIX服务器登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_server_9" model="maintenance_management.database_data">
+            <field name="name">ZABBIX服务器系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_server_10" model="maintenance_management.database_data">
+            <field name="name">ZABBIX服务器磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[/,total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_server_11" model="maintenance_management.database_data">
+            <field name="name">ZABBIX服务器磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[/,used]</field>
+            <field name="other"/>
+        </record>
+
+        <!--板桥进路管理服务器主机-->
+        <record id="config_data_bq_jl_management" model="maintenance_management.database_data">
+            <field name="name">板桥进路管理服务器主机</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_jl_management_2" model="maintenance_management.database_data">
+            <field name="name">板桥进路管理服务器主机处理器</field>
+            <field name="ip"/>
+            <field name="zabbix">system.cpu.util[,user]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_jl_management_3" model="maintenance_management.database_data">
+            <field name="name">板桥进路管理服务器主机可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[available]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_jl_management_4" model="maintenance_management.database_data">
+            <field name="name">板桥进路管理服务器主机总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_jl_management_5" model="maintenance_management.database_data">
+            <field name="name">板桥进路管理服务器主机流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[em1]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_jl_management_6" model="maintenance_management.database_data">
+            <field name="name">板桥进路管理服务器主机流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[em1]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_jl_management_7" model="maintenance_management.database_data">
+            <field name="name">板桥进路管理服务器主机当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_bq_jl_management_8" model="maintenance_management.database_data">
+            <field name="name">板桥进路管理服务器主机登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_bq_jl_management_9" model="maintenance_management.database_data">
+            <field name="name">板桥进路管理服务器主机系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_jl_management_10" model="maintenance_management.database_data">
+            <field name="name">板桥进路管理服务器主机磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[/,total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_jl_management_11" model="maintenance_management.database_data">
+            <field name="name">板桥进路管理服务器主机磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[/,used]</field>
+            <field name="other"/>
+        </record>
+
+        <!--板桥进路管理服务器备机-->
+        <record id="config_data_bq_jl_management_standby" model="maintenance_management.database_data">
+            <field name="name">板桥进路管理服务器备机</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_jl_management_standby_2" model="maintenance_management.database_data">
+            <field name="name">板桥进路管理服务器备机处理器</field>
+            <field name="ip"/>
+            <field name="zabbix">system.cpu.util[,user]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_jl_management_standby_3" model="maintenance_management.database_data">
+            <field name="name">板桥进路管理服务器备机可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[available]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_jl_management_standby_4" model="maintenance_management.database_data">
+            <field name="name">板桥进路管理服务器备机总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_jl_management_standby_5" model="maintenance_management.database_data">
+            <field name="name">板桥进路管理服务器备机流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[em1]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_jl_management_standby_6" model="maintenance_management.database_data">
+            <field name="name">板桥进路管理服务器备机流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[em1]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_jl_management_standby_7" model="maintenance_management.database_data">
+            <field name="name">板桥进路管理服务器备机当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_jl_management_standby_8" model="maintenance_management.database_data">
+            <field name="name">板桥进路管理服务器备机登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_jl_management_standby_9" model="maintenance_management.database_data">
+            <field name="name">板桥进路管理服务器备机系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_jl_management_standby_10" model="maintenance_management.database_data">
+            <field name="name">板桥进路管理服务器备机磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[/,total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_jl_management_standby_11" model="maintenance_management.database_data">
+            <field name="name">板桥进路管理服务器备机磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[/,used]</field>
+            <field name="other"/>
+        </record>
+
+        <!--板桥进路数据库服务器主机-->
+        <record id="config_data_bq_jl_database_host" model="maintenance_management.database_data">
+            <field name="name">板桥进路数据库服务器主机</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_jl_database_host_2" model="maintenance_management.database_data">
+            <field name="name">板桥进路数据库服务器主机处理器</field>
+            <field name="ip"/>
+            <field name="zabbix">system.cpu.util[,user]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_jl_database_host_3" model="maintenance_management.database_data">
+            <field name="name">板桥进路数据库服务器主机可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[available]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_jl_database_host_4" model="maintenance_management.database_data">
+            <field name="name">板桥进路数据库服务器主机总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_jl_database_host_5" model="maintenance_management.database_data">
+            <field name="name">板桥进路数据库服务器主机流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[em1]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_jl_database_host_6" model="maintenance_management.database_data">
+            <field name="name">板桥进路数据库服务器主机流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[em1]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_jl_database_host_7" model="maintenance_management.database_data">
+            <field name="name">板桥进路数据库服务器主机当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_jl_database_host_8" model="maintenance_management.database_data">
+            <field name="name">板桥进路数据库服务器主机登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_jl_database_host_9" model="maintenance_management.database_data">
+            <field name="name">板桥进路数据库服务器主机系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_jl_database_host_10" model="maintenance_management.database_data">
+            <field name="name">板桥进路数据库服务器主机磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[/,total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_jl_database_host_11" model="maintenance_management.database_data">
+            <field name="name">板桥进路数据库服务器主机磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[/,used]</field>
+            <field name="other"/>
+        </record>
+
+        <!--板桥进路数据库服务器备机-->
+        <record id="config_data_bq_lj_database_standby" model="maintenance_management.database_data">
+            <field name="name">板桥进路数据库服务器备机</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_lj_database_standby_2" model="maintenance_management.database_data">
+            <field name="name">板桥进路数据库服务器备机处理器</field>
+            <field name="ip"/>
+            <field name="zabbix">system.cpu.util[,user]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_lj_database_standby_3" model="maintenance_management.database_data">
+            <field name="name">板桥进路数据库服务器备机可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[available]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_lj_database_standby_4" model="maintenance_management.database_data">
+            <field name="name">板桥进路数据库服务器备机总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_bq_lj_database_standby_5" model="maintenance_management.database_data">
+            <field name="name">板桥进路数据库服务器备机流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[em1]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_lj_database_standby_6" model="maintenance_management.database_data">
+            <field name="name">板桥进路数据库服务器备机流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[em1]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_lj_database_standby_7" model="maintenance_management.database_data">
+            <field name="name">板桥进路数据库服务器备机当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_lj_database_standby_8" model="maintenance_management.database_data">
+            <field name="name">板桥进路数据库服务器备机登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_lj_database_standby_9" model="maintenance_management.database_data">
+            <field name="name">板桥进路数据库服务器备机系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_lj_database_standby_10" model="maintenance_management.database_data">
+            <field name="name">板桥进路数据库服务器备机磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[/,total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_lj_database_standby_11" model="maintenance_management.database_data">
+            <field name="name">板桥进路数据库服务器备机磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[/,used]</field>
+            <field name="other"/>
+        </record>
+
+        <!--板桥应用服务器主机-->
+        <record id="config_data_bq_yyfwq_host" model="maintenance_management.database_data">
+            <field name="name">板桥应用服务器主机</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_yyfwq_2_host" model="maintenance_management.database_data">
+            <field name="name">板桥应用服务器主机处理器</field>
+            <field name="ip"/>
+            <field name="zabbix">system.cpu.util[,user]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_yyfwq_3_host" model="maintenance_management.database_data">
+            <field name="name">板桥应用服务器主机可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[available]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_yyfwq_4_host" model="maintenance_management.database_data">
+            <field name="name">板桥应用服务器主机总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_yyfwq_5_host" model="maintenance_management.database_data">
+            <field name="name">板桥应用服务器主机流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[em1]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_yyfwq_6_host" model="maintenance_management.database_data">
+            <field name="name">板桥应用服务器主机流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[em1]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_yyfwq_7_host" model="maintenance_management.database_data">
+            <field name="name">板桥应用服务器主机当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_yyfwq_8_host" model="maintenance_management.database_data">
+            <field name="name">板桥应用服务器主机登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_yyfwq_9_host" model="maintenance_management.database_data">
+            <field name="name">板桥应用服务器主机系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_yyfwq_10_host" model="maintenance_management.database_data">
+            <field name="name">板桥应用服务器主机磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[/,total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_yyfwq_11_host" model="maintenance_management.database_data">
+            <field name="name">板桥应用服务器主机磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[/,used]</field>
+            <field name="other"/>
+        </record>
+
+        <!--板桥应用服务器备机-->
+        <record id="config_data_bq_yyfwq_standby" model="maintenance_management.database_data">
+            <field name="name">板桥应用服务器备机</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_yyfwq_2_standby" model="maintenance_management.database_data">
+            <field name="name">板桥应用服务器备机处理器</field>
+            <field name="ip"/>
+            <field name="zabbix">system.cpu.util[,user]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_yyfwq_3_standby" model="maintenance_management.database_data">
+            <field name="name">板桥应用服务器备机可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[available]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_yyfwq_4_standby" model="maintenance_management.database_data">
+            <field name="name">板桥应用服务器备机总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_yyfwq_5_standby" model="maintenance_management.database_data">
+            <field name="name">板桥应用服务器备机流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[em1]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_yyfwq_6_standby" model="maintenance_management.database_data">
+            <field name="name">板桥应用服务器备机流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[em1]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_yyfwq_7_standby" model="maintenance_management.database_data">
+            <field name="name">板桥应用服务器备机当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_yyfwq_8_standby" model="maintenance_management.database_data">
+            <field name="name">板桥应用服务器备机登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_yyfwq_9_standby" model="maintenance_management.database_data">
+            <field name="name">板桥应用服务器备机系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_yyfwq_10_standby" model="maintenance_management.database_data">
+            <field name="name">板桥应用服务器备机磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[/,total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_yyfwq_11_standby" model="maintenance_management.database_data">
+            <field name="name">板桥应用服务器备机磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[/,used]</field>
+            <field name="other"/>
+        </record>
+
+        <!--板桥数据库服务器主机-->
+        <record id="config_data_bq_database_host" model="maintenance_management.database_data">
+            <field name="name">板桥数据库服务器主机</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_database_host_2" model="maintenance_management.database_data">
+            <field name="name">板桥数据库服务器主机处理器</field>
+            <field name="ip"/>
+            <field name="zabbix">system.cpu.util[,user]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_database_host_3" model="maintenance_management.database_data">
+            <field name="name">板桥数据库服务器主机可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[available]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_database_host_4" model="maintenance_management.database_data">
+            <field name="name">板桥数据库服务器主机总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_database_host_5" model="maintenance_management.database_data">
+            <field name="name">板桥数据库服务器主机流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[em1]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_database_host_6" model="maintenance_management.database_data">
+            <field name="name">板桥数据库服务器主机流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[em1]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_database_host_7" model="maintenance_management.database_data">
+            <field name="name">板桥数据库服务器主机当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_database_host_8" model="maintenance_management.database_data">
+            <field name="name">板桥数据库服务器主机登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_database_host_9" model="maintenance_management.database_data">
+            <field name="name">板桥数据库服务器主机系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_database_host_10" model="maintenance_management.database_data">
+            <field name="name">板桥数据库服务器主机磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[/,total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_database_host_11" model="maintenance_management.database_data">
+            <field name="name">板桥数据库服务器主机磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[/,used]</field>
+            <field name="other"/>
+        </record>
+
+        <!--板桥数据库服务器备机-->
+        <record id="config_data_bq_database_standby" model="maintenance_management.database_data">
+            <field name="name">板桥数据库服务器备机</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_database_standby_2" model="maintenance_management.database_data">
+            <field name="name">板桥数据库服务器备机处理器</field>
+            <field name="ip"/>
+            <field name="zabbix">system.cpu.util[,user]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_database_standby_3" model="maintenance_management.database_data">
+            <field name="name">板桥数据库服务器备机可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[available]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_database_standby_4" model="maintenance_management.database_data">
+            <field name="name">板桥数据库服务器备机总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_database_standby_5" model="maintenance_management.database_data">
+            <field name="name">板桥数据库服务器备机流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[em1]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_database_standby_6" model="maintenance_management.database_data">
+            <field name="name">板桥数据库服务器备机流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[em1]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_database_standby_7" model="maintenance_management.database_data">
+            <field name="name">板桥数据库服务器备机当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_database_standby_8" model="maintenance_management.database_data">
+            <field name="name">板桥数据库服务器备机登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_database_standby_9" model="maintenance_management.database_data">
+            <field name="name">板桥数据库服务器备机系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_database_standby_10" model="maintenance_management.database_data">
+            <field name="name">板桥数据库服务器备机磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[/,total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_database_standby_11" model="maintenance_management.database_data">
+            <field name="name">板桥数据库服务器备机磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[/,used]</field>
+            <field name="other"/>
+        </record>
+
+        <!--板桥通信前置机主机-->
+        <record id="config_data_bq_communication_host" model="maintenance_management.database_data">
+            <field name="name">板桥通信前置机主机</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_communication_host_2" model="maintenance_management.database_data">
+            <field name="name">板桥通信前置机主机处理器</field>
+            <field name="ip"/>
+            <field name="zabbix">system.cpu.load[percpu,avg15]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_communication_host_3" model="maintenance_management.database_data">
+            <field name="name">板桥通信前置机主机可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[free]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_communication_host_4" model="maintenance_management.database_data">
+            <field name="name">板桥通信前置机主机总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_communication_host_5" model="maintenance_management.database_data">
+            <field name="name">板桥通信前置机主机流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_communication_host_6" model="maintenance_management.database_data">
+            <field name="name">板桥通信前置机主机流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_communication_host_7" model="maintenance_management.database_data">
+            <field name="name">板桥通信前置机主机当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_communication_host_8" model="maintenance_management.database_data">
+            <field name="name">板桥通信前置机主机登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_communication_host_9" model="maintenance_management.database_data">
+            <field name="name">板桥通信前置机主机系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_communication_host_10" model="maintenance_management.database_data">
+            <field name="name">板桥通信前置机主机磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_communication_host_11" model="maintenance_management.database_data">
+            <field name="name">板桥通信前置机主机磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,used]</field>
+            <field name="other"/>
+        </record>
+
+        <!--板桥通信前置机备机-->
+        <record id="config_data_bq_communication_standby" model="maintenance_management.database_data">
+            <field name="name">板桥通信前置机备机</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_communication_standby_2" model="maintenance_management.database_data">
+            <field name="name">板桥通信前置机备机处理器</field>
+            <field name="ip"/>
+            <field name="zabbix">system.cpu.load[percpu,avg15]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_communication_standby_3" model="maintenance_management.database_data">
+            <field name="name">板桥通信前置机备机可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[free]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_communication_standby_4" model="maintenance_management.database_data">
+            <field name="name">板桥通信前置机备机总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_communication_standby_5" model="maintenance_management.database_data">
+            <field name="name">板桥通信前置机备机流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_communication_standby_6" model="maintenance_management.database_data">
+            <field name="name">板桥通信前置机备机流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_communication_standby_7" model="maintenance_management.database_data">
+            <field name="name">板桥通信前置机备机当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_communication_standby_8" model="maintenance_management.database_data">
+            <field name="name">板桥通信前置机备机登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_communication_standby_9" model="maintenance_management.database_data">
+            <field name="name">板桥通信前置机备机系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_communication_standby_10" model="maintenance_management.database_data">
+            <field name="name">板桥通信前置机备机磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_communication_standby_11" model="maintenance_management.database_data">
+            <field name="name">板桥通信前置机备机磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,used]</field>
+            <field name="other"/>
+        </record>
+
+        <!--板桥信号员操作工作站-->
+        <record id="config_data_bq_sign_operation_station" model="maintenance_management.database_data">
+            <field name="name">板桥信号员操作工作站</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_sign_operation_station_2" model="maintenance_management.database_data">
+            <field name="name">板桥信号员操作工作站处理器</field>
+            <field name="ip"/>
+            <field name="zabbix">system.cpu.load[percpu,avg15]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_sign_operation_station_3" model="maintenance_management.database_data">
+            <field name="name">板桥信号员操作工作站可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[free]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_sign_operation_station_4" model="maintenance_management.database_data">
+            <field name="name">板桥信号员操作工作站总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_sign_operation_station_5" model="maintenance_management.database_data">
+            <field name="name">板桥信号员操作工作站流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_sign_operation_station_6" model="maintenance_management.database_data">
+            <field name="name">板桥信号员操作工作站流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_sign_operation_station_7" model="maintenance_management.database_data">
+            <field name="name">板桥信号员操作工作站当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_sign_operation_station_8" model="maintenance_management.database_data">
+            <field name="name">板桥信号员操作工作站登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_sign_operation_station_9" model="maintenance_management.database_data">
+            <field name="name">板桥信号员操作工作站系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_sign_operation_station_10" model="maintenance_management.database_data">
+            <field name="name">板桥信号员操作工作站磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_sign_operation_station_11" model="maintenance_management.database_data">
+            <field name="name">板桥信号员操作工作站磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[free]</field>
+            <field name="other"/>
+        </record>
+
+        <!--板桥值班员操作工作站-->
+        <record id="config_data_bq_attendant_operation_station" model="maintenance_management.database_data">
+            <field name="name">板桥值班员操作工作站</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_attendant_operation_station_2" model="maintenance_management.database_data">
+            <field name="name">板桥值班员操作工作站处理器</field>
+            <field name="ip"/>
+            <field name="zabbix">system.cpu.load[percpu,avg15]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_attendant_operation_station_3" model="maintenance_management.database_data">
+            <field name="name">板桥值班员操作工作站可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[free]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_attendant_operation_station_4" model="maintenance_management.database_data">
+            <field name="name">板桥值班员操作工作站总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_attendant_operation_station_5" model="maintenance_management.database_data">
+            <field name="name">板桥值班员操作工作站流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_attendant_operation_station_6" model="maintenance_management.database_data">
+            <field name="name">板桥值班员操作工作站流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_attendant_operation_station_7" model="maintenance_management.database_data">
+            <field name="name">板桥值班员操作工作站当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_attendant_operation_station_8" model="maintenance_management.database_data">
+            <field name="name">板桥值班员操作工作站登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_attendant_operation_station_9" model="maintenance_management.database_data">
+            <field name="name">板桥值班员操作工作站系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_attendant_operation_station_10" model="maintenance_management.database_data">
+            <field name="name">板桥值班员操作工作站磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_attendant_operation_station_11" model="maintenance_management.database_data">
+            <field name="name">板桥值班员操作工作站磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,used]</field>
+            <field name="other"/>
+        </record>
+
+        <!--检修调度工作站-->
+        <record id="config_data_bq_maintenance_scheduling_station" model="maintenance_management.database_data">
+            <field name="name">板桥检修调度工作站</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_maintenance_scheduling_station_2" model="maintenance_management.database_data">
+            <field name="name">板桥检修调度工作站处理器</field>
+            <field name="ip"/>
+            <field name="zabbix">system.cpu.load[percpu,avg15]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_maintenance_scheduling_station_3" model="maintenance_management.database_data">
+            <field name="name">板桥检修调度工作站可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[free]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_maintenance_scheduling_station_4" model="maintenance_management.database_data">
+            <field name="name">板桥检修调度工作站总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_maintenance_scheduling_station_5" model="maintenance_management.database_data">
+            <field name="name">板桥检修调度工作站流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_maintenance_scheduling_station_6" model="maintenance_management.database_data">
+            <field name="name">板桥检修调度工作站流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_maintenance_scheduling_station_7" model="maintenance_management.database_data">
+            <field name="name">板桥检修调度工作站当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_maintenance_scheduling_station_8" model="maintenance_management.database_data">
+            <field name="name">板桥检修调度工作站登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_maintenance_scheduling_station_9" model="maintenance_management.database_data">
+            <field name="name">板桥检修调度工作站系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_maintenance_scheduling_station_10" model="maintenance_management.database_data">
+            <field name="name">板桥检修调度工作站磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_maintenance_scheduling_station_11" model="maintenance_management.database_data">
+            <field name="name">板桥检修调度工作站磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,used]</field>
+            <field name="other"/>
+        </record>
+
+        <!--板桥车辆检修工作站-->
+        <record id="config_data_bq_vehicle_maintenance_station" model="maintenance_management.database_data">
+            <field name="name">板桥车辆检修工作站</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_vehicle_maintenance_station_2" model="maintenance_management.database_data">
+            <field name="name">板桥车辆检修工作站处理器</field>
+            <field name="ip"/>
+            <field name="zabbix">system.cpu.load[percpu,avg15]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_vehicle_maintenance_station_3" model="maintenance_management.database_data">
+            <field name="name">板桥车辆检修工作站可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[free]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_vehicle_maintenance_station_4" model="maintenance_management.database_data">
+            <field name="name">板桥车辆检修工作站总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_vehicle_maintenance_station_5" model="maintenance_management.database_data">
+            <field name="name">板桥车辆检修工作站流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_vehicle_maintenance_station_6" model="maintenance_management.database_data">
+            <field name="name">板桥车辆检修工作站流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_vehicle_maintenance_station_7" model="maintenance_management.database_data">
+            <field name="name">板桥车辆检修工作站当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_vehicle_maintenance_station_8" model="maintenance_management.database_data">
+            <field name="name">板桥车辆检修工作站登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_vehicle_maintenance_station_9" model="maintenance_management.database_data">
+            <field name="name">板桥车辆检修工作站系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_vehicle_maintenance_station_10" model="maintenance_management.database_data">
+            <field name="name">板桥车辆检修工作站磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_vehicle_maintenance_station_11" model="maintenance_management.database_data">
+            <field name="name">板桥车辆检修工作站磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,used]</field>
+            <field name="other"/>
+        </record>
+
+        <!--板桥车场调度工作站-->
+        <record id="config_data_bq_yard_dispatching_station" model="maintenance_management.database_data">
+            <field name="name">板桥车场调度工作站</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_bq_yard_dispatching_station_2" model="maintenance_management.database_data">
+            <field name="name">板桥车场调度工作站处理器</field>
+            <field name="ip"/>
+            <field name="zabbix">system.cpu.load[percpu,avg15]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_yard_dispatching_station_3" model="maintenance_management.database_data">
+            <field name="name">板桥车场调度工作站可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">system.swap.size[,free]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_bq_yard_dispatching_station_4" model="maintenance_management.database_data">
+            <field name="name">板桥车场调度工作站总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_bq_yard_dispatching_station_5" model="maintenance_management.database_data">
+            <field name="name">板桥车场调度工作站流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_bq_yard_dispatching_station_6" model="maintenance_management.database_data">
+            <field name="name">板桥车场调度工作站流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_bq_yard_dispatching_station_7" model="maintenance_management.database_data">
+            <field name="name">板桥车场调度工作站当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_bq_yard_dispatching_station_8" model="maintenance_management.database_data">
+            <field name="name">板桥车场调度工作站登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_bq_yard_dispatching_station_9" model="maintenance_management.database_data">
+            <field name="name">板桥车场调度工作站系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_bq_yard_dispatching_station_10" model="maintenance_management.database_data">
+            <field name="name">板桥车场调度工作站磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_yard_dispatching_station_11" model="maintenance_management.database_data">
+            <field name="name">板桥车场调度工作站磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,used]</field>
+            <field name="other"/>
+        </record>
+
+        <!--高大路通信前置机主机-->
+        <record id="config_data_gdl_frontend_host" model="maintenance_management.database_data">
+            <field name="name">高大路通信前置机主机</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_frontend_host_2" model="maintenance_management.database_data">
+            <field name="name">高大路通信前置机主机处理器</field>
+            <field name="ip"/>
+            <field name="zabbix">system.cpu.load[percpu,avg15]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_frontend_host_3" model="maintenance_management.database_data">
+            <field name="name">高大路通信前置机主机可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[free]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_frontend_host_4" model="maintenance_management.database_data">
+            <field name="name">高大路通信前置机主机总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_frontend_host_5" model="maintenance_management.database_data">
+            <field name="name">高大路通信前置机主机流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_frontend_host_6" model="maintenance_management.database_data">
+            <field name="name">高大路通信前置机主机流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_frontend_host_7" model="maintenance_management.database_data">
+            <field name="name">高大路通信前置机主机当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_frontend_host_8" model="maintenance_management.database_data">
+            <field name="name">高大路通信前置机主机登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_frontend_host_9" model="maintenance_management.database_data">
+            <field name="name">高大路通信前置机主机系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_frontend_host_10" model="maintenance_management.database_data">
+            <field name="name">高大路通信前置机主机磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_frontend_host_11" model="maintenance_management.database_data">
+            <field name="name">高大路通信前置机主机磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,used]</field>
+            <field name="other"/>
+        </record>
+
+        <!--高大路通信前置机备机-->
+        <record id="config_data_gdl_frontend_standby" model="maintenance_management.database_data">
+            <field name="name">高大路通信前置机备机</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_frontend_standby_2" model="maintenance_management.database_data">
+            <field name="name">高大路通信前置机备机处理器</field>
+            <field name="ip"/>
+            <field name="zabbix">system.cpu.load[percpu,avg15]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_frontend_standby_3" model="maintenance_management.database_data">
+            <field name="name">高大路通信前置机备机可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[free]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_frontend_standby_4" model="maintenance_management.database_data">
+            <field name="name">高大路通信前置机备机总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_frontend_standby_5" model="maintenance_management.database_data">
+            <field name="name">高大路通信前置机备机流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_frontend_standby_6" model="maintenance_management.database_data">
+            <field name="name">高大路通信前置机备机流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_frontend_standby_7" model="maintenance_management.database_data">
+            <field name="name">高大路通信前置机备机当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_frontend_standby_8" model="maintenance_management.database_data">
+            <field name="name">高大路通信前置机备机登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_frontend_standby_9" model="maintenance_management.database_data">
+            <field name="name">高大路通信前置机备机系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_frontend_standby_10" model="maintenance_management.database_data">
+            <field name="name">高大路通信前置机备机磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_frontend_standby_11" model="maintenance_management.database_data">
+            <field name="name">高大路通信前置机备机磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,used]</field>
+            <field name="other"/>
+        </record>
+
+        <!--高大路信号员操作工作站-->
+        <record id="config_data_gdl_sign_operation_station" model="maintenance_management.database_data">
+            <field name="name">高大路信号员操作工作站</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_sign_operation_station_2" model="maintenance_management.database_data">
+            <field name="name">高大路信号员操作工作站处理器</field>
+            <field name="ip"/>
+            <field name="zabbix">system.cpu.load[percpu,avg15]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_sign_operation_station_3" model="maintenance_management.database_data">
+            <field name="name">高大路信号员操作工作站可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[free]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_sign_operation_station_4" model="maintenance_management.database_data">
+            <field name="name">高大路信号员操作工作站总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_sign_operation_station_5" model="maintenance_management.database_data">
+            <field name="name">高大路信号员操作工作站流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_sign_operation_station_6" model="maintenance_management.database_data">
+            <field name="name">高大路信号员操作工作站流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_sign_operation_station_7" model="maintenance_management.database_data">
+            <field name="name">高大路信号员操作工作站当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_sign_operation_station_8" model="maintenance_management.database_data">
+            <field name="name">高大路信号员操作工作站登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_sign_operation_station_9" model="maintenance_management.database_data">
+            <field name="name">高大路信号员操作工作站系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_sign_operation_station_10" model="maintenance_management.database_data">
+            <field name="name">高大路信号员操作工作站磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_sign_operation_station_11" model="maintenance_management.database_data">
+            <field name="name">高大路信号员操作工作站磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,used]</field>
+            <field name="other"/>
+        </record>
+
+        <!--高大路值班员操作工作站-->
+        <record id="config_data_gdl_attendant_operation_station" model="maintenance_management.database_data">
+            <field name="name">高大路值班员操作工作站</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_attendant_operation_station_2" model="maintenance_management.database_data">
+            <field name="name">高大路值班员操作工作站处理器</field>
+            <field name="ip"/>
+            <field name="zabbix">system.cpu.load[percpu,avg15]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_attendant_operation_station_3" model="maintenance_management.database_data">
+            <field name="name">高大路值班员操作工作站可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[free]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_attendant_operation_station_4" model="maintenance_management.database_data">
+            <field name="name">高大路值班员操作工作站总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_attendant_operation_station_5" model="maintenance_management.database_data">
+            <field name="name">高大路值班员操作工作站流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_attendant_operation_station_6" model="maintenance_management.database_data">
+            <field name="name">高大路值班员操作工作站流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_attendant_operation_station_7" model="maintenance_management.database_data">
+            <field name="name">高大路值班员操作工作站当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_attendant_operation_station_8" model="maintenance_management.database_data">
+            <field name="name">高大路值班员操作工作站登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_attendant_operation_station_9" model="maintenance_management.database_data">
+            <field name="name">高大路值班员操作工作站系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_attendant_operation_station_10" model="maintenance_management.database_data">
+            <field name="name">高大路值班员操作工作站磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_attendant_operation_station_11" model="maintenance_management.database_data">
+            <field name="name">高大路值班员操作工作站磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,used]</field>
+            <field name="other"/>
+        </record>
+
+        <!--高大路车场调度工作站-->
+        <record id="config_data_gdl_yard_scheduling_station" model="maintenance_management.database_data">
+            <field name="name">高大路车场调度工作站</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_yard_scheduling_station_2" model="maintenance_management.database_data">
+            <field name="name">高大路车场调度工作站处理器</field>
+            <field name="ip"/>
+            <field name="zabbix">system.cpu.load[percpu,avg15]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_yard_scheduling_station_3" model="maintenance_management.database_data">
+            <field name="name">高大路车场调度工作站可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[free]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_yard_scheduling_station_4" model="maintenance_management.database_data">
+            <field name="name">高大路车场调度工作站总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_yard_scheduling_station_5" model="maintenance_management.database_data">
+            <field name="name">高大路车场调度工作站流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_yard_scheduling_station_6"
+                model="maintenance_management.database_data">
+            <field name="name">高大路车场调度工作站流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_yard_scheduling_station_7"
+                model="maintenance_management.database_data">
+            <field name="name">高大路车场调度工作站当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_yard_scheduling_station_8"
+                model="maintenance_management.database_data">
+            <field name="name">高大路车场调度工作站登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_yard_scheduling_station_9"
+                model="maintenance_management.database_data">
+            <field name="name">高大路车场调度工作站系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_yard_scheduling_station_10"
+                model="maintenance_management.database_data">
+            <field name="name">高大路车场调度工作站磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_yard_scheduling_station_11"
+                model="maintenance_management.database_data">
+            <field name="name">高大路车场调度工作站磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,used]</field>
+            <field name="other"/>
+        </record>
+
+        <!--高大路车场检修工作站-->
+        <record id="config_data_gdl_yard_maintenance_station"
+                model="maintenance_management.database_data">
+            <field name="name">高大路车场检修工作站</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_yard_maintenance_station_2"
+                model="maintenance_management.database_data">
+            <field name="name">高大路车场检修工作站处理器</field>
+            <field name="ip"/>
+            <field name="zabbix">system.cpu.load[percpu,avg15]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_yard_maintenance_station_3"
+                model="maintenance_management.database_data">
+            <field name="name">高大路车场检修工作站可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[free]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_yard_maintenance_station_4"
+                model="maintenance_management.database_data">
+            <field name="name">高大路车场检修工作站总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_yard_maintenance_station_5"
+                model="maintenance_management.database_data">
+            <field name="name">高大路车场检修工作站流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_yard_maintenance_station_6"
+                model="maintenance_management.database_data">
+            <field name="name">高大路车场检修工作站流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_yard_maintenance_station_7"
+                model="maintenance_management.database_data">
+            <field name="name">高大路车场检修工作站当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_yard_maintenance_station_8"
+                model="maintenance_management.database_data">
+            <field name="name">高大路车场检修工作站登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_yard_maintenance_station_9"
+                model="maintenance_management.database_data">
+            <field name="name">高大路车场检修工作站系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_yard_maintenance_station_10"
+                model="maintenance_management.database_data">
+            <field name="name">高大路车场检修工作站磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_yard_maintenance_station_11"
+                model="maintenance_management.database_data">
+            <field name="name">高大路车场检修工作站磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,used]</field>
+            <field name="other"/>
+        </record>
+
+        <!--高大路检修调度工作站-->
+        <record id="config_data_gdl_maintenance_scheduling_station" model="maintenance_management.database_data">
+            <field name="name">高大路检修调度工作站</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_maintenance_scheduling_station_2"
+                model="maintenance_management.database_data">
+            <field name="name">高大路检修调度工作站处理器</field>
+            <field name="ip"/>
+            <field name="zabbix">system.cpu.load[percpu,avg15]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_maintenance_scheduling_station_3"
+                model="maintenance_management.database_data">
+            <field name="name">高大路检修调度工作站可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[free]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_maintenance_scheduling_station_4"
+                model="maintenance_management.database_data">
+            <field name="name">高大路检修调度工作站总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_maintenance_scheduling_station_5"
+                model="maintenance_management.database_data">
+            <field name="name">高大路检修调度工作站流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_maintenance_scheduling_station_6" model="maintenance_management.database_data">
+            <field name="name">高大路检修调度工作站流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_maintenance_scheduling_station_7"
+                model="maintenance_management.database_data">
+            <field name="name">高大路检修调度工作站当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_maintenance_scheduling_station_8"
+                model="maintenance_management.database_data">
+            <field name="name">高大路检修调度工作站登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_maintenance_scheduling_station_9"
+                model="maintenance_management.database_data">
+            <field name="name">高大路检修调度工作站系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_maintenance_scheduling_station_10"
+                model="maintenance_management.database_data">
+            <field name="name">高大路检修调度工作站磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_maintenance_scheduling_station_11"
+                model="maintenance_management.database_data">
+            <field name="name">高大路检修调度工作站磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,used]</field>
+            <field name="other"/>
+        </record>
+
+        <!--高大路排班工作站-->
+        <record id="config_data_gdl_scheduling_station"
+                model="maintenance_management.database_data">
+            <field name="name">高大路排班工作站</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_scheduling_station_2"
+                model="maintenance_management.database_data">
+            <field name="name">高大路排班工作站处理器</field>
+            <field name="ip"/>
+            <field name="zabbix">system.cpu.load[percpu,avg15]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_scheduling_station_3"
+                model="maintenance_management.database_data">
+            <field name="name">高大路排班工作站可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[free]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_scheduling_station_4"
+                model="maintenance_management.database_data">
+            <field name="name">高大路排班工作站总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_scheduling_station_5"
+                model="maintenance_management.database_data">
+            <field name="name">高大路排班工作站流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_scheduling_station_6"
+                model="maintenance_management.database_data">
+            <field name="name">高大路排班工作站流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_scheduling_station_7"
+                model="maintenance_management.database_data">
+            <field name="name">高大路排班工作站当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_scheduling_station_8"
+                model="maintenance_management.database_data">
+            <field name="name">高大路排班工作站登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_scheduling_station_9"
+                model="maintenance_management.database_data">
+            <field name="name">高大路排班工作站系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_datagdl_scheduling_station_10"
+                model="maintenance_management.database_data">
+            <field name="name">高大路排班工作站磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_scheduling_station_11"
+                model="maintenance_management.database_data">
+            <field name="name">高大路排班工作站磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,used]</field>
+            <field name="other"/>
+        </record>
+
+        <!--高大路检修调度工作站-->
+        <record id="config_data_gdl_maintenance_scheduling_station" model="maintenance_management.database_data">
+            <field name="name">高大路检修调度工作站</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_maintenance_scheduling_station_2"
+                model="maintenance_management.database_data">
+            <field name="name">高大路检修调度工作站处理器</field>
+            <field name="ip"/>
+            <field name="zabbix">system.cpu.load[percpu,avg15]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_maintenance_scheduling_station_3"
+                model="maintenance_management.database_data">
+            <field name="name">高大路检修调度工作站可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[free]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_maintenance_scheduling_station_4"
+                model="maintenance_management.database_data">
+            <field name="name">高大路检修调度工作站总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_maintenance_scheduling_station_5"
+                model="maintenance_management.database_data">
+            <field name="name">高大路检修调度工作站流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_maintenance_scheduling_station_6" model="maintenance_management.database_data">
+            <field name="name">高大路检修调度工作站流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_maintenance_scheduling_station_7"
+                model="maintenance_management.database_data">
+            <field name="name">高大路检修调度工作站当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_maintenance_scheduling_station_8"
+                model="maintenance_management.database_data">
+            <field name="name">高大路检修调度工作站登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_maintenance_scheduling_station_9"
+                model="maintenance_management.database_data">
+            <field name="name">高大路检修调度工作站系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_maintenance_scheduling_station_10"
+                model="maintenance_management.database_data">
+            <field name="name">高大路检修调度工作站磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_maintenance_scheduling_station_11"
+                model="maintenance_management.database_data">
+            <field name="name">高大路检修调度工作站磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,used]</field>
+            <field name="other"/>
+        </record>
+
+        <!--板桥维护工作站-->
+        <record id="config_data_bq_maintenance_station"
+                model="maintenance_management.database_data">
+            <field name="name">板桥维护工作站</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_maintenance_station_2"
+                model="maintenance_management.database_data">
+            <field name="name">板桥维护工作站处理器</field>
+            <field name="ip"/>
+            <field name="zabbix">system.cpu.load[percpu,avg15]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_maintenance_station_3"
+                model="maintenance_management.database_data">
+            <field name="name">板桥维护工作站可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[free]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_maintenance_station_4"
+                model="maintenance_management.database_data">
+            <field name="name">板桥维护工作站总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_maintenance_station_5"
+                model="maintenance_management.database_data">
+            <field name="name">板桥维护工作站流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_maintenance_station_6"
+                model="maintenance_management.database_data">
+            <field name="name">板桥维护工作站流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_maintenance_station_7"
+                model="maintenance_management.database_data">
+            <field name="name">板桥维护工作站当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_maintenance_station_8"
+                model="maintenance_management.database_data">
+            <field name="name">板桥维护工作站登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_maintenance_station_9"
+                model="maintenance_management.database_data">
+            <field name="name">板桥维护工作站系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_maintenance_station_10"
+                model="maintenance_management.database_data">
+            <field name="name">板桥维护工作站磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_maintenance_station_11"
+                model="maintenance_management.database_data">
+            <field name="name">板桥维护工作站磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,used]</field>
+            <field name="other"/>
+        </record>
+
+        <!--板桥派班工作站-->
+        <record id="config_data_bq_send_the_class_station"
+                model="maintenance_management.database_data">
+            <field name="name">板桥派班工作站</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_send_the_class_station_2"
+                model="maintenance_management.database_data">
+            <field name="name">板桥派班工作站处理器</field>
+            <field name="ip"/>
+            <field name="zabbix">system.cpu.load[percpu,avg15]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_send_the_class_station_3"
+                model="maintenance_management.database_data">
+            <field name="name">板桥派班工作站可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[free]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_send_the_class_station_4"
+                model="maintenance_management.database_data">
+            <field name="name">板桥派班工作站总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_send_the_class_station_5"
+                model="maintenance_management.database_data">
+            <field name="name">板桥派班工作站流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_send_the_class_station_6"
+                model="maintenance_management.database_data">
+            <field name="name">板桥派班工作站流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_send_the_class_station_7"
+                model="maintenance_management.database_data">
+            <field name="name">板桥派班工作站当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_send_the_class_station_8"
+                model="maintenance_management.database_data">
+            <field name="name">板桥派班工作站登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_send_the_class_station_9"
+                model="maintenance_management.database_data">
+            <field name="name">板桥派班工作站系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_send_the_class_station_10"
+                model="maintenance_management.database_data">
+            <field name="name">板桥派班工作站磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_send_the_class_station_11"
+                model="maintenance_management.database_data">
+            <field name="name">板桥派班工作站磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,used]</field>
+            <field name="other"/>
+        </record>
+
+        <!--高大路出退勤终端-->
+        <record id="config_data_gdl_out_of_the_back_station"
+                model="maintenance_management.database_data">
+            <field name="name">高大路出退勤终端</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_out_of_the_back_station_2"
+                model="maintenance_management.database_data">
+            <field name="name">高大路出退勤终端处理器</field>
+            <field name="ip"/>
+            <field name="zabbix">system.cpu.load[percpu,avg15]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_out_of_the_back_station_3"
+                model="maintenance_management.database_data">
+            <field name="name">高大路出退勤终端可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[free]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_out_of_the_back_station_4"
+                model="maintenance_management.database_data">
+            <field name="name">高大路出退勤终端总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_out_of_the_back_station_5"
+                model="maintenance_management.database_data">
+            <field name="name">高大路出退勤终端流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_out_of_the_back_station_6"
+                model="maintenance_management.database_data">
+            <field name="name">高大路出退勤终端流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_out_of_the_back_station_7"
+                model="maintenance_management.database_data">
+            <field name="name">高大路出退勤终端当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_out_of_the_back_station_8"
+                model="maintenance_management.database_data">
+            <field name="name">高大路出退勤终端登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_out_of_the_back_station_9"
+                model="maintenance_management.database_data">
+            <field name="name">高大路出退勤终端系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_out_of_the_back_station_10"
+                model="maintenance_management.database_data">
+            <field name="name">高大路出退勤终端磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_out_of_the_back_station_11"
+                model="maintenance_management.database_data">
+            <field name="name">高大路出退勤终端磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,used]</field>
+            <field name="other"/>
+        </record>
+
+        <!--高大路派班工作站-->
+        <record id="config_data_gdl_send_the_class_station"
+                model="maintenance_management.database_data">
+            <field name="name">高大路派班工作站</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_send_the_class_station_2"
+                model="maintenance_management.database_data">
+            <field name="name">高大路派班工作站处理器</field>
+            <field name="ip"/>
+            <field name="zabbix">system.cpu.load[percpu,avg15]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_send_the_class_station_3"
+                model="maintenance_management.database_data">
+            <field name="name">高大路派班工作站可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[free]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_send_the_class_station_4"
+                model="maintenance_management.database_data">
+            <field name="name">高大路派班工作站总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_send_the_class_station_5"
+                model="maintenance_management.database_data">
+            <field name="name">高大路派班工作站流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_send_the_class_station_6"
+                model="maintenance_management.database_data">
+            <field name="name">高大路派班工作站流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_send_the_class_station_7"
+                model="maintenance_management.database_data">
+            <field name="name">高大路派班工作站当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_send_the_class_station_8"
+                model="maintenance_management.database_data">
+            <field name="name">高大路派班工作站登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_send_the_class_station_9"
+                model="maintenance_management.database_data">
+            <field name="name">高大路派班工作站系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_send_the_class_station_10"
+                model="maintenance_management.database_data">
+            <field name="name">高大路派班工作站磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_gdl_send_the_class_station_11"
+                model="maintenance_management.database_data">
+            <field name="name">高大路派班工作站磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,used]</field>
+            <field name="other"/>
+        </record>
+
+        <!--板桥出退勤终端-->
+        <record id="config_data_bq_out_of_the_back_station"
+                model="maintenance_management.database_data">
+            <field name="name">板桥出退勤终端</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_out_of_the_back_station_2"
+                model="maintenance_management.database_data">
+            <field name="name">板桥出退勤终端处理器</field>
+            <field name="ip"/>
+            <field name="zabbix">system.cpu.load[percpu,avg15]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_out_of_the_back_station_3"
+                model="maintenance_management.database_data">
+            <field name="name">板桥出退勤终端可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[free]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_out_of_the_back_station_4"
+                model="maintenance_management.database_data">
+            <field name="name">板桥出退勤终端总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_out_of_the_back_station_5"
+                model="maintenance_management.database_data">
+            <field name="name">板桥出退勤终端流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_out_of_the_back_station_6"
+                model="maintenance_management.database_data">
+            <field name="name">板桥出退勤终端流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_out_of_the_back_station_7"
+                model="maintenance_management.database_data">
+            <field name="name">板桥出退勤终端当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_out_of_the_back_station_8"
+                model="maintenance_management.database_data">
+            <field name="name">板桥出退勤终端登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_out_of_the_back_station_9"
+                model="maintenance_management.database_data">
+            <field name="name">板桥出退勤终端系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_out_of_the_back_station_10"
+                model="maintenance_management.database_data">
+            <field name="name">板桥出退勤终端磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_bq_out_of_the_back_station_11"
+                model="maintenance_management.database_data">
+            <field name="name">板桥出退勤终端磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,used]</field>
+            <field name="other"/>
+        </record>
+
+        <!--太平园出退勤终端-->
+        <record id="config_data_tpy_out_of_the_back_station"
+                model="maintenance_management.database_data">
+            <field name="name">太平园出退勤终端</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_tpy_out_of_the_back_station_2"
+                model="maintenance_management.database_data">
+            <field name="name">太平园出退勤终端处理器</field>
+            <field name="ip"/>
+            <field name="zabbix">system.cpu.load[percpu,avg15]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_tpy_out_of_the_back_station_3"
+                model="maintenance_management.database_data">
+            <field name="name">太平园出退勤终端可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[free]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_tpy_out_of_the_back_station_4"
+                model="maintenance_management.database_data">
+            <field name="name">太平园出退勤终端总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_tpy_out_of_the_back_station_5"
+                model="maintenance_management.database_data">
+            <field name="name">太平园出退勤终端流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_tpy_out_of_the_back_station_6"
+                model="maintenance_management.database_data">
+            <field name="name">太平园出退勤终端流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_tpy_out_of_the_back_station_7"
+                model="maintenance_management.database_data">
+            <field name="name">太平园出退勤终端当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_tpy_out_of_the_back_station_8"
+                model="maintenance_management.database_data">
+            <field name="name">太平园出退勤终端登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_tpy_out_of_the_back_station_9"
+                model="maintenance_management.database_data">
+            <field name="name">太平园出退勤终端系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_tpy_out_of_the_back_station_10"
+                model="maintenance_management.database_data">
+            <field name="name">太平园出退勤终端磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_tpy_out_of_the_back_station_11"
+                model="maintenance_management.database_data">
+            <field name="name">太平园出退勤终端磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,used]</field>
+            <field name="other"/>
+        </record>
+
+        <!--太平园派班工作站-->
+        <record id="config_data_tpy_out_of_the_back_station"
+                model="maintenance_management.database_data">
+            <field name="name">太平园派班工作站</field>
+            <field name="ip"/>
+            <field name="zabbix"/>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_tpy_send_the_class_station_2"
+                model="maintenance_management.database_data">
+            <field name="name">太平园派班工作站处理器</field>
+            <field name="ip"/>
+            <field name="zabbix">system.cpu.load[percpu,avg15]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_tpy_send_the_class_station_3"
+                model="maintenance_management.database_data">
+            <field name="name">太平园派班工作站可用内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[free]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_tpy_send_the_class_station_4"
+                model="maintenance_management.database_data">
+            <field name="name">太平园派班工作站总内存</field>
+            <field name="ip"/>
+            <field name="zabbix">vm.memory.size[total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_tpy_send_the_class_station_5"
+                model="maintenance_management.database_data">
+            <field name="name">太平园派班工作站流量出口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.out[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_tpy_send_the_class_station_6"
+                model="maintenance_management.database_data">
+            <field name="name">太平园派班工作站流量入口</field>
+            <field name="ip"/>
+            <field name="zabbix">net.if.in[WAN Miniport (SSTP)]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_tpy_send_the_class_station_7"
+                model="maintenance_management.database_data">
+            <field name="name">太平园派班工作站当前进程数</field>
+            <field name="ip"/>
+            <field name="zabbix">proc.num[]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_tpy_send_the_class_station_8"
+                model="maintenance_management.database_data">
+            <field name="name">太平园派班工作站登录用户数量</field>
+            <field name="ip"/>
+            <field name="zabbix">system.users.num</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_tpy_send_the_class_station_9"
+                model="maintenance_management.database_data">
+            <field name="name">太平园派班工作站系统正常运行时间</field>
+            <field name="ip"/>
+            <field name="zabbix">system.uptime</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_tpy_send_the_class_station_10"
+                model="maintenance_management.database_data">
+            <field name="name">太平园派班工作站磁盘总空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,total]</field>
+            <field name="other"/>
+        </record>
+
+        <record id="config_data_tpy_send_the_class_station_11"
+                model="maintenance_management.database_data">
+            <field name="name">太平园派班工作站磁盘使用空间</field>
+            <field name="ip"/>
+            <field name="zabbix">vfs.fs.size[C:,used]</field>
+            <field name="other"/>
+        </record>
+
+    </data>
+</odoo>

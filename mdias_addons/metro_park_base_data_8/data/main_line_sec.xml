@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- 正线区段 -->
+        <record id="main_line_sec" model="metro_park_base.rails_sec">
+            <field name="no">main_line_sec</field>
+            <field name="name">正线</field>
+            <field name="alias">正线</field>
+            <field name="is_track">False</field>
+            <field name="electric_live">False</field>
+            <field name="rail_length">9999</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="main_line_location" />
+        </record>
+
+    </data>
+</odoo>

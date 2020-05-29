@@ -1,0 +1,295 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="checker_handover_tree">
+            <field name="name">检调交接班</field>
+            <field name="model">metro_park_production.handover.checker</field>
+            <field name="arch" type="xml">
+                <tree import="0"
+                      options="{'height': 'full-300'}"
+                      search_ex_template="char_handover_search"
+                      default_order="handover_date desc"
+                      js_class="fnt_table">
+                    <field name="date" string="日期" widget="date" width="200"/>
+                    <field name="handover_sign_user" string="交班人"/>
+                    <field name="accept_user" string="接班人"/>
+                    <field name="state"/>
+                    <widget name="TreeButtons"
+                            width="200"
+                            fixed_right="1"
+                            string="操作"
+                            template="handover_operation_buttons"
+                    />
+                </tree>
+            </field>
+        </record>
+
+        <record id="checker_handover_form" model="ir.ui.view">
+            <field name="name">检调交接班</field>
+            <field name="model">metro_park_production.handover.checker</field>
+            <field name="arch" type="xml">
+                <form string="交接班">
+                    <sheet>
+                        <notebook>
+                            <page string="生产类交办">
+                                <div class="form-group row">
+                                    <label class="col-sm-2" for="date" string="日期"/>
+                                    <div class="col-sm-4">
+                                        <field name="date" readonly="1"/>
+                                    </div>
+                                    <label class="col-sm-2" for="handover_sign_user" string="交班人"/>
+                                    <div class="col-sm-4">
+                                        <field name="handover_sign_user" readonly="1"/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2" for="production_succession_per" string="交办人"/>
+                                    <div class="col-sm-4">
+                                        <field name="production_succession_per"
+                                               options="{'no_create_edit': True, 'no_open': True, 'no_create':True}"/>
+                                    </div>
+
+                                    <label class="col-sm-2" for="production_succession_content" string="交班内容"/>
+                                    <div class="col-sm-4">
+                                        <field name="production_succession_content"
+                                               options="{'no_create_edit': True, 'no_open': True, 'no_create':True}"/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-sm-2" for="production_succession_date" string="交办时间"/>
+                                    <div class="col-sm-4">
+                                        <field name="production_succession_date"/>
+                                    </div>
+
+                                    <label class="col-sm-2" for="production_single_phase" string="单期"/>
+                                    <div class="col-sm-4">
+                                        <field name="production_single_phase"/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-sm-2" for="production_progress" string="当班进展"/>
+                                    <div class="col-sm-4">
+                                        <field name="production_progress"/>
+                                    </div>
+
+                                    <label class="col-sm-2" for="production_flight_schedule" string="班次安排"/>
+                                    <div class="col-sm-4">
+                                        <field name="production_flight_schedule"/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-sm-2" for="production_note" string="备注"/>
+                                    <div class="col-sm-4">
+                                        <field name="production_note"/>
+                                    </div>
+
+                                    <label class="col-sm-2" for="production_location" string="场段"/>
+                                    <div class="col-sm-4">
+                                        <field name="production_location"
+                                               options="{'no_create_edit': True, 'no_open': True, 'no_create':True}"/>
+                                    </div>
+                                </div>
+                            </page>
+                            <page string="扣车情况统计表">
+                                <div class="form-group row">
+                                    <label class="col-sm-2" for="button_vehicle_unit" string="扣车单位"/>
+                                    <div class="col-sm-4">
+                                        <field name="button_vehicle_unit"/>
+                                    </div>
+
+                                    <label class="col-sm-2" for="button_vehicle_number" string="列车编号"/>
+                                    <div class="col-sm-4">
+                                        <field name="button_vehicle_number"
+                                               options="{'no_create_edit': True, 'no_open': True, 'no_create':True}"/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-sm-2" for="button_vehicle_reason" string="扣车原因"/>
+                                    <div class="col-sm-4">
+                                        <field name="button_vehicle_reason"/>
+                                    </div>
+
+                                    <label class="col-sm-2" for="button_vehicle_time" string="扣车时间"/>
+                                    <div class="col-sm-4">
+                                        <field name="button_vehicle_time"/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-sm-2" for="button_vehicle_note" string="备注"/>
+                                    <div class="col-sm-4">
+                                        <field name="button_vehicle_note"/>
+                                    </div>
+
+                                    <label class="col-sm-2" for="button_vehicle_location" string="场段"/>
+                                    <div class="col-sm-4">
+                                        <field name="button_vehicle_location"
+                                               options="{'no_create_edit': True, 'no_open': True, 'no_create':True}"/>
+                                    </div>
+                                </div>
+                            </page>
+                            <page string="专项安排">
+                                <div class="form-group row">
+                                    <label class="col-sm-2" for="special_arrangement_content" string="交办内容"/>
+                                    <div class="col-sm-4">
+                                        <field name="special_arrangement_content"/>
+                                    </div>
+
+                                    <label class="col-sm-2" for="special_arrangement_per" string="交办人"/>
+                                    <div class="col-sm-4">
+                                        <field name="special_arrangement_per"
+                                               options="{'no_create_edit': True, 'no_open': True, 'no_create':True}"/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-sm-2" for="special_arrangement_date" string="时间"/>
+                                    <div class="col-sm-4">
+                                        <field name="special_arrangement_date"/>
+                                    </div>
+
+                                    <label class="col-sm-2" for="special_arrangement_progress" string="进展"/>
+                                    <div class="col-sm-4">
+                                        <field name="special_arrangement_progress"/>
+                                    </div>
+                                </div>
+                            </page>
+                            <page string="施工类交办">
+                                <div class="form-group row">
+                                    <label class="col-sm-2" for="construction_content" string="交班内容"/>
+                                    <div class="col-sm-4">
+                                        <field name="construction_content"/>
+                                    </div>
+
+                                    <label class="col-sm-2" for="construction_per" string="交办人"/>
+                                    <div class="col-sm-4">
+                                        <field name="construction_per"
+                                               options="{'no_create_edit': True, 'no_open': True, 'no_create':True}"/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-sm-2" for="construction_date" string="时间"/>
+                                    <div class="col-sm-4">
+                                        <field name="construction_date"/>
+                                    </div>
+
+                                    <label class="col-sm-2" for="construction_single_phase" string="单期"/>
+                                    <div class="col-sm-4">
+                                        <field name="construction_single_phase"/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-sm-2" for="construction_progress" string="当班进展"/>
+                                    <div class="col-sm-4">
+                                        <field name="construction_progress"/>
+                                    </div>
+
+                                    <label class="col-sm-2" for="construction_flight_schedule" string="班次安排"/>
+                                    <div class="col-sm-4">
+                                        <field name="construction_flight_schedule"/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-sm-2" for="construction_note" string="备注"/>
+                                    <div class="col-sm-4">
+                                        <field name="construction_note"/>
+                                    </div>
+
+                                    <label class="col-sm-2" for="construction_location" string="场段"/>
+                                    <div class="col-sm-4">
+                                        <field name="construction_location"
+                                               options="{'no_create_edit': True, 'no_open': True, 'no_create':True}"/>
+                                    </div>
+                                </div>
+                            </page>
+                            <page string="近期专项梳理">
+                                <div class="form-group row">
+                                    <label class="col-sm-2" for="comb_notice_no" string="通知号"/>
+                                    <div class="col-sm-4">
+                                        <field name="comb_notice_no"/>
+                                    </div>
+
+                                    <label class="col-sm-2" for="comb_notice_name" string="通知名称"/>
+                                    <div class="col-sm-4">
+                                        <field name="comb_notice_name"/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-sm-2" for="comb_notice_person" string="编制者"/>
+                                    <div class="col-sm-4">
+                                        <field name="comb_notice_person"/>
+                                    </div>
+
+                                    <label class="col-sm-2" for="comb_notice_system" string="系统"/>
+                                    <div class="col-sm-4">
+                                        <field name="comb_notice_system"/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-sm-2" for="comb_notice_limit" string="整改范围"/>
+                                    <div class="col-sm-4">
+                                        <field name="comb_notice_limit"/>
+                                    </div>
+
+                                    <label class="col-sm-2" for="comb_notice_date" string="下发时间"/>
+                                    <div class="col-sm-4">
+                                        <field name="comb_notice_date"/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-sm-2" for="comb_notice_type" string="通知类型"/>
+                                    <div class="col-sm-4">
+                                        <field name="comb_notice_type"/>
+                                    </div>
+
+                                    <label class="col-sm-2" for="comb_notice_complete" string="是否完成"/>
+                                    <div class="col-sm-4">
+                                        <field name="comb_notice_complete"/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-sm-2" for="comb_notice_conditions_work" string="是否具备作业条件"/>
+                                    <div class="col-sm-4">
+                                        <field name="comb_notice_conditions_work"/>
+                                    </div>
+
+                                    <label class="col-sm-2" for="comb_notice_start_time" string="预计开始作业时间"/>
+                                    <div class="col-sm-4">
+                                        <field name="comb_notice_start_time"/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-sm-2" for="comb_notice_plan" string="排产计划"/>
+                                    <div class="col-sm-4">
+                                        <field name="comb_notice_plan"/>
+                                    </div>
+                                </div>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="handover_checker_act_window">
+            <field name="name">检调交接班</field>
+            <field name="res_model">metro_park_production.handover.checker</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">['|', ('handover_sign_user', '=', uid), ('handover_sign_user', '=', uid),]</field>
+        </record>
+
+    </data>
+</odoo>
+

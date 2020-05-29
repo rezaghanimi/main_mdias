@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="tree_rule_info" model="ir.ui.view">
+            <field name="name">调度计划列表</field>
+            <field name="model">metro_park_maintenance.rule_info</field>
+            <field name="arch" type="xml">
+                <tree import="false" edit="0" create="0" delete="0" class="noOpen"
+                      default_order="date desc"
+                    search_ex_template="rule_info_search_template">
+                    <field name="dev" string="对象"/>
+                    <field name="rule_type" string="作业内容" invisible="1"/>
+                    <field name="work_content" string="作业内容"/>
+                    <field name="date" string="计划日期"/>
+                    <field name="work_class" string="作业部门"/>
+                    <field name="state" string="状态"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="rule_info_act_window" model="ir.actions.act_window">
+            <field name="name">调度计划</field>
+            <field name="res_model">metro_park_maintenance.rule_info</field>
+            <field name="view_mode">tree</field>
+            <field name="view_ids" eval="[(5,0,0),
+                                  (0,0,{'view_mode':'tree', 'view_id': ref('tree_rule_info')})]"/>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="rail_state_power_failure" model="metro_park_base.rail_state">
+            <field name="name">停电</field>
+        </record>
+
+          <record id="rail_type_occupy" model="metro_park_base.rail_state">
+            <field name="name">占用</field>
+        </record>
+
+          <record id="rail_type_construction" model="metro_park_base.rail_state">
+            <field name="name">施工</field>
+        </record>
+
+    </data>
+</odoo>

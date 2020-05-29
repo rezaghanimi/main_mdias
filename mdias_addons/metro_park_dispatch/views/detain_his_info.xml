@@ -1,0 +1,61 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.detain_his_info_list">
+            <field name="name">扣车历史记录</field>
+            <field name="model">metro_park_dispatch.detain_his_info</field>
+            <field name="arch" type="xml">
+                <tree create="0" edit="0" delete="0"
+                      js_class="fnt_table"
+                      options="{'height': 'full-300'}">
+                    <field name="cur_train"/>
+                    <field name="start_date"/>
+                    <field name="end_date"/>
+                    <field name="state"/>
+                    <field name="un_detain_date"/>
+                    <field name="reason"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_dispatch.detain_his_info_form">
+            <field name="name">扣车历史</field>
+            <field name="model">metro_park_dispatch.detain_his_info</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="reason">reason</label>
+                        <div class="col-sm-10">
+                            <field name="reason"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="cur_train">cur_train</label>
+                        <div class="col-sm-10">
+                            <field name="cur_train"/>
+                        </div>
+                    </div>
+                    
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window"
+                id="metro_park_dispatch.detain_his_info_act_window">
+            <field name="name">扣车历史记录</field>
+            <field name="res_model">metro_park_dispatch.detain_his_info</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="metro_park_dispatch.detain_his_info_act_window"
+                  id="metro_park_dispatch.detain_his_info_menu"
+                  name="扣车记录"
+                  parent="metro_park_dispatch.menu_root"/>
+    </data>
+</odoo>
+
+
+
+
+    

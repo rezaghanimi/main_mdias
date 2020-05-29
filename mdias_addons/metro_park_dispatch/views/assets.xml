@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="funenc_theme_style1_res"
+                  name="funenc_theme_style1_res"
+                  inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+
+                <!-- css -->
+                <link rel="stylesheet" href="/metro_park_dispatch/static/css/style.css" /> 
+                <link rel="stylesheet" href="/metro_park_dispatch/static/css/clndr.css" />
+                <link rel="stylesheet" href="/metro_park_dispatch/static/css/daterangepicker.css"/>
+                <link rel="stylesheet" href="/metro_park_dispatch/static/css/home_page.css"/>
+                <link rel="stylesheet" href="/metro_park_dispatch/static/css/jquery.contextMenu.min.css"/>
+
+                <!-- lib -->
+                <script type="application/javascript" src="/metro_park_dispatch/static/lib/clndr.js" />
+                <script type="application/javascript" src="/metro_park_dispatch/static/lib/daterangepicker.js" />
+                <script type="application/javascript" src="/metro_park_dispatch/static/lib/jquery.contextMenu.min.js" />
+                <script type="application/javascript" src="/metro_park_dispatch/static/lib/jquery.ui.position.min.js" />
+
+                <!-- js -->
+                <script type="application/javascript" src="/metro_park_dispatch/static/js/construction_action.js" />
+                <script type="application/javascript" src="/metro_park_dispatch/static/js/cur_train_action.js" />
+                <script type="application/javascript" src="/metro_park_dispatch/static/js/train_in_out_plan_action.js" />
+                <script type="application/javascript" src="/metro_park_dispatch/static/js/time_table_action.js" />
+                <script type="application/javascript" src="/metro_park_dispatch/static/js/time_table_calendar_action.js" />
+                <script type="application/javascript" src="/metro_park_dispatch/static/js/dispatch_plan_cmd_action.js" />
+                <script type="application/javascript" src="/metro_park_dispatch/static/js/day_run_list.js" />
+                <script type="application/javascript" src="/metro_park_dispatch/static/js/time_table_config.js" />
+                <script type="application/javascript" src="/metro_park_dispatch/static/js/cur_train_checkbox.js" />
+                <script type="application/javascript" src="/metro_park_dispatch/static/js/print_dispatch_request.js" />
+                <script type="application/javascript" src="/metro_park_dispatch/static/js/work_shop_day_plan_list.js" />
+
+                <script type="application/javascript" src="/metro_park_dispatch/static/js/back_plan_alarm_form.js" />
+                <script type="application/javascript" src="/metro_park_dispatch/static/js/out_plan_alarm_form.js" />
+
+                <!-- 场调视图 -->
+                <script type="application/javascript" src="/metro_park_dispatch/static/js/park_dispatch_action.js" />
+                <script type="application/javascript" src="/metro_park_dispatch/static/js/cur_train_map_monitor.js" />
+                <script type="application/javascript" src="/metro_park_dispatch/static/js/cur_train_map_operate.js" />
+
+                <!-- 首页 -->
+                <script type="application/javascript" src="/metro_park_dispatch/static/js/home_page.js" />
+
+                <!-- 运行计划监控列表 -->
+                <script type="application/javascript" src="/metro_park_dispatch/static/js/run_plan_monitor_list.js" />
+
+                <!-- tcms 投屏 -->
+                <script type="application/javascript" src="/metro_park_dispatch/static/js/tcms_screen.js" />
+
+                <!-- 客户端提醒 -->
+                <script type="application/javascript" src="/metro_park_dispatch/static/js/client_notify.js" />
+
+                <!-- 调度计划默认添加sequence值-->
+                <script type="application/javascript" src="/metro_park_dispatch/static/js/dispatch_detail_table.js" />
+
+                <!-- 调度计划默认添加sequence值-->
+                <script type="application/javascript" src="/metro_park_dispatch/static/js/add_plan_table.js" />
+
+            </xpath>
+        </template>
+    </data>
+</odoo>

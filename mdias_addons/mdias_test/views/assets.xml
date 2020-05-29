@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="mdias_test_res"
+                  name="mdias_test_res"
+                  inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/mdias_test/static/test_client.js"/>
+            </xpath>
+        </template>
+
+    </data>
+</odoo>

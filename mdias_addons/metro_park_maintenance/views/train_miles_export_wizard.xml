@@ -1,0 +1,32 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.train_miles_export_wizard_form">
+            <field name="name">导出公里数统计</field>
+            <field name="model">metro_park_maintenance.train_miles_export_wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="year">year</label>
+                        <div class="col-sm-3">
+                            <field name="year"  options="{'no_create': True, 'no_open': True}"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="month">month</label>
+                        <div class="col-sm-3">
+                            <field name="month"  options="{'no_create': True, 'no_open': True}"/>
+                        </div>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="metro_park_maintenance.export_train_miles_table_act_window">
+            <field name="name">公里数统计导出</field>
+            <field name="res_model">metro_park_maintenance.train_miles_export_wizard</field>
+            <field name="view_mode">form</field>
+        </record>
+
+    </data>
+</odoo>
+
+

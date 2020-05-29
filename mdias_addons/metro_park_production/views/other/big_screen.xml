@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="big_screen_page_list" >
+            <field name="name">大屏页面</field>
+            <field name="model">metro_park_production.screen.page</field>
+            <field name="arch" type="xml">
+                <tree js_class="big_screen_list" options="{'height': 'full-310'}">
+                    <field name="location"/>
+                    <field name="index"/>
+                    <field name="name"/>
+                    <button name="edit_html_value"
+                            type="object"
+                            text="编辑"
+                            class="btn btn-sm btn-success" />
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="big_screen_page_form">
+            <field name="name">大屏页面</field>
+            <field name="model">metro_park_production.screen.page</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="location">location</label>
+                        <div class="col-sm-10">
+                            <field name="location"
+                                   options="{'no_open': True, 'no_create_edit': True}"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="index">index</label>
+                        <div class="col-sm-10">
+                            <field name="index"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="name">name</label>
+                        <div class="col-sm-10">
+                            <field name="name"/>
+                        </div>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <!-- 页面编辑 -->
+        <record model="ir.ui.view" id="big_screen_page_edit_form">
+            <field name="name">页面编辑</field>
+            <field name="model">metro_park_production.screen.page</field>
+            <field name="arch" type="xml">
+                <form>
+                    <field name="html_value" widget="FunencHtmlEditor"/>
+                    <footer>
+                        <button class="btn btn-success" special="save_and_exit" text="保存" />
+                        <button class="btn btn-info" text="取消" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,40 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.init_wizard_list">
+            <field name="name">初始化向导</field>
+            <field name="model">metro_park_dispatch.init_wizard</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="password"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.init_wizard_form">
+            <field name="name">初始化向导</field>
+            <field name="model">metro_park_dispatch.init_wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="password">password</label>
+                        <div class="col-sm-10">
+                            <field name="password"/>
+                        </div>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="metro_park_dispatch.init_wizard_act_window">
+            <field name="name">初始化向导</field>
+            <field name="res_model">metro_park_dispatch.init_wizard</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+
+
+    

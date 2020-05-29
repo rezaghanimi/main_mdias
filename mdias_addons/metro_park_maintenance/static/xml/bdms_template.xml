@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="malfunction_repair_record_btn">
+        <div>
+            <button t-if="widget.record.data.state=='draft'" type="object" name="submit_malfunction_repair"
+                    class="btn btn-sm btn-success">提交</button>
+            <button t-if="widget.record.data.state!='draft'" type="object" name="withdraw_malfunction_repair"
+                    class="btn btn-sm btn-warning">撤回</button>
+
+            <button t-if="debug==true and widget.record.data.state=='draft'" type="object" name="demo_submit_malfunction_repair"
+                    class="btn btn-sm btn-info">模拟提交</button>
+            <button t-if="debug==true and widget.record.data.state=='submitted'" type="object" name="demo_malfunction_complete"
+                    class="btn btn-sm btn-info">模拟完成</button>
+        </div>
+    </t>
+
+    <t t-name="malfunction_repair_tree_template">
+        <div>
+            <button type="action" data-model="funenc.malfunction.repair" data-method="create_repair_form"
+                    data-reload-on-close="1" class="btn btn-sm btn-success">创建</button>
+<!--            <button type="object" class="btn btn-sm btn-primary test_send"-->
+<!--                    name="test_send">模拟发送</button>-->
+<!--            <button type="object" class="btn btn-sm btn-primary test_result"-->
+<!--                    name="test_result">模拟处理结果</button>-->
+        </div>
+    </t>
+
+    <!-- 搜索故障报修 -->
+    <t t-name="malfunction_repair_search">
+       <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="code"/>
+               </div>
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="train_dev_id"/>
+               </div>
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="dev_no"/>
+               </div>
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="state"/>
+               </div>
+               <div class="col-md-auto">
+                   <button type="button" class="btn btn-primary btn-sm search_extend_apply">
+                       搜索
+                   </button>
+                   <button type="button" class="btn btn-info btn-sm search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+	</t>
+
+</templates>

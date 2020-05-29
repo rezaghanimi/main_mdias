@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model="ir.actions.client" id="start_jssdk_validate">
+            <field name="name">开始校验</field>
+            <field name="tag">start_jssdk_validate_client</field>
+            <field name="target">new</field>
+        </record>
+
+        <record id="view_wechat_app_tree" model="ir.ui.view">
+            <field name="name">应用列表</field>
+            <field name="model">funenc.wechat.apps</field>
+            <field name="arch" type="xml">
+                <tree import="false" js_class="fnt_table">
+                    <field name="name" />
+                    <field name="app_agent"/>
+                    <field name="is_login_app"/>
+                    <field name="is_exempts"/>
+                    <field name="jssdk_file_filename"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_wechat_app_form" model="ir.ui.view">
+            <field name="name">应用详情</field>
+            <field name="model">funenc.wechat.apps</field>
+            <field name="arch" type="xml">
+                <form import="false" create="false">
+                    <group string="应用配置">
+                        <field name="name" />
+                        <field name="app_agent"/>
+                        <field name="app_secret"/>
+                        <field name="is_login_app"/>
+                        <field name="app_redirect_url"
+                               attrs="{'invisible': [('is_login_app', '=', False)], 'required': [('is_login_app', '!=', False)]}"/>
+                        <field name="is_exempts"/>
+                    </group>
+                    <group string="jssdk校验">
+                        <field name="jssdk_file" widget="binary" filename="jssdk_file_filename"/>
+                        <field name="jssdk_file_filename"/>
+                        <!--<widget name="upload_files" class="oe_read_only"/>-->
+                    </group>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>

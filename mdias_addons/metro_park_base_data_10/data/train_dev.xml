@@ -1,0 +1,1096 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+   <data noupdate="1">
+
+      <record id="dev_11001" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11001</field>
+         <field name="dev_no">11001</field>
+         <field name="batch_no" ref="metro_park_base_data_10.batch_2018" />
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11002" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11002</field>
+         <field name="dev_no">11002</field>
+         <field name="batch_no" ref="metro_park_base_data_10.batch_2018" />
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11003" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11003</field>
+         <field name="dev_no">11003</field>
+         <field name="batch_no" ref="metro_park_base_data_10.batch_2018" />
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11004" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11004</field>
+         <field name="dev_no">11004</field>
+         <field name="batch_no" ref="metro_park_base_data_10.batch_2018" />
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11005" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11005</field>
+         <field name="dev_no">11005</field>
+         <field name="batch_no" ref="metro_park_base_data_10.batch_2018" />
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11006" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11006</field>
+         <field name="dev_no">11006</field>
+         <field name="batch_no" ref="metro_park_base_data_10.batch_2018" />
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11007" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11007</field>
+         <field name="dev_no">11007</field>
+         <field name="batch_no" ref="metro_park_base_data_10.batch_2018" />
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11008" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11008</field>
+         <field name="dev_no">11008</field>
+         <field name="batch_no" ref="metro_park_base_data_10.batch_2018" />
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11009" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11009</field>
+         <field name="dev_no">11009</field>
+         <field name="batch_no" ref="metro_park_base_data_10.batch_2018" />
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11010" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11010</field>
+         <field name="dev_no">11010</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11011" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11011</field>
+         <field name="dev_no">11011</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11012" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11012</field>
+         <field name="dev_no">11012</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11013" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11013</field>
+         <field name="dev_no">11013</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11014" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11014</field>
+         <field name="dev_no">11014</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11015" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11015</field>
+         <field name="dev_no">11015</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11016" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11016</field>
+         <field name="dev_no">11016</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11017" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11017</field>
+         <field name="dev_no">11017</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11018" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11018</field>
+         <field name="dev_no">11018</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11019" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11019</field>
+         <field name="dev_no">11019</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11020" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11020</field>
+         <field name="dev_no">11020</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11021" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11021</field>
+         <field name="dev_no">11021</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11022" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11022</field>
+         <field name="dev_no">11022</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11023" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11023</field>
+         <field name="dev_no">11023</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11024" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11024</field>
+         <field name="dev_no">11024</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11025" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11025</field>
+         <field name="dev_no">11025</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11026" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11026</field>
+         <field name="dev_no">11026</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11027" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11027</field>
+         <field name="dev_no">11027</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11028" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11028</field>
+         <field name="dev_no">11028</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11029" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11029</field>
+         <field name="dev_no">11029</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11030" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11030</field>
+         <field name="dev_no">11030</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11031" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11031</field>
+         <field name="dev_no">11031</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11032" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11032</field>
+         <field name="dev_no">11032</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11033" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11033</field>
+         <field name="dev_no">11033</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11034" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11034</field>
+         <field name="dev_no">11034</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11035" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11035</field>
+         <field name="dev_no">11035</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11036" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11036</field>
+         <field name="dev_no">11036</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11037" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11037</field>
+         <field name="dev_no">11037</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11038" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11038</field>
+         <field name="dev_no">11038</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11039" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11039</field>
+         <field name="dev_no">11039</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11040" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11040</field>
+         <field name="dev_no">11040</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11041" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11041</field>
+         <field name="dev_no">11041</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11042" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11042</field>
+         <field name="dev_no">11042</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11043" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11043</field>
+         <field name="dev_no">11043</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11044" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11044</field>
+         <field name="dev_no">11044</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_11045" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">11045</field>
+         <field name="dev_no">11045</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <!-- 工程车  -->
+      <record id="dev_G1001" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">G1001</field>
+         <field name="dev_no">G1001</field>
+         <field name="location" ref="metro_park_base_data_10.ban_qiao" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_engine_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">0</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_G1002" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">G1002</field>
+         <field name="dev_no">G1002</field>
+         <field name="location" ref="metro_park_base_data_10.ban_qiao" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_engine_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">0</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_G1003" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">G1003</field>
+         <field name="dev_no">G1003</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_engine_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_G1004" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">G1004</field>
+         <field name="dev_no">G1004</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_engine_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_G1005" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">G1005</field>
+         <field name="dev_no">G1005</field>
+         <field name="location" ref="metro_park_base_data_10.ban_qiao" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_engine_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+      <record id="dev_G1006" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">G1006</field>
+         <field name="dev_no">G1006</field>
+         <field name="location" ref="metro_park_base_data_10.ban_qiao" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_engine_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <!-- 平板车 -->
+      <record id="dev_P1001" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">P1001</field>
+         <field name="dev_no">P1001</field>
+         <field name="location" ref="metro_park_base_data_10.ban_qiao" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_platform_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_P1002" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">JP1002</field>
+         <field name="dev_no">JP1002</field>
+         <field name="location" ref="metro_park_base_data_10.ban_qiao" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_platform_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_P1004" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">P1004</field>
+         <field name="dev_no">P1004</field>
+         <field name="location" ref="metro_park_base_data_10.ban_qiao" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_platform_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_P1005" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">P1005</field>
+         <field name="dev_no">P1005</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_platform_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">1500</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <!-- dp代表的是蓄电池车 -->
+      <record id="dev_DP1006" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">DP1006</field>
+         <field name="dev_no">DP1006</field>
+         <field name="location" ref="metro_park_base_data_10.ban_qiao" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_platform_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">0</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_DP1007" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">DP1007</field>
+         <field name="dev_no">DP1007</field>
+         <field name="location" ref="metro_park_base_data_10.ban_qiao" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_platform_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">0</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_DP1008" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">DP1008</field>
+         <field name="dev_no">DP1008</field>
+         <field name="location" ref="metro_park_base_data_10.ban_qiao" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_engine_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">0</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_DP1009" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">DP1009</field>
+         <field name="dev_no">DP1009</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_engine_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="brand">中车四方</field>
+         <field name="miles">0</field>
+         <field name="dev_status">using</field>
+      </record>
+
+      <record id="dev_DP1010" model="metro_park_maintenance.train_dev">
+         <field name="dev_name">DP1010</field>
+         <field name="dev_no">DP1010</field>
+         <field name="location" ref="metro_park_base_data_10.gao_da_lu" />
+         <field name="line" ref="metro_park_base_data_10.line10" />
+         <field name="major" ref="metro_park_base.major_0352" />
+         <field name="major_type" ref="metro_park_base.major_type_0352001" />
+         <field name="dev_type" ref="metro_park_base.dev_type_engine_train" />
+         <field name="standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="import_type">manual</field>
+         <field name="unit">KM</field>
+         <field name="res_code">15049934</field>
+         <field name="res_name">电客车</field>
+         <field name="miles">0</field>
+         <field name="dev_status">using</field>
+      </record>
+
+   </data>
+</odoo>

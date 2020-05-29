@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+  
+    <t t-name="metro_park_base.electic_area">
+        <div>
+            <button class="btn btn-sm btn-success" type="object" name="open_electric_area">
+                供电分区
+            </button>
+        </div>
+    </t>
+
+    <t t-name="metro_park_base.rr_player">
+        <div class="d-flex justify-content-center">
+            <div class="player_box" style="margin:20px;">
+            </div>
+        </div>
+    </t>
+
+</templates>

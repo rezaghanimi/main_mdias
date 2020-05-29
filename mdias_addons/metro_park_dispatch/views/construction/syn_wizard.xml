@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+       <record id="form_wizard_plan_syn" model="ir.ui.view">
+           <field name="name">同步计划</field>
+           <field name="model">metro_park_dispatch.wizard.plan_syn</field>
+           <field name="arch" type="xml">
+               <form string="">
+                   <div class="form-group row">
+                       <label class="col-sm-2 col-form-label" for="syn_date">syn_date</label>
+                       <div class="col-sm-10">
+                           <field name="syn_date"/>
+                       </div>
+                   </div>
+                   <footer>
+                       <button name="button_confirm" type="object"
+                                class="btn-primary" string="同步"
+                       />
+                   </footer>
+               </form>
+           </field>
+       </record>
+
+    </data>
+</odoo>

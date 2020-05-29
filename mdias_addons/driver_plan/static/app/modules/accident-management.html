@@ -1,0 +1,154 @@
+<div class="layui-row">
+    <div class="table-search">
+        <form class="layui-form" id="mx-table-search-form">
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">搜索条件</label>
+                    <div class="layui-input-block">
+                        <input class="layui-input" type="text" autocomplete="off" placeholder="请司机、类别、车号查询"
+                               name="param">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">日期</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="date" placeholder="请选择日期"
+                               id="date"
+                               readonly="readonly"
+                               autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline table-search-btn-groups">
+                    <button class="layui-btn layui-btn-sm"
+                            lay-submit lay-filter="mx-search-btn" id="mx-search-btn">查询
+                    </button>
+                    <button class="layui-btn layui-btn-sm"
+                            lay-submit lay-filter="mx-reset-btn" id="mx-reset-btn">重置
+                    </button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <div class="table-head">事故事件单管理</div>
+    <table class="layui-table" id="accident-info-table" lay-filter="accident-info-table">
+    </table>
+</div>
+<link rel="stylesheet" href="modules/accident-management.css">
+<script src="modules/accident-management.js"></script>
+<script type="text/html" id="accident-info-tool-bar">
+    <div class="layui-row">
+        <div class="layui-col-md12 layui-col-lg12">
+            <button class="layui-btn layui-btn-sm" lay-event="add">
+                添加
+            </button>
+            <button class="layui-btn layui-btn-sm" lay-event="export">
+                导出
+            </button>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="indexTpl">
+    {{d.LAY_TABLE_INDEX+1}}
+</script>
+<script type="text/html" id="barDemo">
+    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>
+<div id="editAccidentInfo" style="display: none">
+    <form class="layui-form driver-edit-form" lay-filter="driver-edit-form" style="margin-top: 10px; padding: 20px">
+        <div class="layui-form-item">
+            <label class="layui-form-label">事故事件类别</label>
+            <div class="layui-input-block">
+                <input type="text" name="category" required lay-verify="required" placeholder="请输入事故类别"
+                       autocomplete="off"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item" style="display: none">
+            <label class="layui-form-label">id</label>
+            <div class="layui-input-block">
+                <input type="text" name="id" placeholder="" autocomplete="off"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">车次</label>
+            <div class="layui-input-block">
+                <input type="text" name="fullTrainNo" required lay-verify="required|number" placeholder="请输入车次"
+                       autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">车号</label>
+            <div class="layui-input-block">
+                <input type="text" name="trainNo" required lay-verify="required|number"
+                       placeholder="请输入车号"
+                       autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">司机</label>
+            <div class="layui-input-block">
+                <input type="text" name="driverName" required lay-verify="required" placeholder="请输入司机名字"
+                       autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">时间</label>
+            <div class="layui-input-block">
+                <input type="text" name="happenDate" required lay-verify="required" placeholder="请选择时间"
+                       id="happenDateInput"
+                       readonly="readonly"
+                       autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">地点</label>
+            <div class="layui-input-block">
+                <input type="text" name="address" required lay-verify="required" placeholder="请输入地点"
+                       autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">调度人</label>
+            <div class="layui-input-block">
+                <input type="text" name="scheduleName" required lay-verify="required" placeholder="请输入调度人员"
+                       autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">概况</label>
+            <div class="layui-input-block">
+                <textarea placeholder="请输入概况(2000字内)" name="description" required lay-verify="required"
+                          class="layui-textarea"></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">处理情况</label>
+            <div class="layui-input-block">
+                <textarea placeholder="请输入处理情况(2000字内)" name="solution"
+                          class="layui-textarea"></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">备注</label>
+            <div class="layui-input-block">
+                <textarea placeholder="请输入备注信息(2000字内)" name="comment" class="layui-textarea"></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item submit-item">
+            <div class="layui-input-block form-button">
+                <button class="layui-btn layui-hide" id="submit-accident-edit-form" lay-submit
+                        lay-filter="submit-accident-edit-form">提交
+                </button>
+                <button type="reset" id="submit-accident-edit-reset" class="layui-btn layui-btn-primary layui-hide">重置
+                </button>
+                <button class="layui-btn layui-btn-primary layui-hide" lay-submit lay-filter="submit-accident-edit"
+                        id="submit-accident-edit">
+                    保存并继续添加
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

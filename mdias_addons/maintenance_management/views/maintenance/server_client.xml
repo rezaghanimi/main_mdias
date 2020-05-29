@@ -1,0 +1,19 @@
+<odoo>
+    <data>
+        <!--服务器设备状态-->
+        <record model="ir.actions.client" id="maintenance_server_equipment_act_id">
+          <field name="name">设备状态</field>
+          <field name="tag">MaintenanceParkMap</field>
+        </record>
+
+        <menuitem name="维保管理"
+                  id="maintenance_system_set_menu"
+                  font_icon="iconfont maintenance_system_icon"/>
+
+        <menuitem name="设备状态"
+                  id="maintenance_equipment_state_menu"
+                  parent="maintenance_system_set_menu"
+                  action="maintenance_server_equipment_act_id"
+                  groups="group_maintenance_management_device_monitor_server_status"/>
+    </data>
+</odoo>

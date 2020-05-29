@@ -1,0 +1,38 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="stop_no_ease_side_switch_tree_id">
+            <field name="name">制动不缓解旁路开关</field>
+            <field name="model">stop_no_ease_side_switch</field>
+            <field name="arch" type="xml">
+                <tree create="0">
+                    <field name="name"/>
+                    <field name="switch"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="stop_no_ease_side_switch_form_id">
+            <field name="name">制动不缓解旁路开关</field>
+            <field name="model">stop_no_ease_side_switch</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="name"/>
+                        <field name="switch"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="stop_no_ease_side_switch_window_id">
+            <field name="name">制动不缓解旁路开关</field>
+            <field name="res_model">stop_no_ease_side_switch</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="stop_no_ease_side_switch_window_id"
+                  parent="tcms_tcms_act_menu_parent_id"
+                  id="stop_no_ease_side_switch_menu_id"
+                  name="制动不缓解旁路开关"/>
+    </data>
+</odoo>

@@ -1,0 +1,73 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view"
+                id="metro_park_maintenance.balance_rule_offset_list">
+            <field name="name">修次</field>
+            <field name="model">metro_park_maintenance.balance_rule_offset</field>
+            <field name="arch" type="xml">
+                <tree editable="top"
+                      create="0"
+                      js_class="balance_offset_table_view"
+                      options="{'height': 'full-300'}">
+                    <field name="dev"
+                           options="{'no_create_edit': True,'no_open': True, 'no_create':True, 'readonly': True}"/>
+                    <field name="year" options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                    <field name="month" options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                    <field name="offset_num" options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                    <field name="rule" />
+                    <button name="set_offset" type="object" text="设置" class="btn btn-sm btn-success" />
+                </tree>
+            </field>
+        </record>
+
+        
+        <record model="ir.ui.view"
+                id="metro_park_maintenance.balance_rule_offset_form">
+            <field name="name">修次</field>
+            <field name="model">metro_park_maintenance.balance_rule_offset</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="year">year</label>
+                        <div class="col-sm-10">
+                            <field name="year"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="month">month</label>
+                        <div class="col-sm-10">
+                            <field name="month"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="dev">dev</label>
+                        <div class="col-sm-10">
+                            <field name="dev"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="offset">offset</label>
+                        <div class="col-sm-10">
+                            <field name="offset"/>
+                        </div>
+                    </div>
+          
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window"
+                id="metro_park_maintenance.balance_rule_offset_act_window">
+            <field name="name">balance_rule_offset</field>
+            <field name="res_model">metro_park_maintenance.balance_rule_offset</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+    

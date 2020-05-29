@@ -1,0 +1,102 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.dispatch_route_detail_list">
+            <field name="name">调车详情列表</field>
+            <field name="model">metro_park_dispatch.dispatch_route_detail</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table" options="{'height':'full-340'}">
+                    <field name="rail"/>
+                    <field name="supend"/>
+                    <field name="train_num"/>
+                    <field name="notice_detail"/>
+                    <field name="plan_name"/>
+                    <field name="start_time"/>
+                    <field name="end_time"/>
+                    <field name="display_time"/>
+                    <field name="status"/>
+                    <field name="dispatch_job_ticket_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_dispatch.dispatch_route_detail_form">
+            <field name="name">调车详情</field>
+            <field name="model">metro_park_dispatch.dispatch_route_detail</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="rail">rail</label>
+                        <div class="col-sm-10">
+                            <field name="rail"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="supend">supend</label>
+                        <div class="col-sm-10">
+                            <field name="supend"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="train_num">train_num</label>
+                        <div class="col-sm-10">
+                            <field name="train_num"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="notice_detail">notice_detail</label>
+                        <div class="col-sm-10">
+                            <field name="notice_detail"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="plan_name">plan_name</label>
+                        <div class="col-sm-10">
+                            <field name="plan_name"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="start_time">start_time</label>
+                        <div class="col-sm-10">
+                            <field name="start_time"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="end_time">end_time</label>
+                        <div class="col-sm-10">
+                            <field name="end_time"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="display_time">display_time</label>
+                        <div class="col-sm-10">
+                            <field name="display_time"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="status">status</label>
+                        <div class="col-sm-10">
+                            <field name="status"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="dispatch_job_ticket_id">dispatch_job_ticket_id</label>
+                        <div class="col-sm-10">
+                            <field name="dispatch_job_ticket_id"/>
+                        </div>
+                    </div>
+                    
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="metro_park_dispatch.dispatch_route_detail_act_window">
+            <field name="name">dispatch_route_detail</field>
+            <field name="res_model">metro_park_dispatch.dispatch_route_detail</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+    

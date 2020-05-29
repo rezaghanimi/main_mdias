@@ -1,0 +1,14 @@
+
+<odoo>
+    <data>
+        
+        <!-- client action  -->
+        <record id="metro_park_maintance_hz.maintaince_client_action" model="ir.actions.client">
+            <field name="name">车辆检修</field>
+            <field name="tag">hz_maintaince_client</field>
+            <field name="target">main</field>
+        </record>
+
+    </data>
+</odoo>
+    

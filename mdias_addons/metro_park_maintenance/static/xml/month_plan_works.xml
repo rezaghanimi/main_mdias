@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <!-- 月生产作业 -->
+    <t t-name="month_plan_works">
+        <div class="d-flex month_plan_editor" style="padding:10px;">
+            <div class="left_table" t-if="widget.state!='published'">
+                <div class="rule_box">
+                    <table border="0" class="rule_info_table">
+                        <tr>
+                            <td class="redips-trash" width="69">
+                                <div style="text-align:center">
+                                    <object style="width:64px; height:64px;"
+                                            data="/metro_park_maintenance/static/trash.svg"
+                                            type="image/svg+xml"/>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr t-foreach="widget.rules || []" t-as="rule" height="40">
+                            <td class="rule_title redips-single">
+                                <div class="redips-drag redips-clone redips_clone small"
+                                     t-attr-rule-id="{{rule['id']}}">
+                                    <t t-esc="rule['name']"/>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 下边渲染设备信息 -->
+            <div class="right_box d-flex flex-column flex-fill">
+                <div class="tool_bar">
+                    <button class="btn btn-warning clear_month_data">清空周计划</button>
+                </div>
+
+                <div class="month_plan_table_box d-flex flex-column flex-fill">
+                    <!-- 固定表格头 -->
+                    <div class="table_header">
+                        <div class="table_header_body" style="width:100%; overflow:hidden">
+                            <table class="rule_info_table table-bordered fixed_header_table">
+                                <!-- 第一行是标题栏 -->
+                                <tr height="40">
+                                    <td class="redips-mark">
+                                        <div class="date_column redips-mark" style="width:101px">/</div>
+                                    </td>
+                                    <!-- 日期 -->
+                                    <td t-foreach="widget.dates || []" t-as="plan_date" height="40" class="redips-mark">
+                                        <div class="date_column" style="width:60px">
+                                            <t t-esc="widget.format_date(plan_date.date)"/>
+                                        </div>
+                                    </td>
+                                    <td><div style="width:151px; height:1px;"/></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="fixed_left d-flex flex-column">
+                        <div class="fixed_left_header">
+                            <table border="0" class="rule_info_table">
+                                <tr height="40">
+                                    <td class="redips-none">
+                                        <div class="date_column" style="width:101px">
+                                            设备
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="fixed_body_box flex-fill" style="margin-top:-1px; overflow: hidden;">
+                            <table class="rule_info_table table-bordered fixed_left_body">
+                                <!-- 设备 -->
+                                <tr t-foreach="widget.devs || []" t-as="dev">
+                                    <td>
+                                        <div class="date_column redips-mark" style="width:101px">
+                                            <t t-esc="dev.dev_name"/>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="right_table_body main_table_box flex-fill"
+                         style="margin-left:102px; margin-right:151px; margin-top:-1px;">
+                        <table class="rule_info_table table-bordered main_table">
+                            <!-- 数据部份 -->
+                            <tr t-foreach="widget.devs || []" t-as="dev" t-attr-dev-id="{{dev.id}}" width="61">
+                                <td t-foreach="widget.dates || []" t-as="plan_date" height="40"
+                                    t-attr-plan-date="{{plan_date.date}}" t-attr-dev-id="{{dev.id}}"
+                                    t-attf-class="{{ widget.is_holiday(plan_date) ? 'holiday_cell' : '' }}">
+                                    <div style="height:1px; width:60px"/>
+                                    <t t-set="rules" t-value="widget.get_rules(dev, plan_date.date)"/>
+                                    <t t-foreach="rules || []" t-as="rule">
+                                        <div t-attf-class="date_column {{ (rule.disabled == true) ? 'redips-disable-drag' : 'redips-drag' }}"
+                                             t-attr-dev-id="{{dev.id}}"
+                                             t-attr-plan-date="{{plan_date.date}}"
+                                             t-attr-rule-id="{{rule.id}}"
+                                             style="border-style: solid; box-sizing: border-box; width:36px; margin-right:5px; margin-left:5px; cursor: move;">
+                                                <t t-esc="rule['name']"/>
+                                        </div>
+                                    </t>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- 右侧统计部份 -->
+                    <div class="fixed_right d-flex flex-column">
+                        <div class="fixed_right_header">
+                            <table border="0" class="rule_info_table">
+                                <tr height="40">
+                                    <td class="redips-none">
+                                        <div class="date_column" style="width:151px">
+                                            统计
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="fixed_body_box flex-fill" style="margin-top:-1px; overflow: hidden;">
+                            <table class="rule_info_table table-bordered fixed_right_body">
+                                <tr t-foreach="widget.devs || []" t-as="dev" height="40">
+                                    <td class="redips-mark">
+                                        <div class="date_column " t-attr-dev-id="{{dev.id}}" style="width:151px">
+                                             <t t-esc="widget.get_counts(dev.id)"/>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>

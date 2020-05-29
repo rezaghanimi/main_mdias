@@ -1,0 +1,45 @@
+<odoo>
+    <data>
+
+        <record id="metro_park_dispatch.cur_train_monitor_action" model="ir.actions.server">
+            <field name="name">站场监控与现车</field>
+            <field name="type">ir.actions.server</field>
+            <field name="model_id" ref="model_metro_park_dispatch_cur_train_manage"/>
+            <field name="state">code</field>
+            <field name="code">
+                action = model.jump_to_monitor_action()
+            </field>
+        </record>
+        
+        <!-- client action  -->
+        <record id="metro_park_dispatch.cur_train_map_operation_action" model="ir.actions.client">
+            <field name="name">站场监控与现车</field>
+            <field name="tag">cur_train_map_operate</field>
+            <field name="target">main</field>
+        </record>
+
+        <record id="metro_park_dispatch.tcms_screen_action" model="ir.actions.act_url">
+            <field name="name">TCMS</field>
+            <field name="url">http://119.6.107.149:8788</field>
+            <field name="target">new</field>
+        </record>
+
+        <menuitem action="metro_park_dispatch.cur_train_monitor_action"
+                  id="metro_park_dispatch.cur_train_monitor_menu"
+                  name="站场监控(投屏)"
+                  sequence="6"
+                  groups="category_station_monitoring_screen_casting"
+                  parent="metro_park_dispatch.menu_root"/>
+
+        <menuitem action="metro_park_dispatch.tcms_screen_action"
+                  id="metro_park_dispatch.tcms_screen_menu"
+                  name="TCMS(投屏)"
+                  sequence="8"
+                  groups="category_tcms_for_screen"
+                  parent="metro_park_dispatch.menu_root"/>
+
+    </data>
+</odoo>
+
+
+    

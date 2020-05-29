@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="metro_park_base_data_8.yuan_hua"
+                model="metro_park_base.location">
+            <field name="name">元华停车场</field>
+            <field name="alias">yuanhua</field>
+            <field name="rtu_id">99</field>
+            <field name="line" ref="metro_park_base_data_8.line8" />
+            <field name="location_type" ref="metro_park_base.location_type_park" />
+        </record>
+
+        <!--  正线也是属于线别 -->
+        <record id="metro_park_base_data_8.main_line_location"
+                model="metro_park_base.location">
+            <field name="name">正线</field>
+            <field name="alias">zengxian</field>
+            <field name="line" ref="metro_park_base_data_8.line8"/>
+            <field name="location_type"
+                   ref="metro_park_base.location_type_special"/>
+        </record>
+
+    </data>
+</odoo>

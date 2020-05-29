@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="gao_da_lu"
+                model="metro_park_base.location">
+            <field name="name">高大路停车场</field>
+            <field name="alias">gaodalu</field>
+            <field name="rtu_id">99</field>
+            <field name="line" ref="metro_park_base_data_10.line10" />
+            <field name="location_type" ref="metro_park_base.location_type_park" />
+            <field name="max_repair_after_high_run">4</field>
+            <field name="max_repair_back_time">17:00</field>
+        </record>
+
+        <record id="ban_qiao"
+                model="metro_park_base.location">
+            <field name="name">板桥车辆段</field>
+            <field name="alias">banqiao</field>
+            <field name="rtu_id">98</field>
+            <field name="line" ref="metro_park_base_data_10.line10"/>
+            <field name="location_type" ref="metro_park_base.location_type_park"/>
+            <field name="max_repair_after_high_run">4</field>
+            <field name="max_repair_back_time">17:00</field>
+        </record>
+
+        <!--  正线也是属于线别 -->
+        <record id="main_line_location"
+                model="metro_park_base.location">
+            <field name="name">正线</field>
+            <field name="alias">zengxian</field>
+            <field name="line" ref="metro_park_base_data_10.line10"/>
+            <field name="location_type"
+                   ref="metro_park_base.location_type_special"/>
+        </record>
+
+    </data>
+</odoo>

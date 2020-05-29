@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+    <data>
+        <menuitem id="metro_park_base.menu_root"
+                  font_icon="iconfont base_icon"
+                  sequence="2"
+                  name="基础数据"/>
+
+        <menuitem id="metro_park_base.menu_line_manage"
+                  parent="metro_park_base.menu_root"
+                  sequence="1"
+                  name="线路管理"/>
+
+        <menuitem id="metro_park_base.menu_location_manage"
+                  parent="metro_park_base.menu_root"
+                  sequence="2"
+                  name="位置管理"/>
+
+        <menuitem id="metro_park_base.menu_dev_param"
+                  parent="metro_park_base.menu_root"
+                  sequence="3"
+                  name="设备参数"/>
+
+        <menuitem id="metro_park_base.menu_user_manage"
+                  parent="metro_park_base.menu_root"
+                  sequence="4"
+                  name="人员管理"/>
+
+        <menuitem id="metro_park_base.menu_data_dict_manage"
+                  parent="metro_park_base.menu_root"
+                  sequence="5"
+                  name="基础数据"/>
+
+        <menuitem id="metro_park_base.menu_base_data_manage"
+                  parent="metro_park_base.menu_data_dict_manage"
+                  sequence="1"
+                  name="通用数据"/>
+
+        <menuitem id="metro_park_base.menu_maintenance_data_manage"
+                  parent="metro_park_base.menu_data_dict_manage"
+                  sequence="2"
+                  name="车辆检修"/>
+
+        <menuitem id="metro_park_base.menu_dispatch_data_manage"
+                  parent="metro_park_base.menu_data_dict_manage"
+                  sequence="3"
+                  name="调度计划"/>
+
+        <menuitem name="Settings"
+              id="base.menu_administration"
+              sequence="500"
+              font_icon="iconfont setting_icon"
+              groups="base.group_erp_manager"/>
+
+         <menuitem id="odoo_operation_log.operation_log_root"
+                  font_icon="iconfont operation_log_icon"
+                  sequence="99"
+                   name="操作日志"
+         />
+
+    </data>
+</odoo>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="gao_da_lu_deng_ding_max_info"
+                model="metro_park_maintenance.max_repair_info">
+            <field name="rule_id" ref="repair_rule_dd" />
+            <field name="max_count">3</field>
+        </record>
+
+        <record id="gao_da_lu_xi_che_max_info"
+                model="metro_park_maintenance.max_repair_info">
+            <field name="rule_id" ref="repair_rule_xc"/>
+            <field name="max_count">3</field>
+        </record>
+
+        <record id="gao_da_lu_li_chen_max_info"
+                model="metro_park_maintenance.max_repair_info">
+            <field name="rule_id" ref="repair_rule_l"/>
+            <field name="max_count">3</field>
+        </record>
+
+        <record id="ban_qiao_deng_ding_max_info"
+                model="metro_park_maintenance.max_repair_info">
+            <field name="rule_id" ref="repair_rule_dd" />
+            <field name="max_count">4</field>
+        </record>
+
+        <record id="ban_qiao_xi_che_max_info"
+                model="metro_park_maintenance.max_repair_info">
+            <field name="rule_id" ref="repair_rule_xc"/>
+            <field name="max_count">4</field>
+        </record>
+
+        <record id="ban_qiao_li_chen_max_info"
+                model="metro_park_maintenance.max_repair_info">
+            <field name="rule_id" ref="repair_rule_l"/>
+            <field name="max_count">4</field>
+        </record>
+
+    </data>
+</odoo>

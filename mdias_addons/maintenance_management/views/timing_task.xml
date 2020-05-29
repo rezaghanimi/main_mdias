@@ -1,0 +1,31 @@
+<odoo>
+    <data>
+        <!--  ZABBIX服务器报警数据监听-->
+        <record id="ir_cron_transmission_channel_data_task" model="ir.cron">
+            <field name="name">传输通道质量监督</field>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="model_id" ref="model_maintenance_management_transmission_channel"/>
+            <field name="nextcall" eval="(datetime.now().strftime('%Y-%m-%d 16:00:00'))"/>
+            <field name="state">code</field>
+            <field name="code">model.timing_task_get_switches_data()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">hours</field>
+            <field name="numbercall">-1</field>
+            <field name="doall" eval="False"/>
+        </record>
+
+        <!-- 设备状态页面刷新-->
+        <record id="ir_cron_equipment_state_task" model="ir.cron">
+            <field name="name">设备状态页面刷新</field>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="model_id" ref="model_maintenance_management_equipment_state"/>
+            <field name="nextcall" eval="(datetime.now().strftime('%Y-%m-%d 16:00:00'))"/>
+            <field name="state">code</field>
+            <field name="code">model.equipment_state_page_refresh()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">hours</field>
+            <field name="numbercall">-1</field>
+            <field name="doall" eval="False"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,52 @@
+.driver-input {
+    height: 30px;
+    margin-left: 15px;
+}
+
+.table-head {
+    line-height: 40px;
+    height: 40px;
+    padding-left: 12px;
+    background: #f2f2f2;
+}
+
+.layui-table, .layui-table-view {
+    margin: 0 0;
+}
+
+.driver-search-icon {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    cursor: pointer;
+}
+
+.search-div {
+    width: 230px;
+}
+
+.driver-edit-form .layui-form-label {
+    text-align: left;
+    width: 100px;
+}
+
+.driver-edit-form .layui-input-block {
+    margin-left: 130px;
+}
+
+.uploadTrainSchedule .form-button {
+    display: table;
+    margin: 0 auto;
+}
+
+.driver-edit-form .form-button {
+    display: table;
+    margin: 0 auto;
+}
+
+.submit-item {
+}
+
+#mx-table-search-form input {
+    width: 250px;
+}

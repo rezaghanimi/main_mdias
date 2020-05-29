@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="long_deng_shan_switch_1" model="metro_park_base.switches">
+            <field name="name">1</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_1DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_3" model="metro_park_base.switches">
+            <field name="name">3</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_3DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_5" model="metro_park_base.switches">
+            <field name="name">5</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_5-11DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_7" model="metro_park_base.switches">
+            <field name="name">7</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_7-9DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_9" model="metro_park_base.switches">
+            <field name="name">9</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_7-9DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_11" model="metro_park_base.switches">
+            <field name="name">11</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_5-11DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_13" model="metro_park_base.switches">
+            <field name="name">13</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_13-15DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_15" model="metro_park_base.switches">
+            <field name="name">15</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_13-15DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_17" model="metro_park_base.switches">
+            <field name="name">17</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_17-23DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_19" model="metro_park_base.switches">
+            <field name="name">19</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_19-21DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_21" model="metro_park_base.switches">
+            <field name="name">21</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_19-21DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_23" model="metro_park_base.switches">
+            <field name="name">23</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_17-23DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_25" model="metro_park_base.switches">
+            <field name="name">25</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_25DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_27" model="metro_park_base.switches">
+            <field name="name">27</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_27DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_29" model="metro_park_base.switches">
+            <field name="name">29</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_29-37DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_31" model="metro_park_base.switches">
+            <field name="name">31</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_31-33DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_33" model="metro_park_base.switches">
+            <field name="name">33</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_31-33DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_35" model="metro_park_base.switches">
+            <field name="name">35</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_29-37DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_37" model="metro_park_base.switches">
+            <field name="name">37</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_29-37DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_39" model="metro_park_base.switches">
+            <field name="name">39</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_39-55DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_41" model="metro_park_base.switches">
+            <field name="name">41</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_41-45DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_43" model="metro_park_base.switches">
+            <field name="name">43</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_41-45DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_45" model="metro_park_base.switches">
+            <field name="name">45</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_41-45DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_47" model="metro_park_base.switches">
+            <field name="name">47</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_39-55DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_49" model="metro_park_base.switches">
+            <field name="name">49</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_49-53DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_51" model="metro_park_base.switches">
+            <field name="name">51</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_49-53DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_53" model="metro_park_base.switches">
+            <field name="name">53</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_49-53DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_55" model="metro_park_base.switches">
+            <field name="name">55</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_39-55DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_57" model="metro_park_base.switches">
+            <field name="name">57</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_57DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_59" model="metro_park_base.switches">
+            <field name="name">59</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_59DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_61" model="metro_park_base.switches">
+            <field name="name">61</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_61-73DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_63" model="metro_park_base.switches">
+            <field name="name">63</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_63DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_65" model="metro_park_base.switches">
+            <field name="name">65</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_65-69DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_67" model="metro_park_base.switches">
+            <field name="name">67</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_65-69DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_69" model="metro_park_base.switches">
+            <field name="name">69</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_65-69DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_71" model="metro_park_base.switches">
+            <field name="name">71</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_71DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_73" model="metro_park_base.switches">
+            <field name="name">73</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_61-73DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_75" model="metro_park_base.switches">
+            <field name="name">75</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_75DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_77" model="metro_park_base.switches">
+            <field name="name">77</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_77DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_79" model="metro_park_base.switches">
+            <field name="name">79</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_79-81DG"/>
+        </record>
+
+        <record id="long_deng_shan_switch_81" model="metro_park_base.switches">
+            <field name="name">81</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="rail_sec_id" ref="long_deng_shan_rail_79-81DG"/>
+        </record>
+
+    </data>
+</odoo>

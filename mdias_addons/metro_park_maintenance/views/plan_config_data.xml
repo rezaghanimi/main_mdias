@@ -1,0 +1,73 @@
+
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.plan_config_data_select_list">
+            <field name="name">排程配置</field>
+            <field name="model">metro_park_maintenance.plan_config_data</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table" options="{'height':'300'}" >
+                    <field name="index" required="1" />
+                    <field name="rule" required="1" />
+                    <field name="repair_days" />
+                    <field name="remark"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.plan_config_data_list">
+            <field name="name">排程配置</field>
+            <field name="model">metro_park_maintenance.plan_config_data</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table" options="{'height':'full-340'}" editable="bottom" >
+                    <field name="index" required="1" />
+                    <field name="rule" required="1" />
+                    <field name="repair_days" />
+                    <field name="remark"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.plan_config_data_form">
+            <field name="name">排程配置</field>
+            <field name="model">metro_park_maintenance.plan_config_data</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="index">index</label>
+                        <div class="col-sm-3">
+                            <field name="index"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="rule">rule</label>
+                        <div class="col-sm-3">
+                            <field name="rule" options="{'limit': 30}"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="remark">remark</label>
+                        <div class="col-sm-6">
+                            <field name="remark"/>
+                        </div>
+                    </div>
+                    
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window"
+                id="metro_park_maintenance.plan_config_data_act_window">
+            <field name="name">plan_config_data</field>
+            <field name="res_model">metro_park_maintenance.plan_config_data</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+
+
+    

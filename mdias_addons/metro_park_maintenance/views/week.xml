@@ -1,0 +1,52 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_maintenance.week_list">
+            <field name="name">周</field>
+            <field name="model">metro_park_maintenance.week</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="val"/>
+                </tree>
+            </field>
+        </record>
+
+        
+        <record model="ir.ui.view" id="metro_park_maintenance.week_form">
+            <field name="name">周</field>
+            <field name="model">metro_park_maintenance.week</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="name">name</label>
+                        <div class="col-sm-10">
+                            <field name="name"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="val">val</label>
+                        <div class="col-sm-10">
+                            <field name="val"/>
+                        </div>
+                    </div>
+                    
+                </form>
+            </field>
+        </record>
+
+        
+        <record model="ir.actions.act_window" id="metro_park_maintenance.week_act_window">
+            <field name="name">week</field>
+            <field name="res_model">metro_park_maintenance.week</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+    
+
+
+    

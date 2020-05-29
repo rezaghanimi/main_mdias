@@ -1,0 +1,1111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <!-- 区段 -->
+        <record id="hui_long_rail_19/21WG" model="metro_park_base.rails_sec">
+            <field name="no">19/21WG</field>
+            <field name="alias">19/21WG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_D9G" model="metro_park_base.rails_sec">
+            <field name="no">D9G</field>
+            <field name="alias">D9G</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_D1G" model="metro_park_base.rails_sec">
+            <field name="no">D1G</field>
+            <field name="alias">牵1</field>
+            <field name="usage">牵出线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_pull_out" />
+            <field name="is_track">True</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_3/19WG" model="metro_park_base.rails_sec">
+            <field name="no">3/19WG</field>
+            <field name="alias">3/19WG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_3-5DG" model="metro_park_base.rails_sec">
+            <field name="no">3-5DG</field>
+            <field name="alias">3-5DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_21-25DG" model="metro_park_base.rails_sec">
+            <field name="no">21-25DG</field>
+            <field name="alias">21-25DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_1G" model="metro_park_base.rails_sec">
+            <field name="no">1G</field>
+            <field name="alias">1G</field>
+            <field name="usage">调机工程车库线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_construction_vehicle"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_2G" model="metro_park_base.rails_sec">
+            <field name="no">2G</field>
+            <field name="alias">2G</field>
+            <field name="usage">调机工程车库线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_construction_vehicle"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_3G" model="metro_park_base.rails_sec">
+            <field name="no">3G</field>
+            <field name="alias">3G</field>
+            <field name="usage">调机工程车库线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_construction_vehicle"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_T6604G" model="metro_park_base.rails_sec">
+            <field name="no">T6604G</field>
+            <field name="alias">T6604G</field>
+            <field name="usage">出段线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_exchange"/>
+            <field name="is_track">True</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_T6602G" model="metro_park_base.rails_sec">
+            <field name="no">T6602G</field>
+            <field name="alias">转换轨2</field>
+            <field name="usage">出转换轨</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_exchange"/>
+            <field name="is_track">True</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_1-7DG" model="metro_park_base.rails_sec">
+            <field name="no">1-7DG</field>
+            <field name="alias">1-7DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_9-15DG" model="metro_park_base.rails_sec">
+            <field name="no">9-15DG</field>
+            <field name="alias">9-15DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_17-31DG" model="metro_park_base.rails_sec">
+            <field name="no">17-31DG</field>
+            <field name="alias">17-31DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+
+        <record id="hui_long_rail_19DG" model="metro_park_base.rails_sec">
+            <field name="no">19DG</field>
+            <field name="alias">19DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_63-65DG" model="metro_park_base.rails_sec">
+            <field name="no">63-65DG</field>
+            <field name="alias">63-65DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_17-37DG" model="metro_park_base.rails_sec">
+            <field name="no">17-37DG</field>
+            <field name="alias">17-37DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_29-33DG" model="metro_park_base.rails_sec">
+            <field name="no">29-33DG</field>
+            <field name="alias">29-33DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_39DG" model="metro_park_base.rails_sec">
+            <field name="no">39DG</field>
+            <field name="alias">39DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_41DG" model="metro_park_base.rails_sec">
+            <field name="no">41DG</field>
+            <field name="alias">41DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_43-47DG" model="metro_park_base.rails_sec">
+            <field name="no">43-47DG</field>
+            <field name="alias">43-47DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_4AG" model="metro_park_base.rails_sec">
+            <field name="no">4AG</field>
+            <field name="alias">4A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_5AG" model="metro_park_base.rails_sec">
+            <field name="no">5AG</field>
+            <field name="alias">5A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_6AG" model="metro_park_base.rails_sec">
+            <field name="no">6AG</field>
+            <field name="alias">6A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_7AG" model="metro_park_base.rails_sec">
+            <field name="no">7AG</field>
+            <field name="alias">7A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_8AG" model="metro_park_base.rails_sec">
+            <field name="no">8AG</field>
+            <field name="alias">8A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_9AG" model="metro_park_base.rails_sec">
+            <field name="no">9AG</field>
+            <field name="alias">9A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_10AG" model="metro_park_base.rails_sec">
+            <field name="no">10AG</field>
+            <field name="alias">10A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_11AG" model="metro_park_base.rails_sec">
+            <field name="no">11AG</field>
+            <field name="alias">11A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_12AG" model="metro_park_base.rails_sec">
+            <field name="no">12AG</field>
+            <field name="alias">12A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_13AG" model="metro_park_base.rails_sec">
+            <field name="no">13AG</field>
+            <field name="alias">13A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_14AG" model="metro_park_base.rails_sec">
+            <field name="no">14AG</field>
+            <field name="alias">14A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_15AG" model="metro_park_base.rails_sec">
+            <field name="no">15AG</field>
+            <field name="alias">15A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_4BG" model="metro_park_base.rails_sec">
+            <field name="no">4BG</field>
+            <field name="alias">4B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_5BG" model="metro_park_base.rails_sec">
+            <field name="no">5BG</field>
+            <field name="alias">5B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_6BG" model="metro_park_base.rails_sec">
+            <field name="no">6BG</field>
+            <field name="alias">6B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_7BG" model="metro_park_base.rails_sec">
+            <field name="no">7BG</field>
+            <field name="alias">7B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_8BG" model="metro_park_base.rails_sec">
+            <field name="no">8BG</field>
+            <field name="alias">8B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_9BG" model="metro_park_base.rails_sec">
+            <field name="no">9BG</field>
+            <field name="alias">9B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_10BG" model="metro_park_base.rails_sec">
+            <field name="no">10BG</field>
+            <field name="alias">10B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_11BG" model="metro_park_base.rails_sec">
+            <field name="no">11BG</field>
+            <field name="alias">11B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_12BG" model="metro_park_base.rails_sec">
+            <field name="no">12BG</field>
+            <field name="alias">12B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_13BG" model="metro_park_base.rails_sec">
+            <field name="no">13BG</field>
+            <field name="alias">13B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_14BG" model="metro_park_base.rails_sec">
+            <field name="no">14BG</field>
+            <field name="alias">14B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_15BG" model="metro_park_base.rails_sec">
+            <field name="no">15BG</field>
+            <field name="alias">15B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_T6615G" model="metro_park_base.rails_sec">
+            <field name="no">T6615G</field>
+            <field name="alias">T6615G</field>
+            <field name="usage">入段线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_exchange"/>
+            <field name="is_track">True</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_T6617G" model="metro_park_base.rails_sec">
+            <field name="no">T6617G</field>
+            <field name="alias">转换轨1</field>
+            <field name="usage">入转换轨</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_exchange"/>
+            <field name="is_track">True</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_11-13DG" model="metro_park_base.rails_sec">
+            <field name="no">11-13DG</field>
+            <field name="alias">11-13DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_49-61DG" model="metro_park_base.rails_sec">
+            <field name="no">49-61DG</field>
+            <field name="alias">49-61DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_69-73DG" model="metro_park_base.rails_sec">
+            <field name="no">69-73DG</field>
+            <field name="alias">69-73DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_57DG" model="metro_park_base.rails_sec">
+            <field name="no">57DG</field>
+            <field name="alias">57DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_51-53DG" model="metro_park_base.rails_sec">
+            <field name="no">51-53DG</field>
+            <field name="alias">51-53DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_D23G" model="metro_park_base.rails_sec">
+            <field name="no">D23G</field>
+            <field name="alias">D23G</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_67DG" model="metro_park_base.rails_sec">
+            <field name="no">67DG</field>
+            <field name="alias">67DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_25G" model="metro_park_base.rails_sec">
+            <field name="no">25G</field>
+            <field name="alias">25G</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_26G" model="metro_park_base.rails_sec">
+            <field name="no">26G</field>
+            <field name="alias">26G</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_27G" model="metro_park_base.rails_sec">
+            <field name="no">27G</field>
+            <field name="alias">27G</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_28G" model="metro_park_base.rails_sec">
+            <field name="no">28G</field>
+            <field name="alias">28G</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_29G" model="metro_park_base.rails_sec">
+            <field name="no">29G</field>
+            <field name="alias">洗车线</field>
+            <field name="usage">洗车线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_wash"/>
+            <field name="is_track">1</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_rail_16AG" model="metro_park_base.rails_sec">
+            <field name="no">16AG</field>
+            <field name="alias">16A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_17AG" model="metro_park_base.rails_sec">
+            <field name="no">17AG</field>
+            <field name="alias">17A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_18AG" model="metro_park_base.rails_sec">
+            <field name="no">18AG</field>
+            <field name="alias">18A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_19AG" model="metro_park_base.rails_sec">
+            <field name="no">19AG</field>
+            <field name="alias">19A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_20AG" model="metro_park_base.rails_sec">
+            <field name="no">20AG</field>
+            <field name="alias">20A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_21AG" model="metro_park_base.rails_sec">
+            <field name="no">21AG</field>
+            <field name="alias">21A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_22AG" model="metro_park_base.rails_sec">
+            <field name="no">22AG</field>
+            <field name="alias">22A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_23AG" model="metro_park_base.rails_sec">
+            <field name="no">23AG</field>
+            <field name="alias">23A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_24AG" model="metro_park_base.rails_sec">
+            <field name="no">24AG</field>
+            <field name="alias">24A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_16BG" model="metro_park_base.rails_sec">
+            <field name="no">16BG</field>
+            <field name="alias">16B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_17BG" model="metro_park_base.rails_sec">
+            <field name="no">17BG</field>
+            <field name="alias">17B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_18BG" model="metro_park_base.rails_sec">
+            <field name="no">18BG</field>
+            <field name="alias">18B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_19BG" model="metro_park_base.rails_sec">
+            <field name="no">19BG</field>
+            <field name="alias">19B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_20BG" model="metro_park_base.rails_sec">
+            <field name="no">20BG</field>
+            <field name="alias">20B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_21BG" model="metro_park_base.rails_sec">
+            <field name="no">21BG</field>
+            <field name="alias">21B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_22BG" model="metro_park_base.rails_sec">
+            <field name="no">22BG</field>
+            <field name="alias">22B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_23BG" model="metro_park_base.rails_sec">
+            <field name="no">23BG</field>
+            <field name="alias">23B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_24BG" model="metro_park_base.rails_sec">
+            <field name="no">24BG</field>
+            <field name="alias">24B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="hui_long_rail_L0515DGJF" model="metro_park_base.rails_sec">
+            <field name="no">L0515DGJF</field>
+            <field name="alias">L0515DGJF</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="hui_long" />
+        </record>
+    </data>
+</odoo>

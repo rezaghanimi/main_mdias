@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="selection_yes" model="metro_park_base.selections">
+            <field name="name">是</field>
+            <field name="value">yes</field>
+        </record>
+
+        <record id="selection_no" model="metro_park_base.selections">
+            <field name="name">否</field>
+            <field name="value">no</field>
+        </record>
+
+        <record id="selection_auto" model="metro_park_base.selections">
+            <field name="name">自动</field>
+            <field name="value">auto</field>
+        </record>
+
+        <record id="selection_user_select" model="metro_park_base.selections">
+            <field name="name">用户选择</field>
+            <field name="value">user_select</field>
+        </record>
+
+        <record id="selection_nothing" model="metro_park_base.selections">
+            <field name="name">无</field>
+            <field name="value">nothing</field>
+        </record>
+
+        <!-- 年计划导入 -->
+        <record id="selection_import_by_year_plan_template" model="metro_park_base.selections">
+            <field name="name">年计划</field>
+            <field name="value">year_plan_template</field>
+        </record>
+
+        <record id="selection_import_by_month_plan_template" model="metro_park_base.selections">
+            <field name="name">月计划</field>
+            <field name="value">month_plan_template</field>
+        </record>
+
+        <record id="plan_kt_month_1" model="metro_park_base.selections">
+            <field name="name">第一月</field>
+            <field name="value">plan_kt_month_1</field>
+        </record>
+
+        <record id="plan_kt_month_2" model="metro_park_base.selections">
+            <field name="name">第二月</field>
+            <field name="value">plan_kt_month_2</field>
+        </record>
+
+    </data>
+</odoo>

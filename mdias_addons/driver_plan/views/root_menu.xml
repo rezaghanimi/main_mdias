@@ -1,0 +1,10 @@
+<odoo>
+    <data>
+        <menuitem action="driver_plan.driver_plan_action"
+                  id="driver_plan.driver_manage_menu"
+                  class="btn btn-secondary funenc_driver_plan"
+                  sequence="4"
+                  font_icon="fa fa-address-card"
+                  name="司机排班" />
+    </data>
+</odoo>

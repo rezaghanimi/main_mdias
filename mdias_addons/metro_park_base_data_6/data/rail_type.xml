@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="rail_type_fixed_and_tmp_repair" model="metro_park_base.rail_type">
+            <field name="name">定临修线</field>
+        </record>
+
+        <record id="rail_type_locomotive" model="metro_park_base.rail_type">
+            <field name="name">调机车线</field>
+        </record>
+
+    </data>
+</odoo>
+

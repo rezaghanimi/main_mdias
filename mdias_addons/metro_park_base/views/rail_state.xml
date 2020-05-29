@@ -1,0 +1,56 @@
+
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="metro_park_base.rail_state_list">
+            <field name="name">股道状态</field>
+            <field name="model">metro_park_base.rail_state</field>
+            <field name="arch" type="xml">
+                <tree delete="0" options="{'height':'full-340'}">
+                    <field name="name" width="300" />
+                    <field name="remark"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="metro_park_base.rail_state_form">
+            <field name="name">股道状态</field>
+            <field name="model">metro_park_base.rail_state</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="name">name</label>
+                        <div class="col-sm-2">
+                            <field name="name"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="remark">remark</label>
+                        <div class="col-sm-2">
+                            <field name="remark"/>
+                        </div>
+                    </div>
+
+                </form>
+            </field>
+        </record>
+
+
+        <record model="ir.actions.act_window" id="metro_park_base.rail_state_act_window">
+            <field name="name">股道状态</field>
+            <field name="res_model">metro_park_base.rail_state</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+        <menuitem action="metro_park_base.rail_state_act_window"
+                  id="metro_park_base.rail_state_menu"
+                  name="股道状态"
+                  sequence='3'
+                  parent="metro_park_base.menu_base_data_manage"
+                  groups="group_track_type"/>
+    </data>
+</odoo>

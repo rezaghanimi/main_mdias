@@ -1,0 +1,14 @@
+{
+  "name": "layui-formSelects",
+  "homepage": "https://github.com/diguoyihao/layui-formSelects",
+  "_release": "c50857f717",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "c50857f717176fc847db89b84c850ce872aa88d7"
+  },
+  "_source": "https://github.com/diguoyihao/layui-formSelects.git",
+  "_target": "*",
+  "_originalSource": "layui-formSelects",
+  "_direct": true
+}

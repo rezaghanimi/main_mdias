@@ -1,0 +1,50 @@
+
+.funenc_controller {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  margin: 10px;
+  background: rgba(200,200,200,.1);
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  box-shadow: 0 4px 20px 1px rgba(0,0,0,.06), 0 1px 4px rgba(0,0,0,.08);
+  border-radius: .25rem;
+  /* overflow: hidden; */
+}
+
+.funenc_controller .o_searchview {
+  height: 36px;
+  min-width: 300px;
+}
+
+.funenc_controller .switch_btn {
+  align-self: flex-end
+}
+
+.funenc_controller .side_bar,
+.funenc_controller .search_btns, 
+.funenc_controller .switch_btn {
+  margin-left: 5px;
+}
+
+.modal-body .funenc_controller .btns .operation_btn {
+  display: none;
+}
+
+.modal-body .funenc_controller {
+  margin: 0px;
+  border: none;
+  box-shadow: none;
+}
+
+.two_list_box .btns button {
+  display: none
+}
+
+.top_left_box .btns button {
+  display: none
+}
+
+.top_right_box .btns button {
+  display: none
+}

@@ -1,0 +1,48 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="tcms_tcms_tree_id">
+            <field name="name">TCMS配置</field>
+            <field name="model">tcms.tcms</field>
+            <field name="arch" type="xml">
+                <tree create="0">
+                    <field name="tids_name"/>
+                    <field name="ip"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="tcms_tcms_form_id">
+            <field name="name">TCMS配置</field>
+            <field name="model">tcms.tcms</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="tids_name"/>
+                        <field name="ip"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="tcms_tcms_act_window_act">
+            <field name="name">TCMS配置</field>
+            <field name="res_model">tcms.tcms</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="tcms_tcms_act_menu_parent_id"
+                  name="TCMS" parent="maintenance_management.maintenance_system_set_menu"
+                  groups="maintenance_management.group_maintenance_tcms_data"/>
+
+        <menuitem action="tcms_tcms_act_window_act"
+                  parent="tcms_tcms_act_menu_parent_id"
+                  id="tcms_tcms_act_menu_config_id"
+                  name="TCMS配置"/>
+
+        <record model="tcms.tcms" id="tcms_tcms_rec_ip">
+            <field name="tids_name">TCMS</field>
+            <field name="ip">119.6.107.149:8788</field>
+        </record>
+    </data>
+</odoo>

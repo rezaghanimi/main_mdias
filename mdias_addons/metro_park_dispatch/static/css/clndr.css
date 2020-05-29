@@ -1,0 +1,273 @@
+
+.funenc_calendar {
+    margin: auto;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .funenc_calendar .clndr .clndr-controls {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .funenc_calendar .clndr .clndr-controls .month {
+    float: left;
+    width: 33%;
+    text-align: center;
+  }
+
+  .funenc_calendar .clndr .clndr-controls .clndr-control-button {
+    float: left;
+    width: 33%;
+  }
+
+  .funenc_calendar .clndr .clndr-controls .clndr-control-button.rightalign {
+    text-align: right;
+    width: 34%;
+  }
+
+  .funenc_calendar .clndr .clndr-controls .clndr-control-button .clndr-next-button {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  .funenc_calendar .clndr .clndr-controls .clndr-control-button .clndr-next-button:hover {
+    background: #ddd;
+  }
+
+  .funenc_calendar .clndr .clndr-controls .clndr-control-button .clndr-next-button.inactive {
+    opacity: 0.5;
+  }
+
+  .funenc_calendar .clndr .clndr-controls .clndr-control-button .clndr-next-button.inactive:hover {
+    background: none;
+    cursor: default;
+  }
+
+  .funenc_calendar .clndr .clndr-controls .clndr-control-button .clndr-previous-button {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  .funenc_calendar .clndr .clndr-controls .clndr-control-button .clndr-previous-button:hover {
+    background: #ddd;
+  }
+
+  .funenc_calendar .clndr .clndr-controls .clndr-control-button .clndr-previous-button.inactive {
+    opacity: 0.5;
+  }
+
+  .funenc_calendar .clndr .clndr-controls .clndr-control-button .clndr-previous-button.inactive:hover {
+    background: none;
+    cursor: default;
+  }
+
+  .funenc_calendar .clndr .clndr-table {
+    table-layout: fixed;
+    width: 100%;
+  }
+
+  .funenc_calendar .clndr .clndr-table .header-days {
+    height: 50px;
+    font-size: 10px;
+  }
+
+  .funenc_calendar .clndr .clndr-table .header-days .header-day {
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+  }
+
+  .funenc_calendar .clndr .clndr-table .header-days .header-day:last-child {
+    border-right: 1px solid #ebedf2;
+  }
+
+  .funenc_calendar .clndr .clndr-table tr {
+    height: 60px;
+  }
+
+  .funenc_calendar .clndr .clndr-table tr td {
+    vertical-align: top;
+  }
+
+  .funenc_calendar .clndr .clndr-table tr .day {
+    width: 100%;
+    height: inherit;
+  }
+
+  .funenc_calendar .clndr .clndr-table tr .day.inactive,
+  .funenc_calendar .clndr .clndr-table tr .day.my-inactive {
+    background: #ddd;
+  }
+
+  .funenc_calendar .clndr .clndr-table tr .day:last-child {
+    border-right: 1px solid #ebedf2;
+  }
+
+  .funenc_calendar .clndr .clndr-table tr .day .day-contents {
+    position: absolute;
+    opacity: 0.2;
+    right: 6px;
+    bottom: 5px;
+    font-size: 50px;
+  }
+
+  .funenc_calendar .clndr .clndr-table tr .day.event>div, .funenc_calendar .clndr .clndr-table tr .day.my-event>div {
+    position: relative;
+    overflow: hidden;
+    height: 100px;
+    border-bottom: 2px solid #cacaca;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+.funenc_calendar .clndr .clndr-table tr {
+  height: 60px;
+}
+
+.funenc_calendar .clndr .clndr-table tr td {
+  vertical-align: top;
+}
+
+.funenc_calendar .clndr .clndr-table tr .day {
+  width: 100%;
+  height: inherit;
+}
+
+.funenc_calendar .clndr .clndr-table tr .day.today,
+.funenc_calendar .clndr .clndr-table tr .day.my-today {
+  background: #9AD6E3;
+}
+
+.funenc_calendar .clndr .clndr-table tr .day.event,
+.funenc_calendar .clndr .clndr-table tr .day.my-event {
+  /* background: #B4E09F; */
+  border-radius: 10px;
+}
+
+.clndr-table td>div {
+  position: relative;
+  overflow: hidden;
+  height: 100px;
+  border-bottom: 2px solid #cacaca;
+  box-shadow: 1px 1px 5px #e3e3e3;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.clndr .clndr-table tr .day .day-contents {
+  box-sizing: border-box;
+  padding: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.funenc_calendar .clndr .clndr-table tr .day.today.event .day-contents {
+  position: absolute;
+  opacity: 1;
+  right: 6px;
+  bottom: 5px;
+  font-size: 50px;
+  color: white
+}
+
+.funenc_calendar .clndr .clndr-table tr .day .day-contents {
+  position: absolute;
+  opacity: 0.2;
+  right: 6px;
+  bottom: 5px;
+  font-size: 50px;
+}
+
+.clndr .clndr-table tr .day .plan_time_table:hover,
+.clndr .clndr-table tr .day .real_time_table:hover {
+  text-decoration: underline;
+}
+
+.clndr .clndr-table tr .day .plan_time_table {
+  box-sizing: border-box;
+  padding: 3px 3px 3px 10px;
+  font-size: 16px;
+  color: #f5696c;
+  cursor: pointer;
+
+}
+
+.clndr .clndr-table tr .day .real_time_table {
+  box-sizing: border-box;
+  padding: 3px 3px 3px 10px;
+  font-size: 14px;
+  color: #0cb6d4;
+  cursor: pointer;
+}
+
+.clndr .clndr-table tr .day .plan_time_table {
+  margin-top: 20px;
+  box-sizing: border-box;
+  padding: 3px 3px 3px 10px;
+  font-size: 14px;
+  color: #f5696c;
+  cursor: pointer;
+}
+
+.clndr .clndr-table tr .day.today .plan_time_table {
+  box-sizing: border-box;
+  padding: 3px 3px 3px 10px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.clndr .clndr-table tr .day.today .real_time_table {
+  box-sizing: border-box;
+  padding: 3px 3px 3px 10px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.funenc_calendar .clndr .clndr-table tr .day.today.event,
+.funenc_calendar .clndr .clndr-table tr .day.my-today.event {
+  background: none;
+  color: white;
+  border-radius: 10px;
+}
+
+.funenc_calendar .clndr .clndr-table tr .day.today.event>div,
+.funenc_calendar .clndr .clndr-table tr .day.my-today.event>div {
+  background: #646a78;
+  color: white;
+  border-radius: 10px;
+}
+
+
+.funenc_calendar .clndr .clndr-table tr .empty,
+.funenc_calendar .clndr .clndr-table tr .adjacent-month,
+.funenc_calendar .clndr .clndr-table tr .my-empty,
+.funenc_calendar .clndr .clndr-table tr .my-adjacent-month {
+  width: 100%;
+  height: inherit;
+}
+
+.funenc_calendar .clndr .clndr-table .header-days {
+  height: 50px;
+  font-size: 10px;
+}
+
+.funenc_calendar .clndr .clndr-table .header-days .header-day {
+  vertical-align: middle;
+  text-align: center;
+  color: rgb(125, 131, 151);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.funenc_calendar .clndr .clndr-table .header-days :last-child.header-day {
+  border-right: 1px solid #ebedf2;
+}

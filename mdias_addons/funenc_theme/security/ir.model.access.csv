@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_funenc_theme_style_user,funenc_theme.theme_style_user,model_funenc_theme_funenc_system_style,,1,0,0,0
+access_funenc_theme_style_super,funenc_theme.theme_style_super,model_funenc_theme_funenc_system_style,base.group_erp_manager,1,1,1,1

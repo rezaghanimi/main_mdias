@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="home_page">
+        <div style="width:100%">
+            <div class="part01">
+                <div class="statistical01 shadow01" style="background-position: -430px 60px;">
+                    <p class="fontclass01">总体计划完成</p>
+                    <p class="fontclass02" id="all_plan">0</p>
+                </div>
+
+                <div class="part01right">
+                    <!-- 调车计划  -->
+                    <div style=" display: flex; width:25%; padding-right: 30px;">
+                        <div class="statistical02 shadow_top">
+                            <div>
+                                <p class="fontclass02" style="color:white" id="shunting_plan">0</p>
+                                <p class="fontclass01" style="color:white">已完成/全部</p>
+                            </div>
+                            <div class="fontclass03" style="color:white">调车计划</div>
+                        </div>
+                    </div>
+                    <div style=" display: flex; width:25%; padding-right: 30px;">
+                        <div class="statistical02 statistical04 shadow_top">
+                            <div>
+                                <p class="fontclass02" style="color:white" id="start_plan">0</p>
+                                <p class="fontclass01" style="color:white">已完成/全部</p>
+                            </div>
+                            <div class="fontclass03" style="color:white">发车计划</div>
+                        </div>
+                    </div>
+                    <div style=" display: flex; width:25%; padding-right: 30px;">
+                        <div class="statistical02 statistical05 shadow_top">
+                            <div>
+                                <p class="fontclass02" style="color:white" id="collect_plan">0</p>
+                                <p class="fontclass01" style="color:white">已完成/全部</p>
+                            </div>
+                            <div class="fontclass03" style="color:white">收车计划</div>
+                        </div>
+                    </div>
+                    <div style=" display: flex; width:25%; padding-right: 30px;">
+                        <div class="statistical02 statistical06 shadow_top">
+                            <div>
+                                <p class="fontclass02" style="color:white" id="maintenance_plan">0</p>
+                                <p class="fontclass01" style="color:white">已完成/全部</p>
+                            </div>
+                            <div class="fontclass03" style="color:white">检修计划</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="part02 shadow01">
+                <div class="title01" style="position:relative;">
+                    <div class="fontclass03">计划执行情况</div>
+                    <div style="position:absolute;left:50%; margin-left:-160px; top:30px;">
+                        <div class="btn-group plan_type" role="group" aria-label="...">
+                            <button type="button" class="btn btn-primary" id="button_shunting">调车计划</button>
+                            <button type="button" class="btn btn-default" id="button_start">发车计划</button>
+                            <button type="button" class="btn btn-default" id="button_collect">收车计划</button>
+                            <button type="button" class="btn btn-default" id="button_maintenance">检修计划</button>
+                        </div>
+                    </div>
+                    <div style="margin-right: 20px;">
+                        <input style="height: 26px; margin-right: 20px;" type="text" id="date_range" class="form-control"/>
+                    </div>
+                </div>
+                <!-- 检修计划 -->
+                <div style="height:270px; padding-bottom: 20px;" id="dispatch_info">
+                </div>
+            </div>
+
+            <div class="part02 shadow01" style="margin-top:30px;margin-bottom:30px;">
+                <div class="title01" style="position:relative;">
+                    <div class="fontclass03">车辆运用情况</div>
+                    <div style="margin-right: 20px;">
+                        <input style="height: 26px; margin-right: 20px;"
+                               type="text"
+                               id="train_info_time_range"
+                               class="form-control"/>
+                    </div>
+                </div>
+                <!-- 车辆使用情况 -->
+                <div style="width:70%; over-flow: hidden; float: left; height:472px;padding-bottom: 20px;"
+                     id="train_usage">
+                </div>
+
+                <div style="width:30%; float: left; padding-bottom: 20px;">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th><div style="width:150px">运用情况</div></th>
+                                <th><div style="width:150px">车辆数</div></th>
+                                <th width="100%">具体车辆</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>备用车</td>
+                                <td id="standby_count"/>
+                                <td id="standby_id" width="100%" style="word-break: break-all"/>
+                            </tr>
+
+                            <tr>
+                                <td>日检车</td>
+                                <td id="inspection_count"/>
+                                <td id="inspection_id" width="100%" style="word-break: break-all"/>
+                            </tr>
+
+                            <tr>
+                                <td>洗车安排</td>
+                                <td id="wash_count"/>
+                                <td id="wash_id" width="100%" style="word-break: break-all"/>
+                            </tr>
+
+                            <tr>
+                                <td>登顶车</td>
+                                <td id="top_count"/>
+                                <td id="top_id" width="100%" style="word-break: break-all"/>
+                            </tr>
+
+                            <tr>
+                                <td>维修故障车</td>
+                                <td id="defective_count"/>
+                                <td id="defective_id" width="100%" style="word-break: break-all"/>
+                            </tr>
+
+                            <!--  扣车  -->
+                            <tr>
+                                <td>不可运用车</td>
+                                <td id="unserviceable_count"/>
+                                <td id="unserviceable_id" width="100%" style="word-break: break-all"/>
+                            </tr>
+
+                            <!-- 检技通 -->
+                            <tr>
+                                <td>专项作业车</td>
+                                <td id="special_count"/>
+                                <td id="Special_id" width="100%" style="word-break: break-all"/>
+                            </tr>
+
+                            <!--  均衡修 -->
+                            <tr>
+                                <td>计划维修车</td>
+                                <td id="scheduled_count"/>
+                                <td id="Scheduled_id" width="100%" style="word-break: break-all"/>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <br style="clear:both;"/>
+            </div>
+        </div>
+    </t>
+</templates>

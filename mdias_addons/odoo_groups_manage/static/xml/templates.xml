@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<template>
+    <!--权限管理按鈕-->
+      <t t-name="role_groups_operation_buttons">
+        <div>
+            <button
+                    class="btn btn-success"
+                    type="object"
+                    name="action_ok_handover"
+                    data-special="permission"
+                    >
+                查看权限
+            </button>
+
+            <button
+                    type="object"
+                    name="get_print_template"
+                    class="btn btn-primary"
+                    data-special="role"
+            >
+                关联角色组
+            </button>
+
+
+        </div>
+    </t>
+</template>

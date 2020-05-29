@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="atomic_role_not_unlink" model="ir.rule">
+            <field name="name">原子权限不能删除</field>
+            <field ref="base.model_res_groups" name="model_id"/>
+            <field name="domain_force">[('atomic', '=', False)]</field>
+            <field name="perm_write" eval="0"/>
+            <field name="perm_create" eval="0"/>
+            <field name="perm_read" eval="0"/>
+        </record>
+    </data>
+</odoo>

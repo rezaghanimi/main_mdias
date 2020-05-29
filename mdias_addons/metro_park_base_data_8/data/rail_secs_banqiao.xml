@@ -1,0 +1,1110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="metro_park_base_data_10.ban_qiao_19G" model="metro_park_base.rails_sec">
+            <field name="no">19G</field>
+            <field name="alias">洗车线</field>
+            <field name="usage">洗车线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_wash" />
+            <field name="is_track">1</field>
+            <field name="rail_length">326</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_20G" model="metro_park_base.rails_sec">
+            <field name="no">20G</field>
+            <field name="alias">20G</field>
+            <field name="usage">镟轮线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_wheel" />
+            <field name="is_track">1</field>
+            <field name="rail_length">326</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">0</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_21AG" model="metro_park_base.rails_sec">
+            <field name="no">21AG</field>
+            <field name="alias">21A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_21BG" model="metro_park_base.rails_sec">
+            <field name="no">21BG</field>
+            <field name="alias">21B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">2</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">22</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_22AG" model="metro_park_base.rails_sec">
+            <field name="no">22AG</field>
+            <field name="alias">22A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="electric_live">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="can_stop">1</field>
+            <field name="stop_order">5</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_22BG" model="metro_park_base.rails_sec">
+            <field name="no">22BG</field>
+            <field name="alias">22B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">6</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_23AG" model="metro_park_base.rails_sec">
+            <field name="no">23AG</field>
+            <field name="alias">23A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">9</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_23BG" model="metro_park_base.rails_sec">
+            <field name="no">23BG</field>
+            <field name="alias">23B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">10</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_24AG" model="metro_park_base.rails_sec">
+            <field name="no">24AG</field>
+            <field name="alias">24A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">13</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_24BG" model="metro_park_base.rails_sec">
+            <field name="no">24BG</field>
+            <field name="alias">24B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">14</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_25AG" model="metro_park_base.rails_sec">
+            <field name="no">25AG</field>
+            <field name="alias">25A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">17</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_25BG" model="metro_park_base.rails_sec">
+            <field name="no">25BG</field>
+            <field name="alias">25B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">18</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_26AG" model="metro_park_base.rails_sec">
+            <field name="no">26AG</field>
+            <field name="alias">26A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">23</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_26BG" model="metro_park_base.rails_sec">
+            <field name="no">26BG</field>
+            <field name="alias">26B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">24</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_D7G" model="metro_park_base.rails_sec">
+            <field name="no">D7G</field>
+            <field name="alias">牵1</field>
+            <field name="usage">牵出线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_pull_out" />
+            <field name="is_track">1</field>
+            <field name="rail_length">228</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_T1714G" model="metro_park_base.rails_sec">
+            <field name="no">T1714G</field>
+            <field name="alias">转换轨2</field>
+            <field name="usage">入转换轨</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_exchange" />
+            <field name="is_track">1</field>
+            <field name="rail_length">200</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_T1710G" model="metro_park_base.rails_sec">
+            <field name="no">T1710G</field>
+            <field name="alias">T1710G</field>
+            <field name="usage">入段线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_back_sec" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_61DG" model="metro_park_base.rails_sec">
+            <field name="no">61DG</field>
+            <field name="alias">61DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_23/61WG" model="metro_park_base.rails_sec">
+            <field name="no">23/61WG</field>
+            <field name="alias">23/61WG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">139</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_23DG" model="metro_park_base.rails_sec">
+            <field name="no">23DG</field>
+            <field name="alias">23DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_9/23WG" model="metro_park_base.rails_sec">
+            <field name="no">9/23WG</field>
+            <field name="alias">9/23WG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">91</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_9DG" model="metro_park_base.rails_sec">
+            <field name="no">9DG</field>
+            <field name="alias">9DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_11DG" model="metro_park_base.rails_sec">
+            <field name="no">11DG</field>
+            <field name="alias">11DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_15-17DG" model="metro_park_base.rails_sec">
+            <field name="no">15-17DG</field>
+            <field name="alias">15-17DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_21DG" model="metro_park_base.rails_sec">
+            <field name="no">21DG</field>
+            <field name="alias">21DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_21/51WG" model="metro_park_base.rails_sec">
+            <field name="no">21/51WG</field>
+            <field name="alias">21/51WG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">120</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_51-53DG" model="metro_park_base.rails_sec">
+            <field name="no">51-53DG</field>
+            <field name="alias">51-53DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_55-59DG" model="metro_park_base.rails_sec">
+            <field name="no">55-59DG</field>
+            <field name="alias">55-59DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_27AG" model="metro_park_base.rails_sec">
+            <field name="no">27AG</field>
+            <field name="alias">27A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">19</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_27BG" model="metro_park_base.rails_sec">
+            <field name="no">27BG</field>
+            <field name="alias">27B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">4</field>
+            <field name="stop_order">20</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_28AG" model="metro_park_base.rails_sec">
+            <field name="no">28AG</field>
+            <field name="alias">28A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">15</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_28BG" model="metro_park_base.rails_sec">
+            <field name="no">28BG</field>
+            <field name="alias">28B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">16</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_29AG" model="metro_park_base.rails_sec">
+            <field name="no">29AG</field>
+            <field name="alias">29A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">16</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_29BG" model="metro_park_base.rails_sec">
+            <field name="no">29BG</field>
+            <field name="alias">29B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_30AG" model="metro_park_base.rails_sec">
+            <field name="no">30AG</field>
+            <field name="alias">30A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">11</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_30BG" model="metro_park_base.rails_sec">
+            <field name="no">30BG</field>
+            <field name="alias">30B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">12</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_31AG" model="metro_park_base.rails_sec">
+            <field name="no">31AG</field>
+            <field name="alias">31A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">7</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_31BG" model="metro_park_base.rails_sec">
+            <field name="no">31BG</field>
+            <field name="alias">31B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">8</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_32AG" model="metro_park_base.rails_sec">
+            <field name="no">32AG</field>
+            <field name="alias">32A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">3</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+
+        <record id="metro_park_base_data_10.ban_qiao_32BG" model="metro_park_base.rails_sec">
+            <field name="no">32BG</field>
+            <field name="alias">32B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_T1701G" model="metro_park_base.rails_sec">
+            <field name="no">T1701G</field>
+            <field name="alias">转换轨1</field>
+            <field name="usage">出转换轨</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_exchange" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_T1705G" model="metro_park_base.rails_sec">
+            <field name="no">T1705G</field>
+            <field name="alias">T1705G</field>
+            <field name="usage">出段线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_out_sec" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_45-49DG" model="metro_park_base.rails_sec">
+            <field name="no">45-49DG</field>
+            <field name="alias">45-49DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_41-43DG" model="metro_park_base.rails_sec">
+            <field name="no">41-43DG</field>
+            <field name="alias">41-43DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_25/41WG" model="metro_park_base.rails_sec">
+            <field name="no">25/41WG</field>
+            <field name="alias">25/41WG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">118</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_25DG" model="metro_park_base.rails_sec">
+            <field name="no">25DG</field>
+            <field name="alias">25DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_13-19DG" model="metro_park_base.rails_sec">
+            <field name="no">13-19DG</field>
+            <field name="alias">13-19DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_7DG" model="metro_park_base.rails_sec">
+            <field name="no">7DG</field>
+            <field name="alias">7DG</field>
+            <field name="usage">区段</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_33G" model="metro_park_base.rails_sec">
+            <field name="no">33G</field>
+            <field name="alias">33G</field>
+            <field name="usage">双周/三月检检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_two_week_or_three_month_repair" />
+            <field name="is_track">1</field>
+            <field name="rail_length">175</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder_platform'),
+                   ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_34G" model="metro_park_base.rails_sec">
+            <field name="no">34G</field>
+            <field name="alias">34G</field>
+            <field name="usage">双周/三月检检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_two_week_or_three_month_repair" />
+            <field name="is_track">1</field>
+            <field name="rail_length">175</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder_platform'),
+                   ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_35G" model="metro_park_base.rails_sec">
+            <field name="no">35G</field>
+            <field name="alias">35G</field>
+            <field name="usage">双周/三月检检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_two_week_or_three_month_repair" />
+            <field name="is_track">1</field>
+            <field name="rail_length">175</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder_platform'),
+                   ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_36G" model="metro_park_base.rails_sec">
+            <field name="no">36G</field>
+            <field name="alias">36G</field>
+            <field name="usage">卸车线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_download_train" />
+            <field name="is_track">1</field>
+            <field name="rail_length">218</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">0</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_37G" model="metro_park_base.rails_sec">
+            <field name="no">37G</field>
+            <field name="alias">37G</field>
+            <field name="usage">调机工程车库线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_construction_vehicle" />
+            <field name="is_track">1</field>
+            <field name="rail_length">86</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">0</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_38G" model="metro_park_base.rails_sec">
+            <field name="no">38G</field>
+            <field name="alias">38G</field>
+            <field name="usage">调机工程车库线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_construction_vehicle" />
+            <field name="is_track">1</field>
+            <field name="rail_length">86</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">0</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_39G" model="metro_park_base.rails_sec">
+            <field name="no">39G</field>
+            <field name="alias">39G</field>
+            <field name="usage">调机工程车库线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_construction_vehicle" />
+            <field name="is_track">1</field>
+            <field name="rail_length">86</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">0</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_27DG" model="metro_park_base.rails_sec">
+            <field name="no">27DG</field>
+            <field name="alias">27DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_27/29WG" model="metro_park_base.rails_sec">
+            <field name="no">27/29WG</field>
+            <field name="alias">27/29WG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">109</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_29-35DG" model="metro_park_base.rails_sec">
+            <field name="no">29-35DG</field>
+            <field name="alias">29-35DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">0</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_37-39DG" model="metro_park_base.rails_sec">
+            <field name="no">37-39DG</field>
+            <field name="alias">37-39DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">0</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_D5G" model="metro_park_base.rails_sec">
+            <field name="no">D5G</field>
+            <field name="alias">牵3</field>
+            <field name="usage">牵出线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_pull_out" />
+            <field name="is_track">1</field>
+            <field name="rail_length">213</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_D1G" model="metro_park_base.rails_sec">
+            <field name="no">D1G</field>
+            <field name="alias">牵5</field>
+            <field name="usage">牵出线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_pull_out" />
+            <field name="is_track">1</field>
+            <field name="rail_length">220</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_D37G" model="metro_park_base.rails_sec">
+            <field name="no">D37G</field>
+            <field name="alias">牵7</field>
+            <field name="usage">牵出线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_pull_out" />
+            <field name="is_track">1</field>
+            <field name="rail_length">216</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_16G" model="metro_park_base.rails_sec">
+            <field name="no">16G</field>
+            <field name="alias">16G</field>
+            <field name="usage">静调线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_static_ajust" />
+            <field name="is_track">1</field>
+            <field name="rail_length">227</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_17G" model="metro_park_base.rails_sec">
+            <field name="no">17G</field>
+            <field name="alias">17G</field>
+            <field name="usage">静调线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_static_ajust" />
+            <field name="is_track">1</field>
+            <field name="rail_length">227</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_10G" model="metro_park_base.rails_sec">
+            <field name="no">10G</field>
+            <field name="alias">10G</field>
+            <field name="usage">架修线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_frame_repair" />
+            <field name="is_track">1</field>
+            <field name="rail_length">237</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">0</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_11G" model="metro_park_base.rails_sec">
+            <field name="no">11G</field>
+            <field name="alias">11G</field>
+            <field name="usage">架修线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_frame_repair" />
+            <field name="is_track">1</field>
+            <field name="rail_length">237</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">0</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="ban_qiao_12G" model="metro_park_base.rails_sec">
+            <field name="no">12G</field>
+            <field name="alias">12G</field>
+            <field name="usage">大修线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_big_repair" />
+            <field name="is_track">1</field>
+            <field name="rail_length">237</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">0</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="ban_qiao_13G" model="metro_park_base.rails_sec">
+            <field name="no">13G</field>
+            <field name="alias">13G</field>
+            <field name="usage">临修线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_tmp_repair" />
+            <field name="is_track">1</field>
+            <field name="rail_length">237</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">0</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="ban_qiao_14G" model="metro_park_base.rails_sec">
+            <field name="no">14G</field>
+            <field name="alias">14G</field>
+            <field name="usage">定修线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_fixed_repair" />
+            <field name="is_track">1</field>
+            <field name="rail_length">227</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">0</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="ban_qiao_15G" model="metro_park_base.rails_sec">
+            <field name="no">15G</field>
+            <field name="alias">15G</field>
+            <field name="usage">定修线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_fixed_repair" />
+            <field name="is_track">1</field>
+            <field name="rail_length">227</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">0</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <!-- 这里虽然为库，但实际上是线 -->
+        <record id="ban_qiao_18G" model="metro_park_base.rails_sec">
+            <field name="no">18G</field>
+            <field name="alias">18G</field>
+            <field name="usage">吹扫库</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_clean_store" />
+            <field name="is_track">1</field>
+            <field name="rail_length">227</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">0</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="ban_qiao_5/27WG" model="metro_park_base.rails_sec">
+            <field name="no">5/27WG</field>
+            <field name="alias">5/27WG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">91</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="ban_qiao_5DG" model="metro_park_base.rails_sec">
+            <field name="no">5DG</field>
+            <field name="alias">5DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="ban_qiao_1-3DG" model="metro_park_base.rails_sec">
+            <field name="no">1-3DG</field>
+            <field name="alias">1-3DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="ban_qiao_1/63WG" model="metro_park_base.rails_sec">
+            <field name="no">1/63WG</field>
+            <field name="alias">1/63WG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="ban_qiao_63-65DG" model="metro_park_base.rails_sec">
+            <field name="no">63-65DG</field>
+            <field name="alias">63-65DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="ban_qiao_67-73DG" model="metro_park_base.rails_sec">
+            <field name="no">67-73DG</field>
+            <field name="alias">67-73DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="ban_qiao_75-77DG" model="metro_park_base.rails_sec">
+            <field name="no">75-77DG</field>
+            <field name="alias">75-77DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="ban_qiao_79-81DG" model="metro_park_base.rails_sec">
+            <field name="no">79-81DG</field>
+            <field name="alias">79-81DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+        <record id="ban_qiao_65/83WG" model="metro_park_base.rails_sec">
+            <field name="no">65/83WG</field>
+            <field name="alias">65/83WG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">151</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="ban_qiao_D67G" model="metro_park_base.rails_sec">
+            <field name="no">D67G</field>
+            <field name="alias">试车线</field>
+            <field name="usage">试车线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_test_train" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="ban_qiao_83DG" model="metro_park_base.rails_sec">
+            <field name="no">83DG</field>
+            <field name="alias">83DG</field>
+            <field name="usage">试车线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_test_train" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="ban_qiao_D65G" model="metro_park_base.rails_sec">
+            <field name="no">D65G</field>
+            <field name="alias">D65G</field>
+            <field name="usage">试车线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_test_train" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="ban_qiao" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1024</field>
+        </record>
+
+    </data>
+</odoo>

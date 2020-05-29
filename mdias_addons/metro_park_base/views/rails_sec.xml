@@ -1,0 +1,160 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="metro_park_base.rails_sec_list">
+            <field name="name">区段管理</field>
+            <field name="model">metro_park_base.rails_sec</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table" delete="0" create="0" edit="0" options="{'height':'full-340'}">
+                    <field name="alias" fixed="left" />
+                    <field name="no"/>
+                    <field name="rail_status"/>
+                    <field name="available"/>
+                    <field name="location" width="150"/>
+                    <field name="usage" width="150" />
+                    <field name="is_track"/>
+                    <field name="rail_type" width="150"/>
+                    <field name="rail_property" widget="many2many_tags" width="150"/>
+                    <field name="port"/>
+                    <field name="reverse_port"/>
+                    <field name="electric_live"/>
+                    <field name="rail_length"/>
+                    <field name="special_switch"/>
+
+                    <field name="left_rail_id"/>
+                    <field name="right_rail_id"/>
+
+                    <field name="left_switch_id"/>
+                    <field name="left_switch_position"/>
+
+                    <field name="right_switch_id"/>
+                    <field name="right_switch_position"/>
+
+                    <field name="remark"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="metro_park_base.rails_sec_form">
+            <field name="name">区段管理</field>
+            <field name="model">metro_park_base.rails_sec</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="no">no</label>
+                        <div class="col-sm-3">
+                            <field name="no"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="location">location</label>
+                        <div class="col-sm-3">
+                            <field name="location"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="usage">usage</label>
+                        <div class="col-sm-3">
+                            <field name="usage"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="is_track">is_track</label>
+                        <div class="col-sm-3">
+                            <field name="is_track"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="rail_type">rail_type</label>
+                        <div class="col-sm-3">
+                            <field name="rail_type" />
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="rail_property">rail_property</label>
+                        <div class="col-sm-3">
+                            <field name="rail_property" widget="many2many_tags"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="port">port</label>
+                        <div class="col-sm-3">
+                            <field name="port"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="reverse_port">reverse_port</label>
+                        <div class="col-sm-3">
+                            <field name="reverse_port"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="electric_live">electric_live</label>
+                        <div class="col-sm-3">
+                            <field name="electric_live"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="rail_length">rail_length</label>
+                        <div class="col-sm-3">
+                            <field name="rail_length"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="rail_status">rail_status</label>
+                        <div class="col-sm-3">
+                            <field name="rail_status"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="alias">alias</label>
+                        <div class="col-sm-3">
+                            <field name="alias"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="special_switch">special_switch</label>
+                        <div class="col-sm-3">
+                            <field name="special_switch"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="available">available</label>
+                        <div class="col-sm-3">
+                            <field name="available"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="electric_area">electric_area</label>
+                        <div class="col-sm-3">
+                            <field name="electric_area"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="special_switch">special_switch</label>
+                        <div class="col-sm-3">
+                            <field name="special_switch"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="remark">remark</label>
+                        <div class="col-sm-3">
+                            <field name="remark"/>
+                        </div>
+                    </div>
+
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="metro_park_base.rails_sec_act_window">
+            <field name="name">轨道区段</field>
+            <field name="res_model">metro_park_base.rails_sec</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="metro_park_base.rails_sec_act_window"
+                  id="metro_park_base.rails_sec_menu"
+                  sequence="4"
+                  name="区段管理"
+                  parent="metro_park_base.menu_base_data_manage"
+                  groups="group_base_area_management"/>
+    </data>
+</odoo>

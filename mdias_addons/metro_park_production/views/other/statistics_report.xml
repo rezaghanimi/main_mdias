@@ -1,0 +1,47 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="metro_park_production.statistics_report_list">
+            <field name="name">驾驶舱</field>
+            <field name="model">metro_park_production.statistics_report</field>
+            <field name="priority" eval="10"/>
+            <field name="arch" type="xml">
+                <tree import="0"
+                      js_class="fnt_table"
+                      options="{'height': 'full-345'}">
+                    <field name="begin_time"/>
+                    <field name="end_time"/>
+                    <widget name="TreeButtons"
+                            width="80"
+                            string="操作"
+                            template="screening_buttons"
+                    />
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_production.statistics_report_form">
+            <field name="name">驾驶舱</field>
+            <field name="model">metro_park_production.statistics_report</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="begin_time">begin_time</label>
+                        <div class="col-sm-2">
+                            <field name="begin_time"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="end_time">end_time</label>
+                        <div class="col-sm-2">
+                            <field name="end_time"/>
+                        </div>
+                    </div>
+
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>

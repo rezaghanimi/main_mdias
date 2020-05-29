@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="production_video_tree" model="ir.ui.view">
+            <field name="name">情景再现</field>
+            <field name="model">metro_park_production.video</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table" options="{'height': 'full-270'}"
+                      string=""
+                      delete="0"
+                      create="0"
+                      edit="0">
+                    <field name="machine_name" string="上传机器"/>
+                    <field name="upload_data" string="上传日期"/>
+                    <field name="ip" string="上传IP"/>
+                    <field name="attachment_id" widget="VideoField" string="播放"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="production_video_tree_form" model="ir.ui.view">
+            <field name="name">情景再现</field>
+            <field name="model">metro_park_production.video</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <sheet>
+                        <group>
+                            <field name="machine_name" string="上传机器"/>
+                            <field name="upload_data" string="上传日期"/>
+                            <field name="ip" string="上传IP"/>
+                            <field name="datas" filename="datas_fname"/>
+                            <field name="datas_fname" invisible="1"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="production_video_act" model="ir.actions.act_window">
+            <field name="name">情景再现</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">metro_park_production.video</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>

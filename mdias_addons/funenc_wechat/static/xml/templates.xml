@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<templates xml:space="preserve">
+    <t t-name="tem_enter_synchronize">
+        <div id="sy-enter-div" style="text-align: center;">
+            <h2>是否开始同步？</h2>
+            <button id="sy-enter-btn" class="layui-btn layui-btn-sm">确认</button>
+            <button id="sy-cancel-btn" class="layui-btn layui-btn-sm layui-btn-danger">取消</button>
+        </div>
+    </t>
+</templates>

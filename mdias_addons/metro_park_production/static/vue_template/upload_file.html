@@ -1,0 +1,22 @@
+<div id="production_file_app">
+    <el-upload
+      class="upload-demo"
+      ref="upload"
+      :data="upload_data"
+      action="/production/files/upload"
+      :file-list="fileList"
+      :auto-upload="false">
+      <el-button slot="trigger" size="small" type="primary">选取文件</el-button>
+      <el-button style="margin-left: 10px;" size="small" type="success" @click="submitUpload">上传到服务器</el-button>
+      <div style="margin-top: 20px;margin-bottom: 20px">
+          <span>文件类型: </span><el-select v-model="file_type" placeholder="请选择" size="small">
+            <el-option
+              v-for="item in options"
+              :key="item.id"
+              :label="item.name"
+              :value="item.id">
+            </el-option>
+          </el-select>
+      </div>
+    </el-upload>
+</div>

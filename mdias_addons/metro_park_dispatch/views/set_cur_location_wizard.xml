@@ -1,0 +1,56 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.set_cur_location_wizard_list">
+            <field name="name">set_cur_location_wizard list </field>
+            <field name="model">metro_park_dispatch.set_cur_location_wizard</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="location"/>
+                    <field name="rail"/>
+                </tree>
+            </field>
+        </record>
+
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.set_cur_location_wizard_form">
+            <field name="name">set_cur_location_wizard form </field>
+            <field name="model">metro_park_dispatch.set_cur_location_wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="location">location</label>
+                        <div class="col-sm-3">
+                            <field name="location"
+                                   options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="rail">rail</label>
+                        <div class="col-sm-3">
+                            <field name="rail"
+                                   options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <button class="btn btn-success" type="object" name="on_ok" text="确定" />
+                        <button class="btn btn-info" text="取消" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        
+        <record model="ir.actions.act_window" id="metro_park_dispatch.set_cur_location_wizard_act_window">
+            <field name="name">set_cur_location_wizard</field>
+            <field name="res_model">metro_park_dispatch.set_cur_location_wizard</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+
+
+    

@@ -1,0 +1,151 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="metro_park_base.system_config_form">
+            <field name="name">系统设置</field>
+            <field name="model">metro_park_base.system_config</field>
+            <field name="arch" type="xml">
+                <form create="false">
+
+                    <notebook>
+
+                        <page string="服务器配置">
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label"
+                                       for="calc_host">calc_host
+                                </label>
+                                <div class="col-sm-10">
+                                    <field name="calc_host"/>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label"
+                                       for="tcms_address">tcms_address
+                                </label>
+                                <div class="col-sm-10">
+                                    <field name="tcms_address"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label"
+                                       for="driver_plan_host">driver_plan_host
+                                </label>
+                                <div class="col-sm-10">
+                                    <field name="driver_plan_host"/>
+                                </div>
+                            </div>
+
+                        </page>
+
+                        <page string="收发车">
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label"
+                                       for="out_train_pre_min">
+                                    out_train_pre_min
+                                </label>
+                                <div class="col-sm-10">
+                                    <field name="out_train_pre_min"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label"
+                                       for="back_train_need_min">
+                                    back_train_need_min
+                                </label>
+                                <div class="col-sm-10">
+                                    <field name="back_train_need_min"/>
+                                </div>
+                            </div>
+
+                        </page>
+
+                        <page string="施工调度">
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label" for="auto_pull_dispatch_data">
+                                    auto_pull_dispatch_data
+                                </label>
+                                <div class="col-sm-10">
+                                    <field name="auto_pull_dispatch_data"/>
+                                </div>
+                                <label class="col-sm-2 col-form-label" for="construction_api_host">
+                                    construction_api_host
+                                </label>
+                                <div class="col-sm-10">
+                                    <field name="construction_api_host"/>
+                                </div>
+
+                                <label class="col-sm-2 col-form-label" for="construction_app_id">
+                                    construction_app_id
+                                </label>
+                                <div class="col-sm-10">
+                                    <field name="construction_app_id"/>
+                                </div>
+                                <label class="col-sm-2 col-form-label" for="construction_app_key">
+                                    construction_app_key
+                                </label>
+                                <div class="col-sm-10">
+                                    <field name="construction_app_key"/>
+                                </div>
+                            </div>
+                        </page>
+                        <page string="PMS">
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label"
+                                       for="start_pms">
+                                    start_pms
+                                </label>
+                                <div class="col-sm-10">
+                                    <field name="start_pms"/>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label"
+                                       for="pms_ip">
+                                    pms_ip
+                                </label>
+                                <div class="col-sm-10">
+                                    <field name="pms_ip"/>
+                                </div>
+                            </div>
+                        </page>
+
+                    </notebook>
+
+                    <footer>
+                        <button class="btn btn-success" special="save_and_exit" text="确定"/>
+                    </footer>
+
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="metro_park_base.system_config_act_window">
+            <field name="name">系统设置</field>
+            <field name="res_model">metro_park_base.system_config</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <record id="metro_park_base.system_config_server" model="ir.actions.server">
+            <field name="name">系统设置</field>
+            <field name="type">ir.actions.server</field>
+            <field name="model_id" ref="model_metro_park_base_system_config"/>
+            <field name="state">code</field>
+            <field name="code">
+                action = model.jump_form_edit()
+            </field>
+        </record>
+
+        <menuitem action="metro_park_base.system_config_server"
+                  id="metro_park_base.system_config_menu"
+                  name="系统配置"
+                  parent="metro_park_base.menu_root"
+                  groups="category_sys_system_configuration"/>
+    </data>
+</odoo>

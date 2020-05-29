@@ -1,0 +1,276 @@
+<div class="layui-row layui-col-space10">
+    <div class="layui-col-lg12 layui-col-md12 layui-col-sm12 schedule-list-table-wrapper" id="">
+        <div class="table-head">时刻表总览</div>
+        <table class="layui-table layui-hide" id="schedule-list-table" lay-filter="schedule-list-table"></table>
+    </div>
+    <div class="layui-col-lg12 layui-col-md12 layui-col-sm12">
+        <div class="table-head">时刻表明细</div>
+        <div class="table-search">
+            <form class="layui-form" id="mx-table-search-form">
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">车站名称</label>
+                        <div class="layui-input-block">
+                            <input class="layui-input" type="text" autocomplete="off"
+                                   name="stationName">
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">方向</label>
+                        <div class="layui-input-inline">
+                            <select class="layui-input" name="direction" autocomplete="off">
+                                <option value="">---请选择---</option>
+                                <option value="1">上行</option>
+                                <option value="-1">下行</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">车次</label>
+                        <div class="layui-input-inline">
+                            <input class="layui-input" type="text" autocomplete="off"
+                                   name="fullTrainNo">
+                        </div>
+                    </div>
+                    <!--<div class="layui-inline">-->
+                    <!--<label class="layui-form-label">始发站名</label>-->
+                    <!--<div class="layui-input-inline">-->
+                    <!--<input class="layui-input" type="text" autocomplete="off"-->
+                    <!--name="startStation">-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="layui-inline">-->
+                    <!--<label class="layui-form-label">终到站名</label>-->
+                    <!--<div class="layui-input-inline">-->
+                    <!--<input class="layui-input" type="text" autocomplete="off"-->
+                    <!--name="endStation">-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="layui-inline">-->
+                    <!--<label class="layui-form-label">停站股道</label>-->
+                    <!--<div class="layui-input-inline">-->
+                    <!--<input class="layui-input" type="text" autocomplete="off"-->
+                    <!--name="trailNo">-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <div class="layui-inline table-search-btn-groups">
+                        <button class="layui-btn layui-btn-sm"
+                                lay-submit lay-filter="mx-search-btn" id="mx-search-btn">查询
+                        </button>
+                        <button class="layui-btn layui-btn-sm"
+                                lay-submit lay-filter="mx-reset-btn" id="mx-reset-btn">重置
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <table class="layui-table" id="schedule-mx-list-table" lay-filter="schedule-mx-list-table"></table>
+    </div>
+</div>
+<div id="uploadTrainSchedule" style="display: none">
+    <form class="layui-form uploadTrainSchedule" lay-filter="uploadTrainSchedule-form"
+          style="margin-top: 10px; padding: 20px">
+        <div class="layui-form-item">
+            <label class="layui-form-label">时刻表编号</label>
+            <div class="layui-input-block">
+                <input type="text" name="scheduleNo"
+                       required lay-verify="required"
+                       maxlength="50"
+                       placeholder="请输入运行图编号"
+                       autocomplete="off"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">运行图编号</label>
+            <div class="layui-input-block">
+                <input type="text" name="trainDiagramNo"
+                       required lay-verify="required"
+                       maxlength="50"
+                       placeholder="请输入运行图编号"
+                       autocomplete="off"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">上传时刻表</label>
+            <div class="layui-upload">
+                <button type="button" class="layui-btn layui-btn-normal" id="schedule-file">选择文件
+                </button>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block form-button">
+                <button class="layui-btn layui-hide" name="submit"
+                        id="submit-uploadTrainSchedule-form"
+                        lay-submit lay-filter="submit-uploadTrainSchedule-form">上传
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+<div id="mx-tplt" style="display: none">
+    <form class="layui-form uploadTrainSchedule" lay-filter="uploadTrainSchedule-form"
+          style="margin-top: 10px; padding: 20px">
+        <div class="layui-form-item">
+            <label class="layui-form-label">车站</label>
+            <div class="layui-input-block">
+                <input type="text" name="station"
+                       lay-verify="required"
+                       maxlength="50"
+                       autocomplete="off"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">方向</label>
+            <div class="layui-input-block">
+                <select class="layui-input" name="direction" autocomplete="off">
+                    <option value="">---请选择---</option>
+                    <option value="0">上行</option>
+                    <option value="1">下行</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">车次</label>
+            <div class="layui-input-block">
+                <input type="text" name="no"
+                       lay-verify="required"
+                       maxlength="50"
+                       autocomplete="off"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">始发站名</label>
+            <div class="layui-input-block">
+                <input type="text" name="start"
+                       required lay-verify="required"
+                       maxlength="50"
+                       autocomplete="off"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">终到站名</label>
+            <div class="layui-input-block">
+                <input type="text" name="scheduleNo"
+                       required lay-verify="required"
+                       maxlength="50"
+                       autocomplete="off"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">到点</label>
+            <div class="layui-input-block">
+                <input type="text" name="arrivalTime"
+                       lay-verify="required"
+                       maxlength="50"
+                       autocomplete="off"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">发点</label>
+            <div class="layui-input-block">
+                <input type="text" name="departureTime"
+                       lay-verify="required"
+                       maxlength="50"
+                       autocomplete="off"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">停站时间</label>
+            <div class="layui-input-block">
+                <input type="text" name="parkTime"
+                       required lay-verify="required"
+                       maxlength="50"
+                       autocomplete="off"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">停站股道</label>
+            <div class="layui-input-block">
+                <input type="text" name="trailNo"
+                       required lay-verify="required"
+                       maxlength="50"
+                       placeholder="请输入运行图编号"
+                       autocomplete="off"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block form-button">
+                <button class="layui-btn layui-hide" name="submit"
+                        id="mx-submit"
+                        lay-submit lay-filter="mx-submit">提交
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+<script type="text/html" id="list-toolbar">
+    <div class="layui-row">
+        <div class="layui-col-12">
+            <button class="layui-btn layui-btn-sm" lay-event="import">
+                上传时刻表
+            </button>
+            <div class="layui-input-inline search-div">
+                <input class="layui-input driver-input" type="text" name="search" autocomplete="off" id="search"
+                       placeholder="输入时刻表编号或者上传人"
+                       style="padding-right: 30px">
+                <i class="layui-icon layui-icon-search train-schedule-icon" lay-event="search"></i>
+            </div>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="list-bar">
+    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>
+<script type="text/html" id="mx-list-bar">
+    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>
+<script type="text/javascript" src="modules/train-schedule.js"></script>
+<style>
+    .driver-input {
+        height: 30px;
+        margin-left: 15px;
+    }
+
+    .train-schedule-icon {
+        position: absolute;
+        font-size: 20px;
+        top: 2px;
+        right: -9px;
+        cursor: pointer;
+    }
+
+    .table-head {
+        line-height: 40px;
+        height: 40px;
+        padding-left: 12px;
+        background: #f2f2f2;
+    }
+
+    .layui-table, .layui-table-view {
+        margin: 0 0;
+    }
+
+    .table-search {
+        margin-top: 15px;
+    }
+
+    .search-div {
+        width: 230px;
+    }
+
+    .table-search-btn-groups {
+        text-align: center;
+    }
+</style>

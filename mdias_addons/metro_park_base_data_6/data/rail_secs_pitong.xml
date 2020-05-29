@@ -1,0 +1,1396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="pi_tong_1G" model="metro_park_base.rails_sec">
+            <field name="no">1G</field>
+            <field name="alias">洗车线</field>
+            <field name="usage">洗车线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_wash" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_2G" model="metro_park_base.rails_sec">
+            <field name="no">2G</field>
+            <field name="alias">2G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_3G" model="metro_park_base.rails_sec">
+            <field name="no">3G</field>
+            <field name="alias">3G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_4G" model="metro_park_base.rails_sec">
+            <field name="no">4G</field>
+            <field name="alias">4G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_5G" model="metro_park_base.rails_sec">
+            <field name="no">5G</field>
+            <field name="alias">5G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_6G" model="metro_park_base.rails_sec">
+            <field name="no">6G</field>
+            <field name="alias">6G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_7G" model="metro_park_base.rails_sec">
+            <field name="no">7G</field>
+            <field name="alias">7G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_8G" model="metro_park_base.rails_sec">
+            <field name="no">8G</field>
+            <field name="alias">8G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_9G" model="metro_park_base.rails_sec">
+            <field name="no">9G</field>
+            <field name="alias">9G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_10G" model="metro_park_base.rails_sec">
+            <field name="no">10G</field>
+            <field name="alias">10G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_11G" model="metro_park_base.rails_sec">
+            <field name="no">11G</field>
+            <field name="alias">11G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_12G" model="metro_park_base.rails_sec">
+            <field name="no">12G</field>
+            <field name="alias">12G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_13G" model="metro_park_base.rails_sec">
+            <field name="no">13G</field>
+            <field name="alias">13G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_14G" model="metro_park_base.rails_sec">
+            <field name="no">14G</field>
+            <field name="alias">14G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_15G" model="metro_park_base.rails_sec">
+            <field name="no">15G</field>
+            <field name="alias">15G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_16G" model="metro_park_base.rails_sec">
+            <field name="no">16G</field>
+            <field name="alias">16G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_16G" model="metro_park_base.rails_sec">
+            <field name="no">16G</field>
+            <field name="alias">16G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_17G" model="metro_park_base.rails_sec">
+            <field name="no">17G</field>
+            <field name="alias">17G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_18G" model="metro_park_base.rails_sec">
+            <field name="no">18G</field>
+            <field name="alias">18G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_19G" model="metro_park_base.rails_sec">
+            <field name="no">19G</field>
+            <field name="alias">19G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_20G" model="metro_park_base.rails_sec">
+            <field name="no">20G</field>
+            <field name="alias">20G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_21G" model="metro_park_base.rails_sec">
+            <field name="no">21G</field>
+            <field name="alias">21G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_22G" model="metro_park_base.rails_sec">
+            <field name="no">22G</field>
+            <field name="alias">22G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_23G" model="metro_park_base.rails_sec">
+            <field name="no">23G</field>
+            <field name="alias">23G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_24G" model="metro_park_base.rails_sec">
+            <field name="no">24G</field>
+            <field name="alias">24G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_25G" model="metro_park_base.rails_sec">
+            <field name="no">25G</field>
+            <field name="alias">25G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_26G" model="metro_park_base.rails_sec">
+            <field name="no">26G</field>
+            <field name="alias">26G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_27G" model="metro_park_base.rails_sec">
+            <field name="no">27G</field>
+            <field name="alias">27G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_28G" model="metro_park_base.rails_sec">
+            <field name="no">28G</field>
+            <field name="alias">28G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_29G" model="metro_park_base.rails_sec">
+            <field name="no">29G</field>
+            <field name="alias">29G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_30G" model="metro_park_base.rails_sec">
+            <field name="no">30G</field>
+            <field name="alias">30G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_31G" model="metro_park_base.rails_sec">
+            <field name="no">31G</field>
+            <field name="alias">31G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_32G" model="metro_park_base.rails_sec">
+            <field name="no">32G</field>
+            <field name="alias">32G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_33G" model="metro_park_base.rails_sec">
+            <field name="no">33G</field>
+            <field name="alias">33G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_34G" model="metro_park_base.rails_sec">
+            <field name="no">34G</field>
+            <field name="alias">34G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_35G" model="metro_park_base.rails_sec">
+            <field name="no">35G</field>
+            <field name="alias">35G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_36G" model="metro_park_base.rails_sec">
+            <field name="no">36G</field>
+            <field name="alias">36G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_37G" model="metro_park_base.rails_sec">
+            <field name="no">37G</field>
+            <field name="alias">37G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_38G" model="metro_park_base.rails_sec">
+            <field name="no">38G</field>
+            <field name="alias">38G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_39G" model="metro_park_base.rails_sec">
+            <field name="no">39G</field>
+            <field name="alias">39G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_40G" model="metro_park_base.rails_sec">
+            <field name="no">40G</field>
+            <field name="alias">40G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_41G" model="metro_park_base.rails_sec">
+            <field name="no">41G</field>
+            <field name="alias">41G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_42G" model="metro_park_base.rails_sec">
+            <field name="no">42G</field>
+            <field name="alias">42G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_43G" model="metro_park_base.rails_sec">
+            <field name="no">43G</field>
+            <field name="alias">43G</field>
+            <field name="usage">停车列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_44G" model="metro_park_base.rails_sec">
+            <field name="no">44G</field>
+            <field name="alias">44G</field>
+            <field name="usage">工程车线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_construction_vehicle" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_45G" model="metro_park_base.rails_sec">
+            <field name="no">45G</field>
+            <field name="alias">45G</field>
+            <field name="usage">工程车线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_construction_vehicle" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_46G" model="metro_park_base.rails_sec">
+            <field name="no">46G</field>
+            <field name="alias">46G</field>
+            <field name="usage">材料线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_material" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_47G" model="metro_park_base.rails_sec">
+            <field name="no">47G</field>
+            <field name="alias">47G</field>
+            <field name="usage">周月检线</field>
+            <field name="rail_type" ref="metro_park_base.week_month_check_Line" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_48G" model="metro_park_base.rails_sec">
+            <field name="no">48G</field>
+            <field name="alias">48G</field>
+            <field name="usage">周月检线</field>
+            <field name="rail_type" ref="metro_park_base.week_month_check_Line" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_49G" model="metro_park_base.rails_sec">
+            <field name="no">49G</field>
+            <field name="alias">49G</field>
+            <field name="usage">周月检线</field>
+            <field name="rail_type" ref="metro_park_base.week_month_check_Line" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_50G" model="metro_park_base.rails_sec">
+            <field name="no">50G</field>
+            <field name="alias">50G</field>
+            <field name="usage">周月检线</field>
+            <field name="rail_type" ref="metro_park_base.week_month_check_Line" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_51G" model="metro_park_base.rails_sec">
+            <field name="no">51G</field>
+            <field name="alias">51G</field>
+            <field name="usage">静调线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_static_ajust" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_52G" model="metro_park_base.rails_sec">
+            <field name="no">52G</field>
+            <field name="alias">52G</field>
+            <field name="usage">定临修线</field>
+            <field name="rail_type" ref="rail_type_fixed_and_tmp_repair" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_53G" model="metro_park_base.rails_sec">
+            <field name="no">53G</field>
+            <field name="alias">53G</field>
+            <field name="usage">定临修线</field>
+            <field name="rail_type" ref="rail_type_fixed_and_tmp_repair" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_54G" model="metro_park_base.rails_sec">
+            <field name="no">54G</field>
+            <field name="alias">54G</field>
+            <field name="usage">定临修线</field>
+            <field name="rail_type" ref="rail_type_fixed_and_tmp_repair" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_55G" model="metro_park_base.rails_sec">
+            <field name="no">55G</field>
+            <field name="alias">55G</field>
+            <field name="usage">定临修线</field>
+            <field name="rail_type" ref="rail_type_fixed_and_tmp_repair" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_56G" model="metro_park_base.rails_sec">
+            <field name="no">56G</field>
+            <field name="alias">56G</field>
+            <field name="usage">调机车线</field>
+            <field name="rail_type" ref="rail_type_locomotive" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_57G" model="metro_park_base.rails_sec">
+            <field name="no">57G</field>
+            <field name="alias">57G</field>
+            <field name="usage">调机车线</field>
+            <field name="rail_type" ref="rail_type_locomotive" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_58G" model="metro_park_base.rails_sec">
+            <field name="no">58G</field>
+            <field name="alias">58G</field>
+            <field name="usage">不落镟轮线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_wheel"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">0</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="pi_tong_61G" model="metro_park_base.rails_sec">
+            <field name="no">61G</field>
+            <field name="alias">卸车线</field>
+            <field name="usage">卸车线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_download_train" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="pi_tong_D2G" model="metro_park_base.rails_sec">
+            <field name="no">D2G</field>
+            <field name="alias">牵2</field>
+            <field name="usage">牵出线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_pull_out" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="pi_tong_D4G" model="metro_park_base.rails_sec">
+            <field name="no">D4G</field>
+            <field name="alias">牵4</field>
+            <field name="usage">牵出线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_pull_out" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="pi_tong_D22G" model="metro_park_base.rails_sec">
+            <field name="no">D22G</field>
+            <field name="alias">D22G</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_D30G" model="metro_park_base.rails_sec">
+            <field name="no">D30G</field>
+            <field name="alias">D30G</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+
+        <record id="pi_tong_T1101G" model="metro_park_base.rails_sec">
+            <field name="no">T1101G</field>
+            <field name="alias">转换轨2</field>
+            <field name="usage">出转换轨</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_exchange" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_T1103G" model="metro_park_base.rails_sec">
+            <field name="no">T1103G</field>
+            <field name="alias">T1103G</field>
+            <field name="usage">出段线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_out_sec" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_T1126G" model="metro_park_base.rails_sec">
+            <field name="no">T1126G</field>
+            <field name="alias">转换轨1</field>
+            <field name="usage">入转换轨</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_exchange" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_T1124G" model="metro_park_base.rails_sec">
+            <field name="no">T1124G</field>
+            <field name="alias">T1124G</field>
+            <field name="usage">入段线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_back_sec" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_16/D50WG" model="metro_park_base.rails_sec">
+            <field name="no">16/D50WG</field>
+            <field name="alias">16/D50WG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_100/102WG" model="metro_park_base.rails_sec">
+            <field name="no">100/102WG</field>
+            <field name="alias">100/102WG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_100/106WG" model="metro_park_base.rails_sec">
+            <field name="no">100/106WG</field>
+            <field name="alias">100/106WG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_114/116WG" model="metro_park_base.rails_sec">
+            <field name="no">114/116WG</field>
+            <field name="alias">114/116WG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_114/D36WG" model="metro_park_base.rails_sec">
+            <field name="no">114/D36WG</field>
+            <field name="alias">114/D36WG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_124/D34WG" model="metro_park_base.rails_sec">
+            <field name="no">124/D34WG</field>
+            <field name="alias">124/D34WG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_126/128WG" model="metro_park_base.rails_sec">
+            <field name="no">126/128WG</field>
+            <field name="alias">126/128WG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_2-126DG" model="metro_park_base.rails_sec">
+            <field name="no">2-126DG</field>
+            <field name="alias">2-126DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_4DG" model="metro_park_base.rails_sec">
+            <field name="no">4DG</field>
+            <field name="alias">4DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_6DG" model="metro_park_base.rails_sec">
+            <field name="no">6DG</field>
+            <field name="alias">6DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_8-14DG" model="metro_park_base.rails_sec">
+            <field name="no">8-14DG</field>
+            <field name="alias">8-14DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_10-12DG" model="metro_park_base.rails_sec">
+            <field name="no">10-12DG</field>
+            <field name="alias">10-12DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_16DG" model="metro_park_base.rails_sec">
+            <field name="no">16DG</field>
+            <field name="alias">16DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_18-48DG" model="metro_park_base.rails_sec">
+            <field name="no">18-48DG</field>
+            <field name="alias">18-48DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_22DG" model="metro_park_base.rails_sec">
+            <field name="no">22DG</field>
+            <field name="alias">22DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_24-26DG" model="metro_park_base.rails_sec">
+            <field name="no">24-26DG</field>
+            <field name="alias">24-26DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_28-30DG" model="metro_park_base.rails_sec">
+            <field name="no">28-30DG</field>
+            <field name="alias">28-30DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_32-34DG" model="metro_park_base.rails_sec">
+            <field name="no">32-34DG</field>
+            <field name="alias">32-34DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_38-42DG" model="metro_park_base.rails_sec">
+            <field name="no">38-42DG</field>
+            <field name="alias">38-42DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_44-46DG" model="metro_park_base.rails_sec">
+            <field name="no">44-46DG</field>
+            <field name="alias">44-46DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_50-52DG" model="metro_park_base.rails_sec">
+            <field name="no">50-52DG</field>
+            <field name="alias">50-52DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_54-56DG" model="metro_park_base.rails_sec">
+            <field name="no">54-56DG</field>
+            <field name="alias">54-56DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_58-100DG" model="metro_park_base.rails_sec">
+            <field name="no">58-100DG</field>
+            <field name="alias">58-100DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_62-64DG" model="metro_park_base.rails_sec">
+            <field name="no">62-64DG</field>
+            <field name="alias">62-64DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_66-68DG" model="metro_park_base.rails_sec">
+            <field name="no">66-68DG</field>
+            <field name="alias">66-68DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_70-72DG" model="metro_park_base.rails_sec">
+            <field name="no">70-72DG</field>
+            <field name="alias">70-72DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_74-76DG" model="metro_park_base.rails_sec">
+            <field name="no">74-76DG</field>
+            <field name="alias">74-76DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_78-90DG" model="metro_park_base.rails_sec">
+            <field name="no">78-90DG</field>
+            <field name="alias">78-90DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_82-84DG" model="metro_park_base.rails_sec">
+            <field name="no">82-84DG</field>
+            <field name="alias">82-84DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_86-88DG" model="metro_park_base.rails_sec">
+            <field name="no">86-88DG</field>
+            <field name="alias">86-88DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_92-94DG" model="metro_park_base.rails_sec">
+            <field name="no">92-94DG</field>
+            <field name="alias">92-94DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_96-98DG" model="metro_park_base.rails_sec">
+            <field name="no">96-98DG</field>
+            <field name="alias">96-98DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_102-104DG" model="metro_park_base.rails_sec">
+            <field name="no">102-104DG</field>
+            <field name="alias">102-104DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_106-110DG" model="metro_park_base.rails_sec">
+            <field name="no">106-110DG</field>
+            <field name="alias">106-110DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_114DG" model="metro_park_base.rails_sec">
+            <field name="no">114DG</field>
+            <field name="alias">114DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_116-122DG" model="metro_park_base.rails_sec">
+            <field name="no">116-122DG</field>
+            <field name="alias">116-122DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_128DG" model="metro_park_base.rails_sec">
+            <field name="no">128DG</field>
+            <field name="alias">128DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="pi_tong_130DG" model="metro_park_base.rails_sec">
+            <field name="no">130DG</field>
+            <field name="alias">130DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="pi_tong" />
+            <field name="electric_live">1</field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model="ir.actions.server" id="change_can_login">
+            <field name="name">变更扫码登录权限</field>
+            <field name="state">code</field>
+            <field name="type">ir.actions.server</field>
+            <field name="model_id" ref="model_funenc_wechat_user"/>
+            <field name="condition">True</field>
+            <field name="binding_model_id" ref="model_funenc_wechat_user"/>
+            <field name="binding_type">action</field>
+            <field name="code">
+                model.change_can_login()
+            </field>
+        </record>
+
+        <record id="view_wechat_user_tree" model="ir.ui.view">
+            <field name="name">企业微信用户列表</field>
+            <field name="model">funenc.wechat.user</field>
+            <field name="type">kanban</field>
+            <field name="arch" type="xml">
+                <tree options='{"height": "full-300"}'
+                      create="false"
+                      delete="false"
+                      import="false"
+                      limit="30"
+                      js_class="left_department_user_tree" width="120">
+                    <field name="wx_userid" />
+                    <field name="name"/>
+                     <field name="first_department_id" width="120" string="当前部门"/>
+                    <field name="department_ids" width="240" widget="many2many_tags" string="部门"/>
+                    <field name="job"/>
+                    <field name="can_login" width="120"/>
+                    <field name="user_state"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_wechat_user_form" model="ir.ui.view">
+            <field name="name">企业微信用户详情</field>
+            <field name="model">funenc.wechat.user</field>
+            <field name="arch" type="xml">
+                <form create="false" delete="false" import="false">
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="wx_userid">wx_userid</label>
+                        <div class="col-sm-3">
+                            <field name="wx_userid"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="account_id">account_id</label>
+                        <div class="col-sm-3">
+                            <field name="account_id"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="name">name</label>
+                        <div class="col-sm-3">
+                            <field name="name"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="user_id">user_id</label>
+                        <div class="col-sm-3">
+                            <field name="user_id"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="job">job</label>
+                        <div class="col-sm-3">
+                            <field name="job"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="can_login">can_login</label>
+                        <div class="col-sm-3">
+                            <field name="can_login"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="user_state">user_state</label>
+                        <div class="col-sm-3">
+                            <field name="user_state"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="department_ids">department_ids</label>
+                        <div class="col-sm-3">
+                            <field name="department_ids" widget="many2many_tags"/>
+                        </div>
+                    </div>
+
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>

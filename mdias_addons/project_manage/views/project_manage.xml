@@ -1,0 +1,153 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="project_manage.project_manage_list">
+            <field name="name">项目管理</field>
+            <field name="model">project_manage.project_manage</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table" options="{'height': 'full-260'}">
+                    <field name="name"/>
+                    <field name="plan_start_date"/>
+                    <field name="plan_end_date"/>
+                    <field name="project_info"/>
+                    <field name="responsible"/>
+                    <field name="cur_progress"/>
+                    <field name="finish_date"/>
+                    <field name="report_content"/>
+                    <field name="project_type"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="project_manage.project_manage_audit_list">
+            <field name="name">项目审批</field>
+            <field name="model">project_manage.project_manage</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table" options="{'height': 'full-260'}" create="0" import="0">
+                    <field name="name"/>
+                    <field name="plan_start_date"/>
+                    <field name="plan_end_date"/>
+                    <field name="project_info"/>
+                    <field name="responsible"/>
+                    <field name="cur_progress"/>
+                    <field name="finish_date"/>
+                    <field name="report_content"/>
+                    <field name="project_type"/>
+                    <field name="state"/>
+                    <field name="button"
+                           width="160"
+                           widget="template_widget"
+                           options="{'template': 'project_btns'}"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="project_manage.project_manage_form">
+            <field name="name">项目管理</field>
+            <field name="model">project_manage.project_manage</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label" for="name">name</label>
+                        <div class="col-sm-6">
+                            <field name="name"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label" for="plan_start_date">plan_start_date</label>
+                        <div class="col-sm-6">
+                            <field name="plan_start_date"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label" for="plan_end_date">plan_end_date</label>
+                        <div class="col-sm-6">
+                            <field name="plan_end_date"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label" for="project_info">project_info</label>
+                        <div class="col-sm-6">
+                            <field name="project_info"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label" for="responsible">project_info</label>
+                        <div class="col-sm-6">
+                            <field name="responsible"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label" for="cur_progress">cur_progress</label>
+                        <div class="col-sm-6">
+                            <field name="cur_progress"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label" for="finish_date">finish_date</label>
+                        <div class="col-sm-6">
+                            <field name="finish_date"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label" for="report_content">report_content</label>
+                        <div class="col-sm-6">
+                            <field name="report_content">
+                                <tree options="{'height': 200}" js_class="fnt_table">
+                                    <field name="report_time"/>
+                                    <field name="content"/>
+                                    <field name="send_to_master"/>
+                                </tree>
+                            </field>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label" for="project_type">project_type</label>
+                        <div class="col-sm-6">
+                            <field name="project_type"/>
+                        </div>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="project_manage.project_manage_act_window">
+            <field name="name">项目管理</field>
+            <field name="res_model">project_manage.project_manage</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="project_manage.project_manage_act_window">
+            <field name="name">项目管理</field>
+            <field name="res_model">project_manage.project_manage</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_ids" eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'tree', 'view_id': ref('project_manage.project_manage_list')}),
+                          (0, 0, {'view_mode': 'form', 'view_id': ref('project_manage.project_manage_form')})]"/>
+        </record>
+s
+        <record model="ir.actions.act_window" id="project_manage.project_manage_audit_act_window">
+            <field name="name">项目审批</field>
+            <field name="res_model">project_manage.project_manage</field>
+            <field name="domain">[('state', 'in', ['draft', 'reject'])]</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_ids" eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'tree', 'view_id': ref('project_manage.project_manage_audit_list')}),
+                          (0, 0, {'view_mode': 'form', 'view_id': ref('project_manage.project_manage_form')})]"/>
+        </record>
+
+        <menuitem action="project_manage.project_manage_act_window"
+                  id="project_manage.project_manage_menu"
+                  name="项目管理"
+                  parent="project_manage.menu_root"/>
+
+        <menuitem action="project_manage.project_manage_audit_act_window"
+                  id="project_manage.project_manage_audit_menu"
+                  name="项目审批"
+                  groups="group_project_manage_service_project_edit_page_look"
+                  parent="project_manage.menu_root"/>
+    </data>
+</odoo>
+    

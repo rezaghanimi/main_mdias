@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="department_property_work_class" model="funenc_wechat.property">
+            <field name="name">作业工班</field>
+        </record>
+
+        <record id="department_property_work_shop" model="funenc_wechat.property">
+            <field name="name">作业车间</field>
+        </record>
+
+        <record id="department_property_work_department" model="funenc_wechat.property">
+            <field name="name">作业部门</field>
+        </record>
+
+        <record id="department_property_balance_work_class" model="funenc_wechat.property">
+            <field name="name">均衡修工班</field>
+        </record>
+
+        <record id="department_property_miles_work_class" model="funenc_wechat.property">
+            <field name="name">里程修工班</field>
+        </record>
+
+    </data>
+</odoo>

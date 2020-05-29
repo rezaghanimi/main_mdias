@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="app_metro_search" model="ir.ui.view">
+            <field name="name">app.metro.search</field>
+            <field name="model">ir.module.module</field>
+            <field name="inherit_id" ref="base.view_module_filter"/>
+            <field name="arch" type="xml">
+                <filter name="app" position="after">
+                    <filter name="funenc_category" string="Fuenc" domain="[('category_id.name', 'ilike', 'funenc')]"/>
+                </filter>
+            </field>
+        </record>
+
+        <record id="base.open_module_tree" model="ir.actions.act_window">
+            <field name="context">{'search_default_funenc_category':1}</field>
+        </record>
+
+    </data>
+</odoo>

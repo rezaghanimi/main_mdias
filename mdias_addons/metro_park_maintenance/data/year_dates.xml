@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <!--  初始化日期  -->
+      <function id="init_year_dates"
+                model="metro_park_maintenance.year_dates"
+                name="init_dates"
+                eval="[]"/>
+
+    </data>
+</odoo>

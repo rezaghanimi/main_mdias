@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="report_client">
+
+    <div id="report_body"
+         style="display:grid;grid-template-columns: 33.33% 33.33% 33.33%; grid-template-rows:33% 33% auto;height:100%; ">
+
+    <div class="chartblock" style="display:none">
+        <div class="t">调度计划统计</div>
+        <div class="body" id="chart15"
+             style="display:grid;grid-template-columns: 50% 50%; grid-template-rows:50% 50%;padding:50px;">
+            <div class='plaininfo'>
+                <p>接车</p>
+                <p id="receive">5</p>
+            </div>
+            <div class='plaininfo'>
+                <p>发车</p>
+                <p id="send">7</p>
+            </div>
+            <div class='plaininfo'>
+                <p>调车辆数</p>
+                <p id="dispatch_num">6</p>
+            </div>
+            <div class='plaininfo'>
+                <p>调车钩数</p>
+                <p id="route_num">7</p>
+            </div>
+        </div>
+    </div>
+        <div class="chartblock" style="display:none">
+    <div class="t">收/发车趋势图</div>
+            <div class="body" id="chart14">
+        </div>
+    </div>
+        <div class="chartblock">
+        <div class="t">调车计划数量分布</div>
+            <div class="body" id="chart13">
+            </div>
+    </div>
+        <div class="chartblock">
+        <div class="t">昨日生产指标</div>
+            <div class="body" id="chart12"/>
+    </div>
+        <div class="chartblock">
+        <div class="t">上周施工计划各部门完成情况</div>
+            <div class="body" id="chart11"/>
+     </div>
+        <div class="chartblock" style="display:none">
+        <div class="t">施工计划时间使用率</div>
+            <div class="body" id="chart10"/>
+    </div>
+        <div class="chartblock" style="display:none">
+        <div class="t">施工计划分布图</div>
+            <div class="body" id="chart9"/>
+    </div>
+        <div class="chartblock">
+    <div class="t">当日运用车情况</div>
+            <div class="body" id="chart8"/>
+    </div>
+        <div class="chartblock">
+        <div class="t">上周施工作业区域次数TOP</div>
+            <div class="body" id="chart7"/>
+    </div>
+        <div class="chartblock">
+        <div class="t">上周各部门施工计划类型数量</div>
+            <div class="body" id="chart6">
+
+        </div>
+    </div>
+        <div class="chartblock" style="display:none">
+        <div class="t">计划统计</div>
+            <div class="body" id="chart5">
+        </div>
+    </div>
+        <div class="chartblock">
+        <div class="t">上周检修班组任务执行状态统计</div>
+            <div class="body" id="chart4">
+        </div>
+    </div>
+        <div class="chartblock" style="display:none">
+        <div class="t">班组执行修程统计</div>
+            <div class="body" id="chart3"/>
+     </div>
+        <div class="chartblock">
+        <div class="t">本月检修作业段内作业需求</div>
+            <div class="body" id="chart1">
+        </div>
+    </div>
+        <div class="chartblock">
+        <div class="t">本月修程均衡统计</div>
+            <div class="body" id="chart2">
+        </div>
+    </div>
+    </div>
+
+    </t>
+
+</templates>
+
+

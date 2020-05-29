@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+access_project_manage_project_manage,project_manage.project_manage,model_project_manage_project_manage,,1,1,1,1
+
+access_project_manage_report_content,project_manage.report_content,model_project_manage_report_content,,1,1,1,1
+
+access_project_manage_project_type,project_manage.project_type,model_project_manage_project_type,,1,1,1,1

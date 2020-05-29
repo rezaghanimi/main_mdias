@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="action_funenc_style_settings" model="ir.actions.act_window">
+            <field name="name">主题配置</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">funenc_theme.funenc_system_style</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">['|',('active', '=', True), ('active', '=', False)]</field>
+        </record>
+
+        <menuitem id="menu_theme_style_config"
+                  name="主题配置"
+                  parent="base.menu_administration"
+                  action="action_funenc_style_settings"
+                  sequence="5"/>
+    </data>
+</odoo>

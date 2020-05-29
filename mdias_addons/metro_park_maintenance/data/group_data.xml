@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data noupdate="0">
+        <record model="ir.module.category" id="category_car_service_root">
+            <field name="name">车辆检修</field>
+        </record>
+
+        <!--年/月/周/日计划编制-->
+        <record model="ir.module.category" id="category_car_service_flow_plan_compile">
+            <field name="name">年/月/周/日计划编制</field>
+            <field name="parent_id" ref="category_car_service_root"/>
+        </record>
+
+        <record model="ir.module.category" id="category_car_service_flow_plan_compile_year">
+            <field name="name">年计划</field>
+            <field name="parent_id" ref="category_car_service_flow_plan_compile"/>
+        </record>
+
+        <record model="res.groups" id="group_car_service_flow_plan_compile_year_page_look">
+            <field name="name">查看页面</field>
+            <field name="category_id" ref="category_car_service_flow_plan_compile_year"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_car_service_flow_plan_compile_year_edit_plan">
+            <field name="name">调整计划</field>
+            <field name="category_id" ref="category_car_service_flow_plan_compile_year"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="ir.module.category" id="category_car_service_flow_plan_compile_month">
+            <field name="name">月计划</field>
+            <field name="parent_id" ref="category_car_service_flow_plan_compile"/>
+        </record>
+
+        <record model="res.groups" id="group_car_service_flow_plan_compile_month_page_look">
+            <field name="name">查看页面</field>
+            <field name="category_id" ref="category_car_service_flow_plan_compile_month"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_car_service_flow_plan_compile_month_edit_plan">
+            <field name="name">调整计划</field>
+            <field name="category_id" ref="category_car_service_flow_plan_compile_month"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="ir.module.category" id="category_car_service_flow_plan_compile_week">
+            <field name="name">周计划</field>
+            <field name="parent_id" ref="category_car_service_flow_plan_compile"/>
+        </record>
+
+        <record model="res.groups" id="group_car_service_flow_plan_compile_week_page_look">
+            <field name="name">查看页面</field>
+            <field name="category_id" ref="category_car_service_flow_plan_compile_week"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_car_service_flow_plan_compile_week_edit_plan">
+            <field name="name">调整计划</field>
+            <field name="category_id" ref="category_car_service_flow_plan_compile_week"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="ir.module.category" id="category_car_service_flow_plan_compile_day">
+            <field name="name">日计划</field>
+            <field name="parent_id" ref="category_car_service_flow_plan_compile"/>
+        </record>
+
+        <record model="res.groups" id="group_car_service_flow_plan_compile_day_page_look">
+            <field name="name">查看页面</field>
+            <field name="category_id" ref="category_car_service_flow_plan_compile_day"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_car_service_flow_plan_compile_day_edit_plan">
+            <field name="name">调整计划</field>
+            <field name="category_id" ref="category_car_service_flow_plan_compile_day"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_car_service_log_record">
+            <field name="name">日志记录</field>
+            <field name="category_id" ref="category_car_service_flow_plan_compile"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <!-- 检修工单管理 -->
+        <record model="ir.module.category" id="category_car_service_flow_work_order">
+            <field name="name">检修工单管理</field>
+            <field name="parent_id" ref="category_car_service_root"/>
+        </record>
+
+        <record model="res.groups" id="group_car_service_flow_work_order_page_look">
+            <field name="name">显示页面</field>
+            <field name="category_id" ref="category_car_service_flow_work_order"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_car_service_flow_work_order_assign_work">
+            <field name="name">派工</field>
+            <field name="category_id" ref="category_car_service_flow_work_order"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_car_service_flow_work_order_start_work">
+            <field name="name">开工</field>
+            <field name="category_id" ref="category_car_service_flow_work_order"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_car_service_flow_work_order_finish_work">
+            <field name="name">完工</field>
+            <field name="category_id" ref="category_car_service_flow_work_order"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_car_service_flow_work_order_finish_work_confirm">
+            <field name="name">完工确认</field>
+            <field name="category_id" ref="category_car_service_flow_work_order"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_car_service_flow_work_order_force_close">
+            <field name="name">强制关闭</field>
+            <field name="category_id" ref="category_car_service_flow_work_order"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_car_service_flow_work_order_order_cancellation">
+            <field name="name">工单作废</field>
+            <field name="category_id" ref="category_car_service_flow_work_order"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_car_service_flow_work_order_receive_report">
+            <field name="name">接报</field>
+            <field name="category_id" ref="category_car_service_flow_work_order"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_car_service_flow_work_order_forwarding_report">
+            <field name="name">转报</field>
+            <field name="category_id" ref="category_car_service_flow_work_order"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_car_service_flow_work_order_edit">
+            <field name="name">编辑</field>
+            <field name="category_id" ref="category_car_service_flow_work_order"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <!-- 车辆设备管理 -->
+        <record model="res.groups" id="category_car_equipment_management">
+            <field name="name">车辆设备管理</field>
+            <field name="atomic">True</field>
+            <field name="category_id" ref="category_car_service_root"/>
+        </record>
+
+        <!-- 修程配置 -->
+        <record model="res.groups" id="category_car_repairing_the_configuration">
+            <field name="name">修程配置</field>
+            <field name="atomic">True</field>
+            <field name="category_id" ref="category_car_service_root"/>
+        </record>
+
+        <!-- 修次配置 -->
+        <record model="res.groups" id="category_car_repair_time_configuration">
+            <field name="name">修次配置</field>
+            <field name="atomic">True</field>
+            <field name="category_id" ref="category_car_service_root"/>
+        </record>
+
+        <!-- 检技通管理 -->
+        <record model="res.groups" id="category_inspection_technology_management">
+            <field name="name">检技通管理</field>
+            <field name="atomic">True</field>
+            <field name="category_id" ref="category_car_service_root"/>
+        </record>
+
+        <!-- 车辆公里数录入 -->
+        <record model="res.groups" id="category_vehicle_mileage_is_recorded">
+            <field name="name">车辆公里数录入</field>
+            <field name="atomic">True</field>
+            <field name="category_id" ref="category_car_service_root"/>
+        </record>
+
+        <!-- PMS工班信息 -->
+        <record model="res.groups" id="category_pms_class_info">
+            <field name="name">PMS工班信息</field>
+            <field name="atomic">True</field>
+            <field name="category_id" ref="category_car_service_root"/>
+        </record>
+
+    </data>
+
+</odoo>

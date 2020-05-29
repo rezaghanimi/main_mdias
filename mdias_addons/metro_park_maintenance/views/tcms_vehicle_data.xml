@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!--指定车辆信息的列表行-->
+    <record model="ir.ui.view" id="view_designated_vehicle_data_tree">
+        <field name="name">指定车辆历史记录列表</field>
+        <field name="model">funenc.tcms.vehicle.data</field>
+        <field name="arch" type="xml">
+            <tree js_class="tcms_export_tree_button" options="{'height':'full-340'}" limit="45"
+                  search_ex_template="metro_park_maintenance.vehicle_data_search">
+                <field name="date" fixed_left="1" width="150"/>
+<!--                <field name="update_time" width="260"/>-->
+                <field name="write_date" width="260" string="更新时间"/>
+                <field name="name" width="100"/>
+                <field name="train_dev_id" width="100"/>
+                <field name="today_mileage" width="100"/>
+                <field name="total_mileage" width="100"/>
+                <field name="traction_consumption" width="100"/>
+                <field name="auxiliary_consumption" width="100"/>
+                <field name="regeneration_consumption" width="100"/>
+            </tree>
+        </field>
+    </record>
+
+    <!--所有车辆信息的列表行-->
+    <record model="ir.ui.view" id="view_funenc_tcms_vehicle_data_tree">
+        <field name="name">所有车辆同步历史列表</field>
+        <field name="model">funenc.tcms.vehicle.data</field>
+        <field name="arch" type="xml">
+            <tree js_class="fnt_table" options="{'height':'full-340'}" limit="45"
+                  custom_btn_template="metro_park_maintenance.vehicle_data_tree_buttons"
+                  search_ex_template="metro_park_maintenance.vehicle_data_search">
+                <field name="date" fixed_left="1" width="150"/>
+                <field name="write_date" width="260" string="更新时间"/>
+                <field name="name" width="100"/>
+                <field name="today_mileage" width="100"/>
+                <field name="total_mileage" width="100"/>
+                <field name="traction_consumption" width="100"/>
+                <field name="auxiliary_consumption" width="100"/>
+                <field name="regeneration_consumption" width="100"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_funenc_tcms_vehicle_data_form">
+        <field name="name">车辆同步历史</field>
+        <field name="model">funenc.tcms.vehicle.data</field>
+        <field name="arch" type="xml">
+            <form>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" for="date">date</label>
+                    <div class="col-sm-3">
+                        <field name="date"/>
+                    </div>
+                    <label class="col-sm-2 col-form-label" for="write_date">更新时间</label>
+                    <div class="col-sm-3">
+                        <field name="write_date" string="更新时间"/>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" for="name">name</label>
+                    <div class="col-sm-3">
+                        <field name="name"/>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" for="today_mileage"/>
+                    <div class="col-sm-3">
+                        <field name="today_mileage"/>
+                    </div>
+                    <label class="col-sm-2 col-form-label" for="total_mileage"/>
+                    <div class="col-sm-3">
+                        <field name="total_mileage"/>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" for="auxiliary_consumption"/>
+                    <div class="col-sm-3">
+                        <field name="auxiliary_consumption"/>
+                    </div>
+                    <label class="col-sm-2 col-form-label" for="regeneration_consumption"/>
+                    <div class="col-sm-3">
+                        <field name="regeneration_consumption"/>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" for="traction_consumption"/>
+                    <div class="col-sm-3">
+                        <field name="traction_consumption"/>
+                    </div>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="view_funenc_tcms_vehicle_data_action">
+        <field name="name">车辆同步历史</field>
+        <field name="res_model">funenc.tcms.vehicle.data</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_ids" eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'tree', 'view_id': ref('metro_park_maintenance.view_funenc_tcms_vehicle_data_tree')}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('metro_park_maintenance.view_funenc_tcms_vehicle_data_form')})]"/>
+    </record>
+
+    <record id="view_funenc_tcms_vehicle_data_server" model="ir.actions.server">
+        <field name="name">车辆同步历史</field>
+        <field name="type">ir.actions.server</field>
+        <field name="model_id" ref="model_funenc_tcms_vehicle_data"/>
+        <field name="state">code</field>
+        <field name="code">
+            action = model.get_cur_train_action()
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+
+
+        <!-- 用户管理菜单 -->
+        <menuitem action="funenc_wechat.action_funenc_wechat_user_manage"
+                  id="metro_park_base.user_manage_ext_menu"
+                  name="用户管理"
+                  parent="metro_park_base.menu_user_manage"
+                  groups="group_sys_setting_users_management"/>
+
+        <menuitem action="funenc_wechat.action_funenc_wechat_department_manage"
+                  id="metro_park_base.department_manage_ext_menu"
+                  name="部门管理"
+                  parent="metro_park_base.menu_user_manage"
+                  groups="group_sys_setting_department_management"/>
+    </data>
+
+</odoo>

@@ -1,0 +1,52 @@
+
+.base_icon {
+    background-image: url("../img/base.svg");
+}
+
+.operation_log_icon {
+    background-image: url("../img/operation_log.svg");
+}
+
+.setting_icon {
+    background-image: url("../img/setting.svg");
+}
+
+.dispatch_icon {
+    background-image: url("../img/dispatch.svg");
+}
+
+.maintenance_icon {
+    background-image: url("../img/maintenance.svg");
+}
+
+.production_icon {
+    background-image: url("../img/production.svg");
+}
+
+.groups_manage_icon {
+    background-image: url("../img/groups_manage.svg");
+}
+
+.maintenance_system_icon {
+    background-image: url("../img/maintenance_system.svg");
+}
+
+.table thead th {
+    border-bottom: 1px solid #e2e5e8;
+    font-size: 13px;
+    color: #060606;
+    background: #f6f7fb;
+    text-transform: uppercase;
+}
+
+.table-bordered td, .table-bordered th {
+    border: 1px solid #e2e5e8;
+}
+
+.table>thead>tr>th {
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.o_list_view thead>tr>th:nth-of-type(1) {
+   border-left: 1px solid #dfdfdf
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data>
+
+        <record id="metro_park_base_data_8.line8" model="metro_park_base.line">
+            <field name="name">8号线</field>
+            <field name="code">8</field>
+        </record>
+
+    </data>
+</odoo>

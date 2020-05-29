@@ -1,0 +1,36 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_maintenance.rule_import_wizard_list">
+            <field name="name">rule_import_wizard list </field>
+            <field name="model">metro_park_maintenance.rule_import_wizard</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="excel_file"/>
+                </tree>
+            </field>
+        </record>
+
+        
+        <record model="ir.ui.view" id="metro_park_maintenance.rule_import_wizard_form">
+            <field name="name">rule_import_wizard form </field>
+            <field name="model">metro_park_maintenance.rule_import_wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="excel_file">excel_file</label>
+                        <div class="col-sm-10">
+                            <field name="excel_file"/>
+                        </div>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        
+
+    </data>
+</odoo>
+
+    

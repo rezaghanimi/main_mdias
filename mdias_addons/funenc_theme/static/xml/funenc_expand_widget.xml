@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates id="template" xml:space="preserve">
+    <!-- menu -->
+    <t t-name="funenc.expand_widget">
+        <div class="d-flex expand_widget" style="width:100%; height:100%; touch-action: none;">
+            <span class="o_dropdown_arrow is-reverse">
+                <i class="fa fa-angle-down" draggable="false"></i>
+            </span>
+        </div>
+    </t>
+</templates>

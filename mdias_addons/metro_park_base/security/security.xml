@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>
+
+    <data noupdate="1">
+
+<!--        <record model="ir.module.category" id="category_metro_park_base">-->
+<!--            <field name="name">全自动车辆段</field>-->
+<!--        </record>-->
+
+<!--        <record model="res.groups" id="metro_park_logistic_leader">-->
+<!--            <field name="name">运营公司领导</field>-->
+<!--            <field name="category_id" ref="category_metro_park_base"/>-->
+<!--        </record>-->
+
+<!--        <record model="res.groups" id="metro_park_vehicle_leader">-->
+<!--            <field name="name">车辆中心领导</field>-->
+<!--            <field name="category_id" ref="category_metro_park_base"/>-->
+<!--        </record>-->
+
+<!--        &lt;!&ndash; 检调 &ndash;&gt;-->
+<!--        <record model="res.groups" id="check_dispatch">-->
+<!--            <field name="name">检调</field>-->
+<!--            <field name="category_id" ref="category_metro_park_base"/>-->
+<!--        </record>-->
+
+<!--        &lt;!&ndash; 场调 &ndash;&gt;-->
+<!--        <record model="res.groups" id="sec_dispatch">-->
+<!--            <field name="name">场调</field>-->
+<!--            <field name="category_id" ref="category_metro_park_base"/>-->
+<!--        </record>-->
+
+    </data>
+
+</odoo>

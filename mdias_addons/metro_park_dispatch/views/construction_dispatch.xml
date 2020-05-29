@@ -1,0 +1,180 @@
+<odoo>
+    <data>
+        <!-- client action  -->
+        <record id="constuction_client_action" model="ir.actions.client">
+            <field name="name">施工调度信息</field>
+            <field name="tag">construction_dispatch_action</field>
+            <field name="target">main</field>
+        </record>
+
+        <!-- list -->
+        <record model="ir.ui.view" id="metro_park_dispatch.construction_dispatch_list">
+            <field name="name">施工信息</field>
+            <field name="model">metro_park_dispatch.construction_dispatch</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table" default_order="plan_date desc" options="{'height': 300}">
+                    <field name="line_id"/>
+                    <field name="plan_date"/>
+                    <field name="work_code"/>
+                    <field name="department"/>
+                    <field name="area"/>
+                    <field name="work_content"/>
+                    <field name="influence_area"/>
+                    <field name="electric_info"/>
+                    <field name="principal"/>
+                    <field name="work_time_start"/>
+                    <field name="work_time_end"/>
+                    <field name="request_addr"/>
+                    <field name="backout_addr"/>
+                    <field name="assist_station_info"/>
+                    <field name="request_time"/>
+                    <field name="backout_time"/>
+                    <field name="recognize_num"/>
+                    <field name="status"/>
+                    <field name="remarks"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- form -->
+        <record model="ir.ui.view" id="metro_park_dispatch.construction_dispatch_form">
+            <field name="name">construction_dispatch form</field>
+            <field name="model">metro_park_dispatch.construction_dispatch</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="line_id">line_id</label>
+                        <div class="col-sm-10">
+                            <field name="line_id"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="plan_date">plan_date</label>
+                        <div class="col-sm-10">
+                            <field name="plan_date"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="work_code">work_code</label>
+                        <div class="col-sm-10">
+                            <field name="work_code"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="department">department</label>
+                        <div class="col-sm-10">
+                            <field name="department"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="area">area</label>
+                        <div class="col-sm-10">
+                            <field name="area"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="work_content">work_content</label>
+                        <div class="col-sm-10">
+                            <field name="work_content"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="influence_area">influence_area</label>
+                        <div class="col-sm-10">
+                            <field name="influence_area"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="electric_info">electric_info</label>
+                        <div class="col-sm-10">
+                            <field name="electric_info"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="principal">principal</label>
+                        <div class="col-sm-10">
+                            <field name="principal"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="work_time_start">work_time_start</label>
+                        <div class="col-sm-10">
+                            <field name="work_time_start"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="work_time_end">work_time_end</label>
+                        <div class="col-sm-10">
+                            <field name="work_time_end"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="request_addr">request_addr</label>
+                        <div class="col-sm-10">
+                            <field name="request_addr"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="backout_addr">backout_addr</label>
+                        <div class="col-sm-10">
+                            <field name="backout_addr"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="assist_station_info">assist_station_info</label>
+                        <div class="col-sm-10">
+                            <field name="assist_station_info"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="request_time">request_time</label>
+                        <div class="col-sm-10">
+                            <field name="request_time"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="backout_time">backout_time</label>
+                        <div class="col-sm-10">
+                            <field name="backout_time"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="recognize_num">recognize_num</label>
+                        <div class="col-sm-10">
+                            <field name="recognize_num"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="status">status</label>
+                        <div class="col-sm-10">
+                            <field name="status"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="remarks">remarks</label>
+                        <div class="col-sm-10">
+                            <field name="remarks"/>
+                        </div>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <!-- window action -->
+        <record model="ir.actions.act_window" id="metro_park_dispatch.construction_dispatch_act_window">
+            <field name="name">construction_dispatch</field>
+            <field name="res_model">metro_park_dispatch.construction_dispatch</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="home_page_client_action" model="ir.actions.client">
+            <field name="name">首页</field>
+            <field name="tag">home_page</field>
+            <field name="target">main</field>
+        </record>
+
+<!--        <delete model="ir.actions.client"-->
+<!--                search="[('chart_template_id','=',ref('home_page_client_action'))]"/>-->
+    </data>
+</odoo>
+    

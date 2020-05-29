@@ -1,0 +1,38 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="compressor_work_time_l_2_tree_id">
+            <field name="name">TC2压缩机工作时间</field>
+            <field name="model">tc2.compressor_work_time_l</field>
+            <field name="arch" type="xml">
+                <tree create="0">
+                    <field name="name"/>
+                    <field name="work_time"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="compressor_work_time_l_2_form_id">
+            <field name="name">TC2压缩机工作时间</field>
+            <field name="model">tc2.compressor_work_time_l</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="name"/>
+                        <field name="work_time"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="compressor_work_time_l_2_window_id">
+            <field name="name">TC2压缩机工作时间</field>
+            <field name="res_model">tc2.compressor_work_time_l</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="compressor_work_time_l_2_window_id"
+                  parent="tcms_tcms_act_menu_parent_id"
+                  id="compressor_work_time_l_2_menu_id"
+                  name="TC2压缩机工作时间"/>
+    </data>
+</odoo>

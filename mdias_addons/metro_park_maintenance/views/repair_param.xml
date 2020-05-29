@@ -1,0 +1,71 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_maintenance.repair_param_list">
+            <field name="name">检修参数</field>
+            <field name="model">metro_park_maintenance.repair_param</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table"
+                      create="0"
+                      delete="0"
+                      editable="top"
+                      options="{'height':'full-340'}">
+                    <field name="name" readonly="1"/>
+                    <field name="unit" readonly="1"/>
+                    <field name="use" />
+                    <field name="val"/>
+                    <field name="related_duration"
+                           widget="many2many_tags"/>
+                    <button name="change_param"
+                            type="object"
+                            text="修改"
+                            class="btn btn-success btn-sm"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="metro_park_maintenance.repair_param_form">
+            <field name="name">检修参数</field>
+            <field name="model">metro_park_maintenance.repair_param</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="name">name</label>
+                        <div class="col-sm-3">
+                            <field name="name" readonly="1"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="unit">unit</label>
+                        <div class="col-sm-10">
+                            <field name="unit" readonly="1"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="use">use</label>
+                        <div class="col-sm-3">
+                            <field name="use"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="val">val</label>
+                        <div class="col-sm-3">
+                            <field name="val" />
+                        </div>
+                    </div>
+
+                    <footer>
+                        <button text="保存" class="btn btn-primary" special="save" />
+                        <button text="取消" class="btn btn-secondary" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
+    

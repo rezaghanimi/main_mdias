@@ -1,0 +1,1440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="construction_location_relation_banqiao" model="metro_park_dispatch.construction_location_relation">
+            <field name="out_line_id">23</field>
+            <field name="out_location_id">97</field>
+            <field name="location_id" ref="metro_park_base_data_10.ban_qiao"/>
+        </record>
+        <record id="construction_location_relation_gaodalu" model="metro_park_dispatch.construction_location_relation">
+            <field name="out_line_id">23</field>
+            <field name="out_location_id">98</field>
+            <field name="location_id" ref="metro_park_base_data_10.gao_da_lu"/>
+        </record>
+    </data>
+    <data>
+        <record id="construction_area_relation_414" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">414</field>
+            <field name="area_name">L-1道</field>
+            <field name="area_code">10TL01</field>
+            <field name="park_element_code">1G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_415" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">415</field>
+            <field name="area_name">L-2道</field>
+            <field name="area_code">10TL02</field>
+            <field name="park_element_code">2G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_416" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">416</field>
+            <field name="area_name">L-3道</field>
+            <field name="area_code">10TL03</field>
+            <field name="park_element_code">3G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_417" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">417</field>
+            <field name="area_name">L-4道</field>
+            <field name="area_code">10TL04</field>
+            <field name="park_element_code">4G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_418" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">418</field>
+            <field name="area_name">L-5A道</field>
+            <field name="area_code">10TL05A</field>
+            <field name="park_element_code">5AG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_419" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">419</field>
+            <field name="area_name">L-5B道</field>
+            <field name="area_code">10TL05B</field>
+            <field name="park_element_code">5BG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_420" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">420</field>
+            <field name="area_name">L-6A道</field>
+            <field name="area_code">10TL06A</field>
+            <field name="park_element_code">6AG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_421" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">421</field>
+            <field name="area_name">L-6B道</field>
+            <field name="area_code">10TL06B</field>
+            <field name="park_element_code">6BG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_422" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">422</field>
+            <field name="area_name">L-7A道</field>
+            <field name="area_code">10TL07A</field>
+            <field name="park_element_code">7AG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_423" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">423</field>
+            <field name="area_name">L-7B道</field>
+            <field name="area_code">10TL07B</field>
+            <field name="park_element_code">7BG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_424" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">424</field>
+            <field name="area_name">L-8A道</field>
+            <field name="area_code">10TL08A</field>
+            <field name="park_element_code">8AG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_425" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">425</field>
+            <field name="area_name">L-8B道</field>
+            <field name="area_code">10TL08B</field>
+            <field name="park_element_code">8BG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_426" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">426</field>
+            <field name="area_name">L-9A道</field>
+            <field name="area_code">10TL09A</field>
+            <field name="park_element_code">9AG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_427" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">427</field>
+            <field name="area_name">L-9B道</field>
+            <field name="area_code">10TL09B</field>
+            <field name="park_element_code">9BG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_428" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">428</field>
+            <field name="area_name">L-10A道</field>
+            <field name="area_code">10TL10A</field>
+            <field name="park_element_code">10AG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_429" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">429</field>
+            <field name="area_name">L-10B道</field>
+            <field name="area_code">10TL10B</field>
+            <field name="park_element_code">10BG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_430" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">430</field>
+            <field name="area_name">L-11A道</field>
+            <field name="area_code">10TL11A</field>
+            <field name="park_element_code">11AG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_431" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">431</field>
+            <field name="area_name">L-11B道</field>
+            <field name="area_code">10TL11B</field>
+            <field name="park_element_code">11BG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_432" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">432</field>
+            <field name="area_name">L-12A道</field>
+            <field name="area_code">10TL12A</field>
+            <field name="park_element_code">12AG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_433" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">433</field>
+            <field name="area_name">L-12B道</field>
+            <field name="area_code">10TL12B</field>
+            <field name="park_element_code">12BG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_434" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">434</field>
+            <field name="area_name">L-13A道</field>
+            <field name="area_code">10TL13A</field>
+            <field name="park_element_code">13AG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_435" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">435</field>
+            <field name="area_name">L-13B道</field>
+            <field name="area_code">10TL13B</field>
+            <field name="park_element_code">13BG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_436" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">436</field>
+            <field name="area_name">L-14A道</field>
+            <field name="area_code">10TL14A</field>
+            <field name="park_element_code">14AG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_437" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">437</field>
+            <field name="area_name">L-14B道</field>
+            <field name="area_code">10TL14B</field>
+            <field name="park_element_code">14BG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_438" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">438</field>
+            <field name="area_name">L-15A道</field>
+            <field name="area_code">10TL15A</field>
+            <field name="park_element_code">15AG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_439" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">439</field>
+            <field name="area_name">L-15B道</field>
+            <field name="area_code">10TL15B</field>
+            <field name="park_element_code">15BG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_440" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">440</field>
+            <field name="area_name">L-16A道</field>
+            <field name="area_code">10TL16A</field>
+            <field name="park_element_code">16AG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_441" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">441</field>
+            <field name="area_name">L-16B道</field>
+            <field name="area_code">10TL16B</field>
+            <field name="park_element_code">16BG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_442" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">442</field>
+            <field name="area_name">洗车线</field>
+            <field name="area_code">10TL101</field>
+            <field name="park_element_code">2/34WG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_443" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">443</field>
+            <field name="area_name">牵出线1（D4-JT2)</field>
+            <field name="area_code">10TL102</field>
+            <field name="park_element_code">D4G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_444" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">444</field>
+            <field name="area_name">牵出线2（D2-JT4)</field>
+            <field name="area_code">10TL103</field>
+            <field name="park_element_code">D2G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_445" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">445</field>
+            <field name="area_name">牵出线3（D22-JT12)</field>
+            <field name="area_code">10TL104</field>
+            <field name="park_element_code">D22G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_446" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">446</field>
+            <field name="area_name">L-23道</field>
+            <field name="area_code">10TL23</field>
+            <field name="park_element_code">23G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_447" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">447</field>
+            <field name="area_name">L-24道</field>
+            <field name="area_code">10TL24</field>
+            <field name="park_element_code">24G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_448" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">448</field>
+            <field name="area_name">L-25道</field>
+            <field name="area_code">10TL25</field>
+            <field name="park_element_code">25G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_450" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">450</field>
+            <field name="area_name">道岔2#</field>
+            <field name="area_code">10TY02</field>
+            <field name="park_element_code">2</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_451" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">451</field>
+            <field name="area_name">道岔4#</field>
+            <field name="area_code">10TY04</field>
+            <field name="park_element_code">4</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_452" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">452</field>
+            <field name="area_name">道岔6#</field>
+            <field name="area_code">10TY06</field>
+            <field name="park_element_code">6</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_453" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">453</field>
+            <field name="area_name">道岔8#</field>
+            <field name="area_code">10TY08</field>
+            <field name="park_element_code">8</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_454" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">454</field>
+            <field name="area_name">道岔10#</field>
+            <field name="area_code">10TY10</field>
+            <field name="park_element_code">10</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_455" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">455</field>
+            <field name="area_name">道岔12#</field>
+            <field name="area_code">10TY12</field>
+            <field name="park_element_code">12</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_456" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">456</field>
+            <field name="area_name">道岔14#</field>
+            <field name="area_code">10TY14</field>
+            <field name="park_element_code">14</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_457" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">457</field>
+            <field name="area_name">道岔16#</field>
+            <field name="area_code">10TY16</field>
+            <field name="park_element_code">16</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_458" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">458</field>
+            <field name="area_name">道岔18#</field>
+            <field name="area_code">10TY18</field>
+            <field name="park_element_code">18</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_459" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">459</field>
+            <field name="area_name">道岔20#</field>
+            <field name="area_code">10TY20</field>
+            <field name="park_element_code">20</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_460" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">460</field>
+            <field name="area_name">道岔22#</field>
+            <field name="area_code">10TY22</field>
+            <field name="park_element_code">22</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_461" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">461</field>
+            <field name="area_name">道岔24#</field>
+            <field name="area_code">10TY24</field>
+            <field name="park_element_code">24</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_462" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">462</field>
+            <field name="area_name">道岔26#</field>
+            <field name="area_code">10TY26</field>
+            <field name="park_element_code">26</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_463" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">463</field>
+            <field name="area_name">道岔28#</field>
+            <field name="area_code">10TY28</field>
+            <field name="park_element_code">28</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_464" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">464</field>
+            <field name="area_name">道岔30#</field>
+            <field name="area_code">10TY30</field>
+            <field name="park_element_code">30</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_465" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">465</field>
+            <field name="area_name">道岔32#</field>
+            <field name="area_code">10TY32</field>
+            <field name="park_element_code">32</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_466" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">466</field>
+            <field name="area_name">道岔34#</field>
+            <field name="area_code">10TY34</field>
+            <field name="park_element_code">34</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_467" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">467</field>
+            <field name="area_name">道岔36#</field>
+            <field name="area_code">10TY36</field>
+            <field name="park_element_code">36</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_468" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">468</field>
+            <field name="area_name">道岔38#</field>
+            <field name="area_code">10TY38</field>
+            <field name="park_element_code">38</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_469" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">469</field>
+            <field name="area_name">道岔40#</field>
+            <field name="area_code">10TY40</field>
+            <field name="park_element_code">40</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_470" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">470</field>
+            <field name="area_name">道岔42#</field>
+            <field name="area_code">10TY42</field>
+            <field name="park_element_code">42</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_471" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">471</field>
+            <field name="area_name">道岔44#</field>
+            <field name="area_code">10TY44</field>
+            <field name="park_element_code">44</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_472" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">472</field>
+            <field name="area_name">道岔46#</field>
+            <field name="area_code">10TY46</field>
+            <field name="park_element_code">46</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_473" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">473</field>
+            <field name="area_name">道岔48#</field>
+            <field name="area_code">10TY48</field>
+            <field name="park_element_code">48</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_474" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">474</field>
+            <field name="area_name">道岔50#</field>
+            <field name="area_code">10TY50</field>
+            <field name="park_element_code">50</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_475" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">475</field>
+            <field name="area_name">道岔52#</field>
+            <field name="area_code">10TY52</field>
+            <field name="park_element_code">52</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_476" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">476</field>
+            <field name="area_name">道岔54#</field>
+            <field name="area_code">10TY54</field>
+            <field name="park_element_code">54</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_477" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">477</field>
+            <field name="area_name">道岔56#</field>
+            <field name="area_code">10TY56</field>
+            <field name="park_element_code">56</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_478" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">478</field>
+            <field name="area_name">道岔58#</field>
+            <field name="area_code">10TY58</field>
+            <field name="park_element_code">58</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_479" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">479</field>
+            <field name="area_name">道岔60#</field>
+            <field name="area_code">10TY60</field>
+            <field name="park_element_code">60</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_480" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">480</field>
+            <field name="area_name">道岔62#</field>
+            <field name="area_code">10TY62</field>
+            <field name="park_element_code">62</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">98</field>
+        </record>
+        <record id="construction_area_relation_482" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">482</field>
+            <field name="area_name">L-01道</field>
+            <field name="area_code">10DL01</field>
+            <field name="park_element_code">D7G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_483" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">483</field>
+            <field name="area_name">L-02道</field>
+            <field name="area_code">10DL02</field>
+            <field name="park_element_code">T1701G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_484" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">484</field>
+            <field name="area_name">L-03道</field>
+            <field name="area_code">10DL03</field>
+            <field name="park_element_code">T1714G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_485" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">485</field>
+            <field name="area_name">L-04道</field>
+            <field name="area_code">10DL04</field>
+            <field name="park_element_code">D5G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_486" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">486</field>
+            <field name="area_name">L-05道</field>
+            <field name="area_code">10DL05</field>
+            <field name="park_element_code">D1G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_487" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">487</field>
+            <field name="area_name">L-06道</field>
+            <field name="area_code">10DL06</field>
+            <field name="park_element_code">1/63WG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_488" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">488</field>
+            <field name="area_name">L-07道</field>
+            <field name="area_code">10DL07</field>
+            <field name="park_element_code">D37G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_489" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">489</field>
+            <field name="area_name">L-08道</field>
+            <field name="area_code">10DL08</field>
+            <field name="park_element_code">D65G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_490" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">490</field>
+            <field name="area_name">L-09道</field>
+            <field name="area_code">10DL09</field>
+            <field name="park_element_code">65/83WG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_491" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">491</field>
+            <field name="area_name">L-10道</field>
+            <field name="area_code">10DL10</field>
+            <field name="park_element_code">10G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_492" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">492</field>
+            <field name="area_name">L-11道</field>
+            <field name="area_code">10DL11</field>
+            <field name="park_element_code">11G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_493" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">493</field>
+            <field name="area_name">L-12道</field>
+            <field name="area_code">10DL12</field>
+            <field name="park_element_code">12G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_494" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">494</field>
+            <field name="area_name">L-13道</field>
+            <field name="area_code">10DL13</field>
+            <field name="park_element_code">13G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_495" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">495</field>
+            <field name="area_name">L-14道</field>
+            <field name="area_code">10DL14</field>
+            <field name="park_element_code">14G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_496" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">496</field>
+            <field name="area_name">L-15道</field>
+            <field name="area_code">10DL15</field>
+            <field name="park_element_code">15G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_497" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">497</field>
+            <field name="area_name">L-16道</field>
+            <field name="area_code">10DL16</field>
+            <field name="park_element_code">16G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_498" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">498</field>
+            <field name="area_name">L-17道</field>
+            <field name="area_code">10DL17</field>
+            <field name="park_element_code">17G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_499" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">499</field>
+            <field name="area_name">L-18道</field>
+            <field name="area_code">10DL18</field>
+            <field name="park_element_code">18G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_500" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">500</field>
+            <field name="area_name">L-19道(洗车线)</field>
+            <field name="area_code">10DL19</field>
+            <field name="park_element_code">19G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_501" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">501</field>
+            <field name="area_name">L-20道</field>
+            <field name="area_code">10DL20</field>
+            <field name="park_element_code">20G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_502" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">502</field>
+            <field name="area_name">L-21A道</field>
+            <field name="area_code">10DL21A</field>
+            <field name="park_element_code">21AG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_503" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">503</field>
+            <field name="area_name">L-21B道</field>
+            <field name="area_code">10DL21B</field>
+            <field name="park_element_code">21BG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_504" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">504</field>
+            <field name="area_name">L-22A道</field>
+            <field name="area_code">10DL22A</field>
+            <field name="park_element_code">22AG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_505" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">505</field>
+            <field name="area_name">L-22B道</field>
+            <field name="area_code">10DL22B</field>
+            <field name="park_element_code">22BG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_506" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">506</field>
+            <field name="area_name">L-23A道</field>
+            <field name="area_code">10DL23A</field>
+            <field name="park_element_code">23AG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_507" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">507</field>
+            <field name="area_name">L-23B道</field>
+            <field name="area_code">10DL23B</field>
+            <field name="park_element_code">23BG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_508" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">508</field>
+            <field name="area_name">L-24A道</field>
+            <field name="area_code">10DL24A</field>
+            <field name="park_element_code">24AG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_509" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">509</field>
+            <field name="area_name">L-24B道</field>
+            <field name="area_code">10DL24B</field>
+            <field name="park_element_code">24BG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_510" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">510</field>
+            <field name="area_name">L-25A道</field>
+            <field name="area_code">10DL25A</field>
+            <field name="park_element_code">25AG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_511" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">511</field>
+            <field name="area_name">L-25B道</field>
+            <field name="area_code">10DL25B</field>
+            <field name="park_element_code">25BG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_512" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">512</field>
+            <field name="area_name">L-26A道</field>
+            <field name="area_code">10DL26A</field>
+            <field name="park_element_code">26AG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_513" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">513</field>
+            <field name="area_name">L-26B道</field>
+            <field name="area_code">10DL26B</field>
+            <field name="park_element_code">26BG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_514" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">514</field>
+            <field name="area_name">L-27A道</field>
+            <field name="area_code">10DL27A</field>
+            <field name="park_element_code">27AG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_515" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">515</field>
+            <field name="area_name">L-27B道</field>
+            <field name="area_code">10DL27B</field>
+            <field name="park_element_code">27BG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_516" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">516</field>
+            <field name="area_name">L-28A道</field>
+            <field name="area_code">10DL28A</field>
+            <field name="park_element_code">28AG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_517" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">517</field>
+            <field name="area_name">L-28B道</field>
+            <field name="area_code">10DL28B</field>
+            <field name="park_element_code">28BG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_518" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">518</field>
+            <field name="area_name">L-29A道</field>
+            <field name="area_code">10DL29A</field>
+            <field name="park_element_code">29AG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_519" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">519</field>
+            <field name="area_name">L-29B道</field>
+            <field name="area_code">10DL29B</field>
+            <field name="park_element_code">29BG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_520" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">520</field>
+            <field name="area_name">L-30A道</field>
+            <field name="area_code">10DL30A</field>
+            <field name="park_element_code">30AG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_521" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">521</field>
+            <field name="area_name">L-30B道</field>
+            <field name="area_code">10DL30B</field>
+            <field name="park_element_code">30BG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_522" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">522</field>
+            <field name="area_name">L-31A道</field>
+            <field name="area_code">10DL31A</field>
+            <field name="park_element_code">31AG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_523" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">523</field>
+            <field name="area_name">L-31B道</field>
+            <field name="area_code">10DL31B</field>
+            <field name="park_element_code">31BG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_524" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">524</field>
+            <field name="area_name">L-32A道</field>
+            <field name="area_code">10DL32A</field>
+            <field name="park_element_code">32AG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_525" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">525</field>
+            <field name="area_name">L-32B道</field>
+            <field name="area_code">10DL32B</field>
+            <field name="park_element_code">32BG</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_526" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">526</field>
+            <field name="area_name">L-33道</field>
+            <field name="area_code">10DL33</field>
+            <field name="park_element_code">33G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_527" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">527</field>
+            <field name="area_name">L-34道</field>
+            <field name="area_code">10DL34</field>
+            <field name="park_element_code">34G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_528" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">528</field>
+            <field name="area_name">L-35道</field>
+            <field name="area_code">10DL35</field>
+            <field name="park_element_code">35G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_529" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">529</field>
+            <field name="area_name">L-36道</field>
+            <field name="area_code">10DL36</field>
+            <field name="park_element_code">36G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_530" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">530</field>
+            <field name="area_name">L-37道</field>
+            <field name="area_code">10DL37</field>
+            <field name="park_element_code">37G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_531" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">531</field>
+            <field name="area_name">L-38道</field>
+            <field name="area_code">10DL38</field>
+            <field name="park_element_code">38G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_532" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">532</field>
+            <field name="area_name">L-39道</field>
+            <field name="area_code">10DL39</field>
+            <field name="park_element_code">39G</field>
+            <field name="element_type">rail</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_533" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">533</field>
+            <field name="area_name">道岔1</field>
+            <field name="area_code">10DY01</field>
+            <field name="park_element_code">1</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_534" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">534</field>
+            <field name="area_name">道岔3</field>
+            <field name="area_code">10DY03</field>
+            <field name="park_element_code">3</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_535" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">535</field>
+            <field name="area_name">道岔5</field>
+            <field name="area_code">10DY05</field>
+            <field name="park_element_code">5</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_536" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">536</field>
+            <field name="area_name">道岔7</field>
+            <field name="area_code">10DY07</field>
+            <field name="park_element_code">7</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_537" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">537</field>
+            <field name="area_name">道岔9</field>
+            <field name="area_code">10DY09</field>
+            <field name="park_element_code">9</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_538" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">538</field>
+            <field name="area_name">道岔11</field>
+            <field name="area_code">10DY11</field>
+            <field name="park_element_code">11</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_539" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">539</field>
+            <field name="area_name">道岔13</field>
+            <field name="area_code">10DY13</field>
+            <field name="park_element_code">13</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_540" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">540</field>
+            <field name="area_name">道岔15</field>
+            <field name="area_code">10DY15</field>
+            <field name="park_element_code">15</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_541" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">541</field>
+            <field name="area_name">道岔17</field>
+            <field name="area_code">10DY17</field>
+            <field name="park_element_code">17</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_542" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">542</field>
+            <field name="area_name">道岔19</field>
+            <field name="area_code">10DY19</field>
+            <field name="park_element_code">19</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_543" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">543</field>
+            <field name="area_name">道岔21</field>
+            <field name="area_code">10DY21</field>
+            <field name="park_element_code">21</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_544" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">544</field>
+            <field name="area_name">道岔23</field>
+            <field name="area_code">10DY23</field>
+            <field name="park_element_code">23</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_545" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">545</field>
+            <field name="area_name">道岔25</field>
+            <field name="area_code">10DY25</field>
+            <field name="park_element_code">25</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_546" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">546</field>
+            <field name="area_name">道岔27</field>
+            <field name="area_code">10DY27</field>
+            <field name="park_element_code">27</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_547" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">547</field>
+            <field name="area_name">道岔29</field>
+            <field name="area_code">10DY29</field>
+            <field name="park_element_code">29</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_548" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">548</field>
+            <field name="area_name">道岔31</field>
+            <field name="area_code">10DY31</field>
+            <field name="park_element_code">31</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_549" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">549</field>
+            <field name="area_name">道岔33</field>
+            <field name="area_code">10DY33</field>
+            <field name="park_element_code">33</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_550" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">550</field>
+            <field name="area_name">道岔35</field>
+            <field name="area_code">10DY35</field>
+            <field name="park_element_code">35</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_551" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">551</field>
+            <field name="area_name">道岔37</field>
+            <field name="area_code">10DY37</field>
+            <field name="park_element_code">37</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_552" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">552</field>
+            <field name="area_name">道岔39</field>
+            <field name="area_code">10DY39</field>
+            <field name="park_element_code">39</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_553" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">553</field>
+            <field name="area_name">道岔41</field>
+            <field name="area_code">10DY41</field>
+            <field name="park_element_code">41</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_554" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">554</field>
+            <field name="area_name">道岔43</field>
+            <field name="area_code">10DY43</field>
+            <field name="park_element_code">43</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_555" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">555</field>
+            <field name="area_name">道岔45</field>
+            <field name="area_code">10DY45</field>
+            <field name="park_element_code">45</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_556" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">556</field>
+            <field name="area_name">道岔47</field>
+            <field name="area_code">10DY47</field>
+            <field name="park_element_code">47</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_557" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">557</field>
+            <field name="area_name">道岔49</field>
+            <field name="area_code">10DY49</field>
+            <field name="park_element_code">49</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_558" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">558</field>
+            <field name="area_name">道岔51</field>
+            <field name="area_code">10DY51</field>
+            <field name="park_element_code">51</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_559" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">559</field>
+            <field name="area_name">道岔53</field>
+            <field name="area_code">10DY53</field>
+            <field name="park_element_code">53</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_560" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">560</field>
+            <field name="area_name">道岔55</field>
+            <field name="area_code">10DY55</field>
+            <field name="park_element_code">55</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_561" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">561</field>
+            <field name="area_name">道岔57</field>
+            <field name="area_code">10DY57</field>
+            <field name="park_element_code">57</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_562" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">562</field>
+            <field name="area_name">道岔59</field>
+            <field name="area_code">10DY59</field>
+            <field name="park_element_code">59</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_563" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">563</field>
+            <field name="area_name">道岔61</field>
+            <field name="area_code">10DY61</field>
+            <field name="park_element_code">61</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_564" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">564</field>
+            <field name="area_name">道岔63</field>
+            <field name="area_code">10DY63</field>
+            <field name="park_element_code">63</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_565" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">565</field>
+            <field name="area_name">道岔65</field>
+            <field name="area_code">10DY65</field>
+            <field name="park_element_code">65</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_566" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">566</field>
+            <field name="area_name">道岔67</field>
+            <field name="area_code">10DY67</field>
+            <field name="park_element_code">67</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_567" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">567</field>
+            <field name="area_name">道岔69</field>
+            <field name="area_code">10DY69</field>
+            <field name="park_element_code">69</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_568" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">568</field>
+            <field name="area_name">道岔71</field>
+            <field name="area_code">10DY71</field>
+            <field name="park_element_code">71</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_569" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">569</field>
+            <field name="area_name">道岔73</field>
+            <field name="area_code">10DY73</field>
+            <field name="park_element_code">73</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_570" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">570</field>
+            <field name="area_name">道岔75</field>
+            <field name="area_code">10DY75</field>
+            <field name="park_element_code">75</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_571" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">571</field>
+            <field name="area_name">道岔77</field>
+            <field name="area_code">10DY77</field>
+            <field name="park_element_code">77</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_572" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">572</field>
+            <field name="area_name">道岔79</field>
+            <field name="area_code">10DY79</field>
+            <field name="park_element_code">79</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+        <record id="construction_area_relation_573" model="metro_park_dispatch.construction_area_relation">
+            <field name="area_id">573</field>
+            <field name="area_name">道岔81</field>
+            <field name="area_code">10DY81</field>
+            <field name="park_element_code">81</field>
+            <field name="element_type">switch</field>
+            <field name="line_id">23</field>
+            <field name="location_id">97</field>
+        </record>
+
+    </data>
+</odoo>

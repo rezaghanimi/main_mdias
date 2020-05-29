@@ -1,0 +1,122 @@
+
+.trainPannel {
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	flex-direction: column;
+	min-height: 500px;
+}
+
+.trainPannel > img {
+	width: 100px;
+}
+
+.trainPannel .train_item {
+	width: 100px;
+	margin: 8px 0px;
+}
+
+.trainPannel .train_item span {
+	height: 24px;
+	line-height: 24px;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.busy_board {
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	flex-direction: column;
+	min-height: 200px;
+}
+
+.busy_board .busy_item {
+	width: 48px;
+	height: 48px;
+	margin-top: 10px;
+}
+
+.geDiagramContainer > svg {
+	background-color: black;
+}
+
+
+.badge-primary {
+    color: #fff;
+    background-color: #dc3545;
+}
+
+.badge-pill {
+    padding-right: .6em;
+    padding-left: .6em;
+    border-radius: 10rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+	transition: color .15s ease-in-out, 
+	background-color .15s ease-in-out,
+	border-color .15s ease-in-out,
+	box-shadow .15s ease-in-out;
+}
+
+.geEditor {
+	user-select: none;
+	overflow: hidden;
+}
+
+.keyboardOverlay {
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 9;
+}
+
+
+/* 鼠标点击svg元素高亮交互 */
+rect:active {
+    fill: #ccfff5;
+}
+
+ellipse:active {
+    stroke: #ccfff5
+}
+
+.electric rect:active {
+   fill: inherit
+}
+
+.electric ellipse:active {
+    stroke: inherit
+}
+
+.loading_pic {
+	background: url(../images/bk.jpg);
+	z-index: 999;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	background-position: center center; 
+	bottom: 0;
+}

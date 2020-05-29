@@ -1,0 +1,53 @@
+<odoo>
+    <data>
+
+        <!--板桥车辆段中心机房-->
+        <record id="maintenance_banqiao_place_center_room" model="maintenance_place">
+            <field name="name">板桥车辆段中心机房</field>
+            <field name="station" ref="metro_park_base_data_10.ban_qiao"/>
+        </record>
+
+        <!--板桥车辆段DCC调度大厅-->
+        <record id="maintenance_banqiao_place_dcc_room" model="maintenance_place">
+            <field name="name">板桥车辆段DCC调度大厅</field>
+            <field name="station" ref="metro_park_base_data_10.ban_qiao"/>
+        </record>
+
+        <!--通号维保区-->
+        <record id="maintenance_banqiao_place_maintenance_room" model="maintenance_place">
+            <field name="name">通号维保区</field>
+            <field name="station" ref="metro_park_base_data_10.ban_qiao"/>
+        </record>
+
+        <!--板桥车辆段排班室-->
+        <record id="maintenance_banqiao_place_send_the_class_room" model="maintenance_place">
+            <field name="name">板桥车辆段排班室</field>
+            <field name="station" ref="metro_park_base_data_10.ban_qiao"/>
+        </record>
+
+        <!--太平园-->
+        <record id="maintenance_taipingyuan_place_taipingyuan_room" model="maintenance_place">
+            <field name="name">太平园</field>
+            <field name="station" ref="tai_ping_yuan"/>
+        </record>
+
+        <!--高大路中心机房-->
+        <record id="maintenance_gaodalu_place_center_room" model="maintenance_place">
+            <field name="name">高大路中心机房</field>
+            <field name="station" ref="metro_park_base_data_10.gao_da_lu"></field>
+        </record>
+
+        <!--高大路中心机房-->
+        <record id="maintenance_gaodalu_place_dcc_room" model="maintenance_place">
+            <field name="name">高大路DCC调度大厅</field>
+            <field name="station" ref="metro_park_base_data_10.gao_da_lu"></field>
+        </record>
+
+        <!--高大路中心机房-->
+        <record id="maintenance_gaodalu_place_send_class_room" model="maintenance_place">
+            <field name="name">高大路排班室</field>
+            <field name="station" ref="metro_park_base_data_10.gao_da_lu"></field>
+        </record>
+
+    </data>
+</odoo>

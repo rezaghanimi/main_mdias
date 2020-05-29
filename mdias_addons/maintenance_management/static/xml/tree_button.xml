@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+<t t-name="call_record_template">
+       <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="write_date" option="{'placeholder':'日期'}"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="place" option="{'placeholder':'地点'}"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="site" option="{'placeholder':'位置'}"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="equipment" option="{'placeholder':'设备'}"/>
+               </div>
+
+               <div class="col-md-auto">
+                   <!-- class有search_extend_apply的为搜索的确定按钮 -->
+                   <button type="button" class="btn btn-primary search_extend_apply">
+                       应用
+                   </button>
+                   <!-- class有search_extend_reset的为搜索的重置按钮 -->
+                   <button type="button" class="btn btn-info search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+</t>
+
+    <t t-name="diagnosis_record_template">
+       <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="write_date" option="{'placeholder':'日期'}"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="place" option="{'placeholder':'地点'}"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="site" option="{'placeholder':'位置'}"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="equipment" option="{'placeholder':'设备'}"/>
+               </div>
+
+               <div class="col-md-auto">
+                   <!-- class有search_extend_apply的为搜索的确定按钮 -->
+                   <button type="button" class="btn btn-primary search_extend_apply">
+                       应用
+                   </button>
+                   <!-- class有search_extend_reset的为搜索的重置按钮 -->
+                   <button type="button" class="btn btn-info search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+</t>
+
+</templates>

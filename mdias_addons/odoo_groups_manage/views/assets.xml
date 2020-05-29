@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <template id="odoo_groups_manage_depend_static" name="odoo_groups_manage_depend_static"
+                  inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/odoo_groups_manage/static/js/field_groups.js"/>
+                <script type="text/javascript" src="/odoo_groups_manage/static/js/user_permission_form.js"/>
+                <script type="text/javascript" src="/odoo_groups_manage/static/js/role_users.js"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>

@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <record model="ir.module.category" id="category_dispatch_car_management">
+            <field name="name">调车计划管理</field>
+        </record>
+
+        <record model="ir.module.category" id="category_dispatch_car_management_index">
+            <field name="name">首页</field>
+            <field name="parent_id" ref="category_dispatch_car_management"/>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_index_page_look">
+            <field name="name">显示页面</field>
+            <field name="category_id" ref="category_dispatch_car_management_index"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <!-- 施工信息管理    -->
+        <record model="ir.module.category" id="category_dispatch_car_management_construction">
+            <field name="name">施工信息管理</field>
+            <field name="parent_id" ref="category_dispatch_car_management"/>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_construction_page_look">
+            <field name="name">显示页面</field>
+            <field name="category_id" ref="category_dispatch_car_management_construction"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_construction_manual_synchronizing">
+            <field name="name">手动同步</field>
+            <field name="category_id" ref="category_dispatch_car_management_construction"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_construction_auto_synchronizing">
+            <field name="name">自动同步</field>
+            <field name="category_id" ref="category_dispatch_car_management_construction"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <!--  收发车计划管理   -->
+        <record model="ir.module.category" id="category_dispatch_car_management_send_receive_car">
+            <field name="name">收发车计划管理</field>
+            <field name="parent_id" ref="category_dispatch_car_management"/>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_send_receive_car_page_look">
+            <field name="name">显示页面</field>
+            <field name="category_id" ref="category_dispatch_car_management_send_receive_car"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_send_receive_car_send_receiver">
+            <field name="name">新增发车/收车</field>
+            <field name="category_id" ref="category_dispatch_car_management_send_receive_car"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_send_receive_car_edit_plan">
+            <field name="name">编制计划(自动)</field>
+            <field name="category_id" ref="category_dispatch_car_management_send_receive_car"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_send_receive_car_release">
+            <field name="name">发布计划</field>
+            <field name="category_id" ref="category_dispatch_car_management_send_receive_car"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_send_receive_car_send_operation">
+            <field name="name">发车作业操作</field>
+            <field name="category_id" ref="category_dispatch_car_management_send_receive_car"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_send_receive_car_receive_operation">
+            <field name="name">收车作业操作</field>
+            <field name="category_id" ref="category_dispatch_car_management_send_receive_car"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <!--  调车申请  -->
+        <record model="ir.module.category" id="category_dispatch_car_management_dispatch_car_apply">
+            <field name="name">调车申请</field>
+            <field name="parent_id" ref="category_dispatch_car_management"/>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_management_dispatch_car_apply_page_look">
+            <field name="name">查看详情</field>
+            <field name="category_id" ref="category_dispatch_car_management_dispatch_car_apply"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_management_dispatch_car_apply_create">
+            <field name="name">创建调车申请</field>
+            <field name="category_id" ref="category_dispatch_car_management_dispatch_car_apply"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_management_dispatch_car_apply_edit">
+            <field name="name">编辑</field>
+            <field name="category_id" ref="category_dispatch_car_management_dispatch_car_apply"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_management_dispatch_car_apply_submit">
+            <field name="name">提交</field>
+            <field name="category_id" ref="category_dispatch_car_management_dispatch_car_apply"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_audit_reback">
+            <field name="name">审核撤回</field>
+            <field name="category_id" ref="category_dispatch_car_management_dispatch_car_apply"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <!--  调车审核与编制  -->
+        <record model="ir.module.category" id="category_dispatch_approve">
+            <field name="name">调车审核与编制</field>
+            <field name="parent_id" ref="category_dispatch_car_management"/>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_audit_view_detail">
+            <field name="name">显示详情</field>
+            <field name="category_id" ref="category_dispatch_approve"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_audit_pass">
+            <field name="name">审核通过</field>
+            <field name="category_id" ref="category_dispatch_approve"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_management_dispatch_car_approve_reject">
+            <field name="name">审核驳回</field>
+            <field name="category_id" ref="category_dispatch_approve"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_audit_make_dispatch_notice">
+            <field name="name">编制通知单</field>
+            <field name="category_id" ref="category_dispatch_approve"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_audit_view_manage_excute_detail">
+            <field name="name">执行管理</field>
+            <field name="category_id" ref="category_dispatch_approve"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_audit_view_excute_detail">
+            <field name="name">查看执行记录</field>
+            <field name="category_id" ref="category_dispatch_approve"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_audit_view_release">
+            <field name="name">发布</field>
+            <field name="category_id" ref="category_dispatch_approve"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <!-- 站场图车辆操作 -->
+        <record model="ir.module.category" id="category_dispatch_car_management_battlefield_map">
+            <field name="name">站场图车辆操作</field>
+            <field name="parent_id" ref="category_dispatch_car_management"/>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_management_battlefield_map_page_look">
+            <field name="name">显示页面</field>
+            <field name="category_id" ref="category_dispatch_car_management_battlefield_map"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_management_battlefield_map_position">
+            <field name="name">报点</field>
+            <field name="category_id" ref="category_dispatch_car_management_battlefield_map"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_management_battlefield_map_fault_report">
+            <field name="name">车辆故报</field>
+            <field name="category_id" ref="category_dispatch_car_management_battlefield_map"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_management_battlefield_map_fault_relieve">
+            <field name="name">解除故障</field>
+            <field name="category_id" ref="category_dispatch_car_management_battlefield_map"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_management_battlefield_map_detain">
+            <field name="name">扣车</field>
+            <field name="category_id" ref="category_dispatch_car_management_battlefield_map"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_management_battlefield_map_un_detain">
+            <field name="name">解除扣车</field>
+            <field name="category_id" ref="category_dispatch_car_management_battlefield_map"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_management_battlefield_map_apply_create">
+            <field name="name">创建调车申请</field>
+            <field name="category_id" ref="category_dispatch_car_management_battlefield_map"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_management_battlefield_map_look_job_ticket">
+            <field name="name">查看调车作业单</field>
+            <field name="category_id" ref="category_dispatch_car_management_battlefield_map"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_management_battlefield_map_plan_create">
+            <field name="name">创建调车计划</field>
+            <field name="category_id" ref="category_dispatch_car_management_battlefield_map"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_management_battlefield_map_plan_look">
+            <field name="name">查看调车计划</field>
+            <field name="category_id" ref="category_dispatch_car_management_battlefield_map"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_management_battlefield_map_repair_job">
+            <field name="name">查看检修作业</field>
+            <field name="category_id" ref="category_dispatch_car_management_battlefield_map"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_management_battlefield_map_job_rehearse">
+            <field name="name">作业预演</field>
+            <field name="category_id" ref="category_dispatch_car_management_battlefield_map"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <!-- 现车管理 -->
+        <record model="ir.module.category" id="category_dispatch_car_management_run_car_manage">
+            <field name="name">现车管理</field>
+            <field name="parent_id" ref="category_dispatch_car_management"/>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_management_run_car_manage_look_page">
+            <field name="name">显示页面</field>
+            <field name="category_id" ref="category_dispatch_car_management_run_car_manage"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_management_run_car_manage_init">
+            <field name="name">初始化数据</field>
+            <field name="category_id" ref="category_dispatch_car_management_run_car_manage"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_management_run_car_manage_manual_synchronizing">
+            <field name="name">手动同步</field>
+            <field name="category_id" ref="category_dispatch_car_management_run_car_manage"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_management_run_car_manage_detain">
+            <field name="name">扣车</field>
+            <field name="category_id" ref="category_dispatch_car_management_run_car_manage"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_management_run_car_manage_fault_report">
+            <field name="name">车辆故报</field>
+            <field name="category_id" ref="category_dispatch_car_management_run_car_manage"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <!--运行图管理-->
+        <record model="ir.module.category" id="category_dispatch_car_management_dispatch_run_diagram">
+            <field name="name">运行图管理</field>
+            <field name="parent_id" ref="category_dispatch_car_management"/>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_management_dispatch_run_diagram_page_look">
+            <field name="name">显示页面</field>
+            <field name="category_id" ref="category_dispatch_car_management_dispatch_run_diagram"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_management_dispatch_run_diagram_manage">
+            <field name="name">运行图配置</field>
+            <field name="category_id" ref="category_dispatch_car_management_dispatch_run_diagram"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_dispatch_car_management_dispatch_run_diagram_calendar">
+            <field name="name">运行图日历</field>
+            <field name="category_id" ref="category_dispatch_car_management_dispatch_run_diagram"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <!--站场监监控与现车-->
+        <record model="ir.module.category" id="category_station_monitoring_and_spot_check">
+            <field name="name">站场监监控与现车</field>
+            <field name="parent_id" ref="category_dispatch_car_management"/>
+        </record>
+
+        <record model="res.groups" id="category_station_monitoring_and_spot_check_page_shows">
+            <field name="name">显示页面</field>
+            <field name="category_id" ref="category_station_monitoring_and_spot_check"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <!--TCMS投屏-->
+        <record model="res.groups" id="category_tcms_for_screen">
+            <field name="name">TCMS投屏</field>
+            <field name="category_id" ref="category_dispatch_car_management"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <!--计划日志-->
+        <record model="res.groups" id="category_plan_log">
+            <field name="name">计划日志</field>
+            <field name="category_id" ref="category_dispatch_car_management"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <!--收发车日志-->
+        <record model="res.groups" id="category_send_receive_car_plan_log">
+            <field name="name">收发车日志</field>
+            <field name="category_id" ref="category_dispatch_car_management"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <!--施工调度-->
+        <record model="ir.module.category" id="category_construction_schedule">
+            <field name="name">施工调度</field>
+            <field name="parent_id" ref="category_dispatch_car_management"/>
+        </record>
+
+        <record model="res.groups" id="category_construction_schedule_plan">
+            <field name="name">施工调度计划</field>
+            <field name="category_id" ref="category_construction_schedule"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="category_construction_schedule_area">
+            <field name="name">施工调度区域</field>
+            <field name="category_id" ref="category_construction_schedule"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <!--车间日计划生产-->
+        <record model="res.groups" id="category_workshop_day_plan_plan">
+            <field name="name">车间日生产计划</field>
+            <field name="category_id" ref="category_dispatch_car_management"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <!--站场监控(投屏)-->
+        <record model="res.groups" id="category_station_monitoring_screen_casting">
+            <field name="name">站场监控(投屏)</field>
+            <field name="category_id" ref="category_dispatch_car_management"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <!--收发车计划-->
+        <record model="ir.module.category" id="category_car_transceiver_plan">
+            <field name="name">收发车计划</field>
+            <field name="parent_id" ref="category_dispatch_car_management"/>
+        </record>
+
+        <record model="res.groups" id="category_collect_homework">
+            <field name="name">收车作业</field>
+            <field name="category_id" ref="category_car_transceiver_plan"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="category_start_collect_homework">
+            <field name="name">发车作业</field>
+            <field name="category_id" ref="category_car_transceiver_plan"/>
+            <field name="atomic">True</field>
+        </record>
+
+<!--        新增试车现调车权限用于过滤-->
+        <record model="res.groups" id="group_dispatch_car_shunting_of_test_line">
+          <field name="name">查看电客车调车</field>
+            <field name="category_id" ref="category_dispatch_car_management_battlefield_map"/>
+            <field name="atomic">True</field>
+       </record>
+
+        <record model="res.groups" id="group_dispatch_car_dispatch_car_hunting_on_non_test_line">
+          <field name="name">查看工程车调车</field>
+            <field name="category_id" ref="category_dispatch_car_management_battlefield_map"/>
+            <field name="atomic">True</field>
+       </record>
+
+    </data>
+
+</odoo>

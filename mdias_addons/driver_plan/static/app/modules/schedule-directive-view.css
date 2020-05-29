@@ -1,0 +1,34 @@
+.layui-table {
+    margin: 0 0;
+}
+
+.table-head {
+    line-height: 40px;
+    height: 40px;
+    padding-left: 12px;
+    background: #f2f2f2;
+}
+
+.layui-table, .layui-table-view {
+    margin: 0 0;
+}
+
+.custom-form-schedule label {
+    text-align: left;
+}
+
+.train-schedule-icon {
+    position: absolute;
+    font-size: 20px;
+    top: 57px;
+    right: calc(100% - 230px);
+    cursor: pointer;
+}
+
+.search-div {
+    margin: 10px auto;
+}
+
+.search-div input {
+    width: 240px;
+}

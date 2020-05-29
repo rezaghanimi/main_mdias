@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <record model="ir.module.category" id="project_manage_service_root">
+            <field name="name">项目管理</field>
+        </record>
+
+        <!-- 审核权限 -->
+        <record model="ir.module.category" id="project_manage_service_project_edit">
+            <field name="name">项目审核</field>
+            <field name="parent_id" ref="project_manage_service_root"/>
+        </record>
+
+        <record model="res.groups" id="group_project_manage_service_project_edit_page_look">
+            <field name="name">查看页面</field>
+            <field name="category_id" ref="project_manage_service_project_edit"/>
+            <field name="atomic">True</field>
+        </record>
+
+
+
+    </data>
+
+</odoo>

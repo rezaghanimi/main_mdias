@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!--拓展系统配置表单-->
+        <record model="ir.ui.view" id="vew_system_config_form_inherit">
+            <field name="model">metro_park_base.system_config</field>
+            <field name="inherit_id" ref="metro_park_base.system_config_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page string="TCMS参数">
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label"
+                                   for="tcms_synchronize_tool">
+                            </label>
+                            <div class="col-sm-10">
+                                <field name="tcms_synchronize_tool"/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label"
+                                   for="tcms_url">tcms_url
+                            </label>
+                            <div class="col-sm-10">
+                                <field name="tcms_url" placeholder="请输入URL，不要以/结尾！"/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label"
+                                   for="tcms_username">tcms_username
+                            </label>
+                            <div class="col-sm-10">
+                                <field name="tcms_username"/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label"
+                                   for="tcms_password">tcms_password
+                            </label>
+                            <div class="col-sm-10">
+                                <field name="tcms_password" password="password"/>
+                            </div>
+                        </div>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

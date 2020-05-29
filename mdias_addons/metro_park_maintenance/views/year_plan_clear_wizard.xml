@@ -1,0 +1,48 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_maintenance.year_plan_clear_wizard_list">
+            <field name="name">年计划清除向导</field>
+            <field name="model">metro_park_maintenance.year_plan_clear_wizard</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="start_month"/>
+                    <field name="end_month"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.year_plan_clear_wizard_form">
+            <field name="name">年计划清除向导</field>
+            <field name="model">metro_park_maintenance.year_plan_clear_wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="start_month"/>
+                        <div class="col-sm-3">
+                            <field name="start_month" options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="end_month"/>
+                        <div class="col-sm-3">
+                            <field name="end_month" options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                        </div>
+                    </div>
+                    <footer>
+                        <button class="btn btn-success" name="on_ok" type="object" string="确定"/>
+                        <button class="btn btn-info" string="取消" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window"
+                id="metro_park_maintenance.year_plan_clear_wizard_act_window">
+            <field name="name">年计划清除向导</field>
+            <field name="res_model">metro_park_maintenance.year_plan_clear_wizard</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+    

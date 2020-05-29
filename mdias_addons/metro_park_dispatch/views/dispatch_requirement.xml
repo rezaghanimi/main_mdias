@@ -1,0 +1,49 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.dispatch_requirement_list">
+            <field name="name">调车作业要求</field>
+            <field name="model">metro_park_dispatch.dispatch_requirement</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="remark"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.dispatch_requirement_form">
+            <field name="name">调车作业要求</field>
+            <field name="model">metro_park_dispatch.dispatch_requirement</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="name">name</label>
+                        <div class="col-sm-10">
+                            <field name="name"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="remark">remark</label>
+                        <div class="col-sm-10">
+                            <field name="remark"/>
+                        </div>
+                    </div>
+                    
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window"
+                id="metro_park_dispatch.dispatch_requirement_act_window">
+            <field name="name">dispatch_requirement</field>
+            <field name="res_model">metro_park_dispatch.dispatch_requirement</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+    

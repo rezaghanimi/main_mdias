@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <!--
+            **进站信号  D13 D11 XC3 XR3 SZC3 SZR3 CZA RZA
+        -->
+
+        <record id="hui_long_signal_D13" model="metro_park_base.signals">
+            <field name="name">D13</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D11" model="metro_park_base.signals">
+            <field name="name">D11</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_XC3" model="metro_park_base.signals">
+            <field name="name">XC3</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_XR3" model="metro_park_base.signals">
+            <field name="name">XR3</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_SZC3" model="metro_park_base.signals">
+            <field name="name">SZC3</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_SZR3" model="metro_park_base.signals">
+            <field name="name">SZR3</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_CZA" model="metro_park_base.signals">
+            <field name="name">CZA</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_RZA" model="metro_park_base.signals">
+            <field name="name">RZA</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <!--
+            **出站信号 S1 S2 S3 S4 S5 S6 S7 S8 S9 S10 S11 S12 S13 S14 S15 S16 S17 S18 S19 S20 S21 S22 S23 S24 S25 S26 S27 S28 SC3 SR3 
+        -->
+
+        <record id="hui_long_signal_S1" model="metro_park_base.signals">
+            <field name="name">S1</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_S2" model="metro_park_base.signals">
+            <field name="name">S2</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_S3" model="metro_park_base.signals">
+            <field name="name">S3</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_S4" model="metro_park_base.signals">
+            <field name="name">S4</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_S5" model="metro_park_base.signals">
+            <field name="name">S5</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_S6" model="metro_park_base.signals">
+            <field name="name">S6</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_S7" model="metro_park_base.signals">
+            <field name="name">S7</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_S8" model="metro_park_base.signals">
+            <field name="name">S8</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_S9" model="metro_park_base.signals">
+            <field name="name">S9</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_S10" model="metro_park_base.signals">
+            <field name="name">S10</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_S11" model="metro_park_base.signals">
+            <field name="name">S11</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_S12" model="metro_park_base.signals">
+            <field name="name">S12</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_S13" model="metro_park_base.signals">
+            <field name="name">S13</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_S14" model="metro_park_base.signals">
+            <field name="name">S14</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_S15" model="metro_park_base.signals">
+            <field name="name">S15</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_S16" model="metro_park_base.signals">
+            <field name="name">S16</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_S17" model="metro_park_base.signals">
+            <field name="name">S17</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_S18" model="metro_park_base.signals">
+            <field name="name">S18</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_S19" model="metro_park_base.signals">
+            <field name="name">S19</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_S20" model="metro_park_base.signals">
+            <field name="name">S20</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_S21" model="metro_park_base.signals">
+            <field name="name">S21</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_S22" model="metro_park_base.signals">
+            <field name="name">S22</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_S23" model="metro_park_base.signals">
+            <field name="name">S23</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_S24" model="metro_park_base.signals">
+            <field name="name">S24</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_S25" model="metro_park_base.signals">
+            <field name="name">S25</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_S26" model="metro_park_base.signals">
+            <field name="name">S26</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_S27" model="metro_park_base.signals">
+            <field name="name">S27</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_S28" model="metro_park_base.signals">
+            <field name="name">S28</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_SC3" model="metro_park_base.signals">
+            <field name="name">SC3</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_SR3" model="metro_park_base.signals">
+            <field name="name">SR3</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <!--
+            **调车信号 
+            D24B D24A D23A D23B D22B D22A D21A D21B D20B D20A D19A D19B D18B D18A D17A D17B D16B D16A D15A D15B D14B D14A D13A D13B D12B D12A D11A D11B D10B D10A D9A D9B D8B D8A D7A D7B D6B D6A D5A D5B D4A D4B 
+            D4BZA D5BZA D6BZA D7BZA D8BZA D9BZA D10BZA D11BZA D12BZA D13BZA D14BZA D15BZA D16BZA D17BZA D18BZA D19BZA D20BZA D21BZA D22BZA D23BZA D24BZA
+            D1 D3 D5 D7 D9 D15 D17 D19 D21 D23 JT1 JT2 JT3 JT25 JT26 JT27 JT28 JT31 JT29
+        -->
+
+        <record id="hui_long_signal_D24A" model="metro_park_base.signals">
+            <field name="name">D24A</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D24B" model="metro_park_base.signals">
+            <field name="name">D24B</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D24BZA" model="metro_park_base.signals">
+            <field name="name">D24BZA</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D23A" model="metro_park_base.signals">
+            <field name="name">D23A</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D23B" model="metro_park_base.signals">
+            <field name="name">D23B</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D23BZA" model="metro_park_base.signals">
+            <field name="name">D23BZA</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D22A" model="metro_park_base.signals">
+            <field name="name">D22A</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D22B" model="metro_park_base.signals">
+            <field name="name">D22B</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D22BZA" model="metro_park_base.signals">
+            <field name="name">D22BZA</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D21A" model="metro_park_base.signals">
+            <field name="name">D21A</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D21B" model="metro_park_base.signals">
+            <field name="name">D21B</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D21BZA" model="metro_park_base.signals">
+            <field name="name">D21BZA</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D20A" model="metro_park_base.signals">
+            <field name="name">D20A</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D20B" model="metro_park_base.signals">
+            <field name="name">D20B</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D20BZA" model="metro_park_base.signals">
+            <field name="name">D20BZA</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D19A" model="metro_park_base.signals">
+            <field name="name">D19A</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D19B" model="metro_park_base.signals">
+            <field name="name">D19B</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D19BZA" model="metro_park_base.signals">
+            <field name="name">D19BZA</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D18A" model="metro_park_base.signals">
+            <field name="name">D18A</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D18B" model="metro_park_base.signals">
+            <field name="name">D18B</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D18BZA" model="metro_park_base.signals">
+            <field name="name">D18BZA</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D17A" model="metro_park_base.signals">
+            <field name="name">D17A</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D17B" model="metro_park_base.signals">
+            <field name="name">D17B</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D17BZA" model="metro_park_base.signals">
+            <field name="name">D17BZA</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D16A" model="metro_park_base.signals">
+            <field name="name">D16A</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D16B" model="metro_park_base.signals">
+            <field name="name">D16B</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D16BZA" model="metro_park_base.signals">
+            <field name="name">D16BZA</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D15A" model="metro_park_base.signals">
+            <field name="name">D15A</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D15B" model="metro_park_base.signals">
+            <field name="name">D15B</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D15BZA" model="metro_park_base.signals">
+            <field name="name">D15BZA</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D14A" model="metro_park_base.signals">
+            <field name="name">D14A</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D14B" model="metro_park_base.signals">
+            <field name="name">D14B</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D14BZA" model="metro_park_base.signals">
+            <field name="name">D14BZA</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D13A" model="metro_park_base.signals">
+            <field name="name">D13A</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D13B" model="metro_park_base.signals">
+            <field name="name">D13B</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D13BZA" model="metro_park_base.signals">
+            <field name="name">D13BZA</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D12A" model="metro_park_base.signals">
+            <field name="name">D12A</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D12B" model="metro_park_base.signals">
+            <field name="name">D12B</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D12BZA" model="metro_park_base.signals">
+            <field name="name">D12BZA</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D11A" model="metro_park_base.signals">
+            <field name="name">D11A</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D11B" model="metro_park_base.signals">
+            <field name="name">D11B</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D11BZA" model="metro_park_base.signals">
+            <field name="name">D11BZA</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D10A" model="metro_park_base.signals">
+            <field name="name">D10A</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D10B" model="metro_park_base.signals">
+            <field name="name">D10B</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D10BZA" model="metro_park_base.signals">
+            <field name="name">D10BZA</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D9A" model="metro_park_base.signals">
+            <field name="name">D9A</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D9B" model="metro_park_base.signals">
+            <field name="name">D9B</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D9BZA" model="metro_park_base.signals">
+            <field name="name">D9BZA</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D8A" model="metro_park_base.signals">
+            <field name="name">D8A</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D8B" model="metro_park_base.signals">
+            <field name="name">D8B</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D8BZA" model="metro_park_base.signals">
+            <field name="name">D8BZA</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D7A" model="metro_park_base.signals">
+            <field name="name">D7A</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D7B" model="metro_park_base.signals">
+            <field name="name">D7B</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D7BZA" model="metro_park_base.signals">
+            <field name="name">D7BZA</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D6A" model="metro_park_base.signals">
+            <field name="name">D6A</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D6B" model="metro_park_base.signals">
+            <field name="name">D6B</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D6BZA" model="metro_park_base.signals">
+            <field name="name">D6BZA</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D5A" model="metro_park_base.signals">
+            <field name="name">D5A</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D5B" model="metro_park_base.signals">
+            <field name="name">D5B</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D5BZA" model="metro_park_base.signals">
+            <field name="name">D5BZA</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D4A" model="metro_park_base.signals">
+            <field name="name">D4A</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D4B" model="metro_park_base.signals">
+            <field name="name">D4B</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D4BZA" model="metro_park_base.signals">
+            <field name="name">D4BZA</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <!-- 
+            D1 D3 D5 D7 D9 D15 D17 D19 D21 D23 JT1 JT2 JT3 JT25 JT26 JT27 JT28 JT29 JT31 
+        -->
+
+        <record id="hui_long_signal_D1" model="metro_park_base.signals">
+            <field name="name">D1</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D3" model="metro_park_base.signals">
+            <field name="name">D3</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D5" model="metro_park_base.signals">
+            <field name="name">D5</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D7" model="metro_park_base.signals">
+            <field name="name">D7</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D9" model="metro_park_base.signals">
+            <field name="name">D9</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D15" model="metro_park_base.signals">
+            <field name="name">D15</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D17" model="metro_park_base.signals">
+            <field name="name">D17</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D19" model="metro_park_base.signals">
+            <field name="name">D19</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D21" model="metro_park_base.signals">
+            <field name="name">D21</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_D23" model="metro_park_base.signals">
+            <field name="name">D23</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_JT1" model="metro_park_base.signals">
+            <field name="name">JT1</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_JT2" model="metro_park_base.signals">
+            <field name="name">JT2</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_JT3" model="metro_park_base.signals">
+            <field name="name">JT3</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_JT25" model="metro_park_base.signals">
+            <field name="name">JT25</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_JT26" model="metro_park_base.signals">
+            <field name="name">JT26</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_JT27" model="metro_park_base.signals">
+            <field name="name">JT27</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_JT28" model="metro_park_base.signals">
+            <field name="name">JT28</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_JT29" model="metro_park_base.signals">
+            <field name="name">JT29</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+        <record id="hui_long_signal_JT31" model="metro_park_base.signals">
+            <field name="name">JT31</field>
+            <field name="location" ref="hui_long" />
+        </record>
+
+    </data>
+</odoo>

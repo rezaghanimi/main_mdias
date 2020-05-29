@@ -1,0 +1,62 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.ats_position_wizard_list">
+            <field name="name">ats_position_wizard list </field>
+            <field name="model">metro_park_dispatch.ats_position_wizard</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="position"/>
+                    <field name="train_id"/>
+                </tree>
+            </field>
+        </record>
+
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.ats_position_wizard_form">
+            <field name="name">ats_position_wizard form </field>
+            <field name="model">metro_park_dispatch.ats_position_wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="train_id">train_id</label>
+                        <div class="col-sm-10">
+                            <field name="train_id" options="{'no_create_edit': True,'no_open': True, 'no_create':True}" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="position">location</label>
+                        <div class="col-sm-10">
+                            <field name="location" options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="position">position</label>
+                        <div class="col-sm-10">
+                            <field name="position" options="{'no_create_edit': True,'no_open': True, 'no_create':True}" domain="[('location', '=', location)]"/>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <button class="btn btn-success" type="object" name="on_ok" text="确定" />
+                        <button class="btn btn-info" text="取消" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="metro_park_dispatch.ats_position_wizard_act_window">
+            <field name="name">ats_position_wizard</field>
+            <field name="res_model">metro_park_dispatch.ats_position_wizard</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+<!--        <menuitem action="metro_park_dispatch.ats_position_wizard_act_window"-->
+<!--                  id="metro_park_dispatch.ats_position_wizard_menu"-->
+<!--                  name="ats位置模拟"-->
+<!--                  parent="metro_park_dispatch.menu_root"/>-->
+    </data>
+</odoo>
+    

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="T1710G_and_T1714G" model="metro_park_base.graph_relation">
+            <field name="x_rail" ref="ban_qiao_T1710G"/>
+            <field name="y_rail" ref="ban_qiao_T1714G"/>
+        </record>
+    </data>
+</odoo>

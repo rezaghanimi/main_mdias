@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+	<!-- 交班管理搜索 -->
+    <t t-name="handover_search">
+	   <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="handover_date"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="handover_sign_user"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="accept_user"/>
+               </div>
+
+               <div class="col-md-auto">
+                   <!-- class有search_extend_apply的为搜索的确定按钮 -->
+                   <button type="button" class="btn btn-primary search_extend_apply">
+                       应用
+                   </button>
+                   <!-- class有search_extend_reset的为搜索的重置按钮 -->
+                   <button type="button" class="btn btn-info search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+	</t>
+
+
+    <!-- 场调交接班 -->
+    <t t-name="char_handover_search">
+	   <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="handover_date"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="search_handover_sign_user"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="search_accept_user"/>
+               </div>
+
+               <div class="col-md-auto">
+                   <!-- class有search_extend_apply的为搜索的确定按钮 -->
+                   <button type="button" class="btn btn-primary search_extend_apply">
+                       应用
+                   </button>
+                   <!-- class有search_extend_reset的为搜索的重置按钮 -->
+                   <button type="button" class="btn btn-info search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+	</t>
+
+    <!-- 生产信息管理搜索 -->
+    <t t-name="production.handover.controller">
+        <div class="funenc_controller">
+            <div class="row toolbar">
+                <div class="col-sm-12 col-md-12">
+                    <div class="btns d-flex">
+						<div class="operation_btn"/>
+                        <div class="side_bar"/>
+                        <div class="search_btns btn-group"/>
+                        <div class="switch_btn"/>
+                        <div class="custom_search" style="flex: 1 1 auto"/>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 d-flex flex-row-reverse align-items-center">
+                    <div class="search ml-1"/>
+                </div>
+            </div>
+            <div class="content"/>
+            <div class="pager"/>
+        </div>
+    </t>
+
+    <t t-name="search_metro_park_production_files">
+        <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="file_name"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="file_type_id"/>
+               </div>
+
+               <div class="col-md-auto">
+                   <button type="button" class="btn btn-primary search_extend_apply">
+                       应用
+                   </button>
+                   <button type="button" class="btn btn-info search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+
+            <div class="row align-items-center">
+                <div class="col-md-auto">
+                   <button type="button" class="btn btn-primary upload_production_files">
+                       上传文件
+                   </button>
+               </div>
+            </div>
+       </div>
+    </t>
+</templates>

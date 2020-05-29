@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+     <t t-name="Funenc.ListView_null.buttons">
+         <div>
+         </div>
+     </t>
+
+    <t t-name="Funenc.ListView.buttons">
+        <div class="o_list_buttons" role="toolbar" aria-label="Main actions">
+            <t t-if="widget.is_action_enabled('create')">
+                <button type="button" class="btn btn-primary o_list_button_add" accesskey="c">
+                    Create
+                </button>
+            </t>
+            <button type="button" class="btn btn-primary o_list_button_save" accesskey="s">
+                Save
+            </button>
+            <button type="button" class="btn btn-secondary o_list_button_discard" accesskey="j">
+                Discard
+            </button>
+            <button type="button" class="btn btn-secondary funenc_import_dev">
+                导入
+            </button>
+        </div>
+    </t>
+
+    <!-- 年计划按扭 -->
+    <t t-name="Funenc.YearPlan.buttons">
+        <div class="o_list_buttons" role="toolbar" aria-label="Main actions">
+            <button t-if="info.state != 'published'" type="button" class="btn btn-info o_list_recompute">
+                编制计划
+            </button>
+            <button t-if="info.state != 'published'" type="button" class="btn btn-info view_by_time_line">
+                时间轴编辑
+            </button>
+        </div>
+    </t>
+
+    <!-- 年计划按扭 -->
+    <t t-name="funenc.year_plan_btns">
+        <t t-set="state" t-value="widget.record.data.state"/>
+        <div class="d-flex">
+            <button t-if="state=='draft'"
+                    type="object"
+                    name="publish_plan"
+                    class="btn btn-sm btn-primary m-1">
+                发布
+            </button>
+            <button t-if="state=='published'"
+                    type="object"
+                    name="reback_plan"
+                    class="btn btn-sm btn-primary m-1">
+                撤回
+            </button>
+            <button t-if="state=='draft' || state=='published'"
+                    type="object"
+                    name="view_year_plan_editor_action"
+                    class="btn btn-sm btn-primary m-1">
+                编辑
+            </button>
+            <button t-else=""
+                    type="object"
+                    name="view_year_plan_summary_action"
+                    class="btn btn-sm btn-primary m-1">
+                计算
+            </button>
+            <button type="object"
+                    name="export_year_plan"
+                    class="btn btn-sm btn-primary m-1 export_year_plan_table">
+                年计划导出
+            </button>
+            <button type="object"
+                    name="import_year_plan"
+                    class="btn btn-sm btn-primary m-1 import_year_plan_table">
+                年计划导入
+            </button>
+		</div>
+	</t>
+
+    <t t-name="funenc.year_plan_status_template">
+        <span t-if="widget.record.data.state=='draft'" class="badge badge-warning">
+            草稿
+        </span>
+        <span t-if="widget.record.data.state=='published'" class="badge badge-success">
+            已发布
+        </span>
+    </t>
+
+    <!-- 月计划按扭 -->
+    <t t-name="funenc.month_plan_btns">
+		<div class="d-flex">
+            <button t-if="widget.record.data.state=='draft'"
+                    type="object"
+                    name="publish_plan"
+                    class="btn btn-sm btn-primary m-1">
+                发布
+            </button>
+            <button t-if="widget.record.data.state=='published'"
+                    type="object"
+                    name="reback_plan"
+                    class="btn btn-sm btn-primary m-1">
+                撤回
+            </button>
+            <button type="object"
+                    name="view_month_plan_action"
+                    class="btn btn-sm btn-primary m-1">
+                查看
+            </button>
+
+            <button type="object"
+                    name="view_month_plan_works_import"
+                    class="btn btn-sm btn-primary m-1">
+                生产作业导入
+            </button>
+            <button t-if="widget.record.data.state=='published'"
+                    type="object"
+                    name="month_plan_export"
+                    class="btn btn-sm btn-primary m-1">
+                导出
+            </button>
+		</div>
+	</t>
+
+    <!-- 日计划按扭 -->
+    <t t-name="funenc.day_plan_btns">
+        <t t-set="state" t-value="widget.record.data.state"/>
+        <t t-set="use_pms_maintaince" t-value="widget.record.data.use_pms_maintaince"/>
+        <div class="d-flex">
+            <button t-if="(state=='draft' || state==false) &amp;use_pms_maintaince == 'no'"
+                    confirm="发布计划之前请确定计划是否已经计算!"
+                    type="object"
+                    name="publish_plan_to_park_dispatch"
+                    class="btn btn-sm btn-primary m-1">
+                发布
+            </button>
+
+            <button t-if="(state=='draft' || state==false) &amp;use_pms_maintaince == 'yes'"
+                    confirm="发布计划之前请确定计划是否已经计算和日计划对用的工班有没有选择!"
+                    type="object"
+                    name="publish_plan_to_park_dispatch_pms_info"
+                    class="btn btn-sm btn-primary m-1">
+                发布
+            </button>
+            <button t-if="state!='published'"
+                    type="object"
+                    name="view_day_plan_action"
+                    class="btn btn-sm btn-primary m-1">
+                编制调整
+            </button>
+            <button t-if="state=='published'"
+                    type="object"
+                    name="view_day_plan_action"
+                    class="btn btn-sm btn-primary m-1">
+                查看
+            </button>
+            <button type="object"
+                    name="export_day_plan_action"
+                    class="btn btn-sm btn-primary m-1">
+                导出
+            </button>
+		</div>
+	</t>
+
+    <!-- 日计划按扭 -->
+    <t t-name="funenc.user_define_dev_btns">
+        <div class="d-flex">
+            <button type="object"
+                    name="user_define_dev_action"
+                    class="btn btn-sm btn-primary m-1">
+                指定设备
+            </button>
+		</div>
+	</t>
+
+    <!-- 年计划时间轴 -->
+    <t t-name="funenc.year_plan_time_line_template">
+		<div class="d-flex card" style="height:100%">
+            <div class="time_line" style="height:100%"/>
+        </div>
+    </t>
+
+    <!-- 时间轴查看 -->
+    <t t-name="funenc.view_plan_by_time_line">
+		<div class="d-flex card" style="margin:10px; height:100%">
+            <div class="time_line"/>
+        </div>
+    </t>
+
+    <!-- 月计划按扭 -->
+    <t t-name="funenc.year_plan_template_table">
+		<div class="d-flex" style='width:100%'>
+            <table lay-filter="year_plan_table">
+            <thead>
+                <tr>
+                    <th lay-data="{field:'dev_name', width:80}">名称</th>
+                    <th lay-data="{field:'month_1'}">1</th>
+                    <th lay-data="{field:'month_2'}">2</th>
+                    <th lay-data="{field:'month_3'}">3</th>
+                    <th lay-data="{field:'month_4'}">4</th>
+                    <th lay-data="{field:'month_5'}">5</th>
+                    <th lay-data="{field:'month_6'}">6</th>
+                    <th lay-data="{field:'month_7'}">7</th>
+                    <th lay-data="{field:'month_8'}">8</th>
+                    <th lay-data="{field:'month_9'}">9</th>
+                    <th lay-data="{field:'month_10'}">10</th>
+                    <th lay-data="{field:'month_11'}">11</th>
+                    <th lay-data="{field:'month_12'}">12</th>
+                </tr> 
+            </thead>
+                <tbody>
+                <tr t-foreach="widget.tableData" t-as="item">
+                    <td><t t-esc="item.dev_name"/></td>
+                    <td><t t-esc="item.month_1"/></td>
+                    <td><t t-esc="item.month_2"/></td>
+                    <td><t t-esc="item.month_3"/></td>
+                    <td><t t-esc="item.month_4"/></td>
+                    <td><t t-esc="item.month_5"/></td>
+                    <td><t t-esc="item.month_6"/></td>
+                    <td><t t-esc="item.month_7"/></td>
+                    <td><t t-esc="item.month_8"/></td>
+                    <td><t t-esc="item.month_9"/></td>
+                    <td><t t-esc="item.month_10"/></td>
+                    <td><t t-esc="item.month_11"/></td>
+                    <td><t t-esc="item.month_12"/></td>
+                </tr>
+            </tbody>
+            </table>
+		</div>
+	</t>
+
+    <t t-name="repair_tmp_rule.buttons">
+        <div>
+            <button type="object" name="view_record" class="btn btn-success btn-sm">查看</button>
+            <button type="object" name="edit_record" class="btn btn-success btn-sm">编辑</button>
+            <button type="object" name="unlink_record" class="btn btn-success btn-sm" confirm="是否确认删除该记录?">删除</button>
+        </div>
+    </t>
+
+    <!-- 周计划按扭 -->
+    <t t-name="funenc.week_plan_btns">
+		<div class="d-flex">
+            <button type="object"
+                    name="view_week_plan_data_action"
+                    class="btn btn-sm btn-primary m-1">
+                查看
+            </button>
+            <button type="object"
+                    name="edit_week_plan"
+                    class="btn btn-sm btn-primary m-1">
+                编辑
+            </button>
+            <button type="object"
+                    name="import_week_plan"
+                    class="btn btn-sm btn-primary m-1">
+                导入
+            </button>
+            <button type="object"
+                    name="export_week_plan"
+                    class="btn btn-sm btn-primary m-1">
+                导出
+            </button>
+            <button t-if="widget.record.data.state == 'draft'"
+                    type="object"
+                    name="publish_week_plan"
+                    class="btn btn-sm btn-primary m-1">
+                发布
+            </button>
+            <button t-if="widget.record.data.state == 'published'"
+                    type="object"
+                    name="reback_plan"
+                    confirm="如果已经有本周的日计划发布的话日计划无法撤回!"
+                    class="btn btn-sm btn-primary m-1">
+                撤回
+            </button>
+            <button type="object"
+                    name="mile_work_class_manage"
+                    class="btn btn-sm btn-primary m-1">
+                工班安排
+            </button>
+		</div>
+	</t>
+
+    <!-- 月计划状态 -->
+    <t t-name="funenc.month_plan_status_template">
+        <span t-if="widget.record.data.state=='draft'" class="badge badge-warning">
+            草稿
+        </span>
+        <span t-if="widget.record.data.state=='published'" class="badge badge-success">
+            已发布
+        </span>
+    </t>
+
+    <!-- 周计划状态 -->
+    <t t-name="funenc.week_plan_status_template">
+        <span t-if="widget.record.data.state=='draft'" class="badge badge-warning">
+            草稿
+        </span>
+        <span t-if="widget.record.data.state=='published'" class="badge badge-success">
+            已发布
+        </span>
+    </t>
+
+    <t t-name="day_plan_detail_btns">
+        <div class="o_list_buttons" role="toolbar" aria-label="Main actions">
+            <button type="button" class="btn btn-primary o_list_button_add" accesskey="c">
+                重新计算
+            </button>
+        </div>
+    </t>
+
+    <!-- 日计划状态 -->
+    <t t-name="funenc.day_plan_status_template">
+        <span t-if="widget.record.data.state=='draft'" class="badge badge-warning">
+            草稿
+        </span>
+        <span t-if="widget.record.data.state=='published'" class="badge badge-success">
+            已发布
+        </span>
+    </t>
+
+    <!-- 日计划按扭 -->
+    <t t-name="metro_park_maintenance.day_plan_table_btns">
+        <t t-if="widget.is_action_enabled('create')">
+            <button type="button" class="btn btn-primary add_normal_plan">
+                新增计划
+            </button>
+            <button type="button" class="btn btn-primary add_temp_plan">
+                检技通
+            </button>
+            <button type="button" class="btn btn-primary manage_run_trains">
+                运营车
+            </button>
+            <div class="dropdown o_dropdown">
+              <button data-toggle="dropdown" class="btn btn-primary" href="#">自动安排</button>
+              <ul class="dropdown-menu o_dropdown_menu" role="menu" aria-labelledby="dLabel">
+                   <li><a class="plan_train dropdown-item" href="#">自动安排车辆</a></li>
+                   <li><a class="plan_miles dropdown-item" href="#">自动安排里程修</a></li>
+              </ul>
+            </div>
+            <button type="button" class="btn btn-primary pre_day_trains_manage">
+                车辆信息
+            </button>
+            <button type="button" class="btn btn-primary simulate_train_info">
+                模拟车辆信息
+            </button>
+            <button type="button" class="btn btn-primary import_mile_info">
+                导入里程
+            </button>
+<!--            暂时取消-->
+<!--            <button type="button" class="btn btn-primary import_day_plans">-->
+<!--                导入日计划-->
+<!--            </button>-->
+        </t>
+    </t>
+
+    <t t-name="week_create_btns_template">
+        <button type="object" name="view_detail" class="btn btn-success btn-sm week_create">
+            创建
+        </button>
+    </t>
+
+    <t t-name="year_summary_btns_template">
+        <button type="object" name="view_detail" class="btn btn-success btn-sm">
+            详情
+        </button>
+    </t>
+
+    <!-- 年计划导入 -->
+    <t t-name="metro_park_maintaince.year_plan_list_buttons">
+        <div style="float: left;">
+            <button class="btn btn-info add_year_plan">
+                添加年计划
+            </button>
+            <button class="btn btn-info balance_rule_offset">
+                修次管理
+            </button>
+            <button class="btn btn-success download_year_plan_template">
+                模板下载
+            </button>
+        </div>
+    </t>
+
+    <!-- 年计划导出 -->
+    <t t-name="year_plan.export_buttons">
+        <button type="action"
+                data-model="metro_park_maintenance.year_plan_import_wizard"
+                data-method="export_year_plan"
+                data-reload-on-close="1"
+                class="btn btn-info export_year_plan_table">
+                年计划导出
+            </button>
+    </t>
+
+    <!-- 检修操作按扭 -->
+    <t t-name="metro_park_maintenance.maintaince_order_operation_btns">
+        <div>
+            <button t-if="widget.record.data.state=='un_assign' &amp;&amp; widget.has_group('metro_park_maintenance.group_car_service_flow_work_order_assign_work')"
+                    type="object"
+                    name="assign"
+                    class="btn btn-sm btn-primary un_assign">
+                指派
+            </button>
+            <button t-if="widget.record.data.state=='assigned'"
+                    type="object"
+                    name="auto_compute"
+                    class="btn btn-sm btn-success auto_compute">
+                接报
+            </button>
+            <button t-if="widget.record.data.state=='assigned'"
+                    type="object"
+                    name="reasigned"
+                    class="btn btn-sm btn-success reasigned">
+                转报
+            </button>
+            <button t-if="widget.record.data.state=='assigned'"
+                    type="object"
+                    name="rebacked"
+                    class="btn btn-sm btn-success rebacked">
+                退回
+            </button>
+            <button t-if="widget.record.data.state=='accept'"
+                    type="object"
+                    name="start_work"
+                    class="btn btn-sm btn-success do_work">
+                开工
+            </button>
+            <button t-if="widget.record.data.state=='started'"
+                    type="object"
+                    name="finish_work"
+                    class="btn btn-sm btn-success do_work">
+                完工
+            </button>
+            <button t-if="widget.record.data.state=='finished'"
+                    type="object"
+                    name="finish_work_confirm"
+                    class="btn btn-sm btn-success do_work">
+                完工确认
+            </button>
+        </div>
+    </t>
+
+    <t t-name="maintaince_order_btn">
+        <div>
+            <button type="button"
+                    t-if="widget.has_group('metro_park_maintenance.group_car_service_flow_work_order_assign_work')"
+                    class="btn btn-primary send_job">派工</button>
+            <button type="button" class="btn btn-primary start_job">开工</button>
+            <button type="button" class="btn btn-primary finish_job">完工</button>
+            <button type="button" class="btn btn-primary finish_job_confirm">完工确认</button>
+            <button type="button"
+                    t-if="widget.has_group('metro_park_maintenance.group_car_service_flow_work_order_force_close')"
+                    class="btn btn-danger force_close">强制关闭</button>
+            <button type="button"
+                    t-if="widget.has_group('metro_park_maintenance.group_car_service_flow_work_order_order_cancellation')"
+                    class="btn btn-danger order_obsolete">工单作废</button>
+        </div>
+    </t>
+
+    <t t-name="year_plan_rule_info_btn">
+        <div>
+            <button type="object" name="del_year_plan_rule_info" class="btn btn-primary"
+                    confirm="是否确认删除该记录?">删除</button>
+        </div>
+    </t>
+
+    <t t-name="train_dev_status">
+        <t t-set="dev_status" t-value="widget.record.data.dev_status"/>
+        <t t-log="dev_status"/>
+        <div class="train_dev_status">
+            <span t-if="dev_status == 'using'" class="train_using">
+                使用中
+            </span>
+            <span t-elif="dev_status == 'free'" class="train_free">
+                未使用
+            </span>
+        </div>
+    </t>
+
+    <t t-name="train_dev_operation">
+        <div class="train_dev_operations">
+            <button class="btn btn-info btn-sm" name="view_history_miles" type="object">
+                查看
+            </button>
+        </div>
+    </t>
+
+    <t t-name="train_dev_color">
+        <t t-set="display_color" t-value="widget.record.data.display_color"/>
+        <div class="display_color_box">
+            <div class="train_dev_display_color" t-attf-style="background-color: #{display_color};"/>
+        </div>
+    </t>
+
+    <t t-name="metro_park_maintenance.import_data_repair_tmp_rule_button">
+        <div>
+            <button type="object" name="create_data_rec" class="btn btn-primary">创建</button>
+            <button type="object" name="import_data_repair_tmp_rule" class="btn btn-primary">导入</button>
+            <button type="object" name="export_data_repair_tmp_rule" class="btn btn-primary">导出</button>
+            <button type="object" name="manual_sync" class="btn btn-primary">手动同步</button>
+        </div>
+    </t>
+
+    <t t-name="maintaince_order_status">
+        <t t-set="state" t-value="widget.record.data.state"/>
+        <t t-log="state"/>
+
+        <span t-if="state == 'un_assign'" class="un_assign_order">
+            未指派
+        </span>
+
+        <span t-elif="state == 'assigned'" class="assigned_order">
+            已指派
+        </span>
+
+        <span t-elif="state == 'accept'" class="accept_order">
+            已接报
+        </span>
+
+        <span t-elif="state == 'started'" class="started_order">
+            已开工
+        </span>
+
+        <span t-elif="state == 'finished'" class="finished_order">
+            已完工
+        </span>
+
+        <span t-elif="state == 'finish_accept'" class="finish_accept_order">
+            已确认
+        </span>
+
+        <span t-elif="state == 'obsolete'" class="obsolete_order">
+            已作废
+        </span>
+    </t>
+
+    <!-- 车辆设备导入 -->
+    <t t-name="train_dev.import_buttons">
+        <div>
+            <button type="action"
+                    data-model="metro_park_maintenance.train_dev"
+                    data-method="create_train_dev_form"
+                    data-reload-on-close="1"
+                    class="btn btn-info">
+                创建
+            </button>
+
+            <button type="action"
+                    data-model="metro_park_maintenance.train_dev"
+                    data-method="import_train_dev_form"
+                    data-reload-on-close="1"
+                    class="btn btn-info">
+                导入
+            </button>
+
+            <button type="action"
+                    data-model="metro_park_maintenance.train_dev"
+                    data-method="train_dev_excel_download"
+                    class="btn btn-info">
+                模板下载
+            </button>
+        </div>
+    </t>
+
+    <t t-name="plan_preview">
+         <div style="width:100%; height:100%">
+            <canvas style="width:100%; height:100%">
+
+            </canvas>
+         </div>
+     </t>
+
+    <!-- 计划预演时间轴 -->
+    <t t-name="metro_park_meaintaince.plan_preview_timeline">
+		<div class="d-flex card" style="height:100%">
+            <div class="time_line" style="height:100%"/>
+        </div>
+    </t>
+
+
+    <t t-name="metro_park_maintenance.tip-content">
+        <div class="rule_tip">
+            <div>修程名称:<t t-esc="rule.no"/></div>
+            <div>修程天数:<t t-esc="rule.repair_day"/></div>
+            <div>当前修次:<t t-esc="rule.repair_num"/></div>
+            <div><span class="edit_rule_info" >修改</span></div>
+        </div>
+    </t>
+
+    <t t-name="metro_park_maintenance.export_produce_plan">
+        <button type="button" class="btn btn-secondary export_produce_plan">
+            导出计划
+        </button>
+    </t>
+
+    <!-- 规程偏移向导 -->
+    <t t-name="metro_park_maintenance.balance_offset_table.buttons">
+        <div class="o_list_buttons" role="toolbar" aria-label="Main actions">
+            <t t-if="widget.is_action_enabled('create')">
+                <button type="button" class="btn btn-primary o_list_button_add" accesskey="c">
+                    Create
+                </button>
+            </t>
+            <button type="button" class="btn btn-primary o_list_button_save" accesskey="s">
+                Save
+            </button>
+            <button type="button" class="btn btn-secondary o_list_button_discard" accesskey="j">
+                Discard
+            </button>
+            <button type="button" class="btn btn-secondary init_offset">
+                同步设备
+            </button>
+            <button type="button" class="btn btn-secondary update_year_month">
+                更新年份
+            </button>
+            <button type="button" class="btn btn-secondary syn_to_repair">
+                同步到检修
+            </button>
+            <button type="button" class="btn btn-secondary import_offset">
+                导入
+            </button>
+            <button type="button" class="btn btn-secondary export_offset">
+                导出
+            </button>
+        </div>
+    </t>
+
+</templates>

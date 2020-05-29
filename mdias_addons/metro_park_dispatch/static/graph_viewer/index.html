@@ -1,0 +1,79 @@
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=5,IE=9" ><![endif]-->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>FunencMdias</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="styles/grapheditor.css">
+	<link rel="stylesheet" type="text/css" href="styles/park_map.css">
+	<link rel="stylesheet" type="text/css" href="styles/operation.css">
+	<link rel="stylesheet" type="text/css" href="styles/park_footer.css">
+	<link rel="stylesheet" type="text/css" href="styles/keyboard.css">
+	<script type="text/javascript">
+		
+		var urlParams = (function (url) {
+			var result = new Object();
+			var idx = url.lastIndexOf('?');
+			if (idx > 0) {
+				var params = url.substring(idx + 1).split('&');
+				for (var i = 0; i < params.length; i++) {
+					idx = params[i].indexOf('=');
+
+					if (idx > 0) {
+						result[params[i].substring(0, idx)] = params[i].substring(idx + 1);
+					}
+				}
+			}
+			return result;
+		})(window.location.href);
+
+		mxLoadResources = false;
+	</script>
+
+	<script type="text/javascript" src="lib/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/lodash.min.js"></script>
+	<script type="text/javascript" src="lib/socket.io.js"></script>
+	<script type="text/javascript" src="lib/moment.min.js"></script>
+	<script type="text/javascript" src="lib/jquery.keyboard.js"></script>
+	<script type="text/javascript" src="lib/jquery.keyboard.extension-typing.js"></script>
+	<script type="text/javascript" src="lib/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="lib/pop.min.js"></script>
+	
+	<script type="text/javascript" src="js/Init.js"></script>
+	<script type="text/javascript" src="deflate/pako.min.js"></script>
+	<script type="text/javascript" src="deflate/base64.js"></script>
+	<script type="text/javascript" src="jscolor/jscolor.js"></script>
+	<script type="text/javascript" src="sanitizer/sanitizer.min.js"></script>
+	<script type="text/javascript" src="lib/mxgraph/js/mxClient.js"></script>
+	<script type="text/javascript" src="js/EditorUi.js"></script>
+	<script type="text/javascript" src="js/Editor.js"></script>
+	<script type="text/javascript" src="js/Sidebar.js"></script>
+	<script type="text/javascript" src="js/Graph.js"></script>
+	<script type="text/javascript" src="js/Format.js"></script>
+	<script type="text/javascript" src="js/Shapes.js"></script>
+	<script type="text/javascript" src="js/Actions.js"></script>
+	<script type="text/javascript" src="js/Menus.js"></script>
+	<script type="text/javascript" src="js/Toolbar.js"></script>
+	<script type="text/javascript" src="js/Dialogs.js"></script>
+	<script type="text/javascript" src="js/ParkOperation.js"></script>
+	<script type="text/javascript" src="js/TrainsPanel.js"></script>
+	<script type="text/javascript" src="js/CellExtend.js"></script>
+	<script type="text/javascript" src="js/CefOperation.js"></script>
+	<script type="text/javascript" src="js/AlarmList.js"></script>
+	<script type="text/javascript" src="js/ParkMap.js"></script>
+	<script type="text/javascript" src="js/ParkMapForXiandi.js"></script>
+	<script type="text/javascript" src="js/NetWork.js"></script>
+	<script type="text/javascript" src="js/BusyBoard.js"></script>
+	<script type="text/javascript" src="js/ParkFooter.js"></script>
+	<script type="text/javascript" src="js/Keyboard.js"></script>
+	<script type="text/javascript" src="js/BlackOut.js"></script>
+</head>
+
+<body class="geEditor">
+	<div class="loading_pic"></div>
+	<script type="text/javascript" src="js/GraphInit.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<script>
+    function println() {
+        $.print("#call_record_template");
+    }
+</script>
+
+
+<div id="call_record_template" style="height: 73%; margin-top: 50px">
+    <h3 style="text-align: center; margin-bottom: 2%">报警记录</h3>
+    <table class="table" style="margin-top: -11px; text-align: center;border: 2px solid #000000;">
+        <tr>
+            <td class="td" style="width: 13%">记录时间</td>
+            <td class="td" style="width: 13%">地点</td>
+            <td class="td" style="width: 13%">位置</td>
+            <td class="td" style="width: 13%">设备</td>
+            <td class="td">内容</td>
+            <td class="td">IP地址</td>
+            <td class="td">维护建议</td>
+            <td class="td">维护等级</td>
+        </tr>
+        <tr v-for="value in detail">
+            <td class="td">&#160; {{value.write_date}}</td>
+            <td class="td">{{value.place}}</td>
+            <td class="td">{{value.site}}</td>
+            <td class="td">{{value.equipment}}</td>
+            <td class="td">{{value.content}}</td>
+            <td class="td">{{value.ip_site}}</td>
+            <td class="td">{{value.maintenance_advice}}</td>
+            <td class="td">{{value.alarm_level}}</td>
+        </tr>
+    </table>
+</div>
+
+<div style="width:60px; margin: auto;margin-top: 1%">
+    <button class="btn btn-primary" onclick="println()">打印</button>
+</div>

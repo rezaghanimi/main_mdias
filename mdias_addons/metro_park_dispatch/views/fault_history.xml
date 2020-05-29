@@ -1,0 +1,68 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.fault_history_list">
+            <field name="name">故报历史</field>
+            <field name="model">metro_park_dispatch.fault_history</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="cur_train"/>
+                    <field name="fault_type"/>
+                    <field name="cur_rail"/>
+                    <field name="reason"/>
+                </tree>
+            </field>
+        </record>
+
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.fault_history_form">
+            <field name="name">故报历史</field>
+            <field name="model">metro_park_dispatch.fault_history</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="cur_train">cur_train</label>
+                        <div class="col-sm-10">
+                            <field name="cur_train"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="fault_type">fault_type</label>
+                        <div class="col-sm-10">
+                            <field name="fault_type"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="cur_rail">cur_rail</label>
+                        <div class="col-sm-10">
+                            <field name="cur_rail"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="reason">reason</label>
+                        <div class="col-sm-10">
+                            <field name="reason"/>
+                        </div>
+                    </div>
+                    
+                </form>
+            </field>
+        </record>
+
+        
+        <record model="ir.actions.act_window"
+                id="metro_park_dispatch.fault_history_act_window">
+            <field name="name">故报历史</field>
+            <field name="res_model">metro_park_dispatch.fault_history</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+<!--        <menuitem action="metro_park_dispatch.fault_history_act_window" -->
+<!--                  id="metro_park_dispatch.fault_history_menu" -->
+<!--                  name="车辆故报历史"-->
+<!--                  parent="metro_park_dispatch.menu_root"/>-->
+
+    </data>
+</odoo>
+    

@@ -1,0 +1,214 @@
+<div class="layui-row">
+    <button class="layui-btn layui-btn-sm" id="backList" style="margin-left: 10px">
+        返回
+    </button>
+    <button class="layui-btn layui-btn-sm layui-hide" id="loadData" style="margin-left: 10px">
+        load
+    </button>
+
+    <button class="layui-btn layui-btn-sm" id="previewAnalysis" style="margin-left: 10px">
+        预演分析
+    </button>
+</div>
+<div class="layui-row layui-hide" id="analysisResult">
+    <div class="layui-col-lg3">
+        <div class="layui-card">
+            <div class="layui-card-body">
+                <p>位置图内总开行列车次:<span id="positionTrains">0</span>列次</p>
+                <p>时刻表内内总开行列车次:<span id="scheduleTrains">0</span>列次</p>
+                <table class="layui-table">
+                    <caption>位置图缺失车次</caption>
+                    <thead>
+                    <tr>
+                        <td>车次</td>
+                    </tr>
+                    </thead>
+                    <tbody id="missTrains">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="layui-col-lg3">
+        <div class="layui-card">
+            <div class="layui-card-body">
+                <p>单班最长工作时间:<span id="positionMaxWorkTime">0</span>小时</p>
+                <p>规则最长工作时间:<span id="ruleMaxWorkTime">0</span>小时</p>
+                <table class="layui-table">
+                    <caption>位置图最长工作时间</caption>
+                    <thead>
+                    <tr>
+                        <td>机班号</td>
+                        <td>超时时间(h)</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <span id="maxShift">0</span>
+                        </td>
+                        <td>
+                            <span id="maxShiftTime">0</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="layui-col-lg3">
+        <div class="layui-card">
+            <div class="layui-card-body">
+                <p>单班最短工作时间:<span id="positionMinWorkTime">0</span>小时</p>
+                <p>规则最短工作时间:<span id="ruleMinWorkTime">0</span>小时</p>
+                <table class="layui-table">
+                    <caption>位置图最短工作时间</caption>
+                    <thead>
+                    <tr>
+                        <td>机班号</td>
+                        <td>缺省时间(h)</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <span id="minShift">0</span>
+                        </td>
+                        <td>
+                            <span id="minShiftTime">0</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="layui-col-lg3">
+        <div class="layui-card">
+            <div class="layui-card-body">
+                <p>最短换乘休息时间:<span id="positionMinRestTime">0</span>分钟</p>
+                <p>规则最短换乘休息时间:<span id="ruleMinRestTime">0</span>分钟</p>
+                <table class="layui-table">
+                    <caption>位置图最短换乘休息时间</caption>
+                    <thead>
+                    <tr>
+                        <td>机班号</td>
+                        <td>接车时间</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <span id="minRestShift">0</span>
+                        </td>
+                        <td>
+                            <span id="minRestPickUpTime">0</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="layui-row">
+    <div class="layui-tab layui-tab-card">
+        <ul class="layui-tab-title">
+            <li class="layui-this">白班</li>
+            <li>夜班</li>
+            <li>早班</li>
+        </ul>
+        <div class="layui-tab-content shift-container">
+            <div class="layui-tab-item layui-show">
+                <div class="layui-row " id="dayShiftContainer"></div>
+            </div>
+            <div class="layui-tab-item">
+                <div class="layui-row" id="nightShiftContainer"></div>
+            </div>
+            <div class="layui-tab-item">
+                <div class="layui-row" id="morningShiftContainer"></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script id="processScheduleTemplate" type="text/html">
+    {{# layui.each(d, function(index, item){ }}
+    <div class="layui-col-lg3 shift-table">
+        <table class="layui-table" id="{{item.id+''}}" data-type="{{item.type}}" lay-size="sm">
+            <thead>
+            <tr>
+                <th colspan="7" class="text-color-red text-align-center">
+                    位置:{{item.typeName+(index+1)}}
+                </th>
+            </tr>
+            <tr>
+                <th class="text-color-red layui-elip">休息时间</th>
+                <th class="layui-elip">接车时间</th>
+                <th class="layui-elip">接车车次</th>
+                <th class="layui-elip">开车车次</th>
+                <th class="layui-elip">发车时间</th>
+                <th class="layui-elip">到站时间</th>
+                <th class="layui-elip">始发站点</th>
+            </tr>
+            </thead>
+            <tbody id="[{{index}}]">
+            {{# layui.each(item.dtsList,function(position, items){ }}
+            <tr>
+                {{# if(position === 0 ){ }}
+                <td class="text-color-red">&nbsp;</td>
+                {{# } }}
+                {{# if(0 < position && position <= item.dtsList.length-1){ }}
+                <td class="text-color-red text-align-center">
+                    {{items.restTime}}
+                </td>
+                {{# } }}
+                <td>{{items.pickUpSchedule.arrivalTime}}</td>
+                <td>{{items.pickUpSchedule.fullTrainNo}}</td>
+                <td>{{items.arrivalSchedule.fullTrainNo}}</td>
+                <td>{{items.departureSchedule.departureTime}}</td>
+                <td>{{items.arrivalSchedule.arrivalTime}}</td>
+                <td class="layui-elip">{{items.departureStation}}-{{items.arrivalStation}}</td>
+            </tr>
+            {{# }); }}
+            <tr>
+                <td colspan=7 class="text-color-red">
+                    备注：出勤地点:{{item.firstDepartureStation}} 退勤地点:{{item.lastArrivalStation}} 工作时长: {{
+                    layui.laytpl.convertSecondsToTime(item.jobTime) }}
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    {{#  }); }}
+</script>
+<div id="ruleSelectTemplate" style="display: none">
+    <div class="layui-row">
+        <div class="layui-col-lg10 layui-col-lg-offset1">
+            <form class="layui-form" action="" style="margin-top: 40px;">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">规则选择</label>
+                    <div class="layui-input-block" id="ruleSelect">
+
+                    </div>
+                </div>
+                <div class="layui-form-item text-align-center layui-hide">
+                    <button class="layui-btn layui-btn-sm" id="submitTimeSchedule" lay-submit=""
+                            lay-filter="time-schedule-select">提交
+                    </button>
+                    <button type="reset" class="layui-btn layui-btn-primary layui-btn-sm">重置</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script id="scheduleRuleSelectTemplate" type="text/html">
+    <select name="id" lay-verify="required" lay-filter="rule">
+        <option value="">请选择规则</option>
+        {{# layui.each(d, function(index, item){ }}
+        <option value="{{item.id}}">{{item.name}}</option>
+        {{# }); }}
+    </select>
+</script>
+<link rel="stylesheet" href="modules/driver-shift-position-preview.css">
+<script src="modules/driver-shift-position-preview.js"></script>

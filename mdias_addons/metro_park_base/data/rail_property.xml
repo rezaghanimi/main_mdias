@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="rail_property_mid_platform" model="metro_park_base.rail_property">
+            <field name="name">中台</field>
+        </record>
+
+        <record id="rail_property_ladder" model="metro_park_base.rail_property">
+            <field name="name">登顶梯</field>
+        </record>
+
+        <record id="rail_property_ladder_platform" model="metro_park_base.rail_property">
+            <field name="name">登顶平台</field>
+        </record>
+
+        <record id="rail_property_trench" model="metro_park_base.rail_property">
+            <field name="name">地沟</field>
+        </record>
+
+        <record id="rail_property_b_port" model="metro_park_base.rail_property">
+            <field name="name">B端</field>
+        </record>
+
+        <record id="rail_property_month_repair" model="metro_park_base.rail_property">
+            <field name="name">检修库</field>
+        </record>
+
+    </data>
+</odoo>

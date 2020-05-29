@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data>
+
+        <record id="metro_park_base_data_10.line10" model="metro_park_base.line">
+            <field name="name">10号线</field>
+            <field name="code">10</field>
+        </record>
+
+    </data>
+</odoo>

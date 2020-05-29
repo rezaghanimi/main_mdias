@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="hui_long" model="metro_park_base.location">
+            <field name="name">回龙停车场</field>
+            <field name="alias">huilong</field>
+            <field name="rtu_id">99</field>
+            <field name="line" ref="metro_park_base_data_6.line6"/>
+            <field name="location_type" ref="metro_park_base.location_type_park"/>
+        </record>
+
+        <record id="pi_tong" model="metro_park_base.location">
+            <field name="name">郫筒</field>
+            <field name="alias">pitong</field>
+            <field name="rtu_id">97</field>
+            <field name="line" ref="metro_park_base_data_6.line6"/>
+            <field name="location_type" ref="metro_park_base.location_type_park"/>
+        </record>
+
+        <record id="long_deng_shan" model="metro_park_base.location">
+            <field name="name">龙灯山</field>
+            <field name="alias">longdengshan</field>
+            <field name="rtu_id">98</field>
+            <field name="line" ref="metro_park_base_data_6.line6"/>
+            <field name="location_type" ref="metro_park_base.location_type_park"/>
+        </record>
+
+        <!--  正线也是属于线别 -->
+        <record id="metro_park_base_data_6.main_line_location"
+                model="metro_park_base.location">
+            <field name="name">正线</field>
+            <field name="alias">zengxian</field>
+            <field name="line" ref="metro_park_base_data_6.line6"/>
+            <field name="location_type"
+                   ref="metro_park_base.location_type_special"/>
+        </record>
+
+    </data>
+</odoo>

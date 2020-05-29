@@ -1,0 +1,209 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="signaler_handover_tree">
+            <field name="name">信号楼交接班</field>
+            <field name="model">metro_park_production.handover.signaler</field>
+            <field name="arch" type="xml">
+                <tree import="0"
+                      options="{'height': 'full-300'}"
+                      search_ex_template="char_handover_search"
+                      default_order="handover_date desc"
+                      js_class="fnt_table">
+                    <field name="handover_date" string="日期" widget="date" width="200"/>
+                    <field name="handover_sign_user" string="交班人"/>
+                    <field name="accept_user" string="接班人"/>
+                    <field name="state"/>
+                    <widget name="TreeButtons"
+                            width="200"
+                            fixed_right="1"
+                            string="操作"
+                            template="handover_operation_buttons"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id='signaler_handover_form' model="ir.ui.view">
+            <field name="name">信号楼交接班</field>
+            <field name="model">metro_park_production.handover.signaler</field>
+            <field name="arch" type="xml">
+                <form string="交接班" create="0">
+                    <sheet>
+                        <header>
+                            <field name="state" widget="statusbar"/>
+                        </header>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2" for="handover_sign_user" string="交班人" />
+                            <div class="col-sm-4">
+                                <field name="handover_sign_user" readonly="1"/>
+                            </div>
+
+                            <label class="col-sm-2" for="location_id" string="所属位置"/>
+                            <div class="col-sm-4">
+                                <field name="location_id" readonly="1"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2" for="handover_type" string="交班类型" readonly="1"/>
+                            <div class="col-sm-3">
+                                <field name="handover_type" widget="radio"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2" for="track_ids" string="正线执行时刻表"/>
+                            <div class="col-md-10">
+                                <field name="line_execute_time_table" options="{'no_create_edit': 1}"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2" for="track_ids" string="停电股道"/>
+                            <div class="col-sm-4">
+                                <field name="track_ids" widget='many2many_tags'
+                                                   options="{'no_create_edit': 1}"/>
+                            </div>
+                            <label class="col-sm-2" for="stop_electric_area" string="停电区域"/>
+                            <div class="col-md-4">
+                                <field name="stop_electric_area" widget='many2many_tags'
+                                                   options="{'no_create_edit': True}"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2" for="eight_hundred_radio" string="800兆电台"/>
+                            <div class="col-sm-4">
+                                <field name="eight_hundred_radio"/>
+                            </div>
+                            <label class="col-sm-2" for="four_hundred_radio" string="400兆电台"/>
+                            <div class="col-md-4">
+                                <field name="four_hundred_radio"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2" for="construction_condition" string="施工情况"/>
+                            <div class="col-sm-10">
+                                <field name="construction_condition"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2" for="standby_application_condition" string="备品情况"/>
+                            <div class="col-sm-10">
+                                <field name="standby_application_condition"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2" for="standby_application_condition" string="备品情况"/>
+                            <div class="col-sm-10">
+                                <field name="standby_application_condition"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2" for="equipment_condition" string="设备情况"/>
+                            <div class="col-sm-10">
+                                <field name="equipment_condition"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2" for="clean_condition" string="卫生情况"/>
+                            <div class="col-sm-10">
+                                <field name="clean_condition"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2" for="zone_run_train" string="段内现车"/>
+                            <div class="col-sm-10">
+                                <field name="zone_run_train"/>
+                            </div>
+                        </div>
+
+
+<!--                        <div class="form-group row">-->
+<!--                            <label class="col-sm-2" for="zone_run_train" string="股道存车情况"/>-->
+<!--                            <div class="col-sm-10">-->
+<!--                                <field name="track_condition" nolabel="1" widget="one2many_list">-->
+<!--                                    <tree delete="0" js_class="fnt_table" editable="bottom"-->
+<!--                                          options="{'height':200}">-->
+<!--                                        <field name="track_id" options="{'no_create_edit': True}"/>-->
+<!--                                        <field name="description"/>-->
+<!--                                    </tree>-->
+<!--                                </field>-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+                        <div class="form-group row">
+                            <label class="col-sm-2" for="track_type_condition" string="股道类型使用情况"/>
+                            <div class="col-sm-10">
+                                <field name="track_type_condition" widget="one2many_list" nolabel="1">
+                                    <tree delete="0" js_class="fnt_table" editable="bottom"
+                                          options="{'height':200}">
+                                        <field name="track_type_id" options="{'no_create_edit': True}"/>
+                                        <field name="description"/>
+                                    </tree>
+                                </field>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group row">
+                            <label class="col-sm-2" for="track_type_condition" string="库备车"/>
+                            <div class="col-sm-10">
+                                <field name="plan_carport" options="{'no_create_edit': True}"
+                                       widget="many2many_tags"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2" for="track_type_condition" string="其他交班事宜"/>
+                            <div class="col-sm-10">
+                                <field name="other_remark"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2" for="back_train_number" string="接车"/>
+                            <div class="col-sm-2">
+                                <field name="back_train_number"/>
+                            </div>
+
+                            <label class="col-sm-2" for="out_train_number" string="发车"/>
+                            <div class="col-sm-2">
+                                <field name="out_train_number"/>
+                            </div>
+
+                            <label class="col-sm-2" for="add_train_number" string="加开"/>
+                            <div class="col-sm-2">
+                                <field name="add_train_number"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2" for="handover_date" string="交接班时间"/>
+                            <div class="col-sm-4">
+                                <field name="handover_date"/>
+                            </div>
+                        </div>
+                    </sheet>
+
+                </form>
+            </field>
+        </record>
+
+
+        <record model="ir.actions.act_window" id="signal_handover_act_window">
+            <field name="name">信号楼交接班</field>
+            <field name="res_model">metro_park_production.handover.signaler</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">['|', ('accept_user', '=', uid), ('handover_sign_user', '=', uid)]</field>
+        </record>
+    </data>
+</odoo>
+

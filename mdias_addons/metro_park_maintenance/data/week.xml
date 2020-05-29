@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+   <data>
+        <record id="week1" model="metro_park_maintenance.week">
+            <field name="name">第1周</field>
+            <field name="val">1</field>
+        </record>
+        <record id="week2" model="metro_park_maintenance.week">
+            <field name="name">第2周</field>
+            <field name="val">2</field>
+        </record>
+        <record id="week3" model="metro_park_maintenance.week">
+            <field name="name">第3周</field>
+            <field name="val">3</field>
+        </record>
+        <record id="week4" model="metro_park_maintenance.week">
+            <field name="name">第4周</field>
+            <field name="val">4</field>
+        </record>
+        <record id="week5" model="metro_park_maintenance.week">
+            <field name="name">第5周</field>
+            <field name="val">5</field>
+        </record>
+        <record id="week6" model="metro_park_maintenance.week">
+            <field name="name">第6周</field>
+            <field name="val">6</field>
+        </record>
+        <record id="week7" model="metro_park_maintenance.week">
+            <field name="name">第7周</field>
+            <field name="val">7</field>
+        </record>
+        <record id="week8" model="metro_park_maintenance.week">
+            <field name="name">第8周</field>
+            <field name="val">8</field>
+        </record>
+        <record id="week9" model="metro_park_maintenance.week">
+            <field name="name">第9周</field>
+            <field name="val">9</field>
+        </record>
+        <record id="week10" model="metro_park_maintenance.week">
+            <field name="name">第10周</field>
+            <field name="val">10</field>
+        </record>
+        <record id="week11" model="metro_park_maintenance.week">
+            <field name="name">第11周</field>
+            <field name="val">11</field>
+        </record>
+        <record id="week12" model="metro_park_maintenance.week">
+            <field name="name">第12周</field>
+            <field name="val">12</field>
+        </record>
+        <record id="week13" model="metro_park_maintenance.week">
+            <field name="name">第13周</field>
+            <field name="val">13</field>
+        </record>
+        <record id="week14" model="metro_park_maintenance.week">
+            <field name="name">第14周</field>
+            <field name="val">14</field>
+        </record>
+        <record id="week15" model="metro_park_maintenance.week">
+            <field name="name">第15周</field>
+            <field name="val">15</field>
+        </record>
+        <record id="week16" model="metro_park_maintenance.week">
+            <field name="name">第16周</field>
+            <field name="val">16</field>
+        </record>
+        <record id="week17" model="metro_park_maintenance.week">
+            <field name="name">第17周</field>
+            <field name="val">17</field>
+        </record>
+        <record id="week18" model="metro_park_maintenance.week">
+            <field name="name">第18周</field>
+            <field name="val">18</field>
+        </record>
+        <record id="week19" model="metro_park_maintenance.week">
+            <field name="name">第19周</field>
+            <field name="val">19</field>
+        </record>
+        <record id="week20" model="metro_park_maintenance.week">
+            <field name="name">第20周</field>
+            <field name="val">20</field>
+        </record>
+        <record id="week21" model="metro_park_maintenance.week">
+            <field name="name">第21周</field>
+            <field name="val">21</field>
+        </record>
+        <record id="week22" model="metro_park_maintenance.week">
+            <field name="name">第22周</field>
+            <field name="val">22</field>
+        </record>
+        <record id="week23" model="metro_park_maintenance.week">
+            <field name="name">第23周</field>
+            <field name="val">23</field>
+        </record>
+        <record id="week24" model="metro_park_maintenance.week">
+            <field name="name">第24周</field>
+            <field name="val">24</field>
+        </record>
+        <record id="week25" model="metro_park_maintenance.week">
+            <field name="name">第25周</field>
+            <field name="val">25</field>
+        </record>
+        <record id="week26" model="metro_park_maintenance.week">
+            <field name="name">第26周</field>
+            <field name="val">26</field>
+        </record>
+        <record id="week27" model="metro_park_maintenance.week">
+            <field name="name">第27周</field>
+            <field name="val">27</field>
+        </record>
+        <record id="week28" model="metro_park_maintenance.week">
+            <field name="name">第28周</field>
+            <field name="val">28</field>
+        </record>
+        <record id="week29" model="metro_park_maintenance.week">
+            <field name="name">第29周</field>
+            <field name="val">29</field>
+        </record>
+        <record id="week30" model="metro_park_maintenance.week">
+            <field name="name">第30周</field>
+            <field name="val">30</field>
+        </record>
+        <record id="week31" model="metro_park_maintenance.week">
+            <field name="name">第31周</field>
+            <field name="val">31</field>
+        </record>
+        <record id="week32" model="metro_park_maintenance.week">
+            <field name="name">第32周</field>
+            <field name="val">32</field>
+        </record>
+        <record id="week33" model="metro_park_maintenance.week">
+            <field name="name">第33周</field>
+            <field name="val">33</field>
+        </record>
+        <record id="week34" model="metro_park_maintenance.week">
+            <field name="name">第34周</field>
+            <field name="val">34</field>
+        </record>
+        <record id="week35" model="metro_park_maintenance.week">
+            <field name="name">第35周</field>
+            <field name="val">35</field>
+        </record>
+        <record id="week36" model="metro_park_maintenance.week">
+            <field name="name">第36周</field>
+            <field name="val">36</field>
+        </record>
+        <record id="week37" model="metro_park_maintenance.week">
+            <field name="name">第37周</field>
+            <field name="val">37</field>
+        </record>
+        <record id="week38" model="metro_park_maintenance.week">
+            <field name="name">第38周</field>
+            <field name="val">38</field>
+        </record>
+        <record id="week39" model="metro_park_maintenance.week">
+            <field name="name">第39周</field>
+            <field name="val">39</field>
+        </record>
+        <record id="week40" model="metro_park_maintenance.week">
+            <field name="name">第40周</field>
+            <field name="val">40</field>
+        </record>
+        <record id="week41" model="metro_park_maintenance.week">
+            <field name="name">第41周</field>
+            <field name="val">41</field>
+        </record>
+        <record id="week42" model="metro_park_maintenance.week">
+            <field name="name">第42周</field>
+            <field name="val">42</field>
+        </record>
+        <record id="week43" model="metro_park_maintenance.week">
+            <field name="name">第43周</field>
+            <field name="val">43</field>
+        </record>
+        <record id="week44" model="metro_park_maintenance.week">
+            <field name="name">第44周</field>
+            <field name="val">44</field>
+        </record>
+        <record id="week45" model="metro_park_maintenance.week">
+            <field name="name">第45周</field>
+            <field name="val">45</field>
+        </record>
+        <record id="week46" model="metro_park_maintenance.week">
+            <field name="name">第46周</field>
+            <field name="val">46</field>
+        </record>
+        <record id="week47" model="metro_park_maintenance.week">
+            <field name="name">第47周</field>
+            <field name="val">47</field>
+        </record>
+        <record id="week48" model="metro_park_maintenance.week">
+            <field name="name">第48周</field>
+            <field name="val">48</field>
+        </record>
+        <record id="week49" model="metro_park_maintenance.week">
+            <field name="name">第49周</field>
+            <field name="val">49</field>
+        </record>
+        <record id="week50" model="metro_park_maintenance.week">
+            <field name="name">第50周</field>
+            <field name="val">50</field>
+        </record>
+        <record id="week51" model="metro_park_maintenance.week">
+            <field name="name">第51周</field>
+            <field name="val">51</field>
+        </record>
+        <record id="week52" model="metro_park_maintenance.week">
+            <field name="name">第52周</field>
+            <field name="val">52</field>
+        </record>
+        <record id="week53" model="metro_park_maintenance.week">
+            <field name="name">第53周</field>
+            <field name="val">53</field>
+        </record>
+   </data>
+</odoo>

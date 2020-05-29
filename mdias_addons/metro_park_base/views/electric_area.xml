@@ -1,0 +1,113 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_base.electric_area_list">
+            <field name="name">供电分区</field>
+            <field name="model">metro_park_base.electric_area</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table" options="{'height':'full-340'}" create="0">
+                    <field name="name"/>
+                    <field name="location_id"/>
+                    <field name="switch_no"/>
+                    <field name="rail_secs"/>
+                    <field name="breaker_id"/>
+                    <field name="remark"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_base.electric_area_form">
+            <field name="name">供电分区</field>
+            <field name="model">metro_park_base.electric_area</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="name">name</label>
+                        <div class="col-sm-3">
+                            <field name="name"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="location_id">location_id</label>
+                        <div class="col-sm-3">
+                            <field name="location_id"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="switch_no">switch_no</label>
+                        <div class="col-sm-3">
+                            <field name="switch_no"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="rail_secs">rail_secs</label>
+                        <div class="col-sm-8">
+                            <field name="rail_secs">
+                                <tree js_class="fnt_table" options="{'height': 260}">
+                                    <field name="no"/>
+                                    <field name="usage"/>
+                                    <field name="rail_status"/>
+                                    <field name="location"/>
+                                    <field name="is_track"/>
+                                    <field name="rail_type"/>
+                                    <field name="rail_property" widget="many2many_tags"/>
+                                    <field name="port"/>
+                                    <field name="electric_live"/>
+                                    <field name="rail_length"/>
+                                    <field name="remark"/>
+                                </tree>
+                            </field>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="breaker_id">breaker_id</label>
+                        <div class="col-sm-10">
+                            <field name="breaker_id"/>
+                        </div>
+                    </div>
+
+                     <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="backup_electric_area">backup_electric_area</label>
+                        <div class="col-sm-10">
+                            <field name="backup_electric_area" js_class="fnt_table" options="{'height': 260}">
+                                <tree js_class="fnt_table" options="{'height': 260}">
+                                    <field name="electric_area_id"/>
+                                    <field name="switch_no"/>
+                                </tree>
+                            </field>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="remark">remark</label>
+                        <div class="col-sm-10">
+                            <field name="remark"/>
+                        </div>
+                    </div>
+                    
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="metro_park_base.electric_area_act_window">
+            <field name="name">供电分区</field>
+            <field name="res_model">metro_park_base.electric_area</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="metro_park_base.electric_area_act_window"
+                  id="metro_park_base.electric_area_menu"
+                  name="供电分区"
+                  sequence='6'
+                  parent="metro_park_base.menu_base_data_manage"
+                  groups="group_base_power_supply_division"/>
+
+    </data>
+</odoo>
+
+    

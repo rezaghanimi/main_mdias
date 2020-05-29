@@ -1,0 +1,57 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_maintenance.month_plan_list">
+            <field name="name">月计划</field>
+            <field name="model">metro_park_maintenance.month_plan</field>
+            <field name="arch" type="xml">
+                <tree js_class="month_plan_with_wizard" options="{'height':'full-270'}">
+                    <field name="plan_no"/>
+                    <field name="plan_name"/>
+                    <field name="year"/>
+                    <field name="month"/>
+                    <field name="state"
+                           widget="template_widget"
+                           options="{'template': 'funenc.month_plan_status_template'}" />
+                    <field name="remark"/>
+                    <field name="operation_buttons"
+                           width="430"
+                           widget="template_widget"
+                           options="{'template': 'funenc.month_plan_btns'}"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.month_plan_form">
+            <field name="name">月计划表单</field>
+            <field name="model">metro_park_maintenance.month_plan</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="plan_name">plan_name</label>
+                        <div class="col-sm-3">
+                            <field name="plan_name"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="plan_no">plan_no</label>
+                        <div class="col-sm-3">
+                            <field name="plan_no"/>
+                        </div>
+
+                        <label class="col-sm-2 col-form-label" for="remark">remark</label>
+                        <div class="col-sm-3">
+                            <field name="remark"/>
+                        </div>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>
+
+
+    

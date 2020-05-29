@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem
+                  id="menu_construction_root"
+                  name="施工调度"
+                  sequence="10"
+                  parent="metro_park_dispatch.menu_root"/>
+
+        <menuitem action="construction_plan_action"
+                  id="construction_plan_menu"
+                  name="施工调度计划"
+                  sequence="10"
+                  parent="metro_park_dispatch.menu_construction_root"
+                  groups="category_construction_schedule_plan"/>
+
+        <menuitem action="construction_area_action"
+                  id="construction_area_menu"
+                  name="施工调度区域"
+                  sequence="10"
+                  parent="metro_park_dispatch.menu_construction_root"
+                  groups="category_construction_schedule_area"/>
+    </data>
+</odoo>

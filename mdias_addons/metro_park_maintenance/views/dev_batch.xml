@@ -1,0 +1,63 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_maintenance.dev_batch_list">
+            <field name="name">设备批次</field>
+            <field name="model">metro_park_maintenance.dev_batch</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table" options="{'height':'full-270'}">
+                    <field name="batch_no"/>
+                    <field name="start_date" width="150"/>
+                    <field name="remark"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.dev_batch_form">
+            <field name="name">批次表单</field>
+            <field name="model">metro_park_maintenance.dev_batch</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="batch_no">batch_no</label>
+                        <div class="col-sm-3">
+                            <field name="batch_no"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="start_date">start_date</label>
+                        <div class="col-sm-3">
+                            <field name="start_date"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="remark">remark</label>
+                        <div class="col-sm-8">
+                            <field name="remark"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="train_devs">train_devs</label>
+                        <div class="col-sm-8">
+                            <field name="train_devs">
+                                <tree js_class="fnt_table" options="{'height':300}">
+                                    <field name="dev_name"/>
+                                    <field name="dev_no"/>
+                                </tree>
+                            </field>
+                        </div>
+                    </div>
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window" id="metro_park_maintenance.dev_batch_act_window">
+            <field name="name">设备批次</field>
+            <field name="res_model">metro_park_maintenance.dev_batch</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>
+
+
+    

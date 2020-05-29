@@ -1,0 +1,14 @@
+From registry.cn-hangzhou.aliyuncs.com/odoomaster/super_odoo12_docker
+# 拷贝项目本地文件到docker
+COPY . /mnt/extra-addons/funenc_socket_io
+COPY odoo.conf /odoo/
+
+# 安装其它依赖
+ADD extra_pip.txt /opt/sources/extra_pip.txt
+RUN pip3 install -r /opt/sources/extra_pip.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+EXPOSE 9080
+
+RUN python3 ./etc/entrypoint.py
+RUN python3 /mnt/extra-addons/funenc_socket_io/delete_ir_attachment.py
+CMD ["/usr/bin/supervisord"]

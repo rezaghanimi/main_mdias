@@ -1,0 +1,3 @@
+[submodule "static/park_map"]
+	path = static/park_map
+	url = git@e.coding.net:funenc/park_map.git

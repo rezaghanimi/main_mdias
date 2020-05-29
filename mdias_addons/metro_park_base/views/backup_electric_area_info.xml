@@ -1,0 +1,50 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_base.backup_electric_area_info_list">
+            <field name="name">backup_electric_area_info list </field>
+            <field name="model">metro_park_base.backup_electric_area_info</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="switch_no"/>
+                    <field name="electric_area"/>
+                </tree>
+            </field>
+        </record>
+
+        
+        <record model="ir.ui.view" id="metro_park_base.backup_electric_area_info_form">
+            <field name="name">backup_electric_area_info form </field>
+            <field name="model">metro_park_base.backup_electric_area_info</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="switch_no">switch_no</label>
+                        <div class="col-sm-10">
+                            <field name="switch_no"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="electric_area">electric_area</label>
+                        <div class="col-sm-10">
+                            <field name="electric_area"/>
+                        </div>
+                    </div>
+                    
+                </form>
+            </field>
+        </record>
+
+        
+        <record model="ir.actions.act_window" id="metro_park_base.backup_electric_area_info_act_window">
+            <field name="name">backup_electric_area_info</field>
+            <field name="res_model">metro_park_base.backup_electric_area_info</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+    

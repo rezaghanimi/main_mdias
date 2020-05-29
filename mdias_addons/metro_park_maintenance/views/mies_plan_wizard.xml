@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.mies_plan_wizard_list">
+            <field name="name">添加里程检向导</field>
+            <field name="model">metro_park_maintenance.mies_plan_wizard</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="trains"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view"
+                id="metro_park_maintenance.mies_plan_wizard_form">
+            <field name="name">添加里程检向导</field>
+            <field name="model">metro_park_maintenance.mies_plan_wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label"
+                               for="trains">trains</label>
+                        <div class="col-sm-10">
+                            <field name="trains"/>
+                        </div>
+                    </div>
+
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window"
+                id="metro_park_maintenance.mies_plan_wizard_act_window">
+            <field name="name">mies_plan_wizard</field>
+            <field name="res_model">metro_park_maintenance.mies_plan_wizard</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>

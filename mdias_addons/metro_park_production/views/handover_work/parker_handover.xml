@@ -1,0 +1,388 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="parker_handover_form">
+            <field name="name">场调交接班</field>
+            <field name="model">metro_park_production.handover.parker</field>
+            <field name="arch" type="xml">
+                <tree import="0"
+                      options="{'height': 'full-300'}"
+                      search_ex_template="char_handover_search"
+                      default_order="handover_date desc"
+                      js_class="fnt_table">
+                    <field name="date" string="日期" widget="date" width="200"/>
+                    <field name="handover_sign_user" string="交班人" width="200"/>
+                    <field name="accept_user" string="接班人" width="200"/>
+                    <field name="state"/>
+                    <widget name="TreeButtons"
+                            width="130"
+                            fixed_right="1"
+                            string="操作"
+                            template="handover_operation_buttons"
+                    />
+                </tree>
+            </field>
+        </record>
+
+        <record id="metro_park_production.handover_management_form" model="ir.ui.view">
+            <field name="name">场调交接班</field>
+            <field name="model">metro_park_production.handover.parker</field>
+            <field name="arch" type="xml">
+                <form string="场调交接班">
+                    <notebook>
+                        <page string="车场调度工作日志">
+                            <div class="form-group row">
+                                <label class="col-sm-2" for="date" string="日期"/>
+                                <div class="col-sm-4">
+                                    <field name="date" readonly="1"/>
+                                </div>
+
+                                <label class="col-sm-2" for="handover_sign_user" string="交班人"/>
+                                <div class="col-sm-4">
+                                    <field name="handover_sign_user" readonly="1"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2" for="handover_type" string="白/夜班"/>
+                                <div class="col-sm-3">
+                                    <field name="handover_type" widget="radio"/>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2" for="today_time_table_id" string="当日运行图"/>
+                                <div class="col-sm-4">
+                                    <field name="today_time_table_id" options="{'no_create_edit': True}"/>
+                                </div>
+                                <label class="col-sm-2" for="next_day_time_table_id" string="次日运行图"/>
+                                <div class="col-md-4">
+                                    <field name="next_day_time_table_id" options="{'no_create_edit': True}"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2" for="equipment_situation" string="设备情况"/>
+                                <div class="col-md-4">
+                                    <field name="equipment_situation" options="{'no_create_edit': True}"/>
+                                </div>
+
+                                <label class="col-sm-2" for="spares_situation" string="备品情况"/>
+                                <div class="col-sm-4">
+                                    <field name="spares_situation" options="{'no_create_edit': True}"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2" for="radio_800" string="800兆电台"/>
+                                <div class="col-md-4">
+                                    <field name="radio_800"/>
+                                </div>
+
+                                <label class="col-sm-2" for="radio_400" string="400兆电台"/>
+                                <div class="col-sm-4">
+                                    <field name="radio_400"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2" for="handover_date" string="交接班时间"/>
+                                <div class="col-md-4">
+                                    <field name="handover_date"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2" for="track_condition" string="交班现车情况"/>
+                                <div class="col-md-10">
+                                    <field name="track_condition" nolabel="1" widget="one2many_list">
+                                        <tree create="1" delete="0" js_class="fnt_table" editable="bottom"
+                                              options="{'height':200}">
+                                            <field name="track_id" options="{'no_create_edit': True}"/>
+                                            <field name="description"/>
+                                        </tree>
+                                    </field>
+                                </div>
+                            </div>
+                        </page>
+                        <page string="任务完成情况">
+                            <h3>接发车作业</h3>
+                            <div class="form-group row">
+                                <label class="col-sm-2" for="back_train_number" string="接车"/>
+                                <div class="col-md-2">
+                                    <field name="back_train_number" options="{'no_create_edit': True}"/>
+                                </div>
+
+                                <label class="col-sm-2" for="out_train_number" string="发车"/>
+                                <div class="col-md-2">
+                                    <field name="out_train_number" options="{'no_create_edit': True}"/>
+                                </div>
+
+                                <label class="col-sm-2" for="spares_train_number" string="备用车加开"/>
+                                <div class="col-md-2">
+                                    <field name="spares_train_number" options="{'no_create_edit': True}"/>
+                                </div>
+                            </div>
+
+                            <h3>调洗车作业</h3>
+                            <div class="form-group row">
+                                <label class="col-sm-2" for="shunting_number" string="调车辆数"/>
+                                <div class="col-md-2">
+                                    <field name="shunting_number"/>
+                                </div>
+
+                                <label class="col-sm-2" for="shunting_hook_number" string="调车钩数"/>
+                                <div class="col-md-2">
+                                    <field name="shunting_hook_number"/>
+                                </div>
+
+                                <label class="col-sm-2" for="shunting_column_number" string="调车列数"/>
+                                <div class="col-md-2">
+                                    <field name="shunting_column_number"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2" for="wash_column_number" string="洗车辆数"/>
+                                <div class="col-md-2">
+                                    <field name="wash_column_number"/>
+                                </div>
+                            </div>
+
+                            <h3>停送电作业</h3>
+                            <div class="form-group row">
+                                <label class="col-sm-2" for="power_outages_number" string="停电次数"/>
+                                <div class="col-md-4">
+                                    <field name="power_outages_number"/>
+                                </div>
+                                <label class="col-sm-2" for="sending_power_number" string="送电次数"/>
+                                <div class="col-md-4">
+                                    <field name="sending_power_number"/>
+                                </div>
+                            </div>
+                            <h3>计划施工</h3>
+                            <div class="form-group row">
+                                <label class="col-sm-2" for="construction_click_number" string="请点数量"/>
+                                <div class="col-md-4">
+                                    <field name="construction_click_number"/>
+                                </div>
+                                <label class="col-sm-2" for="construction_destruction_number" string="销点数量"/>
+                                <div class="col-md-4">
+                                    <field name="construction_destruction_number"/>
+                                </div>
+                            </div>
+                            <h3>巡检、巡道</h3>
+                            <div class="form-group row">
+                                <label class="col-sm-2" for="patrol_click_number" string="请点数量"/>
+                                <div class="col-md-4">
+                                    <field name="patrol_click_number"/>
+                                </div>
+                                <label class="col-sm-2" for="patrol_destruction_number" string="销点数量"/>
+                                <div class="col-md-4">
+                                    <field name="patrol_destruction_number"/>
+                                </div>
+                            </div>
+                            <h3>抢修</h3>
+                            <div class="form-group row">
+                                <label class="col-sm-2" for="repair_click_number" string="请点数量"/>
+                                <div class="col-md-4">
+                                    <field name="repair_click_number"/>
+                                </div>
+                                <label class="col-sm-2" for="repair_destruction_number" string="销点数量"/>
+                                <div class="col-md-4">
+                                    <field name="repair_destruction_number"/>
+                                </div>
+                            </div>
+                            <h3>施工异常数</h3>
+                            <div class="form-group row">
+                                <label class="col-sm-2" for="construction_anomalies_number" string="施工异常数"/>
+                                <div class="col-md-4">
+                                    <field name="construction_anomalies_number"/>
+                                </div>
+                            </div>
+                            <h3>调试</h3>
+                            <div class="form-group row">
+                                <label class="col-sm-2" for="trunk_line_debug" string="正线调试"/>
+                                <div class="col-md-4">
+                                    <field name="trunk_line_debug"/>
+                                </div>
+                                <label class="col-sm-2" for="test_line_debug" string="试车线调试"/>
+                                <div class="col-md-4">
+                                    <field name="test_line_debug"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2" for="train_validation" string="车辆验证"/>
+                                <div class="col-md-4">
+                                    <field name="train_validation"/>
+                                </div>
+                                <label class="col-sm-2" for="signal_verification" string="验证信号"/>
+                                <div class="col-md-4">
+                                    <field name="signal_verification"/>
+                                </div>
+                            </div>
+                            <h3>出退勤作业</h3>
+                            <div class="form-group row">
+                                <label class="col-sm-2" for="flights_number" string="出勤机班数"/>
+                                <div class="col-md-4">
+                                    <field name="flights_number"/>
+                                </div>
+                                <label class="col-sm-2" for="departures_number" string="退勤机班数"/>
+                                <div class="col-md-4">
+                                    <field name="departures_number"/>
+                                </div>
+                            </div>
+                        </page>
+                        <page string="备品借用登记栏">
+                            <div class="form-group row">
+                                <label class="col-sm-2" for="spare_goods_borrowing_register" string="备品借用登记栏"/>
+                                <div class="col-md-10">
+                                    <field name="spare_goods_borrowing_register" nolabel="1" widget="one2many_list">
+                                        <tree create="1" delete="0" edit="1" js_class="fnt_table" editable="bottom"
+                                              options="{'height':200}">
+                                            <field name="borrow_time"/>
+                                            <field name="goods_name_number"/>
+                                            <field name="borrow_depart_person"/>
+                                            <field name="return_time"/>
+                                            <field name="return_person"/>
+                                            <field name="note"/>
+                                            <widget name="TreeButtons"
+                                                    width="80"
+                                                    string="操作"
+                                                    template="handover_delete_button"
+                                            />
+                                        </tree>
+                                    </field>
+                                </div>
+                            </div>
+                        </page>
+                        <page string="设备故障/抢修记录栏">
+                            <div class="form-group row">
+                                <label class="col-sm-2" for="equipment_break_or_repair_rec" string="设备故障/抢修记录栏"/>
+                                <div class="col-md-10">
+                                    <field name="equipment_break_or_repair_rec" nolabel="1" widget="one2many_list">
+                                        <tree create="1" edit="1" delete="0" js_class="fnt_table" editable="bottom"
+                                              options="{'height':200}">
+                                            <field name="break_time"/>
+                                            <field name="break_number"/>
+                                            <field name="report_position_or_name"/>
+                                            <field name="transfer_discovery_time"/>
+                                            <field name="break_site"/>
+                                            <field name="break_des"/>
+                                            <field name="fault_specialty"/>
+                                            <field name="notice_time"/>
+                                            <field name="notice_department"/>
+                                            <field name="accept_department"/>
+                                            <field name="reply_date"/>
+                                            <field name="break_reason"/>
+                                            <field name="deal_results"/>
+                                            <field name="reply_per"/>
+                                            <field name="note"/>
+                                            <widget name="TreeButtons"
+                                                    width="80"
+                                                    string="操作"
+                                                    template="handover_delete_button"
+                                            />
+                                        </tree>
+                                    </field>
+                                </div>
+                            </div>
+                        </page>
+                        <page string="停送电情况栏">
+                            <div class="form-group row">
+                                <label class="col-sm-2" for="power_outage_status_bar" string="停送电情况栏"/>
+                                <div class="col-md-10">
+                                    <field name="power_outage_status_bar" nolabel="1" widget="one2many_list">
+                                        <tree create="1" delete="0" edit="1" js_class="fnt_table" editable="bottom"
+                                              options="{'height':200}">
+                                            <field name="power_outages_time"/>
+                                            <field name="outages_command_number"/>
+                                            <field name="equity_channel_area"/>
+                                            <field name="ground_conditions"/>
+                                            <field name="sending_time"/>
+                                            <field name="sending_command_number"/>
+                                            <field name="note"/>
+                                            <widget name="TreeButtons"
+                                                    width="80"
+                                                    string="操作"
+                                                    template="handover_delete_button"
+                                            />
+                                        </tree>
+                                    </field>
+                                </div>
+                            </div>
+                        </page>
+                        <page string="调度命令登记栏">
+                            <div class="form-group row">
+                                <label class="col-sm-2" for="scheduling_command_registration" string="调度命令登记栏"/>
+                                <div class="col-md-10">
+                                    <field name="scheduling_command_registration" nolabel="1" widget="one2many_list">
+                                        <tree create="1" delete="0" edit="1" js_class="fnt_table" editable="bottom"
+                                              options="{'height':200}">
+                                            <field name="instruction_time"/>
+                                            <field name="command_number"/>
+                                            <field name="instruction_name"/>
+                                            <field name="instruction_site"/>
+                                            <field name="instruction_note"/>
+                                            <widget name="TreeButtons"
+                                                    width="80"
+                                                    string="操作"
+                                                    template="handover_delete_button"
+                                            />
+                                        </tree>
+                                    </field>
+                                </div>
+                            </div>
+                        </page>
+                        <page string="记事栏/交接事项栏">
+                            <div class="form-group row">
+                                <label class="col-sm-2" for="note_bar" string="记事栏"/>
+                                <div class="col-md-10">
+                                    <field name="note_bar" widget="one2many_list">
+                                        <tree create="1" delete="0" edit="1" js_class="fnt_table" editable="bottom"
+                                              options="{'height':200}">
+                                            <field name="content"/>
+                                            <widget name="TreeButtons"
+                                                    width="80"
+                                                    string="操作"
+                                                    template="handover_delete_button"
+                                            />
+                                        </tree>
+                                    </field>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2" for="content_bar" string="交接事项栏"/>
+                                <div class="col-md-10">
+                                    <field name="content_bar">
+                                        <tree create="1" delete="0" edit="1" js_class="fnt_table" editable="bottom"
+                                              options="{'height':200}">
+                                            <field name="content"/>
+                                            <widget name="TreeButtons"
+                                                    width="80"
+                                                    string="操作"
+                                                    template="handover_delete_button"
+                                            />
+                                        </tree>
+                                    </field>
+                                </div>
+                            </div>
+                        </page>
+                    </notebook>
+
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="handover_parker_act_window">
+            <field name="name">场调交接班</field>
+            <field name="res_model">metro_park_production.handover.parker</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">['|', ('accept_user', '=', uid), ('handover_sign_user', '=', uid)]</field>
+        </record>
+
+    </data>
+</odoo>
+

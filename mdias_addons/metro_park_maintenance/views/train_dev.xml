@@ -1,0 +1,153 @@
+<odoo>
+    <data>
+
+        <!-- 用于弹出窗口的列表  -->
+        <record model="ir.ui.view" id="metro_park_maintenance.train_dev_pop_list">
+            <field name="name">车辆设备</field>
+            <field name="model">metro_park_maintenance.train_dev</field>
+            <field name="priority" eval="10"/>
+            <field name="arch" type="xml">
+                <tree search_ex_template="dev_search_panel"
+                      js_class="fnt_table"
+                      custom_btn_template="train_dev.import_buttons"
+                      options="{'height': '400'}" limit="20">
+                    <field name="dev_name" fixed_left="1"/>
+                    <field name="dev_no" width="150"/>
+                    <field name="dev_type"/>
+                    <field name="line"/>
+                    <field name="standard"/>
+                    <field name="unit"/>
+                    <field name="dev_status"
+                           widget="template_widget"
+                           options="{'template': 'train_dev_status'}"/>
+                    <field name="display_color"
+                           widget="template_widget"
+                           options="{'template': 'train_dev_color'}" />
+                    <field name="remark"/>
+                </tree>
+            </field>
+        </record>
+
+        <!--   用于显示设备信息列表     -->
+        <record model="ir.ui.view" id="metro_park_maintenance.train_dev_list">
+            <field name="name">车辆设备</field>
+            <field name="model">metro_park_maintenance.train_dev</field>
+            <field name="priority" eval="10"/>
+            <field name="arch" type="xml">
+                <tree search_ex_template="dev_search_panel"
+                      js_class="fnt_table"
+                      custom_btn_template="train_dev.import_buttons"
+                      options="{'height': 'full-345'}" limit="20">
+                    <field name="dev_name" width="80" fixed_left="1"/>
+                    <field name="dev_no" width="80"/>
+                    <field name="dev_type"/>
+                    <field name="line"/>
+                    <field name="standard"/>
+                    <field name="unit"/>
+                    <field name="last_mile_repair_date" width="150"/>
+                    <field name="last_repair_miles" width="150"/>
+                    <field name="miles"/>
+                    <field name="miles_after_last_repair" width="150"/>
+                    <field name="display_color" widget="template_widget"
+                           options="{'template': 'train_dev_color'}" />
+                    <field name="dev_status"
+                           widget="template_widget"
+                           options="{'template': 'train_dev_status'}"/>
+                    <field name="remark"/>
+                    <field name="operation_btns"
+                           widget="template_widget"
+                           options="{'template': 'train_dev_operation'}"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.train_dev_form">
+            <field name="name">车辆设备</field>
+            <field name="model">metro_park_maintenance.train_dev</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="dev_name">dev_name</label>
+                        <div class="col-sm-3">
+                            <field name="dev_name"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="dev_no">dev_no</label>
+                        <div class="col-sm-3">
+                            <field name="dev_no"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="line">line</label>
+                        <div class="col-sm-3">
+                            <field name="line"
+                                   options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="dev_type">dev_type</label>
+                        <div class="col-sm-3">
+                            <field name="dev_type"
+                                   options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="location">location</label>
+                        <div class="col-sm-3">
+                            <field name="location"
+                                   options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="dev_status">dev_status</label>
+                        <div class="col-sm-3">
+                            <field name="dev_status"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="standard">standard</label>
+                        <div class="col-sm-3">
+                            <field name="standard"
+                                   options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="unit">unit</label>
+                        <div class="col-sm-3">
+                            <field name="unit"/>
+                        </div>
+                    </div>
+
+                </form>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="metro_park_maintenance.train_dev_form_import">
+            <field name="name">车辆设备导入</field>
+            <field name="model">metro_park_maintenance.train_dev</field>
+            <field name="arch" type="xml">
+                <form>
+                    <field name="file"/>
+                    <footer>
+                        <button type="object"
+                                name="import_train_dev"
+                                class="btn btn_primary"
+                                text="导入"/>
+                        <button special="cancel"
+                                class="btn btn_secondary"
+                                text="取消"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="metro_park_maintenance.train_dev_act_window">
+            <field name="name">设备管理</field>
+            <field name="res_model">metro_park_maintenance.train_dev</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_ids" eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'tree', 'view_id': ref('metro_park_maintenance.train_dev_list')}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('metro_park_maintenance.train_dev_form')})]"/>
+        </record>
+
+    </data>
+</odoo>
+    

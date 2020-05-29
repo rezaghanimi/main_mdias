@@ -1,0 +1,43 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_maintenance.year_list">
+            <field name="name">year list </field>
+            <field name="model">metro_park_maintenance.year</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="val"/>
+                </tree>
+            </field>
+        </record>
+
+        
+        <record model="ir.ui.view" id="metro_park_maintenance.year_form">
+            <field name="name">year form </field>
+            <field name="model">metro_park_maintenance.year</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="year">year</label>
+                        <div class="col-sm-10">
+                            <field name="name"/>
+                            <field name="val"/>
+                        </div>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="metro_park_maintenance.year_act_window">
+            <field name="name">year</field>
+            <field name="res_model">metro_park_maintenance.year</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+
+
+    

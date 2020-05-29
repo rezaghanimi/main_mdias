@@ -1,0 +1,7 @@
+<odoo>
+    <data>
+        <menuitem id="metro_park_interlock.menu_root"
+                  font_icon="fa fa-microchip"
+                  name="联锁表"/>
+    </data>
+</odoo>

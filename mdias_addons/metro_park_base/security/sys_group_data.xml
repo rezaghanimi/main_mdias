@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.module.category" id="category_sys_setting_parameter">
+            <field name="name">基础数据管理</field>
+            <field name="parent_id" ref="odoo_groups_manage.sys_setting_category"/>
+        </record>
+
+        <!--位置管理 -->
+        <record model="ir.module.category" id="category_sys_setting_position">
+            <field name="name">位置管理</field>
+            <field name="parent_id" ref="category_sys_setting_parameter"/>
+        </record>
+
+        <record model="res.groups" id="group_sys_setting_position_line_manage">
+            <field name="name">线别管理</field>
+            <field name="category_id" ref="category_sys_setting_position"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_sys_setting_position_site_manage">
+            <field name="name">位置管理</field>
+            <field name="category_id" ref="category_sys_setting_position"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <!--人员管理 -->
+        <record model="ir.module.category" id="category_person_management">
+            <field name="name">人员管理</field>
+            <field name="parent_id" ref="category_sys_setting_parameter"/>
+        </record>
+
+
+        <record model="res.groups" id="group_sys_setting_users_management">
+            <field name="name">用户管理</field>
+            <field name="category_id" ref="category_person_management"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_sys_setting_department_management">
+            <field name="name">部门管理</field>
+            <field name="category_id" ref="category_person_management"/>
+            <field name="atomic">True</field>
+        </record>
+
+
+        <!--基础数据-->
+        <record model="ir.module.category" id="category_sys_setting_parameter_basic_data">
+            <field name="name">基础数据</field>
+            <field name="parent_id" ref="category_sys_setting_parameter"/>
+        </record>
+
+        <!--通用数据-->
+        <record model="ir.module.category" id="category_general_data">
+            <field name="name">通用数据</field>
+            <field name="parent_id" ref="category_sys_setting_parameter_basic_data"/>
+        </record>
+
+        <record model="res.groups" id="group_position_type">
+            <field name="name">位置类型</field>
+            <field name="category_id" ref="category_general_data"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_battlefield_figure">
+            <field name="name">站场图</field>
+            <field name="category_id" ref="category_general_data"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_track_type">
+            <field name="name">股道类型</field>
+            <field name="category_id" ref="category_general_data"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_base_area_management">
+            <field name="name">区段管理</field>
+            <field name="category_id" ref="category_general_data"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_base_switch_management">
+            <field name="name">道岔</field>
+            <field name="category_id" ref="category_general_data"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_base_power_supply_division">
+            <field name="name">供电分区</field>
+            <field name="category_id" ref="category_general_data"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_base_signal">
+            <field name="name">信号机</field>
+            <field name="category_id" ref="category_general_data"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <!--车辆检修-->
+        <record model="ir.module.category" id="category_vehicle_maintenance">
+            <field name="name">车辆检修</field>
+            <field name="parent_id" ref="category_sys_setting_parameter_basic_data"/>
+        </record>
+
+        <record model="res.groups" id="group_base_equipment_professional">
+            <field name="name">设备专业</field>
+            <field name="category_id" ref="category_vehicle_maintenance"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_base_equipment_professional">
+            <field name="name">设备分类</field>
+            <field name="category_id" ref="category_vehicle_maintenance"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_base_professional_system">
+            <field name="name">专业系统</field>
+            <field name="category_id" ref="category_vehicle_maintenance"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_base_equipment_specifications">
+            <field name="name">设备规格型号</field>
+            <field name="category_id" ref="category_vehicle_maintenance"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <!--系统配置-->
+        <record model="res.groups" id="category_sys_system_configuration">
+            <field name="name">系统配置</field>
+            <field name="category_id" ref="category_sys_setting_parameter"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <!--轨道属性-->
+        <record model="res.groups" id="category_sys_orbit_property">
+            <field name="name">轨道属性</field>
+            <field name="category_id" ref="category_sys_setting_parameter"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <!--其他(连锁)-->
+        <record model="res.groups" id="category_sys_others_chain">
+            <field name="name">其它(联锁)</field>
+            <field name="category_id" ref="category_sys_setting_parameter"/>
+            <field name="atomic">True</field>
+        </record>
+
+
+        <!--按钮表-->
+        <record model="res.groups" id="category_sys_button_on_table">
+            <field name="name">按钮表</field>
+            <field name="category_id" ref="category_sys_setting_parameter"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <!--码位表-->
+        <record model="res.groups" id="category_sys_code_for_table">
+            <field name="name">码位表</field>
+            <field name="category_id" ref="category_sys_setting_parameter"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <!--通用日志-->
+        <record model="res.groups" id="category_sys_general_log">
+            <field name="name">通用日志</field>
+            <field name="category_id" ref="category_sys_setting_parameter"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <!--回放记录-->
+        <record model="res.groups" id="category_sys_playback_record">
+            <field name="name">回放记录</field>
+            <field name="category_id" ref="category_sys_setting_parameter"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <!--车间班组管理 -->
+        <record model="ir.module.category" id="category_sys_setting_workshop">
+            <field name="name">车间班组管理</field>
+            <field name="parent_id" ref="category_sys_setting_parameter"/>
+        </record>
+
+        <record model="res.groups" id="group_sys_setting_workshop_page_look">
+            <field name="name">显示界面</field>
+            <field name="category_id" ref="category_sys_setting_workshop"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_sys_setting_workshop_edit">
+            <field name="name">编辑</field>
+            <field name="category_id" ref="category_sys_setting_workshop"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="ir.module.category" id="wechat_manage">
+            <field name="name">微信设置</field>
+            <field name="parent_id" ref="odoo_groups_manage.sys_setting_category"/>
+        </record>
+
+        <record id="funenc_wechat.group_funenc_wechat_manager" model="res.groups">
+            <field name="name">微信管理员</field>
+            <field name="category_id" ref="wechat_manage"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record id="vue_template_manager.group_funenc_vue_template_manager" model="res.groups">
+            <field name="name">资源管理</field>
+            <field name="category_id" ref="vue_template_manager.module_category_vue_template_manage"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="odoo_operation_log.groups_sys_operation_log_access">
+            <field name="atomic">True</field>
+        </record>
+
+    </data>
+
+</odoo>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+        <t t-name="metro_park.interlock.table.buttons">
+            <div>
+                <button type="object" name="import_time_table" class="btn btn-primary">
+                    导入联锁表
+                </button>
+            </div>
+        </t>
+
+</templates>

@@ -1,0 +1,57 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view"
+                id="metro_park_maintenance.offset_info_list">
+            <field name="name">偏移信息</field>
+            <field name="model">metro_park_maintenance.offset_info</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="dev_id"/>
+                    <field name="index"/>
+                </tree>
+            </field>
+        </record>
+
+        
+        <record model="ir.ui.view"
+                id="metro_park_maintenance.offset_info_form">
+            <field name="name">偏移信息</field>
+            <field name="model">metro_park_maintenance.offset_info</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="rule">rule</label>
+                        <div class="col-sm-10">
+                            <field name="rule"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="dev_id">dev_id</label>
+                        <div class="col-sm-10">
+                            <field name="dev_id"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="index">index</label>
+                        <div class="col-sm-10">
+                            <field name="index"/>
+                        </div>
+                    </div>
+                    
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window"
+                id="metro_park_maintenance.offset_info_act_window">
+            <field name="name">偏移信息</field>
+            <field name="res_model">metro_park_maintenance.offset_info</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+    

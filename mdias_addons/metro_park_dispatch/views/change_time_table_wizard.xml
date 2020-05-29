@@ -1,0 +1,41 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.change_time_table_wizard_form">
+            <field name="name">change_time_table_wizard form </field>
+            <field name="model">metro_park_dispatch.change_time_table_wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="time_table">time_table</label>
+                        <div class="col-sm-3">
+                            <field name="time_table"
+                                   options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                        </div>
+                    </div>
+                    <footer>
+                        <button class="btn btn-small btn-success"
+                                type="object"
+                                name="on_ok"
+                                string="确认" />
+                         <button class="btn btn-info btn-success"
+                                 special="cancel"
+                                 string="取消" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window"
+                id="metro_park_dispatch.change_time_table_wizard_act_window">
+            <field name="name">修改时刻表</field>
+            <field name="res_model">metro_park_dispatch.change_time_table_wizard</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+
+
+    

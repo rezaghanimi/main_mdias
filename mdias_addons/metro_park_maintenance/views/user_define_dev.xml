@@ -1,0 +1,43 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_maintenance.user_define_dev_list">
+            <field name="name">用户指定设备</field>
+            <field name="model">metro_park_maintenance.user_define_dev</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="dev"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="metro_park_maintenance.user_define_dev_form">
+            <field name="name">用户指定设备</field>
+            <field name="model">metro_park_maintenance.user_define_dev</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="dev">dev</label>
+                        <div class="col-sm-4">
+                            <field name="dev"/>
+                        </div>
+                    </div>
+                    <footer>
+                        <button class="btn btn-success" type="object" name="on_ok" text="确定" />
+                        <button class="btn btn-info" text="取消" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window"
+                id="metro_park_maintenance.user_define_dev_act_window">
+            <field name="name">用户指定设备</field>
+            <field name="res_model">metro_park_maintenance.user_define_dev</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+    

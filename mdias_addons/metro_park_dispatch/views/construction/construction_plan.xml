@@ -1,0 +1,75 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="construction_plan_tree">
+            <field name="name">施工计划</field>
+            <field name="model">metro_park_dispatch.construction_plan</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table"
+                      class="noOpen"
+                      custom_btn_template="construction_plan_syn_btns"
+                      options="{'height': 'full-335'}"
+                      create="false"
+                      unlink="false"
+                      delte="false"
+                      default_order="plan_id desc"
+                >
+                    <field name="plan_id"/>
+                    <field name="out_plan_type"/>
+                    <field name="out_state"/>
+                    <field name="out_work_start_time" width="150"/>
+                    <field name="out_work_end_time" width="150"/>
+                    <field name="out_work_code" width="150"/>
+                    <field name="out_work_content" width="150"/>
+                    <field name="out_affect_scope" width="150" string="影响区域"/>
+                    <field name="out_work_department" width="80"/>
+                    <field name="out_person_in_charge_name" width="80"/>
+                    <field name="out_connect_phone" width="80"/>
+                    <field name="out_remark" width="80"/>
+                    <field name="out_plan_begin_time" width="80"/>
+                    <field name="out_plan_end_time" width="80"/>
+                    <field name="out_construction_require" width="80"/>
+                    <field name="out_remark" width="80"/>
+                    <widget name="TreeButtons" fixed_right="1" width="300"
+                            template="construction_plan_tree_buttons"
+                    />
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="construction_plan_form">
+            <field name="name">施工计划</field>
+            <field name="model">metro_park_dispatch.construction_plan</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="work_areas">
+                                <tree>
+                                    <field name="area_name"/>
+                                    <field name="area_code" string="施工调度对应编码"/>
+                                    <field name="park_element_code" string="编码"/>
+                                    <field name="element_type" width="150" string="类型"/>
+                                </tree>
+                            </field>
+                            <field name="affect_areas">
+                                <tree>
+                                    <field name="area_name"/>
+                                    <field name="area_code" string="施工调度对应编码"/>
+                                    <field name="park_element_code" string="编码"/>
+                                    <field name="element_type" width="150" string="类型"/>
+                                </tree>
+                            </field>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="construction_plan_action">
+            <field name="name">施工计划</field>
+            <field name="res_model">metro_park_dispatch.construction_plan</field>
+            <field name="view_mode">tree</field>
+        </record>
+    </data>
+</odoo>

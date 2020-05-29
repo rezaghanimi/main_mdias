@@ -1,0 +1,10 @@
+<template id="tee_buttons">
+    <t t-name="construction_plan_tree_buttons">
+        <div>
+            <button name="action_edit" type="object"
+                    class="btn btn-sm layui-btn layui-btn-sm">详情
+            </button>
+        </div>
+    </t>
+</template>
+

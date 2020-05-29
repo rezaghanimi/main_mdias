@@ -1,0 +1,187 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.repair_tmp_rule_pop_list">
+            <field name="name">检技通</field>
+            <field name="model">metro_park_maintenance.repair_tmp_rule</field>
+            <field name="arch" type="xml">
+                <tree js_class="import_repair_tmp_rule"
+                      default_order="start_date desc"
+                      options="{'height':'400'}"
+                      create="0"
+                      delete="0"
+                      edit="0">
+                    <field name="no"/>
+                    <field name="name"/>
+                    <field name="content"/>
+                    <field name="work_user"/>
+                    <field name="trains" widget="many2many_tags" width="200"/>
+                    <field name="repair_rules" widget="many2many_tags" width="200"/>
+                    <field name="start_date"/>
+                    <field name="end_date"/>
+                    <field name="time_consume"/>
+                    <field name="button"
+                           widget="template_widget"
+                           fixed_right="1"
+                           options="{'template': 'repair_tmp_rule.buttons'}"
+                           width="200"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.repair_tmp_rule_list">
+            <field name="name">检技通</field>
+            <field name="model">metro_park_maintenance.repair_tmp_rule</field>
+            <field name="arch" type="xml">
+                <tree js_class="import_repair_tmp_rule"
+                      default_order="start_date desc"
+                      search_ex_template="repair_tmp_rule_search"
+                      options="{'height':'full-320'}">
+                    <field name="no"/>
+                    <field name="name"/>
+                    <field name="content"/>
+                    <field name="work_user"/>
+                    <field name="trains" widget="many2many_tags" width="200"/>
+                    <field name="repair_rules" widget="many2many_tags" width="200"/>
+                    <field name="start_date"/>
+                    <field name="end_date"/>
+                    <field name="time_consume"/>
+                    <field name="button"
+                           widget="template_widget"
+                           fixed_right="1"
+                           options="{'template': 'repair_tmp_rule.buttons'}"
+                           width="200"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.repair_tmp_rule_form">
+            <field name="name">检技通</field>
+            <field name="model">metro_park_maintenance.repair_tmp_rule</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="name">name</label>
+                        <div class="col-sm-3">
+                            <field name="name"/>
+                        </div>
+
+                        <label class="col-sm-2 col-form-label" for="no">no</label>
+                        <div class="col-sm-3">
+                            <field name="no"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="work_user">work_user</label>
+                        <div class="col-sm-3">
+                            <field name="work_user"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="start_date">start_date</label>
+                        <div class="col-sm-3">
+                            <field name="start_date"/>
+                        </div>
+
+                        <label class="col-sm-2 col-form-label" for="end_date">end_date</label>
+                        <div class="col-sm-3">
+                            <field name="end_date"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="time_consume">time_consume</label>
+                        <div class="col-sm-3">
+                            <field name="time_consume"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="plan_train_count">plan_train_count</label>
+                        <div class="col-sm-3">
+                            <field name="plan_train_count" readonly="1"/>
+                        </div>
+
+                        <label class="col-sm-2 col-form-label" for="finished_train_count">finished_train_count</label>
+                        <div class="col-sm-3">
+                            <field name="finished_train_count" readonly="1"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="content">content</label>
+                        <div class="col-sm-8">
+                            <field name="content"/>
+                        </div>
+                    </div>
+
+                    <notebook>
+                        <page string="结合修程">
+                            <field name="repair_rules">
+                                <tree js_class="fnt_table" options="{'height': 200}">
+                                    <field name="name"/>
+                                    <field name="no"/>
+                                    <field name="dev_standard"/>
+                                    <field name="balance"/>
+                                    <field name="rule_type"/>
+                                    <field name="target_plan_type"/>
+                                    <field name="period"/>
+                                    <field name="positive_offset"/>
+                                    <field name="negative_offset"/>
+                                    <field name="run_miles"/>
+                                    <field name="positive_offset_miles"/>
+                                    <field name="repair_days"/>
+                                    <field name="plan_method"/>
+                                    <field name="rule_status"/>
+                                    <field name="priority"/>
+                                    <field name="overlap_rules" widget="many2many_tags"/>
+                                    <field name="work_start_time"/>
+                                    <field name="work_end_time"/>
+                                    <field name="work_consume_time"/>
+                                    <field name="repair_content"/>
+                                    <field name="locations" widget="many2many_tags"/>
+                                    <field name="work_requirement"/>
+                                    <field name="need_retain"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="针对车辆">
+                            <field name="trains">
+                                <tree js_class="fnt_table" options="{'height': 200}">
+                                    <field name="dev_name"/>
+                                    <field name="dev_no"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.repair_tmp_rule_form_import">
+            <field name="name">检技通导入</field>
+            <field name="model">metro_park_maintenance.repair_tmp_rule_import</field>
+            <field name="arch" type="xml">
+                <form>
+                    <field name="file"/>
+                    <footer>
+                        <button type="object"
+                                name="import_data_rec"
+                                class="btn btn_primary"
+                                text="导入"/>
+                        <button special="cancel"
+                                class="btn btn_secondary"
+                                text="取消"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
+
+
+    

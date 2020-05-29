@@ -1,0 +1,90 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view"
+                id="metro_park_maintenance.operation_record_list">
+            <field name="name">操作日志</field>
+            <field name="model">metro_park_maintenance.operation_record</field>
+            <field name="arch" type="xml">
+                <tree import="0"
+                      search_ex_template="operation_record_search"
+                      js_class="fnt_table"
+                      options="{'height':'full-340'}">
+                    <field name="record_no" width="150"/>
+                    <field name="create_date" string="时间"/>
+                    <field name="manipulate_type"/>
+                    <field name="train"/>
+                    <field name="last_miles"/>
+                    <field name="inc_miles"/>
+                    <field name="cur_miles"/>
+                    <field name="create_uid" string="操作账户"></field>
+                    <field name="ip_address"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view"
+                id="metro_park_maintenance.operation_record_form">
+            <field name="name">操作日志</field>
+            <field name="model">metro_park_maintenance.operation_record</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="record_no">record_no</label>
+                        <div class="col-sm-3">
+                            <field name="record_no"/>
+                        </div>
+
+                        <label class="col-sm-2 col-form-label" for="tm">tm</label>
+                        <div class="col-sm-3">
+                            <field name="tm"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="manipulate_type">manipulate_type</label>
+                        <div class="col-sm-3">
+                            <field name="manipulate_type"/>
+                        </div>
+
+                        <label class="col-sm-2 col-form-label" for="train">train</label>
+                        <div class="col-sm-3">
+                            <field name="train"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="last_miles">last_miles</label>
+                        <div class="col-sm-3">
+                            <field name="last_miles"/>
+                        </div>
+
+                        <label class="col-sm-2 col-form-label" for="inc_miles">inc_miles</label>
+                        <div class="col-sm-3">
+                            <field name="inc_miles"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="cur_miles">cur_miles</label>
+                        <div class="col-sm-3">
+                            <field name="cur_miles"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="ip_address">ip_address</label>
+                        <div class="col-sm-3">
+                            <field name="ip_address"/>
+                        </div>
+                    </div>
+                    
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window"
+                id="metro_park_maintenance.operation_record_act_window">
+            <field name="name">操作日志</field>
+            <field name="res_model">metro_park_maintenance.operation_record</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+    

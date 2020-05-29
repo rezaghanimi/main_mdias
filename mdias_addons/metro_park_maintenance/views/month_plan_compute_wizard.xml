@@ -1,0 +1,90 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view"
+                id="metro_park_maintenance.month_plan_compute_wizard_list">
+            <field name="name">月计划计算向导</field>
+            <field name="model">metro_park_maintenance.month_plan_compute_wizard</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="max_plan_per_day"/>
+                    <field name="calc_host"/>
+                    <field name="rule_count_constrain"/>
+                </tree>
+            </field>
+        </record>
+
+        
+        <record model="ir.ui.view"
+                id="metro_park_maintenance.month_plan_compute_wizard_form">
+            <field name="name">月计划计算向导</field>
+            <field name="model">metro_park_maintenance.month_plan_compute_wizard</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label"
+                               for="max_plan_per_day">max_plan_per_day</label>
+                        <div class="col-sm-10">
+                            <field name="max_plan_per_day"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label"
+                               for="calc_host">calc_host</label>
+                        <div class="col-sm-10">
+                            <field name="calc_host"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label"
+                               for="rule_count_constrain">rule_count_constrain</label>
+                        <div class="col-sm-10">
+                            <field name="rule_count_constrain"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label"
+                               for="plan_kt">plan_kt</label>
+                        <div class="col-sm-10">
+                            <field name="plan_kt"
+                                   required="1"
+                                   options="{'no_create_edit': True,'no_open': True, 'no_create':True}" />
+                        </div>
+                    </div>
+
+                    <field name="plan_kt_month_visible" invisible="1"/>
+                    <div class="form-group row"
+                         attrs="{'invisible': [('plan_kt_month_visible', '=', False)], 'required': [('plan_kt_month_visible', '=', True)]}">
+                        <label class="col-sm-2 col-form-label"
+                               for="plan_kt_month">plan_kt_month</label>
+                        <div class="col-sm-10">
+                            <field name="plan_kt_month"
+                                   options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <button class="btn btn-success" special="save_and_exit" text="确定" />
+                        <button class="btn btn-info" text="取消" special="cancel" />
+                    </footer>
+                    
+                </form>
+            </field>
+        </record>
+
+        
+        <record model="ir.actions.act_window"
+                id="metro_park_maintenance.month_plan_compute_wizard_act_window">
+            <field name="name">月计划计算向导</field>
+            <field name="res_model">metro_park_maintenance.month_plan_compute_wizard</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+    

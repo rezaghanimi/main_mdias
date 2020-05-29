@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="pre_alarm" model="metro_park_maintenance.repair_param">
+            <field name="name">检修任务提前提醒时间设定</field>
+            <field name="val">-12</field>
+            <field name="unit">小时</field>
+            <field name="use">True</field>
+        </record>
+
+        <record id="holiday_lengthen_days" model="metro_park_maintenance.repair_param">
+            <field name="name">法定节假日延长检修日期</field>
+            <field name="val">3</field>
+            <field name="unit">天</field>
+            <field name="use">True</field>
+        </record>
+
+        <record id="gen_order_pre_dyas" model="metro_park_maintenance.repair_param">
+            <field name="name">修程生成工单提前天数</field>
+            <field name="val">0</field>
+            <field name="unit">天</field>
+            <field name="use">True</field>
+        </record>
+
+
+        <record id="workday_lengthen_days" model="metro_park_maintenance.repair_param">
+            <field name="name">工作日延长检修日期</field>
+            <field name="val">0</field>
+            <field name="unit">天</field>
+            <field name="use">True</field>
+        </record>
+
+        <record id="weakend_do_plan" model="metro_park_maintenance.repair_param">
+            <field name="name">周六、周末是否安排计划</field>
+            <field name="val">-1</field>
+            <field name="unit">~</field>
+            <field name="use">True</field>
+        </record>
+
+        <record id="work_span" model="metro_park_maintenance.repair_param">
+            <field name="name">作业间隔</field>
+            <field name="val">10</field>
+            <field name="unit">分钟</field>
+            <field name="use">True</field>
+        </record>
+
+        <record id="work_shop_work_num" model="metro_park_maintenance.repair_param">
+            <field name="name">班组可单日可承担维修任务/车数</field>
+            <field name="val">4</field>
+            <field name="unit">辆</field>
+            <field name="use">True</field>
+        </record>
+
+    </data>
+</odoo>

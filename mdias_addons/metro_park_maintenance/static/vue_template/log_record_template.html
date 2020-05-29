@@ -1,0 +1,51 @@
+<script>
+    function println() {
+        $.print("#print_dispatch_request_template");
+    }
+</script>
+
+
+<div id="print_dispatch_request_template" style="height: 73%; margin-top: 50px">
+    <h3 style="text-align: center; margin-bottom: 2%">调车作业通知单</h3>
+    <div style="text-align: center;margin-bottom: 2%">__________月__________日________班________第________批</div>
+    <table class="table" style="margin-top: -11px; text-align: center;border: 2px solid #000000;">
+        <tr>
+            <td class="td" style="width: 13%">顺号</td>
+            <td class="td" style="width: 13%">股道号码</td>
+            <td class="td" style="width: 13%">摘挂(+,-)</td>
+            <td class="td" style="width: 13%">车数</td>
+            <td class="td">注意事项</td>
+        </tr>
+        <tr v-for="value in detail">
+            <td class="td">&#160; {{value.sequence}}</td>
+            <td class="td">{{value.rail}}</td>
+            <td class="td">{{value.operation}}</td>
+            <td class="td">{{value.train_num}}</td>
+            <td class="td">{{value.remark}}</td>
+        </tr>
+    </table>
+    <table class="table" style="margin-top: -11px;">
+        <tr>
+            <td class="td" style="width: 13%">计划下达时间：</td>
+            <td class="td" style="width: 38.8%"></td>
+            <td class="td" style="width: 13%">调车领导人：</td>
+            <td class="td"></td>
+        </tr>
+        <tr>
+            <td class="td">作业开始时间：</td>
+            <td class="td">{{start_time}}</td>
+            <td class="td">作业结束时间：</td>
+            <td class="td">{{finish_time}}</td>
+        </tr>
+        <tr>
+            <td class="td">信号楼值班员：</td>
+            <td class="td"></td>
+            <td class="td">调车司机：</td>
+            <td class="td"></td>
+        </tr>
+    </table>
+</div>
+
+<div style="width:60px; margin: auto;margin-top: 1%">
+    <button class="btn btn-primary" onclick="println()">打印</button>
+</div>

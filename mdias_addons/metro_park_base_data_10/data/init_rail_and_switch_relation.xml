@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+          <!-- 初始化板桥区段道岔关系  -->
+          <function id="metro_park_base_data_10.init_banqiao_switches"
+                    model="metro_park_base_data_10.init_rail_and_switches"
+                    name="init_switches"
+                    eval="[]"/>
+    </data>
+</odoo>

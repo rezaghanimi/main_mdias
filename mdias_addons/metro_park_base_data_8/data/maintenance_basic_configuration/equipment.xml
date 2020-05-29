@@ -1,0 +1,251 @@
+<odoo>
+    <data>
+
+        <record id="maintenance_banqiao_equipment_ats_host" model="maintenance_equipment">
+            <field name="name">板桥ATS主机</field>
+            <field name="place" ref="maintenance_banqiao_place_center_room"/>
+        </record>
+
+        <record id="maintenance_banqiao_equipment_ats_standby" model="maintenance_equipment">
+            <field name="name">板桥ATS备机</field>
+            <field name="place" ref="maintenance_banqiao_place_center_room"/>
+        </record>
+
+        <record id="maintenance_banqiao_equipment_ci_host" model="maintenance_equipment">
+            <field name="name">板桥CI主机</field>
+            <field name="place" ref="maintenance_banqiao_place_center_room"/>
+        </record>
+
+        <record id="maintenance_banqiao_equipment_ci_standby" model="maintenance_equipment">
+            <field name="name">板桥CI备机</field>
+            <field name="place" ref="maintenance_banqiao_place_center_room"/>
+        </record>
+
+        <record id="maintenance_banqiao_equipment_pscada" model="maintenance_equipment">
+            <field name="name">板桥PSCADA</field>
+            <field name="place" ref="maintenance_banqiao_place_center_room"/>
+        </record>
+
+        <record id="maintenance_banqiao_equipment_tcms" model="maintenance_equipment">
+            <field name="name">板桥TCMS</field>
+            <field name="place" ref="maintenance_banqiao_place_center_room"/>
+        </record>
+
+        <record id="maintenance_banqiao_equipment_pms" model="maintenance_equipment">
+            <field name="name">板桥PMS</field>
+            <field name="place" ref="maintenance_banqiao_place_center_room"/>
+        </record>
+
+        <record id="maintenance_banqiao_equipment_construction_management" model="maintenance_equipment">
+            <field name="name">板桥施工管理</field>
+            <field name="place" ref="maintenance_banqiao_place_center_room"/>
+        </record>
+
+        <record id="maintenance_banqiao_equipment_core_switch_host" model="maintenance_equipment">
+            <field name="name">板桥核心交换机主机</field>
+            <field name="place" ref="maintenance_banqiao_place_center_room"/>
+        </record>
+
+        <record id="maintenance_banqiao_equipment_core_switch_standby" model="maintenance_equipment">
+            <field name="name">板桥核心交换机备机</field>
+            <field name="place" ref="maintenance_banqiao_place_center_room"/>
+        </record>
+
+        <record id="maintenance_banqiao_equipment_access_switch_host" model="maintenance_equipment">
+            <field name="name">板桥接入交换机主机</field>
+            <field name="place" ref="maintenance_banqiao_place_center_room"/>
+        </record>
+
+        <record id="maintenance_banqiao_equipment_access_switch_standby" model="maintenance_equipment">
+            <field name="name">板桥接入交换机备机</field>
+            <field name="place" ref="maintenance_banqiao_place_center_room"/>
+        </record>
+
+        <record id="maintenance_banqiao_equipment_communication_preprocessor_host" model="maintenance_equipment">
+            <field name="name">板桥通信前置机主机</field>
+            <field name="place" ref="maintenance_banqiao_place_center_room"/>
+        </record>
+
+        <record id="maintenance_banqiao_equipment_communication_preprocessor_standby" model="maintenance_equipment">
+            <field name="name">板桥通信前置机备机</field>
+            <field name="place" ref="maintenance_banqiao_place_center_room"/>
+        </record>
+
+        <record id="maintenance_banqiao_equipment_application_server_5" model="maintenance_equipment">
+            <field name="name">板桥应用服务器五</field>
+            <field name="place" ref="maintenance_banqiao_place_center_room"/>
+        </record>
+
+        <record id="maintenance_banqiao_equipment_application_server_6" model="maintenance_equipment">
+            <field name="name">板桥应用服务器六</field>
+            <field name="place" ref="maintenance_banqiao_place_center_room"/>
+        </record>
+
+        <record id="maintenance_banqiao_equipment_application_server_1" model="maintenance_equipment">
+            <field name="name">板桥应用服务器一</field>
+            <field name="place" ref="maintenance_banqiao_place_center_room"/>
+        </record>
+
+        <record id="maintenance_banqiao_equipment_application_server_2" model="maintenance_equipment">
+            <field name="name">板桥应用服务器二</field>
+            <field name="place" ref="maintenance_banqiao_place_center_room"/>
+        </record>
+
+        <record id="maintenance_banqiao_equipment_application_server_3" model="maintenance_equipment">
+            <field name="name">板桥应用服务器三</field>
+            <field name="place" ref="maintenance_banqiao_place_center_room"/>
+        </record>
+
+        <record id="maintenance_banqiao_equipment_application_server_4" model="maintenance_equipment">
+            <field name="name">板桥应用服务器四</field>
+            <field name="place" ref="maintenance_banqiao_place_center_room"/>
+        </record>
+
+        <record id="maintenance_banqiao_equipment_database_server_1" model="maintenance_equipment">
+            <field name="name">板桥数据库服务器一</field>
+            <field name="place" ref="maintenance_banqiao_place_center_room"/>
+        </record>
+
+        <record id="maintenance_banqiao_equipment_database_server_2" model="maintenance_equipment">
+            <field name="name">板桥数据库服务器二</field>
+            <field name="place" ref="maintenance_banqiao_place_center_room"/>
+        </record>
+
+        <record id="maintenance_banqiao_place_maintenance_scheduling" model="maintenance_equipment">
+            <field name="name">板桥检修调度工作站</field>
+            <field name="place" ref="maintenance_banqiao_place_dcc_room"/>
+        </record>
+
+        <record id="maintenance_banqiao_place_vehicle_maintenance" model="maintenance_equipment">
+            <field name="name">板桥车辆检修工作站</field>
+            <field name="place" ref="maintenance_banqiao_place_dcc_room"/>
+        </record>
+
+        <record id="maintenance_banqiao_place_yard_dispatching" model="maintenance_equipment">
+            <field name="name">板桥车场调度工作站</field>
+            <field name="place" ref="maintenance_banqiao_place_dcc_room"/>
+        </record>
+
+        <record id="maintenance_banqiao_place_signalman" model="maintenance_equipment">
+            <field name="name">板桥信号员操作工作站</field>
+            <field name="place" ref="maintenance_banqiao_place_dcc_room"/>
+        </record>
+
+        <record id="maintenance_banqiao_place_attendant" model="maintenance_equipment">
+            <field name="name">板桥值班员操作工作站</field>
+            <field name="place" ref="maintenance_banqiao_place_dcc_room"/>
+        </record>
+
+        <record id="maintenance_banqiao_place_maintenance_station" model="maintenance_equipment">
+            <field name="name">板桥维护工作站</field>
+            <field name="place" ref="maintenance_banqiao_place_maintenance_room"/>
+        </record>
+
+        <record id="maintenance_banqiao_place_on_duty_drop_off_terminal" model="maintenance_equipment">
+            <field name="name">板桥出退勤终端</field>
+            <field name="place" ref="maintenance_banqiao_place_send_the_class_room"/>
+        </record>
+
+        <record id="maintenance_banqiao_place_send_the_class_station" model="maintenance_equipment">
+            <field name="name">板桥派班工作站</field>
+            <field name="place" ref="maintenance_banqiao_place_send_the_class_room"/>
+        </record>
+
+        <record id="maintenance_banqiao_place_battery" model="maintenance_equipment">
+            <field name="name">板桥电源</field>
+            <field name="place" ref="maintenance_banqiao_place_send_the_class_room"/>
+        </record>
+
+        <record id="maintenance_taipingyuan_place_access_switch_host" model="maintenance_equipment">
+            <field name="name">太平园接入交换机主机</field>
+            <field name="place" ref="maintenance_taipingyuan_place_taipingyuan_room"/>
+        </record>
+
+        <record id="maintenance_taipingyuan_place_back_frequently" model="maintenance_equipment">
+            <field name="name">太平园出退勤终端</field>
+            <field name="place" ref="maintenance_taipingyuan_place_taipingyuan_room"/>
+        </record>
+
+        <record id="maintenance_taipingyuan_place_send_class_station" model="maintenance_equipment">
+            <field name="name">太平园派班工作站</field>
+            <field name="place" ref="maintenance_taipingyuan_place_taipingyuan_room"/>
+        </record>
+
+        <record id="maintenance_gaodalu_place_pscada" model="maintenance_equipment">
+            <field name="name">高大路PSCADA</field>
+            <field name="place" ref="maintenance_gaodalu_place_center_room"/>
+        </record>
+
+        <record id="maintenance_gaodalu_place_ci_host" model="maintenance_equipment">
+            <field name="name">高大路CI主机</field>
+            <field name="place" ref="maintenance_gaodalu_place_center_room"/>
+        </record>
+
+        <record id="maintenance_gaodalu_place_ci_standby" model="maintenance_equipment">
+            <field name="name">高大路CI备机</field>
+            <field name="place" ref="maintenance_gaodalu_place_center_room"/>
+        </record>
+
+        <record id="maintenance_gaodalu_place_access_switch_host" model="maintenance_equipment">
+            <field name="name">高大路接入交换机主机</field>
+            <field name="place" ref="maintenance_gaodalu_place_center_room"/>
+        </record>
+
+        <record id="maintenance_gaodalu_place_access_switch_standby" model="maintenance_equipment">
+            <field name="name">高大路接入交换机备机</field>
+            <field name="place" ref="maintenance_gaodalu_place_center_room"/>
+        </record>
+
+        <record id="maintenance_gaodalu_place_battery" model="maintenance_equipment">
+            <field name="name">高大路电源</field>
+            <field name="place" ref="maintenance_gaodalu_place_center_room"/>
+        </record>
+
+        <record id="maintenance_gaodalu_frontend_host" model="maintenance_equipment">
+            <field name="name">高大路通信前置机主机</field>
+            <field name="place" ref="maintenance_gaodalu_place_center_room"/>
+        </record>
+
+        <record id="maintenance_gaodalu_frontend_standby" model="maintenance_equipment">
+            <field name="name">高大路通信前置机备机</field>
+            <field name="place" ref="maintenance_gaodalu_place_center_room"/>
+        </record>
+
+        <record id="maintenance_gaodalu_maintenance_scheduling" model="maintenance_equipment">
+            <field name="name">高大路检修调度工作站</field>
+            <field name="place" ref="maintenance_gaodalu_place_dcc_room"/>
+        </record>
+
+        <record id="maintenance_gaodalu_yard_maintenance" model="maintenance_equipment">
+            <field name="name">高大路车场检修工作站</field>
+            <field name="place" ref="maintenance_gaodalu_place_dcc_room"/>
+        </record>
+
+        <record id="maintenance_gaodalu_yard_dispatching" model="maintenance_equipment">
+            <field name="name">高大路车场调度工作站</field>
+            <field name="place" ref="maintenance_gaodalu_place_dcc_room"/>
+        </record>
+
+        <record id="maintenance_gaodalu_signalman" model="maintenance_equipment">
+            <field name="name">高大路信号员操作工作站</field>
+            <field name="place" ref="maintenance_gaodalu_place_dcc_room"/>
+        </record>
+
+        <record id="maintenance_gaodalu_attendant" model="maintenance_equipment">
+            <field name="name">高大路值班员操作工作站</field>
+            <field name="place" ref="maintenance_gaodalu_place_dcc_room"/>
+        </record>
+
+
+        <record id="maintenance_gaodalu_outgoing_outgoing_terminals" model="maintenance_equipment">
+            <field name="name">高大路出退勤终端</field>
+            <field name="place" ref="maintenance_gaodalu_place_send_class_room"/>
+        </record>
+
+        <record id="maintenance_gaodalu_send_class_station" model="maintenance_equipment">
+            <field name="name">高大路派班工作站</field>
+            <field name="place" ref="maintenance_gaodalu_place_send_class_room"/>
+        </record>
+
+    </data>
+</odoo>

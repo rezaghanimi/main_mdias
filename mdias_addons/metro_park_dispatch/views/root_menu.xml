@@ -1,0 +1,35 @@
+<odoo>
+    <data>
+        <menuitem id="metro_park_dispatch.menu_root"
+                  font_icon="iconfont dispatch_icon"
+                  sequence="0"
+                  name="调度计划"/>
+
+        <!-- 收发车计划管理 -->
+        <menuitem id="metro_park_dispatch.train_turn_in_out_plan_root_menu"
+                  name="收发车计划"
+                  sequence="1"
+                  parent="metro_park_dispatch.menu_root"/>
+
+        <!-- 运行图管理 -->
+        <menuitem id="metro_park_dispatch.menu_time_table_root"
+                  parent="metro_park_dispatch.menu_root"
+                  sequence="8"
+                  groups="group_dispatch_car_management_dispatch_run_diagram_page_look"
+                  name="运行图管理"/>
+
+        <menuitem action="metro_park_base.time_table_manage_action"
+                  id="metro_park_dispatch.time_table_menu"
+                  name="运行图管理"
+                  sequence="1"
+                  parent="metro_park_dispatch.menu_time_table_root"/>
+
+        <menuitem action="metro_park_base.time_table_calendar_action"
+                  id="metro_park_dispatch.time_table_calendar_menu"
+                  name="运行图日历"
+                  sequence="3"
+                  parent="metro_park_dispatch.menu_time_table_root"
+                  groups="group_dispatch_car_management_dispatch_run_diagram_calendar"/>
+
+    </data>
+</odoo>

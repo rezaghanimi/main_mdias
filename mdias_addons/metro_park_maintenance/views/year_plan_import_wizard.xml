@@ -1,0 +1,84 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.year_plan_import_wizard_form">
+            <field name="name">导入年计划</field>
+            <field name="model">metro_park_maintenance.year_plan_import_wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label"
+                               for="template_type">template_type</label>
+                        <div class="col-sm-3">
+                            <field name="template_type"
+                                   options="{'no_create_edit': True,'no_open': True, 'no_create':True}"
+                                   required="1"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label"
+                               for="year_plan_id">year_plan_id</label>
+                        <div class="col-sm-3">
+                            <field name="year_plan_id" attrs="{'readonly': True}" />
+                        </div>
+                    </div>
+
+                    <field name="month_visible" invisible="1" />
+
+                    <div class="form-group row"
+                         attrs="{'invisible': [('month_visible', '=', False)]}">
+                        <label class="col-sm-2 col-form-label"
+                               for="month">month</label>
+                        <div class="col-sm-3">
+                            <field name="month"
+                                   options="{'no_create_edit': True,'no_open': True, 'no_create':True}"
+                                   attrs="{'required': [('month_visible', '=', True)]}"
+                            />
+                        </div>
+                    </div>
+
+                    <field name="start_date_visible" invisible="1"/>
+
+                    <div class="form-group row"
+                         attrs="{'invisible': [('start_date_visible', '=', False)]}">
+                        <label class="col-sm-2 col-form-label"
+                               for="start_date">start_date</label>
+                        <div class="col-sm-3">
+                            <field name="start_date"
+                                   options="{'no_create_edit': True,'no_open': True, 'no_create':True}"
+                                   attrs="{'required': [('start_date_visible', '=', True)]}"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label"
+                               for="xls_file">xls_file</label>
+                        <div class="col-sm-3">
+                            <field name="xls_file" required="1"/>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <button class="btn btn-primary"
+                                type="object"
+                                name="on_click"
+                                text="导入" />
+                        <button special="cancel" string="取消" class="btn-secondary"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window"
+                id="metro_park_maintenance.import_year_plan_table_act_window">
+            <field name="name">年计划导入</field>
+            <field name="res_model">metro_park_maintenance.year_plan_import_wizard</field>
+            <field name="view_mode">form</field>
+        </record>
+
+    </data>
+</odoo>
+
+

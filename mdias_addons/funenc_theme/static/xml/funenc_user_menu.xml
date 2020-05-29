@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <!-- menu -->
+    <t t-name="FunencUserMenu">
+        <li class="o_user_menu">
+            <a role="button" class="dropdown-toggle" data-toggle="dropdown" data-display="static" aria-expanded="false" href="#">
+                <img class="rounded-circle oe_topbar_avatar" t-att-src="_s + '/web/static/src/img/user_menu_avatar.png'" alt="Avatar"/>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" role="menu">
+                <t t-call="FunencUserMenu.Actions"/>
+            </div>
+        </li>
+    </t>
+    
+    <!-- 菜单项 -->
+    <t t-name="FunencUserMenu.Actions">
+        <a role="menuitem" href="#" data-menu="support" class="dropdown-item">Support</a>
+        <a role="menuitem" href="#" data-menu="settings" class="dropdown-item">Preferences</a>
+        <a role="menuitem" href="#" data-menu="changePassword" class="dropdown-item">修改密码</a>
+        <a role="menuitem" href="#" data-menu="logout" class="dropdown-item">Log out</a>
+    </t>
+</templates>

@@ -1,0 +1,37 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="construction_area_tree">
+            <field name="name">施工区域信息</field>
+            <field name="model">metro_park_dispatch.construction_area_relation</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table"
+                      class="noOpen"
+                      custom_btn_template="construction_area_syn_btns"
+                      options="{'height': 'full-335'}"
+                      search_ex_template="construction_area_search"
+                      create="false"
+                      delete="0"
+                      edit="0"
+
+                >
+                    <field name="area_name"/>
+                    <field name="area_code" string="施工调度对应编码"/>
+                    <field name="park_element_code" string="编码"/>
+                    <field name="element_type" width="150" string="类型"/>
+                    <field name="out_work_status_code" width="150"/>
+                    <field name="out_area_active" width="150"/>
+<!--                    <field name="out_power_status_code" width="150"/>-->
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="construction_area_action">
+            <field name="name">施工区域信息</field>
+            <field name="res_model">metro_park_dispatch.construction_area_relation</field>
+            <field name="view_mode">tree</field>
+        </record>
+
+
+    </data>
+</odoo>

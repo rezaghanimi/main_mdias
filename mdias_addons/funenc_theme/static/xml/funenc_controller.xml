@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="funenc.controller">
+        <div class="funenc_controller ">
+            <div class="tab-content">
+            </div>
+            <div class="custom_search" />
+            <div class="container-fluid" style="padding:0px;">
+                <div class="row toolbar">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="btns d-flex">
+                            <div class="operation_btn" style="padding-left:15px;" />
+                            <div class="side_bar" />
+                            <div class="search_btns btn-group" />
+                            <div class="switch_btn" />
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 d-flex flex-row-reverse align-items-center">
+                        <div class="search ml-1" />
+                    </div>
+                </div>
+            </div>
+            <div class="content" />
+            <div class="pager" />
+        </div>
+    </t>
+
+    <t t-name="funenc.controller.with_search_tempate">
+        <div class="funenc_controller">
+            <div class="tab-content">
+            </div>
+            <div class="custom_search" />
+            <div class="row toolbar">
+                <div class="col-sm-12 col-md-6">
+                    <div class="btns d-flex">
+                        <div class="operation_btn" />
+                        <div class="side_bar" />
+                        <div class="search_btns btn-group" />
+                        <div class="switch_btn" />
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 d-flex flex-row-reverse align-items-center">
+                    <div class="search ml-1" />
+                </div>
+            </div>
+            <div class="content" />
+            <div class="pager" />
+        </div>
+    </t>
+
+    <t t-name="funenc.abstract_action">
+        <div class="funenc_abstract_action">
+            <div class="operation_btn" />
+        </div>
+    </t>
+
+</templates>

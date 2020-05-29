@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="metro_park_base.major_type_0352001" model="metro_park_base.major_type">
+            <field name="name">电客车</field>
+            <field name="no">0352001</field>
+            <field name="major_id" ref="metro_park_base.major_0352">0352001</field>
+        </record>
+
+    </data>
+</odoo>

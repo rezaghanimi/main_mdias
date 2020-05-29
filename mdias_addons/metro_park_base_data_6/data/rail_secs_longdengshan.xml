@@ -1,0 +1,1151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="long_deng_shan_rail_7AG" model="metro_park_base.rails_sec">
+            <field name="no">7AG</field>
+            <field name="alias">7AG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="long_deng_shan_rail_7BG" model="metro_park_base.rails_sec">
+            <field name="no">7BG</field>
+            <field name="alias">7BG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="long_deng_shan_rail_8BG" model="metro_park_base.rails_sec">
+            <field name="no">8BG</field>
+            <field name="alias">8BG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="long_deng_shan_rail_9BG" model="metro_park_base.rails_sec">
+            <field name="no">9BG</field>
+            <field name="alias">9BG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">2</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">22</field>
+        </record>
+
+        <record id="long_deng_shan_rail_10BG" model="metro_park_base.rails_sec">
+            <field name="no">10BG</field>
+            <field name="alias">10BG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="electric_live">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="can_stop">1</field>
+            <field name="stop_order">5</field>
+        </record>
+
+        <record id="long_deng_shan_rail_11BG" model="metro_park_base.rails_sec">
+            <field name="no">11BG</field>
+            <field name="alias">11BG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">6</field>
+        </record>
+
+        <record id="long_deng_shan_rail_12BG" model="metro_park_base.rails_sec">
+            <field name="no">12BG</field>
+            <field name="alias">12BG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">9</field>
+        </record>
+
+        <record id="long_deng_shan_rail_13BG" model="metro_park_base.rails_sec">
+            <field name="no">13BG</field>
+            <field name="alias">13BG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">10</field>
+        </record>
+
+        <record id="long_deng_shan_rail_14BG" model="metro_park_base.rails_sec">
+            <field name="no">14BG</field>
+            <field name="alias">14BG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">13</field>
+        </record>
+
+        <record id="long_deng_shan_rail_15BG" model="metro_park_base.rails_sec">
+            <field name="no">15BG</field>
+            <field name="alias">15BG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">14</field>
+        </record>
+
+        <record id="long_deng_shan_rail_16BG" model="metro_park_base.rails_sec">
+            <field name="no">16BG</field>
+            <field name="alias">16BG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">17</field>
+        </record>
+
+        <record id="long_deng_shan_rail_17BG" model="metro_park_base.rails_sec">
+            <field name="no">17BG</field>
+            <field name="alias">17BG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">18</field>
+        </record>
+
+        <record id="long_deng_shan_rail_18BG" model="metro_park_base.rails_sec">
+            <field name="no">18BG</field>
+            <field name="alias">18BG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">23</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="long_deng_shan_rail_19BG" model="metro_park_base.rails_sec">
+            <field name="no">19BG</field>
+            <field name="alias">19BG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">24</field>
+        </record>
+
+        <record id="long_deng_shan_rail_20BG" model="metro_park_base.rails_sec">
+            <field name="no">20BG</field>
+            <field name="alias">20BG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">24</field>
+        </record>
+
+        <record id="long_deng_shan_rail_21BG" model="metro_park_base.rails_sec">
+            <field name="no">21BG</field>
+            <field name="alias">21BG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">24</field>
+        </record>
+
+        <record id="long_deng_shan_rail_22BG" model="metro_park_base.rails_sec">
+            <field name="no">22BG</field>
+            <field name="alias">22BG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">24</field>
+        </record>
+
+        <record id="long_deng_shan_rail_23BG" model="metro_park_base.rails_sec">
+            <field name="no">23BG</field>
+            <field name="alias">23BG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">24</field>
+        </record>
+
+        <record id="long_deng_shan_rail_24BG" model="metro_park_base.rails_sec">
+            <field name="no">24BG</field>
+            <field name="alias">24BG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">24</field>
+        </record>
+
+        <record id="long_deng_shan_rail_25BG" model="metro_park_base.rails_sec">
+            <field name="no">25BG</field>
+            <field name="alias">25BG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">24</field>
+        </record>
+
+        <record id="long_deng_shan_rail_26BG" model="metro_park_base.rails_sec">
+            <field name="no">26BG</field>
+            <field name="alias">26BG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">24</field>
+        </record>
+
+        <record id="long_deng_shan_rail_27BG" model="metro_park_base.rails_sec">
+            <field name="no">27BG</field>
+            <field name="alias">27BG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">24</field>
+        </record>
+
+        <record id="long_deng_shan_rail_28BG" model="metro_park_base.rails_sec">
+            <field name="no">28BG</field>
+            <field name="alias">28BG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">24</field>
+        </record>
+
+        <record id="long_deng_shan_rail_29G" model="metro_park_base.rails_sec">
+            <field name="no">29G</field>
+            <field name="alias">洗车线</field>
+            <field name="usage">洗车线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_wash" />
+            <field name="is_track">1</field>
+            <field name="rail_length">326</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_28AG" model="metro_park_base.rails_sec">
+            <field name="no">28AG</field>
+            <field name="alias">28AG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">24</field>
+        </record>
+
+        <record id="long_deng_shan_rail_27AG" model="metro_park_base.rails_sec">
+            <field name="no">27AG</field>
+            <field name="alias">27AG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">24</field>
+        </record>
+
+        <record id="long_deng_shan_rail_26AG" model="metro_park_base.rails_sec">
+            <field name="no">26AG</field>
+            <field name="alias">26AG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">24</field>
+        </record>
+
+        <record id="long_deng_shan_rail_25AG" model="metro_park_base.rails_sec">
+            <field name="no">25AG</field>
+            <field name="alias">25AG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">24</field>
+        </record>
+
+        <record id="long_deng_shan_rail_24AG" model="metro_park_base.rails_sec">
+            <field name="no">24AG</field>
+            <field name="alias">24AG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">19</field>
+        </record>
+
+        <record id="long_deng_shan_rail_23AG" model="metro_park_base.rails_sec">
+            <field name="no">23AG</field>
+            <field name="alias">23AG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">4</field>
+            <field name="stop_order">20</field>
+        </record>
+
+        <record id="long_deng_shan_rail_22AG" model="metro_park_base.rails_sec">
+            <field name="no">22AG</field>
+            <field name="alias">22AG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">15</field>
+        </record>
+
+        <record id="long_deng_shan_rail_21AG" model="metro_park_base.rails_sec">
+            <field name="no">21AG</field>
+            <field name="alias">21AG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">16</field>
+        </record>
+
+        <record id="long_deng_shan_rail_20AG" model="metro_park_base.rails_sec">
+            <field name="no">20AG</field>
+            <field name="alias">20AG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">16</field>
+        </record>
+
+        <record id="long_deng_shan_rail_19AG" model="metro_park_base.rails_sec">
+            <field name="no">19AG</field>
+            <field name="alias">19AG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_18AG" model="metro_park_base.rails_sec">
+            <field name="no">18AG</field>
+            <field name="alias">18AG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">11</field>
+        </record>
+
+        <record id="long_deng_shan_rail_17AG" model="metro_park_base.rails_sec">
+            <field name="no">17AG</field>
+            <field name="alias">17AG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">12</field>
+        </record>
+
+        <record id="long_deng_shan_rail_16AG" model="metro_park_base.rails_sec">
+            <field name="no">16AG</field>
+            <field name="alias">16AG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">7</field>
+        </record>
+
+        <record id="long_deng_shan_rail_15AG" model="metro_park_base.rails_sec">
+            <field name="no">15AG</field>
+            <field name="alias">15AG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">8</field>
+        </record>
+
+        <record id="long_deng_shan_rail_14AG" model="metro_park_base.rails_sec">
+            <field name="no">14AG</field>
+            <field name="alias">14AG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">3</field>
+        </record>
+
+        <record id="long_deng_shan_rail_13AG" model="metro_park_base.rails_sec">
+            <field name="no">13AG</field>
+            <field name="alias">13AG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_32BG" model="metro_park_base.rails_sec">
+            <field name="no">32BG</field>
+            <field name="alias">32B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_12AG" model="metro_park_base.rails_sec">
+            <field name="no">12AG</field>
+            <field name="alias">12AG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_11AG" model="metro_park_base.rails_sec">
+            <field name="no">11AG</field>
+            <field name="alias">11AG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_10AG" model="metro_park_base.rails_sec">
+            <field name="no">10AG</field>
+            <field name="alias">10AG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_9AG" model="metro_park_base.rails_sec">
+            <field name="no">9AG</field>
+            <field name="alias">9AG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_8AG" model="metro_park_base.rails_sec">
+            <field name="no">8AG</field>
+            <field name="alias">8AG</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check" />
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">152</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_6G" model="metro_park_base.rails_sec">
+            <field name="no">6G</field>
+            <field name="alias">6G</field>
+            <field name="usage">不落轮镟库</field>
+            <field name="rail_type" ref="metro_park_base.week_month_check_Line" />
+            <field name="is_track">1</field>
+            <field name="rail_length">175</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_1G" model="metro_park_base.rails_sec">
+            <field name="no">1G</field>
+            <field name="alias">1G</field>
+            <field name="usage">临修线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_tmp_repair" />
+            <field name="is_track">1</field>
+            <field name="rail_length">175</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_D1G" model="metro_park_base.rails_sec">
+            <field name="no">D1G</field>
+            <field name="alias">牵1</field>
+            <field name="usage">牵出线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_pull_out" />
+            <field name="is_track">1</field>
+            <field name="rail_length">220</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_D3G" model="metro_park_base.rails_sec">
+            <field name="no">D3G</field>
+            <field name="alias">牵3</field>
+            <field name="usage">牵出线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_pull_out" />
+            <field name="is_track">1</field>
+            <field name="rail_length">220</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_1_75WG" model="metro_park_base.rails_sec">
+            <field name="no">1_75WG</field>
+            <field name="alias">1_75WG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+        </record>
+
+        <record id="long_deng_shan_rail_T4617" model="metro_park_base.rails_sec">
+            <field name="no">T4617</field>
+            <field name="alias">转换轨1</field>
+            <field name="usage">入转换轨</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_exchange" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_T4621" model="metro_park_base.rails_sec">
+            <field name="no">T4621</field>
+            <field name="alias">转换轨2</field>
+            <field name="usage">出转换轨</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_exchange"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">200</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan"/>
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_T4615" model="metro_park_base.rails_sec">
+            <field name="no">T4615</field>
+            <field name="alias">T4615</field>
+            <field name="usage">入段线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_out_sec" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_T4623" model="metro_park_base.rails_sec">
+            <field name="no">T4623</field>
+            <field name="alias">T4623</field>
+            <field name="usage">出段线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_back_sec" />
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_5G" model="metro_park_base.rails_sec">
+            <field name="no">5G</field>
+            <field name="alias">5G</field>
+            <field name="usage">周月检线</field>
+            <field name="rail_type" ref="metro_park_base.week_month_check_Line" />
+            <field name="is_track">1</field>
+            <field name="rail_length">175</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_4G" model="metro_park_base.rails_sec">
+            <field name="no">4G</field>
+            <field name="alias">4G</field>
+            <field name="usage">周月检线</field>
+            <field name="rail_type" ref="metro_park_base.week_month_check_Line" />
+            <field name="is_track">1</field>
+            <field name="rail_length">175</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_3G" model="metro_park_base.rails_sec">
+            <field name="no">3G</field>
+            <field name="alias">3G</field>
+            <field name="usage">周月检线</field>
+            <field name="rail_type" ref="metro_park_base.week_month_check_Line" />
+            <field name="is_track">1</field>
+            <field name="rail_length">175</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_2G" model="metro_park_base.rails_sec">
+            <field name="no">2G</field>
+            <field name="alias">2G</field>
+            <field name="usage">周月检线</field>
+            <field name="rail_type" ref="metro_park_base.week_month_check_Line" />
+            <field name="is_track">1</field>
+            <field name="rail_length">175</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_31G" model="metro_park_base.rails_sec">
+            <field name="no">31G</field>
+            <field name="alias">31G</field>
+            <field name="usage">调机工程车库线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_construction_vehicle" />
+            <field name="is_track">1</field>
+            <field name="rail_length">86</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">0</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_30G" model="metro_park_base.rails_sec">
+            <field name="no">30G</field>
+            <field name="alias">30G</field>
+            <field name="usage">调机工程车库线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_construction_vehicle" />
+            <field name="is_track">1</field>
+            <field name="rail_length">86</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">0</field>
+            <field name="can_stop">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_1DG" model="metro_park_base.rails_sec">
+            <field name="no">1DG</field>
+            <field name="alias">1DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_3DG" model="metro_park_base.rails_sec">
+            <field name="no">3DG</field>
+            <field name="alias">3DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_5-11DG" model="metro_park_base.rails_sec">
+            <field name="no">5-11DG</field>
+            <field name="alias">5-11DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_7-9DG" model="metro_park_base.rails_sec">
+            <field name="no">7-9DG</field>
+            <field name="alias">7-9DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_13-15DG" model="metro_park_base.rails_sec">
+            <field name="no">13-15DG</field>
+            <field name="alias">13-15DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_17-23DG" model="metro_park_base.rails_sec">
+            <field name="no">17-23DG</field>
+            <field name="alias">17-23DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">151</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_19-21DG" model="metro_park_base.rails_sec">
+            <field name="no">19-21DG</field>
+            <field name="alias">19-21DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">151</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_25DG" model="metro_park_base.rails_sec">
+            <field name="no">25DG</field>
+            <field name="alias">25DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">151</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_27DG" model="metro_park_base.rails_sec">
+            <field name="no">27DG</field>
+            <field name="alias">27DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">151</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_29-37DG" model="metro_park_base.rails_sec">
+            <field name="no">29-37DG</field>
+            <field name="alias">29-37DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">151</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_31-33DG" model="metro_park_base.rails_sec">
+            <field name="no">31-33DG</field>
+            <field name="alias">31-33DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">151</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_39-55DG" model="metro_park_base.rails_sec">
+            <field name="no">39-55DG</field>
+            <field name="alias">39-55DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">151</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_41-45DG" model="metro_park_base.rails_sec">
+            <field name="no">41-45DG</field>
+            <field name="alias">41-45DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">151</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_49-53DG" model="metro_park_base.rails_sec">
+            <field name="no">49-53DG</field>
+            <field name="alias">49-53DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">151</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_57DG" model="metro_park_base.rails_sec">
+            <field name="no">57DG</field>
+            <field name="alias">57DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">151</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_59DG" model="metro_park_base.rails_sec">
+            <field name="no">59DG</field>
+            <field name="alias">59DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">151</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_61-73DG" model="metro_park_base.rails_sec">
+            <field name="no">61-73DG</field>
+            <field name="alias">61-73DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">151</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_63DG" model="metro_park_base.rails_sec">
+            <field name="no">63DG</field>
+            <field name="alias">63DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">151</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_65-69DG" model="metro_park_base.rails_sec">
+            <field name="no">65-69DG</field>
+            <field name="alias">65-69DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">151</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_71DG" model="metro_park_base.rails_sec">
+            <field name="no">71DG</field>
+            <field name="alias">71DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">151</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_75DG" model="metro_park_base.rails_sec">
+            <field name="no">75DG</field>
+            <field name="alias">75DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">151</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_77DG" model="metro_park_base.rails_sec">
+            <field name="no">77DG</field>
+            <field name="alias">77DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">151</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+        <record id="long_deng_shan_rail_79-81DG" model="metro_park_base.rails_sec">
+            <field name="no">79-81DG</field>
+            <field name="alias">79-81DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">0</field>
+            <field name="rail_length">151</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="long_deng_shan" />
+            <field name="electric_live">1</field>
+        </record>
+
+    </data>
+</odoo>
+

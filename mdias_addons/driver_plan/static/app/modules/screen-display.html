@@ -1,0 +1,90 @@
+<div class="layui-row">
+    <button class="layui-btn layui-btn-sm" id="createScreenDisplay" style="margin-left: 10px">
+        添加
+    </button>
+</div>
+<div class="layui-row">
+    <div class="table-search">
+        <form class="layui-form" id="mx-table-search-form">
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">日期</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="date" placeholder="请选择日期"
+                               id="date"
+                               readonly="readonly"
+                               autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline table-search-btn-groups">
+                    <button class="layui-btn layui-btn-sm"
+                            lay-submit lay-filter="mx-search-btn" id="mx-search-btn">查询
+                    </button>
+                    <button class="layui-btn layui-btn-sm"
+                            lay-submit lay-filter="mx-reset-btn" id="mx-reset-btn">重置
+                    </button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+<div class="layui-row">
+    <div class="table-head">大屏显示调节</div>
+    <table class="layui-table" id="screen-display-table" lay-filter="screen-display-table">
+    </table>
+</div>
+<link rel="stylesheet" href="modules/screen-display.css">
+<script src="modules/screen-display.js"></script>
+<div id="screenDisplayEdit" style="display: none">
+    <form class="layui-form" action="" lay-filter="screenDisplayEdit" style="margin-top:40px">
+        <div class="layui-form-item layui-hide">
+            <label class="layui-form-label">日期</label>
+            <div class="layui-input-block">
+                <input type="text" name="id" class="layui-input" readonly="readonly"
+                       placeholder="">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">日期</label>
+            <div class="layui-input-block">
+                <input type="text" name="date" class="layui-input" lay-verify="required"
+                       id="scheduleDate" readonly="readonly"
+                       placeholder="请选择日期">
+            </div>
+        </div>
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">出勤内容传达</label>
+            <div class="layui-input-block" contenteditable="true">
+                                <textarea placeholder="请输入内容" name="attendanceSendContent"
+                                          class="layui-textarea custom-textarea-height"></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">公司要闻</label>
+            <div class="layui-input-block" contenteditable="true">
+                                <textarea placeholder="请输入内容" name="companyInfo"
+                                          class="layui-textarea custom-textarea-height"></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">公司党政工团信息</label>
+            <div class="layui-input-block" contenteditable="true">
+                                <textarea placeholder="请输入内容" name="partyInfo"
+                                          class="layui-textarea custom-textarea-height"></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item text-align-center layui-hide">
+            <button class="layui-btn layui-btn-sm" id="submit-form" lay-submit="" lay-filter="screen-display">提交
+            </button>
+            <button type="reset" class="layui-btn layui-btn-primary layui-btn-sm">重置</button>
+        </div>
+    </form>
+</div>
+<script type="text/html" id="indexTpl">
+    {{d.LAY_TABLE_INDEX+1}}
+</script>
+<script type="text/html" id="barDemo">
+    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>

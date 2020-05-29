@@ -1,0 +1,19 @@
+<template id="UNIQUE_ID">
+    <t t-name="lay_time_for_ftime">
+        <div>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text" style="padding: 0.175rem 0.25rem;">
+                        <select id="select_day_type" style="background:#e9ecef;border:0;">
+                            <option value="today">当日</option>
+                            <option value="tomorrow">次日</option>
+                        </select>
+                    </div>
+                </div>
+                <input type="text" style="height:36px;" class="layui-input form-control"
+                       aria-label="Text input with checkbox"/>
+            </div>
+        </div>
+    </t>
+</template>
+

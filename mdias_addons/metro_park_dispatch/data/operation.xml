@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="metro_park_dispatch_operation_none" model="metro_park_dispatch.operation">
+            <field name="index">0</field>
+            <field name="name">无</field>
+        </record>
+
+        <record id="metro_park_dispatch_operation_add" model="metro_park_dispatch.operation">
+            <field name="index">1</field>
+            <field name="name">(加)+</field>
+        </record>
+
+        <record id="metro_park_dispatch_operation_sub" model="metro_park_dispatch.operation">
+            <field name="index">2</field>
+            <field name="name">(减)-</field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,18 @@
+
+<odoo>
+    <data>
+
+        <record id="metro_park_dispatch.park_dispatch_client_action" model="ir.actions.client">
+            <field name="name">计划执行</field>
+            <field name="tag">park_dispatch_action</field>
+            <field name="target">main</field>
+        </record>
+
+<!--        <menuitem action="metro_park_dispatch.cur_train_map_action"-->
+<!--                  id="metro_park_dispatch.dispatch_client_action"-->
+<!--                  name="计划执行"-->
+<!--                  parent="metro_park_dispatch.menu_root"/>-->
+
+    </data>
+</odoo>
+    

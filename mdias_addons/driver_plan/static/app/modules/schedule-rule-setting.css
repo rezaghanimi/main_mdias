@@ -1,0 +1,71 @@
+.layui-table {
+    margin: 0 0;
+}
+
+.table-head {
+    line-height: 40px;
+    height: 40px;
+    padding-left: 12px;
+    background: #f2f2f2;
+}
+
+.layui-table, .layui-table-view {
+    margin: 0 0;
+}
+
+.layui-form-label {
+    width: 180px;
+}
+
+.layui-input-block {
+    margin-left: 230px;
+}
+
+.margin-left-80 {
+    margin-left: 80px;
+}
+
+.short-input input {
+    display: inline;
+    width: 257px;
+}
+
+.custom-inline .layui-form-label {
+    width: 90px !important;
+}
+
+.short-inline {
+    width: 100px !important;
+}
+
+.margin-top-4 {
+    margin-top: 4px;
+}
+
+.margin-left-20 {
+    margin-left: 20px;
+}
+
+.pickUpContainer {
+
+}
+
+.head {
+    line-height: 40px;
+    height: 40px;
+    padding-left: 12px;
+    background: #f2f2f2;
+}
+
+.layui-form-select dl {
+    max-height: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12);
+    box-sizing: border-box;
+    animation-fill-mode: both;
+    -webkit-animation-name: layui-upbit;
+    animation-name: layui-upbit;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}

@@ -1,0 +1,66 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.route_command_list">
+            <field name="name">route_command list </field>
+            <field name="model">metro_park_dispatch.route_command</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table">
+                    <field name="dispatch_route_detail"/>
+                    <field name="start_rail"/>
+                    <field name="dest_rail"/>
+                    <field name="status"/>
+                </tree>
+            </field>
+        </record>
+
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.route_command_form">
+            <field name="name">route_command form </field>
+            <field name="model">metro_park_dispatch.route_command</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="dispatch_route_detail">dispatch_route_detail</label>
+                        <div class="col-sm-10">
+                            <field name="dispatch_route_detail"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="start_rail">start_rail</label>
+                        <div class="col-sm-10">
+                            <field name="start_rail"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="dest_rail">dest_rail</label>
+                        <div class="col-sm-10">
+                            <field name="dest_rail"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="status">status</label>
+                        <div class="col-sm-10">
+                            <field name="status"/>
+                        </div>
+                    </div>
+                    
+                </form>
+            </field>
+        </record>
+
+        
+        <record model="ir.actions.act_window" id="metro_park_dispatch.route_command_act_window">
+            <field name="name">route_command</field>
+            <field name="res_model">metro_park_dispatch.route_command</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!--<menuitem action="metro_park_dispatch.route_command_act_window" -->
+                  <!--id="metro_park_dispatch.route_command_menu" -->
+                  <!--name="进路指令" -->
+                  <!--parent="metro_park_dispatch.menu_root"/>-->
+    </data>
+</odoo>
+    

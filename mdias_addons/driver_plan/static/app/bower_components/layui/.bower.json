@@ -1,0 +1,31 @@
+{
+  "name": "layui",
+  "main": "src/layui.js",
+  "version": "2.4.5",
+  "homepage": "https://github.com/sentsin/layui",
+  "authors": [
+    "sentsin <xu@sentsin.com>"
+  ],
+  "description": "Classic modular front-end component library",
+  "moduleType": [
+    "amd",
+    "globals"
+  ],
+  "keywords": [
+    "layui",
+    "ui",
+    "JavaScript Framework",
+    "toolkit",
+    "front-end component library"
+  ],
+  "license": "MIT",
+  "_release": "2.4.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.4.5",
+    "commit": "1ff124de94e86cd0270b8a99f500aa3149569d67"
+  },
+  "_source": "https://github.com/sentsin/layui.git",
+  "_target": "^2.4.5",
+  "_originalSource": "sentsin/layui"
+}

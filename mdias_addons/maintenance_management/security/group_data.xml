@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <record model="ir.module.category" id="category_maintenance_management_root">
+            <field name="name">维保管理</field>
+        </record>
+
+        <record model="ir.module.category" id="category_maintenance_management_device_monitor">
+            <field name="name">设备状态</field>
+            <field name="parent_id" ref="category_maintenance_management_root"/>
+        </record>
+
+        <record model="res.groups" id="group_maintenance_management_device_monitor_server_status">
+            <field name="name">设备状态查看</field>
+            <field name="category_id" ref="category_maintenance_management_device_monitor"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_maintenance_management_device_monitor_alarm_look">
+            <field name="name">报警查看与导出</field>
+            <field name="category_id" ref="category_maintenance_management_device_monitor"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_maintenance_management_device_monitor_log_look">
+            <field name="name">日志查看与导出</field>
+            <field name="category_id" ref="category_maintenance_management_device_monitor"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_maintenance_management_configuration_file">
+            <field name="name">信息配置</field>
+            <field name="category_id" ref="category_maintenance_management_device_monitor"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_maintenance_page_action_record">
+            <field name="name">页面操作记录</field>
+            <field name="category_id" ref="category_maintenance_management_device_monitor"/>
+            <field name="atomic">True</field>
+        </record>
+
+        <record model="res.groups" id="group_maintenance_tcms_data">
+            <field name="name">TCMS数据</field>
+            <field name="category_id" ref="category_maintenance_management_device_monitor"/>
+            <field name="atomic">True</field>
+        </record>
+
+    </data>
+</odoo>

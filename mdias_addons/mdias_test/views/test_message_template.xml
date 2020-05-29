@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="message_test_template">
+            <div class="alert alert-waring text-left text-danger"
+                 style="margin:1rem 0 0 0;padding:0;background:none;border:none">
+                <div class="o_form_header">
+                     <strong t-esc="message['type_description']"> </strong> <strong t-esc="message['data']"></strong>
+                </div>
+                <div>
+                    <div t-esc="message['content']">
+                </div>
+                </div>
+                <div t-if="message['remark']">
+                      <t t-esc="message['remark']"/>
+                </div>
+            </div>
+        </template>
+
+
+    </data>
+</odoo>

@@ -1,0 +1,1191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <record id="yuan_hua_rail_0802-0808DG" model="metro_park_base.rails_sec">
+            <field name="no">0802-0808DG</field>
+            <field name="alias">0802-0808DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+        </record>
+        <record id="yuan_hua_rail_0804-0806DG" model="metro_park_base.rails_sec">
+            <field name="no">0804-0806DG</field>
+            <field name="alias">0804-0806DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+        </record>
+        <record id="yuan_hua_rail_0810DG" model="metro_park_base.rails_sec">
+            <field name="no">0810DG</field>
+            <field name="alias">0810DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">2</field>
+        </record>
+        <record id="yuan_hua_rail_0812DG" model="metro_park_base.rails_sec">
+            <field name="no">0812DG</field>
+            <field name="alias">0812DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">3</field>
+        </record>
+        <record id="yuan_hua_rail_0814-0820DG" model="metro_park_base.rails_sec">
+            <field name="no">0814-0820DG</field>
+            <field name="alias">0814-0820DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">4</field>
+        </record>
+        <record id="yuan_hua_rail_0816-0818DG" model="metro_park_base.rails_sec">
+            <field name="no">0816-0818DG</field>
+            <field name="alias">0816-0818DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">5</field>
+        </record>
+        <record id="yuan_hua_rail_0822-0824DG" model="metro_park_base.rails_sec">
+            <field name="no">0822-0824DG</field>
+            <field name="alias">0822-0824DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">6</field>
+        </record>
+        <record id="yuan_hua_rail_0826-0840DG" model="metro_park_base.rails_sec">
+            <field name="no">0826-0840DG</field>
+            <field name="alias">0826-0840DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">7</field>
+        </record>
+        <record id="yuan_hua_rail_0828DG" model="metro_park_base.rails_sec">
+            <field name="no">0828DG</field>
+            <field name="alias">0828DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">8</field>
+        </record>
+        <record id="yuan_hua_rail_0830DG" model="metro_park_base.rails_sec">
+            <field name="no">0830DG</field>
+            <field name="alias">0830DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">9</field>
+        </record>
+        <record id="yuan_hua_rail_0832DG" model="metro_park_base.rails_sec">
+            <field name="no">0832DG</field>
+            <field name="alias">0832DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">10</field>
+        </record>
+        <record id="yuan_hua_rail_0834DG" model="metro_park_base.rails_sec">
+            <field name="no">0834DG</field>
+            <field name="alias">0834DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">11</field>
+        </record>
+        <record id="yuan_hua_rail_0836-0844DG" model="metro_park_base.rails_sec">
+            <field name="no">0836-0844DG</field>
+            <field name="alias">0836-0844DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">12</field>
+        </record>
+        <record id="yuan_hua_rail_0838DG" model="metro_park_base.rails_sec">
+            <field name="no">0838DG</field>
+            <field name="alias">0838DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">13</field>
+        </record>
+        <record id="yuan_hua_rail_0842-0852DG" model="metro_park_base.rails_sec">
+            <field name="no">0842-0852DG</field>
+            <field name="alias">0842-0852DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">14</field>
+        </record>
+        <record id="yuan_hua_rail_0846-0850DG" model="metro_park_base.rails_sec">
+            <field name="no">0846-0850DG</field>
+            <field name="alias">0846-0850DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">15</field>
+        </record>
+        <record id="yuan_hua_rail_0848DG" model="metro_park_base.rails_sec">
+            <field name="no">0848DG</field>
+            <field name="alias">0848DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">16</field>
+        </record>
+        <record id="yuan_hua_rail_0854-0868DG" model="metro_park_base.rails_sec">
+            <field name="no">0854-0868DG</field>
+            <field name="alias">0854-0868DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">17</field>
+        </record>
+        <record id="yuan_hua_rail_0856DG" model="metro_park_base.rails_sec">
+            <field name="no">0856DG</field>
+            <field name="alias">0856DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">18</field>
+        </record>
+        <record id="yuan_hua_rail_0858-0876DG" model="metro_park_base.rails_sec">
+            <field name="no">0858-0876DG</field>
+            <field name="alias">0858-0876DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">19</field>
+        </record>
+        <record id="yuan_hua_rail_0860-0878DG" model="metro_park_base.rails_sec">
+            <field name="no">0860-0878DG</field>
+            <field name="alias">0860-0878DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">20</field>
+        </record>
+        <record id="yuan_hua_rail_0862DG" model="metro_park_base.rails_sec">
+            <field name="no">0862DG</field>
+            <field name="alias">0862DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">21</field>
+        </record>
+        <record id="yuan_hua_rail_0864DG" model="metro_park_base.rails_sec">
+            <field name="no">0864DG</field>
+            <field name="alias">0864DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">22</field>
+        </record>
+        <record id="yuan_hua_rail_0866DG" model="metro_park_base.rails_sec">
+            <field name="no">0866DG</field>
+            <field name="alias">0866DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">23</field>
+        </record>
+        <record id="yuan_hua_rail_0870DG" model="metro_park_base.rails_sec">
+            <field name="no">0870DG</field>
+            <field name="alias">0870DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">24</field>
+        </record>
+        <record id="yuan_hua_rail_0872-0880DG" model="metro_park_base.rails_sec">
+            <field name="no">0872-0880DG</field>
+            <field name="alias">0872-0880DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">25</field>
+        </record>
+        <record id="yuan_hua_rail_0874-0882DG" model="metro_park_base.rails_sec">
+            <field name="no">0874-0882DG</field>
+            <field name="alias">0874-0882DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">26</field>
+        </record>
+        <record id="yuan_hua_rail_0884DG" model="metro_park_base.rails_sec">
+            <field name="no">0884DG</field>
+            <field name="alias">0884DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">27</field>
+        </record>
+        <record id="yuan_hua_rail_0886DG" model="metro_park_base.rails_sec">
+            <field name="no">0886DG</field>
+            <field name="alias">0886DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">28</field>
+        </record>
+        <record id="yuan_hua_rail_0888DG" model="metro_park_base.rails_sec">
+            <field name="no">0888DG</field>
+            <field name="alias">0888DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">0</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">29</field>
+        </record>
+        <record id="yuan_hua_rail_1AG" model="metro_park_base.rails_sec">
+            <field name="no">1AG</field>
+            <field name="alias">1AG</field>
+            <field name="usage">洗车入</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">326</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+        </record>
+        <record id="yuan_hua_rail_1BG" model="metro_park_base.rails_sec">
+            <field name="no">1BG</field>
+            <field name="alias">1BG</field>
+            <field name="usage">洗车线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">326</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+        </record>
+        <record id="yuan_hua_rail_1CG" model="metro_park_base.rails_sec">
+            <field name="no">1CG</field>
+            <field name="alias">洗车线</field>
+            <field name="usage">洗车出</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_wash"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">326</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+        </record>
+        <record id="yuan_hua_rail_2G" model="metro_park_base.rails_sec">
+            <field name="no">2G</field>
+            <field name="alias">2G</field>
+            <field name="usage">镟轮线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_wheel"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">326</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">0</field>
+            <field name="can_stop">1</field>
+        </record>
+        <record id="yuan_hua_rail_3AG" model="metro_park_base.rails_sec">
+            <field name="no">3AG</field>
+            <field name="alias">3A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+        </record>
+        <record id="yuan_hua_rail_4AG" model="metro_park_base.rails_sec">
+            <field name="no">4AG</field>
+            <field name="alias">4A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">2</field>
+        </record>
+        <record id="yuan_hua_rail_5AG" model="metro_park_base.rails_sec">
+            <field name="no">5AG</field>
+            <field name="alias">5A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">3</field>
+        </record>
+        <record id="yuan_hua_rail_6AG" model="metro_park_base.rails_sec">
+            <field name="no">6AG</field>
+            <field name="alias">6A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">4</field>
+        </record>
+        <record id="yuan_hua_rail_7AG" model="metro_park_base.rails_sec">
+            <field name="no">7AG</field>
+            <field name="alias">7A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">5</field>
+        </record>
+        <record id="yuan_hua_rail_8AG" model="metro_park_base.rails_sec">
+            <field name="no">8AG</field>
+            <field name="alias">8A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">6</field>
+        </record>
+        <record id="yuan_hua_rail_9AG" model="metro_park_base.rails_sec">
+            <field name="no">9AG</field>
+            <field name="alias">9A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">7</field>
+        </record>
+        <record id="yuan_hua_rail_10AG" model="metro_park_base.rails_sec">
+            <field name="no">10AG</field>
+            <field name="alias">10A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">8</field>
+        </record>
+        <record id="yuan_hua_rail_11AG" model="metro_park_base.rails_sec">
+            <field name="no">11AG</field>
+            <field name="alias">11A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">9</field>
+        </record>
+        <record id="yuan_hua_rail_12AG" model="metro_park_base.rails_sec">
+            <field name="no">12AG</field>
+            <field name="alias">12A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">10</field>
+        </record>
+        <record id="yuan_hua_rail_13AG" model="metro_park_base.rails_sec">
+            <field name="no">13AG</field>
+            <field name="alias">13A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">11</field>
+        </record>
+        <record id="yuan_hua_rail_14AG" model="metro_park_base.rails_sec">
+            <field name="no">14AG</field>
+            <field name="alias">14A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">12</field>
+        </record>
+        <record id="yuan_hua_rail_15AG" model="metro_park_base.rails_sec">
+            <field name="no">15AG</field>
+            <field name="alias">15A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">13</field>
+        </record>
+        <record id="yuan_hua_rail_16AG" model="metro_park_base.rails_sec">
+            <field name="no">16AG</field>
+            <field name="alias">16A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">14</field>
+        </record>
+        <record id="yuan_hua_rail_17AG" model="metro_park_base.rails_sec">
+            <field name="no">17AG</field>
+            <field name="alias">17A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">15</field>
+        </record>
+        <record id="yuan_hua_rail_18AG" model="metro_park_base.rails_sec">
+            <field name="no">18AG</field>
+            <field name="alias">18A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">A</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">16</field>
+        </record>
+        <record id="yuan_hua_rail_3BG" model="metro_park_base.rails_sec">
+            <field name="no">3BG</field>
+            <field name="alias">3B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">22</field>
+        </record>
+        <record id="yuan_hua_rail_4BG" model="metro_park_base.rails_sec">
+            <field name="no">4BG</field>
+            <field name="alias">4B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">23</field>
+        </record>
+        <record id="yuan_hua_rail_5BG" model="metro_park_base.rails_sec">
+            <field name="no">5BG</field>
+            <field name="alias">5B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">24</field>
+        </record>
+        <record id="yuan_hua_rail_6BG" model="metro_park_base.rails_sec">
+            <field name="no">6BG</field>
+            <field name="alias">6B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">25</field>
+        </record>
+        <record id="yuan_hua_rail_7BG" model="metro_park_base.rails_sec">
+            <field name="no">7BG</field>
+            <field name="alias">7B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">26</field>
+        </record>
+        <record id="yuan_hua_rail_8BG" model="metro_park_base.rails_sec">
+            <field name="no">8BG</field>
+            <field name="alias">8B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">27</field>
+        </record>
+        <record id="yuan_hua_rail_9BG" model="metro_park_base.rails_sec">
+            <field name="no">9BG</field>
+            <field name="alias">9B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">28</field>
+        </record>
+        <record id="yuan_hua_rail_10BG" model="metro_park_base.rails_sec">
+            <field name="no">10BG</field>
+            <field name="alias">10B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">29</field>
+        </record>
+        <record id="yuan_hua_rail_11BG" model="metro_park_base.rails_sec">
+            <field name="no">11BG</field>
+            <field name="alias">11B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">30</field>
+        </record>
+        <record id="yuan_hua_rail_12BG" model="metro_park_base.rails_sec">
+            <field name="no">12BG</field>
+            <field name="alias">12B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">31</field>
+        </record>
+        <record id="yuan_hua_rail_13BG" model="metro_park_base.rails_sec">
+            <field name="no">13BG</field>
+            <field name="alias">13B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">32</field>
+        </record>
+        <record id="yuan_hua_rail_14BG" model="metro_park_base.rails_sec">
+            <field name="no">14BG</field>
+            <field name="alias">14B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">33</field>
+        </record>
+        <record id="yuan_hua_rail_15BG" model="metro_park_base.rails_sec">
+            <field name="no">15BG</field>
+            <field name="alias">15B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">34</field>
+        </record>
+        <record id="yuan_hua_rail_16BG" model="metro_park_base.rails_sec">
+            <field name="no">16BG</field>
+            <field name="alias">16B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">35</field>
+        </record>
+        <record id="yuan_hua_rail_17BG" model="metro_park_base.rails_sec">
+            <field name="no">17BG</field>
+            <field name="alias">17B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">36</field>
+        </record>
+        <record id="yuan_hua_rail_18BG" model="metro_park_base.rails_sec">
+            <field name="no">18BG</field>
+            <field name="alias">18B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="port">B</field>
+            <field name="is_track">1</field>
+            <field name="rail_length">177</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="stop_order">37</field>
+        </record>
+        <record id="yuan_hua_rail_S18BG" model="metro_park_base.rails_sec">
+            <field name="no">S18BG</field>
+            <field name="alias">S18BG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+        </record>
+        <record id="yuan_hua_rail_19G" model="metro_park_base.rails_sec">
+            <field name="no">19G</field>
+            <field name="alias">19G</field>
+            <field name="usage">双周/三月检检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_two_week_or_three_month_repair"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">175</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder_platform'),
+                   ref('metro_park_base.rail_property_ladder')])]"/>
+        </record>
+        <record id="yuan_hua_rail_20G" model="metro_park_base.rails_sec">
+            <field name="no">20G</field>
+            <field name="alias">20G</field>
+            <field name="usage">双周/三月检检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_two_week_or_three_month_repair"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">175</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder_platform'),
+                   ref('metro_park_base.rail_property_ladder')])]"/>
+        </record>
+        <record id="yuan_hua_rail_21G" model="metro_park_base.rails_sec">
+            <field name="no">21G</field>
+            <field name="alias">21G</field>
+            <field name="usage">双周/三月检检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_two_week_or_three_month_repair"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">175</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder_platform'),
+                   ref('metro_park_base.rail_property_ladder')])]"/>
+        </record>
+        <record id="yuan_hua_rail_22G" model="metro_park_base.rails_sec">
+            <field name="no">22G</field>
+            <field name="alias">22G</field>
+            <field name="usage">定修线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_fixed_repair"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">227</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">0</field>
+            <field name="can_stop">1</field>
+        </record>
+        <record id="yuan_hua_rail_23G" model="metro_park_base.rails_sec">
+            <field name="no">23G</field>
+            <field name="alias">23G</field>
+            <field name="usage">定修线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_fixed_repair"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">227</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">0</field>
+            <field name="can_stop">1</field>
+        </record>
+        <record id="yuan_hua_rail_24G" model="metro_park_base.rails_sec">
+            <field name="no">24G</field>
+            <field name="alias">24G</field>
+            <field name="usage">定修线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_fixed_repair"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">227</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">0</field>
+            <field name="can_stop">1</field>
+        </record>
+        <record id="yuan_hua_rail_24G1" model="metro_park_base.rails_sec">
+            <field name="no">24G1</field>
+            <field name="alias">24G1</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+        </record>
+        <record id="yuan_hua_rail_25G" model="metro_park_base.rails_sec">
+            <field name="no">25G</field>
+            <field name="alias">25G</field>
+            <field name="usage">特修/停放线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_special_training"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">175</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+            <field name="can_stop">1</field>
+            <field name="rail_property" eval="[(6,0,[ref('metro_park_base.rail_property_ladder_platform'),
+                   ref('metro_park_base.rail_property_ladder')])]"/>
+        </record>
+        <record id="yuan_hua_rail_26G" model="metro_park_base.rails_sec">
+            <field name="no">26G</field>
+            <field name="alias">26G</field>
+            <field name="usage">平板车线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_flatbed_truck"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">86</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">0</field>
+            <field name="can_stop">1</field>
+        </record>
+        <record id="yuan_hua_rail_27G" model="metro_park_base.rails_sec">
+            <field name="no">27G</field>
+            <field name="alias">27G</field>
+            <field name="usage">调机工程车库线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_construction_vehicle"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">86</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">0</field>
+            <field name="can_stop">1</field>
+        </record>
+        <record id="yuan_hua_rail_28G" model="metro_park_base.rails_sec">
+            <field name="no">28G</field>
+            <field name="alias">28G</field>
+            <field name="usage">调机工程车库线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_construction_vehicle"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">86</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">0</field>
+            <field name="can_stop">1</field>
+        </record>
+        <record id="yuan_hua_rail_29G" model="metro_park_base.rails_sec">
+            <field name="no">29G</field>
+            <field name="alias">29G</field>
+            <field name="usage">调机工程车库线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_construction_vehicle"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">86</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">0</field>
+            <field name="can_stop">1</field>
+        </record>
+        <record id="yuan_hua_rail_30G" model="metro_park_base.rails_sec">
+            <field name="no">30G</field>
+            <field name="alias">30G</field>
+            <field name="usage">调机工程车库线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_construction_vehicle"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">86</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">0</field>
+            <field name="can_stop">1</field>
+        </record>
+        <record id="yuan_hua_rail_31G" model="metro_park_base.rails_sec">
+            <field name="no">31G</field>
+            <field name="alias">31G</field>
+            <field name="usage">材料棚</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_material_shed"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">86</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">0</field>
+            <field name="can_stop">1</field>
+        </record>
+        <record id="yuan_hua_rail_34G" model="metro_park_base.rails_sec">
+            <field name="no">34G</field>
+            <field name="alias">临时牵出线</field>
+            <field name="usage">牵出线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_pull_out" />
+            <field name="is_track">1</field>
+            <field name="rail_length">228</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua" />
+            <field name="electric_live">1</field>
+
+        </record>
+        <record id="yuan_hua_rail_D40G" model="metro_park_base.rails_sec">
+            <field name="no">D40G</field>
+            <field name="alias">试车线</field>
+            <field name="usage">试车线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_test_train"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+        </record>
+        <record id="yuan_hua_rail_D44G" model="metro_park_base.rails_sec">
+            <field name="no">D44G</field>
+            <field name="alias">D44G</field>
+            <field name="usage">试车线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_test_train"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+        </record>
+        <record id="yuan_hua_rail_D46G" model="metro_park_base.rails_sec">
+            <field name="no">D46G</field>
+            <field name="alias">5号线联络线</field>
+            <field name="usage">试车线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_test_train"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+        </record>
+        <record id="yuan_hua_rail_0586DG" model="metro_park_base.rails_sec">
+            <field name="no">0586DG</field>
+            <field name="alias">0586DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+        </record>
+        <record id="yuan_hua_rail_0810/0830WG" model="metro_park_base.rails_sec">
+            <field name="no">0810/0830WG</field>
+            <field name="alias">0810/0830WG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">139</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+        </record>
+        <record id="yuan_hua_rail_0884/0886WG" model="metro_park_base.rails_sec">
+            <field name="no">0884/0886WG</field>
+            <field name="alias">0884/0886WG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">139</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+        </record>
+        <record id="yuan_hua_rail_T2609" model="metro_park_base.rails_sec">
+            <field name="no">T2609</field>
+            <field name="alias">T2609</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+        </record>
+        <record id="yuan_hua_rail_T2611" model="metro_park_base.rails_sec">
+            <field name="no">T2611</field>
+            <field name="alias">转换轨</field>
+            <field name="usage">转换轨</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_exchange"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">1</field>
+        </record>
+        <record id="yuan_hua_rail_T2613" model="metro_park_base.rails_sec">
+            <field name="no">T2613</field>
+            <field name="alias">T2613</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">1</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua" />
+        </record>
+        <record id="yuan_hua_rail_T2802" model="metro_park_base.rails_sec">
+            <field name="no">T2802</field>
+            <field name="alias">T2802</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">3</field>
+        </record>
+        <record id="yuan_hua_rail_T2804" model="metro_park_base.rails_sec">
+            <field name="no">T2804</field>
+            <field name="alias">转换轨1</field>
+            <field name="usage">入转换轨</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_exchange"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">4</field>
+        </record>
+        <record id="yuan_hua_rail_T2806" model="metro_park_base.rails_sec">
+            <field name="no">T2806</field>
+            <field name="alias">T2806</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">1</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua" />
+        </record>
+        <record id="yuan_hua_rail_T2825" model="metro_park_base.rails_sec">
+            <field name="no">T2825</field>
+            <field name="alias">T2825</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">1</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua" />
+        </record>
+        <record id="yuan_hua_rail_T2827" model="metro_park_base.rails_sec">
+            <field name="no">T2827</field>
+            <field name="alias">转换轨2</field>
+            <field name="usage">转换轨</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_exchange"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">7</field>
+        </record>
+        <record id="yuan_hua_rail_T2829" model="metro_park_base.rails_sec">
+            <field name="no">T2829</field>
+            <field name="alias">T2829</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">1</field>
+            <field name="rail_length">0</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="electric_live">8</field>
+        </record>
+    </data>
+</odoo>

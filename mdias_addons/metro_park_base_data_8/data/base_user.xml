@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!--  高大路信息 -->
+        <record id="partner_gaodalu" model="res.partner">
+            <field name="name">高大路站场</field>
+            <field name="supplier" eval="False"/>
+            <field name="customer" eval="True"/>
+            <field name="city">四川成都</field>
+            <field name="company_name">成都地铁运营公司</field>
+        </record>
+
+        <!-- 高大路通用帐号 -->
+        <record id="user_gaodalu" model="res.users" context="{'no_reset_password': True}">
+            <field name="partner_id" ref="partner_gaodalu"/>
+            <field name="login">gaodalu</field>
+            <field name="password">gaodalu123</field>
+            <field name="cur_location" ref="metro_park_base_data_10.gao_da_lu"/>
+            <field name="locations"
+                   eval="[
+                   (6,0, [ref('metro_park_base_data_10.gao_da_lu')])
+                  ]"/>
+            <field name="groups_id"
+                   eval="[(6,0,[ref('base.group_user'),
+                   ref('base.group_system'),
+                   ref('odoo_groups_manage.role_manage'),
+                   ref('odoo_groups_manage.permission_manage'),
+                   ref('base.group_partner_manager')])]"/>
+            <field name="signature"><![CDATA[<span>-- <br/>高大路站场</span>]]></field>
+        </record>
+
+        <record id="partner_user_gaodalu_jian_diao" model="res.partner">
+            <field name="name">高大路检调</field>
+            <field name="supplier" eval="False"/>
+            <field name="customer" eval="True"/>
+            <field name="city">四川成都</field>
+            <field name="company_name">成都地铁运营公司</field>
+        </record>
+
+        <!-- 高大路检调 -->
+        <record id="user_gaodalu_jian_diao" model="res.users" context="{'no_reset_password': True}">
+            <field name="partner_id" ref="partner_user_gaodalu_jian_diao"/>
+            <field name="login">gaodalu_jian_diao</field>
+            <field name="password">gaodalu123</field>
+            <field name="cur_location" ref="metro_park_base_data_10.gao_da_lu"/>
+            <field name="locations"
+                   eval="[
+                   (6,0, [ref('metro_park_base_data_10.gao_da_lu')])
+                  ]"/>
+            <field name="groups_id"
+                   eval="[(6,0,[ref('base.group_user'),
+                   ref('base.group_system'),
+                   ref('odoo_groups_manage.role_manage'),
+                   ref('odoo_groups_manage.permission_manage'),
+                   ref('base.group_partner_manager')])]"/>
+            <field name="signature"><![CDATA[<span>-- <br/>高大路站场</span>]]></field>
+        </record>
+
+        <record id="partner_user_gaodalu_chang_diao" model="res.partner">
+            <field name="name">高大路场调</field>
+            <field name="supplier" eval="False"/>
+            <field name="customer" eval="True"/>
+            <field name="city">四川成都</field>
+            <field name="company_name">成都地铁运营公司</field>
+        </record>
+
+        <!-- 高大路场调 -->
+        <record id="user_gaodalu_chang_diao" model="res.users" context="{'no_reset_password': True}">
+            <field name="partner_id" ref="partner_user_gaodalu_chang_diao"/>
+            <field name="login">gaodalu_chang_diao</field>
+            <field name="password">gaodalu123</field>
+            <field name="cur_location" ref="metro_park_base_data_10.gao_da_lu"/>
+            <field name="locations"
+                   eval="[
+                   (6,0, [ref('metro_park_base_data_10.gao_da_lu')])
+                  ]"/>
+            <field name="groups_id"
+                   eval="[(6,0,[ref('base.group_user'),
+                   ref('base.group_system'),
+                   ref('odoo_groups_manage.role_manage'),
+                   ref('odoo_groups_manage.permission_manage'),
+                   ref('base.group_partner_manager')])]"/>
+            <field name="signature"><![CDATA[<span>-- <br/>高大路站场</span>]]></field>
+        </record>
+
+
+        <record id="partner_user_gaodalu_xing_hao_lou" model="res.partner">
+            <field name="name">高大路信号楼</field>
+            <field name="supplier" eval="False"/>
+            <field name="customer" eval="True"/>
+            <field name="city">四川成都</field>
+            <field name="company_name">成都地铁运营公司</field>
+        </record>
+
+        <!-- 高大路信号楼 -->
+        <record id="user_gaodalu_xing_hao_lou" model="res.users" context="{'no_reset_password': True}">
+            <field name="partner_id" ref="partner_user_gaodalu_xing_hao_lou"/>
+            <field name="login">gaodalu_xing_hao_lou</field>
+            <field name="password">gaodalu123</field>
+            <field name="cur_location" ref="metro_park_base_data_10.gao_da_lu"/>
+            <field name="locations"
+                   eval="[
+                   (6,0, [ref('metro_park_base_data_10.gao_da_lu')])
+                  ]"/>
+            <field name="groups_id"
+                   eval="[(6,0,[ref('base.group_user'),
+                   ref('base.group_system'),
+                   ref('odoo_groups_manage.role_manage'),
+                   ref('odoo_groups_manage.permission_manage'),
+                   ref('base.group_partner_manager')])]"/>
+            <field name="signature"><![CDATA[<span>-- <br/>高大路站场</span>]]></field>
+        </record>
+
+
+        <!-- 板桥车辆段信息 -->
+        <record id="partner_banqiao" model="res.partner">
+            <field name="name">板桥站场</field>
+            <field name="supplier" eval="False"/>
+            <field name="customer" eval="True"/>
+            <field name="city">四川成都</field>
+            <field name="company_name">成都地铁运营公司</field>
+        </record>
+
+        <!--  板桥通用帐号 -->
+        <record id="user_banqiao" model="res.users" context="{'no_reset_password': True}">
+            <field name="partner_id" ref="partner_banqiao"/>
+            <field name="login">banqiao</field>
+            <field name="password">banqiao123</field>
+            <field name="cur_location" ref="metro_park_base_data_10.ban_qiao"/>
+            <field name="locations"
+                   eval="[
+                   (6,0, [ref('metro_park_base_data_10.ban_qiao')])
+                  ]"/>
+            <field name="groups_id"
+                   eval="[(6,0,[ref('base.group_user'),
+                   ref('base.group_system'),
+                   ref('odoo_groups_manage.role_manage'),
+                   ref('odoo_groups_manage.permission_manage'),ref('base.group_partner_manager')])]"/>
+            <field name="signature"><![CDATA[<span>-- <br/>板桥站场</span>]]></field>
+        </record>
+
+        <record id="partner_user_banqiao_chang_diao" model="res.partner">
+            <field name="name">板桥场调</field>
+            <field name="supplier" eval="False"/>
+            <field name="customer" eval="True"/>
+            <field name="city">四川成都</field>
+            <field name="company_name">成都地铁运营公司</field>
+        </record>
+
+        <!--  板桥场调 -->
+        <record id="user_banqiao_chang_diao" model="res.users" context="{'no_reset_password': True}">
+            <field name="partner_id" ref="partner_user_banqiao_chang_diao"/>
+            <field name="login">banqiao_chang_diao</field>
+            <field name="password">banqiao123</field>
+            <field name="cur_location" ref="metro_park_base_data_10.ban_qiao"/>
+            <field name="locations"
+                   eval="[
+                   (6,0, [ref('metro_park_base_data_10.ban_qiao')])
+                  ]"/>
+            <field name="groups_id"
+                   eval="[(6,0,[ref('base.group_user'),
+                   ref('base.group_system'),
+                   ref('odoo_groups_manage.role_manage'),
+                   ref('odoo_groups_manage.permission_manage'),ref('base.group_partner_manager')])]"/>
+            <field name="signature"><![CDATA[<span>-- <br/>板桥站场</span>]]></field>
+        </record>
+
+        <record id="partner_user_banqiao_jian_diao" model="res.partner">
+            <field name="name">板桥检调</field>
+            <field name="supplier" eval="False"/>
+            <field name="customer" eval="True"/>
+            <field name="city">四川成都</field>
+            <field name="company_name">成都地铁运营公司</field>
+        </record>
+
+        <!--  板桥检调 -->
+        <record id="user_banqiao_jian_diao" model="res.users" context="{'no_reset_password': True}">
+            <field name="partner_id" ref="partner_user_banqiao_jian_diao"/>
+            <field name="login">banqiao_jian_diao</field>
+            <field name="password">banqiao123</field>
+            <field name="cur_location" ref="metro_park_base_data_10.ban_qiao"/>
+            <field name="locations"
+                   eval="[
+                   (6,0, [ref('metro_park_base_data_10.ban_qiao')])
+                  ]"/>
+            <field name="groups_id"
+                   eval="[(6,0,[ref('base.group_user'),
+                   ref('base.group_system'),
+                   ref('odoo_groups_manage.role_manage'),
+                   ref('odoo_groups_manage.permission_manage'),ref('base.group_partner_manager')])]"/>
+            <field name="signature"><![CDATA[<span>-- <br/>板桥站场</span>]]></field>
+        </record>
+
+        <record id="partner_user_banqiao_xing_hao_lou" model="res.partner">
+            <field name="name">板桥信号楼</field>
+            <field name="supplier" eval="False"/>
+            <field name="customer" eval="True"/>
+            <field name="city">四川成都</field>
+            <field name="company_name">成都地铁运营公司</field>
+        </record>
+
+        <!--  板桥信号楼 -->
+        <record id="user_banqiao_xing_hao_lou" model="res.users" context="{'no_reset_password': True}">
+            <field name="partner_id" ref="partner_user_banqiao_xing_hao_lou"/>
+            <field name="login">banqiao_xing_hao_lou</field>
+            <field name="password">banqiao123</field>
+            <field name="cur_location" ref="metro_park_base_data_10.ban_qiao"/>
+            <field name="locations"
+                   eval="[
+                   (6,0, [ref('metro_park_base_data_10.ban_qiao')])
+                  ]"/>
+            <field name="groups_id"
+                   eval="[(6,0,[ref('base.group_user'),
+                   ref('base.group_system'),
+                   ref('odoo_groups_manage.role_manage'),
+                   ref('odoo_groups_manage.permission_manage'),ref('base.group_partner_manager')])]"/>
+            <field name="signature"><![CDATA[<span>-- <br/>板桥站场</span>]]></field>
+        </record>
+
+        <record id="partner_user_banqiao_weibao" model="res.partner">
+            <field name="name">板桥维保管理</field>
+            <field name="supplier" eval="False"/>
+            <field name="customer" eval="True"/>
+            <field name="city">四川成都</field>
+            <field name="company_name">成都地铁运营公司</field>
+        </record>
+
+        <!--  板桥维保管理账号 -->
+        <record id="user_banqiao_weibao" model="res.users" context="{'no_reset_password': True}">
+            <field name="partner_id" ref="partner_user_banqiao_weibao"/>
+            <field name="login">banqiao_weibao</field>
+            <field name="password">banqiao123</field>
+            <field name="cur_location" ref="metro_park_base_data_10.ban_qiao"/>
+            <field name="locations"
+                   eval="[
+                   (6,0, [ref('metro_park_base_data_10.ban_qiao')])
+                  ]"/>
+            <field name="groups_id"
+                   eval="[(6,0,[ref('base.group_user'),
+                   ref('base.group_system'),
+                   ref('odoo_groups_manage.role_manage'),
+                   ref('odoo_groups_manage.permission_manage'),ref('base.group_partner_manager')])]"/>
+            <field name="signature"><![CDATA[<span>-- <br/>维保管理</span>]]></field>
+        </record>
+
+        <record id="partner_user_gaodalu_weibao" model="res.partner">
+            <field name="name">高大路维保管理</field>
+            <field name="supplier" eval="False"/>
+            <field name="customer" eval="True"/>
+            <field name="city">四川成都</field>
+            <field name="company_name">成都地铁运营公司</field>
+        </record>
+
+        <!--  高大路维保管理账号 -->
+        <record id="user_gaodalu_weibao" model="res.users" context="{'no_reset_password': True}">
+            <field name="partner_id" ref="partner_user_gaodalu_weibao"/>
+            <field name="login">gaodalu_weibao</field>
+            <field name="password">gaodalu123</field>
+            <field name="cur_location" ref="metro_park_base_data_10.gao_da_lu"/>
+            <field name="locations"
+                   eval="[
+                   (6,0, [ref('metro_park_base_data_10.gao_da_lu')])
+                  ]"/>
+            <field name="groups_id"
+                   eval="[(6,0,[ref('base.group_user'),
+                   ref('base.group_system'),
+                   ref('odoo_groups_manage.role_manage'),
+                   ref('odoo_groups_manage.permission_manage'),ref('base.group_partner_manager')])]"/>
+            <field name="signature"><![CDATA[<span>-- <br/>维保管理</span>]]></field>
+        </record>
+
+
+        <!-- 板桥车辆段信息 -->
+        <record id="partner_user_test_1" model="res.partner">
+            <field name="name">板桥测试账号1</field>
+            <field name="supplier" eval="False"/>
+            <field name="customer" eval="True"/>
+            <field name="city">四川成都</field>
+            <field name="company_name">成都地铁运营公司</field>
+        </record>
+
+        <!--  板桥测试账号1 -->
+        <record id="user_test_1" model="res.users" context="{'no_reset_password': True}">
+            <field name="partner_id" ref="partner_user_test_1"/>
+            <field name="login">banqiao_test_1</field>
+            <field name="password">banqiao123</field>
+            <field name="cur_location" ref="metro_park_base_data_10.ban_qiao"/>
+            <field name="locations"
+                   eval="[
+                   (6,0, [ref('metro_park_base_data_10.ban_qiao')])
+                  ]"/>
+            <field name="groups_id"
+                   eval="[(6,0,[ref('base.group_user'),
+                   ref('base.group_system'),
+                   ref('odoo_groups_manage.role_manage'),
+                   ref('odoo_groups_manage.permission_manage'),ref('base.group_partner_manager')])]"/>
+            <field name="signature"><![CDATA[<span>-- <br/>板桥站场</span>]]></field>
+        </record>
+
+        <!-- 板桥车辆段信息 -->
+        <record id="partner_user_test_2" model="res.partner">
+            <field name="name">板桥测试账号2</field>
+            <field name="supplier" eval="False"/>
+            <field name="customer" eval="True"/>
+            <field name="city">四川成都</field>
+            <field name="company_name">成都地铁运营公司</field>
+        </record>
+
+        <!--  板桥测试账号2 -->
+        <record id="user_test_2" model="res.users" context="{'no_reset_password': True}">
+            <field name="partner_id" ref="partner_user_test_2"/>
+            <field name="login">banqiao_test_2</field>
+            <field name="password">banqiao123</field>
+            <field name="cur_location" ref="metro_park_base_data_10.ban_qiao"/>
+            <field name="locations"
+                   eval="[
+                   (6,0, [ref('metro_park_base_data_10.ban_qiao')])
+                  ]"/>
+            <field name="groups_id"
+                   eval="[(6,0,[ref('base.group_user'),
+                   ref('base.group_system'),
+                   ref('odoo_groups_manage.role_manage'),
+                   ref('odoo_groups_manage.permission_manage'),ref('base.group_partner_manager')])]"/>
+            <field name="signature"><![CDATA[<span>-- <br/>板桥站场</span>]]></field>
+        </record>
+
+        <record id="partner_user_test_3" model="res.partner">
+            <field name="name">板桥测试账号3</field>
+            <field name="supplier" eval="False"/>
+            <field name="customer" eval="True"/>
+            <field name="city">四川成都</field>
+            <field name="company_name">成都地铁运营公司</field>
+        </record>
+
+        <!--  板桥测试账号3 -->
+        <record id="user_test_3" model="res.users" context="{'no_reset_password': True}">
+            <field name="partner_id" ref="partner_user_test_3"/>
+            <field name="login">banqiao_test_3</field>
+            <field name="password">banqiao123</field>
+            <field name="cur_location" ref="metro_park_base_data_10.ban_qiao"/>
+            <field name="locations"
+                   eval="[
+                   (6,0, [ref('metro_park_base_data_10.ban_qiao')])
+                  ]"/>
+            <field name="groups_id"
+                   eval="[(6,0,[ref('base.group_user'),
+                   ref('base.group_system'),
+                   ref('odoo_groups_manage.role_manage'),
+                   ref('odoo_groups_manage.permission_manage'),ref('base.group_partner_manager')])]"/>
+            <field name="signature"><![CDATA[<span>-- <br/>板桥站场</span>]]></field>
+        </record>
+
+        <record id="partner_user_test_6" model="res.partner">
+            <field name="name">板桥测试账号6</field>
+            <field name="supplier" eval="False"/>
+            <field name="customer" eval="True"/>
+            <field name="city">四川成都</field>
+            <field name="company_name">成都地铁运营公司</field>
+        </record>
+
+        <!--  板桥测试账号6 -->
+        <record id="user_test_6" model="res.users" context="{'no_reset_password': True}">
+            <field name="partner_id" ref="partner_user_test_6"/>
+            <field name="login">banqiao_test_6</field>
+            <field name="password">banqiao123</field>
+            <field name="cur_location" ref="metro_park_base_data_10.ban_qiao"/>
+            <field name="locations"
+                   eval="[
+                   (6,0, [ref('metro_park_base_data_10.ban_qiao')])
+                  ]"/>
+            <field name="groups_id"
+                   eval="[(6,0,[ref('base.group_user'),
+                   ref('base.group_system'),
+                   ref('odoo_groups_manage.role_manage'),
+                   ref('odoo_groups_manage.permission_manage'),ref('base.group_partner_manager')])]"/>
+            <field name="signature"><![CDATA[<span>-- <br/>板桥站场</span>]]></field>
+        </record>
+
+        <record id="partner_user_test_5" model="res.partner">
+            <field name="name">板桥测试账号5</field>
+            <field name="supplier" eval="False"/>
+            <field name="customer" eval="True"/>
+            <field name="city">四川成都</field>
+            <field name="company_name">成都地铁运营公司</field>
+        </record>
+
+        <!--  板桥测试账号5 -->
+        <record id="user_test_5" model="res.users" context="{'no_reset_password': True}">
+            <field name="partner_id" ref="partner_user_test_5"/>
+            <field name="login">banqiao_test_5</field>
+            <field name="password">banqiao123</field>
+            <field name="cur_location" ref="metro_park_base_data_10.ban_qiao"/>
+            <field name="locations"
+                   eval="[
+                   (6,0, [ref('metro_park_base_data_10.ban_qiao')])
+                  ]"/>
+            <field name="groups_id"
+                   eval="[(6,0,[ref('base.group_user'),
+                   ref('base.group_system'),
+                   ref('odoo_groups_manage.role_manage'),
+                   ref('odoo_groups_manage.permission_manage'),ref('base.group_partner_manager')])]"/>
+            <field name="signature"><![CDATA[<span>-- <br/>板桥站场</span>]]></field>
+        </record>
+
+        <record id="partner_user_gaodalu_test_1" model="res.partner">
+            <field name="name">高大路测试账号1</field>
+            <field name="supplier" eval="False"/>
+            <field name="customer" eval="True"/>
+            <field name="city">四川成都</field>
+            <field name="company_name">成都地铁运营公司</field>
+        </record>
+
+        <!-- 高大路测试账号1-->
+        <record id="user_gaodalu_test_1" model="res.users" context="{'no_reset_password': True}">
+            <field name="partner_id" ref="partner_user_gaodalu_test_1"/>
+            <field name="login">gaodalu_test_1</field>
+            <field name="password">gaodalu123</field>
+            <field name="cur_location" ref="metro_park_base_data_10.gao_da_lu"/>
+            <field name="locations"
+                   eval="[
+                   (6,0, [ref('metro_park_base_data_10.gao_da_lu')])
+                  ]"/>
+            <field name="groups_id"
+                   eval="[(6,0,[ref('base.group_user'),
+                   ref('base.group_system'),
+                   ref('odoo_groups_manage.role_manage'),
+                   ref('odoo_groups_manage.permission_manage'),
+                   ref('base.group_partner_manager')])]"/>
+            <field name="signature"><![CDATA[<span>-- <br/>高大路站场</span>]]></field>
+        </record>
+
+        <record id="partner_user_gaodalu_test_2" model="res.partner">
+            <field name="name">高大路测试账号2</field>
+            <field name="supplier" eval="False"/>
+            <field name="customer" eval="True"/>
+            <field name="city">四川成都</field>
+            <field name="company_name">成都地铁运营公司</field>
+        </record>
+
+        <!-- 高大路测试账号2-->
+        <record id="user_gaodalu_test_2" model="res.users" context="{'no_reset_password': True}">
+            <field name="partner_id" ref="partner_user_gaodalu_test_2"/>
+            <field name="login">gaodalu_test_2</field>
+            <field name="password">gaodalu123</field>
+            <field name="cur_location" ref="metro_park_base_data_10.gao_da_lu"/>
+            <field name="locations"
+                   eval="[
+                   (6,0, [ref('metro_park_base_data_10.gao_da_lu')])
+                  ]"/>
+            <field name="groups_id"
+                   eval="[(6,0,[ref('base.group_user'),
+                   ref('base.group_system'),
+                   ref('odoo_groups_manage.role_manage'),
+                   ref('odoo_groups_manage.permission_manage'),
+                   ref('base.group_partner_manager')])]"/>
+            <field name="signature"><![CDATA[<span>-- <br/>高大路站场</span>]]></field>
+        </record>
+
+        <record id="partner_user_gaodalu_test_3" model="res.partner">
+            <field name="name">高大路测试账号3</field>
+            <field name="supplier" eval="False"/>
+            <field name="customer" eval="True"/>
+            <field name="city">四川成都</field>
+            <field name="company_name">成都地铁运营公司</field>
+        </record>
+
+        <!-- 高大路测试账号3-->
+        <record id="user_gaodalu_test_3" model="res.users" context="{'no_reset_password': True}">
+            <field name="partner_id" ref="partner_user_gaodalu_test_3"/>
+            <field name="login">gaodalu_test_3</field>
+            <field name="password">gaodalu123</field>
+            <field name="cur_location" ref="metro_park_base_data_10.gao_da_lu"/>
+            <field name="locations"
+                   eval="[
+                   (6,0, [ref('metro_park_base_data_10.gao_da_lu')])
+                  ]"/>
+            <field name="groups_id"
+                   eval="[(6,0,[ref('base.group_user'),
+                   ref('base.group_system'),
+                   ref('odoo_groups_manage.role_manage'),
+                   ref('odoo_groups_manage.permission_manage'),
+                   ref('base.group_partner_manager')])]"/>
+            <field name="signature"><![CDATA[<span>-- <br/>高大路站场</span>]]></field>
+        </record>
+
+        <record id="partner_user_gaodalu_test_6" model="res.partner">
+            <field name="name">高大路测试账号6</field>
+            <field name="supplier" eval="False"/>
+            <field name="customer" eval="True"/>
+            <field name="city">四川成都</field>
+            <field name="company_name">成都地铁运营公司</field>
+        </record>
+
+        <!-- 高大路测试账号6-->
+        <record id="user_gaodalu_test_6" model="res.users" context="{'no_reset_password': True}">
+            <field name="partner_id" ref="partner_user_gaodalu_test_6"/>
+            <field name="login">gaodalu_test_6</field>
+            <field name="password">gaodalu123</field>
+            <field name="cur_location" ref="metro_park_base_data_10.gao_da_lu"/>
+            <field name="locations"
+                   eval="[
+                   (6,0, [ref('metro_park_base_data_10.gao_da_lu')])
+                  ]"/>
+            <field name="groups_id"
+                   eval="[(6,0,[ref('base.group_user'),
+                   ref('base.group_system'),
+                   ref('odoo_groups_manage.role_manage'),
+                   ref('odoo_groups_manage.permission_manage'),
+                   ref('base.group_partner_manager')])]"/>
+            <field name="signature"><![CDATA[<span>-- <br/>高大路站场</span>]]></field>
+        </record>
+
+        <record id="partner_user_gaodalu_test_5" model="res.partner">
+            <field name="name">高大路测试账号5</field>
+            <field name="supplier" eval="False"/>
+            <field name="customer" eval="True"/>
+            <field name="city">四川成都</field>
+            <field name="company_name">成都地铁运营公司</field>
+        </record>
+
+        <!-- 高大路测试账号5-->
+        <record id="user_gaodalu_test_5" model="res.users" context="{'no_reset_password': True}">
+            <field name="partner_id" ref="partner_user_gaodalu_test_5"/>
+            <field name="login">gaodalu_test_5</field>
+            <field name="password">gaodalu123</field>
+            <field name="cur_location" ref="metro_park_base_data_10.gao_da_lu"/>
+            <field name="locations"
+                   eval="[
+                   (6,0, [ref('metro_park_base_data_10.gao_da_lu')])
+                  ]"/>
+            <field name="groups_id"
+                   eval="[(6,0,[ref('base.group_user'),
+                   ref('base.group_system'),
+                   ref('odoo_groups_manage.role_manage'),
+                   ref('odoo_groups_manage.permission_manage'),
+                   ref('base.group_partner_manager')])]"/>
+            <field name="signature"><![CDATA[<span>-- <br/>高大路站场</span>]]></field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <!--  初始化，随机旋转现车位   -->
+      <function id="init_cur_train"
+                model="metro_park_dispatch.cur_train_manage"
+                name="init_cur_train"
+                eval="[]"/>
+
+      <function id="simulation_location"
+                model="metro_park_dispatch.cur_train_manage"
+                name="simulation_location"
+                eval="[]"/>
+
+    </data>
+</odoo>

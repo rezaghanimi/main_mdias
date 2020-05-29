@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <!-- 月计划按扭 -->
+    <t t-name="funenc.hour_min_range_widget">
+		<div class="d-flex">
+            <div class="start_hour">
+            </div>
+            <div class="start_min">
+            </div>
+            <div class="end_hour">
+            </div>
+		</div>
+	</t>
+
+</templates>

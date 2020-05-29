@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+access_metro_park_base_data_8_init_rail_and_switches,metro_park_base_data_8.init_rail_and_switches,model_metro_park_base_data_8_init_rail_and_switches,,1,1,1,1

@@ -1,0 +1,24 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="driver_plan.driver_manage_list">
+            <field name="name">driver_manage list </field>
+            <field name="model">driver_plan.driver_manage</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- client action  -->
+        <record id="driver_plan.driver_plan_action" model="ir.actions.client">
+            <field name="name">司机排班</field>
+            <field name="tag">driver_plan_client</field>
+            <field name="target">main</field>
+        </record>
+
+    </data>
+</odoo>
+    

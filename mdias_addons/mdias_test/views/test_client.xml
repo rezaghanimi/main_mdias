@@ -1,0 +1,90 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="mdias_test.test_client_list">
+            <field name="name">test_client list </field>
+            <field name="model">mdias_test.test_client</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="msg"/>
+                </tree>
+            </field>
+        </record>
+
+        
+        <record model="ir.ui.view" id="mdias_test.test_client_form">
+            <field name="name">test_client form </field>
+            <field name="model">mdias_test.test_client</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="msg">msg</label>
+                        <div class="col-sm-10">
+                            <field name="msg"/>
+                        </div>
+                    </div>
+                    
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="mdias_test.test_client_act_window">
+            <field name="name">test_client</field>
+            <field name="res_model">mdias_test.test_client</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="mdias_test.test_client_act_window"
+                  id="mdias_test.test_client_menu"
+                  name="测试客户端"
+                  parent="mdias_test.menu_root"/>
+
+        <!-- 消息客户端  -->
+        <record id="mdias_test.msg_test_client"
+                model="ir.actions.client">
+            <field name="name">消息客户端</field>
+            <field name="tag">MDiasTestClient</field>
+            <field name="target">main</field>
+        </record>
+
+        <menuitem action="mdias_test.msg_test_client"
+                  id="mdias_test.test_client_menu"
+                  name="测试客户端"
+                  parent="mdias_test.menu_root"/>
+
+         <record id="message_test_server_action" model="ir.actions.server">
+            <field name="name">消息测试</field>
+            <field name="type">ir.actions.server</field>
+             <field name="model_id" ref="base.model_res_users"/>
+            <field name="state">code</field>
+            <field name="code">
+                action = model.message_test()
+            </field>
+        </record>
+
+        <record id="client_to_server_test_action" model="ir.actions.server">
+            <field name="name">消息测试</field>
+            <field name="type">ir.actions.server</field>
+             <field name="model_id" ref="base.model_res_users"/>
+            <field name="state">code</field>
+            <field name="code">
+                action = model.test_message_to_server()
+            </field>
+        </record>
+
+
+        <menuitem id="message_test_menu3"
+                  name="测试消息Client"
+                  parent="mdias_test.menu_root"
+                  action="client_to_server_test_action"
+                  sequence="3"/>
+
+        <menuitem id="message_test_menu4"
+                  name="测试消息"
+                  parent="mdias_test.menu_root"
+                  action="message_test_server_action"
+                  sequence="3"/>
+    </data>
+</odoo>
+    

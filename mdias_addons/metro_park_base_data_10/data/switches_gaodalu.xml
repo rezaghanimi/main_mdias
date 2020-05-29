@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="gao_da_lu_switch_2" model="metro_park_base.switches">
+            <field name="name">2</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.gao_da_lu_rail_2DG" />
+        </record>
+
+        <record id="gao_da_lu_switch_4" model="metro_park_base.switches">
+            <field name="name">4</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.gao_da_lu_rail_4DG" />
+        </record>
+
+        <record id="gao_da_lu_switch_6" model="metro_park_base.switches">
+            <field name="name">6</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.gao_da_lu_rail_6-12DG" />
+        </record>
+
+        <record id="gao_da_lu_switch_8" model="metro_park_base.switches">
+            <field name="name">8</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.gao_da_lu_rail_8-10DG" />
+        </record>
+
+        <record id="gao_da_lu_switch_10" model="metro_park_base.switches">
+            <field name="name">10</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.gao_da_lu_rail_8-10DG" />
+        </record>
+
+        <record id="gao_da_lu_switch_12" model="metro_park_base.switches">
+            <field name="name">12</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.gao_da_lu_rail_6-12DG" />
+        </record>
+
+        <record id="gao_da_lu_switch_14" model="metro_park_base.switches">
+            <field name="name">14</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.gao_da_lu_rail_14-20DG" />
+        </record>
+
+        <record id="gao_da_lu_switch_16" model="metro_park_base.switches">
+            <field name="name">16</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.gao_da_lu_rail_16-18DG" />
+        </record>
+
+        <record id="gao_da_lu_switch_18" model="metro_park_base.switches">
+            <field name="name">18</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.gao_da_lu_rail_16-18DG" />
+        </record>
+
+        <record id="gao_da_lu_switch_20" model="metro_park_base.switches">
+            <field name="name">20</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.gao_da_lu_rail_14-20DG" />
+        </record>
+
+        <record id="gao_da_lu_switch_22" model="metro_park_base.switches">
+            <field name="name">22</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.gao_da_lu_rail_22-26DG" />
+        </record>
+
+        <record id="gao_da_lu_switch_24" model="metro_park_base.switches">
+            <field name="name">24</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.gao_da_lu_rail_22-26DG" />
+        </record>
+
+        <record id="gao_da_lu_switch_26" model="metro_park_base.switches">
+            <field name="name">26</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.gao_da_lu_rail_22-26DG" />
+        </record>
+
+        <record id="gao_da_lu_switch_28" model="metro_park_base.switches">
+            <field name="name">28</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.gao_da_lu_rail_28DG" />
+        </record>
+
+        <record id="gao_da_lu_switch_30" model="metro_park_base.switches">
+            <field name="name">30</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.gao_da_lu_rail_30-32DG" />
+        </record>
+
+        <record id="gao_da_lu_switch_32" model="metro_park_base.switches">
+            <field name="name">32</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.gao_da_lu_rail_30-32DG" />
+        </record>
+
+        <record id="gao_da_lu_switch_34" model="metro_park_base.switches">
+            <field name="name">34</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.gao_da_lu_rail_34DG" />
+        </record>
+
+        <record id="gao_da_lu_switch_36" model="metro_park_base.switches">
+            <field name="name">36</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.gao_da_lu_rail_36DG" />
+        </record>
+
+        <record id="gao_da_lu_switch_38" model="metro_park_base.switches">
+            <field name="name">38</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.gao_da_lu_rail_38DG" />
+        </record>
+
+        <record id="gao_da_lu_switch_40" model="metro_park_base.switches">
+            <field name="name">40</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.gao_da_lu_rail_40-42DG" />
+        </record>
+
+        <record id="gao_da_lu_switch_42" model="metro_park_base.switches">
+            <field name="name">42</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.gao_da_lu_rail_40-42DG" />
+        </record>
+
+        <record id="gao_da_lu_switch_44" model="metro_park_base.switches">
+            <field name="name">44</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.gao_da_lu_rail_44-48DG" />
+        </record>
+
+        <record id="gao_da_lu_switch_46" model="metro_park_base.switches">
+            <field name="name">46</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.gao_da_lu_rail_44-48DG" />
+        </record>
+
+        <record id="gao_da_lu_switch_48" model="metro_park_base.switches">
+            <field name="name">48</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.gao_da_lu_rail_44-48DG" />
+        </record>
+
+        <record id="gao_da_lu_switch_50" model="metro_park_base.switches">
+            <field name="name">50</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.gao_da_lu_rail_50-52DG" />
+        </record>
+
+        <record id="gao_da_lu_switch_52" model="metro_park_base.switches">
+            <field name="name">52</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.gao_da_lu_rail_50-52DG" />
+        </record>
+
+        <record id="gao_da_lu_switch_54" model="metro_park_base.switches">
+            <field name="name">54</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.gao_da_lu_rail_54-60DG" />
+        </record>
+
+        <record id="gao_da_lu_switch_56" model="metro_park_base.switches">
+            <field name="name">56</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.gao_da_lu_rail_54-60DG" />
+        </record>
+
+        <record id="gao_da_lu_switch_58" model="metro_park_base.switches">
+            <field name="name">58</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.gao_da_lu_rail_54-60DG" />
+        </record>
+
+        <record id="gao_da_lu_switch_60" model="metro_park_base.switches">
+            <field name="name">60</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.gao_da_lu_rail_54-60DG" />
+        </record>
+
+        <record id="gao_da_lu_switch_62" model="metro_park_base.switches">
+            <field name="name">62</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_sec_id" ref="metro_park_base_data_10.gao_da_lu_rail_62DG" />
+        </record>
+
+    </data>
+</odoo>

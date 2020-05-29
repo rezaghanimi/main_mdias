@@ -1,0 +1,54 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.special_days_config_list">
+            <field name="name">节假日管理</field>
+            <field name="model">metro_park_dispatch.special_days_config</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table" options="{'height': '300'}">
+                    <field name="date" width="100" />
+                    <field name="time_table" width="200" />
+                    <button text="删除" name="delete_config" type="object" class="btn btn-sm btn-info" confirm="是否确认删除该记录?"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_dispatch.special_days_config_form">
+            <field name="name">节假日管理</field>
+            <field name="model">metro_park_dispatch.special_days_config</field>
+            <field name="arch" type="xml">
+                <form class="small_form">
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="date">date</label>
+                        <div class="col-sm-5">
+                            <field name="date" required="1"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="time_table">time_table</label>
+                        <div class="col-sm-5">
+                            <field name="time_table"
+                                   required="1"
+                                   options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                        </div>
+                    </div>
+                    <footer>
+                        <button class="btn btn-primary" text="保存" special="save" />
+                        <button class="btn btn-secondary" text="取消" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="metro_park_dispatch.special_days_config_act_window">
+            <field name="name">节假日管理</field>
+            <field name="res_model">metro_park_dispatch.special_days_config</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+
+
+    

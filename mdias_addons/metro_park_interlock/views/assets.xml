@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="metro_park_interlock_res"
+                  name="metro_park_interlock_res"
+                  inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="application/javascript"
+                        src="/metro_park_interlock/static/js/interlock_table.js" />
+            </xpath>
+        </template>
+    </data>
+</odoo>

@@ -1,0 +1,38 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="brake_signal_tree_id">
+            <field name="name">紧急制动信号</field>
+            <field name="model">tcms.brake_signal</field>
+            <field name="arch" type="xml">
+                <tree create="0">
+                    <field name="name"/>
+                    <field name="signal"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="brake_signal_form_id">
+            <field name="name">紧急制动信号</field>
+            <field name="model">tcms.brake_signal</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="name"/>
+                        <field name="signal"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="brake_signal_window_id">
+            <field name="name">紧急制动信号</field>
+            <field name="res_model">tcms.brake_signal</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="brake_signal_window_id"
+                  parent="tcms_tcms_act_menu_parent_id"
+                  id="brake_signal_menu_id"
+                  name="紧急制动信号"/>
+    </data>
+</odoo>

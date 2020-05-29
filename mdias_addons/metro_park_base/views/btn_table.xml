@@ -1,0 +1,71 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_base.btn_table_list">
+            <field name="name">按扭表</field>
+            <field name="model">metro_park_base.btn_table</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table" options="{'height': 'full-270'}">
+                    <field name="location"/>
+                    <field name="index"/>
+                    <field name="name"/>
+                    <field name="btn_type"/>
+                    <field name="remark"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_base.btn_table_form">
+            <field name="name">按扭表</field>
+            <field name="model">metro_park_base.btn_table</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="location">location</label>
+                        <div class="col-sm-10">
+                            <field name="location"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="index">index</label>
+                        <div class="col-sm-10">
+                            <field name="index"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="name">name</label>
+                        <div class="col-sm-10">
+                            <field name="name"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="btn_type">btn_type</label>
+                        <div class="col-sm-10">
+                            <field name="btn_type"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="remark">remark</label>
+                        <div class="col-sm-10">
+                            <field name="remark"/>
+                        </div>
+                    </div>
+                    
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="metro_park_base.btn_table_act_window">
+            <field name="name">按扭表</field>
+            <field name="res_model">metro_park_base.btn_table</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="metro_park_base.btn_table_act_window"
+                  id="metro_park_base.btn_table_menu"
+                  name="按扭表"
+                  parent="metro_park_base.menu_root" groups="category_sys_button_on_table"/>
+    </data>
+</odoo>
+    

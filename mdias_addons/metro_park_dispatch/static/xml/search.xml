@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <!-- 运营日计划 -->
+    <t t-name="metro_park_dispatch.day_run_plan_search_template">
+       <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div class="search_label">日期:</div>
+                   <div for="date"/>
+               </div>
+
+               <div class="col-md-auto">
+                   <button type="button" class="btn btn-primary btn-sm search_extend_apply">
+                       应用
+                   </button>
+                   <button type="button" class="btn btn-info btn-sm search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+	</t>
+
+
+    <!-- 收车计划 -->
+    <t t-name="train_back_plan_search_template">
+       <div class="container-fluid">
+           <div class="row align-items-center">
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div class="search_label">场段:</div>
+                   <div for="unit_select"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div class="search_label">时间:</div>
+                   <div for="plan_time"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div class="search_label">洗车:</div>
+                   <div for="wash"/>
+               </div>
+
+               <div class="col-md-auto">
+                   <button type="button" class="btn btn-primary btn-sm search_extend_apply">
+                       应用
+                   </button>
+                   <button type="button" class="btn btn-info btn-sm search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+	</t>
+
+    <!-- 车间日生产计划 -->
+    <t t-name="day_produce_template">
+       <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="work_content"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="location"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="plan_time"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="wash"/>
+               </div>
+
+               <div class="col-md-auto">
+                   <button type="button" class="btn btn-primary btn-sm search_extend_apply">
+                       应用
+                   </button>
+                   <button type="button" class="btn btn-info btn-sm search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+	</t>
+
+    <!-- 调车申请 -->
+    <t t-name="dispatch_request_search_template">
+       <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="dispatch_type"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="work_content"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="work_time"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="train"/>
+               </div>
+
+               <div class="col-md-auto">
+                   <button type="button" class="btn btn-primary btn-sm search_extend_apply">
+                       应用
+                   </button>
+                   <button type="button" class="btn btn-info btn-sm search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+	</t>
+
+    <!-- 调车审核 -->
+    <t t-name="dispatch_request_audit_search_template">
+	   <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="dispatch_type"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="work_content"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="work_time"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="train"/>
+               </div>
+
+               <div class="col-md-auto">
+                   <button type="button" class="btn btn-primary btn-sm search_extend_apply">
+                       应用
+                   </button>
+                   <button type="button" class="btn btn-info btn-sm search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+	</t>
+
+    <!-- 运营日计划 -->
+    <t t-name="metro_park_dispatch.day_run_search">
+	   <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="date"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="train"/>
+               </div>
+
+               <div class="col-md-auto">
+                   <button type="button" class="btn btn-primary btn-sm search_extend_apply">
+                       应用
+                   </button>
+                   <button type="button" class="btn btn-info btn-sm search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+	</t>
+
+    <!-- 收车作业 -->
+    <t t-name="metro_park_dispatch.day_run_search">
+       <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="date"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="train"/>
+               </div>
+
+               <div class="col-md-auto">
+                   <button type="button" class="btn btn-primary btn-sm search_extend_apply">
+                       应用
+                   </button>
+                   <button type="button" class="btn btn-info btn-sm search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+	</t>
+
+    <!-- 发车作业计划 -->
+    <t t-name="metro_park_dispatch.train_out_plan_search_plan">
+       <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="train_id" option="{'placeholder':'车辆'}"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="plan_train_no" option="{'placeholder':'车次'}"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="plan_out_location" option="{'placeholder':'位置'}"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="state" option="{'placeholder':'状态'}"/>
+               </div>
+
+               <div class="col-md-auto">
+                   <!-- class有search_extend_apply的为搜索的确定按钮 -->
+                   <button type="button" class="btn btn-primary search_extend_apply">
+                       应用
+                   </button>
+                   <!-- class有search_extend_reset的为搜索的重置按钮 -->
+                   <button type="button" class="btn btn-info search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+	</t>
+
+    <!-- 收车作业计划 -->
+    <t t-name="metro_park_dispatch.train_back_plan_search_plan">
+       <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="train_id" option="{'placeholder':'车辆'}"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="plan_train_no" option="{'placeholder':'车次'}"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="state" option="{'placeholder':'状态'}"/>
+               </div>
+
+               <div class="col-md-auto">
+                   <!-- class有search_extend_apply的为搜索的确定按钮 -->
+                   <button type="button" class="btn btn-primary search_extend_apply">
+                       应用
+                   </button>
+                   <!-- class有search_extend_reset的为搜索的重置按钮 -->
+                   <button type="button" class="btn btn-info search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+	</t>
+
+    <!-- 收车作业计划记录 -->
+    <t t-name="metro_park_dispatch.train_back_plan_search_record">
+       <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="type" option="{'placeholder':'类型'}"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="train_dev" option="{'placeholder':'车辆'}"/>
+               </div>
+
+               <div class="col-md-auto">
+                   <!-- class有search_extend_apply的为搜索的确定按钮 -->
+                   <button type="button" class="btn btn-primary btn-sm search_extend_apply">
+                       应用
+                   </button>
+                   <!-- class有search_extend_reset的为搜索的重置按钮 -->
+                   <button type="button" class="btn btn-info btn-sm search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+	</t>
+
+    <!-- 收车作业 -->
+    <t t-name="metro_park_dispatch.train_back_plan_search">
+       <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div class="search_label">车辆:</div>
+                   <div for="train_id"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div class="search_label">状态:</div>
+                   <div for="status"/>
+               </div>
+
+               <div class="col-md-auto">
+                   <!-- class有search_extend_apply的为搜索的确定按钮 -->
+                   <button type="button" class="btn btn-primary btn-sm search_extend_apply">
+                       应用
+                   </button>
+                   <!-- class有search_extend_reset的为搜索的重置按钮 -->
+                   <button type="button" class="btn btn-info btn-sm search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+	</t>
+
+    <!-- 调车申请 -->
+    <t t-name="metro_park_dispatch.dispatch_request_search">
+	   <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="train"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="dispatch_date"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="state"/>
+               </div>
+
+               <div class="col-md-auto">
+                   <!-- class有search_extend_apply的为搜索的确定按钮 -->
+                   <button type="button" class="btn btn-primary btn-sm search_extend_apply">
+                       应用
+                   </button>
+                   <!-- class有search_extend_reset的为搜索的重置按钮 -->
+                   <button type="button" class="btn btn-info btn-sm search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+	</t>
+
+    <!-- 调车审核 -->
+    <t t-name="metro_park_dispatch.dispatch_audit_search">
+	   <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="train"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="dispatch_date"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="state"/>
+               </div>
+
+               <div class="col-md-auto">
+                   <!-- class有search_extend_apply的为搜索的确定按钮 -->
+                   <button type="button" class="btn btn-primary btn-sm search_extend_apply">
+                       应用
+                   </button>
+                   <!-- class有search_extend_reset的为搜索的重置按钮 -->
+                   <button type="button" class="btn btn-info btn-sm search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+	</t>
+
+    <!-- 车间日生产计划 -->
+    <t t-name="metro_park_dispatch.work_shop_day_plan_data_search">
+	   <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div class="search_label">车辆:</div>
+                   <div for="train"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div class="search_label">作业内容:</div>
+                   <div for="work_content"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div class="search_label">状态:</div>
+                   <div for="state"/>
+               </div>
+
+               <div class="col-md-auto">
+                   <!-- class有search_extend_apply的为搜索的确定按钮 -->
+                   <button type="button" class="btn btn-primary btn-sm search_extend_apply">
+                       应用
+                   </button>
+                   <!-- class有search_extend_reset的为搜索的重置按钮 -->
+                   <button type="button" class="btn btn-info btn-sm search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+	</t>
+
+    <!-- 现车管理 -->
+    <t t-name="metro_park_dispatch.cur_train_search">
+	   <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="train"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="train_type"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="owner_location"/>
+               </div>
+
+               <div class="col-md-auto">
+                   <!-- class有search_extend_apply的为搜索的确定按钮 -->
+                   <button type="button" class="btn btn-primary btn-sm search_extend_apply">
+                       应用
+                   </button>
+                   <!-- class有search_extend_reset的为搜索的重置按钮 -->
+                   <button type="button" class="btn btn-info btn-sm search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+	</t>
+
+    <!-- 收车作业 -->
+    <t t-name="metro_park_dispatch.train_back_plan_search">
+	   <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="date"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="plan_train_no"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="plan_back_rail"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="state"/>
+               </div>
+
+               <div class="col-md-auto">
+                   <button type="button" class="btn btn-primary btn-sm search_extend_apply">
+                       应用
+                   </button>
+                   <button type="button" class="btn btn-info btn-sm search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+	</t>
+
+    <!-- 发车作业 -->
+    <t t-name="metro_park_dispatch.train_out_plan_search">
+	   <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="date"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="plan_train_no"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="plan_out_rail"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="state"/>
+               </div>
+
+               <div class="col-md-auto">
+                   <button type="button" class="btn btn-primary btn-sm search_extend_apply">
+                       应用
+                   </button>
+                   <button type="button" class="btn btn-info btn-sm search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+	</t>
+
+    <t t-name="construction_area_search">
+	   <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="park_element_code"/>
+               </div>
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="area_code"/>
+               </div>
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="area_name"/>
+               </div>
+               <div class="col-md-auto">
+                   <button type="button" class="btn btn-primary btn-sm search_extend_apply">
+                       应用
+                   </button>
+                   <button type="button" class="btn btn-info btn-sm search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+	</t>
+
+</templates>
+

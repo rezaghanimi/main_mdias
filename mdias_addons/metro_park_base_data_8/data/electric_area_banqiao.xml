@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+         <!-- 供电分区1 -->
+        <record id="metro_park_base_data_10.ban_qiao_electric_area_1"
+                model="metro_park_base.electric_area">
+            <field name="name">分区1</field>
+            <field name="location_id" ref="metro_park_base_data_10.ban_qiao" />
+            <field name="breaker_id">211</field>
+            <field name="switch_no">2111</field>
+            <field name="rail_secs"
+                   eval="[(4, ref('metro_park_base_data_10.ban_qiao_19G')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_21AG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_22AG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_23AG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_24AG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_25AG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_26AG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_21BG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_22BG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_23BG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_24BG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_25BG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_26BG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_D7G')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_61DG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_23/61WG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_23DG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_9/23WG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_9DG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_11DG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_15-17DG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_21DG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_21/51WG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_51-53DG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_55-59DG'))]" />
+        </record>
+		
+		<!-- 供电分区2 -->
+        <record id="metro_park_base_data_10.ban_qiao_electric_area_2"
+                model="metro_park_base.electric_area">
+            <field name="name">分区2</field>
+            <field name="location_id" ref="metro_park_base_data_10.ban_qiao" />
+            <field name="breaker_id">212</field>
+            <field name="switch_no">2121</field>
+            <field name="rail_secs"
+                   eval="[(4, ref('metro_park_base_data_10.ban_qiao_27AG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_28AG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_29AG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_30AG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_31AG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_32AG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_27BG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_28BG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_29BG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_30BG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_31BG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_32BG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_45-49DG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_41-43DG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_25/41WG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_25DG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_13-19DG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_7DG'))]" />
+        </record>
+		
+		<!-- 供电分区3 -->
+        <record id="metro_park_base_data_10.ban_qiao_electric_area_3"
+                model="metro_park_base.electric_area">
+            <field name="name">分区3</field>
+            <field name="location_id" ref="metro_park_base_data_10.ban_qiao" />
+            <field name="breaker_id">213</field>
+            <field name="switch_no">2131</field>
+            <field name="rail_secs" eval="[(4, ref('metro_park_base_data_10.ban_qiao_33G')),
+                (4, ref('metro_park_base_data_10.ban_qiao_34G')),
+                (4, ref('metro_park_base_data_10.ban_qiao_35G')),
+                (4, ref('metro_park_base_data_10.ban_qiao_27DG')),
+                (4, ref('metro_park_base_data_10.ban_qiao_27/29WG')),
+                (4, ref('metro_park_base_data_10.ban_qiao_29-35DG')),
+                (4, ref('metro_park_base_data_10.ban_qiao_37-39DG'))]" />
+        </record>
+		
+		<!-- 供电分区4 -->
+        <record id="metro_park_base_data_10.ban_qiao_electric_area_4"
+                model="metro_park_base.electric_area">
+            <field name="name">分区4</field>
+            <field name="location_id" ref="metro_park_base_data_10.ban_qiao" />
+            <field name="breaker_id">216</field>
+            <field name="switch_no">2161</field>
+            <field name="rail_secs"
+                   eval="[(4, ref('metro_park_base_data_10.ban_qiao_D5G')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_D1G')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_D37G')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_16G')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_17G')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_5/27WG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_5DG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_1-3DG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_1/63WG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_63-65DG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_67-73DG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_75-77DG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_79-81DG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_65/83WG'))]" />
+        </record>
+		
+		<!-- 供电分区5 -->
+        <record id="metro_park_base_data_10.ban_qiao_electric_area_5"
+                model="metro_park_base.electric_area">
+            <field name="name">分区5</field>
+            <field name="location_id" ref="metro_park_base_data_10.ban_qiao" />
+            <field name="breaker_id">217</field>
+            <field name="switch_no">2171</field>
+            <field name="rail_secs"
+                   eval="[(4, ref('metro_park_base_data_10.ban_qiao_D65G')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_83DG')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_D67G'))]" />
+        </record>
+		
+		<!-- 供电分区6 -->
+        <record id="metro_park_base_data_10.ban_qiao_electric_area_6"
+                model="metro_park_base.electric_area">
+            <field name="name">分区6</field>
+            <field name="location_id" ref="metro_park_base_data_10.ban_qiao" />
+            <field name="breaker_id">214</field>
+            <field name="switch_no">2141</field>
+            <field name="rail_secs" eval="" />
+        </record>
+		
+		<!-- 供电分区7 -->
+        <record id="metro_park_base_data_10.ban_qiao_electric_area_7"
+                model="metro_park_base.electric_area">
+            <field name="name">分区7</field>
+            <field name="location_id" ref="ban_qiao" />
+            <field name="breaker_id">215</field>
+            <field name="switch_no">2151</field>
+            <field name="rail_secs" eval="" />
+        </record>
+
+        <!-- 两个特殊的供电分区 -->
+        <record id="metro_park_base_data_10.ban_qiao_electric_area_out_park"
+                model="metro_park_base.electric_area">
+            <field name="name">出段线分区</field>
+            <field name="location_id" ref="metro_park_base_data_10.ban_qiao" />
+            <field name="switch_no">10CG</field>
+            <field name="parent_electric_area" ref="metro_park_base_data_10.ban_qiao_electric_area_1" />
+            <field name="rail_secs"
+                   eval="[(4, ref('metro_park_base_data_10.ban_qiao_T1701G')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_T1705G'))]" />
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_electric_area_in_park"
+                model="metro_park_base.electric_area">
+            <field name="name">入段线分区</field>
+            <field name="location_id" ref="metro_park_base_data_10.ban_qiao" />
+            <field name="switch_no">10CG</field>
+            <field name="parent_electric_area" ref="metro_park_base_data_10.ban_qiao_electric_area_2" />
+            <field name="rail_secs"
+                   eval="[(4, ref('metro_park_base_data_10.ban_qiao_T1714G')),
+                   (4, ref('metro_park_base_data_10.ban_qiao_T1710G'))]" />
+        </record>
+
+        <!-- 更新记录，先创建其它记录 -->
+        <record id="metro_park_base_data_10.ban_qiao_electric_area_1"
+                model="metro_park_base.electric_area">
+            <field name="backup_electric_area" eval="[(5,0,0),
+                   (0,0,{'switch_no':'2112', 'electric_area': ref('metro_park_base_data_10.ban_qiao_electric_area_2')})]"/>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_electric_area_2" model="metro_park_base.electric_area">
+            <field name="backup_electric_area" eval="[(5,0,0),
+                   (0,0,{'switch_no':'2112', 'electric_area': ref('metro_park_base_data_10.ban_qiao_electric_area_1')})]"/>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_electric_area_3" model="metro_park_base.electric_area">
+            <field name="backup_electric_area" eval="[(5,0,0),
+                   (0,0,{'switch_no':'2134', 'electric_area': ref('metro_park_base_data_10.ban_qiao_electric_area_6')})]"/>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_electric_area_4" model="metro_park_base.electric_area">
+            <field name="backup_electric_area" eval="[(5,0,0),
+                   (0,0,{'switch_no':'2167', 'electric_area': ref('metro_park_base_data_10.ban_qiao_electric_area_5')}),
+                   (0,0,{'switch_no':'2156', 'electric_area': ref('metro_park_base_data_10.ban_qiao_electric_area_7')})]"/>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_electric_area_5" model="metro_park_base.electric_area">
+            <field name="backup_electric_area" eval="[(5,0,0),
+                   (0,0,{'switch_no':'2167', 'electric_area': ref('metro_park_base_data_10.ban_qiao_electric_area_7')})]"/>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_electric_area_6" model="metro_park_base.electric_area">
+            <field name="backup_electric_area" eval="[(5,0,0),
+                   (0,0,{'switch_no':'2156', 'electric_area': ref('metro_park_base_data_10.ban_qiao_electric_area_3')})]"/>
+        </record>
+
+        <record id="metro_park_base_data_10.ban_qiao_electric_area_7" model="metro_park_base.electric_area">
+            <field name="backup_electric_area" eval="[(5,0,0),
+                   (0,0,{'switch_no':'2156', 'electric_area': ref('metro_park_base_data_10.ban_qiao_electric_area_4')})]"/>
+        </record>
+
+    </data>
+</odoo>

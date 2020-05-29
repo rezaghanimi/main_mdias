@@ -1,0 +1,56 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="interlock_table.signal_infos_list">
+            <field name="name">signal_infos list </field>
+            <field name="model">interlock_table.signal_infos</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="indicator"/>
+                    <field name="signal"/>
+                    <field name="display"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="interlock_table.signal_infos_form">
+            <field name="name">信号表单</field>
+            <field name="model">interlock_table.signal_infos</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="indicator">indicator</label>
+                        <div class="col-sm-10">
+                            <field name="indicator"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="signal">signal</label>
+                        <div class="col-sm-10">
+                            <field name="signal"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="display">display</label>
+                        <div class="col-sm-10">
+                            <field name="display"/>
+                        </div>
+                    </div>
+                    
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="interlock_table.signal_infos_act_window">
+            <field name="name">signal_infos</field>
+            <field name="res_model">interlock_table.signal_infos</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+
+
+    

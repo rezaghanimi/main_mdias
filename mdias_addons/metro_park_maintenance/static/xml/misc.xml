@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="metro_park_maintenance.day_plan_info">
+        <div>
+            <t t-set="info" t-value="JSON.parse(widget.record.data.plan_info_description)"/>
+            <table class="plan_info_table">
+                <tbody>
+                    <tr>
+                        <th style="width:50%;">名称</th>
+                        <th style="width:50%;">描述</th>
+                    </tr>
+                    <tr>
+                        <td><t t-esc="info.name"/></td>
+                        <td><t t-esc="info.value"/></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </t>
+
+    <t t-name="metro_park_maintenance.train_dev_history_btns">
+        <div>
+            <button type="object" name="train_dev_history" class="btn btn-sm btn-success train_dev_history">
+                历史记录
+            </button>
+        </div>
+    </t>
+
+    <t t-name="metro_park_maintenance.vehicle_data_tree_buttons">
+        <div>
+            <button type="action" data-model="funenc.tcms.vehicle.data" data-method="add_miles_button"
+                    data-reload-on-close="1" class="btn btn-success">
+                公里数录入
+            </button>
+            <button type="action" data-model="funenc.tcms.vehicle.data" data-method="export_data_rec"
+                    data-reload-on-close="1" class="btn btn-info">
+                公里数导出
+            </button>
+            <button type="action" data-model="funenc.tcms.vehicle.data" data-method="batch_deletion_data"
+                    data-reload-on-close="1" class="btn btn-danger">
+                批量删除
+            </button>
+        </div>
+    </t>
+
+</templates>

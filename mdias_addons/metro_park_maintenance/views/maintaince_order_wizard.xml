@@ -1,0 +1,214 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.send_job_wizard_form">
+            <field name="name">指派</field>
+            <field name="model">metro_park_maintenance.maintaince_order_wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="work_class">work_class</label>
+                        <div class="col-sm-3">
+                            <field name="work_class"
+                                   domain="[('properties', 'in', context.get('propertie_ids'))]"
+                                   context="{'tree_view_ref': 'metro_park_maintenance.wechat_department_pop_tree'}"
+                                   options="{'no_create_edit': True,'no_open': True,
+                                    'no_create':True, 'js_class': 'left_department_tree'}"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="work_user">work_user</label>
+                        <div class="col-sm-3">
+                            <field name="work_user" options="{'no_create_edit': True,'no_open': True, 'no_create':True}" />
+                        </div>
+                    </div>
+
+                    <footer>
+                        <button class="btn btn-primary" type="object" name="send_job_on_click" text="确定" />
+                        <button special="cancel" string="取消" class="btn-secondary"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.reasigned_wizard_form">
+            <field name="name">转报</field>
+            <field name="model">metro_park_maintenance.maintaince_order</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="work_department">work_department</label>
+                        <div class="col-sm-3">
+                            <field name="work_department" readonly="1"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="work_user">work_user</label>
+                        <div class="col-sm-3">
+                            <field name="work_user" domain="[('department_ids', 'child_of', work_department)]"/>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <button class="btn btn-primary" type="object" name="un_assign_on_click" text="确定" />
+                        <button special="cancel" string="取消" class="btn-secondary"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.rebacked_wizard_form">
+            <field name="name">退回</field>
+            <field name="model">metro_park_maintenance.maintaince_order</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <h1 style="margin:auto;">确定要退回么？</h1>
+                    </div>
+
+                    <footer>
+                        <button class="btn btn-primary" type="object" name="rebacked_on_click" text="确定" />
+                        <button special="cancel" string="取消" class="btn-secondary"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.start_job_wizard_form">
+            <field name="name">开工</field>
+            <field name="model">metro_park_maintenance.maintaince_order_wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="statr_time">statr_time</label>
+                        <div class="col-sm-3">
+                            <field name="statr_time"/>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <button class="btn btn-primary" type="object" name="start_job_on_click" text="确定" />
+                        <button special="cancel" string="取消" class="btn-secondary"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.finish_job_wizard_form">
+            <field name="name">完工</field>
+            <field name="model">metro_park_maintenance.maintaince_order_wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="end_time">end_time</label>
+                        <div class="col-sm-5">
+                            <field name="end_time"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="repair_des">repair_des</label>
+                        <div class="col-sm-5">
+                            <field name="repair_des"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="repair_detail">repair_detail</label>
+                        <div class="col-sm-5">
+                            <field name="repair_detail"/>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <button class="btn btn-primary" type="object" name="finish_job_on_click" text="确定" />
+                        <button special="cancel" string="取消" class="btn-secondary"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.finish_job_confirm_wizard_form">
+            <field name="name">完工确认</field>
+            <field name="model">metro_park_maintenance.maintaince_order_wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="now_time">now_time</label>
+                        <div class="col-sm-3">
+                            <field name="now_time"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="dispatch_user">dispatch_user</label>
+                        <div class="col-sm-3">
+                            <field name="dispatch_user"/>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <button class="btn btn-primary" type="object" name="finish_job_confirm_on_click" text="确定" />
+                        <button special="cancel" string="取消" class="btn-secondary"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.force_close_wizard_form">
+            <field name="name">强制关闭</field>
+            <field name="model">metro_park_maintenance.maintaince_order</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <h1 style="margin:auto;">确定要强制关闭所选工单么？</h1>
+                    </div>
+
+                    <footer>
+                        <button class="btn btn-primary" type="object" name="force_close_on_click" text="确定" />
+                        <button special="cancel" string="取消" class="btn-secondary"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.order_obsolete_wizard_form">
+            <field name="name">工单作废</field>
+            <field name="model">metro_park_maintenance.maintaince_order</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <h1 style="margin:auto;">确定要作废所选工单么？</h1>
+                    </div>
+
+                    <footer>
+                        <button class="btn btn-primary" type="object" name="obsolete_on_click" text="确定" />
+                        <button special="cancel" string="取消" class="btn-secondary"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.maintaince_order_log_list">
+            <field name="name">检修工单操作日志</field>
+            <field name="model">metro_park_maintenance.maintaince_order_log</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table" create="0" import="0"
+                      options="{'height': 'full-270'}" limit="14">
+                    <field name="record_time" fixed_left="1"/>
+                    <field name="action"/>
+                    <field name="operator"/>
+                    <field name="assigned_user"/>
+                </tree>
+            </field>
+        </record>
+
+    </data>
+</odoo>
+
+

@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_metro_park_base_data_6_init_code_table,metro_park_base_data_6_init_code_table,model_metro_park_base_data_6_init_code_table,,1,0,0,0

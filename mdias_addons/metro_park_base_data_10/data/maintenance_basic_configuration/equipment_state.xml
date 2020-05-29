@@ -1,0 +1,348 @@
+<odoo>
+    <data noupdate="0">
+        <!--板桥ATS主机-->
+        <record id="banqiao_ats_m_info" model="maintenance_management.equipment_state">
+            <field name="name">ATS_m</field>
+            <field name="equipment" ref="maintenance_banqiao_equipment_ats_host"/>
+            <field name="line">bq_state</field>
+        </record>
+
+        <!--板桥ATS备机-->
+        <record id="banqiao_ats_s_info" model="maintenance_management.equipment_state">
+            <field name="name">ATS_s</field>
+            <field name="equipment" ref="maintenance_banqiao_equipment_ats_standby"/>
+            <field name="line">bq_state</field>
+        </record>
+
+
+        <!--板桥CI备机-->
+        <record id="banqiao_ci_s_info" model="maintenance_management.equipment_state">
+            <field name="name">CI_s</field>
+            <field name="equipment" ref="maintenance_banqiao_equipment_ci_standby"/>
+            <field name="line">bq_state</field>
+        </record>
+
+        <!--板桥CI主机-->
+        <record id="banqiao_ci_m_info" model="maintenance_management.equipment_state">
+            <field name="name">CI_m</field>
+            <field name="equipment" ref="maintenance_banqiao_equipment_ci_host"/>
+            <field name="line">bq_state</field>
+        </record>
+
+        <!--板桥PSCADA-->
+        <record id="banqiao_pscada_info" model="maintenance_management.equipment_state">
+            <field name="name">PSCADA_m</field>
+            <field name="equipment" ref="maintenance_banqiao_equipment_pscada"/>
+            <field name="line">bq_state</field>
+        </record>
+
+        <!--板桥TCMS-->
+        <record id="banqiao_tcms_info" model="maintenance_management.equipment_state">
+            <field name="name">TCMS_m</field>
+            <field name="equipment" ref="maintenance_banqiao_equipment_tcms"/>
+            <field name="line"/>
+        </record>
+
+        <!--板桥PMS-->
+        <record id="banqiao_pms_info" model="maintenance_management.equipment_state">
+            <field name="name">PMS_m</field>
+            <field name="equipment" ref="maintenance_banqiao_equipment_pms"/>
+            <field name="line"/>
+        </record>
+
+        <!--板桥施工管理-->
+        <record id="banqiao_sg_info" model="maintenance_management.equipment_state">
+            <field name="name">sg_m</field>
+            <field name="equipment" ref="maintenance_banqiao_equipment_construction_management"/>
+            <field name="line"/>
+        </record>
+
+        <!--板桥核心交换机主机-->
+        <record id="banqiao_hxjh_m_info" model="maintenance_management.equipment_state">
+            <field name="name">hxjh_m</field>
+            <field name="equipment" ref="maintenance_banqiao_equipment_core_switch_host"/>
+            <field name="line"/>
+        </record>
+
+        <!--板桥核心交换机备机-->
+        <record id="banqiao_hxjh_s_info" model="maintenance_management.equipment_state">
+            <field name="name">hxjh_s</field>
+            <field name="equipment" ref="maintenance_banqiao_equipment_core_switch_standby"/>
+            <field name="line"/>
+        </record>
+
+        <!--板桥接入交换机主机-->
+        <record id="banqiao_jrjh_m_info" model="maintenance_management.equipment_state">
+            <field name="name">jrjh_m</field>
+            <field name="equipment" ref="maintenance_banqiao_equipment_access_switch_host"/>
+            <field name="line"/>
+        </record>
+
+        <!--板桥接入交换机备机-->
+        <record id="banqiao_jrjh_s_info" model="maintenance_management.equipment_state">
+            <field name="name">jrjh_s</field>
+            <field name="equipment" ref="maintenance_banqiao_equipment_access_switch_standby"/>
+            <field name="line"/>
+        </record>
+
+        <!--板桥应用服务器1-->
+        <record id="banqiao_server_1_info" model="maintenance_management.equipment_state">
+            <field name="name">mdjl_m</field>
+            <field name="equipment" ref="maintenance_banqiao_equipment_application_server_1"/>
+            <field name="line">bq_jlglfwq</field>
+        </record>
+
+        <!--板桥应用服务器2-->
+        <record id="banqiao_server_2_info" model="maintenance_management.equipment_state">
+            <field name="name">mdjl_s</field>
+            <field name="equipment" ref="maintenance_banqiao_equipment_application_server_2"/>
+            <field name="line">bq_jlglfwq</field>
+        </record>
+
+        <!--板桥应用服务器3-->
+        <record id="banqiao_server_3_info" model="maintenance_management.equipment_state">
+            <field name="name">mdjl_m_1</field>
+            <field name="equipment" ref="maintenance_banqiao_equipment_application_server_3"/>
+            <field name="line">bq_jlsjkfwq</field>
+        </record>
+
+        <!--板桥应用服务器4-->
+        <record id="banqiao_server_4_info" model="maintenance_management.equipment_state">
+            <field name="name">mdjl_s_1</field>
+            <field name="equipment" ref="maintenance_banqiao_equipment_application_server_4"/>
+            <field name="line">bq_jlsjkfwq</field>
+        </record>
+
+        <!--板桥应用服务器5-->
+        <record id="banqiao_server_5_info" model="maintenance_management.equipment_state">
+            <field name="name">mdyy_m</field>
+            <field name="equipment" ref="maintenance_banqiao_equipment_application_server_5"/>
+            <field name="line">bq_yyfwq</field>
+        </record>
+
+        <!--板桥应用服务器6-->
+        <record id="banqiao_server_6_info" model="maintenance_management.equipment_state">
+            <field name="name">mdyy_s</field>
+            <field name="equipment" ref="maintenance_banqiao_equipment_application_server_6"/>
+            <field name="line">bq_sjkfwq</field>
+        </record>
+
+        <!--板桥数据库服务器1-->
+        <record id="banqiao_database_1_info" model="maintenance_management.equipment_state">
+            <field name="name">mdsj_m</field>
+            <field name="equipment" ref="maintenance_banqiao_equipment_database_server_1"/>
+            <field name="line">bq_sjkfwq</field>
+        </record>
+
+        <!--板桥数据库服务器2-->
+        <record id="banqiao_database_2_info" model="maintenance_management.equipment_state">
+            <field name="name">mdsj_s</field>
+            <field name="equipment" ref="maintenance_banqiao_equipment_database_server_2"/>
+            <field name="line">bq_sjkfwq</field>
+        </record>
+
+        <!--板桥电源-->
+        <record id="banqiao_ups_m_info" model="maintenance_management.equipment_state">
+            <field name="name">ups_m</field>
+            <field name="equipment" ref="maintenance_banqiao_place_battery"/>
+            <field name="line">bq_battery_line</field>
+        </record>
+
+        <!--板桥通信前置机主机-->
+        <record id="banqiao_mdtxqzj_m_info" model="maintenance_management.equipment_state">
+            <field name="name">mdtxqzj_m</field>
+            <field name="equipment" ref="maintenance_banqiao_equipment_communication_preprocessor_host"/>
+            <field name="line">bq_txqzj</field>
+        </record>
+
+        <!--板桥通信前置机备机-->
+        <record id="banqiao_mdtxqzj_s_info" model="maintenance_management.equipment_state">
+            <field name="name">mdtxqzj_s</field>
+            <field name="equipment" ref="maintenance_banqiao_equipment_communication_preprocessor_standby"/>
+            <field name="line">bq_txqzj</field>
+        </record>
+
+        <!--板桥检修调度工作站-->
+        <record id="banqiao_jxdd_info" model="maintenance_management.equipment_state">
+            <field name="name">jxdd</field>
+            <field name="equipment" ref="maintenance_banqiao_place_maintenance_scheduling"/>
+            <field name="line">bq_jxddgzz</field>
+        </record>
+
+        <!--板桥车辆检修工作站-->
+        <record id="banqiao_ccjx_info" model="maintenance_management.equipment_state">
+            <field name="name">ccjx</field>
+            <field name="equipment" ref="maintenance_banqiao_place_vehicle_maintenance"/>
+            <field name="line">bq_cljxgzz</field>
+        </record>
+
+        <!--板桥车场调度工作站-->
+        <record id="banqiao_ccdd_info" model="maintenance_management.equipment_state">
+            <field name="name">ccdd</field>
+            <field name="equipment" ref="maintenance_banqiao_place_yard_dispatching"/>
+            <field name="line">bq_ccddgzz</field>
+        </record>
+
+        <!--板桥信号员操作工作站-->
+        <record id="banqiao_xhycz_info" model="maintenance_management.equipment_state">
+            <field name="name">xhycz</field>
+            <field name="equipment" ref="maintenance_banqiao_place_signalman"/>
+            <field name="line">bq_xhyczgzz</field>
+        </record>
+
+        <!--板桥值班员操作工作站-->
+        <record id="banqiao_zbycz_info" model="maintenance_management.equipment_state">
+            <field name="name">zbycz</field>
+            <field name="equipment" ref="maintenance_banqiao_place_attendant"/>
+            <field name="line">bq_zbyczgzz</field>
+        </record>
+
+        <!--板桥维护工作站-->
+        <record id="banqiao_whgz_m_info" model="maintenance_management.equipment_state">
+            <field name="name">whgz_m</field>
+            <field name="equipment" ref="maintenance_banqiao_place_maintenance_station"/>
+            <field name="line">bq_whgzz</field>
+        </record>
+
+        <!--板桥出退勤终端-->
+        <record id="banqiao_ctqzd_info" model="maintenance_management.equipment_state">
+            <field name="name">ctqzd</field>
+            <field name="equipment" ref="maintenance_banqiao_place_on_duty_drop_off_terminal"/>
+            <field name="line">bq_tcqzd</field>
+        </record>
+
+        <!--板桥派班工作站-->
+        <record id="banqiao_pbgzz_info" model="maintenance_management.equipment_state">
+            <field name="name">pbgzz</field>
+            <field name="equipment" ref="maintenance_banqiao_place_send_the_class_station"/>
+            <field name="line">bq_pbgzz</field>
+        </record>
+
+        <!--太平园接入交换机-->
+        <record id="taipingyuan_tpy_jrjh_m_info" model="maintenance_management.equipment_state">
+            <field name="name">tpy_jrjh_m</field>
+            <field name="equipment" ref="maintenance_taipingyuan_place_access_switch_host"/>
+            <field name="line"/>
+        </record>
+
+        <!--太平园出退勤终端-->
+        <record id="taipingyuan_tpy_ctqzd_info" model="maintenance_management.equipment_state">
+            <field name="name">tpy_ctqzd</field>
+            <field name="equipment" ref="maintenance_taipingyuan_place_back_frequently"/>
+            <field name="line">tpy_tcqzd</field>
+        </record>
+
+        <!--太平园派班工作站-->
+        <record id="taipingyuan_tpy_pbgzz_info" model="maintenance_management.equipment_state">
+            <field name="name">tpy_pbgzz</field>
+            <field name="equipment" ref="maintenance_taipingyuan_place_send_class_station"/>
+            <field name="line">tpy_pbgzz</field>
+        </record>
+
+        <!--高大路pscada-->
+        <record id="gaodalu_gdl_pscada_m_info" model="maintenance_management.equipment_state">
+            <field name="name">gdl_pscada_m</field>
+            <field name="equipment" ref="maintenance_gaodalu_place_pscada"/>
+            <field name="line">gdl_state</field>
+        </record>
+
+        <!--高大路ci备机-->
+        <record id="gaodalu_gdl_ci_s_info" model="maintenance_management.equipment_state">
+            <field name="name">gdl_ci_s</field>
+            <field name="equipment" ref="maintenance_gaodalu_place_ci_standby"/>
+            <field name="line">gdl_state</field>
+        </record>
+
+        <!--高大路ci主机-->
+        <record id="gaodalu_gdl_ci_m_info" model="maintenance_management.equipment_state">
+            <field name="name">gdl_ci_m</field>
+            <field name="equipment" ref="maintenance_gaodalu_place_ci_host"/>
+            <field name="line">gdl_state</field>
+        </record>
+
+        <!--高大路电源-->
+        <record id="gaodalu_gdl_ups_info" model="maintenance_management.equipment_state">
+            <field name="name">gdl_ups</field>
+            <field name="equipment" ref="maintenance_gaodalu_place_battery"/>
+            <field name="line">gdl_battery_line</field>
+        </record>
+
+        <!--高大路通信前置机主机-->
+        <record id="gaodalu_gdl_qzj_m_info" model="maintenance_management.equipment_state">
+            <field name="name">gdl_qzj_m</field>
+            <field name="equipment" ref="maintenance_gaodalu_frontend_host"/>
+            <field name="line">gdl_txqzj</field>
+        </record>
+
+        <!--高大路通信前置机备机-->
+        <record id="gaodalu_gdl_qzj_s_info" model="maintenance_management.equipment_state">
+            <field name="name">gdl_qzj_s</field>
+            <field name="equipment" ref="maintenance_gaodalu_frontend_standby"/>
+            <field name="line">gdl_txqzj</field>
+        </record>
+
+        <!--高大路接入交换机主机-->
+        <record id="gaodalu_gdl_jrjh_m_info" model="maintenance_management.equipment_state">
+            <field name="name">gdl_jrjh_m</field>
+            <field name="equipment" ref="maintenance_gaodalu_place_access_switch_host"/>
+            <field name="line"/>
+        </record>
+
+        <!--高大路接入交换机备机-->
+        <record id="gaodalu_gdl_jrjh_m_info" model="maintenance_management.equipment_state">
+            <field name="name">gdl_jrjh_s</field>
+            <field name="equipment" ref="maintenance_gaodalu_place_access_switch_standby"/>
+            <field name="line"/>
+        </record>
+
+        <!--高大路检修调度工作站-->
+        <record id="gaodalu_gdl_jxdd_info" model="maintenance_management.equipment_state">
+            <field name="name">gdl_jxdd</field>
+            <field name="equipment" ref="maintenance_gaodalu_maintenance_scheduling"/>
+            <field name="line">gdl_jxddgzz</field>
+        </record>
+
+        <!--高大路车场检修工作站-->
+        <record id="gaodalu_gdl_ccjx_info" model="maintenance_management.equipment_state">
+            <field name="name">gdl_ccjx</field>
+            <field name="equipment" ref="maintenance_gaodalu_yard_dispatching"/>
+            <field name="line">gdl_cljxgzz</field>
+        </record>
+
+        <!--高大路车场调度工作站-->
+        <record id="gaodalu_gdl_ccdd_info" model="maintenance_management.equipment_state">
+            <field name="name">gdl_ccdd</field>
+            <field name="equipment" ref="maintenance_gaodalu_yard_dispatching"/>
+            <field name="line">gdl_ccddgzz</field>
+        </record>
+
+        <!--高大路信号员操作工作站-->
+        <record id="gaodalu_gdl_xhycz_info" model="maintenance_management.equipment_state">
+            <field name="name">gdl_xhycz</field>
+            <field name="equipment" ref="maintenance_gaodalu_signalman"/>
+            <field name="line">gdl_xhyczgzz</field>
+        </record>
+
+        <!--高大路信号员操作工作站-->
+        <record id="gaodalu_gdl_zbycz_info" model="maintenance_management.equipment_state">
+            <field name="name">gdl_zbycz</field>
+            <field name="equipment" ref="maintenance_gaodalu_attendant"/>
+            <field name="line">gdl_zbyccgzz</field>
+        </record>
+
+        <!--高大路出退勤终端-->
+        <record id="gaodalu_gdl_ctqzd_info" model="maintenance_management.equipment_state">
+            <field name="name">gdl_ctqzd</field>
+            <field name="equipment" ref="maintenance_gaodalu_outgoing_outgoing_terminals"/>
+            <field name="line">gdl_tcqgzd</field>
+        </record>
+
+        <!--高大路派班工作站-->
+        <record id="gaodalu_gdl_pbgzz_info" model="maintenance_management.equipment_state">
+            <field name="name">gdl_pbgzz</field>
+            <field name="equipment" ref="maintenance_gaodalu_send_class_station"/>
+            <field name="line">gdl_pbgzz</field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <!-- 里程设置模板 -->
+    <t t-name="miles_set_template">
+        <div class="two_list_box">
+            <div class="btns_box">
+            </div>
+            <div class="top_box" />
+            <div class="bottom_box" />
+        </div>
+    </t>
+
+    <t t-name="miles_set_btn">
+<!--        <button class="btn btn-primary btn_action_miles" style="margin-left:10px;">公里数预估</button>-->
+<!--        <button class="btn btn-primary btn_add_miles">公里数录入</button>-->
+<!--        <button  class="btn btn-primary btn_import_miles">公里统计导入</button>-->
+        <button  class="btn btn-info btn_export_miles">公里统计导出</button>
+        <button class="btn btn-success btn_sync_manual">手工同步</button>
+        <button class="btn btn-info btn_history_import">历史公里导入</button>
+        <button class="btn btn-success btn_all_history">历史公里记录</button>
+    </t>
+
+    <!-- 年度公里数设置 -->
+    <t t-name="history_miles_set_btn">
+        <button class="btn btn-primary btn_miles_set_rule">年度公里数设置</button>
+    </t>
+
+</templates>

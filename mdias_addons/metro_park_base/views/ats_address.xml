@@ -1,0 +1,65 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_base.ats_address_list">
+            <field name="name">ats地址列表</field>
+            <field name="model">metro_park_base.ats_address</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="no"/>
+                    <field name="name"/>
+                    <field name="location"/>
+                    <field name="remark"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_base.ats_address_form">
+            <field name="name">ats地址表单</field>
+            <field name="model">metro_park_base.ats_address</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="no">no</label>
+                        <div class="col-sm-10">
+                            <field name="no"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="line">line</label>
+                        <div class="col-sm-10">
+                            <field name="line"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="name">name</label>
+                        <div class="col-sm-10">
+                            <field name="name"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="location">location</label>
+                        <div class="col-sm-10">
+                            <field name="location"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="remark">remark</label>
+                        <div class="col-sm-10">
+                            <field name="remark"/>
+                        </div>
+                    </div>
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window" id="metro_park_base.ats_address_act_window">
+            <field name="name">ats_address</field>
+            <field name="res_model">metro_park_base.ats_address</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+    

@@ -1,0 +1,38 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="eb_tree_id">
+            <field name="name">EB按钮按下信号</field>
+            <field name="model">tcms.eb</field>
+            <field name="arch" type="xml">
+                <tree create="0">
+                    <field name="name"/>
+                    <field name="signal"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="eb_from_id">
+            <field name="name">EB按钮按下信号</field>
+            <field name="model">tcms.eb</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="name"/>
+                        <field name="signal"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="eb_window_id">
+            <field name="name">EB按钮按下信号</field>
+            <field name="res_model">tcms.eb</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="eb_window_id"
+                  parent="tcms_tcms_act_menu_parent_id"
+                  id="eb_menu_id"
+                  name="EB按钮按下信号"/>
+    </data>
+</odoo>

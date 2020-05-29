@@ -1,0 +1,259 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="metro_park_dispatch.dispatch_request_list">
+            <field name="name">调车申请</field>
+            <field name="model">metro_park_dispatch.dispatch_request</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table" default_order="write_date desc" options="{'height':'full-330', 'disable_open_record': True}" search_ex_template="metro_park_dispatch.dispatch_request_search" class="noOpen">
+                    <field name="train" fixed_left="1" width="70" string="车底号"/>
+                    <field name="dispatch_date" width="95" />
+                    <field name="start_time" width="80" widget="datetime" options="{'control_type': 'time'}"/>
+                    <field name="finish_time" width="80" widget="datetime" options="{'control_type': 'time'}"/>
+                    <field name="dispatch_type" width="80" />
+                    <field name="source_rail" width="80" />
+                    <field name="target_rail" width="80" />
+                    <field name="work_content" width="300" />
+                    <field name="remark" width="200" />
+                    <field name="request_time" width="120" />
+                    <field name="request_user" width="70" />
+                    <field name="write_date"/>
+                    <field name="state" width="70" fixed_right="1" string="状态"/>
+                    <field name="btns" width="200" widget="template_widget" fixed_right="1" options="{'template': 'dispatch_request_btns'}" />
+                </tree>
+            </field>
+        </record>
+
+        <!-- 场调审核 -->
+        <record id="metro_park_dispatch.dispatch_request_audit_list" model="ir.ui.view">
+            <field name="name">调车审核与编制</field>
+            <field name="model">metro_park_dispatch.dispatch_request</field>
+            <field name="mode">primary</field>
+            <field name="inherit_id" ref="metro_park_dispatch.dispatch_request_list"/>
+            <field name="arch" type="xml">
+                <xpath expr="//tree" position="attributes">
+                    <attribute name="create">0</attribute>
+                    <attribute name="edit">0</attribute>
+                    <attribute name="delete">0</attribute>
+                    <attribute name="search_ex_template">metro_park_dispatch.dispatch_audit_search</attribute>
+                </xpath>
+                <xpath expr="//tree//field[last()]" position="replace">
+                    <field name="btns" width="400" widget="template_widget" fixed_right="1" options="{'template': 'dispatch_audit_btns'}" />
+                </xpath>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_dispatch.dispatch_request_form">
+            <field name="name">调车申请</field>
+            <field name="model">metro_park_dispatch.dispatch_request</field>
+            <field name="arch" type="xml">
+                <form edit="0">
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="dispatch_type">dispatch_type</label>
+                        <div class="col-sm-3">
+                            <field name="dispatch_type"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="train">train</label>
+                        <div class="col-sm-3">
+                            <field name="train" options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" attrs="{'invisible': [('train', '=', False)]}">
+                        <label class="col-sm-2 col-form-label" for="dev_type">dev_type</label>
+                        <div class="col-sm-3">
+                            <field name="dev_type" readonly="1" force_save="1" options="{'no_open': True, 'no_create_edit': True}"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" attrs="{'invisible': [('train', '=', False)]}">
+                        <label class="col-sm-2 col-form-label" for="dispatch_date">dispatch_date</label>
+                        <div class="col-sm-3">
+                            <field name="dispatch_date"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="is_wash">is_wash</label>
+                        <div class="col-sm-3">
+                            <field name="is_wash"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" attrs="{'invisible': [('train', '=', False)]}">
+                        <label class="col-sm-2 col-form-label" for="start_time">start_time</label>
+                        <div class="col-sm-3">
+                            <field name="start_time"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="finish_time">finish_time</label>
+                        <div class="col-sm-3">
+                            <field name="finish_time"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" attrs="{'invisible': [('dispatch_type', '!=', 'other_train')]}">
+                        <label class="col-sm-2 col-form-label" for="engineering_vehicle_id"/>
+                        <div class="col-sm-3">
+                            <field name="engineering_vehicle_id" options="{'no_open': True, 'no_create_edit': True}"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="engineering_vehicle_rail"/>
+                        <div class="col-sm-3">
+                            <field name="engineering_vehicle_rail" options="{'no_open': True, 'no_create_edit': True}"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" attrs="{'invisible': [('train', '=', False)]}">
+                        <label class="col-sm-2 col-form-label" for="source_rail">source_rail</label>
+                        <div class="col-sm-3">
+                            <field name="source_rail" options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="target_rail">target_rail</label>
+                        <div class="col-sm-3">
+                            <field name="target_rail" options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" attrs="{'invisible': [('train', '=', False)]}">
+                        <label class="col-sm-2 col-form-label" for="work_content">work_content</label>
+                        <div class="col-sm-8">
+                            <field name="work_content"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" attrs="{'invisible': [('train', '=', False)]}">
+                        <label class="col-sm-2 col-form-label" for="remark">remark</label>
+                        <div class="col-sm-8">
+                            <field name="remark"/>
+                        </div>
+                    </div>
+
+                    <!-- 隐藏原来的调车作业要求 -->
+                    <div class="card" style="margin-top:10px;" invisible="1">
+                        <div class="card-block">
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label" for="requirements">requirements</label>
+                                <div class="col-sm-10">
+                                    <field name="requirements" widget="many2many_checkboxes" class="dispatch_requirements"/>
+                                </div>
+                            </div>
+                            <field name="show_iron_shoe_inputs"/>
+                            <div class="form-group row" attrs="{'invisible': [('show_iron_shoe_inputs', '=', False)]}">
+                                <label class="col-sm-3 col-form-label" for="iron_shoe_no">iron_shoe_no</label>
+                                <div class="col-sm-2">
+                                    <field name="iron_shoe_no"/>
+                                </div>
+                            </div>
+                            <div class="form-group row" attrs="{'invisible': [('show_iron_shoe_inputs', '=', False)]}">
+                                <label class="col-sm-3 col-form-label" for="iron_shoe_place">iron_shoe_place</label>
+                                <div class="col-sm-2">
+                                    <field name="iron_shoe_place"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row handover_type" attrs="{'invisible': [('train', '=', False)]}">
+                        <span class="col-sm-3 shifts_type">停车前隔离开关是否断开：</span>
+                        <div class="col-sm-2">
+                            <field name="isolate_switch" widget="radio" options="{'horizontal': true}"/>
+                        </div>
+                        <span class="col-sm-3 shifts_type">停车股道是否接地线：</span>
+                        <div class="col-sm-2">
+                            <field name="ground_wire" widget="radio" options="{'horizontal': true}"/>
+                        </div>
+                        <span class="col-sm-3 shifts_type">转入轨道是否入侵：</span>
+                        <div class="col-sm-2">
+                            <div style="width:120px;">
+                                <field name="is_incursive" widget="radio" options="{'horizontal': true}"/>
+                            </div>
+                        </div>
+                        <span class="col-sm-3 shifts_type">悬挂系统是否正常：</span>
+                        <div class="col-sm-2">
+                            <div style="width:120px;">
+                                <field name="suspend_system_is_normal" widget="radio" options="{'horizontal': true}"/>
+                            </div>
+                        </div>
+                        <span class="col-sm-3 shifts_type">禁止蓄电池通电：</span>
+                        <div class="col-sm-2">
+                            <div style="width:120px;">
+                                <field name="prohibit_battery_powe" widget="radio" options="{'horizontal': true}"/>
+                            </div>
+                        </div>
+                        <span class="col-sm-3 shifts_type">是否放置铁鞋子：</span>
+                        <div class="col-sm-2">
+                            <div style="width:120px;">
+                                <field name="need_iron_shoe" widget="radio" options="{'horizontal': true}"/>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <!-- 调车审请编辑 -->
+        <record id="metro_park_dispatch.dispatch_request_edit_form" model="ir.ui.view">
+            <field name="name">调车申请</field>
+            <field name="model">metro_park_dispatch.dispatch_request</field>
+            <field name="mode">primary</field>
+            <field name="inherit_id" ref="metro_park_dispatch.dispatch_request_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form//div[last()]" position="after">
+                    <footer>
+                        <button class="btn btn-success" special="save_and_exit" text="确定" />
+                        <button class="btn btn-info" text="取消" special="cancel" />
+                    </footer>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- 调车申请 -->
+        <record id="metro_park_dispatch.dispatch_request_act_server" model="ir.actions.server">
+            <field name="name">调车申请</field>
+            <field name="type">ir.actions.server</field>
+            <field name="model_id" ref="model_metro_park_dispatch_dispatch_request" />
+            <field name="state">code</field>
+            <field name="code">
+                action = model.get_dispatch_request_action()
+            </field>
+        </record>
+
+        <!-- 调车审核获取groups -->
+        <record id="metro_park_dispatch.dispatch_request_audit_act_server" model="ir.actions.server">
+            <field name="name">调车审核与编制</field>
+            <field name="type">ir.actions.server</field>
+            <field name="model_id" ref="model_metro_park_dispatch_dispatch_request"/>
+            <field name="state">code</field>
+            <field name="code">
+                action = model.get_dispatch_request_audit_action()
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="metro_park_dispatch.request_act_window">
+            <field name="name">调车申请</field>
+            <field name="res_model">metro_park_dispatch.dispatch_request</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_ids" eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'tree', 'view_id': ref('metro_park_dispatch.dispatch_request_list')}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('metro_park_dispatch.dispatch_request_form')})]"/>
+        </record>
+
+        <!-- 调车计划审核 -->
+        <record model="ir.actions.act_window" id="metro_park_dispatch.dispatch_audit_act_window">
+            <field name="name">调车审核与编制</field>
+            <field name="res_model">metro_park_dispatch.dispatch_request</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_ids" eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'tree', 'view_id': ref('metro_park_dispatch.dispatch_request_audit_list')}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('metro_park_dispatch.dispatch_request_form')})]"/>
+        </record>
+
+        <menuitem action="metro_park_dispatch.dispatch_request_act_server"
+                  id="metro_park_dispatch.dispatch_request_menu"
+                  name="调车申请"
+                  sequence="2"
+                  groups="group_dispatch_car_management_dispatch_car_apply_page_look"
+                  parent="metro_park_dispatch.menu_root"/>
+
+        <menuitem action="metro_park_dispatch.dispatch_request_audit_act_server"
+                  id="metro_park_dispatch.dispatch_audit_menu"
+                  name="调车审核与编制"
+                  sequence="3" groups="group_dispatch_audit_view_detail" parent="metro_park_dispatch.menu_root"/>
+    </data>
+</odoo>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!--  自动同步时刻表  -->
+        <record id="ir_cron_time_table_sync" model="ir.cron">
+            <field name="name">自动获取时刻表数据</field>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field name="doall" eval="False" />
+            <field name="model" eval="metro_park_base.time_table" />
+            <field name="function" eval="auto_get_time_table" />
+        </record>
+
+        <!--  清理每日登录密码错误失败次数累计  -->
+        <record id="ir_cron_login_error_clear" model="ir.cron">
+            <field name="name">清理每日登录密码错误失败次数累计</field>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field name="doall" eval="False" />
+            <field name="model" eval="res.users" />
+            <field name="function" eval="login_error_clear" />
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <!-- 美化many2one -->
+    <t t-extend="web.datepicker">
+        <t t-jquery=".o_datepicker_button" t-operation="replace">
+            <span class="o_dropdown_arrow is-reverse">
+                <i class="fa fa-angle-down" draggable="false"></i>
+            </span>
+        </t>
+    </t>
+    <!-- funenc date time picker -->
+    <t t-name="funenc.datepicker">
+        <div class="funenc_datetime_picker" style="position:relative">
+            <input type="text" class="o_input" />
+            <span class="o_dropdown_arrow is-reverse">
+                <i class="fa fa-angle-down" draggable="false"></i>
+            </span>
+        </div>
+    </t>
+</templates>

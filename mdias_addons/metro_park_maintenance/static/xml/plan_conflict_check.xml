@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <!-- 计划冲突检测 -->
+    <t t-name="metro_park_maintance.plan_conflict_check">
+        <div class="d-flex plan_conflict_check" style="width:100%; height:100%">
+            <canvas width="1500" height="800" />
+        </div>
+    </t>
+
+</templates>

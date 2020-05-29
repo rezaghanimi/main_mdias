@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <!-- 
+            **进站信号 SR XZR XZC SC XCZA XRZA SCZA SRZA 
+        -->
+
+        <record id="ban_qiao_signal_SR" model="metro_park_base.signals">
+            <field name="name">SR</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_XZR" model="metro_park_base.signals">
+            <field name="name">XZR</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_XZC" model="metro_park_base.signals">
+            <field name="name">XZC</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_SC" model="metro_park_base.signals">
+            <field name="name">SC</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_XCZA" model="metro_park_base.signals">
+            <field name="name">XCZA</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_XRZA" model="metro_park_base.signals">
+            <field name="name">XRZA</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_SCZA" model="metro_park_base.signals">
+            <field name="name">SCZA</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_SRZA" model="metro_park_base.signals">
+            <field name="name">SRZA</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <!-- 
+            **出站信号 X23 X25 X27 X29 X31 X33 X35 X37 X39 X22 X24 X26 X28 X30 X32 X34 X36 X38 XC XR X21 
+        -->
+
+        <record id="ban_qiao_signal_X23" model="metro_park_base.signals">
+            <field name="name">X23</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_X25" model="metro_park_base.signals">
+            <field name="name">X25</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_X27" model="metro_park_base.signals">
+            <field name="name">X27</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_X29" model="metro_park_base.signals">
+            <field name="name">X29</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_X31" model="metro_park_base.signals">
+            <field name="name">X31</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_X33" model="metro_park_base.signals">
+            <field name="name">X33</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_X35" model="metro_park_base.signals">
+            <field name="name">X35</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_X37" model="metro_park_base.signals">
+            <field name="name">X37</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_X39" model="metro_park_base.signals">
+            <field name="name">X39</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_X22" model="metro_park_base.signals">
+            <field name="name">X22</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_X24" model="metro_park_base.signals">
+            <field name="name">X24</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_X26" model="metro_park_base.signals">
+            <field name="name">X26</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_X28" model="metro_park_base.signals">
+            <field name="name">X28</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_X30" model="metro_park_base.signals">
+            <field name="name">X30</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_X32" model="metro_park_base.signals">
+            <field name="name">X32</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_X34" model="metro_park_base.signals">
+            <field name="name">X34</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_X36" model="metro_park_base.signals">
+            <field name="name">X36</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_X38" model="metro_park_base.signals">
+            <field name="name">X38</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_XC" model="metro_park_base.signals">
+            <field name="name">XC</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_XR" model="metro_park_base.signals">
+            <field name="name">XR</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_X21" model="metro_park_base.signals">
+            <field name="name">X21</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <!-- 
+            **调车信号 D21A D23A D25A D27A D29A D31A D22A D24A D26A D28A D30A D32A D21B D23B D25B D27B D29B D31B D22B D24B D26B D28B D30B D32B D45 D47 D49 D51 D53 D55 D57 D59 D61 D63 D65 D67 D1 D3 D5 D7 D9 D11 D13 D15 D17 D19 D21 D23 D25 D27 D29 D31 D37 D39 D41 D43 D23BZA D21BZA D22BZA D24BZA D25BZA D26BZA D27BZA D28BZA D29BZA D30BZA D31BZA D32BZA JT25 JT23 D33 D35 JT7 JT5 JT3 JT1 JT17 JT19 JT21 JT15 JT9 JT11 JT13 JT27 
+        -->
+
+        <record id="ban_qiao_signal_D21A" model="metro_park_base.signals">
+            <field name="name">D21A</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D23A" model="metro_park_base.signals">
+            <field name="name">D23A</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D25A" model="metro_park_base.signals">
+            <field name="name">D25A</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D27A" model="metro_park_base.signals">
+            <field name="name">D27A</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D29A" model="metro_park_base.signals">
+            <field name="name">D29A</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D31A" model="metro_park_base.signals">
+            <field name="name">D31A</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D22A" model="metro_park_base.signals">
+            <field name="name">D22A</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D24A" model="metro_park_base.signals">
+            <field name="name">D24A</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D26A" model="metro_park_base.signals">
+            <field name="name">D26A</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D28A" model="metro_park_base.signals">
+            <field name="name">D28A</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D30A" model="metro_park_base.signals">
+            <field name="name">D30A</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D32A" model="metro_park_base.signals">
+            <field name="name">D32A</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D21B" model="metro_park_base.signals">
+            <field name="name">D21B</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D23B" model="metro_park_base.signals">
+            <field name="name">D23B</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D25B" model="metro_park_base.signals">
+            <field name="name">D25B</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D27B" model="metro_park_base.signals">
+            <field name="name">D27B</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D29B" model="metro_park_base.signals">
+            <field name="name">D29B</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D31B" model="metro_park_base.signals">
+            <field name="name">D31B</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D22B" model="metro_park_base.signals">
+            <field name="name">D22B</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D24B" model="metro_park_base.signals">
+            <field name="name">D24B</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D26B" model="metro_park_base.signals">
+            <field name="name">D26B</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D28B" model="metro_park_base.signals">
+            <field name="name">D28B</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D30B" model="metro_park_base.signals">
+            <field name="name">D30B</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D32B" model="metro_park_base.signals">
+            <field name="name">D32B</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D45" model="metro_park_base.signals">
+            <field name="name">D45</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D47" model="metro_park_base.signals">
+            <field name="name">D47</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D49" model="metro_park_base.signals">
+            <field name="name">D49</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D51" model="metro_park_base.signals">
+            <field name="name">D51</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D53" model="metro_park_base.signals">
+            <field name="name">D53</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D55" model="metro_park_base.signals">
+            <field name="name">D55</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D57" model="metro_park_base.signals">
+            <field name="name">D57</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D59" model="metro_park_base.signals">
+            <field name="name">D59</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D61" model="metro_park_base.signals">
+            <field name="name">D61</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D63" model="metro_park_base.signals">
+            <field name="name">D63</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D65" model="metro_park_base.signals">
+            <field name="name">D65</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D67" model="metro_park_base.signals">
+            <field name="name">D67</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D1" model="metro_park_base.signals">
+            <field name="name">D1</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D3" model="metro_park_base.signals">
+            <field name="name">D3</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D5" model="metro_park_base.signals">
+            <field name="name">D5</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D7" model="metro_park_base.signals">
+            <field name="name">D7</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D9" model="metro_park_base.signals">
+            <field name="name">D9</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D11" model="metro_park_base.signals">
+            <field name="name">D11</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D13" model="metro_park_base.signals">
+            <field name="name">D13</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D15" model="metro_park_base.signals">
+            <field name="name">D15</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D17" model="metro_park_base.signals">
+            <field name="name">D17</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D19" model="metro_park_base.signals">
+            <field name="name">D19</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D21" model="metro_park_base.signals">
+            <field name="name">D21</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D23" model="metro_park_base.signals">
+            <field name="name">D23</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D25" model="metro_park_base.signals">
+            <field name="name">D25</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D27" model="metro_park_base.signals">
+            <field name="name">D27</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D29" model="metro_park_base.signals">
+            <field name="name">D29</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D31" model="metro_park_base.signals">
+            <field name="name">D31</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D37" model="metro_park_base.signals">
+            <field name="name">D37</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D39" model="metro_park_base.signals">
+            <field name="name">D39</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D41" model="metro_park_base.signals">
+            <field name="name">D41</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D43" model="metro_park_base.signals">
+            <field name="name">D43</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D23BZA" model="metro_park_base.signals">
+            <field name="name">D23BZA</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D21BZA" model="metro_park_base.signals">
+            <field name="name">D21BZA</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D22BZA" model="metro_park_base.signals">
+            <field name="name">D22BZA</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D24BZA" model="metro_park_base.signals">
+            <field name="name">D24BZA</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D25BZA" model="metro_park_base.signals">
+            <field name="name">D25BZA</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D26BZA" model="metro_park_base.signals">
+            <field name="name">D26BZA</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D27BZA" model="metro_park_base.signals">
+            <field name="name">D27BZA</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D28BZA" model="metro_park_base.signals">
+            <field name="name">D28BZA</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D29BZA" model="metro_park_base.signals">
+            <field name="name">D29BZA</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D30BZA" model="metro_park_base.signals">
+            <field name="name">D30BZA</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D31BZA" model="metro_park_base.signals">
+            <field name="name">D31BZA</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D32BZA" model="metro_park_base.signals">
+            <field name="name">D32BZA</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_JT25" model="metro_park_base.signals">
+            <field name="name">JT25</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_JT23" model="metro_park_base.signals">
+            <field name="name">JT23</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D33" model="metro_park_base.signals">
+            <field name="name">D33</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_D35" model="metro_park_base.signals">
+            <field name="name">D35</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_JT7" model="metro_park_base.signals">
+            <field name="name">JT7</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_JT5" model="metro_park_base.signals">
+            <field name="name">JT5</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_JT3" model="metro_park_base.signals">
+            <field name="name">JT3</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_JT1" model="metro_park_base.signals">
+            <field name="name">JT1</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_JT17" model="metro_park_base.signals">
+            <field name="name">JT17</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_JT19" model="metro_park_base.signals">
+            <field name="name">JT19</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_JT21" model="metro_park_base.signals">
+            <field name="name">JT21</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_JT15" model="metro_park_base.signals">
+            <field name="name">JT15</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_JT9" model="metro_park_base.signals">
+            <field name="name">JT9</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_JT11" model="metro_park_base.signals">
+            <field name="name">JT11</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_JT13" model="metro_park_base.signals">
+            <field name="name">JT13</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+        <record id="ban_qiao_signal_JT27" model="metro_park_base.signals">
+            <field name="name">JT27</field>
+            <field name="location" ref="ban_qiao" />
+        </record>
+
+    </data>
+</odoo>

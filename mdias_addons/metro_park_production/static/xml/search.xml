@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+	<!-- 生产管理搜索 -->
+    <t t-name="plan_management_search">
+	   <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="content" option="{'placeholder':'计划类型'}"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="content" option="{'placeholder':'作业部门'}"/>
+               </div>
+
+			   <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="plan_date" option="{'placeholder':'日期'}"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="rule_status" option="{'placeholder':'状态'}"/>
+               </div>
+
+               <div class="col-md-auto">
+                   <!-- class有search_extend_apply的为搜索的确定按钮 -->
+                   <button type="button" class="btn btn-primary search_extend_apply">
+                       应用
+                   </button>
+                   <!-- class有search_extend_reset的为搜索的重置按钮 -->
+                   <button type="button" class="btn btn-info search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+	</t>
+
+    <!--调度计划搜索-->
+    <t t-name="rule_info_search_template">
+        <div class="container-fluid">
+           <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="rule_type" option="{'placeholder':'作业内容'}"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="work_class" option="{'placeholder':'作业部门'}"/>
+               </div>
+
+			   <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="date" option="{'placeholder':'计划日期'}"/>
+               </div>
+
+               <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                   <div for="state" option="{'placeholder':'状态'}"/>
+               </div>
+
+               <div class="col-md-auto">
+                   <!-- class有search_extend_apply的为搜索的确定按钮 -->
+                   <button type="button" class="btn btn-primary search_extend_apply">
+                       应用
+                   </button>
+                   <!-- class有search_extend_reset的为搜索的重置按钮 -->
+                   <button type="button" class="btn btn-info search_extend_reset">
+                       重置
+                   </button>
+               </div>
+           </div>
+       </div>
+    </t>
+
+</templates>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+   <data>
+     <record id="year_2017" model="metro_park_maintenance.year">
+      <field name="name">2017</field>
+      <field name="val">2017</field>
+    </record>
+
+    <record id="year_2018" model="metro_park_maintenance.year">
+      <field name="name">2018</field>
+      <field name="val">2018</field>
+    </record>
+
+    <record id="year_2019" model="metro_park_maintenance.year">
+      <field name="name">2019</field>
+      <field name="val">2019</field>
+    </record>
+
+    <record id="year_2020" model="metro_park_maintenance.year">
+      <field name="name">2020</field>
+      <field name="val">2020</field>
+    </record>
+
+    <record id="year_2021" model="metro_park_maintenance.year">
+      <field name="name">2021</field>
+      <field name="val">2021</field>
+    </record>
+
+    <record id="year_2022" model="metro_park_maintenance.year">
+      <field name="name">2022</field>
+      <field name="val">2022</field>
+    </record>
+
+    <record id="year_2023" model="metro_park_maintenance.year">
+      <field name="name">2023</field>
+      <field name="val">2023</field>
+    </record>
+
+    <record id="year_2024" model="metro_park_maintenance.year">
+      <field name="name">2024</field>
+      <field name="val">2024</field>
+    </record>
+
+    <record id="year_2025" model="metro_park_maintenance.year">
+      <field name="name">2025</field>
+      <field name="val">2025</field>
+    </record>
+
+    <record id="year_2026" model="metro_park_maintenance.year">
+      <field name="name">2026</field>
+      <field name="val">2026</field>
+    </record>
+
+    <record id="year_2027" model="metro_park_maintenance.year">
+      <field name="name">2027</field>
+      <field name="val">2027</field>
+    </record>
+
+    <record id="year_2028" model="metro_park_maintenance.year">
+      <field name="name">2028</field>
+      <field name="val">2028</field>
+    </record>
+
+    <record id="year_2029" model="metro_park_maintenance.year">
+      <field name="name">2029</field>
+      <field name="val">2029</field>
+    </record>
+
+    <record id="year_2030" model="metro_park_maintenance.year">
+      <field name="name">2030</field>
+      <field name="val">2030</field>
+    </record>
+
+    <record id="year_2031" model="metro_park_maintenance.year">
+      <field name="name">2031</field>
+      <field name="val">2031</field>
+    </record>
+
+    <record id="year_2032" model="metro_park_maintenance.year">
+      <field name="name">2032</field>
+      <field name="val">2032</field>
+    </record>
+
+    <record id="year_2033" model="metro_park_maintenance.year">
+      <field name="name">2033</field>
+      <field name="val">2033</field>
+    </record>
+
+    <record id="year_2034" model="metro_park_maintenance.year">
+      <field name="name">2034</field>
+      <field name="val">2034</field>
+    </record>
+
+    <record id="year_2035" model="metro_park_maintenance.year">
+      <field name="name">2035</field>
+      <field name="val">2035</field>
+    </record>
+
+    <record id="year_2036" model="metro_park_maintenance.year">
+      <field name="name">2036</field>
+      <field name="val">2036</field>
+    </record>
+
+    <record id="year_2037" model="metro_park_maintenance.year">
+      <field name="name">2037</field>
+      <field name="val">2037</field>
+    </record>
+
+    <record id="year_2038" model="metro_park_maintenance.year">
+      <field name="name">2038</field>
+      <field name="val">2038</field>
+    </record>
+
+    <record id="year_2039" model="metro_park_maintenance.year">
+      <field name="name">2039</field>
+      <field name="val">2039</field>
+    </record>
+
+    <record id="year_2040" model="metro_park_maintenance.year">
+      <field name="name">2040</field>
+      <field name="val">2040</field>
+    </record>
+
+    <record id="year_2041" model="metro_park_maintenance.year">
+      <field name="name">2041</field>
+      <field name="val">2041</field>
+    </record>
+
+    <record id="year_2042" model="metro_park_maintenance.year">
+      <field name="name">2042</field>
+      <field name="val">2042</field>
+    </record>
+
+    <record id="year_2043" model="metro_park_maintenance.year">
+      <field name="name">2043</field>
+      <field name="val">2043</field>
+    </record>
+
+    <record id="year_2044" model="metro_park_maintenance.year">
+      <field name="name">2044</field>
+      <field name="val">2044</field>
+    </record>
+
+    <record id="year_2045" model="metro_park_maintenance.year">
+      <field name="name">2045</field>
+      <field name="val">2045</field>
+    </record>
+
+    <record id="year_2046" model="metro_park_maintenance.year">
+      <field name="name">2046</field>
+      <field name="val">2046</field>
+    </record>
+
+    <record id="year_2047" model="metro_park_maintenance.year">
+      <field name="name">2047</field>
+      <field name="val">2047</field>
+    </record>
+
+    <record id="year_2048" model="metro_park_maintenance.year">
+      <field name="name">2048</field>
+      <field name="val">2048</field>
+    </record>
+
+    <record id="year_2049" model="metro_park_maintenance.year">
+      <field name="name">2049</field>
+      <field name="val">2049</field>
+    </record>
+
+   </data>
+</odoo>

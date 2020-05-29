@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="metro_park_production.file_type1" model="metro_park_production.file_type">
+            <field name="name">视频</field>
+        </record>
+
+        <record id="metro_park_production.file_type2" model="metro_park_production.file_type">
+            <field name="name">文件</field>
+        </record>
+    </data>
+</odoo>

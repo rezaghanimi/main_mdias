@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+"access_res_groups_group_permission_manage","res_groups permission manage","model_res_groups",permission_manage,1,0,0,0
+"access_res_groups_group_role_manage","res_groups role manage","model_res_groups",role_manage,1,1,1,0
+"access_res_groups_group_permission_manage_read","res_groups permission manage read","model_res_groups",role_manage,1,0,0,0

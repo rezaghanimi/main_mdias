@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.module.category" id="category_sys_operation_log">
+            <field name="name">系统日志</field>
+        </record>
+
+        <record model="res.groups" id="groups_sys_operation_log_access">
+            <field name="name">日志查看/访问</field>
+            <field name="category_id" ref="category_sys_operation_log"/>
+        </record>
+
+
+    </data>
+</odoo>

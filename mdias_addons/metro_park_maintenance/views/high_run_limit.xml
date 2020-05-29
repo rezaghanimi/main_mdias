@@ -1,0 +1,51 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_maintenance.high_run_limit_list">
+            <field name="name">high_run_limit list </field>
+            <field name="model">metro_park_maintenance.high_run_limit</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="max_num"/>
+                    <field name="location"/>
+                    
+                </tree>
+            </field>
+        </record>
+
+        
+        <record model="ir.ui.view" id="metro_park_maintenance.high_run_limit_form">
+            <field name="name">high_run_limit form </field>
+            <field name="model">metro_park_maintenance.high_run_limit</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="max_num">max_num</label>
+                        <div class="col-sm-10">
+                            <field name="max_num"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="location">location</label>
+                        <div class="col-sm-10">
+                            <field name="location"/>
+                        </div>
+                    </div>
+                    
+                </form>
+            </field>
+        </record>
+
+        
+        <record model="ir.actions.act_window" id="metro_park_maintenance.high_run_limit_act_window">
+            <field name="name">high_run_limit</field>
+            <field name="res_model">metro_park_maintenance.high_run_limit</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        
+        <menuitem action="metro_park_maintenance.high_run_limit_act_window" id="metro_park_maintenance.high_run_limit_menu" name="高峰车最大数量限制" parent="metro_park_maintenance.menu_root"/>
+    </data>
+</odoo>
+    

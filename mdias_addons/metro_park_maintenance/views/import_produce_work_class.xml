@@ -1,0 +1,44 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_maintenance.import_produce_work_class_list">
+            <field name="name">import_produce_work_class list </field>
+            <field name="model">metro_park_base.import_produce_work_class</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="file"/>
+                </tree>
+            </field>
+        </record>
+
+        
+        <record model="ir.ui.view" id="metro_park_maintenance.import_produce_work_class_form">
+            <field name="name"> import_produce_work_class form </field>
+            <field name="model">metro_park_base.import_produce_work_class</field>
+            <field name="arch" type="xml">
+                <form>
+                    <field name="file" invisible="1"/>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="file">file</label>
+                        <div class="col-sm-10">
+                            <field name="file"/>
+                        </div>
+                    </div>
+                    <footer>
+                        <button class="btn btn-success" type="object" name="on_ok" text="确定" />
+                        <button class="btn btn-info" text="取消" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="metro_park_maintenance.import_produce_work_class_act_window">
+            <field name="name">import_produce_work_class</field>
+            <field name="res_model">metro_park_base.import_produce_work_class</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+    

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model="ir.actions.client" id="funenc_wechat_sync">
+            <field name="name">确认同步</field>
+            <field name="tag">wechat_syn_client</field>
+            <field name="target">new</field>
+        </record>
+
+        <record id="view_funenc_wechat_account_tree" model="ir.ui.view">
+            <field name="name">企业列表</field>
+            <field name="model">funenc.wechat.account</field>
+            <field name="arch" type="xml">
+                <tree js_class="wechat_warn" options="{'height':'full-340'}">
+                    <field name="code"/>
+                    <field name="name"/>
+                    <field name="corp" width="200"/>
+                    <field name="app_ids"/>
+                    <field name="open_syn" width="150"/>
+                    <button type="object" width="120" style="width:100px" name="sync_wechat" string="同步"
+                    class="btn btn-info btn-sm"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_funenc_wechat_account_form" model="ir.ui.view">
+            <field name="name">企业详情</field>
+            <field name="model">funenc.wechat.account</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="code">code</label>
+                        <div class="col-sm-3">
+                            <field name="code"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="name">name</label>
+                        <div class="col-sm-3">
+                            <field name="name"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="corp">corp</label>
+                        <div class="col-sm-3">
+                            <field name="corp"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="account_secret">account_secret</label>
+                        <div class="col-sm-3">
+                            <field name="account_secret"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="open_syn">open_syn</label>
+                        <div class="col-sm-3">
+                            <field name="open_syn"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" attrs="{'invisible': [('open_syn', '=', False)]}">
+                        <label class="col-sm-2 col-form-label" for="url">url</label>
+                        <div class="col-sm-3">
+                            <field name="url" attrs="{'required': [('open_syn', '!=', False)]}" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row" attrs="{'invisible': [('open_syn', '=', False)]}">
+                        <label class="col-sm-2 col-form-label" for="token">token</label>
+                        <div class="col-sm-3">
+                            <field name="token" attrs="{'required': [('open_syn', '!=', False)]}" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row" attrs="{'invisible': [('open_syn', '=', False)]}">
+                        <label class="col-sm-2 col-form-label" for="url">url</label>
+                        <div class="col-sm-3">
+                            <field name="EncodingAESKey" attrs="{'required': [('open_syn', '!=', False)]}" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="app_ids">app_ids</label>
+                        <div class="col-sm-8">
+                            <field name="app_ids">
+                                 <tree js_class="fnt_table" options="{'height': 200}">
+                                    <field name="name" />
+                                    <field name="app_agent"/>
+                                    <field name="is_login_app"/>
+                                    <field name="is_exempts"/>
+                                    <field name="jssdk_file_filename"/>
+                                </tree>
+                            </field>
+                        </div>
+                    </div>
+
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+   <data noupdate="0">
+
+      <!-- 正线运营rule -->
+      <record id="main_line_run_rule" model="metro_park_maintenance.repair_rule">
+         <field name="dev_standard" ref="metro_park_base.dev_standard_all" />
+         <field name="name">正线运营</field>
+         <field name="no">ZXYY</field>
+         <field name="balance">no</field>
+         <field name="rule_type">run</field>
+         <field name="target_plan_type">day</field>
+         <field name="plan_method">auto</field>
+         <field name="period">1</field>
+         <field name="positive_offset">0</field>
+         <field name="negative_offset">0</field>
+         <field name="run_miles">0</field>
+         <field name="positive_offset_miles">0</field>
+         <field name="repair_days">0</field>
+         <field name="cycle_type">day</field>
+         <field name="rule_status">normal</field>
+         <field name="work_start_time">2019-01-01 09:00:00</field>
+         <field name="work_end_time">2019-01-01 17:00:00</field>
+         <field name="locations"
+                eval="[(4, ref('metro_park_base_data_8.main_line_location'))]" />
+         <field name="need_retain">0</field>
+      </record>
+
+      <!-- 热备 -->
+      <record id="hot_backup_rule" model="metro_park_maintenance.repair_rule">
+         <field name="dev_standard" ref="metro_park_base.dev_standard_all" />
+         <field name="name">热备</field>
+         <field name="no">HTBKUP</field>
+         <field name="balance">no</field>
+         <field name="rule_type">run</field>
+         <field name="target_plan_type">day</field>
+         <field name="plan_method">auto</field>
+         <field name="period">1</field>
+         <field name="positive_offset">0</field>
+         <field name="negative_offset">0</field>
+         <field name="run_miles">0</field>
+         <field name="positive_offset_miles">0</field>
+         <field name="repair_days">0</field>
+         <field name="cycle_type">day</field>
+         <field name="rule_status">normal</field>
+         <field name="work_start_time">2019-01-01 09:00:00</field>
+         <field name="work_end_time">2019-01-01 17:00:00</field>
+         <field name="locations" eval="[(4, ref('metro_park_base_data_8.main_line_location'))]" />
+         <field name="need_retain">0</field>
+      </record>
+
+      <!-- 接车 -->
+      <record id="main_line_receive_train_rule" model="metro_park_maintenance.repair_rule">
+         <field name="dev_standard" ref="metro_park_base.dev_standard_all" />
+         <field name="name">接车</field>
+         <field name="no">ZXJC</field>
+         <field name="balance">no</field>
+         <field name="rule_type">run</field>
+         <field name="target_plan_type">day</field>
+         <field name="plan_method">auto</field>
+         <field name="period">1</field>
+         <field name="positive_offset">0</field>
+         <field name="negative_offset">0</field>
+         <field name="run_miles">0</field>
+         <field name="positive_offset_miles">0</field>
+         <field name="repair_days">0</field>
+         <field name="cycle_type">day</field>
+         <field name="rule_status">normal</field>
+         <field name="work_start_time">2019-01-01 09:00:00</field>
+         <field name="work_end_time">2019-01-01 17:00:00</field>
+         <field name="locations"
+                eval="[(4, ref('metro_park_base_data_8.main_line_location'))]" />
+         <field name="need_retain">0</field>
+      </record>
+
+      <!-- 收车 -->
+      <record id="main_line_send_train_rule" model="metro_park_maintenance.repair_rule">
+         <field name="dev_standard" ref="metro_park_base.dev_standard_all" />
+         <field name="name">发车</field>
+         <field name="no">ZXSC</field>
+         <field name="balance">no</field>
+         <field name="rule_type">temp</field>
+         <field name="target_plan_type">day</field>
+         <field name="plan_method">auto</field>
+         <field name="period">1</field>
+         <field name="positive_offset">0</field>
+         <field name="negative_offset">0</field>
+         <field name="run_miles">0</field>
+         <field name="positive_offset_miles">0</field>
+         <field name="repair_days">0</field>
+         <field name="cycle_type">day</field>
+         <field name="rule_status">normal</field>
+         <field name="work_start_time">2019-01-01 09:00:00</field>
+         <field name="work_end_time">2019-01-01 17:00:00</field>
+         <field name="locations"
+                eval="[(4, ref('metro_park_base_data_8.main_line_location'))]" />
+         <field name="need_retain">0</field>
+      </record>
+
+      <record id="repair_rule_Y1" model="metro_park_maintenance.repair_rule">
+         <field name="dev_standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="name">月修1</field>
+         <field name="no">Y1</field>
+         <field name="balance">yes</field>
+         <field name="rule_type">plan</field>
+         <field name="target_plan_type">year</field>
+         <field name="plan_method">auto</field>
+         <field name="period">30</field>
+         <field name="positive_offset">3</field>
+         <field name="negative_offset">3</field>
+         <field name="run_miles">0</field>
+         <field name="positive_offset_miles">0</field>
+         <field name="repair_days">1</field>
+         <field name="cycle_type">day</field>
+         <field name="max_plan_per_day">3</field>
+         <field name="rule_status">normal</field>
+         <field name="work_start_time">2019-01-01 09:00:00</field>
+         <field name="work_end_time">2019-01-01 17:00:00</field>
+         <field name="locations"
+                eval="[(4, ref('metro_park_base_data_8.yuan_hua'))]" />
+         <field name="need_retain">1</field>
+         <field name="work_requirement"
+                eval="[(4, ref('metro_park_base.rail_property_month_repair'))]" />
+      </record>
+
+      <record id="repair_rule_Y2" model="metro_park_maintenance.repair_rule">
+         <field name="dev_standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="name">月修2</field>
+         <field name="no">Y2</field>
+         <field name="balance">yes</field>
+         <field name="rule_type">plan</field>
+         <field name="target_plan_type">year</field>
+         <field name="plan_method">auto</field>
+         <field name="period">30</field>
+         <field name="positive_offset">3</field>
+         <field name="negative_offset">3</field>
+         <field name="run_miles">0</field>
+         <field name="positive_offset_miles">0</field>
+         <field name="repair_days">1</field>
+         <field name="max_plan_per_day">3</field>
+         <field name="cycle_type">day</field>
+         <field name="rule_status">normal</field>
+         <field name="work_start_time">2019-01-01 09:00:00</field>
+         <field name="work_end_time">2019-01-01 17:00:00</field>
+         <field name="locations"
+                eval="[(4, ref('metro_park_base_data_8.yuan_hua'))]" />
+         <field name="need_retain">1</field>
+         <field name="work_requirement"
+                eval="[(4, ref('metro_park_base.rail_property_month_repair'))]" />
+      </record>
+
+      <record id="repair_rule_Y3" model="metro_park_maintenance.repair_rule">
+         <field name="dev_standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="name">月3</field>
+         <field name="no">Y3</field>
+         <field name="balance">yes</field>
+         <field name="rule_type">plan</field>
+         <field name="target_plan_type">year</field>
+         <field name="plan_method">auto</field>
+         <field name="period">30</field>
+         <field name="positive_offset">3</field>
+         <field name="negative_offset">3</field>
+         <field name="run_miles">0</field>
+         <field name="positive_offset_miles">0</field>
+         <field name="repair_days">2</field>
+         <field name="max_plan_per_day">3</field>
+         <field name="cycle_type">day</field>
+         <field name="rule_status">normal</field>
+         <field name="work_start_time">2019-01-01 09:00:00</field>
+         <field name="work_end_time">2019-01-01 17:00:00</field>
+         <field name="locations"
+                eval="[(4, ref('metro_park_base_data_8.yuan_hua'))]" />
+         <field name="need_retain">1</field>
+         <field name="work_requirement"
+                eval="[(4, ref('metro_park_base.rail_property_month_repair'))]" />
+      </record>
+
+      <record id="repair_rule_Y4A" model="metro_park_maintenance.repair_rule">
+         <field name="dev_standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="name">月4A</field>
+         <field name="no">Y4A</field>
+         <field name="balance">yes</field>
+         <field name="rule_type">plan</field>
+         <field name="target_plan_type">year</field>
+         <field name="plan_method">auto</field>
+         <field name="period">30</field>
+         <field name="positive_offset">3</field>
+         <field name="negative_offset">3</field>
+         <field name="max_plan_per_day">3</field>
+         <field name="run_miles">0</field>
+         <field name="positive_offset_miles">0</field>
+         <field name="repair_days">1</field>
+         <field name="cycle_type">day</field>
+         <field name="rule_status">normal</field>
+         <field name="work_start_time">2019-01-01 09:00:00</field>
+         <field name="work_end_time">2019-01-01 17:00:00</field>
+         <field name="locations"
+                eval="[(4, ref('metro_park_base_data_8.yuan_hua'))]" />
+         <field name="need_retain">1</field>
+         <field name="work_requirement"
+                eval="[(4, ref('metro_park_base.rail_property_month_repair'))]" />
+      </record>
+
+      <record id="repair_rule_Y4B" model="metro_park_maintenance.repair_rule">
+         <field name="dev_standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="name">月4B</field>
+         <field name="no">Y4B</field>
+         <field name="balance">yes</field>
+         <field name="rule_type">plan</field>
+         <field name="target_plan_type">year</field>
+         <field name="plan_method">auto</field>
+         <field name="period">30</field>
+         <field name="positive_offset">3</field>
+         <field name="negative_offset">3</field>
+         <field name="max_plan_per_day">3</field>
+         <field name="run_miles">0</field>
+         <field name="positive_offset_miles">0</field>
+         <field name="repair_days">2</field>
+         <field name="cycle_type">day</field>
+         <field name="rule_status">normal</field>
+         <field name="work_start_time">2019-01-01 09:00:00</field>
+         <field name="work_end_time">2019-01-01 17:00:00</field>
+         <field name="locations"
+                eval="[(4, ref('metro_park_base_data_8.yuan_hua'))]" />
+         <field name="need_retain">1</field>
+         <field name="work_requirement"
+                eval="[(4, ref('metro_park_base.rail_property_month_repair'))]" />
+      </record>
+
+      <record id="repair_rule_Y5A" model="metro_park_maintenance.repair_rule">
+         <field name="dev_standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="name">月5A</field>
+         <field name="no">Y5A</field>
+         <field name="balance">yes</field>
+         <field name="rule_type">plan</field>
+         <field name="target_plan_type">year</field>
+         <field name="plan_method">auto</field>
+         <field name="period">30</field>
+         <field name="positive_offset">3</field>
+         <field name="negative_offset">3</field>
+         <field name="max_plan_per_day">3</field>
+         <field name="run_miles">0</field>
+         <field name="positive_offset_miles">0</field>
+         <field name="repair_days">1</field>
+         <field name="cycle_type">day</field>
+         <field name="rule_status">normal</field>
+         <field name="work_start_time">2019-01-01 09:00:00</field>
+         <field name="work_end_time">2019-01-01 17:00:00</field>
+         <field name="locations"
+                eval="[(4, ref('metro_park_base_data_8.yuan_hua'))]" />
+         <field name="need_retain">1</field>
+         <field name="work_requirement"
+                eval="[(4, ref('metro_park_base.rail_property_month_repair'))]" />
+      </record>
+
+      <record id="repair_rule_Y5B" model="metro_park_maintenance.repair_rule">
+         <field name="dev_standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="name">月5B</field>
+         <field name="no">Y5B</field>
+         <field name="balance">yes</field>
+         <field name="rule_type">plan</field>
+         <field name="target_plan_type">year</field>
+         <field name="plan_method">auto</field>
+         <field name="period">30</field>
+         <field name="positive_offset">3</field>
+         <field name="negative_offset">3</field>
+         <field name="max_plan_per_day">3</field>
+         <field name="run_miles">0</field>
+         <field name="positive_offset_miles">0</field>
+         <field name="repair_days">2</field>
+         <field name="cycle_type">day</field>
+         <field name="rule_status">normal</field>
+         <field name="work_start_time">2019-01-01 09:00:00</field>
+         <field name="work_end_time">2019-01-01 17:00:00</field>
+         <field name="locations"
+                eval="[(4, ref('metro_park_base_data_8.yuan_hua'))]" />
+         <field name="need_retain">1</field>
+         <field name="work_requirement"
+                eval="[(4, ref('metro_park_base.rail_property_month_repair'))]" />
+      </record>
+
+      <record id="repair_rule_Y6" model="metro_park_maintenance.repair_rule">
+         <field name="dev_standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="name">月修6</field>
+         <field name="no">Y6</field>
+         <field name="balance">yes</field>
+         <field name="rule_type">plan</field>
+         <field name="target_plan_type">year</field>
+         <field name="plan_method">auto</field>
+         <field name="period">30</field>
+         <field name="positive_offset">3</field>
+         <field name="negative_offset">3</field>
+         <field name="max_plan_per_day">3</field>
+         <field name="run_miles">0</field>
+         <field name="positive_offset_miles">0</field>
+         <field name="repair_days">2</field>
+         <field name="cycle_type">day</field>
+         <field name="rule_status">normal</field>
+         <field name="work_start_time">2019-01-01 09:00:00</field>
+         <field name="work_end_time">2019-01-01 17:00:00</field>
+         <field name="locations"
+                eval="[(4, ref('metro_park_base_data_8.yuan_hua'))]" />
+         <field name="need_retain">1</field>
+         <field name="work_requirement"
+                eval="[(4, ref('metro_park_base.rail_property_month_repair'))]" />
+      </record>
+
+      <record id="repair_rule_Y7" model="metro_park_maintenance.repair_rule">
+         <field name="dev_standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="name">月修7</field>
+         <field name="no">Y7</field>
+         <field name="balance">yes</field>
+         <field name="rule_type">plan</field>
+         <field name="target_plan_type">year</field>
+         <field name="plan_method">auto</field>
+         <field name="period">30</field>
+         <field name="positive_offset">3</field>
+         <field name="negative_offset">3</field>
+         <field name="max_plan_per_day">3</field>
+         <field name="run_miles">0</field>
+         <field name="positive_offset_miles">0</field>
+         <field name="repair_days">1</field>
+         <field name="cycle_type">day</field>
+         <field name="rule_status">normal</field>
+         <field name="work_start_time">2019-01-01 09:00:00</field>
+         <field name="work_end_time">2019-01-01 17:00:00</field>
+         <field name="locations"
+                eval="[(4, ref('metro_park_base_data_8.yuan_hua'))]" />
+         <field name="need_retain">1</field>
+         <field name="work_requirement"
+                eval="[(4, ref('metro_park_base.rail_property_month_repair'))]" />
+      </record>
+
+      <record id="repair_rule_Y8" model="metro_park_maintenance.repair_rule">
+         <field name="dev_standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="name">月修8</field>
+         <field name="no">Y8</field>
+         <field name="balance">yes</field>
+         <field name="rule_type">plan</field>
+         <field name="target_plan_type">year</field>
+         <field name="plan_method">auto</field>
+         <field name="period">30</field>
+         <field name="positive_offset">3</field>
+         <field name="negative_offset">3</field>
+         <field name="max_plan_per_day">3</field>
+         <field name="run_miles">0</field>
+         <field name="positive_offset_miles">0</field>
+         <field name="repair_days">1</field>
+         <field name="cycle_type">day</field>
+         <field name="rule_status">normal</field>
+         <field name="work_start_time">2019-01-01 09:00:00</field>
+         <field name="work_end_time">2019-01-01 17:00:00</field>
+         <field name="locations"
+                eval="[(4, ref('metro_park_base_data_8.yuan_hua'))]" />
+         <field name="need_retain">1</field>
+         <field name="work_requirement"
+                eval="[(4, ref('metro_park_base.rail_property_month_repair'))]" />
+      </record>
+
+      <record id="repair_rule_Y9" model="metro_park_maintenance.repair_rule">
+         <field name="dev_standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="name">月修9</field>
+         <field name="no">Y9</field>
+         <field name="balance">yes</field>
+         <field name="rule_type">plan</field>
+         <field name="target_plan_type">year</field>
+         <field name="plan_method">auto</field>
+         <field name="period">30</field>
+         <field name="positive_offset">3</field>
+         <field name="negative_offset">3</field>
+         <field name="max_plan_per_day">3</field>
+         <field name="run_miles">0</field>
+         <field name="positive_offset_miles">0</field>
+         <field name="repair_days">2</field>
+         <field name="cycle_type">day</field>
+         <field name="rule_status">normal</field>
+         <field name="work_start_time">2019-01-01 09:00:00</field>
+         <field name="work_end_time">2019-01-01 17:00:00</field>
+         <field name="locations"
+                eval="[(4, ref('metro_park_base_data_8.yuan_hua'))]" />
+         <field name="need_retain">1</field>
+         <field name="work_requirement"
+                eval="[(4, ref('metro_park_base.rail_property_month_repair'))]" />
+      </record>
+
+      <record id="repair_rule_Y10" model="metro_park_maintenance.repair_rule">
+         <field name="dev_standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="name">月修10</field>
+         <field name="no">Y10</field>
+         <field name="balance">yes</field>
+         <field name="rule_type">plan</field>
+         <field name="target_plan_type">year</field>
+         <field name="plan_method">auto</field>
+         <field name="period">30</field>
+         <field name="positive_offset">3</field>
+         <field name="negative_offset">3</field>
+         <field name="max_plan_per_day">3</field>
+         <field name="run_miles">0</field>
+         <field name="positive_offset_miles">0</field>
+         <field name="repair_days">1</field>
+         <field name="cycle_type">day</field>
+         <field name="rule_status">normal</field>
+         <field name="work_start_time">2019-01-01 09:00:00</field>
+         <field name="work_end_time">2019-01-01 17:00:00</field>
+         <field name="locations"
+                eval="[(4, ref('metro_park_base_data_8.yuan_hua'))]" />
+         <field name="need_retain">1</field>
+         <field name="work_requirement"
+                eval="[(4, ref('metro_park_base.rail_property_month_repair'))]" />
+      </record>
+
+      <record id="repair_rule_Y11A" model="metro_park_maintenance.repair_rule">
+         <field name="dev_standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="name">月修11A</field>
+         <field name="no">Y11A</field>
+         <field name="balance">yes</field>
+         <field name="rule_type">plan</field>
+         <field name="target_plan_type">year</field>
+         <field name="plan_method">auto</field>
+         <field name="period">30</field>
+         <field name="positive_offset">3</field>
+         <field name="negative_offset">3</field>
+         <field name="max_plan_per_day">3</field>
+         <field name="run_miles">0</field>
+         <field name="positive_offset_miles">0</field>
+         <field name="repair_days">1</field>
+         <field name="cycle_type">day</field>
+         <field name="rule_status">normal</field>
+         <field name="work_start_time">2019-01-01 09:00:00</field>
+         <field name="work_end_time">2019-01-01 17:00:00</field>
+         <field name="locations"
+                eval="[(4, ref('metro_park_base_data_8.yuan_hua'))]" />
+         <field name="need_retain">1</field>
+         <field name="work_requirement"
+                eval="[(4, ref('metro_park_base.rail_property_month_repair'))]" />
+      </record>
+
+      <record id="repair_rule_Y11B" model="metro_park_maintenance.repair_rule">
+         <field name="dev_standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="name">月修11B</field>
+         <field name="no">Y11B</field>
+         <field name="balance">yes</field>
+         <field name="rule_type">plan</field>
+         <field name="target_plan_type">year</field>
+         <field name="plan_method">auto</field>
+         <field name="period">30</field>
+         <field name="positive_offset">3</field>
+         <field name="negative_offset">3</field>
+         <field name="max_plan_per_day">3</field>
+         <field name="run_miles">0</field>
+         <field name="positive_offset_miles">0</field>
+         <field name="repair_days">3</field>
+         <field name="cycle_type">day</field>
+         <field name="rule_status">normal</field>
+         <field name="work_start_time">2019-01-01 09:00:00</field>
+         <field name="work_end_time">2019-01-01 17:00:00</field>
+         <field name="locations"
+                eval="[(4, ref('metro_park_base_data_8.yuan_hua'))]" />
+         <field name="need_retain">1</field>
+         <field name="work_requirement"
+                eval="[(4, ref('metro_park_base.rail_property_month_repair'))]" />
+      </record>
+
+      <record id="repair_rule_Y12" model="metro_park_maintenance.repair_rule">
+         <field name="dev_standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="name">月修12</field>
+         <field name="no">Y12</field>
+         <field name="balance">yes</field>
+         <field name="rule_type">plan</field>
+         <field name="target_plan_type">year</field>
+         <field name="plan_method">auto</field>
+         <field name="period">30</field>
+         <field name="positive_offset">3</field>
+         <field name="negative_offset">3</field>
+         <field name="max_plan_per_day">3</field>
+         <field name="run_miles">0</field>
+         <field name="positive_offset_miles">0</field>
+         <field name="repair_days">2</field>
+         <field name="cycle_type">day</field>
+         <field name="rule_status">normal</field>
+         <field name="work_start_time">2019-01-01 09:00:00</field>
+         <field name="work_end_time">2019-01-01 17:00:00</field>
+         <field name="locations"
+                eval="[(4, ref('metro_park_base_data_8.yuan_hua'))]" />
+         <field name="need_retain">1</field>
+         <field name="work_requirement"
+                eval="[(4, ref('metro_park_base.rail_property_month_repair'))]" />
+      </record>
+
+      <record id="repair_rule_dd" model="metro_park_maintenance.repair_rule">
+         <field name="dev_standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="name">登顶</field>
+         <field name="no">G</field>
+         <field name="balance">no</field>
+         <field name="rule_type">plan</field>
+         <field name="target_plan_type">week</field>
+         <field name="plan_method">auto</field>
+         <field name="period">5</field>
+         <field name="positive_offset">2</field>
+         <field name="negative_offset">2</field>
+         <field name="max_plan_per_day">3</field>
+         <field name="run_miles">0</field>
+         <field name="positive_offset_miles">0</field>
+         <!-- 需确定是否扣车 -->
+         <field name="repair_days">1</field>
+         <field name="cycle_type">day</field>
+         <field name="rule_status">normal</field>
+         <field name="work_start_time">2019-01-01 09:00:00</field>
+         <field name="work_end_time">2019-01-01 17:00:00</field>
+         <field name="locations"
+                eval="[(4, ref('metro_park_base_data_8.yuan_hua'))]" />
+         <field name="need_retain">1</field>
+         <field name="work_requirement"
+                eval="[(4, ref('metro_park_base.rail_property_ladder'))]" />
+      </record>
+
+      <record id="repair_rule_jx" model="metro_park_maintenance.repair_rule">
+         <field name="dev_standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="name">架修</field>
+         <field name="no">JX</field>
+         <field name="balance">no</field>
+         <field name="rule_type">plan</field>
+         <field name="target_plan_type">month</field>
+         <field name="plan_method">auto</field>
+         <field name="period">720</field>
+         <field name="positive_offset">25</field>
+         <field name="negative_offset">25</field>
+         <field name="run_miles">0</field>
+         <field name="positive_offset_miles">0</field>
+         <field name="repair_days">3</field>
+         <field name="cycle_type">day</field>
+         <field name="rule_status">normal</field>
+         <field name="work_consume_time">600</field>
+         <field name="work_start_time">2019-01-01 09:00:00</field>
+         <field name="work_end_time">2019-01-01 17:00:00</field>
+         <field name="locations"
+                eval="[(4, ref('metro_park_base_data_8.yuan_hua'))]" />
+         <field name="need_retain">1</field>
+      </record>
+
+      <!--  侍确认 -->
+      <record id="repair_rule_xc" model="metro_park_maintenance.repair_rule">
+         <field name="dev_standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="name">洗车</field>
+         <field name="no">X</field>
+         <field name="balance">no</field>
+         <field name="rule_type">plan</field>
+         <field name="target_plan_type">week</field>
+         <field name="plan_method">auto</field>
+         <field name="period">5</field>
+         <field name="positive_offset">0</field>
+         <field name="negative_offset">0</field>
+         <field name="run_miles">0</field>
+         <field name="positive_offset_miles">0</field>
+         <field name="repair_days">1</field>
+         <field name="work_start_time">2019-01-01 09:00:00</field>
+         <field name="work_end_time">2019-01-01 17:00:00</field>
+         <field name="cycle_type">day</field>
+         <field name="rule_status">normal</field>
+         <field name="work_consume_time">2</field>
+         <field name="locations"
+                eval="[(4, ref('metro_park_base_data_8.yuan_hua'))]" />
+         <field name="need_retain">1</field>
+      </record>
+
+      <record id="repair_rule_kt" model="metro_park_maintenance.repair_rule">
+         <field name="dev_standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="name">空调专检</field>
+         <field name="no">K</field>
+         <field name="balance">no</field>
+         <field name="rule_type">plan</field>
+         <field name="target_plan_type">year</field>
+         <field name="plan_method">auto</field>
+         <field name="period">0</field>
+         <field name="positive_offset">0</field>
+         <field name="negative_offset">0</field>
+         <field name="run_miles">0</field>
+         <field name="positive_offset_miles">0</field>
+         <field name="repair_days">0</field>
+         <field name="work_start_time">2019-01-01 09:00:00</field>
+         <field name="work_end_time">2019-01-01 17:00:00</field>
+         <field name="cycle_type">day</field>
+         <field name="rule_status">normal</field>
+         <field name="work_consume_time">8</field>
+         <field name="locations"
+                eval="[(4, ref('metro_park_base_data_8.yuan_hua'))]" />
+         <field name="need_retain">1</field>
+         <field name="work_requirement"
+                eval="[(4, ref('metro_park_base.rail_property_month_repair'))]" />
+      </record>
+
+      <record id="repair_rule_bj" model="metro_park_maintenance.repair_rule">
+         <field name="dev_standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="name">半年保洁</field>
+         <field name="no">BJ</field>
+         <field name="balance">no</field>
+         <field name="rule_type">plan</field>
+         <field name="target_plan_type">month</field>
+         <field name="plan_method">auto</field>
+         <field name="period">180</field>
+         <field name="positive_offset">0</field>
+         <field name="negative_offset">30</field>
+         <field name="run_miles">0</field>
+         <field name="positive_offset_miles">0</field>
+         <field name="repair_days">0</field>
+         <field name="work_start_time">2019-01-01 09:00:00</field>
+         <field name="work_end_time">2019-01-01 17:00:00</field>
+         <field name="cycle_type">day</field>
+         <field name="rule_status">normal</field>
+         <field name="work_consume_time">8</field>
+         <field name="locations"
+                eval="[(4, ref('metro_park_base_data_8.yuan_hua'))]" />
+         <field name="need_retain">1</field>
+      </record>
+
+      <record id="repair_rule_l" model="metro_park_maintenance.repair_rule">
+         <field name="dev_standard" ref="metro_park_base.dev_standard_SFM46" />
+         <field name="name">里程检</field>
+         <field name="no">L</field>
+         <field name="balance">no</field>
+         <field name="rule_type">plan</field>
+         <field name="target_plan_type">day</field>
+         <field name="plan_method">auto</field>
+         <field name="period">5</field>
+         <field name="positive_offset">0</field>
+         <field name="negative_offset">2</field>
+         <field name="run_miles">2900</field>
+         <field name="positive_offset_miles">600</field>
+         <field name="repair_days">0</field>
+         <field name="work_start_time">2019-01-01 09:00:00</field>
+         <field name="work_end_time">2019-01-01 17:00:00</field>
+         <field name="cycle_type">day</field>
+         <field name="rule_status">normal</field>
+         <field name="work_consume_time">2</field>
+         <field name="locations"
+                eval="[(4, ref('metro_park_base_data_8.yuan_hua'))]" />
+         <field name="need_retain">1</field>
+         <field name="work_requirement"
+                eval="[(4, ref('metro_park_base.rail_property_trench'))]" />
+      </record>
+
+      <!-- 调用函数初始化作业工班 -->
+      <function id="init_rule_department"
+                model="metro_park_maintenance.repair_rule"
+                name="init_rule_department" eval="[]"/>
+
+   </data>
+
+</odoo>

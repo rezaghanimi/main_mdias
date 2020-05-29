@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <!--  定时从TCMS中获取车辆信息  -->
+        <record id="ir_cron_tcms_vehicle_data" model="ir.cron">
+            <field name="name">定时更新TCMS中车辆信息</field>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="model_id" ref="model_funenc_tcms_vehicle_data"/>
+            <field name="state">code</field>
+            <field name="code">model.start_pull_vehicle_data()</field>
+            <field name="interval_number">10</field>
+            <field name="interval_type">minutes</field>
+            <field name="numbercall">-1</field>
+            <field name="doall" eval="False"/>
+        </record>
+
+    </data>
+</odoo>

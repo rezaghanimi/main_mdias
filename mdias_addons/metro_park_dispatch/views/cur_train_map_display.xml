@@ -1,0 +1,20 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.cur_train_map_display_list">
+            <field name="name">现车管理(图形)</field>
+            <field name="model">metro_park_dispatch.cur_train_map_display</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="location_id"/>
+                    <field name="line_id"/>
+                </tree>
+            </field>
+        </record>
+
+    </data>
+</odoo>
+
+
+    

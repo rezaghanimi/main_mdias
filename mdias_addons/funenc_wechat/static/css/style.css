@@ -1,0 +1,13 @@
+.o_list_button{
+    text-align: center;
+}
+
+#user_tree {
+    width: 100%;
+    padding: 5px;
+    overflow-x: auto;
+}
+
+.right_user_table {
+    margin-bottom: 0px;
+}

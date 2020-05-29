@@ -1,0 +1,53 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="funenc_theme.funenc_system_style_list">
+            <field name="name">系统样式</field>
+            <field name="model">funenc_theme.funenc_system_style</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="style"/> 
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="funenc_theme.funenc_system_style_form">
+            <field name="name">系统样式</field>
+            <field name="model">funenc_theme.funenc_system_style</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="name">name</label>
+                        <div class="col-sm-10">
+                            <field name="name"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="style">style</label>
+                        <div class="col-sm-10">
+                            <field name="style"/>
+                        </div>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="funenc_theme.funenc_system_style_act_window">
+            <field name="name">系统样式</field>
+            <field name="res_model">funenc_theme.funenc_system_style</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem 
+            action="funenc_theme.funenc_system_style_act_window" 
+            id="funenc_theme.funenc_system_style_menu" 
+            name="系统主题" 
+            parent="funenc_theme.menu_root"/>
+    </data>
+</odoo>
+
+
+
+    

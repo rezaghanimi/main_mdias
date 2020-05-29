@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+      <function id="metro_park_base_data_6.init_code_table"
+                model="metro_park_base_data_6.init_code_table"
+                name="init_code_table"
+                eval="[]"/>
+    </data>
+</odoo>

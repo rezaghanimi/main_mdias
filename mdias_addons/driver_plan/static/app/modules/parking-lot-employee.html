@@ -1,0 +1,54 @@
+<div class="layui-row">
+    <div class="table-search">
+        <form class="layui-form" id="mx-table-search-form">
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">搜索条件</label>
+                    <div class="layui-input-block">
+                        <input class="layui-input" type="text" autocomplete="off" placeholder="请输入名字、电话号码、岗位、车辆段"
+                               name="param">
+                    </div>
+                </div>
+                <div class="layui-inline table-search-btn-groups">
+                    <button class="layui-btn layui-btn-sm"
+                            lay-submit lay-filter="mx-search-btn" id="mx-search-btn">查询
+                    </button>
+                    <button class="layui-btn layui-btn-sm"
+                            lay-submit lay-filter="mx-reset-btn" id="mx-reset-btn">重置
+                    </button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <div class="table-head">车场人员名单</div>
+    <table class="layui-table" id="driver-info-table" lay-filter="driver-info-table">
+    </table>
+</div>
+<script type="text/html" id="indexTpl">
+    {{d.LAY_TABLE_INDEX+1}}
+</script>
+<link rel="stylesheet" href="modules/parking-lot-employee.css">
+<script src="modules/parking-lot-employee.js"></script>
+<script type="text/html" id="DriverInfoTableToolBar">
+    <div class="layui-row">
+        <div class="layui-col-md12 layui-col-lg12">
+            <button class="layui-btn layui-btn-sm" lay-event="add">
+                添加
+            </button>
+            <button class="layui-btn layui-btn-sm" id="upload-driver-info" lay-event="upload">
+                上传并覆盖
+            </button>
+            <button class="layui-btn layui-btn-sm" lay-event="downloadTemplate">
+                模板下载
+            </button>
+            <button class="layui-btn layui-btn-sm" lay-event="export">
+                导出
+            </button>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="barDemo">
+    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data>
+
+        <!-- 2019年开始 -->
+        <record id="plan_config_start_2019" model="metro_park_maintenance.plan_config">
+            <field name="name">2019配置</field>
+            <field name="config_data" eval="[(5, 0, 0),
+                   (0,0,{'index':0, 'rule': ref('repair_rule_A')}),
+                   (0,0,{'index':1, 'rule': ref('repair_rule_B')}),
+                   (0,0,{'index':2, 'rule': ref('repair_rule_C')}),
+                   (0,0,{'index':3, 'rule': ref('repair_rule_A')}),
+                   (0,0,{'index':4, 'rule': ref('repair_rule_B')}),
+                   (0,0,{'index':5, 'rule': ref('repair_rule_D1')}),
+                   (0,0,{'index':6, 'rule': ref('repair_rule_A')}),
+                   (0,0,{'index':7, 'rule': ref('repair_rule_B')}),
+                   (0,0,{'index':8, 'rule': ref('repair_rule_C')}),
+                   (0,0,{'index':9, 'rule': ref('repair_rule_A')}),
+                   (0,0,{'index':10, 'rule': ref('repair_rule_B')}),
+                   (0,0,{'index':11, 'rule': ref('repair_rule_D2')}),
+                   (0,0,{'index':12, 'rule': ref('repair_rule_A')}),
+                   (0,0,{'index':13, 'rule': ref('repair_rule_B')}),
+                   (0,0,{'index':14, 'rule': ref('repair_rule_C')}),
+                   (0,0,{'index':15, 'rule': ref('repair_rule_A')}),
+                   (0,0,{'index':16, 'rule': ref('repair_rule_B')}),
+                   (0,0,{'index':17, 'rule': ref('repair_rule_D3')}),
+                   (0,0,{'index':18, 'rule': ref('repair_rule_A')}),
+                   (0,0,{'index':19, 'rule': ref('repair_rule_B')}),
+                   (0,0,{'index':20, 'rule': ref('repair_rule_C')}),
+                   (0,0,{'index':21, 'rule': ref('repair_rule_A')}),
+                   (0,0,{'index':22, 'rule': ref('repair_rule_B')}),
+                   (0,0,{'index':23, 'rule': ref('repair_rule_D4')})]" />
+        </record>
+
+
+    </data>
+</odoo>

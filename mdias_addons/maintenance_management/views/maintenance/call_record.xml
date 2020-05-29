@@ -1,0 +1,54 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="maintenance_management_call_record_tree_id">
+            <field name="name">报警记录</field>
+            <field name="model">maintenance_management.call_record</field>
+            <field name="arch" type="xml">
+                <tree js_class="export_tree_button"
+                      options="{'height': 'full-270'}"
+                      create="0"
+                      search_ex_template="call_record_template">
+                    <field name="write_date" string="记录时间"  width="200"/>
+                    <field name="failure_time"  width="200"/>
+                    <field name="place"/>
+                    <field name="site" width="200"/>
+                    <field name="equipment" width="200"/>
+                    <field name="content" width="450"/>
+                    <field name="ip_site"/>
+                    <field name="maintenance_advice" width="200"/>
+                    <field name="alarm_level" width="200"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="maintenance_management_call_record_form_id">
+            <field name="name">报警记录</field>
+            <field name="model">maintenance_management.call_record</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="place"/>
+                        <field name="site"/>
+                        <field name="equipment"/>
+                        <field name="content"/>
+                        <field name="ip_site"/>
+                        <field name="maintenance_advice"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="maintenance_management_call_record_act_id">
+            <field name="name">报警记录</field>
+            <field name="res_model">maintenance_management.call_record</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="maintenance_management_call_record_act_id"
+                  id="maintenance_management_call_record_menu_id"
+                  name="报警记录"
+                  parent="maintenance_system_set_menu"
+                  groups="group_maintenance_management_device_monitor_alarm_look"/>
+    </data>
+</odoo>

@@ -1,0 +1,97 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.dispatch_detail_list">
+            <field name="name">调车详情</field>
+            <field name="model">metro_park_dispatch.dispatch_detail</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table">
+                    <field name="rail"/>
+                    <field name="operation" />
+                    <field name="train"/>
+                    <field name="train_num"/>
+                    <field name="display_time"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_dispatch.dispatch_detail_form">
+            <field name="name">请车详情</field>
+            <field name="model">metro_park_dispatch.dispatch_detail</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="rail">rail</label>
+                        <div class="col-sm-10">
+                            <field name="rail"
+                                   options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label"
+                               for="operation">operation</label>
+                        <div class="col-sm-10">
+                            <field name="operation"
+                                   options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label"
+                               for="train">train</label>
+                        <div class="col-sm-10">
+                            <field name="train"
+                                   options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label"
+                               for="train_num">train_num</label>
+                        <div class="col-sm-10">
+                            <field name="train_num"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label"
+                               for="work_start_time">work_start_time</label>
+                        <div class="col-sm-10">
+                            <field name="work_start_time"
+                                   options="{'control_type': 'time'}" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label"
+                               for="work_start_time">work_end_time</label>
+                        <div class="col-sm-10">
+                            <field name="work_end_time"
+                                   options="{'control_type': 'time'}" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label"
+                               for="remark">remark</label>
+                        <div class="col-sm-10">
+                            <field name="remark"/>
+                        </div>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window"
+                id="metro_park_dispatch.dispatch_detail_act_window">
+            <field name="name">调车详情</field>
+            <field name="res_model">metro_park_dispatch.dispatch_detail</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+    

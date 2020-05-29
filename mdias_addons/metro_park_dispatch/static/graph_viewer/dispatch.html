@@ -1,0 +1,276 @@
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=5,IE=9" ><![endif]-->
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>调度计划</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" type="text/css" href="styles/dispatch.css">
+        <link rel="stylesheet" type="text/css" href="styles/element.css">
+
+        <script type="text/javascript" src="lib/lodash.min.js"></script>
+        <script type="text/javascript" src="lib/underscore.json.js"></script>
+        <script type="text/javascript" src="lib/jquery.min.js"></script>
+        <script type="text/javascript" src="lib/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="lib/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="lib/jquery.keyboard.extension-typing.js"></script>
+        <script type="text/javascript" src="lib/vue.js"></script>
+        <script type="text/javascript" src="lib/eleindex.js"></script>
+        <script type="text/javascript" src="lib/pop.min.js"></script>
+        <script type="text/javascript" src="lib/context.js"></script>
+        <script type="text/javascript" src="lib/moment.min.js"></script>
+        <script type="text/javascript" src="lib/socket.io.js"></script>
+        <script type="text/javascript" src="js/dispatch.js"></script>
+    </head>
+
+    <body style="height: 100%" onbeforeunload="return leaveWarning()">
+        <div class="dispatch_list">
+            <div class="left_box">
+                <div class="train_plan_box">
+                    <h3>
+                        <div>收发车计划</div>
+                        <p>Delivery vehicle program</p>
+                    </h3>
+                    <el-table size="mini" ref="train_plan_table" :highlight-current-row='true'
+                        style="border-top:1px solid #ddd;width: 100%" :data="train_in_out_plans" height="496"
+                        :row-class-name="get_row_class" :row-key="get_row_key">
+                        <el-table-column width="50" type="expand">
+                            <template slot-scope="scope">
+                                <el-table :data="scope.row.instructs" style="width: 100%"
+                                    :row-class-name="get_row_class"
+                                    :default-sort="{prop: 'sequence', order: 'ascending'}" :row-key="get_row_key">
+                                    <el-table-column type="index" width="50">
+                                    </el-table-column>
+                                    <el-table-column prop="start_rail" label="起始股道" :formatter="formatter_start_rail"
+                                        width="120">
+                                    </el-table-column>
+                                    <el-table-column prop="end_rail" label="目标股道" :formatter="formatter_end_rail"
+                                        width="120">
+                                    </el-table-column>
+                                    <el-table-column prop="attention" label="注意事项" width="180">
+                                    </el-table-column>
+                                    <el-table-column prop="state" label="进路状态">
+                                    </el-table-column>
+                                    <el-table-column prop="condition" label="司机状态">
+                                        <template slot-scope="subscope">
+                                            <i style="color:green" v-if='subscope.row.condition'
+                                                class="el-icon-check"></i>
+                                            <div v-else>未知</div>
+                                        </template>
+                                    </el-table-column>
+                                    <el-table-column prop="end_time" label="完成时间">
+                                        <template slot-scope="subscope">
+                                            {{subscope.row.end_time? $moment(subscope.row.end_time).format('HH:mm:ss'): "未知"}}
+                                        </template>
+                                    </el-table-column>
+                                    <el-table-column label="操作" width="280">
+                                        <template slot-scope="subscope">
+                                            <el-button
+                                                v-if="subscope.row.prepare=='prepare' && ['执行中', '已完成'].indexOf( subscope.row.state) == -1"
+                                                @click.native.prevent="execute_plan(scope.row, false)" type="text"
+                                                size="small">
+                                                排列进路
+                                            </el-button>
+                                            <el-button
+                                                v-if="['unprepare', 'finished'].indexOf(subscope.row.prepare) == -1 && subscope.row.state != '已完成'"
+                                                @click.native.prevent="manual_complete_plan(scope.row, false)"
+                                                type="text" size="small">
+                                                确认完成
+                                            </el-button>
+                                        </template>
+                                    </el-table-column>
+                                </el-table>
+                            </template>
+                        </el-table-column>
+                        <el-table-column prop="index" width="50"></el-table-column>
+                        <el-table-column prop="trainNo" label="车次号" width="90"></el-table-column>
+                        <el-table-column prop="trainId" :formatter="formatter_train_id" label="车号" width="90">
+                        </el-table-column>
+                        <el-table-column prop="start_time" label="计划开始时间" sortable>
+                            <template slot-scope="subscope">
+                                {{subscope.row.start_time?$moment(subscope.row.start_time).format('HH:mm:ss'):"未知"}}
+                            </template>
+                        </el-table-column>
+                        <el-table-column prop="endtime" label="完成时间">
+                            <template slot-scope="subscope">
+                                {{subscope.row.end_time?$moment(subscope.row.end_time).format('HH:mm:ss'):"未知"}}
+                            </template>
+                        </el-table-column>
+                        <el-table-column prop="start_rail" label="起始股道" :formatter="formatter_start_rail" width="90">
+                        </el-table-column>
+                        <el-table-column prop="end_rail" label="目标股道" :formatter="formatter_end_rail" width="90">
+                        </el-table-column>
+                        <el-table-column prop="type" label="类型" width="90">
+                            <template slot-scope="subscope">
+                                <span style="color:rgb(87, 186, 211)" v-if="subscope.row.type == 'train_back'">收车</span>
+                                <span style="color:yellow" v-else>发车</span>
+                            </template>
+                        </el-table-column>
+                        <el-table-column prop="state" label="状态" width="120">
+                            <template slot-scope="subscope">
+                                <span :class="'plan_'+ subscope.row.id + '_' + subscope.row.type"
+                                    :data-plan-id="subscope.row.id" :data-plan-type="subscope.row.type">
+                                    {{subscope.row.state}}
+                                </span>
+                            </template>
+                        </el-table-column>
+                        <el-table-column label="操作">
+                            <template slot-scope="subscope">
+                                <el-button v-if="['已完成'].indexOf(subscope.row.state) == -1"
+                                    @click.native.prevent="reback_plan(subscope.row)" type="text" size="small">
+                                    撤回计划
+                                </el-button>
+                                <el-button v-if="subscope.row.state != '已完成' && subscope.row.start_rail != '待定'"
+                                    @click.native.prevent="manual_complete_plan(subscope.row, true)" type="text"
+                                    size="small">
+                                    确认完成
+                                </el-button>
+                                <el-button v-if="subscope.row.state == '已完成'"
+                                    @click.native.prevent="clear_finish_plan(subscope.row)" type="text" size="small">
+                                    清除
+                                </el-button>
+                            </template>
+                        </el-table-column>
+                    </el-table>
+                </div>
+
+                <div class="dispatch_box">
+                    <!-- 调车计划 -->
+                    <h3>
+                        <div>调车计划</div>
+                        <p>train dispatch</p>
+                    </h3>
+                    <el-table ref="dispatch_table" size="mini" :highlight-current-row='true'
+                        style="border-top:1px solid #ddd; width: 100%" :data="dispatch_plans" height="496"
+                        :row-class-name="get_row_class" :row-key="get_row_key">
+                        <el-table-column width="50" type="expand">
+                            <template slot-scope="scope">
+                                <el-table :data="scope.row.instructs" style="width: 100%"
+                                    :row-class-name="get_detail_row_class"
+                                    :default-sort="{prop: 'sequence', order: 'ascending'}" :row-key="get_row_key">
+                                    <el-table-column type="index" width="50">
+                                    </el-table-column>
+                                    <el-table-column prop="start_rail" label="起始股道" :formatter="formatter_start_rail"
+                                        width="120">
+                                    </el-table-column>
+                                    <el-table-column prop="end_rail" label="目标股道" :formatter="formatter_end_rail"
+                                        width="120">
+                                    </el-table-column>
+                                    <el-table-column prop="attention" label="注意事项" width="180">
+                                    </el-table-column>
+                                    <el-table-column prop="state" label="进路状态">
+                                    </el-table-column>
+                                    <el-table-column prop="condition" label="司机状态">
+                                        <template slot-scope="subscope">
+                                            <i style="color:green" v-if='subscope.row.condition'
+                                                class="el-icon-check"></i>
+                                            <div v-else>未知</div>
+                                        </template>
+                                    </el-table-column>
+                                    <el-table-column prop="end_time" label="完成时间">
+                                        <template slot-scope="subscope">
+                                            {{subscope.row.end_time? $moment(subscope.row.end_time).format('HH:mm:ss'): "未知"}}
+                                        </template>
+                                    </el-table-column>
+                                    <el-table-column label="操作" width="280">
+                                        <template slot-scope="subscope">
+                                            <el-button
+                                                v-if="subscope.row.prepare=='prepare' && ['执行中', '已完成'].indexOf( subscope.row.state) == -1"
+                                                @click.native.prevent="execute_plan(scope.row, false)" type="text"
+                                                size="small">
+                                                排列进路
+                                            </el-button>
+                                            <el-button
+                                                v-if="['unprepare', 'finished'].indexOf(subscope.row.prepare) == -1 && subscope.row.state != '已完成'"
+                                                @click.native.prevent="manual_complete_plan(scope.row, false)"
+                                                type="text" size="small">
+                                                确认完成
+                                            </el-button>
+                                        </template>
+                                    </el-table-column>
+                                </el-table>
+                            </template>
+                        </el-table-column>
+                        <el-table-column type="index" width="50"></el-table-column>
+                        <el-table-column prop="trainId" label="车号" :formatter="formatter_train_id" width="90">
+                        </el-table-column>
+                        <el-table-column prop="start_time" label="计划开始时间" sortable></el-table-column>
+                        <el-table-column prop="end_time" label="完成时间">
+                            <template slot-scope="scope">
+                                {{scope.row.end_time? $moment(scope.row.end_time).format('HH:mm:ss'): "未知"}}
+                            </template>
+                        </el-table-column>
+                        <el-table-column prop="job" label="作业内容" width="180"></el-table-column>
+                        <el-table-column prop="start_rail" label="起始股道" :formatter="formatter_start_rail" width="90">
+                        </el-table-column>
+                        <el-table-column prop="end_rail" label="目标股道" :formatter="formatter_end_rail" width="90">
+                        </el-table-column>
+                        <el-table-column prop="type" label="类型" width="90">
+                            <template slot-scope="subscope">
+                                <span style="color:blueviolet">{{subscope.row.type == "train_dispatch"?"调车":""}}</span>
+                            </template>
+                        </el-table-column>
+                        <el-table-column prop="state" label="状态"></el-table-column>
+                        <el-table-column label="操作">
+                            <template slot-scope="scope">
+                                <el-button v-if="['已完成'].indexOf(scope.row.state) == -1"
+                                    @click.native.prevent="reback_plan(scope.row)" type="text" size="small">
+                                    撤回计划
+                                </el-button>
+                                <el-button v-if="['已完成'].indexOf(scope.row.state) == -1"
+                                    @click.native.prevent="manual_complete_plan(scope.row, true)" type="text"
+                                    size="small">
+                                    确认完成
+                                </el-button>
+                                <el-button v-if="scope.row.state == '已完成'"
+                                    @click.native.prevent="clear_finish_plan(scope.row)" type="text" size="small">
+                                    清除
+                                </el-button>
+                            </template>
+                        </el-table-column>
+                    </el-table>
+                </div>
+            </div>
+            <div class="right_box">
+                <div class="log_box log_info">
+                    <h3>
+                        <div>系统日志</div>
+                        <p>system logs</p>
+                    </h3>
+                    <el-table :highlight-current-row='true' style="border-top:1px solid #ddd; width: 100%" height="496"
+                        :data="system_logs" :row-class-name="get_log_row_class">
+                        <el-table-column type="index" width="40">
+                        </el-table-column>
+                        <el-table-column prop="content" label="内容">
+                        </el-table-column>
+                    </el-table>
+                </div>
+                <div class="monitor_box">
+                    <h3>
+                        <div>指令监控</div>
+                        <p>system logs</p>
+                    </h3>
+                    <el-table :highlight-current-row='true' style="border-top:1px solid #ddd; width: 100%" height="496"
+                        :default-expand-all="true" :data="instruct_status_monitors">
+                        <el-table-column width="50" type="expand">
+                            <template slot-scope="scope">
+                                <el-table :data="scope.row.sections">
+                                    <el-table-column prop="uid" label="名称"></el-table-column>
+                                    <el-table-column prop="state" label="值"></el-table-column>
+                                </el-table>
+                            </template>
+                        </el-table-column>
+                        <el-table-column prop="plan" label="进路">
+                            <template slot-scope="scope">
+                                {{get_instruct_desc(scope.row.plan, scope.row.instruct)}}
+                            </template>
+                        </el-table-column>
+                    </el-table>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

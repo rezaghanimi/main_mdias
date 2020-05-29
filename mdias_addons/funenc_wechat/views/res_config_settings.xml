@@ -1,0 +1,41 @@
+<odoo>
+    <data>
+        <record id="res_config_settings_view_form" model="ir.ui.view">
+            <field name="name">res.config.settings.view.form.inherit.base.setup</field>
+            <field name="model">res.config.settings</field>
+            <field name="priority" eval="100"/>
+            <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[hasclass('settings')]" position="inside">
+                    <div class="app_settings_block" data-string="General Settings" string="企业微信"
+                         data-key="wechat">
+                        <div id="business_documents">
+                            <h2>企业微信</h2>
+                            <div class="row mt16 o_settings_container">
+                                <div class="col-12 col-lg-6 o_setting_box">
+                                    <div class="o_setting_right_pane">
+                                        <span class="o_form_label">同步批次数量</span>
+                                        <span class="fa fa-lg fa-building-o"
+                                              title="Values set here are company-specific."
+                                              aria-label="Values set here are company-specific."
+                                              groups="base.group_multi_company" role="img"/>
+                                        <div class="text-muted">
+                                            按此数量来划分批次，创建记录
+                                        </div>
+                                        <div class="content-group">
+                                            <div class="mt16 row">
+                                                <label for="batch_num"
+                                                       class="col-3 col-lg-3 o_light_label"/>
+                                                <field name="batch_num" class="oe_inline" required="1"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

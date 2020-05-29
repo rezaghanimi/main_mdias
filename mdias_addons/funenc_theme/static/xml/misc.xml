@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="funenc.config_buttons">
+        <div class="o_form_buttons_view" role="toolbar" aria-label="Main actions">
+            <button t-if="widget.is_action_enabled('edit')" type="button"
+                    class="btn btn-primary o_form_button_edit" accesskey="a">
+                Edit
+            </button>
+            <button t-if="widget.is_action_enabled('create')" type="button"
+                    class="btn btn-secondary o_form_button_create" accesskey="c">
+                Create
+            </button>
+        </div>
+        <div class="o_form_buttons_edit" role="toolbar" aria-label="Main actions">
+            <button type="button"
+                    class="btn btn-primary o_form_button_save" accesskey="s">
+                Save
+            </button>
+        </div>
+    </t>
+
+    <t t-name="funenc.selection">
+        <span t-if="widget.mode === 'readonly'"/>
+        <select t-if="widget.mode !== 'readonly'"
+            style="width: 90%"
+            t-att-name="widget.name"
+            t-att-tabindex="widget.attrs.tabindex"
+            t-att-autofocus="widget.attrs.autofocus"
+            t-att-id="widget.idForLabel"/>
+    </t>
+
+    <div t-name="Pager">
+        <span class="btn-group" aria-atomic="true">
+             <t t-if="widget.options.withAccessKey">
+                <t t-set="att_prev" t-value="{'accesskey': 'p'}" />
+            </t>
+            <button type="button" class="fa fa-chevron-left btn btn-secondary o_pager_previous" t-att="att_prev" aria-label="Previous" title="Previous" tabindex="-1"/>
+        </span>
+        <span class="o_pager_counter">
+            <span class="o_pager_value"></span> / <span class="o_pager_limit"></span>
+        </span>
+        <span class="btn-group" aria-atomic="true">
+            <t t-if="widget.options.withAccessKey">
+                <t t-set="att_next" t-value="{'accesskey': 'n'}" />
+            </t>
+            <button type="button" class="fa fa-chevron-right btn btn-secondary o_pager_next" t-att="att_next" aria-label="Next" title="Next" tabindex="-1"/>
+        </span>
+    </div>
+
+</templates>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!--  按扭表  -->
+      <function id="init_btn_table"
+                model="metro_park_base_data_10.init_btn_table"
+                name="init_button_table"
+                eval="[]"/>
+
+    </data>
+</odoo>

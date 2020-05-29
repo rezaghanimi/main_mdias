@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="metro_park_base_res" name="metro_park_base_res" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+
+                <!-- css -->
+                <link rel="stylesheet" href="/metro_park_base/static/mxgraph/styles/grapheditor.css"/>
+                <link rel="stylesheet" href="/metro_park_base/static/css/style.css"/>
+                <link rel="stylesheet" href="/metro_park_base/static/js/pack/common.css"/>
+
+                <link rel="stylesheet" href="/metro_park_base/static/css/rrweb.min.css"/>
+                <link rel="stylesheet" href="/metro_park_base/static/css/rrweb-player.css"/>
+
+                <script type="text/javascript" src="/metro_park_base/static/js/pack/common.js"/>
+
+                <!-- js -->
+                <script type="text/javascript" src="/metro_park_base/static/mxgraph/js/jquery.keyboard.js"/>
+                <script type="text/javascript" src="/metro_park_base/static/js/web_client.js"/>
+                <script type="text/javascript"
+                        src="/metro_park_base/static/mxgraph/js/jquery.keyboard.extension-typing.js"/>
+
+                <!-- graph 插件 -->
+                <script type="text/javascript" src="/metro_park_base/static/map_widget.js"/>
+                <script type="text/javascript" src="/metro_park_base/static/park_map_action.js"/>
+                <script type="text/javascript" src="/metro_park_base/static/park_mark_field.js"/>
+                <script type="text/javascript" src="/metro_park_base/static/electric_area.js"/>
+
+                <script type="text/javascript" src="/metro_park_base/static/js/auto_open_screens.js"/>
+
+                <script type="text/javascript" src="/metro_park_base/static/js/replay.js"/>
+                <script type="text/javascript" src="/metro_park_base/static/js/rrweb-player.js"/>
+
+            </xpath>
+        </template>
+
+        <template id="metro_park_mxgraph_js" name="metro_park_mxgraph_js" inherit_id="web.layout">
+            <xpath expr="//t[@t-raw]" position="after">
+                <script type="text/javascript" src="/metro_park_base/static/init_mxgraph_path.js"/>
+                <script type="text/javascript" src="/metro_park_base/static/mxgraph/js/Init.js"/>
+                <script type="text/javascript" src="/metro_park_base/static/mxgraph/deflate/pako.min.js"/>
+                <script type="text/javascript" src="/metro_park_base/static/mxgraph/deflate/base64.js"/>
+                <script type="text/javascript" src="/metro_park_base/static/mxgraph/jscolor/jscolor.js"/>
+                <script type="text/javascript"
+                        src="/metro_park_base/static/mxgraph/sanitizer/sanitizer.min.js"/>
+                <script type="text/javascript" src="/metro_park_base/static/mxgraph/src/js/mxClient.js"/>
+                <script type="text/javascript" src="/metro_park_base/static/mxgraph/js/EditorUi.js"/>
+                <script type="text/javascript" src="/metro_park_base/static/mxgraph/js/Editor.js"/>
+                <script type="text/javascript" src="/metro_park_base/static/mxgraph/js/Sidebar.js"/>
+                <script type="text/javascript" src="/metro_park_base/static/mxgraph/js/Graph.js"/>
+                <script type="text/javascript" src="/metro_park_base/static/mxgraph/js/Format.js"/>
+                <script type="text/javascript" src="/metro_park_base/static/mxgraph/js/Shapes.js"/>
+                <script type="text/javascript" src="/metro_park_base/static/mxgraph/js/Actions.js"/>
+                <script type="text/javascript" src="/metro_park_base/static/mxgraph/js/Menus.js"/>
+                <script type="text/javascript" src="/metro_park_base/static/mxgraph/js/Toolbar.js"/>
+                <script type="text/javascript" src="/metro_park_base/static/mxgraph/js/Dialogs.js"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>

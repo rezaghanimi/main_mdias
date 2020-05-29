@@ -1,0 +1,11 @@
+<odoo>
+    <data>
+        <!--太平园-->
+        <record id="tai_ping_yuan" model="metro_park_base.location">
+            <field name="name">太平园</field>
+            <field name="alias">taipngyuan</field>
+            <field name="line" ref="metro_park_base_data_10.line10"/>
+            <field name="location_type" ref="metro_park_base.location_type_special"/>
+        </record>
+    </data>
+</odoo>

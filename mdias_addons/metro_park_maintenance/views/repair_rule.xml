@@ -1,0 +1,277 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.repair_rule_select_list">
+            <field name="name">修程设定</field>
+            <field name="model">metro_park_maintenance.repair_rule</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table"
+                      options="{'height': '400'}"
+                      search_ex_template="rule_search_template">
+                    <field name="no" fixed_left="1"/>
+                    <field name="dev_standard"/>
+                    <field name="name"/>
+                    <field name="balance"/>
+                    <field name="rule_type"/>
+                    <field name="target_plan_type"/>
+                    <field name="period"/>
+                    <field name="positive_offset"/>
+                    <field name="negative_offset"/>
+                    <field name="run_miles"/>
+                    <field name="positive_offset_miles"/>
+                    <field name="repair_days"/>
+                    <field name="plan_method"/>
+                    <field name="rule_status"/>
+                    <field name="priority"/>
+                    <field name="overlap_rules" widget="many2many_tags"/>
+                    <field name="work_start_time" widget="datetime" options="{'control_type': 'time'}"/>
+                    <field name="work_end_time" widget="datetime" options="{'control_type': 'time'}"/>
+                    <field name="work_consume_time"/>
+                    <field name="max_plan_per_day"/>
+                    <field name="nax_plan_per_weekend_day"/>
+                    <field name="repair_content"/>
+                    <field name="locations" widget="many2many_tags" width="251"/>
+                    <field name="work_requirement" widget="many2many_tags"/>
+                    <field name="need_retain"/>
+                    <field name="need_train_test"/>
+                    <field name="pms_department"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.repair_rule_list">
+            <field name="name">修程设定</field>
+            <field name="model">metro_park_maintenance.repair_rule</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table"
+                      options="{'height': 'full-330'}"
+                      search_ex_template="rule_search_template">
+                    <field name="no" fixed_left="1"/>
+                    <field name="dev_standard"/>
+                    <field name="name"/>
+                    <field name="balance"/>
+                    <field name="rule_type"/>
+                    <field name="target_plan_type"/>
+                    <field name="period"/>
+                    <field name="positive_offset"/>
+                    <field name="negative_offset"/>
+                    <field name="run_miles"/>
+                    <field name="positive_offset_miles"/>
+                    <field name="repair_days"/>
+                    <field name="plan_method"/>
+                    <field name="rule_status"/>
+                    <field name="priority"/>
+                    <field name="overlap_rules" widget="many2many_tags"/>
+                    <field name="work_start_time" widget="datetime" options="{'control_type': 'time'}"/>
+                    <field name="work_end_time" widget="datetime" options="{'control_type': 'time'}"/>
+                    <field name="work_consume_time"/>
+                    <field name="max_plan_per_day"/>
+                    <field name="nax_plan_per_weekend_day"/>
+                    <field name="repair_content"/>
+                    <field name="locations" widget="many2many_tags" width="251"/>
+                    <field name="work_requirement" widget="many2many_tags"/>
+                    <field name="need_retain"/>
+                    <field name="need_train_test"/>
+                    <field name="pms_department"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.repair_rule_form">
+            <field name="name">修程设定</field>
+            <field name="model">metro_park_maintenance.repair_rule</field>
+            <field name="arch" type="xml">
+                <form style="max-width:800px">
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="dev_standard">dev_standard</label>
+                        <div class="col-sm-3">
+                            <field name="dev_standard"
+                                   options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="target_plan_type">target_plan_type</label>
+                        <div class="col-sm-3">
+                            <field name="target_plan_type"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="repair_days">repair_days</label>
+                        <div class="col-sm-3">
+                            <field name="repair_days"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="rule_type">rule_type</label>
+                        <div class="col-sm-3">
+                            <field name="rule_type"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="name">name</label>
+                        <div class="col-sm-3">
+                            <field name="name" required="1"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="no">no</label>
+                        <div class="col-sm-3">
+                            <field name="no" required="1"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" attrs="{'invisible':[('rule_type','=','temp')]}">
+                        <label class="col-sm-2 col-form-label" for="period">period</label>
+                        <div class="col-sm-3">
+                            <field name="period" attrs="{'required':[('rule_type','!=','temp')]}"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="max_plan_per_day">max_plan_per_day</label>
+                        <div class="col-sm-3">
+                            <field name="max_plan_per_day"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" attrs="{'invisible':[('rule_type','=','temp')]}">
+                        <label class="col-sm-2 col-form-label" for="nax_plan_per_weekend_day">nax_plan_per_weekend_day</label>
+                        <div class="col-sm-3">
+                            <field name="nax_plan_per_weekend_day"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" attrs="{'invisible':[('rule_type','=','temp')]}">
+                        <label class="col-sm-2 col-form-label" for="positive_offset">positive_offset</label>
+                        <div class="col-sm-3">
+                            <field name="positive_offset" attrs="{'required':[('rule_type','!=','temp')]}"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="negative_offset">negative_offset</label>
+                        <div class="col-sm-3">
+                            <field name="negative_offset" attrs="{'required':[('rule_type','!=','temp')]}"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" attrs="{'invisible':[('rule_type','!=','mile')]}">
+                        <label class="col-sm-2 col-form-label" for="run_miles">run_miles</label>
+                        <div class="col-sm-3">
+                            <field name="run_miles" attrs="{'required':[('rule_type','=','mile')]}"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="positive_offset_miles">positive_offset_miles</label>
+                        <div class="col-sm-3">
+                            <field name="positive_offset_miles" attrs="{'required':[('rule_type','=','mile')]}"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="plan_method">plan_method</label>
+                        <div class="col-sm-3">
+                            <field name="plan_method"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="balance">balance</label>
+                        <div class="col-sm-3">
+                            <field name="balance"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="rule_status">rule_status</label>
+                        <div class="col-sm-3">
+                            <field name="rule_status"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="priority">priority</label>
+                        <div class="col-sm-3">
+                            <field name="priority"/>
+                        </div>
+                    </div>
+
+                    <!-- 这里有个二级联动 -->
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="work_class">work_class</label>
+                        <div class="col-sm-3">
+                            <field name="work_class"
+                                   widget="many2many_tags"
+                                   options="{'js_class': 'left_department_tree','direct_search': True}"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="work_start_time">work_start_time</label>
+                        <div class="col-sm-3 d-flex">
+                            <field name="work_start_time" widget="datetime" options="{'control_type': 'time'}"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="work_end_time">work_end_time</label>
+                        <div class="col-sm-3 d-flex">
+                            <field name="work_end_time" widget="datetime" options="{'control_type': 'time'}"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="work_consume_time">work_consume_time</label>
+                        <div class="col-sm-3">
+                            <field name="work_consume_time"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="overlap_rules">overlap_rules</label>
+                        <div class="col-sm-6">
+                            <field name="overlap_rules"
+                                   widget="many2many_tags"
+                                   options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="repair_content">repair_content</label>
+                        <div class="col-sm-6">
+                            <field name="repair_content"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="locations">locations</label>
+                        <div class="col-sm-6">
+                            <field name="locations" widget="many2many_tags" options="{'no_create_edit':1}"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="work_requirement">work_requirement</label>
+                        <div class="col-sm-6">
+                            <field name="work_requirement"
+                                   widget="many2many_tags"
+                                   options="{'no_create_edit':1}"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="pms_department">pms_department</label>
+                        <div class="col-sm-3">
+                            <field name="pms_department" style="margin-top:5px;"
+                                   options="{'no_create': True, 'no_open': True}"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="need_retain">need_retain</label>
+                        <div class="col-sm-3">
+                            <field name="need_retain" style="margin-top:5px;"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="need_train_test">need_train_test</label>
+                        <div class="col-sm-3">
+                            <field name="need_train_test" style="margin-top:5px;"/>
+                        </div>
+                    </div>
+
+
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="metro_park_maintenance.repair_rule_act_window">
+            <field name="name">修程设定</field>
+            <field name="res_model">metro_park_maintenance.repair_rule</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>
+
+    

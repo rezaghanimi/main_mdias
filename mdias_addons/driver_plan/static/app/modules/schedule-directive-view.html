@@ -1,0 +1,185 @@
+<div class="layui-row">
+    <button class="layui-btn layui-btn-sm" id="directiveSchedule" style="margin-left: 10px">
+        下发派班表
+    </button>
+</div>
+<div class="layui-row">
+    <div class="table-search">
+        <form class="layui-form" id="mx-table-search-form">
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">搜索条件</label>
+                    <div class="layui-input-block">
+                        <input class="layui-input" type="text" autocomplete="off" placeholder="请输入派班表名称"
+                               name="param">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">下发时间</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="date" placeholder="请选择日期"
+                               id="date"
+                               readonly="readonly"
+                               autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline table-search-btn-groups">
+                    <button class="layui-btn layui-btn-sm"
+                            lay-submit lay-filter="mx-search-btn" id="mx-search-btn">查询
+                    </button>
+                    <button class="layui-btn layui-btn-sm"
+                            lay-submit lay-filter="mx-reset-btn" id="mx-reset-btn">重置
+                    </button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+<div class="layui-row" style="margin-top: 10px;">
+    <div class="table-head">计划下达反馈列表</div>
+    <table class="layui-table" id="schedule-directive-table" lay-filter="schedule-directive-table">
+    </table>
+</div>
+<div id="timeScheduleEdit" style="display: none">
+    <div class="layui-row">
+        <div class="layui-col-lg10 layui-col-lg-offset1">
+            <form class="layui-form custom-form-schedule" action="" style="margin-top: 40px;">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">派班表选择</label>
+                    <div class="layui-input-block" id="scheduleSelect">
+
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">定时发布</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="scheduleTime" id="scheduleTimeInput" readonly
+                               placeholder="定时发布时间点"
+                               autocomplete="off"
+                               class="layui-input">
+                    </div>
+
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">出勤室内广播时间提前量</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="aheadTime" id="aheadTimeInput" readonly
+                               lay-verify="required"
+                               placeholder="出勤室内广播时间提前量"
+                               autocomplete="off"
+                               class="layui-input">
+                    </div>
+
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">通知信息模板</label>
+                    <div class="layui-input-block">
+                        <textarea placeholder="" class="layui-textarea" name="content">[姓名]您好，您于[日期]的出勤时间为[出勤时间]，出勤地点为[出勤地点]，当日班次号为[班次号]，请及时调整个人作息时间，按时出勤，祝工作顺利，身体健康。</textarea>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-row">
+                        <button type="button" class="layui-btn layui-btn-sm template"
+                                style="margin-left: 110px;">[姓名]
+                        </button>
+                        <button type="button" class="layui-btn layui-btn-sm template">[日期]</button>
+                        <button type="button" class="layui-btn layui-btn-sm template">[出勤时间]</button>
+                        <button type="button" class="layui-btn layui-btn-sm template">[出勤地点]</button>
+                        <button type="button" class="layui-btn layui-btn-sm template">[班次号]</button>
+                    </div>
+                    <div class="layui-row"></div>
+                </div>
+                <div class="layui-form-item text-align-center layui-hide">
+                    <button class="layui-btn layui-btn-sm" id="submitTimeSchedule" lay-submit=""
+                            lay-filter="time-schedule-select">提交
+                    </button>
+                    <button type="reset" class="layui-btn layui-btn-primary layui-btn-sm">重置</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+<script type="text/html" id="indexTpl">
+    {{d.LAY_TABLE_INDEX+1}}
+</script>
+<script type="text/html" id="barDemo">
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="delExtra">删除</a>
+    <a class="layui-btn layui-btn-xs" lay-event="urgent">催办</a>
+    <a class="layui-btn layui-btn-xs" lay-event="detail">详情</a>
+</script>
+
+<script id="scheduleTableSelectTemplate" type="text/html">
+    <select name="scheduleTableId" lay-verify="required" lay-filter="rule">
+        <option value="">请选择派班表</option>
+        {{# layui.each(d, function(index, item){ }}
+        <option value="{{item.id}}">{{item.name}}</option>
+        {{# }); }}
+    </select>
+</script>
+<div id="directive-detail-info" style="display: none">
+    <div class="layui-row">
+        <div class="layui-col-lg6">
+
+            <!--            <table class="layui-table">-->
+            <!--                <thead>-->
+            <!--                <tr>-->
+            <!--                    <td colspan="2">已反馈人员</td>-->
+            <!--                </tr>-->
+            <!--                <tr>-->
+            <!--                    <th>姓名</th>-->
+            <!--                    <th>电话</th>-->
+            <!--                </tr>-->
+            <!--                </thead>-->
+            <!--                <tbody id="feedbackList">-->
+            <!--                </tbody>-->
+            <!--            </table>-->
+            <div class="table-head">反馈列表</div>
+            <div class="search-div">
+                <input type="text" id="searchFeedback"
+                       placeholder="请输入姓名或者电话号码" autocomplete="off" class="layui-input">
+                <i class="layui-icon layui-icon-search train-schedule-icon" id="searchFeedbackButton"></i>
+            </div>
+            <table class="layui-table" id="feedback-table" lay-filter="feedback-table"></table>
+        </div>
+        <div class="layui-col-lg6">
+            <!--            <table class="layui-table">-->
+            <!--                <thead>-->
+            <!--                <tr>-->
+            <!--                    <td colspan="2">未反馈人员</td>-->
+            <!--                </tr>-->
+            <!--                <tr>-->
+            <!--                    <th>姓名</th>-->
+            <!--                    <th>电话</th>-->
+            <!--                </tr>-->
+            <!--                </thead>-->
+            <!--                <tbody id="noeFeedbackList">-->
+            <!--                </tbody>-->
+            <!--            </table>-->
+            <div class="table-head">未反馈列表
+
+            </div>
+            <div class="search-div">
+                <input type="text" id="searchNoFeedback"
+                       placeholder="请输入姓名或者电话号码" autocomplete="off" class="layui-input">
+                <i class="layui-icon layui-icon-search train-schedule-icon" id="searchNoFeedbackButton"></i>
+            </div>
+            <table class="layui-table" id="no-feedback-table" lay-filter="no-feedback-table"></table>
+        </div>
+    </div>
+</div>
+<script id="driverTemplate" type="text/html">
+    {{# layui.each(d, function(index, item){ }}
+    <tr>
+        <td>
+            {{item.name}}
+        </td>
+        <td>
+            {{item.mobilePhone}}
+        </td>
+    </tr>
+    {{# }); }}
+</script>
+<link rel="stylesheet" href="modules/schedule-directive-view.css">
+<script src="modules/schedule-directive-view.js"></script>

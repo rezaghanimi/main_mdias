@@ -1,0 +1,53 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_maintenance.week_work_class_info_list">
+            <field name="name">week_work_class_info list </field>
+            <field name="model">metro_park_maintenance.week_work_class_info</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="date"/>
+                    <field name="work_class"/>
+                    <field name="week_plan_id"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="metro_park_maintenance.week_work_class_info_form">
+            <field name="name">week_work_class_info form </field>
+            <field name="model">metro_park_maintenance.week_work_class_info</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="date">date</label>
+                        <div class="col-sm-10">
+                            <field name="date"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="work_class">work_class</label>
+                        <div class="col-sm-10">
+                            <field name="work_class"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="week_plan_id">week_plan_id</label>
+                        <div class="col-sm-10">
+                            <field name="week_plan_id"/>
+                        </div>
+                    </div>
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window"
+                id="metro_park_maintenance.week_work_class_info_act_window">
+            <field name="name">week_work_class_info</field>
+            <field name="res_model">metro_park_maintenance.week_work_class_info</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+    

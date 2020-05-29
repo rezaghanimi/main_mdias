@@ -1,0 +1,62 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.train_back_plan_log_list">
+            <field name="name">收车日志</field>
+            <field name="model">metro_park_dispatch.train_back_plan_log</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table" options="{'height': 'full-300'}">
+                    <field name="remark"/>
+                    <field name="train_no"/>
+                    <field name="location"/>
+                    <field name="create_date" string="创建日期"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.train_back_plan_log_form">
+            <field name="name">收车日志</field>
+            <field name="model">metro_park_dispatch.train_back_plan_log</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="remark">remark</label>
+                        <div class="col-sm-10">
+                            <field name="remark"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="train_no">train_no</label>
+                        <div class="col-sm-10">
+                            <field name="train_no"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="location">location</label>
+                        <div class="col-sm-10">
+                            <field name="location"/>
+                        </div>
+                    </div>
+                    
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="metro_park_dispatch.train_back_plan_log_act_window">
+            <field name="name">收车日志</field>
+            <field name="res_model">metro_park_dispatch.train_back_plan_log</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="metro_park_dispatch.train_back_plan_log_act_window"
+                  id="metro_park_dispatch.train_back_plan_log_menu"
+                  name="收车计划日志"
+                  parent="metro_park_dispatch.menu_root"
+                  groups="category_send_receive_car_plan_log"/>
+    </data>
+</odoo>
+    

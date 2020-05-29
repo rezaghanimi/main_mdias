@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="other_interlock_zxzc" model="metro_park_base.other_interlock">
+            <field name="name">正线照查</field>
+        </record>
+
+        <record id="other_interlock_xcjk" model="metro_park_base.other_interlock">
+            <field name="name">洗车接口</field>
+        </record>
+
+    </data>
+</odoo>

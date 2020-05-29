@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="odoo_modeler_plan" name="odoo_modeler_plan" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+
+                <link rel="stylesheet" type="text/css" href="metro_park_production/static/css/v-chart-style.css"/>
+                <link rel="stylesheet" type="text/css" href="metro_park_production/static/css/handover_style.css"/>
+                <link rel="stylesheet" type="text/css" href="metro_park_production/static/css/decision_support.css"/>
+                <link rel="stylesheet" type="text/css" href="metro_park_production/static/css/print.css"/>
+
+                <script type="application/javascript" src="metro_park_production/static/js/echarts-liquidfill.js"/>
+                <script type="application/javascript" src="metro_park_production/static/js/v-chart.js"/>
+                <script type="application/javascript" src="metro_park_production/static/js/handover_tree_button.js"/>
+                <script type="application/javascript" src="metro_park_production/static/js/production_list_view.js"/>
+                <script type="application/javascript" src="metro_park_production/static/js/decision_support.js"/>
+                <script type="application/javascript" src="metro_park_production/static/js/report_client.js"/>
+                <script type="application/javascript" src="metro_park_production/static/js/pack/main.js"/>
+                <script type="application/javascript"
+                        src="metro_park_production/static/js/statistical_report_client.js"/>
+                <script type="application/javascript"
+                        src="metro_park_production/static/js/get_handover_print_templates.js"/>
+                <script type="application/javascript"
+                        src="metro_park_production/static/js/metro_park_production_file_pannel.js"/>
+                <script type="application/javascript" src="metro_park_production/static/js/widget/file_tree_widget.js"/>
+                <script type="application/javascript"
+                        src="metro_park_production/static/js/jqprint/jquery-migrate-1.2.1.min.js"/>
+                <script type="application/javascript" src="metro_park_production/static/js/jqprint/jQuery.print.js"/>
+                <script type="application/javascript"
+                        src="metro_park_production/static/js/construction_import_tree_button.js"/>
+
+                <script type="application/javascript" src="metro_park_production/static/js/funenc_html_editor.js"/>
+                <script type="application/javascript" src="metro_park_production/static/js/big_screen_list.js"/>
+
+
+            </xpath>
+        </template>
+        <template id="funenc_theme_res_async" name="funenc_theme_res_async" inherit_id="web.layout">
+            <xpath expr="//t[@t-raw]" position="before">
+                <script type="application/javascript" src="metro_park_production/static/js/tinymce/tinymce.min.js"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>

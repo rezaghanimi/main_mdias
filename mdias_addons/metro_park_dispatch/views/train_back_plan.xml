@@ -1,0 +1,163 @@
+<odoo>
+    <data>
+        <!--  收车发车页面列表视图, 这个用于监控 -->
+        <record model="ir.ui.view" id="metro_park_dispatch.train_back_plan_monitor_list">
+            <field name="name">收车计划</field>
+            <field name="model">metro_park_dispatch.train_back_plan</field>
+            <field name="arch" type="xml">
+                <tree js_class="RunPlanMonitorList"
+                      options="{'height':'full-500', 'hasSelectors': 0}"
+                      editable="top"
+                      search_ex_template="metro_park_dispatch.train_back_plan_search_plan"
+                >
+                    <field name="train_id"
+                           options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                    <field name="plan_train_no" string="车次" width="90"/>
+                    <field name="exchange_rail_time" widget="FTime" width="180"/>
+                    <field name="plan_back_time" widget="FTime"/>
+                    <field name="plan_back_rail" options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                    <field name="wash"/>
+                    <field name="state" widget="template_widget" options="{'template': 'train_back_status_btns'}"
+                           fixed_right="1" readonly="1"/>
+                    <field name="button" readonly="1" widget="template_widget"
+                           options="{'template': 'back_plan_operation_btns'}" fixed_right="1"/>
+                    <field name="plan_back_location" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- 这个用于列表显示  -->
+        <record model="ir.ui.view" id="metro_park_dispatch.train_back_plan_list">
+            <field name="name">收车计划</field>
+            <field name="model">metro_park_dispatch.train_back_plan</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table"
+                      options="{'height':'full-340'}"
+                      default_order="date desc"
+                      editable="top"
+                      create="0"
+                      search_ex_template="metro_park_dispatch.train_back_plan_search">
+                    <field name="date"/>
+                    <field name="plan_train_no"
+                           string="车次"
+                           width="90"/>
+                    <field name="train_id"
+                           options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                    <field name="plan_back_time" widget="FTime"/>
+                    <field name="real_back_tm" widget="FTime"/>
+                    <field name="plan_back_location"
+                           options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                    <field name="plan_back_rail"
+                           options="{'no_create_edit': True,'no_open': True, 'no_create':True}"
+                           attrs="{'readonly': [('plan_back_location', '=', False)]}"/>
+                    <field name="real_back_rail"
+                           options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                    <field name="repair_plan"/>
+                    <field name="wash"/>
+                    <field name="work_requirement"/>
+                    <field name="dispatch"/>
+                    <field name="state"
+                           widget="template_widget"
+                           options="{'template': 'train_back_status_btns'}"
+                           fixed_right="1"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_dispatch.train_back_plan_form">
+            <field name="name">收车计划</field>
+            <field name="model">metro_park_dispatch.train_back_plan</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="plan_train_no">plan_train_no</label>
+                        <div class="col-sm-3">
+                            <field name="plan_train_no"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="train_id">train_id</label>
+                        <div class="col-sm-3">
+                            <field name="train_id"
+                                   options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="plan_back_time">plan_back_time</label>
+                        <div class="col-sm-3">
+                            <field name="plan_back_time"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="real_back_tm">real_back_tm</label>
+                        <div class="col-sm-3">
+                            <field name="real_back_tm"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="plan_back_location">plan_back_location</label>
+                        <div class="col-sm-3">
+                            <field name="plan_back_location"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="plan_back_rail">plan_back_rail</label>
+                        <div class="col-sm-3">
+                            <field name="plan_back_rail"
+                                   options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="real_back_rail">real_back_rail</label>
+                        <div class="col-sm-3">
+                            <field name="real_back_rail"
+                                   options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="repair_plan">repair_plan</label>
+                        <div class="col-sm-3">
+                            <field name="repair_plan"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="wash">wash</label>
+                        <div class="col-sm-3">
+                            <field name="wash"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="work_requirement">work_requirement</label>
+                        <div class="col-sm-3">
+                            <field name="work_requirement"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="dispatch">dispatch</label>
+                        <div class="col-sm-3">
+                            <field name="dispatch"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="state">state</label>
+                        <div class="col-sm-3">
+                            <field name="state"/>
+                        </div>
+                    </div>
+
+                </form>
+            </field>
+        </record>
+
+        <record id="metro_park_dispatch.train_back_plan_act_server" model="ir.actions.server">
+            <field name="name">收车作业</field>
+            <field name="type">ir.actions.server</field>
+            <field name="model_id" ref="model_metro_park_dispatch_train_back_plan"/>
+            <field name="state">code</field>
+            <field name="code">
+                action = model.get_all_back_plan_action()
+            </field>
+        </record>
+
+        <menuitem action="metro_park_dispatch.train_back_plan_act_server"
+                  id="metro_park_dispatch.train_back_plan_menu"
+                  name="收车作业"
+                  parent="metro_park_dispatch.train_turn_in_out_plan_root_menu"
+                  groups="category_collect_homework"/>
+    </data>
+</odoo>
+
+
+    

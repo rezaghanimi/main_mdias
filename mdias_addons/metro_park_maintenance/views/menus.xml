@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.actions.act_window"
+                id="metro_park_maintenance.year_plan_act_window">
+            <field name="name">年计划</field>
+            <field name="res_model">metro_park_maintenance.year_plan</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window"
+                id="metro_park_maintenance.month_plan_act_window">
+            <field name="name">月计划</field>
+            <field name="res_model">metro_park_maintenance.month_plan</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window"
+                id="metro_park_maintenance.week_plan_act_window">
+            <field name="name">周计划</field>
+            <field name="res_model">metro_park_maintenance.week_plan</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window"
+                id="metro_park_maintenance.plan_config_data_act_window">
+            <field name="name">修次配置</field>
+            <field name="res_model">metro_park_maintenance.plan_config_data</field>
+            <field name="view_mode">tree,form</field>
+             <field name="view_ids" eval="[(5, 0, 0),
+               (0, 0, {'view_mode': 'tree', 'view_id': ref('metro_park_maintenance.plan_config_data_list')}),
+               (0, 0, {'view_mode': 'form', 'view_id': ref('metro_park_maintenance.plan_config_data_form')})]"/>
+        </record>
+
+
+
+       <record model="ir.actions.act_window"
+                id="metro_park_maintenance.maintance_order_act_window">
+            <field name="name">检修工单</field>
+            <field name="res_model">metro_park_maintenance.maintaince_order</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window"
+                id="metro_park_maintenance.holidays_act_window">
+            <field name="name">节假日</field>
+            <field name="res_model">metro_park_maintenance.holidays</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window"
+                id="metro_park_maintenance.repair_param_act_window">
+            <field name="name">修程参数</field>
+            <field name="res_model">metro_park_maintenance.repair_param</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window"
+                id="metro_park_maintenance.repair_tmp_rule_act_window">
+            <field name="name">检技通</field>
+            <field name="res_model">metro_park_maintenance.repair_tmp_rule</field>
+            <field name="view_mode">tree,form</field>
+             <field name="view_ids" eval="[(5, 0, 0),
+                 (0, 0, {'view_mode': 'tree', 'view_id': ref('metro_park_maintenance.repair_tmp_rule_list')}),
+                 (0, 0, {'view_mode': 'form', 'view_id': ref('metro_park_maintenance.repair_tmp_rule_form')})]"/>
+        </record>
+
+       <record model="ir.actions.act_window"
+                id="metro_park_maintenance.rule_import_wizard_act_window">
+            <field name="name">rule_import_wizard</field>
+            <field name="res_model">metro_park_maintenance.rule_import_wizard</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="train_miles_action" model="ir.actions.client">
+            <field name="name">车辆公里数录入</field>
+            <field name="tag">miles_set_action</field>
+            <field name="target">main</field>
+        </record>
+
+        <record id="plan_preview_action" model="ir.actions.client">
+            <field name="name">计划预演</field>
+            <field name="tag">plan_conflict_check</field>
+            <field name="target">main</field>
+        </record>
+
+        <record model="ir.actions.act_window"
+                id="metro_park_maintenance.plan_log_act_window">
+            <field name="name">计划日志</field>
+            <field name="res_model">metro_park_maintenance.plan_log</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- 年计划编辑  -->
+        <record id="year_plan_editor_action" model="ir.actions.client">
+            <field name="name">年计划编辑</field>
+            <field name="tag">year_plan_editor_action</field>
+            <field name="target">main</field>
+        </record>
+
+        <!--  pms部门  -->
+        <record model="ir.actions.act_window"
+                id="metro_park_maintenance.pms_department_act_window">
+            <field name="name">pms部门</field>
+            <field name="res_model">pms.department</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window"
+                id="metro_park_maintenance.white_list_act_window">
+            <field name="name">白名单</field>
+            <field name="res_model">metro_park_maintenance.white_list</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- 菜单项 -->
+        <menuitem id="metro_park_maintenance.menu_root"
+                  font_icon="iconfont maintenance_icon"
+                  name="车辆检修"
+                  sequence="1"/>
+
+        <menuitem id="metro_park_maintenance.train_dev_menu"
+                  parent="metro_park_maintenance.menu_root"
+                  name="车辆设备管理"
+                  sequence="10"
+                  action="metro_park_maintenance.train_dev_act_window"
+                  groups="category_car_equipment_management"/>
+
+        <menuitem id="metro_park_maintenance.repair_rule_menu"
+                  parent="metro_park_maintenance.menu_root"
+                  name="修程配置"
+                  sequence="20"
+                  action="metro_park_maintenance.repair_rule_act_window"
+                  groups="category_car_repairing_the_configuration"/>
+
+        <menuitem id="metro_park_maintenance.maintance_order_menu"
+                  parent="metro_park_maintenance.menu_root"
+                  name="检修工单"
+                  sequence="30"
+                  action="metro_park_maintenance.maintance_order_act_window"
+                  groups="group_car_service_flow_work_order_page_look"/>
+
+        <menuitem id="metro_park_maintenance.plan_config_menu"
+                  parent="metro_park_maintenance.menu_root"
+                  name="修次配置"
+                  sequence="40"
+                  action="metro_park_maintenance.plan_config_data_act_window"
+                  groups="category_car_repair_time_configuration"/>
+
+        <menuitem id="metro_park_maintenance.repair_tmp_rule_menu"
+                  parent="metro_park_maintenance.menu_root"
+                  name="检技通管理"
+                  sequence="60"
+                  action="metro_park_maintenance.repair_tmp_rule_act_window"
+                  groups="category_inspection_technology_management"/>
+
+        <menuitem id="metro_park_maintenance.menu_miles_root"
+                  parent="metro_park_maintenance.menu_root"
+                  name="公里数管理"
+                  sequence="70"/>
+
+        <menuitem id="metro_park_maintenance.history_miles_menu"
+                  parent="metro_park_maintenance.menu_miles_root"
+                  name="公里数预估"/>
+
+        <menuitem id="metro_park_maintenance.train_miles_menu"
+                  parent="metro_park_maintenance.menu_root"
+                  name="车辆运行公里数录入"
+                  sequence="80"
+                  action="train_miles_action"
+                  groups="category_vehicle_mileage_is_recorded"/>
+
+        <!--计划-->
+        <menuitem id="metro_park_maintenance.menu_plan_types_root"
+                  parent="metro_park_maintenance.menu_root"
+                  sequence="90"
+                  name="年/月/周/日计划编制"/>
+
+            <menuitem id="metro_park_maintenance.year_plan_menu"
+                      parent="metro_park_maintenance.menu_plan_types_root"
+                      name="年计划"
+                      sequence="10"
+                      action="metro_park_maintenance.year_plan_act_window"
+                      groups="group_car_service_flow_plan_compile_year_page_look"/>
+
+            <menuitem id="metro_park_maintenance.month_plan_menu"
+                      parent="metro_park_maintenance.menu_plan_types_root"
+                      name="月计划"
+                      sequence="20"
+                      action="metro_park_maintenance.month_plan_act_window"
+                      groups="group_car_service_flow_plan_compile_month_page_look"/>
+
+            <menuitem id="metro_park_maintenance.week_plan_menu"
+                      parent="metro_park_maintenance.menu_plan_types_root"
+                      name="周计划"
+                      sequence="30"
+                      action="metro_park_maintenance.week_plan_act_window"
+                      groups="group_car_service_flow_plan_compile_week_page_look"/>
+
+            <menuitem id="metro_park_maintenance.day_plan_menu"
+                      parent="metro_park_maintenance.menu_plan_types_root"
+                      name="日计划"
+                      sequence="40"
+                      action="metro_park_maintenance.day_plan_act_window"
+                      groups="group_car_service_flow_plan_compile_day_page_look"/>
+
+                <menuitem id="metro_park_maintenance.plan_log_menu"
+                          parent="metro_park_maintenance.menu_plan_types_root"
+                          name="计划日志"
+                          sequence="41"
+                          action="metro_park_maintenance.plan_log_act_window"
+                          groups="group_car_service_log_record"/>
+
+        <menuitem id="metro_park_maintenance.holiday_management_root"
+                  parent="metro_park_maintenance.menu_root"
+                  name="节假日管理"
+                  sequence="92"/>
+
+            <menuitem id="metro_park_maintenance.holiday_management"
+                      parent="metro_park_maintenance.holiday_management_root"
+                      action="metro_park_maintenance.holidays_act_window"
+                      sequence="1"
+                      name="节假日" />
+
+            <menuitem id="metro_park_maintenance.white_list_management"
+                      parent="metro_park_maintenance.holiday_management_root"
+                      action="metro_park_maintenance.white_list_act_window"
+                      sequence="2"
+                      name="特殊工作日" />
+
+        <menuitem id="metro_park_maintenance.pms_menu"
+                  parent="metro_park_maintenance.menu_root"
+                  name="PMS"
+                  sequence="93"/>
+
+            <menuitem id="metro_park_maintenance.pms_department"
+                      parent="metro_park_maintenance.pms_menu"
+                      action="pms_department_act_window"
+                      sequence="1"
+                      name="PMS部门"
+                      groups="category_pms_class_info"/>
+
+    </data>
+</odoo>

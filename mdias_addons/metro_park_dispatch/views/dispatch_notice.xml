@@ -1,0 +1,300 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="metro_park_dispatch.dispatch_notice_list">
+            <field name="name">调车通知单</field>
+            <field name="model">metro_park_dispatch.dispatch_notice</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table" options="{'height':'full-340'}">
+                    <field name="request_id"/>
+                    <field name="batch_no"/>
+                    <field name="dispatch_group"/>
+                    <field name="park_dispatcher"/>
+                    <field name="notice_time"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_dispatch.dispatch_notice_form">
+            <field name="name">调车通知单</field>
+            <field name="model">metro_park_dispatch.dispatch_notice</field>
+            <field name="arch" type="xml">
+                <form>
+                    <field name="request_id" attrs="{'invisible': True}" />
+                    <div class="box">
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="train">train</label>
+                            <div class="col-sm-2">
+                                <field name="train"/>
+                            </div>
+                            <label class="col-sm-2 col-form-label" for="dispatch_type">dispatch_type</label>
+                            <div class="col-sm-2">
+                                <field name="dispatch_type"/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="dev_type">dev_type</label>
+                            <div class="col-sm-2">
+                                <field name="dev_type"/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="dispatch_date">dispatch_date</label>
+                            <div class="col-sm-2">
+                                <field name="dispatch_date"/>
+                            </div>
+                            <label class="col-sm-2 col-form-label" for="display_time">display_time</label>
+                            <div class="col-sm-2">
+                                <field name="display_time"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="source_rail">source_rail</label>
+                            <div class="col-sm-2">
+                                <field name="source_rail"/>
+                            </div>
+                            <label class="col-sm-2 col-form-label" for="target_rail">target_rail</label>
+                            <div class="col-sm-2">
+                                <field name="target_rail"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="start_time">start_time</label>
+                            <div class="col-sm-2">
+                                <field name="start_time" options="{'control_type': 'time'}"/>
+                            </div>
+                            <label class="col-sm-2 col-form-label" for="finish_time">finish_time</label>
+                            <div class="col-sm-2">
+                                <field name="finish_time" options="{'control_type': 'time'}"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="batch_no">batch_no</label>
+                            <div class="col-sm-2">
+                                <field name="batch_no"/>
+                            </div>
+                            <label class="col-sm-2 col-form-label" for="park_dispatcher">park_dispatcher</label>
+                            <div class="col-sm-2">
+                                <field name="park_dispatcher"
+                                       context="{'tree_view_ref': 'funenc_wechat.view_wechat_department_tree'}"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="dispatch_group">dispatch_group</label>
+                            <div class="col-sm-2">
+                                <field name="dispatch_group" context="{'tree_view_ref': 'funenc_wechat.view_wechat_department_tree'}" />
+                            </div>
+                            <label class="col-sm-2 col-form-label" for="dispatch_driver">dispatch_driver</label>
+                            <div class="col-sm-2">
+                                <field name="dispatch_driver" />
+                            </div>
+                        </div>
+
+                    </div>
+                    <notebook>
+                        <page string="勾计划">
+                            <field name="dispatch_detail">
+                                <tree editable="bottom" js_class="dispatch_detail_table" >
+                                    <field name="sequence" string="" widget="handle" fixed_left="1" width="50" />
+                                    <field name="display_sequence" string="序号"  width="30" />
+                                    <field name="source_rail" string="源股道" required="1" disable_sort="1" attrs="{'disable_sort': True}" options="{'no_create_edit': True,'no_open': True, 'no_create':True}" />
+                                    <field name="rail" string="目标股道" required="1" disable_sort="1" attrs="{'readonly': [('source_rail', '=', False)], 'disable_sort': True}" options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                                    <field name="operation" disable_sort="1" attrs="{'disable_sort': True}" options="{'no_create_edit': True,'no_open': True, 'no_create':True}" />
+                                    <field name="train_num" disable_sort="1" attrs="{'readonly': [('operation', '=', False)], 'disable_sort': True}" options="{'no_create_edit': True,'no_open': True, 'no_create':True}" />
+                                    <field name="train_num_text" disable_sort="1" />
+                                    <field name="remark" disable_sort="1"  width="200" />
+                                </tree>
+                            </field>
+                        </page>
+
+                        <page string="备注">
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label" for="remark">remark</label>
+                                <div class="col-sm-6">
+                                    <field name="remark"/>
+                                </div>
+                            </div>
+                        </page>
+
+                        <page string="作业要求">
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label" for="iron_shoe_no">iron_shoe_no</label>
+                                <div class="col-sm-2">
+                                    <field name="iron_shoe_no"/>
+                                </div>
+                                <label class="col-sm-2 col-form-label" for="iron_shoe_place">iron_shoe_place</label>
+                                <div class="col-sm-2">
+                                    <field name="iron_shoe_place"/>
+                                </div>
+                            </div>
+                        </page>
+                    </notebook>
+
+                    <!-- 钩计划部份 -->
+                    <footer>
+                        <button class="btn btn-primary" text="发布" type="object" name="publish_notice" />
+                        <button class="btn btn-primary" text="打印通知单" type="object" name="view_request_print" />
+                        <button class="btn btn-secondary" text="取消" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_dispatch.excute_detail_form">
+            <field name="name">执行情况</field>
+            <field name="model">metro_park_dispatch.dispatch_notice</field>
+            <field name="arch" type="xml">
+                <form>
+                    <!-- 通知单部份 -->
+                    <div class="box">
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="train">train</label>
+                            <div class="col-sm-2">
+                                <field name="train"/>
+                            </div>
+                            <label class="col-sm-2 col-form-label" for="dispatch_date">dispatch_date</label>
+                            <div class="col-sm-2">
+                                <field name="dispatch_date"/>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 钩计划部份 -->
+                    <div class="box">
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="dispatch_detail">dispatch_detail</label>
+                            <div class="col-sm-10">
+                                <field name="dispatch_detail">
+                                    <tree editable="bottom" js_class="dispatch_detail_table">
+                                        <field name="sequence" string="序号" widget="handle" fixed_left="1" width="50" />
+                                        <field name="display_sequence" string="序号"  width="30" />
+                                        <field name="source_rail" string="源股道" required="1" disable_sort="1" attrs="{'disable_sort': True}" options="{'no_create_edit': True,'no_open': True, 'no_create':True}" />
+                                        <field name="rail" string="目标股道" required="1" disable_sort="1" attrs="{'readonly': [('source_rail', '=', False)], 'disable_sort': True}" options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                                        <field name="operation" disable_sort="1" attrs="{'disable_sort': True}" options="{'no_create_edit': True,'no_open': True, 'no_create':True}" />
+                                        <field name="train_num" disable_sort="1" attrs="{'readonly': [('operation', '=', False)], 'disable_sort': True}" options="{'no_create_edit': True,'no_open': True, 'no_create':True}" />
+                                        <field name="train_num_text" disable_sort="1" />
+                                        <field name="state" readonly="1"/>
+                                        <field name="remark" disable_sort="1"  width="200" />
+                                    </tree>
+                                </field>
+                            </div>
+                        </div>
+                    </div>
+                    <footer>
+                        <button class="btn btn-primary" text="发布" type="object" name="publish_notice" />
+                        <button class="btn btn-secondary" text="取消" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_dispatch_notice_implementation_form">
+            <field name="name">执行情况</field>
+            <field name="model">metro_park_dispatch.dispatch_notice</field>
+            <field name="arch" type="xml">
+                <form create="0" edit="0">
+                    <div class="box">
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="train">train</label>
+                            <div class="col-sm-2">
+                                <field name="train"/>
+                            </div>
+                            <label class="col-sm-2 col-form-label" for="dispatch_date">dispatch_date</label>
+                            <div class="col-sm-2">
+                                <field name="dispatch_date"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="dispatch_detail"/>
+                            <div class="col-sm-10">
+                                <field name="dispatch_detail" readonly="1">
+                                    <tree>
+                                        <field name="sequence" string="序号"/>
+                                        <field name="display_sequence" string="序号"  width="30"/>
+                                        <field name="source_rail" string="源股道"/>
+                                        <field name="rail" string="目标股道"/>
+                                        <field name="operation"/>
+                                        <field name="train_num"/>
+                                        <field name="train_num_text"/>
+                                        <field name="state"/>
+                                        <field name="remark" width="200"/>
+                                    </tree>
+                                </field>
+                            </div>
+                        </div>
+                    </div>
+                    <footer>
+                        <button class="btn btn-secondary" text="关闭" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <!-- 变更调车 -->
+        <record model="ir.ui.view" id="metro_park_dispatch.dispatch_notice_change_form">
+            <field name="name">变更调车</field>
+            <field name="model">metro_park_dispatch.dispatch_notice</field>
+            <field name="arch" type="xml">
+                <form>
+                    <field name="request_id" attrs="{'invisible': True}" />
+                    <notebook>
+                        <page string="勾计划">
+                            <field name="dispatch_detail">
+                                <tree editable="bottom" js_class="dispatch_detail_table" >
+                                    <field name="sequence" string="序号" widget="handle" fixed_left="1" width="50" />
+                                    <field name="display_sequence" string="序号"  width="30" />
+                                    <field name="source_rail" string="源股道" required="1" disable_sort="1" attrs="{'disable_sort': True}" options="{'no_create_edit': True,'no_open': True, 'no_create':True}" />
+                                    <field name="rail" string="目标股道" required="1" disable_sort="1" attrs="{'readonly': [('source_rail', '=', False)], 'disable_sort': True}" options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                                    <field name="operation" disable_sort="1" attrs="{'disable_sort': True}" options="{'no_create_edit': True,'no_open': True, 'no_create':True}" />
+                                    <field name="train_num" disable_sort="1" attrs="{'readonly': [('operation', '=', False)], 'disable_sort': True}" options="{'no_create_edit': True,'no_open': True, 'no_create':True}" />
+                                    <field name="train_num_text" disable_sort="1" />
+                                    <field name="remark" disable_sort="1"  width="200" />
+                                </tree>
+                            </field>
+                        </page>
+
+                        <page string="备注">
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label" for="remark">remark</label>
+                                <div class="col-sm-6">
+                                    <field name="remark"/>
+                                </div>
+                            </div>
+                        </page>
+
+                        <page string="作业要求">
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label" for="iron_shoe_no">iron_shoe_no</label>
+                                <div class="col-sm-2">
+                                    <field name="iron_shoe_no"/>
+                                </div>
+                                <label class="col-sm-2 col-form-label" for="iron_shoe_place">iron_shoe_place</label>
+                                <div class="col-sm-2">
+                                    <field name="iron_shoe_place"/>
+                                </div>
+                            </div>
+                        </page>
+                    </notebook>
+
+                    <!-- 钩计划部份 -->
+                    <footer>
+                        <button class="btn btn-primary" text="变更" type="object" name="change_notice" />
+                        <button class="btn btn-secondary" text="取消" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="metro_park_dispatch.dispatch_notice_act_window">
+            <field name="name">dispatch_notice</field>
+            <field name="res_model">metro_park_dispatch.dispatch_notice</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>

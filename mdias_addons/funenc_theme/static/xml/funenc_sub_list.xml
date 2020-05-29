@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <!-- sublist 子列表 -->
+    <t t-name="funenc_sub_list">
+        <div class="funenc_sub_list">
+            <div class="search_box">
+                <div class="search">
+                <div class="o_search_options" />
+            </div>
+            <div class="buttons">
+                <div class="user_buttons" />
+                <div class="sidebar" />
+            </div>
+            <div class="list" />
+            <div class="pager" />
+        </div>
+    </t>
+
+</templates>

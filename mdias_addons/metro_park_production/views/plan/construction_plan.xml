@@ -1,0 +1,77 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="metro_park_production.construction_plan_management_list">
+            <field name="name">施工计划</field>
+            <field name="model">metro_park_production.construction_plan_management</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table" import="0" edit="0" create="0" delete="0"
+                      search_ex_template="construction_plan_search">
+                    <field name="sequence"/>
+                    <field name="line_id"/>
+                    <field name="plan_date"/>
+                    <field name="work_code"/>
+                    <field name="department"/>
+                    <field name="area"/>
+                    <field name="work_content"/>
+                    <field name="influence_area"/>
+                    <field name="electric_info"/>
+                    <field name="principal"/>
+                    <field name="work_time_start"/>
+                    <field name="work_time_end"/>
+                    <field name="request_addr"/>
+                    <field name="backout_addr"/>
+                    <field name="assist_station_info"/>
+                    <field name="request_time"/>
+                    <field name="backout_time"/>
+                    <field name="recognize_num"/>
+                    <field name="status"/>
+                    <field name="remarks"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="metro_park_production.construction_plan_management_form">
+            <field name="name">施工计划</field>
+            <field name="model">metro_park_production.construction_plan_management</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="sequence"/>
+                            <field name="line_id"/>
+                            <field name="plan_date"/>
+                            <field name="work_code"/>
+                            <field name="department"/>
+                            <field name="area"/>
+                            <field name="work_content"/>
+                            <field name="influence_area"/>
+                            <field name="electric_info"/>
+                            <field name="principal"/>
+                            <field name="work_time_start"/>
+                            <field name="work_time_end"/>
+                            <field name="request_addr"/>
+                            <field name="backout_addr"/>
+                            <field name="assist_station_info"/>
+                            <field name="request_time"/>
+                            <field name="backout_time"/>
+                            <field name="recognize_num"/>
+                            <field name="status"/>
+                            <field name="remarks"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <record model="ir.actions.act_window" id="metro_park_production.construction_plan_management_act_window">
+            <field name="name">施工计划</field>
+            <field name="binding_key">plan_buttons</field>
+            <field name="res_model">metro_park_production.construction_plan_management</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+

@@ -1,0 +1,52 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.dispatch_request_operation_log_list">
+            <field name="name">操作日志</field>
+            <field name="model">metro_park_dispatch.dispatch_request_operation_log</field>
+            <field name="arch" type="xml">
+                <tree create="0">
+                    <field name="create_date"/>
+                    <field name="create_uid"/>
+                    <field name="content"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.dispatch_request_operation_log_form">
+            <field name="name">操作日志</field>
+            <field name="model">metro_park_dispatch.dispatch_request_operation_log</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="create_date">create_date</label>
+                        <div class="col-sm-10">
+                            <field name="create_date"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="create_uid">create_uid</label>
+                        <div class="col-sm-10">
+                            <field name="create_uid"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="content">content</label>
+                        <div class="col-sm-10">
+                            <field name="content"/>
+                        </div>
+                    </div>
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window" id="metro_park_dispatch.dispatch_request_operation_log_act_window">
+            <field name="name">dispatch_request_operation_log</field>
+            <field name="res_model">metro_park_dispatch.dispatch_request_operation_log</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+    

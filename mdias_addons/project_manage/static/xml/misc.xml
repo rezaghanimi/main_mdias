@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="project_btns">
+        <t t-set="data" t-value="widget.record.data"/>
+        <t t-set="groups" t-value="widget.record.context.groups"/>
+        <div>
+            <button name="pass_project" type="object" class="btn btn-primary btn-sm import_time_table view_detail">审批</button>
+            <button name="reject_project" type="object" class="btn btn-primary btn-sm import_time_table edit">拒绝</button>
+        </div>
+
+    </t>
+
+</templates>
+

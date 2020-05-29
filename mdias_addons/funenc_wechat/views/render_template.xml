@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="tem_login_by_wechat">
+        <script type="text/javascript" src="http://rescdn.qqmail.com/node/ww/wwopenmng/js/sso/wwLogin-1.0.0.js"/>
+        <div id="to_login_image" style="text-align: center">
+        </div>
+        <script>
+            var redirect_url = "<t t-esc="redirect_url"/>" + "/funenc_wechat/success_login_by_wechat";
+            window.WwLogin({
+                "id" : "to_login_image",
+                "appid" : "<t t-esc="appid"/>",
+                "agentid" : "<t t-esc="agentid"/>",
+                "redirect_uri" : redirect_url,
+                "state" : "",
+                "href" : "",
+            });
+        </script>
+    </template>
+</odoo>

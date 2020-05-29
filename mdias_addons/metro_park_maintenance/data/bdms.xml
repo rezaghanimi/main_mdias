@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="alarm_device_1" model="funenc.alarm.device">
+            <field name="name">车载ATP主机板A</field>
+            <field name="composition_unit">ATP安全计算机3取2系统</field>
+            <field name="alarm_level">1</field>
+        </record>
+        <record id="alarm_device_2" model="funenc.alarm.device">
+            <field name="name">车载ATP主机板B</field>
+            <field name="composition_unit">ATP安全计算机3取2系统</field>
+            <field name="alarm_level">1</field>
+        </record>
+        <record id="alarm_device_3" model="funenc.alarm.device">
+            <field name="name">车载ATP主机板C</field>
+            <field name="composition_unit">ATP安全计算机3取2系统</field>
+            <field name="alarm_level">1</field>
+        </record>
+        <record id="alarm_device_4" model="funenc.alarm.device">
+            <field name="name">VOBC-ATP-ATP通信板1</field>
+            <field name="composition_unit">ATP安全计算机3取2系统</field>
+            <field name="alarm_level">1</field>
+        </record>
+        <record id="alarm_device_5" model="funenc.alarm.device">
+            <field name="name">VOBC-ATP-ATP通信板2</field>
+            <field name="composition_unit">ATP安全计算机3取2系统</field>
+            <field name="alarm_level">1</field>
+        </record>
+        <record id="alarm_device_6" model="funenc.alarm.device">
+            <field name="name">VOBC-ATP-ATP公共板</field>
+            <field name="composition_unit">ATP安全计算机3取2系统</field>
+            <field name="alarm_level">1</field>
+        </record>
+        <record id="alarm_device_7" model="funenc.alarm.device">
+            <field name="name">车载ATP输入板1</field>
+            <field name="composition_unit">ATP安全计算机3取2系统</field>
+            <field name="alarm_level">1</field>
+        </record>
+        <record id="alarm_device_8" model="funenc.alarm.device">
+            <field name="name">车载ATP输入板2</field>
+            <field name="composition_unit">ATP安全计算机3取2系统</field>
+            <field name="alarm_level">1</field>
+        </record>
+        <record id="alarm_device_9" model="funenc.alarm.device">
+            <field name="name">车载ATP输入EMC板1</field>
+            <field name="composition_unit">ATP安全计算机3取2系统</field>
+            <field name="alarm_level">1</field>
+        </record>
+        <record id="alarm_device_10" model="funenc.alarm.device">
+            <field name="name">车载ATP输入EMC板2</field>
+            <field name="composition_unit">ATP安全计算机3取2系统</field>
+            <field name="alarm_level">1</field>
+        </record>
+
+    </data>
+</odoo>

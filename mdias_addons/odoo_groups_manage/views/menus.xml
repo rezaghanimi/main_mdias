@@ -1,0 +1,58 @@
+<odoo>
+    <data>
+        <record id="act_odoo_groups_manage_menu" model="ir.actions.act_window">
+            <field name="name">权限列表</field>
+            <field name="res_model">res.groups</field>
+            <field name="view_type">form</field>
+            <field name="domain">[('atomic', '=', True), '|', ('active', '=', True), ('active', '=', False)]</field>
+            <field name="view_ids" eval="[(5,0,0),
+                          (0,0,{'view_mode':'tree', 'view_id': ref('groups_manage_tree')}),
+                          (0,0,{'view_mode':'form', 'view_id': ref('odoo_groups_manage_res_groups_form')})]"/>
+        </record>
+
+        <menuitem id="groups_manage_menu_root"
+                  font_icon="iconfont groups_manage_icon"
+                  name="权限管理"
+        />
+
+        <menuitem id="odoo_groups_manage_menu"
+                  parent="groups_manage_menu_root"
+                  name="权限列表"
+                  groups="permission_manage"
+                  action="odoo_groups_manage.act_odoo_groups_manage_menu"/>
+
+
+        <record id="user_role_groups_manage_action" model="ir.actions.act_window">
+            <field name="name">角色组</field>
+            <field name="res_model">res.groups</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">['|', ('atomic', '=', False), ('atomic', '!=', 'null')]</field>
+            <field name="view_ids" eval="[(5, 0, 0),
+            (0, 0, {'view_mode': 'tree', 'view_id': ref('user_role_groups_manage_tree')}),
+            (0, 0, {'view_mode': 'form', 'view_id': ref('user_role_groups_manage_form')})
+            ]"/>
+        </record>
+
+        <menuitem id="user_role_groups_manage_menu"
+                  name="用户角色组管理"
+                  action="user_role_groups_manage_action"
+                  parent="groups_manage_menu_root"
+                  groups="role_manage"
+        />
+
+         <record id="act_odoo_groups_manage_users_menu" model="ir.actions.act_window">
+            <field name="name">用户列表</field>
+            <field name="res_model">res.users</field>
+            <field name="view_type">form</field>
+             <field name="view_mode">tree</field>
+<!--            <field name="domain">[('active', '=', True)]</field>-->
+             <field name="view_id" ref="res_user_rol_manage"/>
+        </record>
+
+         <menuitem id="user_role_user_list_menu"
+                  name="用户管理"
+                  action="act_odoo_groups_manage_users_menu"
+                  parent="groups_manage_menu_root"
+                  groups="role_manage"/>
+    </data>
+</odoo>

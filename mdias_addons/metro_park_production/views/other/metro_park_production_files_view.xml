@@ -1,0 +1,37 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="tree_metro_park_production_files">
+            <field name="name">电子归档列表</field>
+            <field name="model">metro_park_production.files</field>
+            <field name="arch" type="xml">
+                <tree import="false" edit="0" create="0" delete="0"
+                      js_class="fnt_table" options="{'height': 'full-350'}"
+                      search_ex_template="search_metro_park_production_files"
+                      default_order="create_date desc"
+                      class="noOpen"
+                      search_pannel_js_class="metro_park_production_file_pannel">
+                    <field name="file_name"/>
+                    <field name="file_size"/>
+                    <field name="file_type_id"/>
+                    <field name="create_uid" string="创建人"/>
+                    <field name="create_date" string="创建时间"/>
+                    <widget name="file_tree_widget" string="操作"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="form_metro_park_production_files">
+            <field name="name">电子归档详情</field>
+            <field name="model">metro_park_production.files</field>
+            <field name="arch" type="xml">
+                <form create="0" edit="0" delete="0">
+                    <group>
+                        <field name="file_name"/>
+                        <field name="file_type_id" required="1"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
+

@@ -1,0 +1,103 @@
+
+
+<script>
+    function println() {
+        $.print("#park_handover_template");
+    }
+</script>
+
+
+<div id="park_handover_template" style="margin-top: 50px">
+    <h3>
+        <p style="float: left; width: 35%">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{{ year }}年 {{ month }}月 {{ day }}日</p>
+        <p style="float: left; width: 40%">{{ handover_type }}</p>
+        <p>车场调度：</p>
+    </h3>
+    <table class="table" style="border: 2px solid #000000;">
+        <tr style='height:38.00pt;'>
+            <td class="td">1.正线执行时刻表：{{ line_execute_time_table }}</td>
+        </tr>
+        <tr style='height:38.00pt;'>
+            <td class="td">
+                <p style="float: left">2.停电股道：{{ track_ids }}</p>
+                <p style="float: left; width: 10%"></p>
+                <p style="float: left">地线：{{ track_ground_wire }}</p>
+                <p style="float: left; width: 10%"></p>
+                <p style="float: left">停电区域：{{ stop_electric_area }}</p>
+                <p style="float: left; width: 10%"></p>
+                <p>地线：{{ electric_area_ground_wire }}</p>
+            </td>
+        </tr>
+        <tr style='height:38.00pt;'>
+            <td class="td">3.钥匙：{{ key_info }}</td>
+        </tr>
+        <tr style='height:38.00pt;'>
+            <td class="td">
+                <p style="float: left">4.800M电台：{{ eight_hundred_radio }}</p>
+                <p style="float: left; width: 30%"></p>
+                <p>400M电台：{{ four_hundred_radio }}</p>
+            </td>
+        </tr>
+        <tr style='height:38.00pt;'>
+            <td class="td">
+                <p style="float: left">5.备品情况：{{ standby_application_condition }}</p>
+                <p style="float: left; width: 30%"></p>
+                <p>设备情况：{{ equipment_condition }}</p>
+            </td>
+        </tr>
+        <tr style='height:38.00pt;'>
+            <td class="td">6.施工情况：{{ construction_condition }}</td>
+        </tr>
+        <tr style='height:38.00pt;'>
+            <td class="td"><h3>7.股道存车情况</h3></td>
+        </tr>
+    </table>
+    <table class="table" style="margin-top: -11px; text-align: center">
+        <tr style='height:38.00pt;' v-for="(item, i) in track_condition">
+            <td class="td" style="width: 9%">{{ item[0] }}</td>
+            <td class="td">{{ item[1] }}</td>
+            <td class="td" style="width: 9%">{{ item[2] }}</td>
+            <td class="td">{{ item[3] }}</td>
+            <td class="td" style="width: 9%">{{ item[4] }}</td>
+            <td class="td">{{ item[5] }}</td>
+        </tr>
+    </table>
+    <table class="table" style="margin-top: -11px;">
+        <tr style='height:38.00pt;'>
+            <td class="td">库备车：{{ plan_carport }}</td>
+        </tr>
+        <tr style='height:138.00pt;'>
+            <td class="td">其他交班事宜：{{ other_remark }}</td>
+        </tr>
+    </table>
+    <table class="table" style="margin-top: -11px; text-align: center">
+        <tr style='height:38.00pt;'>
+            <td class="td" style="width: 15%">接车</td>
+            <td class="td" style="width: 15%">发车</td>
+            <td class="td" style="width: 15%">调车辆数</td>
+            <td class="td" style="width: 15%">调车钩数</td>
+            <td class="td" style="width: 15%">施工作业</td>
+            <td class="td" >跨班施工</td>
+        </tr>
+        <tr style='height:38.00pt;'>
+            <td class="td">&#160;</td>
+            <td class="td"></td>
+            <td class="td"></td>
+            <td class="td"></td>
+            <td class="td"></td>
+            <td class="td"></td>
+        </tr>
+        <tr style='height:38.00pt;'>
+            <td class="td">交班人签字</td>
+            <td class="td"></td>
+            <td class="td">接班人签字</td>
+            <td class="td"></td>
+            <td class="td">交接班时间</td>
+            <td class="td">{{ handover_date }}</td>
+        </tr>
+    </table>
+</div>
+
+<div style="width:60px; margin: auto">
+    <button class="btn btn-primary" onclick="println()">打印</button>
+</div>

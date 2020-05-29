@@ -1,0 +1,73 @@
+.btn-container {
+    margin: 0 auto;
+    display: table;
+}
+
+.no-assign-container {
+    border: 1px #C9C9C9 solid;
+    margin: 5px 5px;
+}
+
+.layui-table {
+    margin: 0;
+    border-collapse: collapse;
+}
+
+.shift-table {
+    max-height: 210px;
+    min-height: 210px;
+    margin-top: 10px;
+    overflow: auto;
+    display: inline-block;
+}
+
+.container {
+    max-height: 1000px;
+    min-height: 1000px;
+    margin-top: 10px;
+    overflow: auto;
+    width: 100%;
+    display: inline-block;
+}
+
+.assign-container {
+    max-height: 1000px;
+    min-height: 1000px;
+    overflow: auto;
+    width: 100%;
+    display: inline-block;
+}
+
+.reject-status {
+    background-color: #ffc107;
+}
+
+.accept-status {
+    background-color: #28a745;
+}
+
+.text-vertical-top {
+    vertical-align: top;
+}
+
+.accept-container {
+
+}
+
+.custom-textarea-height {
+    min-height: 441px;
+}
+
+.view-container {
+    max-height: 1000px;
+    min-height: 1000px;
+    margin-top: 55px;
+}
+
+.shift-container {
+    max-height: 900px;
+    min-height: 900px;
+    overflow: auto;
+    width: 100%;
+    display: inline-block;
+}

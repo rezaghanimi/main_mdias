@@ -1,0 +1,59 @@
+
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.year_plan_summary_list">
+            <field name="name">年计划汇总</field>
+            <field name="model">metro_park_maintenance.year_plan_summary</field>
+            <field name="arch" type="xml">
+                <tree js_class="year_plan_summary_list"
+                      limit="15"
+                      create="0"
+                      class="noOpen"
+                      options="{'height': 'full-270', 'disable_open_record': True}">
+
+                    <field name="train_dev" readonly="1" fixed_left="1" />
+
+                    <field name="month1_rules" width="150" widget="many2many_tags" />
+                    <field name="month2_rules" width="150" widget="many2many_tags" />
+                    <field name="month3_rules" width="150" widget="many2many_tags" />
+                    <field name="month4_rules" width="150" widget="many2many_tags" />
+                    <field name="month5_rules" width="150" widget="many2many_tags" />
+                    <field name="month6_rules" width="150" widget="many2many_tags" />
+                    <field name="month7_rules" width="150" widget="many2many_tags" />
+                    <field name="month8_rules" width="150" widget="many2many_tags" />
+                    <field name="month9_rules" width="150" widget="many2many_tags" />
+
+                    <field name="month10_rules" width="150" widget="many2many_tags" />
+                    <field name="month11_rules" width="150" widget="many2many_tags" />
+                    <field name="month12_rules" width="150" widget="many2many_tags" />
+
+                    <field name="remark"/>
+
+                    <button name="view_detail"
+                            fixed_right="1"
+                            type="object"
+                            class="btn btn-success btn-sm"
+                            text="编辑" />
+
+                </tree>
+            </field>
+        </record>
+
+        <!-- 年计划动作-->
+        <record id="metro_park_maintenance.year_plan_summary_act_server"
+                model="ir.actions.server">
+            <field name="name">年计划查看</field>
+            <field name="type">ir.actions.server</field>
+            <field name="model_id" ref="model_metro_park_maintenance_year_plan_summary" />
+            <field name="state">code</field>
+            <field name="code">
+                action = model.get_year_plan_action()
+            </field>
+        </record>
+
+    </data>
+</odoo>
+
+
+    

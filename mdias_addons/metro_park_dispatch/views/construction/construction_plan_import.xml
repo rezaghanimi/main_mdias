@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="tree_construction_plan_import" model="ir.ui.view">
+            <field name="name">导入计划</field>
+            <field name="model">metro_park_dispatch.construction_plan_import</field>
+            <field name="arch" type="xml">
+                <tree js_class="construction_import_tree_button"
+                      options="{'height': 'full-270'}"
+                      create="0">
+                    <field name="work_code"/>
+                    <field name="work_department"/>
+                    <field name="work_datetime"/>
+                    <field name="work_area"/>
+                    <field name="work_content"/>
+                    <field name="work_effect_area"/>
+                    <field name="work_power"/>
+                    <field name="work_safeguard_procedures"/>
+                    <field name="work_cooperate_request"/>
+                    <field name="apply_user"/>
+                    <field name="remark"/>
+                    <field name="work_safe_desc"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record id="form_construction_plan_import_from" model="ir.ui.view">
+            <field name="name">导入计划</field>
+            <field name="model">metro_park_dispatch.construction_plan_import</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <sheet>
+                        <group>
+                            <field name="work_code"/>
+                            <field name="work_department"/>
+                            <field name="work_datetime"/>
+                            <field name="work_area"/>
+                            <field name="work_content"/>
+                            <field name="work_effect_area"/>
+                            <field name="work_power"/>
+                            <field name="work_safeguard_procedures"/>
+                            <field name="work_cooperate_request"/>
+                            <field name="apply_user"/>
+                            <field name="remark"/>
+                            <field name="work_safe_desc"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="form_construction_plan_import" model="ir.ui.view">
+            <field name="name">导入计划</field>
+            <field name="model">metro_park_dispatch.construction_plan_import_file</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="file"/>
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button type="object"
+                                name="construction_plan_import_file"
+                                class="btn btn_primary"
+                                text="导入"/>
+                        <button special="cancel"
+                                class="btn btn_secondary"
+                                text="取消"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="act_construction_plan_import" model="ir.actions.act_window">
+            <field name="name">导入施工计划</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">metro_park_dispatch.construction_plan_import</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="act_construction_plan_import"
+                  id="act_construction_plan_menu"
+                  name="导入施工计划"
+                  parent="metro_park_dispatch.menu_construction_root"/>
+    </data>
+</odoo>

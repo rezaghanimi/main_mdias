@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <record id="yuan_hua_switch_0802" model="metro_park_base.switches">
+            <field name="name">0802</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0802-0808DG"/>
+        </record>
+        <record id="yuan_hua_switch_0804" model="metro_park_base.switches">
+            <field name="name">0804</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0804-0806DG"/>
+        </record>
+        <record id="yuan_hua_switch_0806" model="metro_park_base.switches">
+            <field name="name">0806</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0804-0806DG"/>
+        </record>
+        <record id="yuan_hua_switch_0808" model="metro_park_base.switches">
+            <field name="name">0808</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0802-0808DG"/>
+        </record>
+        <record id="yuan_hua_switch_0810" model="metro_park_base.switches">
+            <field name="name">0810</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0810DG"/>
+        </record>
+        <record id="yuan_hua_switch_0812" model="metro_park_base.switches">
+            <field name="name">0812</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0812DG"/>
+        </record>
+        <record id="yuan_hua_switch_0814" model="metro_park_base.switches">
+            <field name="name">0814</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0814-0820DG"/>
+        </record>
+        <record id="yuan_hua_switch_0816" model="metro_park_base.switches">
+            <field name="name">0816</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0816-0818DG"/>
+        </record>
+        <record id="yuan_hua_switch_0818" model="metro_park_base.switches">
+            <field name="name">0818</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0816-0818DG"/>
+        </record>
+        <record id="yuan_hua_switch_0820" model="metro_park_base.switches">
+            <field name="name">0820</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0814-0820DG"/>
+        </record>
+        <record id="yuan_hua_switch_0822" model="metro_park_base.switches">
+            <field name="name">0822</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0822-0824DG"/>
+        </record>
+        <record id="yuan_hua_switch_0824" model="metro_park_base.switches">
+            <field name="name">0824</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0822-0824DG"/>
+        </record>
+        <record id="yuan_hua_switch_0826" model="metro_park_base.switches">
+            <field name="name">0826</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0826-0840DG"/>
+        </record>
+        <record id="yuan_hua_switch_0828" model="metro_park_base.switches">
+            <field name="name">0828</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0828DG"/>
+        </record>
+        <record id="yuan_hua_switch_0830" model="metro_park_base.switches">
+            <field name="name">0830</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0830DG"/>
+        </record>
+        <record id="yuan_hua_switch_0832" model="metro_park_base.switches">
+            <field name="name">0832</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0832DG"/>
+        </record>
+        <record id="yuan_hua_switch_0834" model="metro_park_base.switches">
+            <field name="name">0834</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0834DG"/>
+        </record>
+        <record id="yuan_hua_switch_0836" model="metro_park_base.switches">
+            <field name="name">0836</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0836-0844DG"/>
+        </record>
+        <record id="yuan_hua_switch_0838" model="metro_park_base.switches">
+            <field name="name">0838</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0838DG"/>
+        </record>
+        <record id="yuan_hua_switch_0840" model="metro_park_base.switches">
+            <field name="name">0840</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0826-0840DG"/>
+        </record>
+        <record id="yuan_hua_switch_0842" model="metro_park_base.switches">
+            <field name="name">0842</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0842-0852DG"/>
+        </record>
+        <record id="yuan_hua_switch_0844" model="metro_park_base.switches">
+            <field name="name">0844</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0836-0844DG"/>
+        </record>
+        <record id="yuan_hua_switch_0846" model="metro_park_base.switches">
+            <field name="name">0846</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0846-0850DG"/>
+        </record>
+        <record id="yuan_hua_switch_0848" model="metro_park_base.switches">
+            <field name="name">0848</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0848DG"/>
+        </record>
+        <record id="yuan_hua_switch_0850" model="metro_park_base.switches">
+            <field name="name">0850</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0846-0850DG"/>
+        </record>
+        <record id="yuan_hua_switch_0852" model="metro_park_base.switches">
+            <field name="name">0852</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0842-0852DG"/>
+        </record>
+        <record id="yuan_hua_switch_0854" model="metro_park_base.switches">
+            <field name="name">0854</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0854-0868DG"/>
+        </record>
+        <record id="yuan_hua_switch_0856" model="metro_park_base.switches">
+            <field name="name">0856</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0856DG"/>
+        </record>
+        <record id="yuan_hua_switch_0858" model="metro_park_base.switches">
+            <field name="name">0858</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0858-0876DG"/>
+        </record>
+        <record id="yuan_hua_switch_0860" model="metro_park_base.switches">
+            <field name="name">0860</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0860-0878DG"/>
+        </record>
+        <record id="yuan_hua_switch_0862" model="metro_park_base.switches">
+            <field name="name">0862</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0862DG"/>
+        </record>
+        <record id="yuan_hua_switch_0864" model="metro_park_base.switches">
+            <field name="name">0864</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0864DG"/>
+        </record>
+        <record id="yuan_hua_switch_0866" model="metro_park_base.switches">
+            <field name="name">0866</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0866DG"/>
+        </record>
+        <record id="yuan_hua_switch_0868" model="metro_park_base.switches">
+            <field name="name">0868</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0854-0868DG"/>
+        </record>
+        <record id="yuan_hua_switch_0870" model="metro_park_base.switches">
+            <field name="name">0870</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0870DG"/>
+        </record>
+        <record id="yuan_hua_switch_0872" model="metro_park_base.switches">
+            <field name="name">0872</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0872-0880DG"/>
+        </record>
+        <record id="yuan_hua_switch_0874" model="metro_park_base.switches">
+            <field name="name">0874</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0874-0882DG"/>
+        </record>
+        <record id="yuan_hua_switch_0876" model="metro_park_base.switches">
+            <field name="name">0876</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0858-0876DG"/>
+        </record>
+        <record id="yuan_hua_switch_0878" model="metro_park_base.switches">
+            <field name="name">0878</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0860-0878DG"/>
+        </record>
+        <record id="yuan_hua_switch_0880" model="metro_park_base.switches">
+            <field name="name">0880</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0872-0880DG"/>
+        </record>
+        <record id="yuan_hua_switch_0882" model="metro_park_base.switches">
+            <field name="name">0882</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0874-0882DG"/>
+        </record>
+        <record id="yuan_hua_switch_0884" model="metro_park_base.switches">
+            <field name="name">0884</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0884DG"/>
+        </record>
+        <record id="yuan_hua_switch_0886" model="metro_park_base.switches">
+            <field name="name">0886</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0886DG"/>
+        </record>
+        <record id="yuan_hua_switch_0888" model="metro_park_base.switches">
+            <field name="name">0888</field>
+            <field name="location" ref="yuan_hua"/>
+            <field name="rail_sec_id" ref="metro_park_base_data_8.yuan_hua_rail_0888DG"/>
+        </record>
+    </data>
+</odoo>

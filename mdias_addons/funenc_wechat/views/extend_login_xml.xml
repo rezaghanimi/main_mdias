@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="funenc_layui_theme_wechat_qr_code_login" inherit_id="layui_theme.funenc_layui_theme_login">
+
+        <xpath expr="//div[@class='layadmin-user-login-main']/div[@class='layadmin-user-login-box layadmin-user-login-body layui-form']" position="attributes">
+            <attribute name="id">login_form</attribute>
+            <!--<attribute name="class">layui-btn layui-btn-fluid layui-hide</attribute>-->
+        </xpath>
+
+        <xpath expr="//div[@class='layadmin-user-login-main']/div[@class='layui-form-item'][last()]" position="attributes">
+            <attribute name="id">div_to_login</attribute>
+            <!--<attribute name="class">layui-btn layui-btn-fluid layui-hide</attribute>-->
+        </xpath>
+
+        <xpath expr="//div[@id='div_to_login']" position="before">
+            <t t-if="can_user_qr_code == 'True'">
+                <div class="layui-form-item" id="div_to_qr_code" style="text-align: center;">
+                    <button class="layui-btn layui-btn-fluid" style="width: 335px;" id="button_switch_qr_code">
+                        切换企业微信扫码登陆
+                    </button>
+                </div>
+
+                <div class="layui-form-item layui-hide" id="div_to_switch" style="text-align: center;">
+                    <div id="to_login_image" style="text-align: center"/>
+
+                    <button class="layui-btn layui-btn-fluid" style="width: 335px;" id="button_switch_password">
+                        切换账号登录
+                    </button>
+                </div>
+            </t>
+        </xpath>
+
+        <xpath expr="//div[@class='layadmin-user-login-main']" position="after">
+            <t t-if="can_user_qr_code == 'True'">
+                <script type="text/javascript"
+                        src="http://rescdn.qqmail.com/node/ww/wwopenmng/js/sso/wwLogin-1.0.0.js"/>
+                <script>
+                    $('#button_switch_qr_code, #button_switch_password').on('click', function(){
+                        $('#div_to_switch, #button_switch_qr_code, #div_to_login, #login_form').toggleClass('layui-hide')
+                    })
+                </script>
+                <script>
+                    window.WwLogin({
+                    "id" : "to_login_image",
+                    "appid" : "<t t-esc="appid"/>",
+                    "agentid" : "<t t-esc="agentid"/>",
+                    "redirect_uri" : "<t t-esc="redirect_url"/>",
+                    "state" : "",
+                    "href" : "",
+                    });
+                </script>
+            </t>
+        </xpath>
+
+
+    </template>
+</odoo>

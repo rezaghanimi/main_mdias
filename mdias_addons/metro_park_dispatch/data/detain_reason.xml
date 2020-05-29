@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="detain_reason_extra"
+                model="metro_park_dispatch.detain_reason">
+            <field name="reason">其它</field>
+        </record>
+
+    </data>
+</odoo>

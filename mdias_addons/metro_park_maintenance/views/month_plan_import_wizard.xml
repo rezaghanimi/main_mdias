@@ -1,0 +1,64 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.month_plan_import_wizard_list">
+            <field name="name">月计划导入向导</field>
+            <field name="model">metro_park_maintenance.month_plan_import_wizard</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="file"/>
+                    <field name="remark"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="metro_park_maintenance.month_plan_import_wizard_form">
+            <field name="name">月计划导入向导</field>
+            <field name="model">metro_park_maintenance.month_plan_import_wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="file">file</label>
+                        <div class="col-sm-10">
+                            <field name="file"/>
+                        </div>
+                    </div>
+                    <footer>
+                        <button class="btn btn-success" type="object" name="on_ok_btn_clicked" text="导入"/>
+                        <button class="btn btn-info" text="取消" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="metro_park_maintenance.view_month_plan_works_import">
+            <field name="name">生产作业导入</field>
+            <field name="model">metro_park_maintenance.month_plan_import_wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="file">file</label>
+                        <div class="col-sm-10">
+                            <field name="file"/>
+                        </div>
+                    </div>
+                    <footer>
+                        <button class="btn btn-success" type="object" name="view_month_plan_works_import" text="导入"/>
+                        <button class="btn btn-info" text="取消" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+
+        <record model="ir.actions.act_window" id="metro_park_maintenance.month_plan_import_wizard_act_window">
+            <field name="name">月计划导入向导</field>
+            <field name="res_model">metro_park_maintenance.month_plan_import_wizard</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+    

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="metro_park_dispatch.time_table_for_Monday"
+                model="metro_park_dispatch.nor_time_table_config">
+            <field name="day_type" ref="metro_park_dispatch.Monday" />
+        </record>
+
+        <record id="metro_park_dispatch.time_table_for_Tuesday"
+                model="metro_park_dispatch.nor_time_table_config">
+            <field name="day_type" ref="metro_park_dispatch.Tuesday" />
+        </record>
+
+        <record id="metro_park_dispatch.time_table_for_Wednesday"
+                model="metro_park_dispatch.nor_time_table_config">
+            <field name="day_type" ref="metro_park_dispatch.Wednesday" />
+        </record>
+
+        <record id="metro_park_dispatch.time_table_for_Thursday"
+                model="metro_park_dispatch.nor_time_table_config">
+            <field name="day_type" ref="metro_park_dispatch.Thursday" />
+        </record>
+
+        <record id="metro_park_dispatch.time_table_for_Friday"
+                model="metro_park_dispatch.nor_time_table_config">
+            <field name="day_type" ref="metro_park_dispatch.Friday" />
+        </record>
+
+        <record id="metro_park_dispatch.time_table_for_Saturday"
+                model="metro_park_dispatch.nor_time_table_config">
+            <field name="day_type" ref="metro_park_dispatch.Saturday" />
+        </record>
+
+        <record id="metro_park_dispatch.time_table_for_Sunday"
+                model="metro_park_dispatch.nor_time_table_config">
+            <field name="day_type" ref="metro_park_dispatch.Sunday" />
+        </record>
+
+    </data>
+</odoo>

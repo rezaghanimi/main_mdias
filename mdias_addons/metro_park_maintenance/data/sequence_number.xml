@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+   <data>
+      <record id="year_plan_sequence" model="ir.sequence">
+         <field name="name">年计划编号</field>
+         <field name="code">year.plan.number</field>
+         <field name="prefix">%(year)s%(month)s%(day)s</field>
+         <field name="padding">1</field>
+      </record>
+
+      <record id="month_plan_sequence" model="ir.sequence">
+         <field name="name">月计划编号</field>
+         <field name="code">month.plan.number</field>
+         <field name="prefix">%(year)s%(month)s%(day)s</field>
+         <field name="padding">1</field>
+      </record>
+
+      <record id="week_plan_sequence" model="ir.sequence">
+         <field name="name">周计划编号</field>
+         <field name="code">week.plan.number</field>
+         <field name="prefix">%(year)s%(month)s%(day)s</field>
+         <field name="padding">1</field>
+      </record>
+
+      <record id="repair_rule_sequence" model="ir.sequence">
+         <field name="name">修程编号</field>
+         <field name="code">repair.rule.number</field>
+         <field name="prefix">%(year)s%(month)s%(day)s</field>
+         <field name="padding">1</field>
+      </record>
+
+      <!--  工单编号  -->
+      <record id="repair_rule_sequence" model="ir.sequence">
+         <field name="name">修程编号</field>
+         <field name="code">maintaince.order.number</field>
+         <field name="padding">4</field>
+         <field name="use_date_range">True</field>
+      </record>
+
+      <!--  计划日志  -->
+      <record id="plan_log_sequence" model="ir.sequence">
+         <field name="name">计划编号</field>
+         <field name="code">plan.order.number</field>
+         <field name="padding">1</field>
+         <field name="use_date_range">True</field>
+      </record>
+
+      <!-- 公里数计划编号 -->
+      <record id="miles_log_sequence" model="ir.sequence">
+         <field name="name">公里数计划编号</field>
+         <field name="code">miles.order.number</field>
+         <field name="padding">1</field>
+         <field name="use_date_range">True</field>
+      </record>
+
+      <record id="funenc_malfunction_repair_sequence" model="ir.sequence">
+         <field name="name">故障报修单编号规则</field>
+         <field name="code">malfunction.repair.code</field>
+         <field name="prefix">No.%(year)s%(month)s</field>
+         <field name="suffix"/>
+         <field name="padding">4</field>
+      </record>
+   </data>
+
+</odoo>

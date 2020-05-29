@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="FunencFieldSelection">
+        <div>
+            <span t-if="widget.mode === 'readonly'"/>
+            <div class="funenc_select"  t-else="">
+                <span t-if="widget.mode !== 'readonly'" class="o_dropdown_arrow is-reverse">
+                    <i class="fa fa-angle-down" draggable="false"></i>
+                </span>
+                <select t-if="widget.mode !== 'readonly'" 
+                    class="selectpicker"
+                    data-width="100%"
+                    data-container="body"
+                    t-att-name="widget.name"
+                    t-att-tabindex="widget.attrs.tabindex"
+                    t-att-autofocus="widget.attrs.autofocus"
+                    t-att-id="widget.idForLabel"></select>
+            </div>
+        </div>
+    </t>
+</templates>

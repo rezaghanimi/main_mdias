@@ -1,0 +1,13 @@
+pendulum
+pdfkit
+xlwt
+pyexcel
+pyexcel-xls
+pyexcel-xlsx
+XlsxWriter
+Crypto
+cryptography
+decorator==4.1.0
+pycrypto
+threadpool
+thrift

@@ -1,0 +1,5 @@
+Crypto
+cryptography
+decorator==4.1.0
+pycrypto
+thredpool

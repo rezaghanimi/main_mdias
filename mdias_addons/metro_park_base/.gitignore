@@ -1,0 +1,12 @@
+.idea/
+__pycache__/
+*.pyc
+dev.conf
+.vscode
+.DS_Store
+.metadata
+bin/
+*.bak
+*.lck
+*.log
+/client/*.log

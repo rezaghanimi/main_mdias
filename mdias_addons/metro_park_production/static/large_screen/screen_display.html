@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./swiper.min.css">
+    <script src="./swiper.min.js"></script>
+    <script src="../js_res/vue.js"></script>
+    <script src="../js_res/element.js"></script>
+    <script src="../js_res/jquery.js"></script>
+    <link rel="stylesheet" href="../js/jodit/jodit.min.css">
+</head>
+
+<body style="background: #000000">
+<div id="swiper1" class="swiper-container jodit_wysiwyg"
+     style="position: fixed; left:0;top:0;right:0;bottom:0;overflow-y: hidden;overflow-x: hidden">
+    <div class=" swiper-wrapper">
+        <div class="swiper-slide" v-for="page in pages" v-html="page.html_value" style="background: #000000;">
+
+        </div>
+    </div>
+
+
+</div>
+</body>
+
+<script>
+
+    new Vue({
+        el: '#swiper1',
+        data: function () {
+            return {
+                host: 'http://' + location.host,
+                pages: []
+
+            }
+        },
+        created() {
+
+        },
+        mounted() {
+            var that = this;
+            this.$nextTick(function () {
+                that.getMaintenanceMsg();
+            });
+
+            this.$nextTick(function () {
+                new Swiper('.swiper-container', {
+                    autoplay: {
+                        delay: 30 * 1000
+                    },
+                });
+            })
+
+
+        },
+        methods: {
+            GetQueryString(name) {
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+                var r = window.location.search.substr(1).match(reg);
+                if (r != null) return unescape(r[2]);
+                return null;
+            },
+            //获取大屏显示信息
+            getMaintenanceMsg() {
+                //获取大屏显示信息
+                debugger
+                var that = this;
+                var id = this.GetQueryString('location_id');
+                debugger
+                $.ajax({
+                    url: that.host + '/maintenance/large_screen/get_msg?location_id=' + id,
+                    type: 'get',
+                    success: function (data) {
+                        var jdata = JSON.parse(data);
+                        that.pages = jdata.pages;
+                    }
+                })
+            }
+        },
+    })
+</script>
+</html>

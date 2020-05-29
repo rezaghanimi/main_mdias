@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.ui.view" id="view_funenc_alarm_device_tree">
+        <field name="name">报警设备</field>
+        <field name="model">funenc.alarm.device</field>
+        <field name="arch" type="xml">
+            <tree default_order="id desc" options="{'height':'full-400'}" limit="30">
+                <field name="name" fixed_left="1" width="400"/>
+                <field name="composition_unit" width="400"/>
+                <field name="alarm_level" width="100"/>
+            </tree>
+        </field>
+    </record>
+
+     <record model="ir.ui.view" id="view_funenc_alarm_device_form">
+        <field name="name">报警设备</field>
+        <field name="model">funenc.alarm.device</field>
+        <field name="arch" type="xml">
+            <form>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" for="name"/>
+                    <div class="col-sm-10">
+                        <field name="name"/>
+                    </div>
+                    <label class="col-sm-2 col-form-label" for="composition_unit"/>
+                    <div class="col-sm-10">
+                        <field name="composition_unit"/>
+                    </div>
+                    <label class="col-sm-2 col-form-label" for="alarm_level"/>
+                    <div class="col-sm-10">
+                        <field name="alarm_level"/>
+                    </div>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="view_funenc_alarm_device_action">
+        <field name="name">报警设备</field>
+        <field name="res_model">funenc.alarm.device</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="view_funenc_alarm_device_server" model="ir.actions.server">
+        <field name="name">报警设备</field>
+        <field name="type">ir.actions.server</field>
+        <field name="model_id" ref="model_funenc_alarm_device"/>
+        <field name="state">code</field>
+        <field name="code">
+            action = model.get_cur_train_action()
+        </field>
+    </record>
+
+    <menuitem id="funenc_alarm_device_action_menu" parent="funenc_malfunction_repair_root_menu"
+              name="报警设备" sequence="2" action="view_funenc_alarm_device_action"/>
+
+</odoo>

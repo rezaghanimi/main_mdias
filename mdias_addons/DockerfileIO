@@ -1,0 +1,11 @@
+From registry.cn-hangzhou.aliyuncs.com/odoomaster/super_odoo12_docker
+# 拷贝项目本地文件到docker
+COPY . /mnt/extra-addons/mdias_addons
+COPY socketio-odoo.conf /odoo/
+RUN  rm /odoo/odoo.conf | mv /odoo/socketio-odoo.conf /odoo/odoo.conf
+
+EXPOSE 8099
+
+RUN python3 ./etc/entrypoint.py
+CMD ["/usr/bin/supervisord"]
+

@@ -1,0 +1,49 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.accept_alarm_list">
+            <field name="name">接车提醒</field>
+            <field name="model">metro_park_dispatch.back_plan_alarm</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="plan_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_dispatch.accept_alarm_form">
+            <field name="name">接车提醒</field>
+            <field name="model">metro_park_dispatch.back_plan_alarm</field>
+            <field name="arch" type="xml">
+                <form js_class="">
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="plan_id">plan_id</label>
+                        <div class="col-sm-10">
+                            <field name="plan_id">
+                                <tree js_class="fnt_table">
+                                    <field string="plan_train_no" />
+                                    <field string="real_train_no" />
+                                    <field string="plan_back_time" />
+                                    <field string="plan_back_rail" />
+                                </tree>
+                            </field>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <button class="btn btn-primary accpet_btn" type="object" text="确认接车" />
+                        <button class="btn btn-secondary temp_close" type="object" text="暂时关闭" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window" id="metro_park_dispatch.accept_alarm_act_window">
+            <field name="name">接车提醒</field>
+            <field name="res_model">metro_park_dispatch.back_plan_alarm</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+    

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="metro_park_dispatch_train_num_1"
+            model="metro_park_dispatch.train_num">
+            <field name="index">1</field>
+            <field name="value">1</field>
+        </record>
+
+        <record id="metro_park_dispatch_train_num_2"
+            model="metro_park_dispatch.train_num">
+            <field name="index">2</field>
+            <field name="value">2</field>
+        </record>
+
+        <record id="metro_park_dispatch_train_num_3"
+            model="metro_park_dispatch.train_num">
+            <field name="index">3</field>
+            <field name="value">3</field>
+        </record>
+
+        <record id="metro_park_dispatch_train_num_4"
+            model="metro_park_dispatch.train_num">
+            <field name="index">4</field>
+            <field name="value">4</field>
+        </record>
+
+        <record id="metro_park_dispatch_train_num_5"
+            model="metro_park_dispatch.train_num">
+            <field name="index">5</field>
+            <field name="value">5</field>
+        </record>
+
+        <record id="metro_park_dispatch_train_num_6"
+            model="metro_park_dispatch.train_num">
+            <field name="index">6</field>
+            <field name="value">6</field>
+        </record>
+
+        <record id="metro_park_dispatch_train_num_7"
+            model="metro_park_dispatch.train_num">
+            <field name="index">7</field>
+            <field name="value">7</field>
+        </record>
+
+        <record id="metro_park_dispatch_train_num_8"
+            model="metro_park_dispatch.train_num">
+            <field name="index">8</field>
+            <field name="value">8</field>
+        </record>
+
+        <record id="metro_park_dispatch_train_num_9"
+            model="metro_park_dispatch.train_num">
+            <field name="index">9</field>
+            <field name="value">9</field>
+        </record>
+
+        <record id="metro_park_dispatch_train_num_10"
+            model="metro_park_dispatch.train_num">
+            <field name="index">10</field>
+            <field name="value">10</field>
+        </record>
+
+        <record id="metro_park_dispatch_train_num_11"
+            model="metro_park_dispatch.train_num">
+            <field name="index">11</field>
+            <field name="value">11</field>
+        </record>
+
+        <record id="metro_park_dispatch_train_num_12"
+            model="metro_park_dispatch.train_num">
+            <field name="index">12</field>
+            <field name="value">12</field>
+        </record>
+
+        <record id="metro_park_dispatch_train_num_13"
+            model="metro_park_dispatch.train_num">
+            <field name="index">13</field>
+            <field name="value">13</field>
+        </record>
+
+        <record id="metro_park_dispatch_train_num_14"
+            model="metro_park_dispatch.train_num">
+            <field name="index">14</field>
+            <field name="value">14</field>
+        </record>
+
+        <record id="metro_park_dispatch_train_num_15"
+            model="metro_park_dispatch.train_num">
+            <field name="index">15</field>
+            <field name="value">15</field>
+        </record>
+
+        <record id="metro_park_dispatch_train_num_16"
+            model="metro_park_dispatch.train_num">
+            <field name="index">16</field>
+            <field name="value">16</field>
+        </record>
+
+        <record id="metro_park_dispatch_train_num_17"
+            model="metro_park_dispatch.train_num">
+            <field name="index">17</field>
+            <field name="value">17</field>
+        </record>
+
+        <record id="metro_park_dispatch_train_num_18"
+            model="metro_park_dispatch.train_num">
+            <field name="index">18</field>
+            <field name="value">18</field>
+        </record>
+
+        <record id="metro_park_dispatch_train_num_19"
+            model="metro_park_dispatch.train_num">
+            <field name="index">19</field>
+            <field name="value">19</field>
+        </record>
+
+        <record id="metro_park_dispatch_train_num_20"
+            model="metro_park_dispatch.train_num">
+            <field name="index">20</field>
+            <field name="value">20</field>
+        </record>
+
+    </data>
+</odoo>

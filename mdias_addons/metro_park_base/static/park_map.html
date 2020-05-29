@@ -1,0 +1,769 @@
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=5,IE=9"><![endif]-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FunencMdias</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <link href="styles/grapheditor.css" rel="stylesheet" type="text/css">
+
+    <script src="mxgraph/grapheditor/lib/lodash.min.js" type="text/javascript"></script>
+    <script src="mxgraph/grapheditor/lib/underscore.json.js" type="text/javascript"></script>
+
+    <!-- 加载 -->
+    <script src="mxgraph/src/js/mxClient.js" type="text/javascript"></script>
+
+    <!-- 加载editor相关内容 -->
+    <script src="mxgraph/grapheditor/js/Init.js" type="text/javascript"></script>
+    <script src="mxgraph/grapheditor/deflate/pako.min.js" type="text/javascript"></script>
+    <script src="mxgraph/grapheditor/deflate/base64.js" type="text/javascript"></script>
+    <script src="mxgraph/grapheditor/jscolor/jscolor.js" type="text/javascript"></script>
+    <script src="mxgraph/grapheditor/sanitizer/sanitizer.min.js" type="text/javascript"></script>
+    <script src="mxgraph/grapheditor/js/EditorUi.js" type="text/javascript"></script>
+    <script src="mxgraph/grapheditor/js/Editor.js" type="text/javascript"></script>
+    <script src="mxgraph/grapheditor/js/Graph.js" type="text/javascript"></script>
+    <script src="mxgraph/grapheditor/js/Shapes.js" type="text/javascript"></script>
+    <script src="mxgraph/grapheditor/js/Actions.js" type="text/javascript"></script>
+    <script src="mxgraph/grapheditor/js/Menus.js" type="text/javascript"></script>
+    <script src="mxgraph/grapheditor/js/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="mxgraph/grapheditor/js/jquery.keyboard.js" type="text/javascript"></script>
+    <script src="mxgraph/grapheditor/js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="mxgraph/grapheditor/js/jquery.mousewheel.js" type="text/javascript"></script>
+
+    <!-- 加载第三方库 -->
+    <script src="lib/jquery.keyboard.extension-typing.js" type="text/javascript"></script>
+    <script src="lib/vue.js" type="text/javascript"></script>
+    <script src="lib/eleindex.js" type="text/javascript"></script>
+    <script src="lib/Tdrag.js" type="text/javascript"></script>
+    <script src="lib/pop.min.js" type="text/javascript"></script>
+    <script src="lib/context.js" type="text/javascript"></script>
+    <script src="lib/moment.min.js" type="text/javascript"></script>
+    <script src="lib/socket.io.js" type="text/javascript"></script>
+</head>
+
+<body class="park_map">
+    <div class="park_map">
+        <div id='loading_pic' class="loading">
+        </div>
+
+        <div class="alarm_list alarm">
+            <div></div>
+        </div>
+
+        <div class="graph_body">
+            <div class="cover_graph"></div>
+
+            <!-- 底部显示区域 -->
+            <div class="footer">
+                <div id="signal_name" class="signal_name"></div>
+                <div></div>
+                <div id="status_txt" class="fire_node">
+                    <span></span>
+                    <div class="alarm_list"></div>
+                </div>
+                <div id="counting_down" style="background:#ddd;  white-space: nowrap;"></div>
+                <div id="show_time">time</div>
+            </div>
+
+            <!-- 操作按钮 -->
+            <div id="action_btns" class="action_btns">
+                <input id="graph_action_hidden" style="display:none;" type="text">
+                <button class="btn btn-light action_level_one" id="parkbottombtn1" style="color:red" type="button">场引导总锁
+                            </button>
+                <button class="btn btn-light action_level_one" type="button">总取消</button>
+                <button class="btn btn-light action_level_one" style="color:red" type="button">总人解</button>
+                <button class="btn btn-light action_level_one" style="color:red" type="button">区故解</button>
+                <button class="btn btn-light action_level_one" type="button">总定位</button>
+                <button class="btn btn-light action_level_one" type="button">总反位</button>
+                <button class="btn btn-light action_level_one" id="nofocus" type="button">清除</button>
+                <button class="btn btn-light action_level_one" type="button">单锁</button>
+                <button class="btn btn-light action_level_one" type="button">单解</button>
+                <button class="btn btn-light action_level_one" type="button">按钮封锁</button>
+                <button class="btn btn-light action_level_one" type="button">按钮解封</button>
+                <button class="btn btn-light action_level_one" type="button">道岔封锁</button>
+                <button class="btn btn-light action_level_one" type="button">道岔解封</button>
+                <button class="btn btn-light action_level_one assist_menu_level1" id="nofocus" type="button">辅助菜单</button>
+                <div id="graph_action_btn_sub1" style='display: none;'>
+                    <button class="btn btn-light" id="nofocus" type="button">人工确认模式</button>
+                    <button class="btn btn-light hide_switch_name" id="nofocus" type="button">道岔名称隐藏</button>
+                    <button class="btn btn-light sigal_name_toggle" id="nofocus" type="button">信号名称隐藏</button>
+                    <button class="btn btn-light switch_section_name_toggle" id="nofocus" type="button">道岔区段名称隐藏</button>
+                    <button class="btn btn-light wc_section_name_toggle" id="nofocus" type="button">无岔区段名称隐藏</button>
+                    <button class="btn btn-light switch_toggle" id="nofocus" type="button">道岔位置隐藏</button>
+                    <button class="btn btn-light lightbelt" id="nofocus" type="button">接通光带</button>
+                    <button class="btn btn-light pofeng_statistic" id="nofocus" type="button">破封统计</button>
+                    <button class="btn btn-light alram_pannel_toggle" id="nofocus" type="button">报警窗口隐藏</button>
+                    <button class="btn btn-light disptch_plan_toggle" id="nofocus" type="button">调度计划</button>
+                    <button class="btn btn-light busy_icons_toggle" id="nofocus" type="button">占线板</button>
+                    <button class="btn btn-light train_toggle" id="nofocus" type="button">隐藏列车</button>
+                    <button class="btn btn-light exit_submenu" id="nofocus" type="button">退出菜单</button>
+                </div>
+            </div>
+            <div id="drag_icons">
+                <!-- 用于表示当前图标对应的占线版状态 -->
+                <img data-type='1' src="./style/images/holdwire/deny-round.png" style='width:25px; height:25px;'>
+                <img data-type='2' src="./style/images/holdwire/shigong1-round.png" style='width:25px; height:25px;'>
+                <img data-type='3' src="./style/images/holdwire/shigong2-round.png" style='width:25px; height:25px;'>
+                <ul class="construction_list">
+                    <li style="height: 30px;line-height:25px;">接触网断电</li>
+                    <li style="height: 30px;line-height:25px;">施工1</li>
+                    <li style="height: 30px;line-height:25px;">施工2</li>
+                </ul>
+            </div>
+            <!-- end 固定窗口 -->
+        </div>
+    </div>
+
+</body>
+<script src="js/park_map.js" type="text/javascript"></script>
+
+<script>
+    //初始化
+    const dragicons_top_pos = {
+        "banqiao": {
+            "top": '58%',
+            "left": 0
+        },
+        "gaodalu": {
+            "top": '58%',
+            "left": 0
+        },
+        "huilong": {
+            "top": '77%',
+            "left": 0
+        },
+        "pitong": {
+            "top": '60%',
+            "right": '5%'
+        }
+    }
+
+    let mapname = 'banqiao'
+    if (location.search.indexOf('mapname') > 0) {
+        mapname = location.search.split('=')[1]
+    }
+
+    let park_map = new ParkMap({
+        $el: $(".park_map"),
+        interactive: false,
+        dispable_pan: true
+    })
+
+    function initevetcb() {
+        /**
+         * 辅助菜单，包含Vue和jquery实现的一些功能
+         */
+        $('#graph_action_btn_sub1>button').on('click', function() {
+            $('#graph_action_btn_sub1').toggle()
+        })
+
+        $('.assis_tmenu_level1').on('click', function() {
+            $('#graph_action_btn_sub1').show()
+        })
+
+        $('.outassistmenu').on('click', function() {
+            $('#graph_action_btn_sub1').hide()
+        })
+
+        $('.assistbut0').on('mouseenter', function() {
+            $('#graphactionbtnsub2').show()
+        })
+
+        $('.assistbut0').on('mouseleave', function() {
+            $('#graphactionbtnsub2').hide()
+        })
+
+        $('.assistbut01').on('mouseenter', function() {
+            $('#graphactionbtnsub2').show()
+            $('#graphactionbtnsub3').show()
+            $('#graphactionbtnsub4').hide()
+        })
+
+        $('.assistbut02').on('mouseenter', function() {
+            $('#graphactionbtnsub2').show()
+            $('#graphactionbtnsub3').hide()
+            $('#graphactionbtnsub4').show()
+        })
+
+        $('#graphactionbtnsub4').on('mouseleave', function() {
+            $('#graphactionbtnsub2').hide()
+        })
+
+        $('#graphactionbtnsub3').on('mouseleave', function() {
+            $('#graphactionbtnsub2').hide()
+        })
+
+        $('#graphactionbtnsub4').on('click', function() {
+            $('#graphactionbtnsub2').hide()
+        })
+
+        $('#graphactionbtnsub3').on('click', function() {
+            $('#graphactionbtnsub2').hide()
+        })
+
+        let triggelalarmplane = 0
+        $('.triggeralarmplane').on('click', function(e) {
+            if (triggelalarmplane == 0) {
+                $('.triggeralarmplane').html('报警窗口显示')
+                triggelalarmplane = 1
+            } else {
+                $('.triggeralarmplane').html('报警窗口隐藏')
+                triggelalarmplane = 0
+            }
+            $('.alarmplane').toggle()
+        })
+
+        let radiopausekey = 0
+        $('.radiopause').on('click', function(e) {
+            if (radiopausekey == 0) {
+                // 暂停语音
+                $('.radiopause').html('开启语音')
+                radiopausekey = 1
+            } else {
+                // 开启语音
+                $('.radiopause').html('暂停语音')
+                radiopausekey = 0
+            }
+        })
+
+        ngname.lightbeltkey = 0
+        $('.lightbelt').on('click', function(e) {
+            if (ngname.lightbeltkey == 0) {
+                // 5秒后解除
+                setTimeout(() => {
+                    ngname.lightbeltkey = 0
+                        // 恢复显示
+                    refreshturnou()
+                }, 15000);
+
+                ngname.lightbeltkey = 1
+                refreshturnou()
+            }
+        })
+
+        ngname.turnoutnamekey = 0
+        $('.turnoutname').on('click', function(e) {
+            if (ngname.turnoutnamekey == 0) {
+                // 暂停语音
+                $('.turnoutname').html('道岔名称显示')
+                ngname.turnoutnamekey = 1
+            } else {
+                // 开启语音
+                $('.turnoutname').html('道岔名称隐藏')
+                ngname.turnoutnamekey = 0
+            }
+
+            refreshturnou()
+        })
+
+        let turnoutsectionkey = 1
+        $('.turnoutsection').on('click', function(e) {
+            if (turnoutsectionkey == 0) {
+                // 暂停语音
+                $('.turnoutsection').html('道岔区段名称隐藏')
+                turnoutsectionkey = 1
+            } else {
+                // 开启语音
+                $('.turnoutsection').html('道岔区段名称显示')
+                turnoutsectionkey = 0
+            }
+
+            let controlgraph = ngname;
+            let model = ngname.graph.getModel()
+
+            ngname.globalupdata = true
+            model.beginUpdate()
+
+            // 在区故解时显示全部区段
+            Object.keys(ngname.switchbelongsector).map(k => {
+                let c = ngname.parkequip[k.toLowerCase()]
+                if (c) {
+                    ngname.graph.model.setVisible(c, turnoutsectionkey)
+                }
+            })
+            model.endUpdate()
+            ngname.globalupdata = false
+        })
+
+        ngname.sigalnametogglekey = 0
+        $('.sigalnametoggle').on('click', function(e) {
+            if (ngname.sigalnametogglekey == 0) {
+                $('.sigalnametoggle').html('信号名称显示')
+                ngname.sigalnametogglekey = 1
+            } else {
+                $('.sigalnametoggle').html('信号名称隐藏')
+                ngname.sigalnametogglekey = 0
+            }
+            refreshsingalsignal()
+        })
+
+
+        ngname.withoutturnoutsectionkey = 0
+        $('.withoutturnoutsection').on('click', function(e) {
+            if (ngname.withoutturnoutsectionkey == 0) {
+                // 暂停语音
+                $('.withoutturnoutsection').html('无岔区段名称显示')
+                ngname.withoutturnoutsectionkey = 1
+            } else {
+                // 开启语音
+                $('.withoutturnoutsection').html('无岔区段名称隐藏')
+                ngname.withoutturnoutsectionkey = 0
+            }
+
+            // 刷新显示道岔
+            let controlgraph = ngname
+            let model = ngname.graph.getModel()
+
+            ngname.globalupdata = true
+            model.beginUpdate()
+            for (let i in ngname.parkequip) {
+                if (ngname.parkequip[i].equipstatus && ngname.parkequip[i].equipstatus.type == 2) {
+                    controlgraph.setSectorStatus(ngname.parkequip[i].equipstatus.name, ngname.parkequip[i]
+                        .equipstatus)
+                }
+            }
+            model.endUpdate()
+            ngname.globalupdata = false
+        })
+
+        ngname.turnouttogglekey = 0
+        $('.turnouttoggle').on('click', function(e) {
+            if (ngname.turnouttogglekey == 0) {
+                $('.turnouttoggle').html('道岔位置显示')
+                ngname.turnouttogglekey = 1
+            } else {
+                $('.turnouttoggle').html('道岔位置隐藏')
+                ngname.turnouttogglekey = 0
+            }
+            refreshturnou()
+        })
+
+        // 破封统计
+        ngname.break_statistical = []
+        $('.pofengstatistic').on('click', function(e) {
+            pop.alert({
+                title: "破封统计",
+                content: (() => {
+                    let x = ''
+                    ngname.breakstatistical.map(i => {
+                        let y = i.key + ':' + i.value
+                        x += `<p>${y}</p>`
+                    })
+                    return x
+                })(),
+                button: ["primary", "确定", function(e) {
+                    pop.close(e)
+                }],
+                buttonSpcl: "",
+                sizeAdapt: false,
+                anim: "fadeIn-zoom",
+                width: 450,
+                height: 200,
+                id: "random-70032",
+                place: 5,
+                drag: true,
+                index: true,
+                toClose: true,
+                mask: false,
+                class: false
+            });
+        })
+
+        $('.busywire').on('click', function(e) {
+            if (e.target.innerText == '占线板') {
+                $('#dragicons').show()
+                setTimeout(() => {
+                    $('.placedbusyicon').css({
+                        'display': 'block'
+                    })
+                }, 10);
+                ngname.showbusyicon = true
+                e.target.innerText = '关占线板'
+            } else {
+                $('#dragicons').hide()
+                setTimeout(() => {
+                    $('.placedbusyicon').css({
+                        'display': 'none'
+                    })
+                }, 10);
+                ngname.showbusyicon = false
+                e.target.innerText = '占线板'
+            }
+        })
+
+        $('#dragicons').css(dragicons_top_pos[mapname] || {
+            "top": '58%',
+            "left": 0
+        })
+
+        $('.triggertrain').on('click', function(e) {
+            if (e.target.innerText == '显示列车') {
+                ngname.showvessel = true
+
+                setTimeout(() => {
+                    $('.trainvesseltrain').css({
+                        'visibility': 'unset'
+                    })
+                }, 10);
+
+                let model = ngname.graph.getModel()
+                ngname.globalupdata = true
+                model.beginUpdate()
+                for (let ind in ngname.parkequipvessel) {
+                    vessel = ngname.parkequipvessel[ind]
+                    ngname.graph.orderCells(0, [vessel])
+                }
+                model.endUpdate()
+                ngname.globalupdata = false
+                e.target.innerText = '隐藏列车'
+            } else {
+                ngname.showvessel = false
+
+                setTimeout(() => {
+                    $('.trainvesseltrain').css({
+                        'visibility': 'hidden'
+                    })
+                }, 10);
+
+                let model = ngname.graph.getModel()
+
+                ngname.globalupdata = true
+                model.beginUpdate()
+                for (let ind in ngname.parkequipvessel) {
+                    vessel = ngname.parkequipvessel[ind]
+                    ngname.graph.orderCells(1, [vessel])
+                }
+                model.endUpdate()
+                ngname.globalupdata = false
+
+                e.target.innerText = '显示列车'
+            }
+        })
+
+        // 打开调车计划窗口
+        $('.assistbutshunttrain').on('click', function() {
+            window.open("./dispatch.html?mapname=" + ngname.mapname, "_blank")
+        })
+
+        // 程序启动的时候打开调车窗口
+        window.open("./dispatch.html?mapname=" + ngname.mapname, "_blank")
+
+        $(document).on('mouseover', '.me-codesta', function() {
+            $('.finale h1:first').css({
+                opacity: 0
+            });
+            $('.finale h1:last').css({
+                opacity: 1
+            });
+        });
+
+        $(document).on('mouseout', '.me-codesta', function() {
+            $('.finale h1:last').css({
+                opacity: 0
+            });
+            $('.finale h1:first').css({
+                opacity: 1
+            });
+        });
+
+        $('#firnode').on('mouseover', x => {
+            $('#alarmwarninglist').show()
+        })
+
+        $('#firnode').on('mouseout', x => {
+            $('#alarmwarninglist').hide()
+        })
+
+        $('#alarmwarninglist').on('mouseout', x => {
+            $('#alarmwarninglist').hide()
+        })
+
+        $('#alarmwarninglist').on('mouseover', x => {
+            $('#alarmwarninglist').show()
+        })
+
+        // 占线版右键
+        $(document).ready(function() {
+            context.init({
+                preventDoubleContext: false
+            });
+
+            // 给不同占线右键添加菜单
+            Array.prototype.map.call(
+                document.querySelectorAll("#dragicons img"), (node_img, index) => {
+                    let img_class = ".busytype-" + (index + 1)
+                    context.attach(img_class, [{
+                        text: '移除',
+                        action: function(e) {
+                            e.preventDefault()
+                            if (ngname.busytypedata) {
+                                let uid = ngname.busytypedata
+                                    //去掉cell的label中的图标还有cell的状态
+                                ngname.parkequip[uid].busytypes[index + 1] = false
+
+                                let jdom, equipcell = ngname.parkequip[uid]
+                                    // 放置图标
+                                switch (equipcell.equipstatus.type) {
+                                    case 2: // 区段
+                                        jdom = $(equipcell.getSubCell('road')[0]
+                                            .getAttribute(
+                                                'label'))
+                                        break
+                                    case 1: // 道岔
+                                    case 3: // 出站信号
+                                    case 4: // 进站信号
+                                    case 5: // 调车信号
+                                        jdom = $(equipcell.getSubCell('label')[0]
+                                            .getAttribute(
+                                                'label'))
+                                        break
+                                    case 6: // 信号灯
+                                        break
+                                }
+                                jdom.find(img_class).remove()
+
+                                switch (equipcell.equipstatus.type) {
+                                    case 2: // 区段
+                                        ngname.graph.setAttributeForCell(equipcell
+                                            .getSubCell('road')[0], 'label',
+                                            `<div class='trainvessel'>${jdom.html()}</div>`
+                                        )
+                                        break
+                                    case 1: // 道岔
+                                    case 3: // 出站信号
+                                    case 4: // 进站信号
+                                    case 5: // 调车信号
+                                        ngname.graph.setAttributeForCell(equipcell
+                                            .getSubCell('label')[0], 'label',
+                                            `<div class='trainvessel'>${jdom.html()}</div>`
+                                        )
+                                        break
+                                    case 6: // 信号灯
+                                        break
+                                }
+                            }
+                        }
+                    }]);
+                }
+            )
+        });
+
+
+        /**
+         * 现车管理
+         */
+        ngname.graph.currenttrainclicked = e => {
+            console.log('点击列车：', ngname.allcurrenttrainstate.find(x => x.name == e.detail))
+        }
+
+        // 移动列车
+        ngname.graph.currenttrainmoveed = e => {
+            console.log('移动列车：', e.detail.currenttrain, e.detail.target)
+        }
+
+
+        // 列车右键菜单
+        var kyoPopupMenu = {};
+        kyoPopupMenu = (function() {
+            return {
+                sys: function(trainname) {
+                    $('.popup_menu').remove();
+
+                    let shunttrain = ngname.allcurrenttrainstate.find(x => x.name == trainname),
+                        atstrain = ngname.allatstrainstate.find(x => x.name == trainname)
+                        // ats现车 以及调车现车
+                    if (shunttrain) {
+                        console.log('右键点击列车', shunttrain)
+                    } else if (atstrain) {
+                        console.log('右键点击列车', atstrain)
+                    }
+
+                    if (atstrain) {
+                        return
+                    }
+
+                    // 根据当前点击列车属性生成菜单
+                    popupMenuApp = $(`<div class="popup_menu app-menu"><ul>
+                                        <li><a menu="menu1">menu1</a></li>
+                                        <li><a menu="menu2">menu1</a></li>
+                                        <li><a menu="menu3">menu1</a></li>
+                                    </ul></div>`)
+                        .find('a').attr('href', 'javascript:;')
+                        .end().appendTo('body');
+
+                    // 绑定事件
+                    $('.app-menu a[menu="menu1"]').on('click', function() {});
+                    $('.app-menu a[menu="menu2"]').on('click', function() {});
+                    $('.app-menu a[menu="menu3"]').on('click', function() {});
+
+                    return popupMenuApp;
+                }
+            }
+        })();
+
+        // 现车管理的右键
+        $('html').on('contextmenu', function() {}).click(function() {
+            $('.popup_menu').hide();
+        });
+
+        // 桌面点击右击
+        $('html').on('contextmenu', function(e) {
+            if (e.target.id.indexOf('train') > -1) {
+                var popupmenu = kyoPopupMenu.sys(e.target.id.split('train')[1]);
+                if (!popupmenu) {
+                    return
+                }
+                l = ($(document).width() - e.clientX) < popupmenu.width() ? (e.clientX - popupmenu
+                        .width()) : e
+                    .clientX;
+                t = ($(document).height() - e.clientY) < popupmenu.height() ? (e.clientY - popupmenu
+                        .height()) :
+                    e.clientY;
+                popupmenu.css({
+                    left: l,
+                    top: t
+                }).show();
+            }
+        });
+    }
+
+    // cef数据, 发送数据给联锁
+    window.cef_send = (data) => {
+        if (!window.cefQuery) {
+            window.cefQuery = i => {}
+        }
+        window.cefQuery({
+            request: JSON.stringify({
+                cmd: "commit_action",
+                data: data
+            }),
+            persistent: false,
+        })
+    }
+
+    // 发送数据给子页面
+    window.cef_sendSub = (data) => {
+        if (!window.cefQuery) {
+            window.cefQuery = i => {}
+        }
+        window.cefQuery({
+            request: JSON.stringify({
+                cmd: "page_transfer",
+                data: data
+            }),
+            persistent: false,
+        })
+    }
+
+    window.set_global_state = state => {
+        ngname.set_global_state(state)
+
+        //处理计划勾指令
+        state = state.data
+        if (state.type == 'executeInstruct') {
+            let resolvedi = state.command
+                // 找出按钮的index
+            let btnindex1 = ngname.parkequip[resolvedi[0].equip].getSubCell('button').concat(ngname
+                .parkequip[
+                    resolvedi[0].equip].getSubCell('light')).find(b => String(b.getAttribute('type'))
+                .toUpperCase() == resolvedi[0].type).getAttribute('buttonindex')
+            let btnindex2 = ngname.parkequip[resolvedi[1].equip].getSubCell('button').concat(ngname
+                .parkequip[
+                    resolvedi[1].equip].getSubCell('light')).find(b => String(b.getAttribute('type'))
+                .toUpperCase() == resolvedi[0].type).getAttribute('buttonindex')
+            let clickPath = [{
+                index: Number(btnindex1),
+                name: resolvedi[0].equip
+            }, {
+                index: Number(btnindex2),
+                name: resolvedi[1].equip
+            }]
+
+            ngname.alarmwarninglistadd(
+                `${state.operation} ${state.start_rail}->${state.end_rail}`
+            )
+
+            let send_data = {
+                status: 0x05,
+                clickPath
+            }
+            console.info('%c联锁执行计划指令', 'font-size:25px;color:red;', send_data)
+            cef_send(send_data)
+        } else if (state.type == 'getControlPlan') { // 发送状态
+            ngname.planFrameReady = true
+            cef_sendSub({
+                type: "setPlanControl",
+                selfcontrolplan: ngname.selfcontrolplan,
+                mdiasControl: ngname.mdiasControl
+            })
+        }
+    }
+
+    /*
+     * 页面加载完成通知后端
+     */
+    function document_load_ready(key) {
+        //测试ats模拟数据
+        // load_simulate_data
+
+        var def = $.Deferred();
+        if (window.cefQuery) {
+            window.cefQuery({
+                request: JSON.stringify({
+                    cmd: "load_finish",
+                    data: {
+                        title: window.document.title
+                    }
+                }),
+                persistent: false,
+                onSuccess: function(response) {
+                    def.resolve(response)
+                },
+                onFailure: function(error_code, error_message) {
+                    def.reject(error_message)
+                }
+            })
+        } else {
+            def.reject('it in not in shell env')
+        }
+        return def
+    }
+
+    /**
+     * 显示系统时间
+     */
+    setInterval(() => {
+        $('#showtime').html(moment().format('YYYY-MM-DD HH:mm:ss'))
+    }, 1000);
+
+    /**
+     * 禁止缩放
+     */
+    $(document).ready(function() {
+        // chrome 浏览器直接加上下面这个样式就行了，但是ff不识别, 防止浏览器本身缩放
+        $('body').css('zoom', 'reset');
+        $(document).keydown(function(event) {
+            //event.metaKey mac的command键
+            if ((event.ctrlKey === true ||
+                    event.metaKey === true) &&
+                (event.which === 61 ||
+                    event.which === 107 ||
+                    event.which === 173 ||
+                    event.which === 109 ||
+                    event.which === 187 ||
+                    event.which === 189)) {
+                event.preventDefault();
+            }
+        });
+
+        $(window).bind('mousewheel DOMMouseScroll', function(event) {
+            if (event.ctrlKey === true || event.metaKey) {
+                event.preventDefault();
+            }
+        });
+    });
+</script>
+
+</html>

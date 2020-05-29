@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.ui.view" id="metro_park_maintenance.import_day_plans_form">
+        <field name="name">导入日计划向导</field>
+        <field name="model">metro_park_maintenance.import_day_plans</field>
+        <field name="arch" type="xml">
+            <form>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" for="file">file</label>
+                    <div class="col-sm-10">
+                        <field name="file" required="1"/>
+                    </div>
+                </div>
+                <footer>
+                    <button class="btn btn-success" type="object" name="start_import" text="确定导入" />
+                    <button class="btn btn-info" text="取消" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="metro_park_maintenance.import_day_plans_act_window">
+        <field name="name">导入日计划向导</field>
+        <field name="res_model">metro_park_maintenance.import_day_plans</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

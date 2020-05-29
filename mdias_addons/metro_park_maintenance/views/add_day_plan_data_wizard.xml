@@ -1,0 +1,90 @@
+
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.add_day_plan_data_wizard_form">
+            <field name="name">日生产计划向导</field>
+            <field name="model">metro_park_maintenance.add_day_plan_data_wizard</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <field name="day_plan_id" attrs="{'invisible': True}"
+                           force_save="1" />
+
+                    <field name="rule_type"
+                           attrs="{'invisible': True}"
+                           force_save="1" />
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="date">date</label>
+                        <div class="col-sm-4">
+                            <field name="date" readonly="1" force_save="1" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="dev">dev</label>
+                        <div class="col-sm-4">
+                            <field name="dev"
+                                   attrs="{'required': True}"
+                                   options="{'no_create_edit': True,'no_open': True, 'no_create':True}" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row" attrs="{'invisible': [('rule_type', '=', 'temp')]}">
+                        <label class="col-sm-2 col-form-label" for="rule">rule</label>
+                        <div class="col-sm-4">
+                            <field name="rule"
+                                   options="{'no_create_edit': True,'no_open': True, 'no_create':True}"
+                                   context="{'tree_view_ref': 'metro_park_maintenance.repair_rule_select_list'}"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" attrs="{'invisible': ['|', ('rule_type', '=', 'normal'), ('dev', '=', False)]}">
+                        <label class="col-sm-2 col-form-label" for="temp_rule">temp_rule</label>
+                        <div class="col-sm-4">
+                            <field name="temp_rule"
+                                   options="{'no_create_edit': True,'no_open': True, 'no_create':True}" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="start_time">start_time</label>
+                        <div class="col-sm-4">
+                            <field name="start_time" options="{'control_type': 'time'}"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="end_time">end_time</label>
+                        <div class="col-sm-4">
+                            <field name="end_time" options="{'control_type': 'time'}"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="remark">remark</label>
+                        <div class="col-sm-4">
+                            <field name="remark"/>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <button class="btn btn-success" type="object" name="add_day_plan_data" text="确定" />
+                        <button class="btn btn-info" text="取消" special="cancel" />
+                    </footer>
+
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window"
+                id="metro_park_maintenance.add_day_plan_data_wizard_act_window">
+            <field name="name">添加计划向导</field>
+            <field name="res_model">metro_park_maintenance.add_day_plan_data_wizard</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+    

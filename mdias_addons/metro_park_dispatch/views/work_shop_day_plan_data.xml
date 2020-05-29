@@ -1,0 +1,123 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.work_shop_day_plan_data_list">
+            <field name="name">车间日生产计划</field>
+            <field name="model">metro_park_dispatch.work_shop_day_plan_data</field>
+            <field name="arch" type="xml">
+                <tree js_class="work_shop_day_plan_list"
+                      options="{'height': 'full-270'}"
+                      editable="top">
+                    <field name="dev"
+                           options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                    <field name="rule"
+                           options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                    <field name="work_start_tm" widget="FTime" width="220"/>
+                    <field name="work_end_tm" widget="FTime" width="220"/>
+                    <field name="work_content"/>
+                    <field name="remark"/>
+                    <field name="work_requirement"
+                           options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                    <field name="location"/>
+                    <field name="rail"/>
+                    <field name="work_class"/>
+                    <field name="train_status"/>
+                    <field name="back_location"/>
+                    <field name="next_day_works"/>
+                    <field name="work_remark"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_dispatch.work_shop_day_plan_data_form">
+            <field name="name">车间日生产计划</field>
+            <field name="model">metro_park_dispatch.work_shop_day_plan_data</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="dev">dev</label>
+                        <div class="col-sm-10">
+                            <field name="dev"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="work_start_tm">work_start_tm</label>
+                        <div class="col-sm-10">
+                            <field name="work_start_tm" widget="FTime" width="120"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="work_end_tm">work_end_tm</label>
+                        <div class="col-sm-10">
+                            <field name="work_end_tm" widget="FTime" width="120"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="work_content">work_content</label>
+                        <div class="col-sm-10">
+                            <field name="work_content"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="remark">remark</label>
+                        <div class="col-sm-10">
+                            <field name="remark"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="work_requirement">work_requirement</label>
+                        <div class="col-sm-10">
+                            <field name="work_requirement"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="location">location</label>
+                        <div class="col-sm-10">
+                            <field name="location"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="work_class">work_class</label>
+                        <div class="col-sm-10">
+                            <field name="work_class"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="train_status">train_status</label>
+                        <div class="col-sm-10">
+                            <field name="train_status"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="back_location">back_location</label>
+                        <div class="col-sm-10">
+                            <field name="back_location"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="next_day_works">next_day_works</label>
+                        <div class="col-sm-10">
+                            <field name="next_day_works"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="work_remark">work_remark</label>
+                        <div class="col-sm-10">
+                            <field name="work_remark"/>
+                        </div>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window"
+                id="metro_park_dispatch.work_shop_day_plan_data_act_window">
+            <field name="name">车间日生产计划</field>
+            <field name="res_model">metro_park_dispatch.work_shop_day_plan_data</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+    

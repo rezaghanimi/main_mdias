@@ -1,0 +1,99 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.cur_train_operation_log_list">
+            <field name="name">cur_train_operation_log list </field>
+            <field name="model">metro_park_dispatch.cur_train_operation_log</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table" options="{'height': 200}">
+                    <field name="no"/>
+                    <field name="operation_time"/>
+                    <field name="operation_status"/>
+                    <field name="target"/>
+                    <field name="operation_type"/>
+                    <field name="operation_content"/>
+                    <field name="user"/>
+                    <field name="ip"/>
+                    <field name="remark"/>
+                    <field name="worker"/>
+                </tree>
+            </field>
+        </record>
+
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.cur_train_operation_log_form">
+            <field name="name">cur_train_operation_log form </field>
+            <field name="model">metro_park_dispatch.cur_train_operation_log</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="no">no</label>
+                        <div class="col-sm-3">
+                            <field name="no"/>
+                        </div>
+
+                        <label class="col-sm-2 col-form-label" for="operation_time">operation_time</label>
+                        <div class="col-sm-3">
+                            <field name="operation_time"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="operation_status">operation_status</label>
+                        <div class="col-sm-3">
+                            <field name="operation_status"/>
+                        </div>
+
+                        <label class="col-sm-2 col-form-label" for="target">target</label>
+                        <div class="col-sm-3">
+                            <field name="target"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="operation_type">operation_type</label>
+                        <div class="col-sm-3">
+                            <field name="operation_type"/>
+                        </div>
+
+                        <label class="col-sm-2 col-form-label" for="operation_content">operation_content</label>
+                        <div class="col-sm-3">
+                            <field name="operation_content"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="user">user</label>
+                        <div class="col-sm-3">
+                            <field name="user"/>
+                        </div>
+
+                        <label class="col-sm-2 col-form-label" for="ip">ip</label>
+                        <div class="col-sm-3">
+                            <field name="ip"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="remark">remark</label>
+                        <div class="col-sm-3">
+                            <field name="remark"/>
+                        </div>
+
+                        <label class="col-sm-2 col-form-label" for="worker">worker</label>
+                        <div class="col-sm-3">
+                            <field name="worker"/>
+                        </div>
+                    </div>
+                    
+                </form>
+            </field>
+        </record>
+
+        
+        <record model="ir.actions.act_window" id="metro_park_dispatch.cur_train_operation_log_act_window">
+            <field name="name">cur_train_operation_log</field>
+            <field name="res_model">metro_park_dispatch.cur_train_operation_log</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+    

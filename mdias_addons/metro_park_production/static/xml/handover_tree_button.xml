@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<template>
+    <t t-name="handover_tree_button">
+        <div>
+            <a t-attf-record-id="#{widget.id}" class="handover_tree" href="javascript: void 0">详情</a>
+        </div>
+    </t>
+
+    <t t-name="handover_operation_buttons">
+        <div>
+            <button
+                    t-if="widget.record.data.state === 'new'"
+                    class="btn btn-success"
+                    type="object"
+                    name="action_ok_handover"
+                    text="确认交接">
+                确认交接
+            </button>
+
+<!--            <button-->
+<!--                    t-if="widget.record.data.state=='handed'"-->
+<!--                    type="object"-->
+<!--                    name="get_print_template"-->
+<!--                    class="btn btn-primary">-->
+<!--                打印交接单-->
+<!--            </button>-->
+        </div>
+    </t>
+
+    <t t-name="big_screen">
+        <div>
+            <button class="btn btn-info btn-sm" type="object" style="position:absolute;right: 1px" name="release">发布</button>
+        </div>
+    </t>
+
+</template>

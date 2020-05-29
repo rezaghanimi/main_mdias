@@ -1,0 +1,80 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view"
+                id="metro_park_maintenance.year_plan_compute_wizard_list">
+            <field name="name">年计划计算向导</field>
+            <field name="model">year_plan_compute_wizard</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="month"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view"
+                id="metro_park_maintenance.year_plan_compute_wizard_form">
+            <field name="name">年计划计算向导</field>
+            <field name="model">year_plan_compute_wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="month">
+                            month
+                        </label>
+                        <div class="col-sm-3">
+                            <field name="month"
+                                   string="开始月份"
+                                   options="{'no_create_edit': True,'no_open': True, 'no_create':True, 'limit': 20}" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row"
+                         attrs="{'invisible': [('month', '=', False)]}">
+                        <label class="col-sm-2 col-form-label" for="end_month">
+                            month
+                        </label>
+                        <div class="col-sm-3">
+                            <field name="end_month"
+                                   string="结束月份"
+                                   options="{'no_create_edit': True,'no_open': True, 'no_create':True, 'limit': 20}" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label"
+                               for="work_class_count">work_class_count</label>
+                        <div class="col-sm-3">
+                            <field name="work_class_count"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label"
+                               for="calc_host">calc_host</label>
+                        <div class="col-sm-3">
+                            <field name="calc_host"/>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <button class="btn btn-primary" special="save_and_exit" text="确定" />
+                        <button class="btn btn-secondary" special="cancel" text="取消" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window"
+                id="metro_park_maintenance.year_plan_compute_wizard_act_window">
+            <field name="name">年计划计算向导</field>
+            <field name="res_model">year_plan_compute_wizard</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+   </data>
+</odoo>
+
+    

@@ -1,0 +1,48 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_interlock.sub_route_info_list">
+            <field name="name">sub_route_info list </field>
+            <field name="model">interlock_table.sub_route_info</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="route"/>
+                    <field name="index"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="metro_park_interlock.sub_route_info_form">
+            <field name="name">sub_route_info form </field>
+            <field name="model">interlock_table.sub_route_info</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="route">route</label>
+                        <div class="col-sm-10">
+                            <field name="route"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="index">index</label>
+                        <div class="col-sm-10">
+                            <field name="index"/>
+                        </div>
+                    </div>
+
+                </form>
+            </field>
+        </record>
+
+
+        <record model="ir.actions.act_window" id="metro_park_interlock.sub_route_info_act_window">
+            <field name="name">sub_route_info</field>
+            <field name="res_model">interlock_table.sub_route_info</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+    

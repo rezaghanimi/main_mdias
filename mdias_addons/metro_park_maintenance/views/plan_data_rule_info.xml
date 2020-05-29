@@ -1,0 +1,354 @@
+<odoo>
+    <data>
+
+        <!-- 修程修改 -->
+        <record model="ir.ui.view" id="metro_park_maintenance.dev_year_rule_edit">
+            <field name="name">年计详情</field>
+            <field name="model">metro_park_maintenance.rule_info</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table"
+                      options="{'height': '400'}" create="0" editable="top" default_order="date">
+                    <field name="dev"
+                           readonly="1"
+                           force_save='1'
+                           fixed_left="1"
+                           options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                    <field name="date" required="1"/>
+                    <field name="rule"
+                           readonly="1"
+                           options="{'no_create_edit': True,'no_open': True, 'no_create':True}"
+                           required="1"/>
+                    <field name="repair_num" required="1"/>
+                    <field name="repair_day" required="1"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- 日计划信息 -->
+        <record model="ir.ui.view" id="metro_park_maintenance.day_plan_info_list">
+            <field name="name">日计划</field>
+            <field name="model">metro_park_maintenance.rule_info</field>
+            <field name="arch" type="xml">
+                <tree js_class="day_plan_table" editable="top" options="{'height': 'full-270'}" limit="20">
+                    <field name="dev" readonly="1" fixed_left="1" options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+<!--                    <field name="work_time" width="150"/>-->
+                    <field name="work_start_time" widget="FTime" width="150"/>
+                    <field name="work_end_time" widget="FTime" width="150"/>
+                    <field name="work_content" width="100"/>
+                    <field name="remark" width="300"/>
+                    <field name="out_location" width="100"/>
+                    <field name="back_location" width="100"/>
+                    <field name="next_day_work" width="100"/>
+                    <field name="locations" widget="many2many_tags" width="150"/>
+                    <field name="work_requirement" widget="many2many_tags" width="100"/>
+                    <field name="work_class" width="100"/>
+                    <field name="rule_name" width="100"/>
+<!--                    <field name="rule_name" fixed_left="1" readonly="1"/>-->
+<!--                    <field name="rule_type" readonly="1"/>-->
+<!--                    <field name="train_no" readonly="1"/>-->
+<!--                    <field name="rail" options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>-->
+<!--                    <field name="prev_date_location"/>-->
+<!--                    <field name="out_location"/>-->
+<!--                    <field name="back_location"/>-->
+<!--                    <field name="work_requirement" widget="many2many_tags"/>-->
+<!--                    <field name="next_day_work" widget="many2many_tags" width="150"/>-->
+                    <field name="miles" width="120"/>
+                    <field name="last_mile_repair_date" width="120"/>
+                    <field name="last_repair_miles" width="120"/>
+                    <field name="miles_after_last_repair" width="120"/>
+<!--                    <field name="use_pms_maintaince" invisible="1"/>-->
+<!--                    <field name="work_class" width="150" widget="many2many_tags" options="{'direct_search': True, 'js_class': 'left_department_tree'}"/>-->
+<!--                    <field name="pms_work_class" width="150" options="{'no_create_edit': True,'no_open': True}"/>-->
+<!--                    <field name="remark" string="备注" width="150" class="day_plan_info_remark"/>-->
+
+                    <field name="operation_btn"
+                           fixed_right="1"
+                           width="120"
+                           widget="template_widget"
+                           options="{'template': 'funenc.user_define_dev_btns'}"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- 规则信息详情 -->
+        <record model="ir.ui.view" id="metro_park_maintenance.year_summary_info_list">
+            <field name="name">年计详情</field>
+            <field name="model">metro_park_maintenance.rule_info</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table" options="{'height': 'full-300'}">
+                    <field name="dev"
+                           readonly="1"
+                           force_save='1'
+                           fixed_left="1"
+                           options="{'no_create_edit': True,'no_open': True, 'no_create':True}"
+                    />
+                    <field name="date" required="1"/>
+                    <field name="rule"
+                           options="{'no_create_edit': True,'no_open': True, 'no_create':True}"
+                           required="1"/>
+                    <field name="repair_num" required="1"/>
+                    <field name="repair_day" required="1"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- 规则信息详情 -->
+        <record model="ir.ui.view" id="metro_park_maintenance.rule_info_list">
+            <field name="name">日计划信息</field>
+            <field name="model">metro_park_maintenance.rule_info</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table" options="{'height': 'full-270'}">
+                    <field name="dev" fixed_left="1"/>
+                    <field name="date"/>
+                    <field name="rule_type"/>
+                    <field name="rule_name"/>
+                    <field name="rail"/>
+                    <field name="work_time"/>
+                    <field name="remark"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- 日计划详情 -->
+        <record model="ir.ui.view" id="metro_park_maintenance.rule_info_list">
+            <field name="name">日计划信息</field>
+            <field name="model">metro_park_maintenance.rule_info</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table" options="{'height': 'full-270'}">
+                    <field name="rule"/>
+                    <field name="remark"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <!-- 周计划列表  -->
+        <record model="ir.ui.view" id="metro_park_maintenance.week_rule_info_list">
+            <field name="name">周计划信息</field>
+            <field name="model">metro_park_maintenance.rule_info</field>
+            <field name="arch" type="xml">
+                <tree js_class="week_plan_table" options="{'height': 'full-270'}" editable="top">
+                    <field name="dev" fixed_left="1"/>
+                    <field name="date" width="140"/>
+                    <field name="rule_type" readonly="1"/>
+                    <field name="rule_name"/>
+                    <field name="work_time"/>
+                    <field name="work_class_name"/>
+                    <field name="work_class" attrs="{'invisible': [('use_pms_maintaince', '=', 'yes')]}"
+                           options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                    <field name="pms_work_class"
+                           attrs="{'invisible': [('use_pms_maintaince', '!=', 'yes')]}"
+                           options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                    <field name="remark"/>
+                    <field name="use_pms_maintaince" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- 添加周计划 -->
+        <record model="ir.ui.view" id="metro_park_maintenance.week_rule_info_form">
+            <field name="name">周计划信息</field>
+            <field name="model">metro_park_maintenance.rule_info</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="dev">dev</label>
+                        <div class="col-sm-10">
+                            <field name="dev"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="date">date</label>
+                        <div class="col-sm-10">
+                            <field name="date"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="rule">rule</label>
+                        <div class="col-sm-10">
+                            <field name="rule"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="remark">remark</label>
+                        <div class="col-sm-10">
+                            <field name="remark"/>
+                        </div>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <!-- 日计划信息 -->
+        <record model="ir.ui.view" id="metro_park_maintenance.year_summary_info_form">
+            <field name="name">日计划信息</field>
+            <field name="model">metro_park_maintenance.rule_info</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="dev">dev</label>
+                        <div class="col-sm-10">
+                            <field name="dev" attrs="{'disabled': True}"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="date">date</label>
+                        <div class="col-sm-10">
+                            <field name="date"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="rule_type">rule_type</label>
+                        <div class="col-sm-10">
+                            <field name="rule_type"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" attrs="{'invisible': [('rule_type', '!=', 'normal')]}">
+                        <label class="col-sm-2 col-form-label" for="rule">rule</label>
+                        <div class="col-sm-10">
+                            <field name="rule"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" attrs="{'invisible': [('rule_type', '!=', 'temp')]}">
+                        <label class="col-sm-2 col-form-label" for="tmp_rule">tmp_rule</label>
+                        <div class="col-sm-10">
+                            <field name="tmp_rule"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="remark">remark</label>
+                        <div class="col-sm-10">
+                            <field name="remark"/>
+                        </div>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.rule_info_form">
+            <field name="name">日计划信息</field>
+            <field name="model">metro_park_maintenance.rule_info</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="dev">dev</label>
+                        <div class="col-sm-10">
+                            <field name="dev"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="date">date</label>
+                        <div class="col-sm-10">
+                            <field name="date"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="rule_type">rule_type</label>
+                        <div class="col-sm-10">
+                            <field name="rule_type"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" attrs="{'invisible': [('rule_type', '!=', 'normal')]}">
+                        <label class="col-sm-2 col-form-label" for="rule">rule</label>
+                        <div class="col-sm-10">
+                            <field name="rule"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" attrs="{'invisible': [('rule_type', '!=', 'temp')]}">
+                        <label class="col-sm-2 col-form-label" for="tmp_rule">tmp_rule</label>
+                        <div class="col-sm-10">
+                            <field name="tmp_rule"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="remark">remark</label>
+                        <div class="col-sm-10">
+                            <field name="remark"/>
+                        </div>
+                    </div>
+
+                </form>
+            </field>
+        </record>
+
+        <!-- 日计划信息 -->
+        <record model="ir.ui.view" id="metro_park_maintenance.add_day_plan_rule_info_form">
+            <field name="name">添加日计划信息</field>
+            <field name="model">metro_park_maintenance.rule_info</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="dev">dev</label>
+                        <div class="col-sm-10">
+                            <field name="dev"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="date">date</label>
+                        <div class="col-sm-10">
+                            <field name="date"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="rule_type">rule_type</label>
+                        <div class="col-sm-10">
+                            <field name="rule_type"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" attrs="{'invisible': [('rule_type', '!=', 'normal')]}">
+                        <label class="col-sm-2 col-form-label" for="rule">rule</label>
+                        <div class="col-sm-10">
+                            <field name="rule"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row" attrs="{'invisible': [('rule_type', '!=', 'temp')]}">
+                        <label class="col-sm-2 col-form-label" for="tmp_rule">tmp_rule</label>
+                        <div class="col-sm-10">
+                            <field name="tmp_rule"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="remark">remark</label>
+                        <div class="col-sm-10">
+                            <field name="remark"/>
+                        </div>
+                    </div>
+
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="metro_park_maintenance.rule_info_act_window">
+            <field name="name">日计划信息</field>
+            <field name="res_model">metro_park_maintenance.rule_info</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+
+
+
+    

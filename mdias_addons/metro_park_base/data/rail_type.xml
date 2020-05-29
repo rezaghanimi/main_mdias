@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="rail_type_exchange" model="metro_park_base.rail_type">
+            <field name="name">转换轨</field>
+        </record>
+
+        <record id="rail_type_stop_and_check" model="metro_park_base.rail_type">
+            <field name="name">停车/列检线</field>
+        </record>
+
+         <record id="rail_type_stop_and_special_training" model="metro_park_base.rail_type">
+            <field name="name">特修/停放线</field>
+        </record>
+
+        <record id="rail_type_wash" model="metro_park_base.rail_type">
+            <field name="name">洗车线</field>
+        </record>
+
+        <record id="rail_type_back_sec" model="metro_park_base.rail_type">
+            <field name="name">入段线</field>
+        </record>
+
+        <record id="rail_type_out_sec" model="metro_park_base.rail_type">
+            <field name="name">出段线</field>
+        </record>
+
+        <record id="rail_type_pull_out" model="metro_park_base.rail_type">
+            <field name="name">牵出线</field>
+        </record>
+
+        <record id="rail_type_tmp_repair" model="metro_park_base.rail_type">
+            <field name="name">临修线</field>
+        </record>
+
+        <record id="rail_type_wheel" model="metro_park_base.rail_type">
+            <field name="name">镟轮线</field>
+        </record>
+
+        <record id="rail_type_download_train" model="metro_park_base.rail_type">
+            <field name="name">卸车线</field>
+        </record>
+
+        <record id="rail_type_construction_vehicle" model="metro_park_base.rail_type">
+            <field name="name">调机工程车库线</field>
+        </record>
+
+        <record id="rail_type_two_week_or_three_month_repair" model="metro_park_base.rail_type">
+            <field name="name">双周三月检线</field>
+        </record>
+
+        <record id="rail_type_big_repair" model="metro_park_base.rail_type">
+            <field name="name">大修线</field>
+        </record>
+
+        <record id="rail_type_frame_repair" model="metro_park_base.rail_type">
+            <field name="name">架修线</field>
+        </record>
+
+        <record id="rail_type_static_ajust" model="metro_park_base.rail_type">
+            <field name="name">静调线</field>
+        </record>
+
+        <record id="rail_type_fixed_repair" model="metro_park_base.rail_type">
+            <field name="name">定修线</field>
+        </record>
+
+        <record id="rail_type_clean_store" model="metro_park_base.rail_type">
+            <field name="name">吹扫库(线)</field>
+        </record>
+
+        <record id="rail_type_material_and_tech_train" model="metro_park_base.rail_type">
+            <field name="name">材料及工程车库</field>
+        </record>
+
+        <record id="rail_type_material" model="metro_park_base.rail_type">
+            <field name="name">材料线</field>
+        </record>
+
+        <record id="rail_type_test_train" model="metro_park_base.rail_type">
+            <field name="name">试车线</field>
+        </record>
+
+        <record id="rail_type_run" model="metro_park_base.rail_type">
+            <field name="name">轨行</field>
+        </record>
+
+
+         <record id="rail_type_flatbed_truck" model="metro_park_base.rail_type">
+            <field name="name">平板车线</field>
+        </record>
+
+          <record id="rail_type_material_shed" model="metro_park_base.rail_type">
+            <field name="name">材料棚</field>
+          </record>
+
+        <record id="week_month_check_Line" model="metro_park_base.rail_type">
+            <field name="name">周月检线</field>
+        </record>
+
+    </data>
+</odoo>

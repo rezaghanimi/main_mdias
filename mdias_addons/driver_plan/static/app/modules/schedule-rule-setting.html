@@ -1,0 +1,528 @@
+<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+    <ul class="layui-tab-title">
+        <li class="layui-this">普通规则管理</li>
+        <li>补充规则管理</li>
+    </ul>
+    <div class="layui-tab-content" style="height: 100px;">
+        <div class="layui-tab-item layui-show">
+            <div class="layui-row">
+                <button class="layui-btn layui-btn-sm" id="createSchedule" style="margin-left: 10px">
+                    新增规则
+                </button>
+                <button class="layui-btn layui-btn-sm" id="refreshTable" style="margin-left: 10px">
+                    <i class="layui-icon layui-icon-refresh"></i>
+                </button>
+            </div>
+            <div class="layui-row" style="margin-top: 10px;">
+                <div class="table-head">普通规则列表</div>
+                <table class="layui-table" id="schedule-rule-table" lay-filter="schedule-rule-table">
+                </table>
+            </div>
+        </div>
+        <div class="layui-tab-item">
+            <div class="layui-row">
+                <button class="layui-btn layui-btn-sm" id="addExtraRule" style="margin-left: 10px">
+                    新增规则管理
+                </button>
+                <button class="layui-btn layui-btn-sm" id="refreshExtraTable"
+                        style="margin-left: 10px">
+                    <i class="layui-icon layui-icon-refresh"></i>
+                </button>
+            </div>
+            <div class="layui-row" style="margin-top: 10px;">
+                <div class="table-head">普通规则列表</div>
+                <table class="layui-table" id="extra-schedule-rule-table" lay-filter="extra-schedule-rule-table">
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="rule-setting-form" style="display: none">
+    <div class="layui-row">
+        <div class="layui-col-lg10 layui-col-lg-offset1">
+            <form class="layui-form" action="" lay-filter="normal-rule-edit-form" style="margin-top: 40px;">
+                <div class="layui-form-item layui-hide">
+                    <label class="layui-form-label">id</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="id"
+                               placeholder="请输入id"
+                               autocomplete="off"
+                               class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">规则名称</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="name" required lay-verify="required"
+                               placeholder="请输入规则名称"
+                               autocomplete="off"
+                               class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">运行图类型</label>
+                    <div class="layui-input-block">
+                        <select name="type" lay-filter="type">
+                            <option value="W" selected>W</option>
+                            <option value="T">T</option>
+                            <option value="S">S</option>
+                            <option value="D">D</option>
+                            <option value="其他">其他</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">最大工作时间限制</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="maxWorkTime" id="maxWorkTimeInput" readonly
+                               lay-verify="required"
+                               placeholder="请选择最大工作时间限制"
+                               autocomplete="off"
+                               class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">最小工作时间限制</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="minWorkTime" id="minWorkTimeInput" readonly
+                               lay-verify="required"
+                               placeholder="请选择最小工作时间限制"
+                               autocomplete="off"
+                               class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">最小休息时间限制</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="minRestTime" id="minRestTimeInput" readonly
+                               lay-verify="required"
+                               placeholder="请选择最小休息时间限制"
+                               autocomplete="off"
+                               class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">最大休息时间限制</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="maxRestTime" id="maxRestTimeInput" readonly
+                               lay-verify="required"
+                               placeholder="请选择最大休息时间限制"
+                               autocomplete="off"
+                               class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">最小就餐时间限制</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="minDinnerTime" id="minDinnerTimeInput" readonly
+                               lay-verify="required"
+                               placeholder="请选择最小就餐时间限制"
+                               autocomplete="off"
+                               class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">最大就餐时间限制</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="maxDinnerTime" id="maxDinnerTimeInput" readonly
+                               lay-verify="required"
+                               placeholder="请选择最大就餐时间限制"
+                               autocomplete="off"
+                               class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">早班出勤时间段</label>
+                    <div class="layui-input-block short-input">
+                        <input type="text" name="morningShiftStartTime" id="morningShiftStartTimeInput" readonly
+                               lay-verify="required"
+                               placeholder="请选择早班出勤时间点"
+                               autocomplete="off"
+                               class="layui-input">
+                        <span class="line-span"></span>
+                        <input type="text" name="morningShiftEndTime" id="morningShiftEndTimeInput" readonly
+                               lay-verify="required"
+                               placeholder="请选择早班出勤时间点"
+                               autocomplete="off"
+                               class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">白班出勤时间段</label>
+                    <div class="layui-input-block short-input">
+                        <input type="text" name="dayShiftStartTime" id="dayShiftStartTimeInput" readonly
+                               lay-verify="required"
+                               placeholder="请选择白班出勤时间点"
+                               autocomplete="off"
+                               class="layui-input">
+                        <input type="text" name="dayShiftEndTime" id="dayShiftEndTimeInput" readonly
+                               lay-verify="required"
+                               placeholder="请选择白班出勤时间点"
+                               autocomplete="off"
+                               class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">夜班出勤时间段</label>
+                    <div class="layui-input-block short-input">
+                        <input type="text" name="nightShiftStartTime" id="nightShiftStartTimeInput" readonly
+                               lay-verify="required"
+                               placeholder="请选择夜班出勤时间点"
+                               autocomplete="off"
+                               class="layui-input">
+                        <input type="text" name="nightShiftEndTime" id="nightShiftEndTimeInput" readonly
+                               lay-verify="required"
+                               placeholder="请选择夜班出勤时间点"
+                               autocomplete="off"
+                               class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">午餐时间段</label>
+                    <div class="layui-input-block short-input">
+                        <input type="text" name="launchStartTime" id="launchStartTimeInput" readonly
+                               lay-verify="required"
+                               placeholder="请选择午餐开始时间"
+                               autocomplete="off"
+                               class="layui-input">
+                        <input type="text" name="launchEndTime" id="launchEndTimeInput" readonly
+                               lay-verify="required"
+                               placeholder="请选择午餐结束时间"
+                               autocomplete="off"
+                               class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">晚餐时间段</label>
+                    <div class="layui-input-block short-input">
+                        <input type="text" name="dinnerStartTime" id="dinnerStartTimeInput" readonly
+                               lay-verify="required"
+                               placeholder="请选择晚餐开始时间"
+                               autocomplete="off"
+                               class="layui-input">
+                        <input type="text" name="dinnerEndTime" id="dinnerEndTimeInput" readonly
+                               lay-verify="required"
+                               placeholder="请选择晚餐结束时间"
+                               autocomplete="off"
+                               class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item layui-hide">
+                    <label class="layui-form-label">正线交路混跑</label>
+                    <div class="layui-input-block">
+                        <select class="routeMultipleSelect" name="routes" xm-select="changeRoute"
+                                xm-select-direction="up">
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">运转模式</label>
+                    <div class="layui-input-block">
+                        <select class="circleModelMultipleSelect" name="circleModel" xm-select="circleModel"
+                                xm-select-direction="up">
+                            <option value="白1">白班</option>
+                            <option value="夜1">夜班</option>
+                            <option value="早1">早班</option>
+                            <option value="休1">休班</option>
+                            <option value="白2">白班</option>
+                            <option value="夜2">夜班</option>
+                            <option value="早2">早班</option>
+                            <option value="休2">休班</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">换乘点</label>
+                    <div class="layui-input-block">
+                        <select class="stationMultipleSelect" name="changePoint" xm-select="changePoint"
+                                xm-select-direction="up">
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-form-item text-align-center layui-hide">
+                    <button class="layui-btn layui-btn-sm" id="submitTimeSchedule" lay-submit=""
+                            lay-filter="time-schedule-select">提交
+                    </button>
+                    <button type="reset" class="layui-btn layui-btn-primary layui-btn-sm">重置</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="extra-rile-setting-table">
+
+</div>
+<div id="extra-rule-setting-form" style="display: none">
+    <div class="layui-row">
+        <div class="layui-col-lg12 head">补充规则</div>
+        <div class="layui-col-lg10 layui-col-lg-offset1">
+            <form class="layui-form extra-form" action="" style="margin-top: 40px;">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">规则名称</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="name" required lay-verify="required"
+                               placeholder="请输入规则名称"
+                               autocomplete="off"
+                               class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">运行图类型</label>
+                    <div class="layui-input-block">
+                        <select name="type" lay-filter="type">
+                            <option value="W" selected>W</option>
+                            <option value="T">T</option>
+                            <option value="S">S</option>
+                            <option value="D">D</option>
+                            <option value="其他">其他</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-form-item text-align-center layui-hide">
+                    <button class="layui-btn layui-btn-sm form-submit" lay-submit=""
+                            lay-filter="*">完成
+                    </button>
+                    <button type="reset" class="layui-btn layui-btn-primary layui-btn-sm">重置</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="layui-row">
+        <div class="layui-col-lg12 head">出勤地点管理</div>
+        <div class="layui-col-lg12">
+            <div class="pickUpFormContainer">
+                <form class="layui-form duty-form" action="" style="margin-top: 40px;">
+                    <div class="layui-form-item custom-inline">
+                        <div class="layui-row">
+                            <div class="layui-col-lg3">
+                                <label class="layui-form-label">出勤地点</label>
+                                <div class="layui-input-inline short-inline">
+                                    <select class="stationSelect" name="dutyStation" lay-verify="required">
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="layui-col-lg7 pickUpContainer">
+                                <div class="layui-row pickUpRow">
+                                    <label class="layui-form-label">接车地点</label>
+                                    <div class="layui-input-inline short-inline">
+                                        <select class="stationSelect" name="pickUpStation" lay-verify="required">
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                    <label class="layui-form-label">提前时间量</label>
+                                    <div class="layui-input-inline short-inline">
+                                        <input type="text" name="aheadTime" readonly
+                                               lay-verify="required"
+                                               placeholder="请选择"
+                                               autocomplete="off"
+                                               id="aheadTimeInput"
+                                               class="layui-input aheadTime">
+                                    </div>
+                                    <button type="button"
+                                            class="layui-btn layui-btn-sm layui-btn-primary margin-top-4 margin-left-20 addPickUp"
+                                            data-value="1">
+                                        添加
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-form-item text-align-center layui-hide">
+                        <button class="layui-btn layui-btn-sm form-submit" lay-submit=""
+                                lay-filter="*">完成
+                        </button>
+                        <button type="reset" class="layui-btn layui-btn-primary layui-btn-sm">重置</button>
+                    </div>
+                </form>
+            </div>
+            <div class="layui-form-item text-align-center">
+                <button class="layui-btn layui-btn-sm" id="addDutyForm">添加出勤地点
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="layui-row">
+        <div class="layui-col-lg12 head">退勤地点管理</div>
+        <div class="layui-col-lg12">
+            <div class="leavingWorkFormContainer">
+                <form class="layui-form leaving-form" action="" style="margin-top: 40px;">
+                    <div class="layui-form-item custom-inline">
+                        <div class="layui-row">
+                            <div class="layui-col-lg3">
+                                <label class="layui-form-label">退勤地点</label>
+                                <div class="layui-input-inline short-inline">
+                                    <select class="stationSelect" name="leavingStation" lay-verify="required">
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="layui-col-lg5 leavingWorkContainer">
+                                <div class="layui-row leavingRow">
+                                    <label class="layui-form-label">对应终点</label>
+                                    <div class="layui-input-inline short-inline">
+                                        <select class="stationSelect" name="pickUpStation" lay-verify="required">
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                    <button type="button"
+                                            class="layui-btn layui-btn-sm layui-btn-primary margin-top-4 margin-left-20 addLeavingWork"
+                                            data-value="1">
+                                        添加
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-form-item text-align-center layui-hide">
+                        <button class="layui-btn layui-btn-sm form-submit" lay-submit=""
+                                lay-filter="*">完成
+                        </button>
+                        <button type="reset" class="layui-btn layui-btn-primary layui-btn-sm">重置</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="layui-form-item text-align-center">
+            <button class="layui-btn layui-btn-sm" id="addLeadingWorkForm">添加退勤地点
+            </button>
+        </div>
+    </div>
+</div>
+<div id="pickup-template" class="pickup-template" style="display: none">
+    <form class="layui-form duty-form" action="" style="margin-top: 40px;">
+        <div class="layui-form-item custom-inline">
+            <div class="layui-row">
+                <div class="layui-col-lg3">
+                    <label class="layui-form-label">出勤地点</label>
+                    <div class="layui-input-inline short-inline">
+                        <select class="stationSelect" name="dutyStation" lay-verify="required">
+                            <option value=""></option>
+                            <option value="火车北站">火车北站</option>
+                            <option value="电客车组长">升仙湖</option>
+                            <option value="电客车司机">韦家碾</option>
+                            <option value="电客车学员">科学城</option>
+                            <option value="实习生">停车场-入</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-col-lg7 pickUpContainer">
+                    <div class="layui-row">
+                        <label class="layui-form-label">接车地点</label>
+                        <div class="layui-input-inline short-inline">
+                            <select class="stationSelect" name="pickUpStation" lay-verify="required">
+                                <option value=""></option>
+                                <option value="火车北站">火车北站</option>
+                                <option value="电客车组长">升仙湖</option>
+                                <option value="电客车司机">韦家碾</option>
+                                <option value="电客车学员">科学城</option>
+                                <option value="实习生">停车场-入</option>
+                            </select>
+                        </div>
+                        <label class="layui-form-label">提前时间量</label>
+                        <div class="layui-input-inline short-inline">
+                            <input type="text" name="aheadTime" readonly
+                                   lay-verify="required"
+                                   placeholder="请选择"
+                                   autocomplete="off"
+                                   id="aheadTimeInputTemplate"
+                                   class="layui-input aheadTime">
+                        </div>
+                        <button type="button"
+                                class="layui-btn layui-btn-sm layui-btn-primary margin-top-4 margin-left-20 addPickUp"
+                                data-value="1">
+                            添加
+                        </button>
+                    </div>
+                </div>
+                <div class="layui-col-lg1">
+                    <button type="button"
+                            class="layui-btn layui-btn-sm layui-btn-primary margin-top-4 deleteRow">
+                        删除
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item text-align-center layui-hide">
+            <button class="layui-btn layui-btn-sm form-submit" lay-submit=""
+                    lay-filter="*">完成
+            </button>
+            <button type="reset" class="layui-btn layui-btn-primary layui-btn-sm">重置</button>
+        </div>
+    </form>
+</div>
+<div id="leavingWork-template" class="pickup-template" style="display: none">
+    <form class="layui-form leaving-form" action="" style="margin-top: 40px;">
+        <div class="layui-form-item custom-inline">
+            <div class="layui-row">
+                <div class="layui-col-lg3">
+                    <label class="layui-form-label">出勤地点</label>
+                    <div class="layui-input-inline short-inline">
+                        <select class="stationSelect" name="dutyStation" lay-verify="required">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-col-lg5 pickUpContainer">
+                    <div class="layui-row">
+                        <label class="layui-form-label">接车地点</label>
+                        <div class="layui-input-inline short-inline">
+                            <select class="stationSelect" name="pickUpStation" lay-verify="required">
+                                <option value=""></option>
+                            </select>
+                        </div>
+                        <button type="button"
+                                class="layui-btn layui-btn-sm layui-btn-primary margin-top-4 margin-left-20 addLeavingWork"
+                                data-value="1">
+                            添加
+                        </button>
+                    </div>
+                </div>
+                <div class="layui-col-lg1">
+                    <button type="button"
+                            class="layui-btn layui-btn-sm layui-btn-primary margin-top-4 deleteLeavingWorkRow">
+                        删除
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item text-align-center layui-hide">
+            <button class="layui-btn layui-btn-sm form-submit" lay-submit=""
+                    lay-filter="*">完成
+            </button>
+            <button type="reset" class="layui-btn layui-btn-primary layui-btn-sm">重置</button>
+        </div>
+    </form>
+</div>
+<script type="text/html" id="indexTpl">
+    {{d.LAY_TABLE_INDEX+1}}
+</script>
+<link rel="stylesheet" href="modules/schedule-rule-setting.css">
+<script src="modules/schedule-rule-setting.js"></script>
+<script type="text/html" id="normalBar">
+    <a class="layui-btn layui-btn-xs" lay-event="editNormal">编辑</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="delNormal">删除</a>
+</script>
+<script type="text/html" id="extraBar">
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="delExtra">删除</a>
+</script>
+<!--<a class="layui-btn layui-btn-xs" lay-event="editExtra">编辑</a>-->
+<script id="stationOptionTemplate" type="text/html">
+    <option value=""></option>
+    {{# layui.each(d, function(index, item){ }}
+    <option value="{{item}}">{{item}}</option>
+    {{# }); }}
+</script>
+
+<script id="routeOptionTemplate" type="text/html">
+    <option value=""></option>
+    {{# layui.each(d, function(index, item){ }}
+    <option value="{{item}}">{{item}}</option>
+    {{# }); }}
+</script>
+
+<script id="stationMultipleOptionTemplate" type="text/html">
+    {{# layui.each(d, function(index, item){ }}
+    <option value="{{item}}">{{item}}</option>
+    {{# }); }}
+</script>

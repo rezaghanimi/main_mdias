@@ -1,0 +1,37 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="equipment_energy_tree_id">
+            <field name="name">牵引设备能耗</field>
+            <field name="model">tcms.equipment_energy</field>
+            <field name="arch" type="xml">
+                <tree create="0">
+                    <field name="name"/>
+                    <field name="equipment_energy"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="equipment_energy_form_id">
+            <field name="name">牵引设备能耗</field>
+            <field name="model">tcms.equipment_energy</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="name"/>
+                        <field name="equipment_energy"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="equipment_energy_window_id">
+            <field name="name">牵引设备能耗</field>
+            <field name="res_model">tcms.equipment_energy</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem action="equipment_energy_window_id"
+                  parent="tcms_tcms_act_menu_parent_id"
+                  id="equipment_energy_menu_id"
+                  name="牵引设备能耗"/>
+    </data>
+</odoo>

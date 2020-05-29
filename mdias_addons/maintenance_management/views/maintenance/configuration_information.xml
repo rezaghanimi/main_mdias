@@ -1,0 +1,62 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="maintenance_management_database_data_tree_id">
+            <field name="name">信息配置</field>
+            <field name="model">maintenance_management.database_data</field>
+            <field name="arch" type="xml">
+                <tree options="{'height': 'full-270'}">
+                    <field name="name" width="200"/>
+                    <field name="ip" width="200"/>
+                    <field name="zabbix" width="200"/>
+                    <field name="other" width="200"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="maintenance_management_database_data_form_id">
+            <field name="name">信息配置</field>
+            <field name="model">maintenance_management.database_data</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="name">名称</label>
+                        <div class="col-sm-10">
+                            <field name="name"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="ip">IP地址</label>
+                        <div class="col-sm-10">
+                            <field name="ip"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="zabbix">ZABBIX键值</label>
+                        <div class="col-sm-10">
+                            <field name="zabbix"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="other">其他</label>
+                        <div class="col-sm-10">
+                            <field name="other"/>
+                        </div>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="maintenance_management_database_data_act_window">
+            <field name="name">信息配置</field>
+            <field name="res_model">maintenance_management.database_data</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="maintenance_management_database_data_act_window"
+                  id="maintenance_management_database_data_menu"
+                  name="信息配置" parent="maintenance_system_set_menu"
+                  groups="group_maintenance_management_configuration_file"/>
+
+    </data>
+</odoo>

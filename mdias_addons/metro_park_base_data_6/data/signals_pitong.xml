@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <!-- 
+            **进站信号 SR1 XZR1 XZC1 SC1 XZC1ZA XZR1ZA
+        -->
+
+        <record id="pi_tong_signal_SR1" model="metro_park_base.signals">
+            <field name="name">SR1</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_XZR1" model="metro_park_base.signals">
+            <field name="name">XZR1</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_XZC1" model="metro_park_base.signals">
+            <field name="name">XZC1</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_SC1" model="metro_park_base.signals">
+            <field name="name">SC1</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_XZC1ZA" model="metro_park_base.signals">
+            <field name="name">XZC1ZA</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_XZR1ZA" model="metro_park_base.signals">
+            <field name="name">XZR1ZA</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <!-- 
+            **出站信号 XC1 XR1 X2 X3 X4 X5 X6 X7 X8 X9 X10 X11 X12 X13 X14 X15 X16 X17 X18 X19 X20 X21 X22 X23 X24
+            X25 X26 X27 X28 X29 X30 X31 X32 X33 X34 X35 X36 X37 X38 X39 X40 X41 X42 X43 X44 X45 X46 X47 X48 X49 X50
+        -->
+
+        <record id="pi_tong_signal_XR1" model="metro_park_base.signals">
+            <field name="name">XR1</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_XC1" model="metro_park_base.signals">
+            <field name="name">XC1</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X2" model="metro_park_base.signals">
+            <field name="name">X2</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X3" model="metro_park_base.signals">
+            <field name="name">X3</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X4" model="metro_park_base.signals">
+            <field name="name">X4</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X5" model="metro_park_base.signals">
+            <field name="name">X5</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X6" model="metro_park_base.signals">
+            <field name="name">X6</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X7" model="metro_park_base.signals">
+            <field name="name">X7</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X8" model="metro_park_base.signals">
+            <field name="name">X8</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X9" model="metro_park_base.signals">
+            <field name="name">X9</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X10" model="metro_park_base.signals">
+            <field name="name">X10</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X11" model="metro_park_base.signals">
+            <field name="name">X11</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X12" model="metro_park_base.signals">
+            <field name="name">X12</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X13" model="metro_park_base.signals">
+            <field name="name">X13</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X14" model="metro_park_base.signals">
+            <field name="name">X14</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X15" model="metro_park_base.signals">
+            <field name="name">X15</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X16" model="metro_park_base.signals">
+            <field name="name">X16</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X17" model="metro_park_base.signals">
+            <field name="name">X17</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X18" model="metro_park_base.signals">
+            <field name="name">X18</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X19" model="metro_park_base.signals">
+            <field name="name">X19</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X20" model="metro_park_base.signals">
+            <field name="name">X20</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X21" model="metro_park_base.signals">
+            <field name="name">X21</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X22" model="metro_park_base.signals">
+            <field name="name">X22</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X23" model="metro_park_base.signals">
+            <field name="name">X23</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X24" model="metro_park_base.signals">
+            <field name="name">X24</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X25" model="metro_park_base.signals">
+            <field name="name">X25</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X26" model="metro_park_base.signals">
+            <field name="name">X26</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X27" model="metro_park_base.signals">
+            <field name="name">X27</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X28" model="metro_park_base.signals">
+            <field name="name">X28</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X29" model="metro_park_base.signals">
+            <field name="name">X29</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X30" model="metro_park_base.signals">
+            <field name="name">X30</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X31" model="metro_park_base.signals">
+            <field name="name">X31</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X32" model="metro_park_base.signals">
+            <field name="name">X32</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X33" model="metro_park_base.signals">
+            <field name="name">X33</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X34" model="metro_park_base.signals">
+            <field name="name">X34</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X35" model="metro_park_base.signals">
+            <field name="name">X35</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X36" model="metro_park_base.signals">
+            <field name="name">X36</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X37" model="metro_park_base.signals">
+            <field name="name">X37</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X38" model="metro_park_base.signals">
+            <field name="name">X38</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X39" model="metro_park_base.signals">
+            <field name="name">X39</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X40" model="metro_park_base.signals">
+            <field name="name">X40</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X41" model="metro_park_base.signals">
+            <field name="name">X41</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X42" model="metro_park_base.signals">
+            <field name="name">X42</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X43" model="metro_park_base.signals">
+            <field name="name">X43</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X44" model="metro_park_base.signals">
+            <field name="name">X44</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X45" model="metro_park_base.signals">
+            <field name="name">X45</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X46" model="metro_park_base.signals">
+            <field name="name">X46</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X47" model="metro_park_base.signals">
+            <field name="name">X47</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X48" model="metro_park_base.signals">
+            <field name="name">X48</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X49" model="metro_park_base.signals">
+            <field name="name">X49</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_X50" model="metro_park_base.signals">
+            <field name="name">X50</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <!-- 
+            **调车信号 D2-50  JT1-16
+        -->
+
+        <record id="pi_tong_signal_D2" model="metro_park_base.signals">
+            <field name="name">D2</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_D4" model="metro_park_base.signals">
+            <field name="name">D4</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_D6" model="metro_park_base.signals">
+            <field name="name">D6</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_D8" model="metro_park_base.signals">
+            <field name="name">D8</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_D10" model="metro_park_base.signals">
+            <field name="name">D10</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_D12" model="metro_park_base.signals">
+            <field name="name">D12</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_D14" model="metro_park_base.signals">
+            <field name="name">D14</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_D16" model="metro_park_base.signals">
+            <field name="name">D16</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_D18" model="metro_park_base.signals">
+            <field name="name">D18</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_D20" model="metro_park_base.signals">
+            <field name="name">D20</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_D22" model="metro_park_base.signals">
+            <field name="name">D22</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_D24" model="metro_park_base.signals">
+            <field name="name">D24</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_D26" model="metro_park_base.signals">
+            <field name="name">D26</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_D28" model="metro_park_base.signals">
+            <field name="name">D28</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_D30" model="metro_park_base.signals">
+            <field name="name">D30</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_D32" model="metro_park_base.signals">
+            <field name="name">D32</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_D32" model="metro_park_base.signals">
+            <field name="name">D32</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_D34" model="metro_park_base.signals">
+            <field name="name">D34</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_D36" model="metro_park_base.signals">
+            <field name="name">D36</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_D38" model="metro_park_base.signals">
+            <field name="name">D38</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_D40" model="metro_park_base.signals">
+            <field name="name">D40</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_D42" model="metro_park_base.signals">
+            <field name="name">D42</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_D44" model="metro_park_base.signals">
+            <field name="name">D44</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_D46" model="metro_park_base.signals">
+            <field name="name">D46</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_D48" model="metro_park_base.signals">
+            <field name="name">D48</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_D50" model="metro_park_base.signals">
+            <field name="name">D50</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_JT2" model="metro_park_base.signals">
+            <field name="name">JT2</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_JT4" model="metro_park_base.signals">
+            <field name="name">JT4</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_JT6" model="metro_park_base.signals">
+            <field name="name">JT6</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_JT8" model="metro_park_base.signals">
+            <field name="name">JT8</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_JT10" model="metro_park_base.signals">
+            <field name="name">JT10</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_JT12" model="metro_park_base.signals">
+            <field name="name">JT12</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_JT14" model="metro_park_base.signals">
+            <field name="name">JT14</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+
+        <record id="pi_tong_signal_JT16" model="metro_park_base.signals">
+            <field name="name">JT16</field>
+            <field name="location" ref="pi_tong" />
+        </record>
+    </data>
+</odoo>

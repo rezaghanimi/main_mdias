@@ -1,0 +1,60 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_maintenance.balance_offset_wizard_list">
+            <field name="name">修程偏移</field>
+            <field name="model">metro_park_maintenance.balance_offset_wizard</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="offset"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.balance_offset_wizard_form">
+            <field name="name">修次设置</field>
+            <field name="model">metro_park_maintenance.balance_offset_wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="year">year</label>
+                        <div class="col-sm-10">
+                            <field name="year" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="month">month</label>
+                        <div class="col-sm-10">
+                            <field name="month" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="offset">offset</label>
+                        <div class="col-sm-10">
+                            <field name="offset"
+                                   context="{'tree_view_ref': 'metro_park_maintenance.plan_config_data_select_list'}"
+                                   options="{'direct_search': True}"/>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <button class="btn btn-success" type="object" name="on_ok" text="确定" />
+                        <button class="btn btn-info" text="取消" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window"
+                id="metro_park_maintenance.balance_offset_wizard_act_window">
+            <field name="name">偏移设置</field>
+            <field name="res_model">metro_park_maintenance.balance_offset_wizard</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+    

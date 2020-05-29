@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="pi_tong_switch_2" model="metro_park_base.switches">
+            <field name="name">2</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_2-126DG" />
+        </record>
+
+        <record id="pi_tong_switch_4" model="metro_park_base.switches">
+            <field name="name">4</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_4DG" />
+        </record>
+
+        <record id="pi_tong_switch_6" model="metro_park_base.switches">
+            <field name="name">6</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_6DG" />
+        </record>
+
+        <record id="pi_tong_switch_8" model="metro_park_base.switches">
+            <field name="name">8</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_8-14DG" />
+        </record>
+
+        <record id="pi_tong_switch_10" model="metro_park_base.switches">
+            <field name="name">10</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_10-12DG" />
+        </record>
+
+        <record id="pi_tong_switch_12" model="metro_park_base.switches">
+            <field name="name">12</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_10-12DG" />
+        </record>
+
+        <record id="pi_tong_switch_14" model="metro_park_base.switches">
+            <field name="name">14</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_8-14DG" />
+        </record>
+
+        <record id="pi_tong_switch_16" model="metro_park_base.switches">
+            <field name="name">16</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_16DG" />
+        </record>
+
+        <record id="pi_tong_switch_18" model="metro_park_base.switches">
+            <field name="name">18</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_18-48DG" />
+        </record>
+
+        <record id="pi_tong_switch_20" model="metro_park_base.switches">
+            <field name="name">20</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_18-48DG" />
+        </record>
+
+        <record id="pi_tong_switch_22" model="metro_park_base.switches">
+            <field name="name">22</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_22DG" />
+        </record>
+
+        <record id="pi_tong_switch_24" model="metro_park_base.switches">
+            <field name="name">24</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_24-26DG" />
+        </record>
+
+        <record id="pi_tong_switch_26" model="metro_park_base.switches">
+            <field name="name">26</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_24-26DG" />
+        </record>
+
+        <record id="pi_tong_switch_28" model="metro_park_base.switches">
+            <field name="name">28</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_28-30DG" />
+        </record>
+
+        <record id="pi_tong_switch_30" model="metro_park_base.switches">
+            <field name="name">30</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_28-30DG" />
+        </record>
+
+        <record id="pi_tong_switch_32" model="metro_park_base.switches">
+            <field name="name">32</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_32-34DG" />
+        </record>
+
+        <record id="pi_tong_switch_34" model="metro_park_base.switches">
+            <field name="name">34</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_32-34DG" />
+        </record>
+
+        <record id="pi_tong_switch_36" model="metro_park_base.switches">
+            <field name="name">36</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_18-48DG" />
+        </record>
+
+        <record id="pi_tong_switch_38" model="metro_park_base.switches">
+            <field name="name">38</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_38-42DG" />
+        </record>
+
+        <record id="pi_tong_switch_40" model="metro_park_base.switches">
+            <field name="name">40</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_38-42DG" />
+        </record>
+
+        <record id="pi_tong_switch_42" model="metro_park_base.switches">
+            <field name="name">42</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_38-42DG" />
+        </record>
+
+        <record id="pi_tong_switch_44" model="metro_park_base.switches">
+            <field name="name">44</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_44-46DG" />
+        </record>
+
+        <record id="pi_tong_switch_46" model="metro_park_base.switches">
+            <field name="name">46</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_44-46DG" />
+        </record>
+
+        <record id="pi_tong_switch_48" model="metro_park_base.switches">
+            <field name="name">48</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_18-48DG" />
+        </record>
+
+        <record id="pi_tong_switch_50" model="metro_park_base.switches">
+            <field name="name">50</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_50-52DG" />
+        </record>
+
+        <record id="pi_tong_switch_52" model="metro_park_base.switches">
+            <field name="name">52</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_50-52DG" />
+        </record>
+
+        <record id="pi_tong_switch_54" model="metro_park_base.switches">
+            <field name="name">54</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_54-56DG" />
+        </record>
+
+        <record id="pi_tong_switch_56" model="metro_park_base.switches">
+            <field name="name">56</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_54-56DG" />
+        </record>
+
+        <record id="pi_tong_switch_58" model="metro_park_base.switches">
+            <field name="name">58</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_58-100DG" />
+        </record>
+
+        <record id="pi_tong_switch_60" model="metro_park_base.switches">
+            <field name="name">60</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_58-100DG" />
+        </record>
+
+        <record id="pi_tong_switch_62" model="metro_park_base.switches">
+            <field name="name">62</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_62-64DG" />
+        </record>
+
+        <record id="pi_tong_switch_64" model="metro_park_base.switches">
+            <field name="name">64</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_62-64DG" />
+        </record>
+
+        <record id="pi_tong_switch_67" model="metro_park_base.switches">
+            <field name="name">66</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_66-68DG" />
+        </record>
+
+        <record id="pi_tong_switch_68" model="metro_park_base.switches">
+            <field name="name">68</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_66-68DG" />
+        </record>
+
+        <record id="pi_tong_switch_70" model="metro_park_base.switches">
+            <field name="name">70</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_70-72DG" />
+        </record>
+
+        <record id="pi_tong_switch_72" model="metro_park_base.switches">
+            <field name="name">72</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_70-72DG" />
+        </record>
+
+        <record id="pi_tong_switch_74" model="metro_park_base.switches">
+            <field name="name">74</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_74-76DG" />
+        </record>
+
+        <record id="pi_tong_switch_76" model="metro_park_base.switches">
+            <field name="name">76</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_74-76DG" />
+        </record>
+
+        <record id="pi_tong_switch_78" model="metro_park_base.switches">
+            <field name="name">78</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_78-90DG" />
+        </record>
+
+        <record id="pi_tong_switch_80" model="metro_park_base.switches">
+            <field name="name">80</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_78-90DG" />
+        </record>
+
+        <record id="pi_tong_switch_82" model="metro_park_base.switches">
+            <field name="name">82</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_82-84DG" />
+        </record>
+
+        <record id="pi_tong_switch_84" model="metro_park_base.switches">
+            <field name="name">84</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_82-84DG" />
+        </record>
+
+        <record id="pi_tong_switch_86" model="metro_park_base.switches">
+            <field name="name">86</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_86-88DG" />
+        </record>
+
+        <record id="pi_tong_switch_88" model="metro_park_base.switches">
+            <field name="name">88</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_86-88DG" />
+        </record>
+
+        <record id="pi_tong_switch_90" model="metro_park_base.switches">
+            <field name="name">90</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_78-90DG" />
+        </record>
+
+        <record id="pi_tong_switch_92" model="metro_park_base.switches">
+            <field name="name">92</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_92-94DG" />
+        </record>
+
+        <record id="pi_tong_switch_94" model="metro_park_base.switches">
+            <field name="name">94</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_92-94DG" />
+        </record>
+
+        <record id="pi_tong_switch_96" model="metro_park_base.switches">
+            <field name="name">96</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_96-98DG" />
+        </record>
+
+        <record id="pi_tong_switch_98" model="metro_park_base.switches">
+            <field name="name">98</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_96-98DG" />
+        </record>
+
+        <record id="pi_tong_switch_100" model="metro_park_base.switches">
+            <field name="name">100</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_58-100DG" />
+        </record>
+
+        <record id="pi_tong_switch_102" model="metro_park_base.switches">
+            <field name="name">102</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_102-104DG" />
+        </record>
+
+        <record id="pi_tong_switch_104" model="metro_park_base.switches">
+            <field name="name">104</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_102-104DG" />
+        </record>
+
+        <record id="pi_tong_switch_106" model="metro_park_base.switches">
+            <field name="name">106</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_106-110DG" />
+        </record>
+
+        <record id="pi_tong_switch_108" model="metro_park_base.switches">
+            <field name="name">108</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_106-110DG" />
+        </record>
+
+        <record id="pi_tong_switch_110" model="metro_park_base.switches">
+            <field name="name">110</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_106-110DG" />
+        </record>
+
+        <record id="pi_tong_switch_112" model="metro_park_base.switches">
+            <field name="name">112</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_2-126DG" />
+        </record>
+
+        <record id="pi_tong_switch_114" model="metro_park_base.switches">
+            <field name="name">114</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_114DG" />
+        </record>
+
+        <record id="pi_tong_switch_116" model="metro_park_base.switches">
+            <field name="name">116</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_116-122DG" />
+        </record>
+
+        <record id="pi_tong_switch_118" model="metro_park_base.switches">
+            <field name="name">118</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_116-122DG" />
+        </record>
+
+        <record id="pi_tong_switch_120" model="metro_park_base.switches">
+            <field name="name">120</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_116-122DG" />
+        </record>
+
+        <record id="pi_tong_switch_122" model="metro_park_base.switches">
+            <field name="name">122</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_116-122DG" />
+        </record>
+
+        <record id="pi_tong_switch_124" model="metro_park_base.switches">
+            <field name="name">124</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_2-126DG" />
+        </record>
+
+        <record id="pi_tong_switch_126" model="metro_park_base.switches">
+            <field name="name">126</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_2-126DG" />
+        </record>
+
+        <record id="pi_tong_switch_128" model="metro_park_base.switches">
+            <field name="name">128</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_128DG" />
+        </record>
+
+        <record id="pi_tong_switch_130" model="metro_park_base.switches">
+            <field name="name">130</field>
+            <field name="location" ref="pi_tong" />
+            <field name="rail_sec_id" ref="pi_tong_130DG" />
+        </record>
+    </data>
+</odoo>

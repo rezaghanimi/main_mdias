@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+        <template id="login_bg" name="login_bg" inherit_id="web.login_layout">
+            <xpath expr="//t[@t-set='head']" position="inside">
+                <style type="text/css">
+                    body{
+                        background: url("/metro_park_base/static/img/login_bg.jpg") no-repeat center center;
+                        background-size: cover;
+                        overflow: hidden;
+                    }
+                  </style>
+            </xpath>     </template>
+    </data>
+</odoo>

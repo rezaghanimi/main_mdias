@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <template id="metro_login" name="metro_login_login" inherit_id="funenc_theme.layui_theme_login">
+            <xpath expr="//p[@class='alert alert-danger']" position="after">
+                <p class="alert alert-danger no_login" t-if="no_login" role="no_login">
+                    <t t-esc="no_login"/>
+                </p>
+            </xpath>
+        </template>
+
+    </data>
+</odoo>

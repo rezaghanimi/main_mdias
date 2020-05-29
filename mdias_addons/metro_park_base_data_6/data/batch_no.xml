@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+   <data>
+      <record id="metro_park_base_data_6.batch_2018" model="metro_park_maintenance.dev_batch">
+          <field name="batch_no">2018</field>
+          <field name="start_date">2018-02-01</field>
+      </record>
+
+      <record id="metro_park_base_data_6.batch_2019" model="metro_park_maintenance.dev_batch">
+          <field name="batch_no">2019</field>
+          <field name="start_date">2019-01-01</field>
+      </record>
+
+   </data>
+</odoo>

@@ -1,0 +1,349 @@
+<div id="step_demo" class="step-body">
+    <div class="step-header" style="width:80%;overflow: hidden;">
+        <ul>
+            <li>
+                <span class="step-name">交路图</span>
+            </li>
+            <li>
+                <span class="step-name">司机位置图</span>
+            </li>
+            <li>
+                <span class="step-name">完成</span>
+            </li>
+        </ul>
+    </div>
+    <div class="step-content">
+        <div class="step-list">
+            <div class="layui-row">
+                <button class="layui-btn layui-btn-sm" id="backList" style="margin-left: 10px">
+                    返回
+                </button>
+                <button class="layui-btn layui-btn-sm" id="ga" style="margin-left: 10px">
+                    生成派班计划
+                </button>
+                <button class="layui-btn layui-btn-sm" id="addContainers" style="margin-left: 10px">
+                    添加机班位置
+                </button>
+            </div>
+            <div class="layui-row">
+                <div class="layui-col-lg3">
+                    <div class="container">
+                        <table class="layui-table" lay-size="sm">
+                            <thead>
+                            <tr>
+                                <th class="layui-elip">休息时间</th>
+                                <th class="layui-elip">接车时间</th>
+                                <th class="layui-elip">接车车次</th>
+                                <th class="layui-elip">开车车次</th>
+                                <th class="layui-elip">发车时间</th>
+                                <th class="layui-elip">到站时间</th>
+                                <th class="layui-elip">始发站点</th>
+                            </tr>
+                            </thead>
+                            <tbody id="left">
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="layui-col-lg9">
+                    <div class="assign-container">
+                        <div class="layui-row" id="assignScheduleContainer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="step-list">
+            <div class="view-container">
+                <div class="layui-row">
+                    <button class="layui-btn layui-btn-sm layui-btn-primary" id="processShift"
+                            style="margin-left: 10px">
+                        处理机班
+                    </button>
+
+                </div>
+                <div class="layui-row">
+                    <div class="layui-tab layui-tab-card">
+                        <ul class="layui-tab-title">
+                            <li class="layui-this">白班</li>
+                            <li>夜班</li>
+                            <li>早班</li>
+                        </ul>
+                        <div class="layui-tab-content shift-container">
+                            <div class="layui-tab-item layui-show">
+                                <div class="layui-row " id="dayShiftContainer"></div>
+                            </div>
+                            <div class="layui-tab-item">
+                                <div class="layui-row" id="nightShiftContainer"></div>
+                            </div>
+                            <div class="layui-tab-item">
+                                <div class="layui-row" id="morningShiftContainer"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="step-list">
+            <div class="layui-row view-container">
+                <div class="layui-col-lg6 layui-col-lg-offset3">
+                    <form class="layui-form" action="">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">运行图名称</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="name" lay-verify="required" autocomplete="off"
+                                       placeholder="请输入运行图名称"
+                                       class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">运行图类型</label>
+                            <div class="layui-input-block">
+                                <select name="type" lay-filter="type">
+                                    <option value="W" selected>W</option>
+                                    <option value="T">T</option>
+                                    <option value="S">S</option>
+                                    <option value="D">D</option>
+                                    <option value="other">其他</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-form-item layui-form-text">
+                            <label class="layui-form-label">备注</label>
+                            <div class="layui-input-block" contenteditable="true">
+                                <textarea placeholder="请输入内容" name="description"
+                                          class="layui-textarea custom-textarea-height"></textarea>
+                            </div>
+                        </div>
+                        <div class="layui-form-item text-align-center">
+                            <button class="layui-btn layui-btn-sm" lay-submit="" lay-filter="position-schedule">提交
+                            </button>
+                            <button type="reset" class="layui-btn layui-btn-primary layui-btn-sm">重置</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="layui-row" style="margin-top: 12px;">
+    <div class="layui-col-lg4 text-align-center text-color-red">
+        * 请对以上内容进行确认/调整，确认/调整无误后方可进入下一步
+    </div>
+    <div class="layui-col-lg2 layui-col-lg-offset1">
+        <div class="btn-container">
+            <button class="layui-btn layui-btn-sm" id="preBtn">上一步</button>
+            <button class="layui-btn layui-btn-sm" id="nextBtn">下一步</button>
+        </div>
+
+    </div>
+</div>
+<div id="timeScheduleEdit" style="display: none">
+    <div class="layui-row">
+        <div class="layui-col-lg10 layui-col-lg-offset1">
+            <form class="layui-form" action="" style="margin-top: 40px;">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">时刻表列表</label>
+                    <div class="layui-input-block" id="scheduleNoSelect">
+
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">规则选择</label>
+                    <div class="layui-input-block" id="ruleSelect">
+
+                    </div>
+                </div>
+                <div class="layui-form-item text-align-center layui-hide">
+                    <button class="layui-btn layui-btn-sm" id="submitTimeSchedule" lay-submit=""
+                            lay-filter="time-schedule-select">提交
+                    </button>
+                    <button type="reset" class="layui-btn layui-btn-primary layui-btn-sm">重置</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div id="scheduleClassEdit" style="display: none">
+    <div class="layui-row">
+        <div class="layui-col-lg10 layui-col-lg-offset1">
+            <form class="layui-form" action="" style="margin-top: 40px;">
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 120px;">补充规则(可选)</label>
+                    <div class="layui-input-block" style="margin-left: 160px;" id="extraSelect">
+
+                    </div>
+                </div>
+                <div class="layui-form-item text-align-center layui-hide">
+                    <button class="layui-btn layui-btn-sm" id="submitExtraRule" lay-submit=""
+                            lay-filter="extra-rule-select">提交
+                    </button>
+                    <button type="reset" class="layui-btn layui-btn-primary layui-btn-sm">重置</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="modules/driver-shift-position.css">
+<script src="modules/driver-shift-position.js"></script>
+<script id="scheduleTemplate" type="text/html">
+
+    {{# layui.each(d.unAssignDtsList, function(index, item){ }}
+    <tr id="unAssignDtsList[{{index}}]" data-value="{{item.id}}">
+        <td class="layui-elip text-color-red text-align-center">00:00:00</td>
+        <td>{{item.pickUpSchedule.arrivalTime}}</td>
+        <td>{{item.pickUpSchedule.fullTrainNo}}</td>
+        <td>{{item.arrivalSchedule.fullTrainNo}}</td>
+        <td>{{item.departureSchedule.departureTime}}</td>
+        <td>{{item.arrivalSchedule.arrivalTime}}</td>
+        <td class="layui-elip">{{item.departureStation}}-{{item.arrivalStation}}</td>
+    </tr>
+
+    {{# }); }}
+</script>
+<script id="scheduleNoSelectTemplate" type="text/html">
+    <select name="no" lay-verify="required" lay-filter="no">
+        <option value="">请选择时刻表</option>
+        {{# layui.each(d, function(index, item){ }}
+        <option value="{{item.id}}">{{item.no}}</option>
+        {{# }); }}
+    </select>
+</script>
+<script id="scheduleRuleSelectTemplate" type="text/html">
+    <select name="rule" lay-verify="required" lay-filter="rule">
+        <option value="">请选择规则</option>
+        {{# layui.each(d, function(index, item){ }}
+        <option value="{{item.id}}">{{item.name}}</option>
+        {{# }); }}
+    </select>
+</script>
+<script id="scheduleExtraRuleSelectTemplate" type="text/html">
+    <select name="extraRule" lay-filter="extraRule">
+        <option value="">请选择补充规则</option>
+        {{# layui.each(d, function(index, item){ }}
+        <option value="{{item.id}}">{{item.name}}</option>
+        {{# }); }}
+    </select>
+</script>
+
+<script id="assignScheduleTemplate" type="text/html">
+    {{# layui.each(d.assignShiftList, function(index, item){ }}
+    <div class="layui-col-lg4 shift-table">
+        <table class="layui-table" id="{{item.id}}" lay-size="sm">
+            <thead>
+            <tr>
+                <th colspan="7" class="text-color-red text-align-center">
+                    位置:{{index+1}}
+                </th>
+            </tr>
+            <tr>
+                <th class="text-color-red layui-elip">休息时间</th>
+                <th class="layui-elip">接车时间</th>
+                <th class="layui-elip">接车车次</th>
+                <th class="layui-elip">开车车次</th>
+                <th class="layui-elip">发车时间</th>
+                <th class="layui-elip">到站时间</th>
+                <th class="layui-elip">始发站点</th>
+            </tr>
+            </thead>
+            <tbody class="accept-container" id="assignShiftList[{{index}}]">
+            {{# layui.each(item.dtsList,function(position, items){ }}
+            <tr id="{{items.id}}">
+                {{# if(position === 0 ){ }}
+                <td class="text-color-red">&nbsp;</td>
+                {{# } }}
+                {{# if(0 < position && position <= item.dtsList.length-1){ }}
+                <td class="text-color-red text-align-center">
+                    {{items.restTime}}
+                </td>
+                {{# } }}
+                <td>{{items.pickUpSchedule.arrivalTime}}</td>
+                <td>{{items.pickUpSchedule.fullTrainNo}}</td>
+                <td>{{items.arrivalSchedule.fullTrainNo}}</td>
+                <td>{{items.departureSchedule.departureTime}}</td>
+                <td>{{items.arrivalSchedule.arrivalTime}}</td>
+                <td class="layui-elip">{{items.departureStation}}-{{items.arrivalStation}}</td>
+            </tr>
+            {{# }); }}
+            <tr>
+                <td colspan=7 class="text-color-red">
+                    备注：出勤地点:{{item.firstDepartureStation}} 退勤地点:{{item.lastArrivalStation}} 工作时长: {{
+                    layui.laytpl.convertSecondsToTime(item.jobTime) }}
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    {{#  }); }}
+</script>
+
+
+<script id="processScheduleTemplate" type="text/html">
+    {{# layui.each(d, function(index, item){ }}
+    <div class="layui-col-lg3 shift-table">
+        <table class="layui-table" id="{{item.id+''}}" data-type="{{item.type}}" lay-size="sm">
+            <thead>
+            <tr>
+                <th colspan="5" class="text-color-red text-align-center">
+                    位置:{{item.typeName+(index+1)}}
+                </th>
+                <th colspan="2" valign="middle">
+                    <form class="layui-form" action="" lay-filter="class-type-select">
+                        <div class="layui-form-item">
+                            <select name="classType" lay-filter="classType">
+                                <option value="">请选择</option>
+                                <option value="day">白班</option>
+                                <option value="night">夜班</option>
+                                <option value="morning">早班</option>
+                            </select>
+                        </div>
+                    </form>
+                </th>
+            </tr>
+            <tr>
+                <th class="text-color-red layui-elip">休息时间</th>
+                <th class="layui-elip">接车时间</th>
+                <th class="layui-elip">接车车次</th>
+                <th class="layui-elip">开车车次</th>
+                <th class="layui-elip">发车时间</th>
+                <th class="layui-elip">到站时间</th>
+                <th class="layui-elip">始发站点</th>
+            </tr>
+            </thead>
+            <tbody id="[{{index}}]">
+            {{# layui.each(item.dtsList,function(position, items){ }}
+            <tr>
+                {{# if(position === 0 ){ }}
+                <td class="text-color-red">&nbsp;</td>
+                {{# } }}
+                {{# if(0 < position && position <= item.dtsList.length-1){ }}
+                <td class="text-color-red text-align-center">
+                    {{items.restTime}}
+                </td>
+                {{# } }}
+                <td>{{items.pickUpSchedule.arrivalTime}}</td>
+                <td>{{items.pickUpSchedule.fullTrainNo}}</td>
+                <td>{{items.arrivalSchedule.fullTrainNo}}</td>
+                <td>{{items.departureSchedule.departureTime}}</td>
+                <td>{{items.arrivalSchedule.arrivalTime}}</td>
+                <td class="layui-elip">{{items.departureStation}}-{{items.arrivalStation}}</td>
+            </tr>
+            {{# }); }}
+            <tr>
+                <td colspan=7 class="text-color-red">
+                    备注：出勤地点:{{item.firstDepartureStation}} 退勤地点:{{item.lastArrivalStation}} 工作时长: {{
+                    layui.laytpl.convertSecondsToTime(item.jobTime) }}
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    {{#  }); }}
+</script>

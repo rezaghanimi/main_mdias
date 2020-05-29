@@ -1,0 +1,5 @@
+<odoo>
+    <data>
+        <menuitem id="mdias_test.menu_root" name="功能测试"/>
+    </data>
+</odoo>

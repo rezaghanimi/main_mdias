@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="hz_maintaince_plan_res" name="hz_maintaince_plan_res" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+
+                <!-- js -->
+                <script type="text/javascript" src="/metro_park_maintance_hz/static/js/app_menu_extend.js"></script>
+                <script type="text/javascript" src="/metro_park_maintance_hz/static/js/hz_maintaince_client_action.js"></script>
+            
+            </xpath>
+        </template>
+
+    </data>
+</odoo>

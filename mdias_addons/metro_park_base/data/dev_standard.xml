@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="metro_park_base.dev_standard_SFM46" model="metro_park_base.dev_standard">
+            <field name="name">SFM46</field>
+            <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+        </record>
+
+        <!-- 针对所有设备类型 -->
+        <record id="metro_park_base.dev_standard_all" model="metro_park_base.dev_standard">
+            <field name="name">ALL</field>
+            <field name="dev_type" ref="metro_park_base.dev_type_electric_train" />
+        </record>
+
+    </data>
+</odoo>

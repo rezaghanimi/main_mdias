@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="tree_track_view" model="ir.ui.view">
+            <field name="name">位置列表</field>
+            <field name="model">metro_park_dispatch.train_track</field>
+            <field name="arch" type="xml">
+                <tree string="" js_class="fnt_table">
+                    <field name="cur_train_id"/>
+                    <field name="arrive_time"/>
+                    <field name="rail_id"/>
+                    <field name="switch_id"/>
+                </tree>
+            </field>
+        </record>
+
+    </data>
+</odoo>

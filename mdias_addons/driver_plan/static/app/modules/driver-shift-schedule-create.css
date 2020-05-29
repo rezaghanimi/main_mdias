@@ -1,0 +1,44 @@
+.view-container {
+    max-height: 1000px;
+    min-height: 1000px;
+    margin-top: 55px;
+}
+
+.shift-container {
+    max-height: 900px;
+    min-height: 900px;
+    overflow: auto;
+    width: 100%;
+    display: inline-block;
+}
+
+.shift-table {
+    max-height: 210px;
+    min-height: 210px;
+    margin-top: 10px;
+    overflow: auto;
+    display: inline-block;
+}
+
+table caption {
+    font-size: 12px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e6e6e6;
+    border-bottom: none;
+}
+
+.special-text {
+    white-space: nowrap;
+    writing-mode: vertical-rl;
+}
+
+.setting-header-left40 {
+    padding-left: 40px;
+    line-height: 50px;
+}
+
+.setting-header-left30 {
+    padding-left: 30px;
+    line-height: 50px;
+}

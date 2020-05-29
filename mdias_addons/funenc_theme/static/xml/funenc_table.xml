@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <!-- fnt table box -->
+    <t t-name="funenc.fnt_table">
+        <div class="layui-border-box layui-table-view">
+            <div t-if="widget.addCreateLine" class="layui-table-tool">
+                <div class="layui-table-tool-temp">
+                    <div class="layui-inline add_record" lay-event="add">
+                        <i class="layui-icon layui-icon-add-1"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-table-box">
+                <div class="layui-table-header layui-table-header-main">
+                    <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                    </table>
+                </div>
+                <div class="layui-table-body layui-table-main layui-table-body-main">
+                    <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                    </table>
+                </div>
+                <div class="layui-table-fixed layui-table-fixed-l">
+                    <div class="layui-table-header">
+                        <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                        </table>
+                    </div>
+                    <div class="layui-table-body">
+                        <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                        </table>
+                    </div>
+                </div>
+                <div class="layui-table-fixed layui-table-fixed-r">
+                    <div class="layui-table-header">
+                        <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                        </table> 
+                        <div class="layui-table-mend"></div>
+                    </div>
+                    <div class="layui-table-body">
+                        <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="pager_box" />
+            <style>
+                <t t-foreach="widget.columns" t-as="column">
+                    <t t-if="column.width">
+                        .laytable-cell-<t t-esc="column.key"/>{ width: <t t-esc="column.width"/>px; }
+                    </t>
+                </t>
+            </style>
+        </div>
+    </t>
+</templates>

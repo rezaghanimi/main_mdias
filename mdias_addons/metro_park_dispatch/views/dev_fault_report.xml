@@ -1,0 +1,53 @@
+
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="metro_park_dispatch.dev_fault_report_form">
+            <field name="name">设备故报</field>
+            <field name="model">metro_park_dispatch.dev_fault_report</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="cur_train">cur_train</label>
+                        <div class="col-sm-10">
+                            <field name="cur_train" attrs="{'readonly': True}"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="cur_rail">cur_rail</label>
+                        <div class="col-sm-10">
+                            <field name="cur_rail" required="1"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="fault_type">fault_type</label>
+                        <div class="col-sm-10">
+                            <field name="fault_type" required="1"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="reason">reason</label>
+                        <div class="col-sm-10">
+                            <field name="reason"/>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <button class="btn btn-success" type="object" name="on_ok" text="确定" />
+                        <button class="btn btn-info" text="取消" special="cancel" />
+                    </footer>
+                    
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>
+    
+
+
+    

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="res_user_rol_manage">
+            <field name="name">用户管理</field>
+            <field name="model">res.users</field>
+            <field name="priority">9999</field>
+            <field name="arch" type="xml">
+                <tree class="noOpen"
+                      options="{'height': 'full-270'}" create="0" import="0">
+                    <field name="name" string="姓名" width="200"/>
+                    <field name="login" string="登录名" width="300"/>
+                    <field name="role_ids" string="角色" width="200" widget="many2many_tags"/>
+                    <widget name="RoleUsersList"
+                            width="240"
+                            fixed_right="1"
+                            string="操作"
+                            template="role_groups_operation_buttons"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="user_role_edit_form">
+            <field name="name">角色关联</field>
+            <field name="model">res.users</field>
+            <field name="priority">998</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="role_ids">role_ids</label>
+                        <div class="col-sm-10">
+                            <field name="role_ids" widget="many2many_tags" options="{'no_create': True, 'no_open': True}"/>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <button type="object" class="btn btn-success" name="close_window" text="确定"/>
+                        <button class="btn btn-info" text="取消" special="cancel"/>
+                    </footer>
+                </form>
+
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,87 @@
+<odoo>
+    <data>
+
+        <record id="metro_park_users_form_extend" model="ir.ui.view">
+            <field name="name">用户设置</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_form_simple_modif"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form" position="replace">
+                    <form create="false">
+                        <sheet>
+                            <field name="wx_user_ids" invisible="1"/>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label" for="name">姓名</label>
+                                <div class="col-sm-6">
+                                    <field name="image" widget='image' class="oe_avatar" options='{"preview_image": "image_medium"}'/>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label" for="name">姓名</label>
+                                <div class="col-sm-6">
+                                    <field name="name" readonly="1"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label" for="locations">locations</label>
+                                <div class="col-sm-6">
+                                    <field name="locations"
+                                           widget="many2many_tags"
+                                           options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label" for="cur_location">cur_location</label>
+                                <div class="col-sm-6">
+                                    <field name="cur_location"
+                                           options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label" for="cur_role">cur_role</label>
+                                <div class="col-sm-6">
+                                    <field name="cur_role"
+                                           options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label" for="wx_user_ids">wx_user_ids</label>
+                                <div class="col-sm-6">
+                                    <field name="wx_user_ids"
+                                           widget="many2many_tags"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label" for="cur_wx_user_id">cur_wx_user_id</label>
+                                <div class="col-sm-6">
+                                    <field name="cur_wx_user_id" options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label" for="cur_department">cur_department</label>
+                                <div class="col-sm-6">
+                                    <field name="cur_department" options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                                </div>
+                            </div>
+                        </sheet>
+
+                        <footer>
+                            <button string="Save" name="action_save_preference" type="object" class="btn-primary"/>
+                            <button name="preference_cancel" string="Cancel" special="cancel" class="btn-secondary"/>
+                        </footer>
+
+                    </form>
+
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

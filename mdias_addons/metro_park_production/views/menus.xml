@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem id="metro_park_production.menu_root"
+                  font_icon="iconfont production_icon" sequence="1" name="生产管理"/>
+
+        <record model="ir.actions.server"
+                id="metro_park_production.maintenance_information_act_server">
+            <field name="name">检修大屏管理</field>
+            <field name="type">ir.actions.server</field>
+            <field name="res_model">metro_park_production.screen.page</field>
+            <field name="model_id" ref="model_metro_park_production_screen_page"/>
+            <field name="state">code</field>
+            <field name="condition">True</field>
+            <field name="code">action = model.jump_location_pages()</field>
+        </record>
+
+        <record id="early_waring_client_act" model="ir.actions.client">
+            <field name="name">生产指标及其预警</field>
+            <field name="tag">EarlyWaringPage</field>
+        </record>
+
+        <!--驾驶舱-->
+        <record model="ir.actions.act_window" id="metro_park_production.statistics_report_act_window">
+            <field name="name">驾驶舱</field>
+            <field name="res_model">metro_park_production.statistics_report</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="statistical_report_act_client" model="ir.actions.client">
+            <field name="name">统计报表</field>
+            <field name="tag">statistical_report_client</field>
+            <field name="target">current</field>
+        </record>
+
+
+        <!--电子归档-->
+        <record model="ir.actions.act_window" id="files_act_window">
+            <field name="name">电子归档</field>
+            <field name="res_model">metro_park_production.files</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- 生产统计 -->
+        <record id="metro_park_production.sys_main_page_action" model="ir.actions.client">
+            <field name="name">生产统计</field>
+            <field name="tag">home_page</field>
+            <field name="target">main</field>
+        </record>
+
+        <menuitem action="metro_park_production.sys_main_page_action"
+                  id="metro_park_production.main_page"
+                  name="系统主页"
+                  sequence="1"
+                  groups="group_production_manage_screen_edit_public"
+                  parent="metro_park_production.menu_root"/>
+
+        <menuitem action="metro_park_production.maintenance_information_act_server"
+                  id="metro_park_production.maintenance_information_menu"
+                  name="大屏查看"
+                  sequence="2"
+                  groups="group_production_manage_screen_edit_public"
+                  parent="metro_park_production.menu_root"/>
+
+
+        <menuitem action="metro_park_production.statistics_report_act_window"
+                  id="metro_park_production.statistics_report_menu"
+                  name="驾驶舱"
+                  sequence="3"
+                  groups="group_production_manage_bi"
+                  parent="metro_park_production.menu_root"/>
+
+        <menuitem id="metro_park_production.production_planning_menu"
+                  name="生产计划管理"
+                  sequence="4"
+                  parent="metro_park_production.menu_root"/>
+
+        <menuitem id="metro_park_production.rule_info_menu"
+                  action="rule_info_act_window"
+                  name="调度计划"
+                  sequence="1"
+                  parent="metro_park_production.production_planning_menu"
+                  groups="group_production_manage_plan_page_look"/>
+
+        <!--交接班管理-->
+        <menuitem id="metro_park_production.handover_management_menu"
+                  name="交接班管理"
+                  sequence="4"
+                  groups="group_production_manage_handover_work_page_look"
+                  parent="metro_park_production.menu_root"/>
+
+        <menuitem action="handover_parker_act_window"
+                  id="handover_parker_menu"
+                  parent="metro_park_production.handover_management_menu"
+                  name="场调交接班"
+                  groups="group_production_manage_handover_work_parker"
+                  sequence="1"/>
+
+        <menuitem action="handover_checker_act_window" id="handover_checker_menu"
+                  parent="metro_park_production.handover_management_menu" name="检调交接班"
+                  groups="group_production_manage_handover_work_checker" sequence="2"/>
+
+        <menuitem action="signal_handover_act_window" id="handover_signaler_menu"
+                  parent="metro_park_production.handover_management_menu" name="信号楼交接班"
+                  groups="group_production_manage_handover_work_signaler" sequence="3"/>
+
+<!--        <menuitem action="handover_dispatcher_act_window" id="handover_dispatcher_menu"-->
+<!--                  parent="metro_park_production.handover_management_menu" name="派班员交接班"-->
+<!--                  groups="group_production_manage_handover_work_dispatcher" sequence="4"/>-->
+
+        <menuitem action="metro_park_production.early_waring_client_act" id="metro_park_production.early_warin_menu"
+                  name="生产指标及其预警" sequence="5" parent="metro_park_production.menu_root"
+                  groups="group_production_manage_indicator_waring_page_look"/>
+
+        <menuitem id="metro_park_production.statistical_report_menu"
+                  action="statistical_report_act_client"
+                  name="统计报表"
+                  sequence="6"
+                  parent="metro_park_production.menu_root"
+                  groups="group_production_manage_statistical_form_page_look"/>
+
+        <menuitem id="metro_park_production.files_menu"
+                  action="files_act_window"
+                  name="电子归档"
+                  sequence="7"
+                  parent="metro_park_production.menu_root"
+                  groups="group_production_manage_archive_page_look"/>
+
+        <menuitem
+                id="production_reappearance_of_scene"
+                name="情景再现"
+                sequence="9"
+                parent="metro_park_production.menu_root"/>
+
+        <menuitem action="production_video_act"
+                  id="production_video_menu"
+                  name="情景再现视频"
+                  sequence="9"
+                  parent="production_reappearance_of_scene"
+                  groups="category_scene_reappearance_video"/>
+
+        <menuitem action="act_production_video_config"
+                  id="production_video_reappearance_config_menu"
+                  name="情景再现配置"
+                  sequence="9"
+                  parent="production_reappearance_of_scene"
+                  groups="group_production_manage_archive_delete_configuration"/>
+    </data>
+</odoo>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="maintenance_management_assets" name="maintenance_management" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+
+                <script type="application/javascript" src="/maintenance_management/static/js/server_client.js"/>
+                <script type="application/javascript" src="/maintenance_management/static/js/interface_state.js"/>
+                <script type="application/javascript"
+                        src="/maintenance_management/static/js/maintenance_map_action.js"/>
+                <script type="application/javascript" src="/maintenance_management/static/js/battery_status.js"/>
+                <script type="application/javascript"
+                        src="/maintenance_management/static/js/transmission_channel_monitoring.js"/>
+                <script type="application/javascript"
+                        src="/maintenance_management/static/js/optical_module_button.js"/>
+                <script type="application/javascript"
+                        src="/maintenance_management/static/js/export_tree_button.js"/>
+                <script type="application/javascript"
+                        src="/maintenance_management/static/js/light_module_data.js"/>
+                <script type="application/javascript"
+                        src="/maintenance_management/static/js/hidden_side_export.js"/>
+                <script type="application/javascript"
+                        src="/maintenance_management/static/js/print_rec.js"/>
+                <link rel="stylesheet" href="/maintenance_management/static/css/style.css"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--日志记录-->
+        <record model="ir.actions.client" id="operation_list_client">
+            <field name="name">日志记录</field>
+            <field name="tag">ActionLogList</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="log_config_action">
+            <field name="name">日志配置</field>
+            <field name="res_model">res.config.settings</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+
+            <field name="view_id" ref="odoo_operation_log.res_config_log_form_view"/>
+        </record>
+
+
+        <menuitem id="operation_log_root"
+                  name="操作日志"
+                  sequence="99"
+                  icon="&#xe615;"
+                  groups="groups_sys_operation_log_access"
+        />
+
+        <menuitem id="operation_log_menu"
+                  name="操作日志"
+                  parent="operation_log_root"
+                  action="operation_list_client"
+                  sequence="1"/>
+
+        <menuitem id="operation_log_config"
+                  name="日志配置"
+                  parent="operation_log_root"
+                  action="log_config_action"
+                  sequence="2"/>
+    </data>
+</odoo>

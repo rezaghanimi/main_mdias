@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="train_maintenance_task_early_waring" model="metro_park_production.early_waring">
+            <field name="name">车辆检修</field>
+            <field name="apply_tag">train_maintenance_task_early_waring</field>
+            <field name="waring_type_description">完成率</field>
+            <field name="settings" model='metro_park_production.early_waring.line' eval="[(5, 0, 0),
+            (0, 0, {
+                'waring_line_name': '三级预警',
+                'single_threshold_value_percentage': 80,
+                'all_threshold_value_percentage': 80,
+                'all_color': '#00FF00',
+                'single_color': '#00FF00',
+                'all_open': True,
+                'single_open': True,
+
+                },),
+            (0, 0, {
+                'waring_line_name': '二级预警',
+                'single_threshold_value_percentage': 70,
+                'all_threshold_value_percentage': 70,
+               'all_color': '#FFFF00',
+                'single_color': '#FFFF00',
+                'all_open': True,
+                'single_open': True,
+
+                },),
+            (0, 0, {
+                'waring_line_name': '一级预警',
+                'single_threshold_value_percentage': 60,
+                'all_threshold_value_percentage': 60,
+                'all_color': '#FF0000',
+                'single_color': '#FF0000',
+                'all_open': True,
+                'single_open': True,
+
+                },)
+        ]"/>
+        </record>
+
+        <record id="train_send_task_early_waring" model="metro_park_production.early_waring">
+            <field name="name">发车任务</field>
+            <field name="waring_type_description">准点率</field>
+            <field name="apply_tag">train_send_task_early_waring</field>
+            <field name="settings" model='metro_park_production.early_waring.line' eval="[(5, 0, 0),
+            (0, 0, {
+                'waring_line_name': '三级预警',
+                'single_threshold_value_percentage': 80,
+                'all_threshold_value_percentage': 80,
+                'all_color': '#00FF00',
+                'single_color': '#00FF00',
+                'all_open': True,
+                'single_open': True,
+
+                },),
+            (0, 0, {
+                'waring_line_name': '二级预警',
+                'single_threshold_value_percentage': 70,
+                'all_threshold_value_percentage': 70,
+                'all_color': '#FFFF00',
+                'single_color': '#FFFF00',
+                'all_open': True,
+                'single_open': True,
+
+                },),
+            (0, 0, {
+                'waring_line_name': '一级预警',
+                'single_threshold_value_percentage': 60,
+                'all_threshold_value_percentage': 60,
+                'all_color': '#FF0000',
+                'single_color': '#FF0000',
+                'all_open': True,
+                'single_open': True,
+
+                },)
+        ]"/>
+        </record>
+
+        <record id="train_back_task_early_waring" model="metro_park_production.early_waring">
+            <field name="name">收车任务</field>
+            <field name="waring_type_description">准点率</field>
+            <field name="apply_tag">train_back_task_early_waring</field>
+            <field name="settings" model='metro_park_production.early_waring.line' eval="[(5, 0, 0),
+            (0, 0, {
+                'waring_line_name': '三级预警',
+                'single_threshold_value_percentage': 80,
+                'all_threshold_value_percentage': 80,
+                'all_color': '#00FF00',
+                'single_color': '#00FF00',
+                'all_open': True,
+                'single_open': True,
+
+                },),
+            (0, 0, {
+                'waring_line_name': '二级预警',
+                'single_threshold_value_percentage': 70,
+                'all_threshold_value_percentage': 70,
+                'all_color': '#FFFF00',
+                'single_color': '#FFFF00',
+                'all_open': True,
+                'single_open': True,
+
+                },),
+            (0, 0, {
+                'waring_line_name': '一级预警',
+                'single_threshold_value_percentage': 60,
+                'all_threshold_value_percentage': 60,
+                'all_color': '#FF0000',
+                'single_color': '#FF0000',
+                'all_open': True,
+                'single_open': True,
+
+                },)
+        ]"/>
+        </record>
+
+        <record id="construction_task_early_waring" model="metro_park_production.early_waring">
+            <field name="name">施工任务</field>
+            <field name="waring_type_description">完成率</field>
+            <field name="apply_tag">construction_task_early_waring</field>
+            <field name="settings" model='metro_park_production.early_waring.line' eval="[(5, 0, 0),
+            (0, 0, {
+                'waring_line_name': '三级预警',
+                'single_threshold_value_percentage': 80,
+                'all_threshold_value_percentage': 80,
+                'all_color': '#00FF00',
+                'single_color': '#00FF00',
+                'all_open': True,
+                'single_open': True,
+
+                },),
+            (0, 0, {
+                'waring_line_name': '二级预警',
+                'single_threshold_value_percentage': 70,
+                'all_threshold_value_percentage': 70,
+                'all_color': '#FFFF00',
+                'single_color': '#FFFF00',
+                'all_open': True,
+                'single_open': True,
+
+                },),
+            (0, 0, {
+                'waring_line_name': '一级预警',
+                'single_threshold_value_percentage': 60,
+                'all_threshold_value_percentage': 60,
+                'all_color': '#FF0000',
+                'single_color': '#FF0000',
+                'all_open': True,
+                'single_open': True,
+
+                },)
+        ]"/>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <title>成都地铁乘务自动派班管理系统</title>
+    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="bower_components/layui/dist/css/layui.css" rel="stylesheet">
+    <link href="bower_components/dragula/dist/dragula.min.css" rel="stylesheet">
+    <link href="common/steps/style.css" rel="stylesheet">
+    <link href="bower_components/layui-formSelects/dist/formSelects-v4.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="bower_components/jQuery-contextMenu/dist/jquery.contextMenu.min.css">
+    <link rel="stylesheet" type="text/css" href="common/Context.js/context.standalone.css">
+
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header layui-hide">
+        <div class="layui-logo" lay-href="modules/home.html">乘务自动派班管理系统V1.0</div>
+    </div>
+
+    <div class="layui-side layui-bg-black">
+        <div class="layui-side-scroll">
+            <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+            <ul class="layui-nav layui-nav-tree" lay-filter="nav-item">
+                <li class="layui-nav-item layui-nav-itemed">
+                    <!--                    <a class="" href="javascript:;">乘务自动派班管理系统</a>-->
+                    <dl class="layui-nav-child">
+                        <dd><a class="menu-item" href="javascript:;" lay-href="modules/home.html">首页</a></dd>
+                        <dd><a class="menu-item" href="javascript:;" lay-href="modules/driver-info.html">司机信息</a></dd>
+                        <dd><a href="javascript:;" lay-href="modules/mileage-statistics.html">里程统计</a></dd>
+                        <dd><a class="menu-item" href="javascript:;" lay-href="modules/train-schedule.html">时刻表管理</a>
+                        </dd>
+                        <dd><a href="javascript:;" lay-href="modules/schedule-rule-setting.html">派班规则设置</a></dd>
+                        <dd><a href="javascript:;" lay-href="modules/driver-shift-position-view.html">司机位置图自动编制</a></dd>
+                        <dd><a href="javascript:;" lay-href="modules/driver-shift-schedule.html">派班计划表编制与调整</a></dd>
+                        <dd><a href="javascript:;" lay-href="modules/schedule-directive-view.html">派班计划下达反馈与反馈</a></dd>
+                        <dd><a href="javascript:;" lay-href="modules/accident-management.html">事故事件单管理</a></dd>
+                        <dd><a href="javascript:;" lay-href="modules/driver-punch-card.html">一体机数据查询</a></dd>
+                        <dd><a href="javascript:;" lay-href="modules/screen-display.html">大屏显示调节</a></dd>
+                        <dd><a href="javascript:;" lay-href="modules/parking-lot-setting.html">车场派班参数设置</a></dd>
+                        <dd><a href="javascript:;" lay-href="modules/parking-lot-employee.html">车场派班人员名单</a></dd>
+                        <dd><a href="javascript:;" lay-href="modules/parking-lot-schedule.html">车场派班表</a></dd>
+                        <dd><a href="javascript:;" lay-href="modules/parking-lot-record.html">车场出退勤查询</a></dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="layui-body" style="bottom: 0;padding: 10px 0 10px 0">
+        <div id="layui-content-body"></div>
+    </div>
+
+    <!--<div class="layui-footer">-->
+    <!--&lt;!&ndash; 底部固定区域 &ndash;&gt;-->
+    <!--© huiztech.cn-->
+    <!--</div>-->
+</div>
+<script src="bower_components/layui/dist/layui.js"></script>
+<script src="bower_components/lodash/dist/lodash.min.js"></script>
+<script src="bower_components/date-fns/dist/date_fns.min.js"></script>
+<script src="bower_components/dragula/dist/dragula.min.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/jquery.marquee/jquery.marquee.js"></script>
+<script src="bower_components/jQuery-contextMenu/dist/jquery.contextMenu.js"></script>
+<script src="bower_components/jQuery-contextMenu/dist/jquery.ui.position.min.js"></script>
+<script src="bower_components/screenfull.js/dist/screenfull.min.js"></script>
+<script src="common/Context.js/context.js"></script>
+<script>
+    const logger = function () {
+        let oldConsoleLog = null;
+        const pub = {};
+
+        pub.enableLogger = function enableLogger() {
+            if (oldConsoleLog == null)
+                return;
+
+            window['console']['log'] = oldConsoleLog;
+        };
+
+        pub.disableLogger = function disableLogger() {
+            oldConsoleLog = console.log;
+            window['console']['log'] = function () {
+            };
+        };
+
+        return pub;
+    }();
+    /**
+     * 控制console 日志打印 production环境下禁止打印
+     */
+    $(document).ready(function () {
+        logger.enableLogger();
+    });
+    layui.config({
+        base: './common/'
+    }).extend({
+        api: "api",
+        steps: "steps/steps",
+        formSelects: 'formSelects-v4'
+    }).use(['element', 'jquery', 'layer'], function () {
+        const element = layui.element;
+        const $ = layui.$; //重点处
+        element.on('nav(nav-item)', function (elem) {
+            const href = $(elem).attr('lay-href');
+            if (href) {
+                $("#layui-content-body").load(href);
+            }
+        });
+        $('.layui-logo').click(function () {
+            const href = $(this).attr('lay-href');
+            $("#layui-content-body").load(href);
+        });
+        $("#layui-content-body").load("modules/home.html");
+    });
+
+</script>
+<style>
+    html, body {
+        height: 100%;
+    }
+
+    .margin-top-20 {
+        margin-top: 20px;
+    }
+
+    .header-container {
+        padding: 10px 0
+    }
+
+    .text-align-center {
+        text-align: center !important;
+    }
+
+    .text-align-left {
+        text-align: left !important;
+    }
+
+    .text-color-red {
+        color: #dc3545;
+    }
+
+    .context-menu-list {
+        min-width: 7em;
+        max-width: 13em;
+    }
+</style>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<div id="server_client">
+    <h1 style="text-align: center; margin-bottom: 25px;">{{system_name}}</h1>
+    <div style="display: flex;margin-bottom: 25px;">
+        <div id="dashboard1" style="align-items: center;
+        margin-left: 15px;
+        display: flex;
+        justify-content: space-around;
+        box-sizing: border-box;
+        border-radius: 10px;
+        background: linear-gradient(to right, #fe9c71, #feb797);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
+        width:30%;
+        padding-right: 30px;
+        height:140px;">系统当前运行时间 {{system_uptime_data}} hour
+        </div>
+        <div id="dashboard2" style="align-items: center;
+        margin-left: 15px;
+        justify-content: space-around;
+        box-sizing: border-box;
+        border-radius: 10px;
+        background: linear-gradient(to right, #fe9c71, #feb797);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
+        display: flex;
+        width:30%;
+        padding-right: 30px;
+        height:140px;">系统当前进程数 {{processes_data}}
+        </div>
+        <div id="dashboard3" style="align-items: center;
+        margin-left: 15px;
+        display: flex;
+        justify-content: space-around;
+        box-sizing: border-box;
+        border-radius: 10px;
+        background: linear-gradient(to right, #fe9c71, #feb797);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
+        width:30%;
+        padding-right: 30px;
+        height:140px;">系统当前登录的用户数量 {{login_user_data}}
+        </div>
+    </div>
+    <h2 style="text-align: center">CPU负载</h2>
+    <div id="dashboard4" style="text-align: center; width: 100%; height:300%;"></div>
+    <h2 style="text-align: center">系统当前内存使用率</h2>
+    <div id="dashboard5" style="text-align: center; width: 100%; height:300%; display: flex;"></div>
+    <h2 style="text-align: center">系统当前网络接口流量状况</h2>
+    <div id="dashboard6" style="text-align: center; width: 100%; height:300%; display: flex;"></div>
+    <div id="dashboard7" style="text-align: center; width: 100%; height:300%; display: flex;"></div>
+</div>

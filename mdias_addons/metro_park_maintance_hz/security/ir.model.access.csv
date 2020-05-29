@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+access_metro_park_maintance_hz_hz_frame,metro_park_maintance_hz.hz_frame,model_metro_park_maintance_hz_hz_frame,,1,1,1,1

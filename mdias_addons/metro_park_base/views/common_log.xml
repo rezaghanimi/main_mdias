@@ -1,0 +1,55 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_base.common_log_list">
+            <field name="name">日志列表</field>
+            <field name="model">metro_park_base.common_log</field>
+            <field name="arch" type="xml">
+                <tree create="0" js_class="fnt_table" options="{'height': 'full-300'}">
+                    <field name="log"/>
+                    <field name="type"/>
+                    <field name="create_date" string="日期" />
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="metro_park_base.common_log_form">
+            <field name="name">日志表单</field>
+            <field name="model">metro_park_base.common_log</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="log">log</label>
+                        <div class="col-sm-10">
+                            <field name="log"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="type">type</label>
+                        <div class="col-sm-10">
+                            <field name="type"/>
+                        </div>
+                    </div>
+
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window"
+                id="metro_park_base.common_log_act_window">
+            <field name="name">系统日志</field>
+            <field name="res_model">metro_park_base.common_log</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        <menuitem action="metro_park_base.common_log_act_window"
+                  id="metro_park_base.common_log_menu"
+                  name="通用日志"
+                  parent="metro_park_base.menu_root"
+                  groups="category_sys_general_log"/>
+    </data>
+</odoo>
+    

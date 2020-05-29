@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="long_deng_shan_signal_D1" model="metro_park_base.signals">
+            <field name="name">D1</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D3" model="metro_park_base.signals">
+            <field name="name">D3</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D5" model="metro_park_base.signals">
+            <field name="name">D5</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D9" model="metro_park_base.signals">
+            <field name="name">D9</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D7" model="metro_park_base.signals">
+            <field name="name">D7</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D11" model="metro_park_base.signals">
+            <field name="name">D11</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D13" model="metro_park_base.signals">
+            <field name="name">D13</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D15" model="metro_park_base.signals">
+            <field name="name">D15</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D17" model="metro_park_base.signals">
+            <field name="name">D17</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D19" model="metro_park_base.signals">
+            <field name="name">D19</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <!--
+            **出站信号 X23 X25 X27 X29 X31 X33 X35 X37 X39 X22 X24 X26 X28 X30 X32 X34 X36 X38 XC XR X21
+        -->
+
+        <record id="long_deng_shan_signal_D21" model="metro_park_base.signals">
+            <field name="name">D21</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D23" model="metro_park_base.signals">
+            <field name="name">D23</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D25" model="metro_park_base.signals">
+            <field name="name">D25</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D27" model="metro_park_base.signals">
+            <field name="name">D27</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D7A" model="metro_park_base.signals">
+            <field name="name">D7A</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D9A" model="metro_park_base.signals">
+            <field name="name">D9A</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D11A" model="metro_park_base.signals">
+            <field name="name">D11A</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D13A" model="metro_park_base.signals">
+            <field name="name">D13A</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D15A" model="metro_park_base.signals">
+            <field name="name">D15A</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D17A" model="metro_park_base.signals">
+            <field name="name">D17A</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D19A" model="metro_park_base.signals">
+            <field name="name">D19A</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D21A" model="metro_park_base.signals">
+            <field name="name">D21A</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D23A" model="metro_park_base.signals">
+            <field name="name">D23A</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D25A" model="metro_park_base.signals">
+            <field name="name">D25A</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D27A" model="metro_park_base.signals">
+            <field name="name">D27A</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D7B" model="metro_park_base.signals">
+            <field name="name">D7B</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D9B" model="metro_park_base.signals">
+            <field name="name">D9B</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D11B" model="metro_park_base.signals">
+            <field name="name">D11B</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D13B" model="metro_park_base.signals">
+            <field name="name">D13B</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D15B" model="metro_park_base.signals">
+            <field name="name">D15B</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D17B" model="metro_park_base.signals">
+            <field name="name">D17B</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D19B" model="metro_park_base.signals">
+            <field name="name">D19B</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D21B" model="metro_park_base.signals">
+            <field name="name">D21B</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D23B" model="metro_park_base.signals">
+            <field name="name">D23B</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D25B" model="metro_park_base.signals">
+            <field name="name">D25B</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D27B" model="metro_park_base.signals">
+            <field name="name">D27B</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D8A" model="metro_park_base.signals">
+            <field name="name">D8A</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D10A" model="metro_park_base.signals">
+            <field name="name">D10A</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D12A" model="metro_park_base.signals">
+            <field name="name">D12A</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D14A" model="metro_park_base.signals">
+            <field name="name">D14A</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D16A" model="metro_park_base.signals">
+            <field name="name">D16A</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D18A" model="metro_park_base.signals">
+            <field name="name">D18A</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D20A" model="metro_park_base.signals">
+            <field name="name">D20A</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D22A" model="metro_park_base.signals">
+            <field name="name">D22A</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D24A" model="metro_park_base.signals">
+            <field name="name">D24A</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D26A" model="metro_park_base.signals">
+            <field name="name">D26A</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D28A" model="metro_park_base.signals">
+            <field name="name">D28A</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D8B" model="metro_park_base.signals">
+            <field name="name">D8B</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D10B" model="metro_park_base.signals">
+            <field name="name">D10B</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D12B" model="metro_park_base.signals">
+            <field name="name">D12B</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D14B" model="metro_park_base.signals">
+            <field name="name">D14B</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D16B" model="metro_park_base.signals">
+            <field name="name">D16B</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D18B" model="metro_park_base.signals">
+            <field name="name">D18B</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D20B" model="metro_park_base.signals">
+            <field name="name">D20B</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D22B" model="metro_park_base.signals">
+            <field name="name">D22B</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D24B" model="metro_park_base.signals">
+            <field name="name">D24B</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D26B" model="metro_park_base.signals">
+            <field name="name">D26B</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D28B" model="metro_park_base.signals">
+            <field name="name">D28B</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D7BZ" model="metro_park_base.signals">
+            <field name="name">D7BZ</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D9BZ" model="metro_park_base.signals">
+            <field name="name">D9BZ</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D11BZ" model="metro_park_base.signals">
+            <field name="name">D11BZ</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D13BZ" model="metro_park_base.signals">
+            <field name="name">D13BZ</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D15BZ" model="metro_park_base.signals">
+            <field name="name">D15BZ</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D17BZ" model="metro_park_base.signals">
+            <field name="name">D17BZ</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D19BZ" model="metro_park_base.signals">
+            <field name="name">D19BZ</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D21BZ" model="metro_park_base.signals">
+            <field name="name">D21BZ</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D23BZ" model="metro_park_base.signals">
+            <field name="name">D23BZ</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D25BZ" model="metro_park_base.signals">
+            <field name="name">D25BZ</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D27BZ" model="metro_park_base.signals">
+            <field name="name">D27BZ</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D8BZ" model="metro_park_base.signals">
+            <field name="name">D8BZ</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D10BZ" model="metro_park_base.signals">
+            <field name="name">D10BZ</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D12BZ" model="metro_park_base.signals">
+            <field name="name">D12BZ</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D14BZ" model="metro_park_base.signals">
+            <field name="name">D14BZ</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D16BZ" model="metro_park_base.signals">
+            <field name="name">D16BZ</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D18BZ" model="metro_park_base.signals">
+            <field name="name">D18BZ</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D20BZ" model="metro_park_base.signals">
+            <field name="name">D20BZ</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D22BZ" model="metro_park_base.signals">
+            <field name="name">D22BZ</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D24BZ" model="metro_park_base.signals">
+            <field name="name">D24BZ</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D26BZ" model="metro_park_base.signals">
+            <field name="name">D26BZ</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_D28BZ" model="metro_park_base.signals">
+            <field name="name">D28BZ</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_JT7" model="metro_park_base.signals">
+            <field name="name">JT7</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_JT3" model="metro_park_base.signals">
+            <field name="name">JT3</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_JT1" model="metro_park_base.signals">
+            <field name="name">JT1</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_JT5" model="metro_park_base.signals">
+            <field name="name">JT5</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_XR2" model="metro_park_base.signals">
+            <field name="name">XR2</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_XC2" model="metro_park_base.signals">
+            <field name="name">XC2</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_SC2" model="metro_park_base.signals">
+            <field name="name">SC2</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_SZR2" model="metro_park_base.signals">
+            <field name="name">SZR2</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_SZC2" model="metro_park_base.signals">
+            <field name="name">SZC2</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_SR2" model="metro_park_base.signals">
+            <field name="name">SR2</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_S2" model="metro_park_base.signals">
+            <field name="name">S2</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_S3" model="metro_park_base.signals">
+            <field name="name">S3</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_S4" model="metro_park_base.signals">
+            <field name="name">S4</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_S5" model="metro_park_base.signals">
+            <field name="name">S5</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+
+        <record id="long_deng_shan_signal_S7" model="metro_park_base.signals">
+            <field name="name">S7</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_S8" model="metro_park_base.signals">
+            <field name="name">S8</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_S9" model="metro_park_base.signals">
+            <field name="name">S9</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_S10" model="metro_park_base.signals">
+            <field name="name">S10</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_S11" model="metro_park_base.signals">
+            <field name="name">S11</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_S12" model="metro_park_base.signals">
+            <field name="name">S12</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_S13" model="metro_park_base.signals">
+            <field name="name">S13</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_S14" model="metro_park_base.signals">
+            <field name="name">S14</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_S15" model="metro_park_base.signals">
+            <field name="name">S15</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_S16" model="metro_park_base.signals">
+            <field name="name">S16</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_S17" model="metro_park_base.signals">
+            <field name="name">S17</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_S18" model="metro_park_base.signals">
+            <field name="name">S18</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_S19" model="metro_park_base.signals">
+            <field name="name">S19</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_S20" model="metro_park_base.signals">
+            <field name="name">S20</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_S21" model="metro_park_base.signals">
+            <field name="name">S21</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_S22" model="metro_park_base.signals">
+            <field name="name">S22</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_S23" model="metro_park_base.signals">
+            <field name="name">S23</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_S24" model="metro_park_base.signals">
+            <field name="name">S24</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_S25" model="metro_park_base.signals">
+            <field name="name">S25</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_S26" model="metro_park_base.signals">
+            <field name="name">S26</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_S27" model="metro_park_base.signals">
+            <field name="name">S27</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_S28" model="metro_park_base.signals">
+            <field name="name">S28</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_S30" model="metro_park_base.signals">
+            <field name="name">S30</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+
+        <record id="long_deng_shan_signal_S31" model="metro_park_base.signals">
+            <field name="name">S31</field>
+            <field name="location" ref="long_deng_shan"/>
+        </record>
+    </data>
+</odoo>
+

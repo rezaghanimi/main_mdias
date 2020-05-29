@@ -1,0 +1,38 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="battery_bus_voltage_switch_tree_id">
+            <field name="name">蓄电池母线电压</field>
+            <field name="model">battery_bus_voltage_switch</field>
+            <field name="arch" type="xml">
+                <tree create="0">
+                    <field name="name"/>
+                    <field name="voltage"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="battery_bus_voltage_switch_form_id">
+            <field name="name">蓄电池母线电压</field>
+            <field name="model">battery_bus_voltage_switch</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="name"/>
+                        <field name="voltage"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="battery_bus_voltage_switch_window_id">
+            <field name="name">蓄电池母线电压</field>
+            <field name="res_model">battery_bus_voltage_switch</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="battery_bus_voltage_switch_window_id"
+                  parent="tcms_tcms_act_menu_parent_id"
+                  id="battery_bus_voltage_switch_menu_id"
+                  name="蓄电池母线电压"/>
+    </data>
+</odoo>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="funenc_wechat_cd_account" model="funenc.wechat.account">
+            <field name="name">成都地铁</field>
+            <field name="code">002</field>
+            <field name="corp">ww459483b92c637742</field>
+            <field name="account_secret">B-kkRjRQnpxDxRGxm0ZNwhQ3gsbXz3jWUNuiEfzoKB0</field>
+        </record>
+
+<!--        <record id="funenc_wechat_fnt_account" model="funenc.wechat.account">-->
+<!--            <field name="name">富能通</field>-->
+<!--            <field name="code">001</field>-->
+<!--            <field name="corp">wwc4cf9cc042245fb4</field>-->
+<!--            <field name="account_secret">3CD0M37kCrwMEKfCQ3BGvu6Dg4XknnskhIprSrjpPMw</field>-->
+<!--        </record>-->
+
+    </data>
+</odoo>

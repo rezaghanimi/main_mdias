@@ -1,0 +1,56 @@
+
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="metro_park_dispatch.report_train_point_list">
+            <field name="name">列车报点</field>
+            <field name="model">metro_park_dispatch.report_train_point</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table">
+                    <field name="rail_sec_id"/>
+                    <field name="report_time"/>
+                </tree>
+            </field>
+        </record>
+
+        
+        <record model="ir.ui.view" id="metro_park_dispatch.report_train_point_form">
+            <field name="name">列车报点</field>
+            <field name="model">metro_park_dispatch.report_train_point</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="train_dev">train_dev</label>
+                        <div class="col-sm-3">
+                            <field name="train_dev" readonly="1"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="rail_sec_id">rail_sec_id</label>
+                        <div class="col-sm-3">
+                            <field name="rail_sec_id"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="report_time">report_time</label>
+                        <div class="col-sm-3">
+                            <field name="report_time"/>
+                        </div>
+                    </div>
+                    
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="metro_park_dispatch.report_train_point_act_window">
+            <field name="name">report_train_point</field>
+            <field name="res_model">metro_park_dispatch.report_train_point</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+    

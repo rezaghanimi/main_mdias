@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <!--
+            **进站信号 SZC XC SZR XR D12 D14 XRZA XCZA
+        -->
+
+        <record id="yuan_hua_signal_S1" model="metro_park_base.signals">
+            <field name="name">S1</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_SZR1" model="metro_park_base.signals">
+            <field name="name">SZR1</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_SZC1" model="metro_park_base.signals">
+            <field name="name">SZC1</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_S3" model="metro_park_base.signals">
+            <field name="name">S3</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_S4" model="metro_park_base.signals">
+            <field name="name">S4</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_S5" model="metro_park_base.signals">
+            <field name="name">S5</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_S6" model="metro_park_base.signals">
+            <field name="name">S6</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_S7" model="metro_park_base.signals">
+            <field name="name">S7</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_S8" model="metro_park_base.signals">
+            <field name="name">S8</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_S9" model="metro_park_base.signals">
+            <field name="name">S9</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_S10" model="metro_park_base.signals">
+            <field name="name">S10</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_S11" model="metro_park_base.signals">
+            <field name="name">S11</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_S12" model="metro_park_base.signals">
+            <field name="name">S12</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_S13" model="metro_park_base.signals">
+            <field name="name">S13</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_S14" model="metro_park_base.signals">
+            <field name="name">S14</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_S15" model="metro_park_base.signals">
+            <field name="name">S15</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_S16" model="metro_park_base.signals">
+            <field name="name">S16</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_S17" model="metro_park_base.signals">
+            <field name="name">S17</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_S18" model="metro_park_base.signals">
+            <field name="name">S18</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_S19" model="metro_park_base.signals">
+            <field name="name">S19</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_S20" model="metro_park_base.signals">
+            <field name="name">S20</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_S21" model="metro_park_base.signals">
+            <field name="name">S21</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_S24" model="metro_park_base.signals">
+            <field name="name">S24</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_S25" model="metro_park_base.signals">
+            <field name="name">S25</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_S26" model="metro_park_base.signals">
+            <field name="name">S26</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_S27" model="metro_park_base.signals">
+            <field name="name">S27</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_S28" model="metro_park_base.signals">
+            <field name="name">S28</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_S29" model="metro_park_base.signals">
+            <field name="name">S29</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_S30" model="metro_park_base.signals">
+            <field name="name">S30</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_S31" model="metro_park_base.signals">
+            <field name="name">S31</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_S" model="metro_park_base.signals">
+            <field name="name">S</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_XR" model="metro_park_base.signals">
+            <field name="name">XR</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_XC" model="metro_park_base.signals">
+            <field name="name">XC</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_XZ" model="metro_park_base.signals">
+            <field name="name">XZ</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_SZR" model="metro_park_base.signals">
+            <field name="name">SZR</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_SZC" model="metro_park_base.signals">
+            <field name="name">SZC</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_X2601" model="metro_park_base.signals">
+            <field name="name">X2601</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_S2802" model="metro_park_base.signals">
+            <field name="name">S2802</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_S2804" model="metro_park_base.signals">
+            <field name="name">S2804</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_Z1" model="metro_park_base.signals">
+            <field name="name">Z1</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D2" model="metro_park_base.signals">
+            <field name="name">D2</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_Z2" model="metro_park_base.signals">
+            <field name="name">Z2</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D2-9" model="metro_park_base.signals">
+            <field name="name">D2(9)</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D3A" model="metro_park_base.signals">
+            <field name="name">D3A</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D3B" model="metro_park_base.signals">
+            <field name="name">D3B</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_Z3" model="metro_park_base.signals">
+            <field name="name">Z3</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D4A" model="metro_park_base.signals">
+            <field name="name">D4A</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D4B" model="metro_park_base.signals">
+            <field name="name">D4B</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D4" model="metro_park_base.signals">
+            <field name="name">D4</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_Z4" model="metro_park_base.signals">
+            <field name="name">Z4</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D5A" model="metro_park_base.signals">
+            <field name="name">D5A</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D5B" model="metro_park_base.signals">
+            <field name="name">D5B</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_Z5" model="metro_park_base.signals">
+            <field name="name">Z5</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D6A" model="metro_park_base.signals">
+            <field name="name">D6A</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D6B" model="metro_park_base.signals">
+            <field name="name">D6B</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D6" model="metro_park_base.signals">
+            <field name="name">D6</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_Z6" model="metro_park_base.signals">
+            <field name="name">Z6</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D7A" model="metro_park_base.signals">
+            <field name="name">D7A</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D7B" model="metro_park_base.signals">
+            <field name="name">D7B</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_Z7" model="metro_park_base.signals">
+            <field name="name">Z7</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D8A" model="metro_park_base.signals">
+            <field name="name">D8A</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D8B" model="metro_park_base.signals">
+            <field name="name">D8B</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_Z8" model="metro_park_base.signals">
+            <field name="name">Z8</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D8" model="metro_park_base.signals">
+            <field name="name">D8</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D9A" model="metro_park_base.signals">
+            <field name="name">D9A</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D9B" model="metro_park_base.signals">
+            <field name="name">D9B</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_Z9" model="metro_park_base.signals">
+            <field name="name">Z9</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D10A" model="metro_park_base.signals">
+            <field name="name">D10A</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D10B" model="metro_park_base.signals">
+            <field name="name">D10B</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_Z10" model="metro_park_base.signals">
+            <field name="name">Z10</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D10" model="metro_park_base.signals">
+            <field name="name">D10</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D11A" model="metro_park_base.signals">
+            <field name="name">D11A</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D11B" model="metro_park_base.signals">
+            <field name="name">D11B</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_Z11" model="metro_park_base.signals">
+            <field name="name">Z11</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D12A" model="metro_park_base.signals">
+            <field name="name">D12A</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D12B" model="metro_park_base.signals">
+            <field name="name">D12B</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_Z12" model="metro_park_base.signals">
+            <field name="name">Z12</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D12" model="metro_park_base.signals">
+            <field name="name">D12</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_Z13" model="metro_park_base.signals">
+            <field name="name">Z13</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D13A" model="metro_park_base.signals">
+            <field name="name">D13A</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D13B" model="metro_park_base.signals">
+            <field name="name">D13B</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_Z14" model="metro_park_base.signals">
+            <field name="name">Z14</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D14A" model="metro_park_base.signals">
+            <field name="name">D14A</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D14B" model="metro_park_base.signals">
+            <field name="name">D14B</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D14" model="metro_park_base.signals">
+            <field name="name">D14</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D15A" model="metro_park_base.signals">
+            <field name="name">D15A</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D15B" model="metro_park_base.signals">
+            <field name="name">D15B</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D16A" model="metro_park_base.signals">
+            <field name="name">D16A</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D16B" model="metro_park_base.signals">
+            <field name="name">D16B</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D16" model="metro_park_base.signals">
+            <field name="name">D16</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D17A" model="metro_park_base.signals">
+            <field name="name">D17A</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D17B" model="metro_park_base.signals">
+            <field name="name">D17B</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D18A" model="metro_park_base.signals">
+            <field name="name">D18A</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D18B" model="metro_park_base.signals">
+            <field name="name">D18B</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D18" model="metro_park_base.signals">
+            <field name="name">D18</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D20" model="metro_park_base.signals">
+            <field name="name">D20</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D22" model="metro_park_base.signals">
+            <field name="name">D22</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D24" model="metro_park_base.signals">
+            <field name="name">D24</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D26" model="metro_park_base.signals">
+            <field name="name">D26</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D28" model="metro_park_base.signals">
+            <field name="name">D28</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D30" model="metro_park_base.signals">
+            <field name="name">D30</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D32" model="metro_park_base.signals">
+            <field name="name">D32</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D34" model="metro_park_base.signals">
+            <field name="name">D34</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D36" model="metro_park_base.signals">
+            <field name="name">D36</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D38" model="metro_park_base.signals">
+            <field name="name">D38</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D40" model="metro_park_base.signals">
+            <field name="name">D40</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D42" model="metro_park_base.signals">
+            <field name="name">D42</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D44" model="metro_park_base.signals">
+            <field name="name">D44</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D46" model="metro_park_base.signals">
+            <field name="name">D46</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D48" model="metro_park_base.signals">
+            <field name="name">D48</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_D56-5" model="metro_park_base.signals">
+            <field name="name">D56(5)</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_Z1-LZA" model="metro_park_base.signals">
+            <field name="name">Z1-LZA</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_Z2-LZA" model="metro_park_base.signals">
+            <field name="name">Z2-LZA</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_Z3-LZA" model="metro_park_base.signals">
+            <field name="name">Z3-LZA</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_3DZA" model="metro_park_base.signals">
+            <field name="name">3DZA</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_4DZA" model="metro_park_base.signals">
+            <field name="name">4DZA</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_5DZA" model="metro_park_base.signals">
+            <field name="name">5DZA</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_6DZA" model="metro_park_base.signals">
+            <field name="name">6DZA</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_7DZA" model="metro_park_base.signals">
+            <field name="name">7DZA</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_8DZA" model="metro_park_base.signals">
+            <field name="name">8DZA</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_9DZA" model="metro_park_base.signals">
+            <field name="name">9DZA</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_10DZA" model="metro_park_base.signals">
+            <field name="name">10DZA</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_11DZA" model="metro_park_base.signals">
+            <field name="name">11DZA</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_12DZA" model="metro_park_base.signals">
+            <field name="name">12DZA</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_13DZA" model="metro_park_base.signals">
+            <field name="name">13DZA</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_14DZA" model="metro_park_base.signals">
+            <field name="name">14DZA</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_15DZA" model="metro_park_base.signals">
+            <field name="name">15DZA</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_16DZA" model="metro_park_base.signals">
+            <field name="name">16DZA</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_17DZA" model="metro_park_base.signals">
+            <field name="name">17DZA</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_18DZA" model="metro_park_base.signals">
+            <field name="name">18DZA</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+        <record id="yuan_hua_signal_DZA" model="metro_park_base.signals">
+            <field name="name">DZA</field>
+            <field name="location" ref="yuan_hua"/>
+        </record>
+    </data>
+</odoo>

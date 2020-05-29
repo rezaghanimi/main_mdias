@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.ui.view" id="view_funenc_malfunction_repair_tree">
+        <field name="name">故障报修</field>
+        <field name="model">funenc.malfunction.repair</field>
+        <field name="arch" type="xml">
+            <tree js_class="malfunction_repair_tree_class" search_ex_template="malfunction_repair_search"
+                  default_order="code desc" options="{'height':'full-400'}" limit="30">
+                <field name="code" fixed_left="1" width="150"/>
+                <field name="name" width="300"/>
+                <field name="train_dev_id" width="100"/>
+                <field name="dev_no" width="100"/>
+                <field name="line_id" width="100"/>
+                <field name="dev_type" width="100"/>
+                <field name="standard" width="100"/>
+                <field name="state"/>
+                <field name="operation_btns" width="200" widget="template_widget"
+                       options="{'template': 'malfunction_repair_record_btn'}"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_funenc_malfunction_repair_form">
+        <field name="name">故障报修</field>
+        <field name="model">funenc.malfunction.repair</field>
+        <field name="arch" type="xml">
+            <form>
+                <notebook>
+                    <page string="基本信息">
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="code"/>
+                            <div class="col-sm-4">
+                                <field name="code" readonly="1"/>
+                            </div>
+                            <label class="col-sm-2 col-form-label" for="state"/>
+                            <div class="col-sm-4">
+                                <field name="state" readonly="1"/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="name"/>
+                            <div class="col-sm-10">
+                                <field name="name" placeholder="请输入单据标题..." attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="train_dev_id"/>
+                            <div class="col-sm-4">
+                                <field name="train_dev_id" options="{'no_open':'1', 'no_create': True, 'no_open': True}" placeholder="请选择设备..."
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            </div>
+                            <label class="col-sm-2 col-form-label" for="dev_no"/>
+                            <div class="col-sm-4">
+                                <field name="dev_no"/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="line_id"/>
+                            <div class="col-sm-4">
+                                <field name="line_id" options="{'no_open':'1', 'no_create': True, 'no_open': True}"/>
+                            </div>
+                            <label class="col-sm-2 col-form-label" for="dev_type"/>
+                            <div class="col-sm-4">
+                                <field name="dev_type" options="{'no_open':'1', 'no_create': True, 'no_open': True}"/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="fact_sheet"/>
+                            <div class="col-sm-10">
+                                <field name="fact_sheet" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            </div>
+                            <label class="col-sm-2 col-form-label" for="repair_content"/>
+                            <div class="col-sm-10">
+                                <field name="repair_content" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            </div>
+                        </div>
+                    </page>
+                    <page string="维修设备列表">
+                        <div class="form-group row">
+                            <label class="col-sm-2" for="spare_goods_borrowing_register" string="维修设备列表"/>
+                            <div class="col-md-10">
+                                <field name="line_ids" nolabel="1" widget="one2many_list" attrs="{'readonly': [('state', '!=', 'draft')]}">
+                                    <tree create="1" delete="0" js_class="fnt_table" editable="bottom"
+                                          options="{'height':300}" limit="10">
+                                        <field name="device_id" width="200" options="{'no_open':'1', 'no_create': True, 'no_open': True}"/>
+                                        <field name="description" width="400"/>
+                                        <field name="state" width="100" readonly="1"/>
+                                        <widget name="TreeButtons" width="80"
+                                                string="操作" template="handover_delete_button"/>
+                                    </tree>
+                                </field>
+                            </div>
+                        </div>
+                    </page>
+                    <page string="维修记录">
+                        <div class="form-group row">
+                            <label class="col-sm-2" for="spare_goods_borrowing_register" string="维修记录"/>
+
+                        </div>
+                    </page>
+                </notebook>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="view_funenc_malfunction_repair_action">
+        <field name="name">故障报修</field>
+        <field name="res_model">funenc.malfunction.repair</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_ids" eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'tree', 'view_id': ref('metro_park_maintenance.view_funenc_malfunction_repair_tree')}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('metro_park_maintenance.view_funenc_malfunction_repair_form')})]"/>
+    </record>
+
+    <record id="view_funenc_malfunction_repair_server" model="ir.actions.server">
+        <field name="name">故障报修</field>
+        <field name="type">ir.actions.server</field>
+        <field name="model_id" ref="model_funenc_malfunction_repair"/>
+        <field name="state">code</field>
+        <field name="code">
+            action = model.get_cur_train_action()
+        </field>
+    </record>
+
+    <menuitem id="funenc_malfunction_repair_root_menu" parent="metro_park_maintenance.menu_root"
+              name="故障报修" sequence="100"/>
+
+    <menuitem id="funenc_malfunction_repair_action_menu" parent="funenc_malfunction_repair_root_menu"
+              name="故障报修单" sequence="1" action="view_funenc_malfunction_repair_action"/>
+
+</odoo>

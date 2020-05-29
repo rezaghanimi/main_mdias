@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="park_area_apply_area"
+                model="metro_park_base.park_area">
+            <field name="name">应用库</field>
+            <field name="remark">主要用于收发车</field>
+        </record>
+
+        <record id="park_area_two_week_or_three_month_area"
+                model="metro_park_base.park_area">
+            <field name="name">双周三月检库</field>
+            <field name="remark">双周三月检线</field>
+        </record>
+
+        <record id="park_engine_train_area"
+                model="metro_park_base.park_area">
+            <field name="name">工程车库</field>
+            <field name="remark">工程车库线</field>
+        </record>
+
+        <record id="park_engine_main_line_area"
+                model="metro_park_base.park_area">
+            <field name="name">正线</field>
+            <field name="remark">正线</field>
+        </record>
+
+    </data>
+</odoo>

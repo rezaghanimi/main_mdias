@@ -1,0 +1,49 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="metro_park_dispatch.import_time_table_form">
+            <field name="name">导入运行图</field>
+            <field name="model">metro_park_dispatch.import_time_table</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="no">no</label>
+                        <div class="col-sm-3">
+                            <field name="no"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="type">type</label>
+                        <div class="col-sm-3">
+                            <field name="type"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="xls_file">xls_file</label>
+                        <div class="col-sm-3">
+                            <field name="xls_file"/>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <button class="btn btn-primary" type="object" name="on_ok" text="导入" />
+                        <button special="cancel" string="取消" class="btn-secondary"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="metro_park_dispatch.import_time_table_act_window">
+            <field name="name">导入运行图</field>
+            <field name="res_model">metro_park_dispatch.import_time_table</field>
+            <field name="view_mode">form</field>
+        </record>
+
+    </data>
+</odoo>
+
+
+    

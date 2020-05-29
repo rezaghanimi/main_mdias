@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+   <data>
+
+      <record id="timetable_log_sequence" model="ir.sequence">
+         <field name="name">运行图日历</field>
+         <field name="code">timetable.log</field>
+         <field name="prefix">%(year)s%(month)s%(day)s</field>
+         <field name="padding">1</field>
+      </record>
+
+   </data>
+
+</odoo>

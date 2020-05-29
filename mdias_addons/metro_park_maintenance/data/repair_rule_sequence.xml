@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+   <data noupdate="1">
+      <record id="repair_rule_sequence" model="ir.sequence">
+         <field name="name">修程编号</field>
+         <field name="code">repair.rule.sequence</field>
+         <field name="prefix">XC</field>
+         <field name="padding">6</field>
+         <field name="number_next_actual">1</field>
+      </record>
+   </data>
+
+</odoo>

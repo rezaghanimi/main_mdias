@@ -1,0 +1,65 @@
+<div class="layui-row">
+    <button class="layui-btn layui-btn-sm" id="directiveSchedule" style="margin-left: 10px">
+        位置图编制
+    </button>
+</div>
+<div class="layui-row">
+    <div class="table-search">
+        <form class="layui-form" id="mx-table-search-form">
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">搜索条件</label>
+                    <div class="layui-input-block">
+                        <input class="layui-input" type="text" autocomplete="off" placeholder="请输入位置图名称、类型"
+                               name="param">
+                    </div>
+                </div>
+                <div class="layui-inline table-search-btn-groups">
+                    <button class="layui-btn layui-btn-sm"
+                            lay-submit lay-filter="mx-search-btn" id="mx-search-btn">查询
+                    </button>
+                    <button class="layui-btn layui-btn-sm"
+                            lay-submit lay-filter="mx-reset-btn" id="mx-reset-btn">重置
+                    </button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+<div class="layui-row" style="margin-top: 10px;">
+    <div class="table-head">司机位置图列表</div>
+    <table class="layui-table" id="schedule-directive-table" lay-filter="schedule-directive-table">
+    </table>
+</div>
+<script type="text/html" id="indexTpl">
+    {{d.LAY_TABLE_INDEX+1}}
+</script>
+<script type="text/html" id="editBar">
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+    <a class="layui-btn layui-btn-xs" lay-event="view">预览</a>
+    <a class="layui-btn layui-btn-xs" lay-event="export">导出</a>
+    <a class="layui-btn layui-btn-xs" lay-event="upload">上传</a>
+</script>
+<link rel="stylesheet" href="modules/driver-shift-position-view.css">
+<script src="modules/driver-shift-position-view.js"></script>
+<div id="uploadDriverPosition" style="display: none">
+    <form class="layui-form uploadTrainSchedule" lay-filter="uploadTrainSchedule-form"
+          style="margin-top: 10px; padding: 20px">
+        <div class="layui-form-item">
+            <label class="layui-form-label">司机位置图</label>
+            <div class="layui-upload">
+                <button type="button" class="layui-btn layui-btn-normal" id="schedule-file">选择文件
+                </button>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block form-button">
+                <button class="layui-btn layui-hide" name="submit"
+                        id="submit-uploadTrainSchedule-form"
+                        lay-submit lay-filter="submit-uploadTrainSchedule-form">上传
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

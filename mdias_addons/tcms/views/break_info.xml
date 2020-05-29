@@ -1,0 +1,45 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="break_info_tree_id">
+            <field name="name">故障信息</field>
+            <field name="model">tcms.break_info</field>
+            <field name="arch" type="xml">
+                <tree create="0">
+                    <field name="trainCode"/>
+                    <field name="faultCode"/>
+                    <field name="faultLocat"/>
+                    <field name="faultState"/>
+                    <field name="faultLevel"/>
+                    <field name="getTime"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="break_info_from_id">
+            <field name="name">故障信息</field>
+            <field name="model">tcms.break_info</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="trainCode"/>
+                        <field name="faultCode"/>
+                        <field name="faultLocat"/>
+                        <field name="faultState"/>
+                        <field name="faultLevel"/>
+                        <field name="getTime"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="break_window_id">
+            <field name="name">故障信息</field>
+            <field name="res_model">tcms.break_info</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem action="break_window_id"
+                  parent="tcms_tcms_act_menu_parent_id"
+                  id="break_menu_id"
+                  name="故障信息"/>
+    </data>
+</odoo>

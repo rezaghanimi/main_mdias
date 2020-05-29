@@ -1,0 +1,7 @@
+.funenc-tabs-body {
+    position: relative;
+    top: 1px;
+}
+.geDiagramContainer svg g image{
+    cursor: pointer;
+}

@@ -1,0 +1,27 @@
+<odoo>
+    <data>
+        <!-- 公里数对话框，无法创建和删除 -->
+        <record model="ir.ui.view" id="metro_park_maintenance.train_miles_list">
+            <field name="name">车辆公里数</field>
+            <field name="model">metro_park_maintenance.train_dev</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table" limit="20" options="{'height':'568'}" import="0" create="0">
+                    <field name="id"/>
+                    <field name="dev_name"/>
+                    <field name="miles"/>
+                    <field name="unit"/>
+                    <field name="traction_energy"/>
+                    <field name="traction_unit"/>
+                    <field name="renewable_energy"/>
+                    <field name="renewable_unit"/>
+                    <field name="auxiliary_energy"/>
+                    <field name="auxiliary_unit"/>
+                    <field name="write_date" string="最后更新" width="300"/>
+                    <field name="operation_btns" widget="template_widget"
+                           options="{'template': 'metro_park_maintenance.train_dev_history_btns'}"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>
+    

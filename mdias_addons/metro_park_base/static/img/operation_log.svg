@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="18 14 28 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>operation_log</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="日志管理" transform="translate(17.000000, 14.000000)" fill="#FFFFFF">
+            <path d="M2.71428571,0 L27.2857143,0 C28.7847729,-2.75372599e-16 30,1.21522711 30,2.71428571 L30,34.2857143 C30,35.7847729 28.7847729,37 27.2857143,37 L2.71428571,37 C1.21522711,37 1.07176015e-15,35.7847729 0,34.2857143 L0,2.71428571 C-1.83581732e-16,1.21522711 1.21522711,1.16355102e-15 2.71428571,0 Z M5.45454545,4.11111111 L5.45454545,32.8888889 L9.54545455,32.8888889 L9.54545455,4.11111111 L5.45454545,4.11111111 Z M20.4545455,4.11111111 L20.4545455,10.962963 L22.5,8.87726981 L24.5454545,10.962963 L24.5454545,4.11111111 L20.4545455,4.11111111 Z" id="形状结合"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,45 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_maintenance.month_plan_clear_wizard_list">
+            <field name="name">月计划清除向导</field>
+            <field name="model">metro_park_maintenance.month_plan_clear_wizard</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="start_date"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.month_plan_clear_wizard_form">
+            <field name="name">月计划清除向导</field>
+            <field name="model">metro_park_maintenance.month_plan_clear_wizard</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="start_date">start_date</label>
+                        <div class="col-sm-3">
+                            <field name="start_date" options="{'no_create_edit': True,'no_open': True, 'no_create':True}"/>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <button class="btn btn-success" special="save_and_exit" text="确定" />
+                        <button class="btn btn-info" text="取消" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window"
+                id="metro_park_maintenance.month_plan_clear_wizard_act_window">
+            <field name="name">月计划清除向导</field>
+            <field name="res_model">metro_park_maintenance.month_plan_clear_wizard</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+    

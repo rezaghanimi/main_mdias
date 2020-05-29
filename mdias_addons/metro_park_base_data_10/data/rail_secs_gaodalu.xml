@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <!-- 临修线 -->
+        <record id="metro_park_base_data_10.gao_da_lu_rail_1G" model="metro_park_base.rails_sec">
+            <field name="no">1G</field>
+            <field name="alias">1G</field>
+            <field name="usage">临修线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_tmp_repair" />
+            <field name="is_track">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_2G" model="metro_park_base.rails_sec">
+            <field name="no">2G</field>
+            <field name="alias">2G</field>
+            <field name="usage">双周/三月检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_two_week_or_three_month_repair" />
+            <field name="is_track">True</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_property"
+                   eval="[(6,0,[ref('metro_park_base.rail_property_ladder_platform'),
+                   ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_3G" model="metro_park_base.rails_sec">
+            <field name="no">3G</field>
+            <field name="alias">3G</field>
+            <field name="usage">双周/三月检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_two_week_or_three_month_repair" />
+            <field name="is_track">True</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_property"
+                   eval="[(6,0,[ref('metro_park_base.rail_property_ladder_platform'),
+                   ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_4G" model="metro_park_base.rails_sec">
+            <field name="no">4G</field>
+            <field name="alias">4G</field>
+            <field name="usage">双周/三月检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_two_week_or_three_month_repair" />
+            <field name="is_track">True</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="rail_property"
+                   eval="[(6,0,[ref('metro_park_base.rail_property_ladder_platform'),
+                   ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_2/34WG" model="metro_park_base.rails_sec">
+            <field name="no">2/34WG</field>
+            <field name="alias">洗车线</field>
+            <field name="usage">洗车线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_wash"/>
+            <field name="is_track">True</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_D2G" model="metro_park_base.rails_sec">
+            <field name="no">D2G</field>
+            <field name="alias">牵2</field>
+            <field name="usage">牵出线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_pull_out"/>
+            <field name="is_track">True</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_D22G" model="metro_park_base.rails_sec">
+            <field name="no">D22G</field>
+            <field name="alias">牵3</field>
+            <field name="usage">洗车牵出线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_pull_out"/>
+            <field name="is_track">True</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_40-42DG" model="metro_park_base.rails_sec">
+            <field name="no">40-42DG</field>
+            <field name="alias">40-42DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_D26WG" model="metro_park_base.rails_sec">
+            <field name="no">D26WG</field>
+            <field name="alias">D26WG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_34DG" model="metro_park_base.rails_sec">
+            <field name="no">34DG</field>
+            <field name="alias">34DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_2DG" model="metro_park_base.rails_sec">
+            <field name="no">2DG</field>
+            <field name="alias">2DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_5AG" model="metro_park_base.rails_sec">
+            <field name="no">5AG</field>
+            <field name="alias">5A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="is_track">True</field>
+            <field name="port">A</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="can_stop">1</field>
+            <field name="stop_order">1</field>
+            <field name="rail_property"
+                   eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_5BG" model="metro_park_base.rails_sec">
+            <field name="no">5BG</field>
+            <field name="alias">5B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="is_track">True</field>
+            <field name="port">B</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="can_stop">1</field>
+            <field name="stop_order">2</field>
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_6AG" model="metro_park_base.rails_sec">
+            <field name="no">6AG</field>
+            <field name="alias">6A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="is_track">True</field>
+            <field name="port">A</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="can_stop">1</field>
+            <field name="stop_order">5</field>
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_6BG" model="metro_park_base.rails_sec">
+            <field name="no">6BG</field>
+            <field name="alias">6B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="is_track">True</field>
+            <field name="port">B</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="can_stop">1</field>
+            <field name="stop_order">6</field>
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_7AG" model="metro_park_base.rails_sec">
+            <field name="no">7AG</field>
+            <field name="alias">7A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="is_track">True</field>
+            <field name="port">A</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="can_stop">1</field>
+            <field name="stop_order">9</field>
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_7BG" model="metro_park_base.rails_sec">
+            <field name="no">7BG</field>
+            <field name="alias">7B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="is_track">True</field>
+            <field name="port">B</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="can_stop">1</field>
+            <field name="stop_order">10</field>
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_8AG" model="metro_park_base.rails_sec">
+            <field name="no">8AG</field>
+            <field name="alias">8A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="is_track">True</field>
+            <field name="port">A</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="can_stop">1</field>
+            <field name="stop_order">13</field>
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_8BG" model="metro_park_base.rails_sec">
+            <field name="no">8BG</field>
+            <field name="alias">8B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="is_track">True</field>
+            <field name="port">B</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="can_stop">1</field>
+            <field name="stop_order">14</field>
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_9AG" model="metro_park_base.rails_sec">
+            <field name="no">9AG</field>
+            <field name="alias">9A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="is_track">True</field>
+            <field name="port">A</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="can_stop">1</field>
+            <field name="stop_order">17</field>
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_9BG" model="metro_park_base.rails_sec">
+            <field name="no">9BG</field>
+            <field name="alias">9B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="is_track">True</field>
+            <field name="port">B</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="can_stop">1</field>
+            <field name="stop_order">18</field>
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_10AG" model="metro_park_base.rails_sec">
+            <field name="no">10AG</field>
+            <field name="alias">10A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="is_track">True</field>
+            <field name="port">A</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="can_stop">1</field>
+            <field name="stop_order">15</field>
+            <field name="rail_property"
+                   eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_10BG" model="metro_park_base.rails_sec">
+            <field name="no">10BG</field>
+            <field name="alias">10B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="is_track">True</field>
+            <field name="port">B</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="can_stop">1</field>
+            <field name="stop_order">16</field>
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_11AG" model="metro_park_base.rails_sec">
+            <field name="no">11AG</field>
+            <field name="alias">11A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="is_track">True</field>
+            <field name="port">A</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="can_stop">1</field>
+            <field name="stop_order">11</field>
+            <field name="rail_property"
+                   eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_11BG" model="metro_park_base.rails_sec">
+            <field name="no">11BG</field>
+            <field name="alias">11B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="is_track">True</field>
+            <field name="port">B</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="can_stop">1</field>
+            <field name="stop_order">12</field>
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_12AG" model="metro_park_base.rails_sec">
+            <field name="no">12AG</field>
+            <field name="alias">12A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="is_track">True</field>
+            <field name="port">A</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_13AG" model="metro_park_base.rails_sec">
+            <field name="no">13AG</field>
+            <field name="alias">13A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="is_track">True</field>
+            <field name="port">A</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_14AG" model="metro_park_base.rails_sec">
+            <field name="no">14AG</field>
+            <field name="alias">14A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="is_track">True</field>
+            <field name="port">A</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_15AG" model="metro_park_base.rails_sec">
+            <field name="no">15AG</field>
+            <field name="alias">15A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="is_track">True</field>
+            <field name="port">A</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="can_stop">1</field>
+            <field name="stop_order">7</field>
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_15BG" model="metro_park_base.rails_sec">
+            <field name="no">15BG</field>
+            <field name="alias">15B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="is_track">True</field>
+            <field name="port">B</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="can_stop">1</field>
+            <field name="stop_order">8</field>
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_16AG" model="metro_park_base.rails_sec">
+            <field name="no">16AG</field>
+            <field name="alias">16A</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="is_track">True</field>
+            <field name="port">A</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="can_stop">1</field>
+            <field name="stop_order">3</field>
+            <field name="rail_property"
+                   eval="[(6,0,[ref('metro_park_base.rail_property_ladder')])]" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_16BG" model="metro_park_base.rails_sec">
+            <field name="no">16BG</field>
+            <field name="alias">16B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="is_track">True</field>
+            <field name="port">B</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+            <field name="can_stop">1</field>
+            <field name="stop_order">3</field>
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_12BG" model="metro_park_base.rails_sec">
+            <field name="no">12BG</field>
+            <field name="alias">12B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="is_track">True</field>
+            <field name="port">B</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_13BG" model="metro_park_base.rails_sec">
+            <field name="no">13BG</field>
+            <field name="alias">13B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="is_track">True</field>
+            <field name="port">B</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_14BG" model="metro_park_base.rails_sec">
+            <field name="no">14BG</field>
+            <field name="alias">14B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="is_track">True</field>
+            <field name="port">B</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_16BG" model="metro_park_base.rails_sec">
+            <field name="no">16BG</field>
+            <field name="alias">16B</field>
+            <field name="usage">停车/列检线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_stop_and_check"/>
+            <field name="is_track">True</field>
+            <field name="port">B</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_D4G" model="metro_park_base.rails_sec">
+            <field name="no">D4G</field>
+            <field name="alias">牵1</field>
+            <field name="usage">牵出线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_pull_out"/>
+            <field name="is_track">True</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_54-60DG" model="metro_park_base.rails_sec">
+            <field name="no">54-60DG</field>
+            <field name="alias">54-60DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_62DG" model="metro_park_base.rails_sec">
+            <field name="no">62DG</field>
+            <field name="alias">62DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_36DG" model="metro_park_base.rails_sec">
+            <field name="no">36DG</field>
+            <field name="alias">36DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_28DG" model="metro_park_base.rails_sec">
+            <field name="no">28DG</field>
+            <field name="alias">28DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_16-18DG" model="metro_park_base.rails_sec">
+            <field name="no">16-18DG</field>
+            <field name="alias">16-18DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_6-12DG" model="metro_park_base.rails_sec">
+            <field name="no">6-12DG</field>
+            <field name="alias">6-12DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_8-10DG" model="metro_park_base.rails_sec">
+            <field name="no">8-10DG</field>
+            <field name="alias">8-10DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_22-26DG" model="metro_park_base.rails_sec">
+            <field name="no">22-26DG</field>
+            <field name="alias">22-26DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run"/>
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_T2602G" model="metro_park_base.rails_sec">
+            <field name="no">T2602G</field>
+            <field name="alias">转换轨1</field>
+            <field name="usage">出转换轨</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_exchange"/>
+            <field name="is_track">True</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_T2604G" model="metro_park_base.rails_sec">
+            <field name="no">T2604G</field>
+            <field name="alias">T2604G</field>
+            <field name="usage">出段线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_out_sec"/>
+            <field name="is_track">True</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_23G" model="metro_park_base.rails_sec">
+            <field name="no">23G</field>
+            <field name="alias">23G</field>
+            <field name="usage">材料棚及工程车库</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_material_and_tech_train"/>
+            <field name="is_track">True</field>
+            <field name="electric_live">False</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_24G" model="metro_park_base.rails_sec">
+            <field name="no">24G</field>
+            <field name="alias">24G</field>
+            <field name="usage">材料棚及工程车库</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_material_and_tech_train"/>
+            <field name="is_track">True</field>
+            <field name="electric_live">False</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_25G" model="metro_park_base.rails_sec">
+            <field name="no">25G</field>
+            <field name="alias">25G</field>
+            <field name="usage">材料棚及工程车库</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_material_and_tech_train"/>
+            <field name="is_track">True</field>
+            <field name="electric_live">False</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.main_line_rail" model="metro_park_base.rails_sec">
+            <field name="no">MAIN</field>
+            <field name="alias">MAIN</field>
+            <field name="usage">正线</field>
+            <field name="is_track">False</field>
+            <field name="electric_live">False</field>
+            <field name="rail_length">9999</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="main_line_location" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_50-52DG" model="metro_park_base.rails_sec">
+            <field name="no">50-52DG</field>
+            <field name="alias">50-52DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_44-48DG" model="metro_park_base.rails_sec">
+            <field name="no">44-48DG</field>
+            <field name="alias">44-48DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_38DG" model="metro_park_base.rails_sec">
+            <field name="no">38DG</field>
+            <field name="alias">38DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_30-32DG" model="metro_park_base.rails_sec">
+            <field name="no">30-32DG</field>
+            <field name="alias">30-32DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_14-20DG" model="metro_park_base.rails_sec">
+            <field name="no">14-20DG</field>
+            <field name="alias">14-20DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_4DG" model="metro_park_base.rails_sec">
+            <field name="no">4DG</field>
+            <field name="alias">4DG</field>
+            <field name="usage">轨行</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_run" />
+            <field name="is_track">False</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_T2617G" model="metro_park_base.rails_sec">
+            <field name="no">T2617G</field>
+            <field name="alias">转换轨2</field>
+            <field name="usage">入转换轨</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_exchange"/>
+            <field name="is_track">True</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+        <record id="metro_park_base_data_10.gao_da_lu_rail_T2615G" model="metro_park_base.rails_sec">
+            <field name="no">T2615G</field>
+            <field name="alias">T2615G</field>
+            <field name="usage">入段线</field>
+            <field name="rail_type" ref="metro_park_base.rail_type_back_sec"/>
+            <field name="is_track">True</field>
+            <field name="electric_live">True</field>
+            <field name="rail_length">183</field>
+            <field name="rail_status">true</field>
+            <field name="location" ref="gao_da_lu" />
+        </record>
+
+    </data>
+</odoo>

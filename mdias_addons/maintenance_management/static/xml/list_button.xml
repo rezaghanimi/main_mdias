@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+        <t t-name="maintenance_management.optical_module_button">
+            <div>
+                <button type="object" name="model_temperature" class="btn btn-primary">
+                    模块温度
+                </button>
+                <button type="object" name="model_current" class="btn btn-primary">
+                    激光偏置电流
+                </button>
+                <button type="object" name="model_voltage" class="btn btn-primary">
+                    供电电压
+                </button>
+                <button type="object" name="model_transmission_power" class="btn btn-primary">
+                    发射光功率
+                </button>
+                <button type="object" name="model_receive_power" class="btn btn-primary">
+                    接收光功率
+                </button>
+            </div>
+        </t>
+
+    <t t-name="maintenance_management.export_tree_button">
+            <div>
+                <button type="object" name="model_export" class="btn btn-primary">
+                    导出
+                </button>
+                <button type="object" name="model_print" class="btn btn-primary">
+                    打印
+                </button>
+            </div>
+    </t>
+
+    <t t-name="ListView.buttons_new">
+        <div class="o_list_buttons" role="toolbar" aria-label="Main actions">
+            <t t-if="widget.is_action_enabled('create')">
+                <button type="button" class="btn btn-primary o_list_button_add" accesskey="c">
+                    Create
+                </button>
+            </t>
+            <button type="button" class="btn btn-primary o_list_button_save" accesskey="s">
+                Save
+            </button>
+            <button type="button" class="btn btn-secondary o_list_button_discard" accesskey="j">
+                Discard
+            </button>
+        </div>
+    </t>
+
+    <t t-extend="ListView.buttons_new">
+        <t t-jquery="button.o_list_button_add" t-operation="after">
+        </t>
+    </t>
+
+    <t t-extend="ListView.buttons_new" t-name="BillsListView.buttons">
+        <t t-jquery="button.o_list_button_add" t-operation="after">
+            <t t-js="ctx">
+                if (window.odoo._modules.indexOf("base_import") >= 0) {
+                    r.push(context.engine.tools.call(context, 'ImportView.import_button', dict));
+                };
+            </t>
+            <t t-call="BillsListView.upload_button"/>
+        </t>
+    </t>
+</templates>

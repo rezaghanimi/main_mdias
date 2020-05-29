@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="FunencLeftTreeList">
+        <div class="funenc_controller">
+            <div class="custom_search" />
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="btns d-flex">
+                        <div class="operation_btn" />
+                        <div class="side_bar" />
+                        <div class="search_btns btn-group" />
+                        <div class="switch_btn" />
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 d-flex flex-row-reverse align-items-center">
+                    <div class="search ml-1" />
+                </div>
+            </div>
+            <div class="content">
+                <div class="d-flex left_tree_box">
+                    <div class="left_tree card">
+                        <div id="tree_box"></div>
+                    </div>
+                    <div class="right_table card">
+                    </div>
+                </div>
+            </div>
+            <div class="pager" />
+        </div>
+    </t>
+</templates>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <!-- 周计划汇总, 周计划暂时只用于显示 -->
+    <t t-name="week_plan_summary">
+        <div class="d-flex flex-column week_plan_summary">
+            <div class="d-flex" t-foreach="widget.weeks" t-as="week">
+                <div class="title_box">
+                    <span>
+                        <t t-esc="week.name"/>
+                    </span>
+                    <span>
+                        <t t-esc="week.date"/>
+                    </span>
+                </div>
+                <div class="table_box">
+                    <table t-attr-id="week.date" class="table-bordered">
+                        <colgroup>
+                            <col width="100"/>
+                            <col width="100"/>
+                            <col width="100"/>
+                        </colgroup>
+                        <tbody>
+                            <tr class="rd" height="40" t-foreach="widget.get_week_plan_data(week.date)" t-as="data">
+                                <td class="redips-rowhandler">
+                                    <div class="redips-drag redips-row">
+                                        <t t-esc="data.rule.name"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="redips-mark">
+                                        <t t-esc="data.dev.dev_name"/>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>

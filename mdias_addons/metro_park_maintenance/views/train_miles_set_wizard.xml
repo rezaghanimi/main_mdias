@@ -1,0 +1,85 @@
+
+<odoo>
+    <data>
+    
+        <record model="ir.ui.view" id="metro_park_maintenance.train_miles_set_wizard_form">
+            <field name="name">车辆公里数录入</field>
+            <field name="model">metro_park_maintenance.train_miles_set_wizard</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="train_dev_id">train_dev_id</label>
+                        <div class="col-sm-3">
+                            <field name="train_dev_id"
+                                   widget="many2many_tags"
+                                   context="{'tree_view_ref': 'metro_park_maintenance.train_dev_pop_list'}"
+                                   options="{'no_open':'1', 'no_create': True, 'no_open': True}"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="miles">miles</label>
+                        <div class="col-sm-3">
+                            <field name="miles"/>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <button class="btn btn-primary" type="object" name="on_ok">录入</button>
+                        <button class="btn btn-secondary" special="cancel">取消</button>
+                    </footer>
+                    
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_maintenance.year_miles_set_wizard_form">
+            <field name="name">车辆公里数录入</field>
+            <field name="model">metro_park_maintenance.train_miles_set_wizard</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="train_dev_id">train_dev_id</label>
+                        <div class="col-sm-8">
+                            <field name="train_dev_id"
+                                   context="{'tree_view_ref': 'metro_park_maintenance.train_dev_pop_list'}"
+                                    options="{'no_open':'1', 'no_create': True, 'no_open': True}"
+                            >
+                                <tree js_class="fnt_table" options="{'height': '240'}">
+                                    <field name="dev_name"/>
+                                    <field name="dev_no"/>
+                                </tree>
+                            </field>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="year_target_miles">year_target_miles</label>
+                        <div class="col-sm-6">
+                            <field name="year_target_miles"/>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <button class="btn btn-primary" type="object" name="on_click">设置</button>
+                        <button class="btn btn-secondary" special="cancel">取消</button>
+                    </footer>
+
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window"
+                id="metro_park_maintenance.train_miles_set_wizard_act_window">
+            <field name="name">车辆公里数录入向导</field>
+            <field name="res_model">metro_park_maintenance.train_miles_set_wizard</field>
+            <field name="view_mode">form</field>
+        </record>
+
+    </data>
+</odoo>
+
+
+    

@@ -1,0 +1,21 @@
+
+<odoo>
+    <data>
+
+        <record id="mdias_call_client" model="ir.actions.server">
+            <field name="name">调用客户端测试</field>
+            <field name="type">ir.actions.server</field>
+            <field name="model_id" ref="model_mdias_test" />
+            <field name="state">code</field>
+            <field name="code">
+                action = model.send_msg_to_client()
+            </field>
+        </record>
+
+        <menuitem action="mdias_call_client"
+                  id="mdias_test"
+                  name="功能测试"
+                  parent="mdias_test.menu_root"/>
+    </data>
+</odoo>
+    

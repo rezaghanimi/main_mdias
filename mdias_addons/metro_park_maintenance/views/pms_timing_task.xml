@@ -1,0 +1,59 @@
+<odoo>
+    <data>
+        <!--PMS年计划数据发送-->
+        <record id="ir_cron_pms_year_plan_data_task_send" model="ir.cron">
+            <field name="name">PMS年计划发送</field>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="model_id" ref="model_mdias_pms_interface"/>
+            <field name="nextcall" eval="(datetime.now().strftime('%Y-%m-%d 18:00:00'))"/>
+            <field name="state">code</field>
+            <field name="code">model.year_plan_data_send()</field>
+            <field name="interval_number">12</field>
+            <field name="interval_type">months</field>
+            <field name="numbercall">-1</field>
+            <field name="doall" eval="False"/>
+        </record>
+
+        <!-- PMS月计划数据发送-->
+        <record id="ir_cron_pms_month_plan_data_task_send" model="ir.cron">
+            <field name="name">PMS月计划发送</field>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="model_id" ref="model_mdias_pms_interface"/>
+            <field name="nextcall" eval="(datetime.now().strftime('%Y-%m-%d 18:00:00'))"/>
+            <field name="state">code</field>
+            <field name="code">model.month_plan_data_send()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">months</field>
+            <field name="numbercall">-1</field>
+            <field name="doall" eval="False"/>
+        </record>
+
+        <!-- PMS周计划计划数据发送-->
+        <record id="ir_cron_pms_week_plan_data_task_send" model="ir.cron">
+            <field name="name">PMS周计划发送</field>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="model_id" ref="model_mdias_pms_interface"/>
+            <field name="nextcall" eval="(datetime.now().strftime('%Y-%m-%d 18:00:00'))"/>
+            <field name="state">code</field>
+            <field name="code">model.week_plan_data_send()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">weeks</field>
+            <field name="numbercall">-1</field>
+            <field name="doall" eval="False"/>
+        </record>
+
+         <!-- PMS组织架构获取-->
+        <record id="ir_cron_pms_organizational_structure_acquisition" model="ir.cron">
+            <field name="name">PMS组织架构获取</field>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="model_id" ref="model_mdias_pms_interface"/>
+            <field name="nextcall" eval="(datetime.now().strftime('%Y-%m-%d 18:00:00'))"/>
+            <field name="state">code</field>
+            <field name="code">model.pms_organizational_structure_acquisition()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field name="doall" eval="False"/>
+        </record>
+    </data>
+</odoo>

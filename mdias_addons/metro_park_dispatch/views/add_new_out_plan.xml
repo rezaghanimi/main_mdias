@@ -1,0 +1,74 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="metro_park_dispatch.add_new_out_plan_form">
+            <field name="name">新增发车</field>
+            <field name="model">metro_park_dispatch.add_new_out_plan</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="plan_date">plan_date</label>
+                        <div class="col-sm-3">
+                            <field name="plan_date" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="cur_devs">cur_devs</label>
+                        <div class="col-sm-10">
+                            <field name="cur_devs" widget="cur_train_manay2many"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="plan_infos">plan_infos</label>
+                        <div class="col-sm-9">
+                            <field name="plan_infos">
+                                <tree js_class="addNewPlanList" editable="top" options="{'height':300}" create="0">
+                                    <field name="cur_train_id" readonly="1" force_save="1" />
+                                    <field name="rail"
+                                           width="80"
+                                           string="车辆位置"
+                                           options="{'no_create_edit': True,'no_open': True,'no_create':True}"/>
+
+                                    <field name="plan_out_end_rail"
+                                           width="80"
+                                           string="出场位置"
+                                           options="{'dynamic_domain_model': 'metro_park_dispatch.new_plan_info',
+                                            'dynamic_domain_method': 'get_rail_domain',
+                                            'no_create_edit': True,
+                                            'no_open': True,
+                                            'no_create':True}"/>
+
+                                    <field name="plan_train_no" />
+
+                                    <!-- plan_date 和 plan_time 拼接成计划时间 -->
+                                    <field name="plan_time"
+                                           widget="FTime"
+                                           width="150"
+                                           string="(出库）时间"/>
+                                </tree>
+                            </field>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <button class="btn btn-primary" text="确定" type="object" name="on_ok" />
+                        <button class="btn btn-success" text="取消" special="cancel" />
+                    </footer>
+
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="metro_park_dispatch.add_new_out_plan_act_window">
+            <field name="name">添加发车计划</field>
+            <field name="res_model">metro_park_dispatch.add_new_out_plan</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+
+    

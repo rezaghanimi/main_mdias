@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <!-- 日计划表格 -->
+    <t t-name="day_plan_summary">
+        <div style="margin:10px;">
+            <table lay-filter="day_plan_summary" class="layui-table">
+                <thead>
+                    <tr>
+                        <th width="150">车辆</th>
+                        <th>作业时间</th>
+                        <th>作业内容</th>
+                        <th>备注</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <t t-foreach="widget.devs" t-as="dev" >
+                        <t t-set="datas" t-value="widget.get_day_plan_data(dev.id)"/>
+                        <t t-if="datas.length > 0">
+                            <tr t-foreach="datas" t-as="data">
+                                <t t-if="data_index==0">
+                                    <td t-att-rowspan="datas.length">
+                                        <span>
+                                            <t t-esc="dev.dev_name"/>
+                                        </span>
+                                        <button type="button" class="btn add_day_plan btn-link btn-sm">添加</button>
+                                    </td>
+                                </t>
+                                <t t-else="">
+                                    <td>
+                                        <span>
+                                            <t t-esc="dev.dev_name"/>
+                                        </span>
+                                        <button type="button" class="btn add_day_plan btn-link btn-sm">添加</button>
+                                    </td>
+                                </t>
+                                <td>
+                                    <t t-esc="widget.get_rule_name(data.display_name)"/>
+                                </td>
+                                <td>
+                                    <t t-esc="data.work_time"/>
+                                </td>
+                                <td>
+                                    <t t-esc="data.remark"/>
+                                </td>
+                                <td><button type="button" class="btn btn-del btn-link btn-sm del"
+                                            confirm="是否确认删除该记录?">删除</button></td>
+                            </tr>
+                        </t>
+                        <t t-else="">
+                            <tr>
+                                <td>
+                                    <t t-esc="dev.dev_name"/>
+                                    <button type="button" class="btn add_day_plan btn-link btn-sm">添加</button>
+                                </td>
+                                <td/>
+                                <td/>
+                                <td/>
+                                <td><button type="button" class="btn add_day_plan btn-link btn-sm del"
+                                            confirm="是否确认删除该记录?">删除</button></td>
+                            </tr>
+                        </t>
+                    </t>
+                </tbody>
+            </table>
+        </div>
+    </t>
+
+    <!-- 名称 -->
+    <t t-name="day_plan_summary">
+        <tr>
+            <!-- 由于是附加的项，所以直接不填 dev_name -->
+            <td/>
+            <td>
+                <t t-esc="data.work_time"/>
+            </td>
+            <td>
+                <t t-esc="widget.get_rule_name(data.display_name)"/>
+            </td>
+            <td>
+                <t t-esc="data.remark"/>
+            </td>
+            <td>
+                <button type="button"
+                        class="btn btn-del btn-link btn-sm del"
+                        confirm="是否确认删除该记录?">删除</button>
+            </td>
+        </tr>
+    </t>
+
+    <!-- 周计划 -->
+    <t t-name="metro_park_maintenance.week_plan_static">
+        <div style="width:100%; height:100%; position: relative;">
+            <div class="week-spreadsheet" style="width:100%; height:100%; position: relative;"/>
+        </div>
+    </t>
+
+</templates>

@@ -1,0 +1,139 @@
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_maintenance.history_miles_list">
+            <field name="name">公里数预估</field>
+            <field name="model">metro_park_maintenance.history_miles</field>
+            <field name="arch" type="xml">
+                <tree js_class="month_miles_list_view"
+                      search_ex_template="history_miles_search"
+                      class="fnt_table_style"
+                      create="0"
+                      limit="20"
+                      editable="top"
+                      options="{'height':'full-340'}">
+
+                    <field name="year" invisible="1" />
+                    <field name="month" invisible="1" />
+                    <field name="year_month" invisible="1"/>
+                    <field name="train_dev" fixed_left="1" width="80"/>
+                    <field name="last_repair_miles" style="text-align:center" fixed_left="1" width="90"/>
+                    <field name="miles_after_last_repair" style="text-align:center" fixed_left="1" width="90"/>
+                    <field name="month_target_miles" style="text-align:center" fixed_left="1" width="90"/>
+                    <field name="year_target_miles" style="text-align:center" fixed_left="1" width="90"/>
+
+                    <field name = "day1" width="100" style="text-align:center" attrs="{'readonly': [('day1_is_manual', '=', True)]}"/>
+                    <field name = "day1_is_manual" invisible = "1" />
+
+                    <field name = "day2" width="100" style="text-align:center" attrs="{'readonly': [('day2_is_manual', '=', True)]}"/>
+                    <field name = "day2_is_manual" invisible = "1" />
+
+                    <field name = "day3" width="100" style="text-align:center" attrs="{'readonly': [('day3_is_manual', '=', True)]}"/>
+                    <field name = "day3_is_manual" invisible = "1" />
+
+                    <field name = "day4" width="100" style="text-align:center" attrs="{'readonly': [('day4_is_manual', '=', True)]}"/>
+                    <field name = "day4_is_manual" invisible = "1" />
+
+                    <field name = "day5" width="100" style="text-align:center" attrs="{'readonly': [('day5_is_manual', '=', True)]}"/>
+                    <field name = "day5_is_manual" invisible = "1" />
+
+                    <field name = "day6" width="100" style="text-align:center" attrs="{'readonly': [('day6_is_manual', '=', True)]}"/>
+                    <field name = "day6_is_manual" invisible = "1" />
+
+                    <field name = "day7" width="100" style="text-align:center" attrs="{'readonly': [('day7_is_manual', '=', True)]}"/>
+                    <field name = "day7_is_manual" invisible = "1" />
+
+                    <field name = "day8" width="100" style="text-align:center" attrs="{'readonly': [('day8_is_manual', '=', True)]}"/>
+                    <field name = "day8_is_manual" invisible = "1" />
+
+                    <field name = "day9" width="100" style="text-align:center" attrs="{'readonly': [('day9_is_manual', '=', True)]}"/>
+                    <field name = "day9_is_manual" invisible = "1" />
+
+                    <field name = "day10" width="100" style="text-align:center" attrs="{'readonly': [('day10_is_manual', '=', True)]}"/>
+                    <field name = "day10_is_manual" invisible = "1" />
+
+                    <field name = "day11" width="100" style="text-align:center" attrs="{'readonly': [('day11_is_manual', '=', True)]}"/>
+                    <field name = "day11_is_manual" invisible = "1" />
+
+                    <field name = "day12" width="100" style="text-align:center" attrs="{'readonly': [('day12_is_manual', '=', True)]}"/>
+                    <field name = "day12_is_manual" invisible = "1" />
+
+                    <field name = "day13" width="100" style="text-align:center" attrs="{'readonly': [('day13_is_manual', '=', True)]}"/>
+                    <field name = "day13_is_manual" invisible = "1" />
+
+                    <field name = "day14" width="100" style="text-align:center" attrs="{'readonly': [('day14_is_manual', '=', True)]}"/>
+                    <field name = "day14_is_manual" invisible = "1" />
+
+                    <field name = "day15" width="100" style="text-align:center" attrs="{'readonly': [('day15_is_manual', '=', True)]}"/>
+                    <field name = "day15_is_manual" invisible = "1" />
+
+                    <field name = "day16" width="100" style="text-align:center" attrs="{'readonly': [('day16_is_manual', '=', True)]}"/>
+                    <field name = "day16_is_manual" invisible = "1" />
+
+                    <field name = "day17" width="100" style="text-align:center" attrs="{'readonly': [('day17_is_manual', '=', True)]}"/>
+                    <field name = "day17_is_manual" invisible = "1" />
+
+                    <field name = "day18" width="100" style="text-align:center" attrs="{'readonly': [('day18_is_manual', '=', True)]}"/>
+                    <field name = "day18_is_manual" invisible = "1" />
+
+                    <field name = "day19" width="100" style="text-align:center" attrs="{'readonly': [('day19_is_manual', '=', True)]}"/>
+                    <field name = "day19_is_manual" invisible = "1" />
+
+                    <field name = "day20" width="100" style="text-align:center" attrs="{'readonly': [('day20_is_manual', '=', True)]}"/>
+                    <field name = "day20_is_manual" invisible = "1" />
+
+                    <field name = "day21" width="100" style="text-align:center" attrs="{'readonly': [('day21_is_manual', '=', True)]}"/>
+                    <field name = "day21_is_manual" invisible = "1" />
+
+                    <field name = "day22" width="100" style="text-align:center" attrs="{'readonly': [('day22_is_manual', '=', True)]}"/>
+                    <field name = "day22_is_manual" invisible = "1" />
+
+                    <field name = "day23" width="100" style="text-align:center" attrs="{'readonly': [('day23_is_manual', '=', True)]}"/>
+                    <field name = "day23_is_manual" invisible = "1" />
+
+                    <field name = "day24" width="100" style="text-align:center" attrs="{'readonly': [('day24_is_manual', '=', True)]}"/>
+                    <field name = "day24_is_manual" invisible = "1" />
+
+                    <field name = "day25" width="100" style="text-align:center" attrs="{'readonly': [('day25_is_manual', '=', True)]}"/>
+                    <field name = "day25_is_manual" invisible = "1" />
+
+                    <field name = "day26" width="100" style="text-align:center" attrs="{'readonly': [('day26_is_manual', '=', True)]}"/>
+                    <field name = "day26_is_manual" invisible = "1" />
+
+                    <field name = "day27" width="100" style="text-align:center" attrs="{'readonly': [('day27_is_manual', '=', True)]}"/>
+                    <field name = "day27_is_manual" invisible = "1" />
+
+                    <field name = "day28" width="100" style="text-align:center" attrs="{'readonly': [('day28_is_manual', '=', True)]}"/>
+                    <field name = "day28_is_manual" invisible = "1" />
+
+                    <field name = "day29" width="100" style="text-align:center" attrs="{'invisible':[('day29_visible', '=', True)], 'readonly': [('day29_is_manual', '=', True)]}" />
+                    <field name = "day29_is_manual" invisible = "1" />
+                    <field name = "day29_visible" invisible = "1" />
+
+                    <field name = "day30" width="100" style="text-align:center" attrs="{'invisible': [('day30_visible', '=',True)], 'readonly': [('day30_is_manual', '=', True)]}"/>
+                    <field name = "day30_is_manual" invisible = "1" />
+                    <field name = "day30_visible" invisible = "1" />
+
+                    <field name = "day31" width="100" style="text-align:center" attrs="{'invisible': [('day31_visible', '=',True)], 'readonly': [('day31_is_manual', '=', True)]}"/>
+                    <field name = "day31_is_manual" invisible = "1" />
+                    <field name = "day31_visible" invisible = "1" />
+
+                </tree>
+            </field>
+        </record>
+
+        <record id="metro_park_maintenance.history_miles_server_action" model="ir.actions.server">
+            <field name="name">公里数预估</field>
+            <field name="type">ir.actions.server</field>
+            <field name="model_id" ref="model_metro_park_maintenance_history_miles" />
+            <field name="state">code</field>
+            <field name="code">
+                action = model.get_miles_predict_action()
+            </field>
+        </record>
+
+
+    </data>
+</odoo>
+
+    

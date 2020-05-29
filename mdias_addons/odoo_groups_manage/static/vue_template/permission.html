@@ -1,0 +1,27 @@
+<div id="app" style="height: 30rem;margin-bottom: 2rem">
+    <el-main>
+        <el-row>
+            <el-col :span="24" style="height:25rem">
+                <div class="card" style="height:100%;overflow-y: scroll;border: black;opacity: 0.6;">
+                    <div class="card-body">
+
+                        <el-tree ref="tree"
+                                 :default-expanded-keys="checked"
+                                 :default-checked-keys="checked" node-key="id" show-checkbox
+                                 :data="groups"
+                                 :props="defaultProps"
+                                 style="background:none"
+                                 disabled="true"
+                        ></el-tree>
+                    </div>
+                </div>
+            </el-col>
+        </el-row>
+    </el-main>
+    <el-footer>
+        <el-button-group>
+             <el-button type="primary" @click="onCancel">返回</el-button>
+        </el-button-group>
+
+    </el-footer>
+</div>

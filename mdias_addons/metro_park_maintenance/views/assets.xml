@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<template id="funenc_metro_park_maintaince_res"
+				  name="funenc_metro_park_maintaince_res"
+				  inherit_id="web.assets_backend">
+			<xpath expr="." position="inside">
+				<link rel="stylesheet" href="/metro_park_maintenance/static/css/style.css" />
+
+				<!-- vis -->
+				<link rel="stylesheet" href="/metro_park_maintenance/static/lib/vis/vis.min.css"/>
+				<link rel="stylesheet" href="/metro_park_maintenance/static/lib/vis/vis-timeline-graph2d.min.css"/>
+				<link rel="stylesheet" href="/metro_park_maintenance/static/lib/tippy.css"/>
+				<link rel="stylesheet" href="/metro_park_maintenance/static/lib/xspreadsheet/xspreadsheet.css"/>
+
+				<script type="application/javascript" src="/metro_park_maintenance/static/lib/tippy.js" />
+
+				<script type="application/javascript" src="/metro_park_maintenance/static/js/dev_list.js" />
+				<script type="application/javascript" src="/metro_park_maintenance/static/js/miles_set_action.js" />
+				<script type="application/javascript" src="/metro_park_maintenance/static/js/maintaince_order.js" />
+
+				<script type="application/javascript" src="/metro_park_maintenance/static/js/year_plan_list.js" />
+				<script type="application/javascript" src="/metro_park_maintenance/static/js/year_plan_summary_list.js" />
+				<script type="application/javascript" src="/metro_park_maintenance/static/js/year_plan_editor.js" />
+
+				<script type="application/javascript" src="/metro_park_maintenance/static/js/month_plan_list.js" />
+				<script type="application/javascript" src="/metro_park_maintenance/static/js/month_plan_editor.js" />
+				<script type="application/javascript" src="/metro_park_maintenance/static/js/month_plan_works.js" />
+
+				<script type="application/javascript" src="/metro_park_maintenance/static/js/week_plan_list.js" />
+				<script type="application/javascript" src="/metro_park_maintenance/static/js/day_plan_list.js" />
+
+				<script type="application/javascript" src="/metro_park_maintenance/static/js/funenc_drag.js"/>
+				<script type="application/javascript" src="/metro_park_maintenance/static/js/miles_month.js"/>
+
+				<script type="application/javascript" src="/metro_park_maintenance/static/js/day_plan_data.js"/>
+
+				<!-- 日计划表格 -->
+				<script type="application/javascript" src="/metro_park_maintenance/static/js/day_plan_table.js"/>
+
+				<!-- vis -->
+				<script type="text/javascript" src="/metro_park_maintenance/static/lib/vis/vis.min.js"/>
+				<script type="application/javascript"
+						src="/metro_park_maintenance/static/js/year_plan_time_line_action.js"/>
+
+				<script type="application/javascript" src="/metro_park_maintenance/static/js/utility.js"/>
+				<script type="application/javascript"
+						src="/metro_park_maintenance/static/js/import_repair_tmp_rule.js"/>
+
+				<script type="application/javascript" src="/metro_park_maintenance/static/js/plan_preview.js"/>
+
+				<!-- 计划时间轴 -->
+				<script type="application/javascript" src="/metro_park_maintenance/static/js/plan_preview_timeline.js"/>
+				<script type="application/javascript" src="/metro_park_maintenance/static/js/week_create_button.js"/>
+
+				<!-- 冲突检测 -->
+				<script type="application/javascript" src="/metro_park_maintenance/static/js/plan_conflict_check.js"/>
+
+				<script type="application/javascript" src="/metro_park_maintenance/static/js/week_plan_static.js"/>
+				<script type="application/javascript" src="/metro_park_maintenance/static/js/week_plan_editor.js"/>
+				<script type="application/javascript" src="/metro_park_maintenance/static/js/tcms_tree_button.js"/>
+				<script type="application/javascript" src="/metro_park_maintenance/static/lib/xspreadsheet/xspreadsheet.js"/>
+				<script type="application/javascript" src="/metro_park_maintenance/static/js/balance_offset_table.js"/>
+
+				<!--故障报修-->
+				<script type="application/javascript" src="/metro_park_maintenance/static/js/malfunction_repair.js"/>
+
+			</xpath>
+		</template>
+	</data>
+</odoo>

@@ -1,0 +1,195 @@
+
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="metro_park_base.location_list">
+            <field name="name">位置列表</field>
+            <field name="model">metro_park_base.location</field>
+            <field name="arch" type="xml">
+                <tree js_class="fnt_table"
+                      create="0"
+                      delete="0"
+                      eidt="0"
+                      options="{'height':'full-340'}">
+                    <field name="name" width="150" />
+                    <field name="alias" />
+                    <field name="line"/>
+                    <field name="line_code"/>
+                    <field name="location_type"/>
+                    <field name="location_code"/>
+                    <field name="rail_secs"/>
+                    <field name="is_active"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="metro_park_base.location_form">
+            <field name="name">位置表单</field>
+            <field name="model">metro_park_base.location</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="name">名称</label>
+                        <div class="col-sm-3">
+                            <field name="name"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="line">线别</label>
+                        <div class="col-sm-3">
+                            <field name="line"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="line_code">线别代码</label>
+                        <div class="col-sm-3">
+                            <field name="line_code"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="location_type">位置类型</label>
+                        <div class="col-sm-3">
+                            <field name="location_type"/>
+                            <field name="location_type_show" invisible="1"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="location_code">位置代码</label>
+                        <div class="col-sm-3">
+                            <field name="location_code"/>
+                        </div>
+                        <label class="col-sm-2 col-form-label" for="location_map">场段图</label>
+                        <div class="col-sm-3">
+                            <field name="location_map"/>
+                        </div>
+                    </div>
+
+                    <notebook>
+
+                        <page string="区段">
+                            <field name="rail_secs">
+                                <tree js_class="fnt_table" options="{'height': 300}">
+                                    <field name="no" />
+                                    <field name="usage" />
+                                    <field name="is_track" />
+                                    <field name="rail_type" />
+                                    <field name="rail_property" />
+                                    <field name="port" />
+                                    <field name="electric_live" />
+                                    <field name="rail_length" />
+                                </tree>
+                            </field>
+                        </page>
+
+                        <page string="供电分区">
+                            <field name="electric_areas">
+                                <tree js_class="fnt_table" options="{'height': 300}">
+                                    <field name="name" />
+                                    <field name="location_id" />
+                                    <field name="switch_no" />
+                                    <field name="breaker_id" />
+                                </tree>
+                            </field>
+                        </page>
+
+                        <page string="按扭表">
+                            <field name="park_btns">
+                                <tree js_class="fnt_table" options="{'height': 300}">
+                                    <field name="index"/>
+                                    <field name="name"/>
+                                    <field name="btn_type"/>
+                                    <field name="remark"/>
+                                </tree>
+                            </field>
+                        </page>
+
+                        <page string="检修工班">
+                            <field name="work_class">
+                                <tree js_class="fnt_table" options="{'height': 300}">
+                                    <field name="name"/>
+                                    <field name="parent_id"/>
+                                </tree>
+                            </field>
+                        </page>
+
+                        <page string="相关配置">
+
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label" for="temp_train_back_deal_method">
+                                    temp_train_back_deal_method</label>
+                                <div class="col-sm-8">
+                                    <field name="temp_train_back_deal_method"
+                                           options="{'no_create_edit': True,'no_open': True, 'no_create':True}" />
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label" for="receive_train_need_min">
+                                    receive_train_need_min</label>
+                                <div class="col-sm-8">
+                                    <field name="receive_train_need_min"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label" for="send_train_pre_min">
+                                    send_train_pre_min</label>
+                                <div class="col-sm-8">
+                                    <field name="send_train_pre_min"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label" for="plan_rail_pre_min">
+                                    plan_rail_pre_min</label>
+                                <div class="col-sm-8">
+                                    <field name="plan_rail_pre_min"/>
+                                </div>
+                            </div>
+
+                        </page>
+
+                        <page string="日计划相关">
+
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label" for="max_repair_after_high_run">
+                                    max_repair_after_high_run</label>
+                                <div class="col-sm-8">
+                                    <field name="max_repair_after_high_run"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label" for="max_repair_back_time">
+                                    max_repair_back_time</label>
+                                <div class="col-sm-8">
+                                    <field name="max_repair_back_time"/>
+                                </div>
+                            </div>
+
+                        </page>
+
+                    </notebook>
+
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window" id="metro_park_base.location_act_window">
+            <field name="name">位置管理</field>
+            <field name="res_model">metro_park_base.location</field>
+            <field name="domain">[('alias', '!=', 'zengxian')]</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="metro_park_base.location_act_window"
+                  id="metro_park_base.location_menu"
+                  name="位置管理"
+                  sequence="1"
+                  parent="metro_park_base.menu_location_manage"
+                  groups="group_sys_setting_position_site_manage"/>
+    </data>
+</odoo>
+    
